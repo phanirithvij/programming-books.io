@@ -1,0 +1,662 @@
+1865 1594558053281 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+      "table": "block"
+    }
+  ]
+}
+Response:+1665
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "bc9bda2f-3016-4e91-b0b7-931b238d41e5",
+          "ba02c1f6-fef1-4f3e-96e3-544aa0fd17ce",
+          "d81b5564-e855-4bcc-9ad0-868661b11366",
+          "96492bd3-3fee-4c9e-b4bb-49fa6be59710",
+          "6fe10515-b771-4dab-9dab-2eb873f34292",
+          "85668251-4c95-46ea-825a-90711a55c2b0",
+          "1d18739c-9b30-4dec-8b22-6c12150a663b",
+          "1816a4d9-df2d-4ddb-bfb6-e015f71f5e1c",
+          "083a3830-6166-44b6-84cc-53dd768995d0",
+          "78fae83f-01e7-4db9-92a8-4527e8590ce3",
+          "90d34312-b21f-42bc-8eb6-9b5561ce4097",
+          "c2db6e44-7d3d-44d4-8067-54d6b281957d"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552021079546,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552021079546,
+        "parent_id": "1a2fc903-c419-477e-bc9c-634980a5b747",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Most Common Real Life Key Value Coding Example"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+22275 1594558053282 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "444b6c35-69e5-4aff-a895-9def67d244c3",
+  "verticalColumns": false
+}
+Response:+22034
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "083a3830-6166-44b6-84cc-53dd768995d0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021079546,
+          "id": "083a3830-6166-44b6-84cc-53dd768995d0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021079546,
+          "parent_id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "this class is not key value coding-compliant for the key myNumber."
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "1816a4d9-df2d-4ddb-bfb6-e015f71f5e1c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021079545,
+          "id": "1816a4d9-df2d-4ddb-bfb6-e015f71f5e1c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021079545,
+          "parent_id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Above example assumes that MyClass has an NSNumber Property called myNumber. If myNumber does not appear in MyClass interface definition, an NSUndefinedKeyException can be raised at possibly both lines 2 and 5 - popularly known as:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "1a2fc903-c419-477e-bc9c-634980a5b747": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "25edb6a0-0632-4f0c-bbe8-1da453aa5361",
+            "444b6c35-69e5-4aff-a895-9def67d244c3",
+            "a935a28b-8c10-44e3-b901-20981db69cef",
+            "e335db59-f71b-4063-b7e3-b1b979a2ed6a",
+            "7755f2e4-4ccd-48ee-be45-ac93bcb9a89a"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021080000,
+          "format": {
+            "page_cover_position": 0.6,
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "1a2fc903-c419-477e-bc9c-634980a5b747",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021380000,
+          "parent_id": "d16f98c8-a3d6-41cd-88a6-5fb67e6b0081",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Key Value Coding and observing"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 60
+        }
+      },
+      "1d18739c-9b30-4dec-8b22-6c12150a663b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021079545,
+          "id": "1d18739c-9b30-4dec-8b22-6c12150a663b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021079545,
+          "parent_id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Exceptions:",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "444b6c35-69e5-4aff-a895-9def67d244c3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "bc9bda2f-3016-4e91-b0b7-931b238d41e5",
+            "ba02c1f6-fef1-4f3e-96e3-544aa0fd17ce",
+            "d81b5564-e855-4bcc-9ad0-868661b11366",
+            "96492bd3-3fee-4c9e-b4bb-49fa6be59710",
+            "6fe10515-b771-4dab-9dab-2eb873f34292",
+            "85668251-4c95-46ea-825a-90711a55c2b0",
+            "1d18739c-9b30-4dec-8b22-6c12150a663b",
+            "1816a4d9-df2d-4ddb-bfb6-e015f71f5e1c",
+            "083a3830-6166-44b6-84cc-53dd768995d0",
+            "78fae83f-01e7-4db9-92a8-4527e8590ce3",
+            "90d34312-b21f-42bc-8eb6-9b5561ce4097",
+            "c2db6e44-7d3d-44d4-8067-54d6b281957d"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021079546,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021079546,
+          "parent_id": "1a2fc903-c419-477e-bc9c-634980a5b747",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Most Common Real Life Key Value Coding Example"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "6fe10515-b771-4dab-9dab-2eb873f34292": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021079545,
+          "id": "6fe10515-b771-4dab-9dab-2eb873f34292",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021079545,
+          "parent_id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Example:",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "78fae83f-01e7-4db9-92a8-4527e8590ce3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021079546,
+          "id": "78fae83f-01e7-4db9-92a8-4527e8590ce3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021079546,
+          "parent_id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Why this is SO powerful:",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "85668251-4c95-46ea-825a-90711a55c2b0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021079545,
+          "id": "85668251-4c95-46ea-825a-90711a55c2b0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021079545,
+          "parent_id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "id obj = [[MyClass alloc] init];\nid value = [obj valueForKey:@\"myNumber\"];\n\nint myNumberAsInt = [value intValue];\nmyNumberAsInt = 53;\n[obj setValue:@(myNumberAsInt) forKey:@\"myNumber\"];"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "90d34312-b21f-42bc-8eb6-9b5561ce4097": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021079546,
+          "id": "90d34312-b21f-42bc-8eb6-9b5561ce4097",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021079546,
+          "parent_id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "You can write code that can access properties of a class dynamically, without needing interface for that class. This means that a table view can display values from any properties of an NSObject derived object, provided its property names are supplied dynamically at runtime."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "96492bd3-3fee-4c9e-b4bb-49fa6be59710": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021079545,
+          "id": "96492bd3-3fee-4c9e-b4bb-49fa6be59710",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021079545,
+          "parent_id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "It also means that any id object can invoke setValue method and its various variants too."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ba02c1f6-fef1-4f3e-96e3-544aa0fd17ce": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021079544,
+          "id": "ba02c1f6-fef1-4f3e-96e3-544aa0fd17ce",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021079544,
+          "parent_id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "What this means?",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "bc9bda2f-3016-4e91-b0b7-931b238d41e5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021079542,
+          "id": "bc9bda2f-3016-4e91-b0b7-931b238d41e5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021079542,
+          "parent_id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Key Value Coding is integrated into "
+              ],
+              [
+                "NSObject",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " using "
+              ],
+              [
+                "NSKeyValueCoding",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " protocol."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "c2db6e44-7d3d-44d4-8067-54d6b281957d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021079546,
+          "id": "c2db6e44-7d3d-44d4-8067-54d6b281957d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021079546,
+          "parent_id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In the example above, the code can as well work without MyClass being available and id type obj being available to calling code."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "d16f98c8-a3d6-41cd-88a6-5fb67e6b0081": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "6ebb8a71-c184-4331-921a-a77677384f58",
+            "9c8eea30-4419-48d9-9acc-2af85e13f691",
+            "659988d9-31bd-43a9-aa8a-348d98106bf0",
+            "ff4ae9d1-4b98-4f1b-8814-7d60938bb23f",
+            "305ad731-6870-4315-8bd7-cb7cd68c8d5a",
+            "1a2fc903-c419-477e-bc9c-634980a5b747",
+            "71be0d2e-f5d6-49fc-8196-d4c08c802f89",
+            "f8482d7d-a938-4531-a1d5-3a2dea595618",
+            "b1a21291-9e7c-4ffa-8e64-d67c8ab753f2",
+            "e8e7dac1-8fbf-4c7a-8987-a252df50ecfc",
+            "3bba93bb-22fb-4816-a8ec-5d32c6243cfb",
+            "fb4c1ee4-492d-40da-a681-cea667f64cab",
+            "73591b7d-ab8a-48a4-8c0c-08a8eb95bd4e",
+            "b653a6b7-956c-4993-8016-e838958e7ddc",
+            "aefd8c4b-8e31-4127-9a8b-1d53f29839fd",
+            "8ec8ae67-95b2-4065-adb2-6ff87458c670",
+            "6122b855-f4c4-40d2-8cd2-fed4622d6e60",
+            "705af5a2-3877-4339-99bf-d2b1f18377ff",
+            "38d6d725-9d1b-46dd-90eb-5553450bfd05",
+            "e7bba57b-0017-4678-b23c-37fd58d4bb80",
+            "1e25a23e-d9da-4b30-9aa1-85fc78588266",
+            "03bd7682-492e-408b-a8ae-d2189af7bbf5",
+            "a41e68d2-e582-4c84-a9f7-71a1875df769",
+            "734553f3-51e7-4bf8-8797-b50a5168b0df",
+            "92ce0718-865c-4b6c-ac25-14bd8ea869e3",
+            "4ac15f4d-fa60-4b5b-b714-d3549a0d967e",
+            "3732f308-d12a-4cbd-8512-6e4f9d34a917",
+            "1ba93139-aa14-4c2f-8bc2-51d74d0a5004",
+            "2efdb963-ab02-4ea2-b2ba-e9381c8d216b",
+            "82d08f77-0a1c-41a8-b1d0-a6c4522aba79",
+            "e7d2fa0b-2d3f-4e9f-96af-721c1e741921",
+            "b1516cc0-3f41-437a-8a95-18c88c0a41a3",
+            "c5c180ed-aa1c-4002-b026-b35629fa1a84",
+            "1780f62b-a545-4fe9-a767-8218a6496c42",
+            "9d23f8a0-4809-4661-b686-63a0b911686b",
+            "9ab4b6b8-bf3c-4fb8-b76e-f1e7486d2519",
+            "fa9e7153-af6b-44c3-a386-3a9bf09a29ee",
+            "03168880-1fe9-41c0-baca-65baf138fad0",
+            "cb761839-f116-465c-a454-57011164d2e6",
+            "fa5a9568-291b-4191-9be1-aa8b1b3c2f54",
+            "c504c87a-07be-45df-ad76-8d0af4c59938",
+            "3a2c46a4-1ba7-45a0-a365-0faa59123e73",
+            "be4edf80-ba6f-4efc-87a3-342ba9d898ec",
+            "dfeb304a-24c5-4f8c-9bad-d655832a9e39",
+            "15cab868-dec0-4d95-81ce-8373d1a0315d",
+            "b272f154-2728-4de5-b4f5-34ebc1506cb0",
+            "5bafcfca-f7e1-4638-8f2f-937ebf46de74",
+            "c1b3d150-9074-4c8f-8273-3a9b2fcb2ef5",
+            "7beccec4-73a8-4e2c-8e50-2f52f2d456fc",
+            "18b57704-b3ac-4132-9848-35ce57454675",
+            "02183709-7d63-4c9d-8176-03979c40287f",
+            "0836f366-8217-47c4-9d26-b81c0a937842",
+            "783bc93a-4764-48cf-84f2-8ae9024a2700",
+            "54fea9a9-8cc2-452a-b846-79af09af8bdd",
+            "83b0729b-76b7-4568-ab09-5eebf755428f"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021024411,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "d16f98c8-a3d6-41cd-88a6-5fb67e6b0081",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571297280000,
+          "parent_id": "85cbbaf3-24b7-40ad-ae47-345fc76db9bb",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Objective-C"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 102
+        }
+      },
+      "d81b5564-e855-4bcc-9ad0-868661b11366": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021079545,
+          "id": "d81b5564-e855-4bcc-9ad0-868661b11366",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021079545,
+          "parent_id": "444b6c35-69e5-4aff-a895-9def67d244c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "It means that any id object is capable of calling valueForKey method and its various variants like valueForKeyPath etc. ’"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

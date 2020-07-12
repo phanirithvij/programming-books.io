@@ -1,0 +1,518 @@
+1600 1594558113113 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "600de1cc-77eb-41b7-9057-56693d8e69d0",
+      "table": "block"
+    }
+  ]
+}
+Response:+1400
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "711ccbd3-b438-40ae-b02c-8ebbf0f2cd0f",
+          "fe348625-836f-4689-89ef-6f3692d72bac",
+          "576d7251-29ba-41dd-8c48-84dc70acc85d",
+          "5af8f6a8-e1d2-4a64-9a2c-61aaa0ee05c9",
+          "cdf284ec-1d67-4baa-945e-45d7a1280c38",
+          "d0c1d584-b39b-4e86-8b81-7dc69f43d047",
+          "ad19d1ba-4b38-4387-b168-832a3d02d2d1"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552021134127,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "600de1cc-77eb-41b7-9057-56693d8e69d0",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552021134127,
+        "parent_id": "fb4c1ee4-492d-40da-a681-cea667f64cab",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Setting a Value in NSDictionary"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 7
+      }
+    }
+  ]
+}
+16927 1594558113114 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "600de1cc-77eb-41b7-9057-56693d8e69d0",
+  "verticalColumns": false
+}
+Response:+16686
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "576d7251-29ba-41dd-8c48-84dc70acc85d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021134126,
+          "id": "576d7251-29ba-41dd-8c48-84dc70acc85d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021134126,
+          "parent_id": "600de1cc-77eb-41b7-9057-56693d8e69d0",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "[cars setObject:lamborghini forKey:@\"Lamborghini\"];"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "5af8f6a8-e1d2-4a64-9a2c-61aaa0ee05c9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021134127,
+          "id": "5af8f6a8-e1d2-4a64-9a2c-61aaa0ee05c9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021134127,
+          "parent_id": "600de1cc-77eb-41b7-9057-56693d8e69d0",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Just like any other object, call the method of NSDictionary that sets an object of a key, "
+              ],
+              [
+                "objectForKey:",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". Be careful not to confuse this with "
+              ],
+              [
+                "setValue:forKey:",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "; that’s for a completely different thing, "
+              ],
+              [
+                "Key Value Coding",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/objective-c/556/key-value-coding-key-value-observing#t=201607220233420459234"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "600de1cc-77eb-41b7-9057-56693d8e69d0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "711ccbd3-b438-40ae-b02c-8ebbf0f2cd0f",
+            "fe348625-836f-4689-89ef-6f3692d72bac",
+            "576d7251-29ba-41dd-8c48-84dc70acc85d",
+            "5af8f6a8-e1d2-4a64-9a2c-61aaa0ee05c9",
+            "cdf284ec-1d67-4baa-945e-45d7a1280c38",
+            "d0c1d584-b39b-4e86-8b81-7dc69f43d047",
+            "ad19d1ba-4b38-4387-b168-832a3d02d2d1"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021134127,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "600de1cc-77eb-41b7-9057-56693d8e69d0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021134127,
+          "parent_id": "fb4c1ee4-492d-40da-a681-cea667f64cab",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Setting a Value in NSDictionary"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "711ccbd3-b438-40ae-b02c-8ebbf0f2cd0f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021134125,
+          "id": "711ccbd3-b438-40ae-b02c-8ebbf0f2cd0f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021134125,
+          "parent_id": "600de1cc-77eb-41b7-9057-56693d8e69d0",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "There are multiple ways to set a key’s object in an NSDictionary, corresponding to the ways you get a value. For instance, to add a lamborghini to a list of cars"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "ad19d1ba-4b38-4387-b168-832a3d02d2d1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021134127,
+          "id": "ad19d1ba-4b38-4387-b168-832a3d02d2d1",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021134127,
+          "parent_id": "600de1cc-77eb-41b7-9057-56693d8e69d0",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This is the syntax that you use for dictionaries in most other languages, such as C#, Java, and Javascript. It’s much more convenient than the standard syntax, and arguably more readable (especially if you code in these other languages), but of course, it isn’t "
+              ],
+              [
+                "standard",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                ". It’s also only available in newer versions of Objective C"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "cdf284ec-1d67-4baa-945e-45d7a1280c38": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021134127,
+          "id": "cdf284ec-1d67-4baa-945e-45d7a1280c38",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021134127,
+          "parent_id": "600de1cc-77eb-41b7-9057-56693d8e69d0",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Shorthand"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 1
+        }
+      },
+      "d0c1d584-b39b-4e86-8b81-7dc69f43d047": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021134127,
+          "id": "d0c1d584-b39b-4e86-8b81-7dc69f43d047",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021134127,
+          "parent_id": "600de1cc-77eb-41b7-9057-56693d8e69d0",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "cars[@\"Lamborghini\"] = lamborghini;"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "d16f98c8-a3d6-41cd-88a6-5fb67e6b0081": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "6ebb8a71-c184-4331-921a-a77677384f58",
+            "9c8eea30-4419-48d9-9acc-2af85e13f691",
+            "659988d9-31bd-43a9-aa8a-348d98106bf0",
+            "ff4ae9d1-4b98-4f1b-8814-7d60938bb23f",
+            "305ad731-6870-4315-8bd7-cb7cd68c8d5a",
+            "1a2fc903-c419-477e-bc9c-634980a5b747",
+            "71be0d2e-f5d6-49fc-8196-d4c08c802f89",
+            "f8482d7d-a938-4531-a1d5-3a2dea595618",
+            "b1a21291-9e7c-4ffa-8e64-d67c8ab753f2",
+            "e8e7dac1-8fbf-4c7a-8987-a252df50ecfc",
+            "3bba93bb-22fb-4816-a8ec-5d32c6243cfb",
+            "fb4c1ee4-492d-40da-a681-cea667f64cab",
+            "73591b7d-ab8a-48a4-8c0c-08a8eb95bd4e",
+            "b653a6b7-956c-4993-8016-e838958e7ddc",
+            "aefd8c4b-8e31-4127-9a8b-1d53f29839fd",
+            "8ec8ae67-95b2-4065-adb2-6ff87458c670",
+            "6122b855-f4c4-40d2-8cd2-fed4622d6e60",
+            "705af5a2-3877-4339-99bf-d2b1f18377ff",
+            "38d6d725-9d1b-46dd-90eb-5553450bfd05",
+            "e7bba57b-0017-4678-b23c-37fd58d4bb80",
+            "1e25a23e-d9da-4b30-9aa1-85fc78588266",
+            "03bd7682-492e-408b-a8ae-d2189af7bbf5",
+            "a41e68d2-e582-4c84-a9f7-71a1875df769",
+            "734553f3-51e7-4bf8-8797-b50a5168b0df",
+            "92ce0718-865c-4b6c-ac25-14bd8ea869e3",
+            "4ac15f4d-fa60-4b5b-b714-d3549a0d967e",
+            "3732f308-d12a-4cbd-8512-6e4f9d34a917",
+            "1ba93139-aa14-4c2f-8bc2-51d74d0a5004",
+            "2efdb963-ab02-4ea2-b2ba-e9381c8d216b",
+            "82d08f77-0a1c-41a8-b1d0-a6c4522aba79",
+            "e7d2fa0b-2d3f-4e9f-96af-721c1e741921",
+            "b1516cc0-3f41-437a-8a95-18c88c0a41a3",
+            "c5c180ed-aa1c-4002-b026-b35629fa1a84",
+            "1780f62b-a545-4fe9-a767-8218a6496c42",
+            "9d23f8a0-4809-4661-b686-63a0b911686b",
+            "9ab4b6b8-bf3c-4fb8-b76e-f1e7486d2519",
+            "fa9e7153-af6b-44c3-a386-3a9bf09a29ee",
+            "03168880-1fe9-41c0-baca-65baf138fad0",
+            "cb761839-f116-465c-a454-57011164d2e6",
+            "fa5a9568-291b-4191-9be1-aa8b1b3c2f54",
+            "c504c87a-07be-45df-ad76-8d0af4c59938",
+            "3a2c46a4-1ba7-45a0-a365-0faa59123e73",
+            "be4edf80-ba6f-4efc-87a3-342ba9d898ec",
+            "dfeb304a-24c5-4f8c-9bad-d655832a9e39",
+            "15cab868-dec0-4d95-81ce-8373d1a0315d",
+            "b272f154-2728-4de5-b4f5-34ebc1506cb0",
+            "5bafcfca-f7e1-4638-8f2f-937ebf46de74",
+            "c1b3d150-9074-4c8f-8273-3a9b2fcb2ef5",
+            "7beccec4-73a8-4e2c-8e50-2f52f2d456fc",
+            "18b57704-b3ac-4132-9848-35ce57454675",
+            "02183709-7d63-4c9d-8176-03979c40287f",
+            "0836f366-8217-47c4-9d26-b81c0a937842",
+            "783bc93a-4764-48cf-84f2-8ae9024a2700",
+            "54fea9a9-8cc2-452a-b846-79af09af8bdd",
+            "83b0729b-76b7-4568-ab09-5eebf755428f"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021024411,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "d16f98c8-a3d6-41cd-88a6-5fb67e6b0081",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571297280000,
+          "parent_id": "85cbbaf3-24b7-40ad-ae47-345fc76db9bb",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Objective-C"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 102
+        }
+      },
+      "fb4c1ee4-492d-40da-a681-cea667f64cab": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "0afb75e2-b6d4-4d59-a89d-0f26da878ce7",
+            "019274bc-9de9-494f-999b-53f562464bea",
+            "dc0f8e04-3b11-4212-a198-6dcd73906ebc",
+            "f0580299-e54f-4e34-a54b-2f7326046d78",
+            "600de1cc-77eb-41b7-9057-56693d8e69d0",
+            "d39c7912-dd39-4236-8381-4684cf48c9c2",
+            "6036c8fc-1d58-4f1b-ba6a-a81afd67b7cd"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021080000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "fb4c1ee4-492d-40da-a681-cea667f64cab",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021380000,
+          "parent_id": "d16f98c8-a3d6-41cd-88a6-5fb67e6b0081",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "NSDictionary"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 29
+        }
+      },
+      "fe348625-836f-4689-89ef-6f3692d72bac": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552021134126,
+          "id": "fe348625-836f-4689-89ef-6f3692d72bac",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552021134126,
+          "parent_id": "600de1cc-77eb-41b7-9057-56693d8e69d0",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Standard"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
