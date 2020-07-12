@@ -309,6 +309,7 @@ func findBook(id string) *Book {
 		parts := []string{book.Title, book.DirShort, book.NotionStartPageID}
 		for _, s := range parts {
 			if strings.EqualFold(s, id) {
+				initBook(book)
 				return book
 			}
 		}

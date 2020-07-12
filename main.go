@@ -77,11 +77,6 @@ func isPreview() bool {
 }
 
 var (
-	// url or id of the page to rebuild
-	flgNoUpdateOutput bool
-	// if true, disables notion cache, forcing re-download of notion page
-	// even if cached verison on disk exits
-	flgDisableNotionCache       bool
 	flgPreviewStatic            bool
 	flgPreviewOnDemand          bool
 	flgReportStackOverflowLinks bool
@@ -93,12 +88,17 @@ var (
 
 	// if true, re-create "www" directory
 	flgClean bool
+	// if true, disables notion cache, forcing re-download of notion page
+	// even if cached verison on disk exits
+	flgDisableNotionCache bool
 )
 
 func main() {
 	var (
-		flgGen string
-		flgWc  bool
+		flgGen          bool
+		flgBook         string
+		flgWc           bool
+		flgDownloadGist string
 	)
 
 	{
@@ -106,7 +106,10 @@ func main() {
 		flag.BoolVar(&flgDeployProd, "deploy-prod", false, "deploy to prodution")
 		flag.BoolVar(&flgDeployDev, "deploy-dev", false, "deploy to dev")
 		flag.BoolVar(&flgClean, "clean", false, "if true, re-create 'www' directory")
-		flag.StringVar(&flgGen, "gen", "", "generate a book and deploy preview")
+		flag.BoolVar(&flgGen, "gen", false, "generate a book and deploy preview")
+		flag.StringVar(&flgBook, "book", "", "name of the book")
+		flag.StringVar(&flgDownloadGist, "download-gist", "", "id of the gist to (re)download. Must also provide a book")
+		flag.BoolVar(&flgDisableNotionCache, "no-cache", false, "if true, disables cache for notion")
 		flag.Parse()
 	}
 
@@ -137,12 +140,16 @@ func main() {
 		return
 	}
 
-	if flgGen != "" {
-		buildFrontend()
-
-		book := findBook(flgGen)
+	if flgGen {
+		book := findBook(flgBook)
 		generateBookAndDeploy(book)
 		fmt.Printf("book: %s, dir: %s\n", book.Title, book.DirShort)
+		return
+	}
+
+	if flgDownloadGist != "" {
+		book := findBook(flgBook)
+		downloadSingleGist(book, flgDownloadGist)
 		return
 	}
 
@@ -150,8 +157,10 @@ func main() {
 }
 
 func generateBookAndDeploy(book *Book) {
-	initBook(book)
 	downloadBook(book)
+
+	buildFrontend()
+
 	genBook(book)
 	deployWithVercel(book)
 }
@@ -165,17 +174,10 @@ func newNotionClient() *notionapi.Client {
 }
 
 // download a single gist and store in the cache for a given book
-func downloadSingleGist(gistID string) {
-	// must have 1 remaining arg that is book name
-	restArgs := flag.Args()
-	if len(restArgs) != 0 {
-		logf("-download-gist expects a name of a single book to use for cache\n")
-		logf("remaining args are: '%#v'\n", restArgs)
-	}
-	bookName := restArgs[0]
+func downloadSingleGist(book *Book, gistID string) {
+	bookName := book.DirShort
 	logf("Downloading gist '%s' and storing in the cache for the book '%s'\n", gistID, bookName)
-	path := filepath.Join("cache", bookName, "cache.txt")
-	cache := loadCache(path)
+	cache := loadCache(book)
 	gist := gistDownloadMust(gistID)
 	cache.saveGist(gistID, gist.Raw)
 	logf("Saved a gist\n")

@@ -225,7 +225,7 @@ func initBook(book *Book) {
 	u.CreateDirMust(dir)
 	logf("Created '%s' for book '%s'\n", dir, book.Title)
 	book.idToPage = map[string]*Page{}
-	book.cache = loadCache(book.cachePath())
+	book.cache = loadCache(book)
 }
 
 func downloadBook(book *Book) {

@@ -257,7 +257,15 @@ func copyFileMaybeMust(dst, src string) error {
 	return err
 }
 
+var (
+	didBuildFrontEnd = false
+)
+
 func buildFrontend() {
+	// only needs to do it once
+	if didBuildFrontEnd {
+		return
+	}
 	{
 		os.Remove("package-lock.json")
 		os.RemoveAll("node_modules")
@@ -270,4 +278,5 @@ func buildFrontend() {
 		cmd := exec.Command("yarn", "build-dev")
 		u.RunCmdMust(cmd)
 	}
+	didBuildFrontEnd = true
 }

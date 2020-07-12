@@ -138,7 +138,8 @@ func (c *Cache) getGistOuputBySha1(sha1 string) *CacheGistOutput {
 	return nil
 }
 
-func loadCache(path string) *Cache {
+func loadCache(book *Book) *Cache {
+	path := book.cachePath()
 	logf("loadCache: %s\n", path)
 	u.CreateDirForFileMust(path)
 
