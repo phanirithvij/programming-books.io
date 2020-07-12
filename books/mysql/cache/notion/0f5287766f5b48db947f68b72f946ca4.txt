@@ -1,0 +1,912 @@
+2089 1594556756890 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+      "table": "block"
+    }
+  ]
+}
+Response:+1889
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "30992216-e50c-433e-8e9f-c8283c4fe39f",
+          "58853444-49b5-4292-bc63-cc946139152d",
+          "4752d4e7-bb26-4791-9cd1-420d9b74938f",
+          "d82a9821-cb10-429e-b9f2-a114c0dc19df",
+          "95e58fc0-965f-4afe-8fbf-98b879bb531e",
+          "52b114ce-7979-4bec-a6b6-0bcbff101fed",
+          "7df1f856-e218-4996-9abd-1aa17aed7d15",
+          "37d7409c-000d-44e2-bb75-260aead2db9a",
+          "421269c8-7be0-43e1-a971-ee36e408c891",
+          "8c9bd25a-4019-40c3-9980-5b19b97bc676",
+          "739d6bf0-146a-418d-89ca-5e8a83585474",
+          "db94f92d-597f-4a17-ab43-ac0f493c4636",
+          "03fc1053-6b3e-4034-96b3-d1b7ca01b86a",
+          "b4b438c7-44f3-4b43-98d1-a1fd8a09cdd2",
+          "e6170ddb-dda7-4d79-aa1e-c5acf78b2b78",
+          "b607100c-f7ac-4006-a563-f3ecabc53805"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550383997038,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1550645160000,
+        "parent_id": "f396a67b-3772-4b0e-af59-b16f2eba71a6",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Error 1055 ONLY FULL GROUP BY something is not in GROUP BY clause ..."
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 11
+      }
+    }
+  ]
+}
+30410 1594556756891 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "0f528776-6f5b-48db-947f-68b72f946ca4",
+  "verticalColumns": false
+}
+Response:+30169
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "03fc1053-6b3e-4034-96b3-d1b7ca01b86a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997037,
+          "id": "03fc1053-6b3e-4034-96b3-d1b7ca01b86a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997037,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "You can change the mode by doing a "
+              ],
+              [
+                "SET",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " command."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "0f528776-6f5b-48db-947f-68b72f946ca4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "30992216-e50c-433e-8e9f-c8283c4fe39f",
+            "58853444-49b5-4292-bc63-cc946139152d",
+            "4752d4e7-bb26-4791-9cd1-420d9b74938f",
+            "d82a9821-cb10-429e-b9f2-a114c0dc19df",
+            "95e58fc0-965f-4afe-8fbf-98b879bb531e",
+            "52b114ce-7979-4bec-a6b6-0bcbff101fed",
+            "7df1f856-e218-4996-9abd-1aa17aed7d15",
+            "37d7409c-000d-44e2-bb75-260aead2db9a",
+            "421269c8-7be0-43e1-a971-ee36e408c891",
+            "8c9bd25a-4019-40c3-9980-5b19b97bc676",
+            "739d6bf0-146a-418d-89ca-5e8a83585474",
+            "db94f92d-597f-4a17-ab43-ac0f493c4636",
+            "03fc1053-6b3e-4034-96b3-d1b7ca01b86a",
+            "b4b438c7-44f3-4b43-98d1-a1fd8a09cdd2",
+            "e6170ddb-dda7-4d79-aa1e-c5acf78b2b78",
+            "b607100c-f7ac-4006-a563-f3ecabc53805"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997038,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550645160000,
+          "parent_id": "f396a67b-3772-4b0e-af59-b16f2eba71a6",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Error 1055 ONLY FULL GROUP BY something is not in GROUP BY clause ..."
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 11
+        }
+      },
+      "30992216-e50c-433e-8e9f-c8283c4fe39f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997022,
+          "id": "30992216-e50c-433e-8e9f-c8283c4fe39f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997022,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Introduction"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 5
+        }
+      },
+      "37d7409c-000d-44e2-bb75-260aead2db9a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997035,
+          "id": "37d7409c-000d-44e2-bb75-260aead2db9a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997035,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The MySQL team has been trying to fix this misfeature without messing up production code. They added a "
+              ],
+              [
+                "sql_mode",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " flag in 5.7.5 named "
+              ],
+              [
+                "ONLY_FULL_GROUP_BY",
+                [
+                  [
+                    "c"
+                  ],
+                  [
+                    "a",
+                    "http://dev.mysql.com/doc/refman/5.7/en/sql-mode.html"
+                  ]
+                ]
+              ],
+              [
+                " to compel standard behavior. In a recent release, they turned on that flag by default. When you upgraded your local MySQL to 5.7.14, the flag got switched on and your production code, dependent on the old extension, stopped working."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "421269c8-7be0-43e1-a971-ee36e408c891": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997035,
+          "id": "421269c8-7be0-43e1-a971-ee36e408c891",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997035,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If you’ve recently started getting 1055 errors, what are your choices?"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "4489ab73-989f-4ae9-9124-86561e165deb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "d25b2f34-014a-4ef0-9d74-c4e98f8ed143",
+            "56219ef2-122e-465d-b238-18097866679e",
+            "616df522-aae4-484e-af23-8fe9263ae02e",
+            "c3d9d8ec-faf6-43e4-a13e-13cbdef855cc",
+            "bc7ea9d4-892f-4285-b517-95fe05e9bd36",
+            "5da85f48-5311-4fc8-b300-e13859a363d2",
+            "fab6427e-36e2-4262-adf5-b7dd46cbf44d",
+            "de968e55-9310-4614-95f6-6bd52c22d03a",
+            "26e12d5b-31c2-4d4e-96b4-501e7e23e266",
+            "df3e984b-c17c-4ef4-bdc3-32de317ef279",
+            "bf61bb3b-7d3a-49ac-a27c-7b5ac3712e89",
+            "bed7e16d-ee0e-43f5-8f20-5c1bc79d5d17",
+            "f100905c-4337-4203-b989-b6dba6b5e3e1",
+            "77721c84-36f6-4ec6-be50-c45542d60fac",
+            "91d8d720-ad93-4cb1-921f-09b00f955fcd",
+            "bcfaf098-3cbc-4ac0-9044-431dae911b86",
+            "13248a60-0b81-44de-842e-54cdc88b9051",
+            "849a6ccd-a61b-495c-9656-9f42d5687472",
+            "5142c632-f25e-465d-b2a1-5bb0cb8e0e08",
+            "47b7955c-ab70-4367-a84e-ff21b06f98a9",
+            "a68130cc-cc60-491c-bd0c-75c5c5ef700b",
+            "d0746c8e-09b9-40ef-ab14-91487d6ba6c2",
+            "b1b394d0-cf8a-4184-8786-57837cf167ed",
+            "4f524c43-e2b6-4f62-8bd6-470ee0289a9c",
+            "7b2bfa8f-d128-4670-971d-e69ff2f63ebc",
+            "81dee265-723d-4c94-8abe-d31eaadd39d2",
+            "c795d9c6-98a8-453e-a469-05796163016d",
+            "03e33186-d847-4410-bb1e-7daf26a39b10",
+            "0957ac6d-9c0c-4615-bdb8-0398039bf034",
+            "b8296133-a75b-4356-8d96-05cf03235af0",
+            "a028e19b-c974-4984-98e7-194857fa7906",
+            "6a9276f7-10db-44b4-b0a1-17dc34ced22c",
+            "8f102458-c1e4-4c31-a1e4-d0cfee7ab6f7",
+            "4b4c66de-593f-495f-81b8-bd41df6c224e",
+            "e0600245-bb89-41f8-8c23-c0d95e413ad0",
+            "036d6e47-1c2f-463e-9078-f6a62ce71732",
+            "f0d9a5fa-7786-4daf-b38a-9d22e9dc8de5",
+            "85194797-8db1-46d5-94bb-3b680cd4adca",
+            "bb97282b-fd02-4292-9769-a1b5800dba9c",
+            "6629ab26-e674-4f59-ace6-f4cef06b3c3f",
+            "d5820ffa-9c58-4856-957d-d3184aad2a51",
+            "60daf2eb-78d1-42f7-a880-e0fabf971391",
+            "562d31ff-4c48-49a7-ad7e-5c6b39a2c993",
+            "bb732350-3d32-483f-acfb-50caa85e7ba3",
+            "4e857ca6-23cb-4e45-bf2e-60873f5c2b40",
+            "b6261c6a-c5d6-447a-94a0-6868e6461771",
+            "043cdc0a-6ffc-4ed1-92d5-e0a268681fc6",
+            "595fc428-7d2e-40b0-9396-a1a9d47d6cd1",
+            "015d0c61-e7d7-4648-a98b-ad0175a5813d",
+            "8edb469f-71c5-4589-bfc3-23f155af0544",
+            "e60647b4-82e1-404e-8c98-f806fb177282",
+            "93d56556-38f9-4554-93ab-a2960eb74c48",
+            "a14c3674-c8f3-42a7-bde0-6fe36822313f",
+            "16372fe8-f6c0-416e-9810-6e397303296a",
+            "0c249379-3ee3-4a2d-92d3-c1a4759c1ff3",
+            "4705933d-22cd-4df2-a2b6-5c6a93aa18c6",
+            "e360c96c-bb85-4530-8877-f40ef62a45ab",
+            "52f7847c-61a0-4bd2-a311-9830661e289c",
+            "37652373-ad36-4dfd-944b-d9b063f4d009",
+            "8b840615-7d69-43c4-a955-fa5e25657ef7",
+            "7f8f5bb9-8330-4707-82d2-5565aa66767a",
+            "47ee148c-2fa3-4add-bca2-42f5749df850",
+            "a92a060c-1ffd-4353-a6c6-d542d3bbf514",
+            "32080415-b71d-4b6e-9e23-aff2e8d908bb",
+            "f396a67b-3772-4b0e-af59-b16f2eba71a6",
+            "3e13ef24-307e-40d7-b1d1-f6665ac35a14",
+            "78907ef4-512f-456b-90d6-bf47f19fa4d1",
+            "7d64394f-a0b5-4b13-a19e-08f9141408ff",
+            "6f381ab2-57eb-4278-8206-8c544ab46e8e",
+            "20d08160-defc-4a9a-a9df-11cdd9ecbf68",
+            "d7c33f98-6aaf-44d3-aec4-88ba01863f63",
+            "bed1a394-7027-44ed-90c3-1c6b9457ab29",
+            "5926416c-afa0-4187-992b-26d580e8c93e",
+            "8298014c-0063-4e2c-aa5a-f60ac87dda4f"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550379688363,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "4489ab73-989f-4ae9-9124-86561e165deb",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605420000,
+          "parent_id": "6c2f9673-a6c8-4628-a442-8109849ed754",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential MySQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 210
+        }
+      },
+      "4752d4e7-bb26-4791-9cd1-420d9b74938f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997022,
+          "id": "4752d4e7-bb26-4791-9cd1-420d9b74938f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997022,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The MySQL team has been working to retire the nonstandard extension to "
+              ],
+              [
+                "GROUP BY",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", or at least to make it harder for query writing developers to be burned by it."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "52b114ce-7979-4bec-a6b6-0bcbff101fed": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997022,
+          "id": "52b114ce-7979-4bec-a6b6-0bcbff101fed",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997022,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In particular, it’s a bad idea to use "
+              ],
+              [
+                "SELECT *",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " in a "
+              ],
+              [
+                "GROUP BY",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " query, because a standard "
+              ],
+              [
+                "GROUP BY",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " clause requires enumerating the columns. Many developers have, unfortunately, done that."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "58853444-49b5-4292-bc63-cc946139152d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997022,
+          "id": "58853444-49b5-4292-bc63-cc946139152d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997022,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Recently, new versions of MySQL servers have begun to generate 1055 errors for queries that used to work. This topic explains those errors."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "739d6bf0-146a-418d-89ca-5e8a83585474": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997036,
+          "id": "739d6bf0-146a-418d-89ca-5e8a83585474",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997036,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "roll back to a version of MySQL compatible out-of-the-box with the application software you use."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 1
+        }
+      },
+      "7df1f856-e218-4996-9abd-1aa17aed7d15": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997023,
+          "id": "7df1f856-e218-4996-9abd-1aa17aed7d15",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997023,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Read this. https://dev.mysql.com/doc/refman/5.7/en/group-by-handling.html"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "8c9bd25a-4019-40c3-9980-5b19b97bc676": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997036,
+          "id": "8c9bd25a-4019-40c3-9980-5b19b97bc676",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997036,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "fix the offending SQL queries, or get their authors to do that."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 1
+        }
+      },
+      "95e58fc0-965f-4afe-8fbf-98b879bb531e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997022,
+          "id": "95e58fc0-965f-4afe-8fbf-98b879bb531e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997022,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "For a long time now, MySQL has contained a notorious nonstandard extension to "
+              ],
+              [
+                "GROUP BY",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", which allows oddball behavior in the name of efficiency. This extension has allowed countless developers around the world to use "
+              ],
+              [
+                "GROUP BY",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " in production code without completely understanding what they were doing."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "b4b438c7-44f3-4b43-98d1-a1fd8a09cdd2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997037,
+          "id": "b4b438c7-44f3-4b43-98d1-a1fd8a09cdd2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997037,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "SET  sql_mode = 'STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "b607100c-f7ac-4006-a563-f3ecabc53805": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997038,
+          "id": "b607100c-f7ac-4006-a563-f3ecabc53805",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997038,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Or, you can find "
+              ],
+              [
+                "the init file in your MySQL installation",
+                [
+                  [
+                    "a",
+                    "http://dev.mysql.com/doc/refman/5.7/en/server-configuration-defaults.html"
+                  ]
+                ]
+              ],
+              [
+                ", locate the "
+              ],
+              [
+                "sql_mode=",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " line, and change it to omit "
+              ],
+              [
+                "ONLY_FULL_GROUP_BY",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", and restart your server."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "d82a9821-cb10-429e-b9f2-a114c0dc19df": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997022,
+          "id": "d82a9821-cb10-429e-b9f2-a114c0dc19df",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997022,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Remarks"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 5
+        }
+      },
+      "db94f92d-597f-4a17-ab43-ac0f493c4636": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997037,
+          "id": "db94f92d-597f-4a17-ab43-ac0f493c4636",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997037,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "change your server’s "
+              ],
+              [
+                "sql_mode",
+                [
+                  [
+                    "c"
+                  ],
+                  [
+                    "a",
+                    "http://dev.mysql.com/doc/refman/5.7/en/sql-mode.html"
+                  ]
+                ]
+              ],
+              [
+                " to get rid of the newly set "
+              ],
+              [
+                "ONLY_FULL_GROUP_BY",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " mode."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 1
+        }
+      },
+      "e6170ddb-dda7-4d79-aa1e-c5acf78b2b78": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383997037,
+          "id": "e6170ddb-dda7-4d79-aa1e-c5acf78b2b78",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550383997037,
+          "parent_id": "0f528776-6f5b-48db-947f-68b72f946ca4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "should do the trick if you do it right after your application connects to MySQL."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "f396a67b-3772-4b0e-af59-b16f2eba71a6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "0f528776-6f5b-48db-947f-68b72f946ca4",
+            "86010fa5-49f1-4535-b1bb-48ce529521fe",
+            "b71dc6ea-dad9-4516-bd93-08d54fef0540",
+            "c1212f9e-2710-4be6-8287-d59a4e09c77d",
+            "f201ce7a-029c-46bc-8015-220e7569eb7b"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550383980000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "f396a67b-3772-4b0e-af59-b16f2eba71a6",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550384280000,
+          "parent_id": "4489ab73-989f-4ae9-9124-86561e165deb",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Error 1055 ONLY FULL GROUP BY"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 44
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

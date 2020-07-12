@@ -1,0 +1,710 @@
+1894 1594556736929 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+      "table": "block"
+    }
+  ]
+}
+Response:+1694
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "3086a856-4081-4f2d-a461-883b448f2902",
+          "c45c6917-ae56-4647-9d59-8f3bec6782ba",
+          "36de55d0-73cb-4e39-8174-25a576426fa3",
+          "57133b80-179a-4cd4-9859-8bbf5168207e",
+          "70cd1927-9067-4cf9-a85c-c4b6367c6c49",
+          "c95e4976-de1e-49bf-8e35-a469ad7e0ad5",
+          "2938c5cf-aa2e-4397-b98f-59ad4819b67f",
+          "2372b97f-e3bf-40bb-b3f3-7c2020088202",
+          "cad6a0bb-8585-4f24-975a-c4e4d08f5e55",
+          "6a3cde7d-95ca-4aea-854e-c77318c18639",
+          "eb2447dd-edca-4f0b-af5a-0a7d7e25cd67",
+          "a6561d60-b40e-4e19-8481-e870a61ac7bb",
+          "3e1d8fbd-89d0-4cb2-b969-c24f86a1976b"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550381635479,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1550566260000,
+        "parent_id": "bcfaf098-3cbc-4ac0-9044-431dae911b86",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Load data with duplicates"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 8
+      }
+    }
+  ]
+}
+24321 1594556736929 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+  "verticalColumns": false
+}
+Response:+24080
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "2372b97f-e3bf-40bb-b3f3-7c2020088202": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635478,
+          "id": "2372b97f-e3bf-40bb-b3f3-7c2020088202",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381635478,
+          "parent_id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "LOAD DATA INFILE ‘fname’ IGNORE"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 1
+        }
+      },
+      "2938c5cf-aa2e-4397-b98f-59ad4819b67f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635478,
+          "id": "2938c5cf-aa2e-4397-b98f-59ad4819b67f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381635478,
+          "parent_id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "LOAD DATA INFILE 'path of the file/file_name.txt' \nREPLACE INTO TABLE employee"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "3086a856-4081-4f2d-a461-883b448f2902": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635475,
+          "id": "3086a856-4081-4f2d-a461-883b448f2902",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381635475,
+          "parent_id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If you use the "
+              ],
+              [
+                "LOAD DATA INFILE",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " command to populate a table with existing data, you will often find that the import fails due to duplicates. There are several possible ways to overcome this problem."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "36de55d0-73cb-4e39-8174-25a576426fa3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635478,
+          "id": "36de55d0-73cb-4e39-8174-25a576426fa3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381635478,
+          "parent_id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If this option has been enabled in your server, it can be used to load a file that exists on the client computer rather than the server. A side effect is that duplicate rows for unique values are ignored."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "3e1d8fbd-89d0-4cb2-b969-c24f86a1976b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635479,
+          "id": "3e1d8fbd-89d0-4cb2-b969-c24f86a1976b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381635479,
+          "parent_id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "INSERT INTO employee SELECT * FROM intermediary WHERE ..."
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "4489ab73-989f-4ae9-9124-86561e165deb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "d25b2f34-014a-4ef0-9d74-c4e98f8ed143",
+            "56219ef2-122e-465d-b238-18097866679e",
+            "616df522-aae4-484e-af23-8fe9263ae02e",
+            "c3d9d8ec-faf6-43e4-a13e-13cbdef855cc",
+            "bc7ea9d4-892f-4285-b517-95fe05e9bd36",
+            "5da85f48-5311-4fc8-b300-e13859a363d2",
+            "fab6427e-36e2-4262-adf5-b7dd46cbf44d",
+            "de968e55-9310-4614-95f6-6bd52c22d03a",
+            "26e12d5b-31c2-4d4e-96b4-501e7e23e266",
+            "df3e984b-c17c-4ef4-bdc3-32de317ef279",
+            "bf61bb3b-7d3a-49ac-a27c-7b5ac3712e89",
+            "bed7e16d-ee0e-43f5-8f20-5c1bc79d5d17",
+            "f100905c-4337-4203-b989-b6dba6b5e3e1",
+            "77721c84-36f6-4ec6-be50-c45542d60fac",
+            "91d8d720-ad93-4cb1-921f-09b00f955fcd",
+            "bcfaf098-3cbc-4ac0-9044-431dae911b86",
+            "13248a60-0b81-44de-842e-54cdc88b9051",
+            "849a6ccd-a61b-495c-9656-9f42d5687472",
+            "5142c632-f25e-465d-b2a1-5bb0cb8e0e08",
+            "47b7955c-ab70-4367-a84e-ff21b06f98a9",
+            "a68130cc-cc60-491c-bd0c-75c5c5ef700b",
+            "d0746c8e-09b9-40ef-ab14-91487d6ba6c2",
+            "b1b394d0-cf8a-4184-8786-57837cf167ed",
+            "4f524c43-e2b6-4f62-8bd6-470ee0289a9c",
+            "7b2bfa8f-d128-4670-971d-e69ff2f63ebc",
+            "81dee265-723d-4c94-8abe-d31eaadd39d2",
+            "c795d9c6-98a8-453e-a469-05796163016d",
+            "03e33186-d847-4410-bb1e-7daf26a39b10",
+            "0957ac6d-9c0c-4615-bdb8-0398039bf034",
+            "b8296133-a75b-4356-8d96-05cf03235af0",
+            "a028e19b-c974-4984-98e7-194857fa7906",
+            "6a9276f7-10db-44b4-b0a1-17dc34ced22c",
+            "8f102458-c1e4-4c31-a1e4-d0cfee7ab6f7",
+            "4b4c66de-593f-495f-81b8-bd41df6c224e",
+            "e0600245-bb89-41f8-8c23-c0d95e413ad0",
+            "036d6e47-1c2f-463e-9078-f6a62ce71732",
+            "f0d9a5fa-7786-4daf-b38a-9d22e9dc8de5",
+            "85194797-8db1-46d5-94bb-3b680cd4adca",
+            "bb97282b-fd02-4292-9769-a1b5800dba9c",
+            "6629ab26-e674-4f59-ace6-f4cef06b3c3f",
+            "d5820ffa-9c58-4856-957d-d3184aad2a51",
+            "60daf2eb-78d1-42f7-a880-e0fabf971391",
+            "562d31ff-4c48-49a7-ad7e-5c6b39a2c993",
+            "bb732350-3d32-483f-acfb-50caa85e7ba3",
+            "4e857ca6-23cb-4e45-bf2e-60873f5c2b40",
+            "b6261c6a-c5d6-447a-94a0-6868e6461771",
+            "043cdc0a-6ffc-4ed1-92d5-e0a268681fc6",
+            "595fc428-7d2e-40b0-9396-a1a9d47d6cd1",
+            "015d0c61-e7d7-4648-a98b-ad0175a5813d",
+            "8edb469f-71c5-4589-bfc3-23f155af0544",
+            "e60647b4-82e1-404e-8c98-f806fb177282",
+            "93d56556-38f9-4554-93ab-a2960eb74c48",
+            "a14c3674-c8f3-42a7-bde0-6fe36822313f",
+            "16372fe8-f6c0-416e-9810-6e397303296a",
+            "0c249379-3ee3-4a2d-92d3-c1a4759c1ff3",
+            "4705933d-22cd-4df2-a2b6-5c6a93aa18c6",
+            "e360c96c-bb85-4530-8877-f40ef62a45ab",
+            "52f7847c-61a0-4bd2-a311-9830661e289c",
+            "37652373-ad36-4dfd-944b-d9b063f4d009",
+            "8b840615-7d69-43c4-a955-fa5e25657ef7",
+            "7f8f5bb9-8330-4707-82d2-5565aa66767a",
+            "47ee148c-2fa3-4add-bca2-42f5749df850",
+            "a92a060c-1ffd-4353-a6c6-d542d3bbf514",
+            "32080415-b71d-4b6e-9e23-aff2e8d908bb",
+            "f396a67b-3772-4b0e-af59-b16f2eba71a6",
+            "3e13ef24-307e-40d7-b1d1-f6665ac35a14",
+            "78907ef4-512f-456b-90d6-bf47f19fa4d1",
+            "7d64394f-a0b5-4b13-a19e-08f9141408ff",
+            "6f381ab2-57eb-4278-8206-8c544ab46e8e",
+            "20d08160-defc-4a9a-a9df-11cdd9ecbf68",
+            "d7c33f98-6aaf-44d3-aec4-88ba01863f63",
+            "bed1a394-7027-44ed-90c3-1c6b9457ab29",
+            "5926416c-afa0-4187-992b-26d580e8c93e",
+            "8298014c-0063-4e2c-aa5a-f60ac87dda4f"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550379688363,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "4489ab73-989f-4ae9-9124-86561e165deb",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605420000,
+          "parent_id": "6c2f9673-a6c8-4628-a442-8109849ed754",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential MySQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 210
+        }
+      },
+      "57133b80-179a-4cd4-9859-8bbf5168207e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635478,
+          "id": "57133b80-179a-4cd4-9859-8bbf5168207e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381635478,
+          "parent_id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "LOAD DATA LOCAL INFILE 'path of the file/file_name.txt' \nINTO TABLE employee"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "6a3cde7d-95ca-4aea-854e-c77318c18639": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635478,
+          "id": "6a3cde7d-95ca-4aea-854e-c77318c18639",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381635478,
+          "parent_id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "LOAD DATA INFILE 'path of the file/file_name.txt' \nIGNORE INTO TABLE employee"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "70cd1927-9067-4cf9-a85c-c4b6367c6c49": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635478,
+          "id": "70cd1927-9067-4cf9-a85c-c4b6367c6c49",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381635478,
+          "parent_id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "LOAD DATA INFILE ‘fname’ REPLACE"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 5
+        }
+      },
+      "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "3086a856-4081-4f2d-a461-883b448f2902",
+            "c45c6917-ae56-4647-9d59-8f3bec6782ba",
+            "36de55d0-73cb-4e39-8174-25a576426fa3",
+            "57133b80-179a-4cd4-9859-8bbf5168207e",
+            "70cd1927-9067-4cf9-a85c-c4b6367c6c49",
+            "c95e4976-de1e-49bf-8e35-a469ad7e0ad5",
+            "2938c5cf-aa2e-4397-b98f-59ad4819b67f",
+            "2372b97f-e3bf-40bb-b3f3-7c2020088202",
+            "cad6a0bb-8585-4f24-975a-c4e4d08f5e55",
+            "6a3cde7d-95ca-4aea-854e-c77318c18639",
+            "eb2447dd-edca-4f0b-af5a-0a7d7e25cd67",
+            "a6561d60-b40e-4e19-8481-e870a61ac7bb",
+            "3e1d8fbd-89d0-4cb2-b969-c24f86a1976b"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635479,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550566260000,
+          "parent_id": "bcfaf098-3cbc-4ac0-9044-431dae911b86",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Load data with duplicates"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 8
+        }
+      },
+      "a6561d60-b40e-4e19-8481-e870a61ac7bb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635479,
+          "id": "a6561d60-b40e-4e19-8481-e870a61ac7bb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381635479,
+          "parent_id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Sometimes ignoring or replacing all duplicates may not be the ideal option. You may need to make decisions based on the contents of other columns. In that case the best option is to load into an intermediary table and transfer from there."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "bcfaf098-3cbc-4ac0-9044-431dae911b86": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "9fad2849-8b0f-46e9-8536-7eaa7b59db22",
+            "28ebe4aa-5002-4e19-9de3-3bb3db333869",
+            "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+            "884181e9-a404-40b6-8d1e-d9c122f64b60",
+            "0906e492-9173-4d88-8343-96804ed30590"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381580000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "bcfaf098-3cbc-4ac0-9044-431dae911b86",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381640000,
+          "parent_id": "4489ab73-989f-4ae9-9124-86561e165deb",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "LOAD DATA INFILE"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 43
+        }
+      },
+      "c45c6917-ae56-4647-9d59-8f3bec6782ba": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635478,
+          "id": "c45c6917-ae56-4647-9d59-8f3bec6782ba",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381635478,
+          "parent_id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "LOAD DATA LOCAL"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 1
+        }
+      },
+      "c95e4976-de1e-49bf-8e35-a469ad7e0ad5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635478,
+          "id": "c95e4976-de1e-49bf-8e35-a469ad7e0ad5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381635478,
+          "parent_id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "When the replace keyword is used duplicate unique or primary keys will result in the existing row being replaced with new ones"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "cad6a0bb-8585-4f24-975a-c4e4d08f5e55": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635478,
+          "id": "cad6a0bb-8585-4f24-975a-c4e4d08f5e55",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381635478,
+          "parent_id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The opposite of "
+              ],
+              [
+                "REPLACE",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", existing rows will be preserved and new ones ignored. This behavior is similar to "
+              ],
+              [
+                "LOCAL",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " described above. However the file need not exist on the client computer."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "eb2447dd-edca-4f0b-af5a-0a7d7e25cd67": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550381635479,
+          "id": "eb2447dd-edca-4f0b-af5a-0a7d7e25cd67",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550381635479,
+          "parent_id": "8d5a5bc7-9f1d-4215-a7f8-4a427ee9dded",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Load via intermediary table"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

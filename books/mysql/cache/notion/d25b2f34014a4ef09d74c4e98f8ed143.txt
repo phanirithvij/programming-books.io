@@ -1,0 +1,451 @@
+1551 1594556648981 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "d25b2f34-014a-4ef0-9d74-c4e98f8ed143",
+      "table": "block"
+    }
+  ]
+}
+Response:+1351
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "eedd11ff-e636-4816-80cf-64a1af29ea58",
+          "771ff2af-e890-4d9e-9911-15fd8f3ce8c3",
+          "aca59b62-2dba-4d45-8867-a33210ca4890"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550380800000,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "d25b2f34-014a-4ef0-9d74-c4e98f8ed143",
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1550380980000,
+        "parent_id": "4489ab73-989f-4ae9-9124-86561e165deb",
+        "parent_table": "block",
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+          }
+        ],
+        "properties": {
+          "title": [
+            [
+              "Getting started with MySQL"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 45
+      }
+    }
+  ]
+}
+16020 1594556648981 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "d25b2f34-014a-4ef0-9d74-c4e98f8ed143",
+  "verticalColumns": false
+}
+Response:+15779
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "4489ab73-989f-4ae9-9124-86561e165deb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "d25b2f34-014a-4ef0-9d74-c4e98f8ed143",
+            "56219ef2-122e-465d-b238-18097866679e",
+            "616df522-aae4-484e-af23-8fe9263ae02e",
+            "c3d9d8ec-faf6-43e4-a13e-13cbdef855cc",
+            "bc7ea9d4-892f-4285-b517-95fe05e9bd36",
+            "5da85f48-5311-4fc8-b300-e13859a363d2",
+            "fab6427e-36e2-4262-adf5-b7dd46cbf44d",
+            "de968e55-9310-4614-95f6-6bd52c22d03a",
+            "26e12d5b-31c2-4d4e-96b4-501e7e23e266",
+            "df3e984b-c17c-4ef4-bdc3-32de317ef279",
+            "bf61bb3b-7d3a-49ac-a27c-7b5ac3712e89",
+            "bed7e16d-ee0e-43f5-8f20-5c1bc79d5d17",
+            "f100905c-4337-4203-b989-b6dba6b5e3e1",
+            "77721c84-36f6-4ec6-be50-c45542d60fac",
+            "91d8d720-ad93-4cb1-921f-09b00f955fcd",
+            "bcfaf098-3cbc-4ac0-9044-431dae911b86",
+            "13248a60-0b81-44de-842e-54cdc88b9051",
+            "849a6ccd-a61b-495c-9656-9f42d5687472",
+            "5142c632-f25e-465d-b2a1-5bb0cb8e0e08",
+            "47b7955c-ab70-4367-a84e-ff21b06f98a9",
+            "a68130cc-cc60-491c-bd0c-75c5c5ef700b",
+            "d0746c8e-09b9-40ef-ab14-91487d6ba6c2",
+            "b1b394d0-cf8a-4184-8786-57837cf167ed",
+            "4f524c43-e2b6-4f62-8bd6-470ee0289a9c",
+            "7b2bfa8f-d128-4670-971d-e69ff2f63ebc",
+            "81dee265-723d-4c94-8abe-d31eaadd39d2",
+            "c795d9c6-98a8-453e-a469-05796163016d",
+            "03e33186-d847-4410-bb1e-7daf26a39b10",
+            "0957ac6d-9c0c-4615-bdb8-0398039bf034",
+            "b8296133-a75b-4356-8d96-05cf03235af0",
+            "a028e19b-c974-4984-98e7-194857fa7906",
+            "6a9276f7-10db-44b4-b0a1-17dc34ced22c",
+            "8f102458-c1e4-4c31-a1e4-d0cfee7ab6f7",
+            "4b4c66de-593f-495f-81b8-bd41df6c224e",
+            "e0600245-bb89-41f8-8c23-c0d95e413ad0",
+            "036d6e47-1c2f-463e-9078-f6a62ce71732",
+            "f0d9a5fa-7786-4daf-b38a-9d22e9dc8de5",
+            "85194797-8db1-46d5-94bb-3b680cd4adca",
+            "bb97282b-fd02-4292-9769-a1b5800dba9c",
+            "6629ab26-e674-4f59-ace6-f4cef06b3c3f",
+            "d5820ffa-9c58-4856-957d-d3184aad2a51",
+            "60daf2eb-78d1-42f7-a880-e0fabf971391",
+            "562d31ff-4c48-49a7-ad7e-5c6b39a2c993",
+            "bb732350-3d32-483f-acfb-50caa85e7ba3",
+            "4e857ca6-23cb-4e45-bf2e-60873f5c2b40",
+            "b6261c6a-c5d6-447a-94a0-6868e6461771",
+            "043cdc0a-6ffc-4ed1-92d5-e0a268681fc6",
+            "595fc428-7d2e-40b0-9396-a1a9d47d6cd1",
+            "015d0c61-e7d7-4648-a98b-ad0175a5813d",
+            "8edb469f-71c5-4589-bfc3-23f155af0544",
+            "e60647b4-82e1-404e-8c98-f806fb177282",
+            "93d56556-38f9-4554-93ab-a2960eb74c48",
+            "a14c3674-c8f3-42a7-bde0-6fe36822313f",
+            "16372fe8-f6c0-416e-9810-6e397303296a",
+            "0c249379-3ee3-4a2d-92d3-c1a4759c1ff3",
+            "4705933d-22cd-4df2-a2b6-5c6a93aa18c6",
+            "e360c96c-bb85-4530-8877-f40ef62a45ab",
+            "52f7847c-61a0-4bd2-a311-9830661e289c",
+            "37652373-ad36-4dfd-944b-d9b063f4d009",
+            "8b840615-7d69-43c4-a955-fa5e25657ef7",
+            "7f8f5bb9-8330-4707-82d2-5565aa66767a",
+            "47ee148c-2fa3-4add-bca2-42f5749df850",
+            "a92a060c-1ffd-4353-a6c6-d542d3bbf514",
+            "32080415-b71d-4b6e-9e23-aff2e8d908bb",
+            "f396a67b-3772-4b0e-af59-b16f2eba71a6",
+            "3e13ef24-307e-40d7-b1d1-f6665ac35a14",
+            "78907ef4-512f-456b-90d6-bf47f19fa4d1",
+            "7d64394f-a0b5-4b13-a19e-08f9141408ff",
+            "6f381ab2-57eb-4278-8206-8c544ab46e8e",
+            "20d08160-defc-4a9a-a9df-11cdd9ecbf68",
+            "d7c33f98-6aaf-44d3-aec4-88ba01863f63",
+            "bed1a394-7027-44ed-90c3-1c6b9457ab29",
+            "5926416c-afa0-4187-992b-26d580e8c93e",
+            "8298014c-0063-4e2c-aa5a-f60ac87dda4f"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550379688363,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "4489ab73-989f-4ae9-9124-86561e165deb",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605420000,
+          "parent_id": "6c2f9673-a6c8-4628-a442-8109849ed754",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential MySQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 210
+        }
+      },
+      "771ff2af-e890-4d9e-9911-15fd8f3ce8c3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "bc8fb8df-8703-40ea-8110-6a5c91c7e084",
+            "12a5d7bb-54af-4342-b2eb-8be580d73243",
+            "3b7d5952-b71d-4077-a40d-432649c93148",
+            "ad8f490d-8e36-46de-aca9-e8d008238d32",
+            "4691c4c8-db38-4862-b6c2-5b10b1d8afd0",
+            "92cb8882-c649-4f83-8339-2acbe55c884e",
+            "650cc631-4b3a-457d-967b-d4ff1548de95",
+            "d737625c-336f-4683-ae71-1256285806f6",
+            "05710cf4-5789-4c2b-b86b-0f264eacd07d",
+            "bf7d5f92-4202-4071-8b8d-7b190bd18c5c",
+            "5386987c-3872-4c6d-b6b1-ea4123f982c7",
+            "0a6b53ff-b69c-465d-b885-7b96bcfed7de",
+            "e7e3e3d7-3134-4a77-b28f-666814683ba1",
+            "f9e50621-8a59-4095-95db-d8cc6181fa49",
+            "7323b782-bbe6-4767-bf59-f277cbd921db",
+            "c252ea08-1cc4-471f-bea9-d35e0633bdc8",
+            "a0ad7a38-c26d-4a37-86bd-0f230871f04c",
+            "2b8730f6-9ea9-429b-b86e-4d013c837249",
+            "86629048-8984-4f02-8931-fa93f36742a7",
+            "85bccf0c-f39e-4399-8894-28b27a4c6870",
+            "9da20ea6-e62e-4a66-a491-f9b5ea8d9963",
+            "458690eb-66b5-46de-98e9-da3c305bc7bb",
+            "c64fe0ad-7e30-434f-9390-8ed169c5bbb0",
+            "9eabd937-08cd-4a66-b79b-374f230ee648",
+            "6ec53627-70a5-423a-bca5-3c6f2e45e864",
+            "18c8c4f9-5af2-4425-bc70-8d68b042d147",
+            "4150b299-dd91-479a-8c4f-d910e5409919",
+            "84813a73-02bc-4059-98ef-f7c35be30b94",
+            "90ad07bf-c3be-4945-b65c-0f432f20b288",
+            "7d691a5a-bb49-4789-936f-3db7239acb55",
+            "4279a000-4dff-4d4d-9ab3-c68af592b680",
+            "fe16700c-ed2e-45f5-9d70-4a4b6f2fb640",
+            "4dd57ac5-9aca-4e6c-b615-d1a38bb29f04",
+            "d1ecb18f-1c2f-4324-8f49-af6c6445d705",
+            "2c6cded5-06e7-4186-826e-23c49892895e",
+            "ca0517c0-b6eb-49db-bbd3-7f55f18963b2",
+            "ba7bdcc8-364c-4416-b8f9-f9ad4c4a229e",
+            "4ac598d3-9987-40e4-9119-44ba0ed36f1b",
+            "4c6168f7-5851-46d2-ace9-15bd7f76b50e",
+            "d0a995d0-4ffa-40c4-ac36-d621654ad9ff",
+            "a420dcdc-bd6f-435b-a64a-1ef218e3366f",
+            "6c37bd6d-d342-4815-bd45-afeecc4e551a",
+            "3931e5b4-2cfe-4bca-b10e-d3f55ddfc7fe",
+            "ded3ba8a-d5b4-4804-b597-1228c18d0b95",
+            "7b90c303-2f2c-4b5b-8331-3388c50d4a8a",
+            "19d21845-7d17-4312-81e5-e63fb87b9813",
+            "d40b4d3c-e5f5-46ed-a800-814e4d65d8d4",
+            "6db86f5c-f66c-40ab-b792-ef62ece7fe50",
+            "2c55f711-43ad-4781-bb2a-7e7b2ba57dc6",
+            "0cd0844e-6e16-457e-9d0b-3f18e6dfa3d0",
+            "f499d256-e364-4849-bbc7-2276558c9645",
+            "cad7381c-0ff3-4b98-8a6a-766209b9aa44",
+            "857db799-a668-4d51-9209-8ea8476a4f99",
+            "59350fce-30d2-4e6a-8494-e129ae7a6b71",
+            "7811fe17-6312-4bb8-a9fe-583295bd7ec2",
+            "0d82e4f7-016b-43ad-b664-c7925ea8094c",
+            "d1d6e8ab-9bd5-46ac-a8e3-7443cc4e8a83",
+            "355d07f7-10bd-446c-ba30-0563cf1d8b68",
+            "c78c2d4c-7344-4a94-853a-9a0d53a9956f",
+            "b3d4f467-1101-4695-9be2-86eeb0c37735",
+            "5568bab2-8dd6-4b10-8b5e-7fc36926a770",
+            "cac76e65-e359-4915-ae64-799017328de8",
+            "b6578792-7ecd-4d3e-9aa0-2982bb182a42",
+            "a00ee645-1556-42d9-a2e6-98b7f289fab8",
+            "2b2a3157-442b-46f4-a29f-429bdc475b61",
+            "8a7aaadc-8bb6-497c-9742-8e16f3e4c6d9",
+            "51ac4524-863e-491d-b7d8-f0975bb6ae7c",
+            "f8c74760-aab7-4602-956e-2ea18b6a847a",
+            "a761b887-b51d-415e-8121-3e55c520c77d",
+            "c82e762b-7467-43c1-8815-ae7061eb08c7",
+            "072edc96-3b1e-4264-9fe0-a980b058f8fb",
+            "88741121-b067-48ac-b291-7401d1b56a08",
+            "331cc47a-e05b-4b91-b9dc-df4c97355186",
+            "9a78508e-730d-46a0-8daa-f04c7a125cdc",
+            "03f1e7f5-22fb-43ad-9001-d27f531c3c36",
+            "b6601cc4-9795-4f21-a446-50015075e540",
+            "f6bf7a54-13d5-4b30-a432-f1e45cb17b1a",
+            "2155be61-27c8-402a-b62d-2792706ff139",
+            "d20b315a-9073-4529-9fea-ffe44052a04d",
+            "32b45559-f9d3-49a3-adb7-d8e7c959d13f",
+            "9ab12381-adc3-446c-9ccc-32f6218c12f8",
+            "f8c81311-2d5e-4609-b34b-e1df7431a344"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550380846619,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "771ff2af-e890-4d9e-9911-15fd8f3ce8c3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550563200000,
+          "parent_id": "d25b2f34-014a-4ef0-9d74-c4e98f8ed143",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Getting Started"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 19
+        }
+      },
+      "aca59b62-2dba-4d45-8867-a33210ca4890": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4e580257-4d30-4f1b-9923-624ba4435e37",
+            "fe404842-4c15-453d-a735-33d810ff232a",
+            "01df2961-8751-42a9-88f5-7ff8a34aa5ad",
+            "e7d1f67e-bdce-48f9-b917-c049096f8b80",
+            "c88d5ba0-d0ae-4add-afbc-db222c451ed3",
+            "2c09a304-6c23-4852-b955-ebed170e5d16",
+            "0e4d0a4c-5953-4abd-ad0c-fd0a9d98ec23",
+            "4a46afa8-2fab-4f9c-9bba-0f16d9636778"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550380847347,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "aca59b62-2dba-4d45-8867-a33210ca4890",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550563200000,
+          "parent_id": "d25b2f34-014a-4ef0-9d74-c4e98f8ed143",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Information Schema Examples"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 8
+        }
+      },
+      "d25b2f34-014a-4ef0-9d74-c4e98f8ed143": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "eedd11ff-e636-4816-80cf-64a1af29ea58",
+            "771ff2af-e890-4d9e-9911-15fd8f3ce8c3",
+            "aca59b62-2dba-4d45-8867-a33210ca4890"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550380800000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "d25b2f34-014a-4ef0-9d74-c4e98f8ed143",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550380980000,
+          "parent_id": "4489ab73-989f-4ae9-9124-86561e165deb",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Getting started with MySQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 45
+        }
+      },
+      "eedd11ff-e636-4816-80cf-64a1af29ea58": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "672d9dcc-1ca4-4360-a462-41b609942a6c",
+            "10cd0b8c-2d6e-4859-84ea-d568c55b6ddb",
+            "9f117347-2afc-48e3-bf45-b49383257aa2",
+            "c0779d8b-5932-4019-8975-d676a75e2cbf",
+            "da5d3e4a-261f-4d97-9834-bbae18c1fedc",
+            "3ffe53fa-9a97-4ebf-8934-bc5368893ab7",
+            "02dbc072-5499-4c11-bea3-8b2c9b46e08b",
+            "8ae6497b-a426-4726-849b-98fb1353f5cb"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550380845505,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "eedd11ff-e636-4816-80cf-64a1af29ea58",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550563080000,
+          "parent_id": "d25b2f34-014a-4ef0-9d74-c4e98f8ed143",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Getting started with MySQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 8
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

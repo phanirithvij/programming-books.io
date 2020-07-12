@@ -1,0 +1,915 @@
+1978 1594556688318 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+      "table": "block"
+    }
+  ]
+}
+Response:+1778
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "28125b2b-1443-4957-bb9a-05ba20bd327e",
+          "0244db34-ce10-490a-8a64-65bfff3bac43",
+          "c10c307d-2011-4e40-9c06-373f6dac506b",
+          "ef5f754e-d75c-43cf-a5f3-7c2ce84eee3e",
+          "c7bb375f-a620-407e-b674-1e5a88c04a6c",
+          "7ea9323f-ec1c-455d-8ae2-2c498fe3b2f4",
+          "244e9ce0-f843-4f68-b318-99458890074e",
+          "ad5dc4eb-d99e-4a38-99a7-a5530183049b",
+          "e9360b4c-5b00-44f6-a60c-9aa716253fd2",
+          "de44ab46-b2d8-4084-86ad-040b0a5acdb1",
+          "871fe391-d33c-482e-8908-b6dc1a62bcad",
+          "376ce0b4-f115-4321-a0b2-d8bab46e82e6",
+          "81b3c1b8-e9e6-4558-ad7d-ec68d8832a36",
+          "69421f11-9a68-4505-b394-c0cad0c830d8",
+          "972640b3-b13a-4949-bf14-47466639d386"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550382619181,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1550568420000,
+        "parent_id": "562d31ff-4c48-49a7-ad7e-5c6b39a2c993",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Error Log"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 8
+      }
+    }
+  ]
+}
+29636 1594556688318 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+  "verticalColumns": false
+}
+Response:+29395
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "0244db34-ce10-490a-8a64-65bfff3bac43": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619160,
+          "id": "0244db34-ce10-490a-8a64-65bfff3bac43",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619160,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The following is an example of its contents:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "244e9ce0-f843-4f68-b318-99458890074e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619161,
+          "id": "244e9ce0-f843-4f68-b318-99458890074e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619161,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The GLOBAL variable "
+              ],
+              [
+                "log_warnings",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " sets the level for verbosity which varies by server version. The following snippet illustrates:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "28125b2b-1443-4957-bb9a-05ba20bd327e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619157,
+          "id": "28125b2b-1443-4957-bb9a-05ba20bd327e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619157,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The Error Log is populated with start and stop information, and critical events encountered by the server."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "376ce0b4-f115-4321-a0b2-d8bab46e82e6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619164,
+          "id": "376ce0b4-f115-4321-a0b2-d8bab46e82e6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619164,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "MySQL 5.7.2 expanded the warning level verbosity to 3 and added the GLOBAL "
+              ],
+              [
+                "log_error_verbosity",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". Again, it was "
+              ],
+              [
+                "introduced",
+                [
+                  [
+                    "a",
+                    "http://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_error_verbosity"
+                  ]
+                ]
+              ],
+              [
+                " in 5.7.2. It can be set dynamically and checked as a variable or set via "
+              ],
+              [
+                "cnf",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " or "
+              ],
+              [
+                "ini",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " configuration file settings."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "4489ab73-989f-4ae9-9124-86561e165deb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "d25b2f34-014a-4ef0-9d74-c4e98f8ed143",
+            "56219ef2-122e-465d-b238-18097866679e",
+            "616df522-aae4-484e-af23-8fe9263ae02e",
+            "c3d9d8ec-faf6-43e4-a13e-13cbdef855cc",
+            "bc7ea9d4-892f-4285-b517-95fe05e9bd36",
+            "5da85f48-5311-4fc8-b300-e13859a363d2",
+            "fab6427e-36e2-4262-adf5-b7dd46cbf44d",
+            "de968e55-9310-4614-95f6-6bd52c22d03a",
+            "26e12d5b-31c2-4d4e-96b4-501e7e23e266",
+            "df3e984b-c17c-4ef4-bdc3-32de317ef279",
+            "bf61bb3b-7d3a-49ac-a27c-7b5ac3712e89",
+            "bed7e16d-ee0e-43f5-8f20-5c1bc79d5d17",
+            "f100905c-4337-4203-b989-b6dba6b5e3e1",
+            "77721c84-36f6-4ec6-be50-c45542d60fac",
+            "91d8d720-ad93-4cb1-921f-09b00f955fcd",
+            "bcfaf098-3cbc-4ac0-9044-431dae911b86",
+            "13248a60-0b81-44de-842e-54cdc88b9051",
+            "849a6ccd-a61b-495c-9656-9f42d5687472",
+            "5142c632-f25e-465d-b2a1-5bb0cb8e0e08",
+            "47b7955c-ab70-4367-a84e-ff21b06f98a9",
+            "a68130cc-cc60-491c-bd0c-75c5c5ef700b",
+            "d0746c8e-09b9-40ef-ab14-91487d6ba6c2",
+            "b1b394d0-cf8a-4184-8786-57837cf167ed",
+            "4f524c43-e2b6-4f62-8bd6-470ee0289a9c",
+            "7b2bfa8f-d128-4670-971d-e69ff2f63ebc",
+            "81dee265-723d-4c94-8abe-d31eaadd39d2",
+            "c795d9c6-98a8-453e-a469-05796163016d",
+            "03e33186-d847-4410-bb1e-7daf26a39b10",
+            "0957ac6d-9c0c-4615-bdb8-0398039bf034",
+            "b8296133-a75b-4356-8d96-05cf03235af0",
+            "a028e19b-c974-4984-98e7-194857fa7906",
+            "6a9276f7-10db-44b4-b0a1-17dc34ced22c",
+            "8f102458-c1e4-4c31-a1e4-d0cfee7ab6f7",
+            "4b4c66de-593f-495f-81b8-bd41df6c224e",
+            "e0600245-bb89-41f8-8c23-c0d95e413ad0",
+            "036d6e47-1c2f-463e-9078-f6a62ce71732",
+            "f0d9a5fa-7786-4daf-b38a-9d22e9dc8de5",
+            "85194797-8db1-46d5-94bb-3b680cd4adca",
+            "bb97282b-fd02-4292-9769-a1b5800dba9c",
+            "6629ab26-e674-4f59-ace6-f4cef06b3c3f",
+            "d5820ffa-9c58-4856-957d-d3184aad2a51",
+            "60daf2eb-78d1-42f7-a880-e0fabf971391",
+            "562d31ff-4c48-49a7-ad7e-5c6b39a2c993",
+            "bb732350-3d32-483f-acfb-50caa85e7ba3",
+            "4e857ca6-23cb-4e45-bf2e-60873f5c2b40",
+            "b6261c6a-c5d6-447a-94a0-6868e6461771",
+            "043cdc0a-6ffc-4ed1-92d5-e0a268681fc6",
+            "595fc428-7d2e-40b0-9396-a1a9d47d6cd1",
+            "015d0c61-e7d7-4648-a98b-ad0175a5813d",
+            "8edb469f-71c5-4589-bfc3-23f155af0544",
+            "e60647b4-82e1-404e-8c98-f806fb177282",
+            "93d56556-38f9-4554-93ab-a2960eb74c48",
+            "a14c3674-c8f3-42a7-bde0-6fe36822313f",
+            "16372fe8-f6c0-416e-9810-6e397303296a",
+            "0c249379-3ee3-4a2d-92d3-c1a4759c1ff3",
+            "4705933d-22cd-4df2-a2b6-5c6a93aa18c6",
+            "e360c96c-bb85-4530-8877-f40ef62a45ab",
+            "52f7847c-61a0-4bd2-a311-9830661e289c",
+            "37652373-ad36-4dfd-944b-d9b063f4d009",
+            "8b840615-7d69-43c4-a955-fa5e25657ef7",
+            "7f8f5bb9-8330-4707-82d2-5565aa66767a",
+            "47ee148c-2fa3-4add-bca2-42f5749df850",
+            "a92a060c-1ffd-4353-a6c6-d542d3bbf514",
+            "32080415-b71d-4b6e-9e23-aff2e8d908bb",
+            "f396a67b-3772-4b0e-af59-b16f2eba71a6",
+            "3e13ef24-307e-40d7-b1d1-f6665ac35a14",
+            "78907ef4-512f-456b-90d6-bf47f19fa4d1",
+            "7d64394f-a0b5-4b13-a19e-08f9141408ff",
+            "6f381ab2-57eb-4278-8206-8c544ab46e8e",
+            "20d08160-defc-4a9a-a9df-11cdd9ecbf68",
+            "d7c33f98-6aaf-44d3-aec4-88ba01863f63",
+            "bed1a394-7027-44ed-90c3-1c6b9457ab29",
+            "5926416c-afa0-4187-992b-26d580e8c93e",
+            "8298014c-0063-4e2c-aa5a-f60ac87dda4f"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550379688363,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "4489ab73-989f-4ae9-9124-86561e165deb",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605420000,
+          "parent_id": "6c2f9673-a6c8-4628-a442-8109849ed754",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential MySQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 210
+        }
+      },
+      "562d31ff-4c48-49a7-ad7e-5c6b39a2c993": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "c35f7241-4e87-4593-9c3f-2655453448bf",
+            "193e866c-223a-4417-820a-f052189d88a8",
+            "d3a8b76c-d72f-42cc-a6d0-5f040efcf0b4",
+            "ea06b734-0f6f-4e77-b962-da06e46bfc48"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382600000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "562d31ff-4c48-49a7-ad7e-5c6b39a2c993",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550568360000,
+          "parent_id": "4489ab73-989f-4ae9-9124-86561e165deb",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Log files"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 26
+        }
+      },
+      "69421f11-9a68-4505-b394-c0cad0c830d8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619164,
+          "id": "69421f11-9a68-4505-b394-c0cad0c830d8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619164,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "[mysqld]\nlog_error           = /path/to/CurrentError.log\nlog_warnings        = 2\nlog_error_verbosity = 3"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "7ea9323f-ec1c-455d-8ae2-2c498fe3b2f4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619161,
+          "id": "7ea9323f-ec1c-455d-8ae2-2c498fe3b2f4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619161,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Logging cannot be disabled for errors. They are important for system health while troubleshooting problems. Also, entries are infrequent compared to the General Query Log."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "81b3c1b8-e9e6-4558-ad7d-ec68d8832a36": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619164,
+          "id": "81b3c1b8-e9e6-4558-ad7d-ec68d8832a36",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619164,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "As of MySQL 5.7.2:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "871fe391-d33c-482e-8908-b6dc1a62bcad": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619162,
+          "id": "871fe391-d33c-482e-8908-b6dc1a62bcad",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619162,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "[mysqld]\nlog_error        = /path/to/CurrentError.log\nlog_warnings     = 2"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "972640b3-b13a-4949-bf14-47466639d386": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619181,
+          "id": "972640b3-b13a-4949-bf14-47466639d386",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619181,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Please see the MySQL Manual Page entitled "
+              ],
+              [
+                "The Error Log",
+                [
+                  [
+                    "a",
+                    "http://i.stack.imgur.com/upW0z.jpg"
+                  ]
+                ]
+              ],
+              [
+                " especially for Flushing and Renaming the Error Log file, and its "
+              ],
+              [
+                "Error Log Verbosity",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " section with versions related to "
+              ],
+              [
+                "log_warnings",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "error_log_verbosity",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ad5dc4eb-d99e-4a38-99a7-a5530183049b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619161,
+          "id": "ad5dc4eb-d99e-4a38-99a7-a5530183049b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619161,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "SELECT @@log_warnings; -- make a note of your prior setting\nSET GLOBAL log_warnings=2; -- setting above 1 increases output (see server version)"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "c10c307d-2011-4e40-9c06-373f6dac506b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619160,
+          "id": "c10c307d-2011-4e40-9c06-373f6dac506b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619160,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "source": [
+              [
+                "http://i.stack.imgur.com/upW0z.jpg"
+              ]
+            ]
+          },
+          "type": "image",
+          "version": 5
+        }
+      },
+      "c7bb375f-a620-407e-b674-1e5a88c04a6c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619161,
+          "id": "c7bb375f-a620-407e-b674-1e5a88c04a6c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619161,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In the absence of a configuration file entry for "
+              ],
+              [
+                "log_error",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", the system will default its values to "
+              ],
+              [
+                "@@hostname",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ".err in the "
+              ],
+              [
+                "datadir",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". Note that "
+              ],
+              [
+                "log_error",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is not a dynamic variable. As such, changes are done through a cnf or ini file changes and a server restart (or by seeing “Flushing and Renaming the Error Log File” in the Manual Page link at the bottom here)."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "de44ab46-b2d8-4084-86ad-040b0a5acdb1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619162,
+          "id": "de44ab46-b2d8-4084-86ad-040b0a5acdb1",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619162,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Configuration file changes in "
+              ],
+              [
+                "cnf",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "ini",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " files might look like the following."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "e9360b4c-5b00-44f6-a60c-9aa716253fd2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619162,
+          "id": "e9360b4c-5b00-44f6-a60c-9aa716253fd2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619162,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "log_warnings",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " as seen above is a dynamic variable."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "ea06b734-0f6f-4e77-b962-da06e46bfc48": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "28125b2b-1443-4957-bb9a-05ba20bd327e",
+            "0244db34-ce10-490a-8a64-65bfff3bac43",
+            "c10c307d-2011-4e40-9c06-373f6dac506b",
+            "ef5f754e-d75c-43cf-a5f3-7c2ce84eee3e",
+            "c7bb375f-a620-407e-b674-1e5a88c04a6c",
+            "7ea9323f-ec1c-455d-8ae2-2c498fe3b2f4",
+            "244e9ce0-f843-4f68-b318-99458890074e",
+            "ad5dc4eb-d99e-4a38-99a7-a5530183049b",
+            "e9360b4c-5b00-44f6-a60c-9aa716253fd2",
+            "de44ab46-b2d8-4084-86ad-040b0a5acdb1",
+            "871fe391-d33c-482e-8908-b6dc1a62bcad",
+            "376ce0b4-f115-4321-a0b2-d8bab46e82e6",
+            "81b3c1b8-e9e6-4558-ad7d-ec68d8832a36",
+            "69421f11-9a68-4505-b394-c0cad0c830d8",
+            "972640b3-b13a-4949-bf14-47466639d386"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619181,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550568420000,
+          "parent_id": "562d31ff-4c48-49a7-ad7e-5c6b39a2c993",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Error Log"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 8
+        }
+      },
+      "ef5f754e-d75c-43cf-a5f3-7c2ce84eee3e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550382619161,
+          "id": "ef5f754e-d75c-43cf-a5f3-7c2ce84eee3e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550382619161,
+          "parent_id": "ea06b734-0f6f-4e77-b962-da06e46bfc48",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The variable "
+              ],
+              [
+                "log_error",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " holds the path to the log file for error logging."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
