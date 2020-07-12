@@ -55,9 +55,14 @@ func (c *Cache) saveRecord(rec *siser.Record) error {
 	return err
 }
 
-func (c *Cache) saveGist(gistID, gistContent string) {
+// return true if gist changed
+func (c *Cache) saveGist(gistID, gistContent string) bool {
 	rec := &siser.Record{
 		Name: recNameGist,
+	}
+	existing := c.getGistByID(gistID)
+	if existing != nil && existing.Gist == gistContent {
+		return false
 	}
 	u.PanicIf(gistID == "" || gistContent == "")
 	rec.Append("GistID", gistID)
@@ -70,6 +75,7 @@ func (c *Cache) saveGist(gistID, gistContent string) {
 		Gist: gistContent,
 	}
 	c.gists = append(c.gists, gist)
+	return true
 }
 
 func (c *Cache) loadGist(rec *siser.Record) {

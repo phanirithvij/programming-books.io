@@ -179,8 +179,12 @@ func downloadSingleGist(book *Book, gistID string) {
 	logf("Downloading gist '%s' and storing in the cache for the book '%s'\n", gistID, bookName)
 	cache := loadCache(book)
 	gist := gistDownloadMust(gistID)
-	cache.saveGist(gistID, gist.Raw)
-	logf("Saved a gist\n")
+	didChange := cache.saveGist(gistID, gist.Raw)
+	if didChange {
+		logf("Saved a new or updated version of gist\n")
+		return
+	}
+	logf("Gist didn't change!\n")
 }
 
 // vercel www --scope teamkjk --name book-git --confirm
