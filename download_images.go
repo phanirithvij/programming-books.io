@@ -102,7 +102,7 @@ func downloadAndCacheImage(c *notionapi.Client, imgDir string, blockID, uri stri
 func downloadAndRememberImage(page *Page, imgDir, blockID, link string) {
 	if !isFullURL(link) {
 		id := toNoDashID(page.NotionID)
-		logf("downloadAndRememberImage(): skipping '%s' from https://notion.so/%s because not a valid url\n", link, id)
+		logf("downloadAndRememberImage(): skipping '%s' because not a valid url\npage: https://notion.so/%s\n\n", link, id)
 		return
 	}
 
