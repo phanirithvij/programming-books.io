@@ -1,0 +1,510 @@
+1617 1594554691617 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "2b22f019-b879-4dc9-8d5a-30f264cd326a",
+      "table": "block"
+    }
+  ]
+}
+Response:+1417
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "2725bfd7-9b91-4596-a308-05031374fa32",
+          "518a4ecc-9b62-4e24-b3fa-0baf110a2400",
+          "53823c35-265e-4f64-bdc9-0598d3e6f6d9",
+          "836b08d3-9ed4-4e58-9a71-e264368850ed",
+          "2e5006c3-ff41-49fa-b62c-6668ff88b35a",
+          "e5209f55-2467-4455-bb5a-9949506ba4e4",
+          "cc41aff0-a1e4-48ef-b5a2-bd9eca5c3378"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550459226061,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "2b22f019-b879-4dc9-8d5a-30f264cd326a",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1550479980000,
+        "parent_id": "9714a780-3ee8-4e3d-95bb-973e02de4953",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Collect example 7b - Collect with SummarizingInt"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 7
+      }
+    }
+  ]
+}
+17832 1594554691618 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "2b22f019-b879-4dc9-8d5a-30f264cd326a",
+  "verticalColumns": false
+}
+Response:+17591
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "2725bfd7-9b91-4596-a308-05031374fa32": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459226057,
+          "id": "2725bfd7-9b91-4596-a308-05031374fa32",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459226057,
+          "parent_id": "2b22f019-b879-4dc9-8d5a-30f264cd326a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "// Java:\nIntSummaryStatistics ageSummary =\n    persons.stream()\n           .collect(Collectors.summarizingInt(p -\u003e p.age));\n\nSystem.out.println(ageSummary);\n// IntSummaryStatistics{count=4, sum=76, min=12, average=19.000000, max=23}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "2b22f019-b879-4dc9-8d5a-30f264cd326a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "2725bfd7-9b91-4596-a308-05031374fa32",
+            "518a4ecc-9b62-4e24-b3fa-0baf110a2400",
+            "53823c35-265e-4f64-bdc9-0598d3e6f6d9",
+            "836b08d3-9ed4-4e58-9a71-e264368850ed",
+            "2e5006c3-ff41-49fa-b62c-6668ff88b35a",
+            "e5209f55-2467-4455-bb5a-9949506ba4e4",
+            "cc41aff0-a1e4-48ef-b5a2-bd9eca5c3378"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459226061,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2b22f019-b879-4dc9-8d5a-30f264cd326a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550479980000,
+          "parent_id": "9714a780-3ee8-4e3d-95bb-973e02de4953",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Collect example 7b - Collect with SummarizingInt"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "2bdd4731-8f3a-4e86-81dd-a289a8b3472b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "1359654b-9556-43ef-bf63-de48b2cff751",
+            "bf06f063-9d35-4ff3-93ad-8c89caa1b064",
+            "ee8e0a58-ce4d-49f2-95cf-589d789b64da",
+            "9714a780-3ee8-4e3d-95bb-973e02de4953",
+            "1caac65f-a4f5-4488-ad6e-0bd2a6e67806",
+            "7281119a-d541-456a-97f4-05918821013e",
+            "90982c65-15f5-4292-b068-36b5b5bca394",
+            "80bde4e7-5e0e-4d44-9888-69827930ae4c",
+            "6b53e974-40cc-4aad-aa35-242fe987be21",
+            "64d7f30a-e774-4b02-9b81-9540827f0b16",
+            "7b416f2b-f26d-4f20-87fe-64ec020e1f51",
+            "e6ec2d63-43a4-46d2-acc7-6037ff62cb66",
+            "82527ce9-51fc-40d4-a471-3651f67a34fc",
+            "716dedee-50c9-4551-9864-fe349c4d8440",
+            "6bea5b0c-fdb6-4aef-b022-5744e194ca39",
+            "445f7a57-1e8a-4756-98ce-49fae305153c",
+            "8d0f8f9a-0e91-4551-b7d3-823bfb56a679",
+            "a57555d7-3370-40f1-81b7-a942632f3821",
+            "6b7a5a4b-6b09-4ff7-880c-500c3f66ff92",
+            "c87a3e01-adad-43f2-8d7a-9d5cac84d110",
+            "83469c67-be7b-4cae-b8d7-577c63088f72",
+            "391a9aac-912b-4a51-b760-da788ee5a397",
+            "94c4fd36-6fad-419e-90ca-41fafaf8b5db",
+            "414c9278-cc1d-4a76-84f1-23a39297c8ae",
+            "16e8a060-7187-407e-95eb-8ef4095522cc",
+            "bcd0d2a7-7420-4503-b628-69e879b06bc1",
+            "0fc3a590-ba5f-4e12-8e7c-750e8ecc961d",
+            "a3cc1306-3473-4220-aecd-82dd08eb51fb",
+            "a3bc1338-335b-4470-9bc6-e404b755af2b",
+            "289317b1-5df0-44ed-a3f5-3a0515b870a6",
+            "65a73e60-8d33-4409-b198-cf2968df0b79",
+            "4c7e663c-2eba-44a5-aaf1-7872e3395001",
+            "7d03ab7a-df07-40cd-a346-e96855ec1330",
+            "403fb950-f4ce-476b-b9d7-932c7cbc7960",
+            "835e74a4-f35b-4d01-b478-b03db962feef",
+            "a03ca250-5702-45c4-9719-ab00e6080e3a",
+            "b878c32d-f615-4eb0-9797-a851f3adeaf7",
+            "b6abbc4b-2885-4b32-a201-5028dc8d3f2c",
+            "816a9f9a-3176-4638-bb37-c3fa017f03ea",
+            "715bbf1b-83e5-4ab6-9259-a92a040e3e47"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459141617,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2bdd4731-8f3a-4e86-81dd-a289a8b3472b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605240000,
+          "parent_id": "399e8682-de13-4b75-8438-f567a6ed7b6d",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Kotlin"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 89
+        }
+      },
+      "2e5006c3-ff41-49fa-b62c-6668ff88b35a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459226060,
+          "id": "2e5006c3-ff41-49fa-b62c-6668ff88b35a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459226060,
+          "parent_id": "2b22f019-b879-4dc9-8d5a-30f264cd326a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Now you have two ways to use the new "
+              ],
+              [
+                "summarizingInt",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " functions:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "518a4ecc-9b62-4e24-b3fa-0baf110a2400": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459226060,
+          "id": "518a4ecc-9b62-4e24-b3fa-0baf110a2400",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459226060,
+          "parent_id": "2b22f019-b879-4dc9-8d5a-30f264cd326a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "// Kotlin:\n\n// something to hold the stats...\ndata class SummaryStatisticsInt(var count: Int = 0,  \n                                var sum: Int = 0, \n                                var min: Int = Int.MAX_VALUE, \n                                var max: Int = Int.MIN_VALUE, \n                                var avg: Double = 0.0) {\n    fun accumulate(newInt: Int): SummaryStatisticsInt {\n        count++\n        sum += newInt\n        min = min.coerceAtMost(newInt)\n        max = max.coerceAtLeast(newInt)\n        avg = sum.toDouble() / count\n        return this\n    }\n}\n\n// Now manually doing a fold, since Stream.collect is really just a fold\nval stats = persons.fold(SummaryStatisticsInt()) { stats, person -\u003e stats.accumulate(person.age) }\n\nprintln(stats)\n// output: SummaryStatisticsInt(count=4, sum=76, min=12, max=23, avg=19.0)"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "53823c35-265e-4f64-bdc9-0598d3e6f6d9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459226060,
+          "id": "53823c35-265e-4f64-bdc9-0598d3e6f6d9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459226060,
+          "parent_id": "2b22f019-b879-4dc9-8d5a-30f264cd326a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "But it is better to create an extension function, 2 actually to match styles in Kotlin stdlib:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "836b08d3-9ed4-4e58-9a71-e264368850ed": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459226060,
+          "id": "836b08d3-9ed4-4e58-9a71-e264368850ed",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459226060,
+          "parent_id": "2b22f019-b879-4dc9-8d5a-30f264cd326a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "// Kotlin:\ninline fun Collection\u003cInt\u003e.summarizingInt(): SummaryStatisticsInt\n        = this.fold(SummaryStatisticsInt()) { stats, num -\u003e stats.accumulate(num) }\n\ninline fun \u003cT: Any\u003e Collection\u003cT\u003e.summarizingInt(transform: (T)-\u003eInt): SummaryStatisticsInt =\n        this.fold(SummaryStatisticsInt()) { stats, item -\u003e stats.accumulate(transform(item)) }"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "9714a780-3ee8-4e3d-95bb-973e02de4953": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "cb8eee0a-000e-46f8-8b77-5c9fe9b7fd65",
+            "9166bf8c-803d-4187-9bdd-20a335bd8d3e",
+            "8a7c29cd-bcd2-4281-9f6e-09427a025e19",
+            "b790dcd8-46e0-44fd-ba48-6e4032534a87",
+            "eef642b9-2224-45dc-840e-729d9452111d",
+            "92cb7844-e354-41dd-8920-e7c3f1c13539",
+            "ab747551-b21e-49f1-b652-479874270abb",
+            "41656e4d-877b-4260-b5f9-e61ad7396bc4",
+            "5ea67fa7-c63b-4ca8-88f2-660bc2b186d9",
+            "4b36df45-ec82-44f8-b33a-abd968872022",
+            "d4404c7b-1a51-4524-bd72-c5ba7594dd33",
+            "05121611-2665-443e-89c3-091b39535277",
+            "64ea0a05-f421-4132-9a3b-e609f72f090e",
+            "4fd2a42e-8705-40d8-a760-8766d95d2edf",
+            "1c6beabc-4155-4306-a773-88812ae31cab",
+            "ef8abc48-08cf-4f54-b044-c4891859e0f9",
+            "0ebc29f5-d9e7-4105-be99-f20595ef7fa3",
+            "7770a42c-b107-4198-895f-bef8ffbea3e1",
+            "8f105d40-f1fd-41e1-8f4e-43ae8d613d03",
+            "cd84813e-554a-40b4-9287-1ed05a76a469",
+            "de7f93a3-e854-45c3-8f10-64c96ec213cb",
+            "532bdace-21b5-4a2c-a98a-d251c49b094c",
+            "7ef48eab-e721-4e04-8773-ce88c91a40f9",
+            "2b22f019-b879-4dc9-8d5a-30f264cd326a"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459160000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "9714a780-3ee8-4e3d-95bb-973e02de4953",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459460000,
+          "parent_id": "2bdd4731-8f3a-4e86-81dd-a289a8b3472b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Java 8 Stream Equivalents"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 65
+        }
+      },
+      "cc41aff0-a1e4-48ef-b5a2-bd9eca5c3378": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459226061,
+          "id": "cc41aff0-a1e4-48ef-b5a2-bd9eca5c3378",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459226061,
+          "parent_id": "2b22f019-b879-4dc9-8d5a-30f264cd326a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "And all of these produce the same results. We can also create this extension to work on "
+              ],
+              [
+                "Sequence",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and for appropriate primitive types."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "e5209f55-2467-4455-bb5a-9949506ba4e4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459226060,
+          "id": "e5209f55-2467-4455-bb5a-9949506ba4e4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459226060,
+          "parent_id": "2b22f019-b879-4dc9-8d5a-30f264cd326a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "val stats2 = persons.map { it.age }.summarizingInt()\n\n// or\n\nval stats3 = persons.summarizingInt { it.age }"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
