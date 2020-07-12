@@ -1,0 +1,977 @@
+2257 1594557592683 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+      "table": "block"
+    }
+  ]
+}
+Response:+2057
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "e20b68ee-fa07-49b2-8515-d11fb221db1c",
+          "8a670003-3058-46eb-ab00-366f41c2e441",
+          "55b06153-279e-4072-8433-8cf1d39641dc",
+          "a9258263-6a9d-4708-8894-464ed084188b",
+          "50e9e2cd-2ce3-476f-9f18-88302ba7747e",
+          "877f360c-6a26-4c39-bc4d-53f74a7a3800",
+          "4720528b-e681-4488-9654-9abb9ea4a88a",
+          "6aa2cc32-95b1-43dd-90e0-103edbae7d9d",
+          "7817c59c-103a-478f-aeda-704f2b51eb01",
+          "eac30a8b-5f2b-49d3-9ea2-2402e86df27d",
+          "36e9e00f-6a61-41aa-ac19-f30f7ed2a930",
+          "81db3317-c99b-4e04-b041-11ddb1df4e0c",
+          "a0672172-0ab0-41f6-989c-5c5f7f6e5a6b",
+          "ec0d3e1c-41f1-4116-bba9-5d525098b96c",
+          "7827c679-776c-4077-ba46-5c8e0a8a090c",
+          "bd100dc2-6974-4992-a954-a89c5bb494af",
+          "de10869f-e526-46bf-8549-8bb6b78c3ef4",
+          "9e5a2099-d6ca-48b3-85d4-b367e3bd669e",
+          "df2a2a5e-0a70-4997-b484-dc0e311a72cd",
+          "2bab7f79-c682-4671-ae7a-86d7078c4e4e"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1551946626548,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552464540000,
+        "parent_id": "853f7b3c-f5b9-463a-ad6d-71114a0e45b9",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Creating and checking out new branches"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 4
+      }
+    }
+  ]
+}
+33913 1594557592684 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "9c112039-5f64-448b-a4ac-15a3083aa427",
+  "verticalColumns": false
+}
+Response:+33672
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "2bab7f79-c682-4671-ae7a-86d7078c4e4e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626548,
+          "id": "2bab7f79-c682-4671-ae7a-86d7078c4e4e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946626548,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "Initial state       After git branch \u003cnew_name\u003e    After git reset --hard HEAD~2\n                            newBranch                        newBranch\n                                ↓                                ↓\nA-B-C-D-E (HEAD)         A-B-C-D-E (HEAD)                 A-B-C-D-E (HEAD)\n       ↑                        ↑                            ↑\n     master                   master                       master"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "36e9e00f-6a61-41aa-ac19-f30f7ed2a930": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626547,
+          "id": "36e9e00f-6a61-41aa-ac19-f30f7ed2a930",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946626547,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To create a branch from a "
+              ],
+              [
+                "remote branch",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/git/243/working-with-remotes"
+                  ]
+                ]
+              ],
+              [
+                " (the default "
+              ],
+              [
+                "\u003cremote_name\u003e",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is origin):"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "37913107-a419-4981-b1fc-745928c0df66": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "6a125e34-a2b3-4705-af0a-c5e164ccfa24",
+            "b3581026-b0bb-4248-be87-b5784c64f255",
+            "76b17b23-95a9-4e89-8f82-ec8a3ec62a50",
+            "04ee78eb-a4e2-451f-a18f-4b6132c7cd1d",
+            "e3c469c1-1d8e-447a-97fa-8f4b2670ad27",
+            "2c45ad9e-e679-465d-83a9-561229837a80",
+            "df323286-a540-4216-aaf6-c85842881694",
+            "dd79ffd3-abcb-4e0d-8df1-80d202647136",
+            "fa96b97d-1a96-4c33-8c2b-fcdeb06002f5",
+            "399affdf-5c77-4f40-a203-8b6a5de16654",
+            "9889cb01-9b9d-43d8-a056-66c9bcb42680",
+            "313c84eb-dd9a-43c8-b395-78d72c422514",
+            "8481aef2-15de-40b9-aa1d-6e9cc919952f",
+            "853f7b3c-f5b9-463a-ad6d-71114a0e45b9",
+            "6a384b97-0361-4f43-81c2-8537ed4702c0",
+            "98ad87b1-5a88-4d5c-8a26-b2e4ce89100b",
+            "0c23d962-7cec-403c-8e26-7e0c3d99f3cd",
+            "fcc2ce7a-7897-4ae1-9be5-6d71e9091623",
+            "89763338-4654-4a93-82aa-c14ea0da0a23",
+            "1becb842-107e-4d22-98e3-83948d2a46ba",
+            "81dfe434-dd0d-4928-aa79-60cef0ee9e5d",
+            "d22ee6fd-6d95-424c-bcc3-8ccee2d58c07",
+            "2bd8ba82-17f0-4cb9-a3e5-3cffacb1c96a",
+            "711b10b7-68c2-4da4-8501-b8412d112f4e",
+            "55ea0a0e-7756-475f-9073-4b7614f212f0",
+            "843837bd-3d09-465c-ab10-17bd4b856e07",
+            "19ee9c1f-db62-4f5d-8a58-791f695c4fbe",
+            "8473b8bd-2cb6-40de-bfe0-357c55d8e3ef",
+            "02737ac1-5e31-4f62-ae04-5faa549ff9dd",
+            "e3e963bd-42f2-41c8-a10a-15304cf07d5a",
+            "a5e863d8-6a03-49fb-947f-6790e50412eb",
+            "1d5abacd-e9e5-4754-94b2-5f01773829dd",
+            "4119551d-a28c-4c5a-81b7-0c6960db1d9f",
+            "be77aee7-333a-48fe-a261-d614ce3010a8",
+            "2ba4525f-df9c-49d8-b6b0-5f0fb0cf39b9",
+            "3b812637-4556-4f6d-b255-bee991395792",
+            "9448471c-a81b-44ac-a3f6-47fdaf38e1c4",
+            "8a3306f4-4d2d-4548-bcb3-4b7baf2979ff",
+            "b6fd813b-163f-447c-861e-0daae8e1d522",
+            "008196e2-a875-4d47-9461-5a8cfa36d190",
+            "5671aa61-8485-459d-8825-3c0b83dda989",
+            "f7de7d04-06a0-40bf-8ac1-03fda0d4efa3",
+            "72b49046-4c58-45b2-891f-d04b342f5222",
+            "ed5f332e-f2c7-4e6e-a816-4934948332c8",
+            "164391a5-bae5-4865-a5d5-8275f23cce37",
+            "1a2cc6a4-3b0e-4781-83fe-655db778b697",
+            "c7501101-27d8-4177-bec2-99b76fff0b7f",
+            "ad133dbf-ea4a-4d4f-8f98-0120a30ce624",
+            "77f16c7f-e9e6-4678-a25f-074954c0edb0",
+            "1b824b7d-8b0d-41e1-958e-a4fb45cb0000",
+            "2a595f06-43c1-4c60-929a-db83b0926241",
+            "d86b019e-ba87-4d0b-98b7-5c661b59a7f3",
+            "65c822a3-79b7-4e8d-8d82-20d4e1935be2",
+            "b5fdbb9a-13a6-46b1-8455-19157dec5b74",
+            "57fec9be-9f67-4bc3-9b8d-934aad839637",
+            "08b340f2-d643-4ca2-ab30-da708aad3b1e",
+            "f1df31fb-1b36-43ae-8828-1d647461169a",
+            "94ebeaf3-c732-4f82-8de0-b88362a1e049",
+            "df5f15ed-8885-4ec1-bd45-d8dcea529bda",
+            "5b770b23-9cb7-4edb-81da-5a5f3542755a",
+            "2164816c-a43b-44b4-b528-dab69ce86743",
+            "8db67d22-889d-4aef-96a1-2e1d18ab323a",
+            "99d2b2ec-9371-4337-9a89-4a25a15433d4"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946413454,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "37913107-a419-4981-b1fc-745928c0df66",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605600000,
+          "parent_id": "69680b54-4c46-427b-8da8-9fc356b079a5",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Git"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 179
+        }
+      },
+      "4720528b-e681-4488-9654-9abb9ea4a88a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626546,
+          "id": "4720528b-e681-4488-9654-9abb9ea4a88a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946626546,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To create a branch at a point other than the last commit of the current branch (also known as HEAD), use either of these commands:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "50e9e2cd-2ce3-476f-9f18-88302ba7747e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626546,
+          "id": "50e9e2cd-2ce3-476f-9f18-88302ba7747e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946626546,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To create a new branch and switch to it:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "55b06153-279e-4072-8433-8cf1d39641dc": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626546,
+          "id": "55b06153-279e-4072-8433-8cf1d39641dc",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946626546,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Generally, the branch name must not contain spaces and is subject to other specifications listed "
+              ],
+              [
+                "here",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/questions/3651860/which-characters-are-illegal-within-a-branch-name"
+                  ]
+                ]
+              ],
+              [
+                ". To switch to an existing branch :"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "6aa2cc32-95b1-43dd-90e0-103edbae7d9d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626546,
+          "id": "6aa2cc32-95b1-43dd-90e0-103edbae7d9d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552464540000,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git branch \u003cname\u003e [\u003cstart-point\u003e]\ngit checkout -b \u003cname\u003e [\u003cstart-point\u003e]"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "7817c59c-103a-478f-aeda-704f2b51eb01": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626547,
+          "id": "7817c59c-103a-478f-aeda-704f2b51eb01",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946626547,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The "
+              ],
+              [
+                "\u003cstart-point\u003e",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " can be any "
+              ],
+              [
+                "revision",
+                [
+                  [
+                    "a",
+                    "https://git-scm.com/docs/revisions"
+                  ]
+                ]
+              ],
+              [
+                " known to git (e.g. another branch name, commit SHA, or a symbolic reference such as HEAD or a tag name):"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "7827c679-776c-4077-ba46-5c8e0a8a090c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626548,
+          "id": "7827c679-776c-4077-ba46-5c8e0a8a090c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946626548,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "which is equivalent to"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "81db3317-c99b-4e04-b041-11ddb1df4e0c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626547,
+          "id": "81db3317-c99b-4e04-b041-11ddb1df4e0c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552464540000,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git branch \u003cname\u003e \u003cremote_name\u003e/\u003cbranch_name\u003e\ngit checkout -b \u003cname\u003e \u003cremote_name\u003e/\u003cbranch_name\u003e"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 7
+        }
+      },
+      "853f7b3c-f5b9-463a-ad6d-71114a0e45b9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "dc57f7d3-5913-411d-81bf-fc86d4225148",
+            "1b7ec72e-7635-4cf7-9a77-687f64f124c5",
+            "58aba756-5aac-4a9d-9d17-da0a87ea254f",
+            "7180ebd7-7336-4b98-8e20-2acbadf068c9",
+            "c6c5c111-3735-422d-b81a-4368872436b5",
+            "f61d5812-3af3-4495-97e1-27c1e5c97fd3",
+            "b2df1995-c739-438e-a537-f51634235c12",
+            "97e3a145-5665-4e5b-a6a6-5469cd0776e7",
+            "ccd528fd-f287-41eb-a0f0-156a96c72950",
+            "b73c5422-52c1-46f6-b917-b7d1b5583178",
+            "8beae11d-9e44-4fc7-b3a9-eabf7a7d1e6b",
+            "36ef7a05-11b5-4f91-b973-f5de394149c1",
+            "92aca049-be28-4a52-bbd0-359cdbe6e028",
+            "9c112039-5f64-448b-a4ac-15a3083aa427",
+            "0810cead-8f24-4c36-bcbe-c2ddde7ce64e",
+            "267b959b-7699-4ac1-aabc-9e3ed99f034e",
+            "b3fb3d82-7f31-4f3e-9a5a-6e211be7d744",
+            "fcc5036e-bab7-4424-9b35-0186a0360a7d",
+            "e3dad6e5-ff74-4806-a29f-079e562e72ef",
+            "680667c9-226d-4854-a51b-a68d02f2b247",
+            "e9c33a98-f05c-43d7-a47f-37610b5c6e25",
+            "3ef4a545-3221-4c69-a18f-e1ca73739742",
+            "0e66789e-a203-436e-b5d3-7ed01678812a",
+            "4cf301d9-a534-44f7-ac58-c906c58ed3cd",
+            "29f5f5a9-f327-40d9-8dd9-015153c4da79"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946620000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "853f7b3c-f5b9-463a-ad6d-71114a0e45b9",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552464660000,
+          "parent_id": "37913107-a419-4981-b1fc-745928c0df66",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Branching"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 61
+        }
+      },
+      "877f360c-6a26-4c39-bc4d-53f74a7a3800": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626546,
+          "id": "877f360c-6a26-4c39-bc4d-53f74a7a3800",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552464540000,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git checkout -b \u003cname\u003e"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "8a670003-3058-46eb-ab00-366f41c2e441": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626544,
+          "id": "8a670003-3058-46eb-ab00-366f41c2e441",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552464540000,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git branch \u003cname\u003e"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 7
+        }
+      },
+      "9c112039-5f64-448b-a4ac-15a3083aa427": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "e20b68ee-fa07-49b2-8515-d11fb221db1c",
+            "8a670003-3058-46eb-ab00-366f41c2e441",
+            "55b06153-279e-4072-8433-8cf1d39641dc",
+            "a9258263-6a9d-4708-8894-464ed084188b",
+            "50e9e2cd-2ce3-476f-9f18-88302ba7747e",
+            "877f360c-6a26-4c39-bc4d-53f74a7a3800",
+            "4720528b-e681-4488-9654-9abb9ea4a88a",
+            "6aa2cc32-95b1-43dd-90e0-103edbae7d9d",
+            "7817c59c-103a-478f-aeda-704f2b51eb01",
+            "eac30a8b-5f2b-49d3-9ea2-2402e86df27d",
+            "36e9e00f-6a61-41aa-ac19-f30f7ed2a930",
+            "81db3317-c99b-4e04-b041-11ddb1df4e0c",
+            "a0672172-0ab0-41f6-989c-5c5f7f6e5a6b",
+            "ec0d3e1c-41f1-4116-bba9-5d525098b96c",
+            "7827c679-776c-4077-ba46-5c8e0a8a090c",
+            "bd100dc2-6974-4992-a954-a89c5bb494af",
+            "de10869f-e526-46bf-8549-8bb6b78c3ef4",
+            "9e5a2099-d6ca-48b3-85d4-b367e3bd669e",
+            "df2a2a5e-0a70-4997-b484-dc0e311a72cd",
+            "2bab7f79-c682-4671-ae7a-86d7078c4e4e"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626548,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552464540000,
+          "parent_id": "853f7b3c-f5b9-463a-ad6d-71114a0e45b9",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Creating and checking out new branches"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 4
+        }
+      },
+      "9e5a2099-d6ca-48b3-85d4-b367e3bd669e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626548,
+          "id": "9e5a2099-d6ca-48b3-85d4-b367e3bd669e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552464540000,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git branch \u003cnew_name\u003e\ngit reset --hard HEAD~2 # Go back 2 commits, you will lose uncommitted work.\ngit checkout \u003cnew_name\u003e"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "a0672172-0ab0-41f6-989c-5c5f7f6e5a6b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626547,
+          "id": "a0672172-0ab0-41f6-989c-5c5f7f6e5a6b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946626547,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If a given branch name is only found on one remote, you can simply use"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "a9258263-6a9d-4708-8894-464ed084188b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626546,
+          "id": "a9258263-6a9d-4708-8894-464ed084188b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552464540000,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git checkout \u003cname\u003e"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "bd100dc2-6974-4992-a954-a89c5bb494af": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626548,
+          "id": "bd100dc2-6974-4992-a954-a89c5bb494af",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552464540000,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git checkout -b \u003cbranch_name\u003e \u003cremote_name\u003e/\u003cbranch_name\u003e"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "de10869f-e526-46bf-8549-8bb6b78c3ef4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626548,
+          "id": "de10869f-e526-46bf-8549-8bb6b78c3ef4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946626548,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Sometimes you may need to move several of your recent commits to a new branch. This can be achieved by branching and “rolling back”, like so:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "df2a2a5e-0a70-4997-b484-dc0e311a72cd": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626548,
+          "id": "df2a2a5e-0a70-4997-b484-dc0e311a72cd",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946626548,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Here is an illustrative explanation of this technique:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "e20b68ee-fa07-49b2-8515-d11fb221db1c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626544,
+          "id": "e20b68ee-fa07-49b2-8515-d11fb221db1c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946626544,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To create a new branch, while staying on the current branch, use:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "eac30a8b-5f2b-49d3-9ea2-2402e86df27d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626547,
+          "id": "eac30a8b-5f2b-49d3-9ea2-2402e86df27d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552464540000,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git checkout -b \u003cname\u003e some_other_branch\ngit checkout -b \u003cname\u003e af295\ngit checkout -b \u003cname\u003e HEAD~5\ngit checkout -b \u003cname\u003e v1.0.5"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "ec0d3e1c-41f1-4116-bba9-5d525098b96c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946626548,
+          "id": "ec0d3e1c-41f1-4116-bba9-5d525098b96c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552464540000,
+          "parent_id": "9c112039-5f64-448b-a4ac-15a3083aa427",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git checkout -b \u003cbranch_name\u003e"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

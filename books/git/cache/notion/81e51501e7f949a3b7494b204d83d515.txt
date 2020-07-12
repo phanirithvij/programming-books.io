@@ -1,0 +1,739 @@
+1941 1594557616797 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+      "table": "block"
+    }
+  ]
+}
+Response:+1741
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "67e00987-e70c-46d3-b02a-aff8401ad1b4",
+          "df03c479-53f2-4a6d-90e1-999515638193",
+          "f39322a4-af56-4e31-9cf1-191e7a085239",
+          "122d8372-19b3-4ce0-af70-961aecafa367",
+          "5d184b49-fa7f-458f-8634-854d0636dab5",
+          "7a53413c-7247-428c-a59a-b63d40908b82",
+          "cef63626-dc2d-4bf5-a34c-642a74358237",
+          "cc29088e-c75b-4dd9-9c82-7e51c2d383fc",
+          "1b789e45-edb8-44b8-8dd8-26906021da1d",
+          "1b582c44-b9ef-4acd-9260-70e967c0ccae",
+          "79daf89c-eebe-411b-bb9c-98f62272e90c",
+          "ef39475c-6037-4ac9-b885-51bead8bd1d0",
+          "7de624b4-c95f-45fc-aeed-373d93d9ed1f",
+          "5807e2f3-6fbc-44a0-b733-108867c948bb"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1551947278403,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551947278403,
+        "parent_id": "be77aee7-333a-48fe-a261-d614ce3010a8",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Handling empty folders"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 7
+      }
+    }
+  ]
+}
+25008 1594557616798 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "81e51501-e7f9-49a3-b749-4b204d83d515",
+  "verticalColumns": false
+}
+Response:+24767
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "122d8372-19b3-4ce0-af70-961aecafa367": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278402,
+          "id": "122d8372-19b3-4ce0-af70-961aecafa367",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278402,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Unfortunately "
+              ],
+              [
+                "it does not removes existing empty folders",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                ": you need to do it manually."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "1b582c44-b9ef-4acd-9260-70e967c0ccae": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278403,
+          "id": "1b582c44-b9ef-4acd-9260-70e967c0ccae",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278403,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "git clean -fd",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "1b789e45-edb8-44b8-8dd8-26906021da1d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278402,
+          "id": "1b789e45-edb8-44b8-8dd8-26906021da1d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278402,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To remove all untracked files and folders that should be kept empty for SVN use the git command:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "37913107-a419-4981-b1fc-745928c0df66": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "6a125e34-a2b3-4705-af0a-c5e164ccfa24",
+            "b3581026-b0bb-4248-be87-b5784c64f255",
+            "76b17b23-95a9-4e89-8f82-ec8a3ec62a50",
+            "04ee78eb-a4e2-451f-a18f-4b6132c7cd1d",
+            "e3c469c1-1d8e-447a-97fa-8f4b2670ad27",
+            "2c45ad9e-e679-465d-83a9-561229837a80",
+            "df323286-a540-4216-aaf6-c85842881694",
+            "dd79ffd3-abcb-4e0d-8df1-80d202647136",
+            "fa96b97d-1a96-4c33-8c2b-fcdeb06002f5",
+            "399affdf-5c77-4f40-a203-8b6a5de16654",
+            "9889cb01-9b9d-43d8-a056-66c9bcb42680",
+            "313c84eb-dd9a-43c8-b395-78d72c422514",
+            "8481aef2-15de-40b9-aa1d-6e9cc919952f",
+            "853f7b3c-f5b9-463a-ad6d-71114a0e45b9",
+            "6a384b97-0361-4f43-81c2-8537ed4702c0",
+            "98ad87b1-5a88-4d5c-8a26-b2e4ce89100b",
+            "0c23d962-7cec-403c-8e26-7e0c3d99f3cd",
+            "fcc2ce7a-7897-4ae1-9be5-6d71e9091623",
+            "89763338-4654-4a93-82aa-c14ea0da0a23",
+            "1becb842-107e-4d22-98e3-83948d2a46ba",
+            "81dfe434-dd0d-4928-aa79-60cef0ee9e5d",
+            "d22ee6fd-6d95-424c-bcc3-8ccee2d58c07",
+            "2bd8ba82-17f0-4cb9-a3e5-3cffacb1c96a",
+            "711b10b7-68c2-4da4-8501-b8412d112f4e",
+            "55ea0a0e-7756-475f-9073-4b7614f212f0",
+            "843837bd-3d09-465c-ab10-17bd4b856e07",
+            "19ee9c1f-db62-4f5d-8a58-791f695c4fbe",
+            "8473b8bd-2cb6-40de-bfe0-357c55d8e3ef",
+            "02737ac1-5e31-4f62-ae04-5faa549ff9dd",
+            "e3e963bd-42f2-41c8-a10a-15304cf07d5a",
+            "a5e863d8-6a03-49fb-947f-6790e50412eb",
+            "1d5abacd-e9e5-4754-94b2-5f01773829dd",
+            "4119551d-a28c-4c5a-81b7-0c6960db1d9f",
+            "be77aee7-333a-48fe-a261-d614ce3010a8",
+            "2ba4525f-df9c-49d8-b6b0-5f0fb0cf39b9",
+            "3b812637-4556-4f6d-b255-bee991395792",
+            "9448471c-a81b-44ac-a3f6-47fdaf38e1c4",
+            "8a3306f4-4d2d-4548-bcb3-4b7baf2979ff",
+            "b6fd813b-163f-447c-861e-0daae8e1d522",
+            "008196e2-a875-4d47-9461-5a8cfa36d190",
+            "5671aa61-8485-459d-8825-3c0b83dda989",
+            "f7de7d04-06a0-40bf-8ac1-03fda0d4efa3",
+            "72b49046-4c58-45b2-891f-d04b342f5222",
+            "ed5f332e-f2c7-4e6e-a816-4934948332c8",
+            "164391a5-bae5-4865-a5d5-8275f23cce37",
+            "1a2cc6a4-3b0e-4781-83fe-655db778b697",
+            "c7501101-27d8-4177-bec2-99b76fff0b7f",
+            "ad133dbf-ea4a-4d4f-8f98-0120a30ce624",
+            "77f16c7f-e9e6-4678-a25f-074954c0edb0",
+            "1b824b7d-8b0d-41e1-958e-a4fb45cb0000",
+            "2a595f06-43c1-4c60-929a-db83b0926241",
+            "d86b019e-ba87-4d0b-98b7-5c661b59a7f3",
+            "65c822a3-79b7-4e8d-8d82-20d4e1935be2",
+            "b5fdbb9a-13a6-46b1-8455-19157dec5b74",
+            "57fec9be-9f67-4bc3-9b8d-934aad839637",
+            "08b340f2-d643-4ca2-ab30-da708aad3b1e",
+            "f1df31fb-1b36-43ae-8828-1d647461169a",
+            "94ebeaf3-c732-4f82-8de0-b88362a1e049",
+            "df5f15ed-8885-4ec1-bd45-d8dcea529bda",
+            "5b770b23-9cb7-4edb-81da-5a5f3542755a",
+            "2164816c-a43b-44b4-b528-dab69ce86743",
+            "8db67d22-889d-4aef-96a1-2e1d18ab323a",
+            "99d2b2ec-9371-4337-9a89-4a25a15433d4"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946413454,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "37913107-a419-4981-b1fc-745928c0df66",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605600000,
+          "parent_id": "69680b54-4c46-427b-8da8-9fc356b079a5",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Git"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 179
+        }
+      },
+      "5807e2f3-6fbc-44a0-b733-108867c948bb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278403,
+          "id": "5807e2f3-6fbc-44a0-b733-108867c948bb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278403,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "git clean -fd \u0026\u0026 git svn mkdirs",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "5d184b49-fa7f-458f-8634-854d0636dab5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278402,
+          "id": "5d184b49-fa7f-458f-8634-854d0636dab5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278402,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To avoid adding the flag each time you do a dcommit, or to play it safe if you are using a git GUI tool (like SourceTree) you can set this behaviour as default with the command:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "67e00987-e70c-46d3-b02a-aff8401ad1b4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278399,
+          "id": "67e00987-e70c-46d3-b02a-aff8401ad1b4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278399,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "git does not recognice the concept of folders, it just works with files and their filepaths. This means git does not track empty folders. SVN, however, does. Using git-svn means that, by default, "
+              ],
+              [
+                "any change you do involving empty folders with git will not be propagated to SVN",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "79daf89c-eebe-411b-bb9c-98f62272e90c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278403,
+          "id": "79daf89c-eebe-411b-bb9c-98f62272e90c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278403,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Please note: the previous command will remove all untracked files and empty folders, even the ones that should be tracked by SVN! If you need to generate againg the empty folders tracked by SVN use the command"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "7a53413c-7247-428c-a59a-b63d40908b82": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278402,
+          "id": "7a53413c-7247-428c-a59a-b63d40908b82",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278402,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "git config --global svn.rmdir true",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "7de624b4-c95f-45fc-aeed-373d93d9ed1f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278403,
+          "id": "7de624b4-c95f-45fc-aeed-373d93d9ed1f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278403,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In practices this means that if you want to cleanup your workspace from untracked files and folders you should always use both commands to recreate the empty folders tracked by SVN:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "81e51501-e7f9-49a3-b749-4b204d83d515": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "67e00987-e70c-46d3-b02a-aff8401ad1b4",
+            "df03c479-53f2-4a6d-90e1-999515638193",
+            "f39322a4-af56-4e31-9cf1-191e7a085239",
+            "122d8372-19b3-4ce0-af70-961aecafa367",
+            "5d184b49-fa7f-458f-8634-854d0636dab5",
+            "7a53413c-7247-428c-a59a-b63d40908b82",
+            "cef63626-dc2d-4bf5-a34c-642a74358237",
+            "cc29088e-c75b-4dd9-9c82-7e51c2d383fc",
+            "1b789e45-edb8-44b8-8dd8-26906021da1d",
+            "1b582c44-b9ef-4acd-9260-70e967c0ccae",
+            "79daf89c-eebe-411b-bb9c-98f62272e90c",
+            "ef39475c-6037-4ac9-b885-51bead8bd1d0",
+            "7de624b4-c95f-45fc-aeed-373d93d9ed1f",
+            "5807e2f3-6fbc-44a0-b733-108867c948bb"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278403,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278403,
+          "parent_id": "be77aee7-333a-48fe-a261-d614ce3010a8",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Handling empty folders"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "be77aee7-333a-48fe-a261-d614ce3010a8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "45b5de56-ef89-4860-b1ff-1088f46fb5cd",
+            "131764ec-88e2-4270-80b9-5b60ec826729",
+            "bd204003-25c4-4ad4-abd7-13253b2801a4",
+            "0f0d4f6a-de9c-4099-bafb-672b81b261bc",
+            "1956b30f-6482-4f22-94ac-d61b42b2a326",
+            "81e51501-e7f9-49a3-b749-4b204d83d515"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947220000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "be77aee7-333a-48fe-a261-d614ce3010a8",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947520000,
+          "parent_id": "37913107-a419-4981-b1fc-745928c0df66",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "git-svn"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 23
+        }
+      },
+      "cc29088e-c75b-4dd9-9c82-7e51c2d383fc": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278402,
+          "id": "cc29088e-c75b-4dd9-9c82-7e51c2d383fc",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278402,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "[svn]\nrmdir = true"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "cef63626-dc2d-4bf5-a34c-642a74358237": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278402,
+          "id": "cef63626-dc2d-4bf5-a34c-642a74358237",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278402,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This changes your .gitconfig file and adds these lines:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "df03c479-53f2-4a6d-90e1-999515638193": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278401,
+          "id": "df03c479-53f2-4a6d-90e1-999515638193",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278401,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Using the "
+              ],
+              [
+                "--rmdir",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " flag when issuing a comment corrects this issue, and removes an empty folder in SVN if you locally delete the last file inside it:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ef39475c-6037-4ac9-b885-51bead8bd1d0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278403,
+          "id": "ef39475c-6037-4ac9-b885-51bead8bd1d0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278403,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "git svn mkdirs",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "f39322a4-af56-4e31-9cf1-191e7a085239": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551947278402,
+          "id": "f39322a4-af56-4e31-9cf1-191e7a085239",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551947278402,
+          "parent_id": "81e51501-e7f9-49a3-b749-4b204d83d515",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "git svn dcommit --rmdir",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

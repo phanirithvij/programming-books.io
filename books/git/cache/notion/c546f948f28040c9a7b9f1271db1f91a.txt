@@ -1,0 +1,1320 @@
+2723 1594557572782 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+      "table": "block"
+    }
+  ]
+}
+Response:+2523
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "4ecb07b3-f905-42cf-bc23-c8c1ea817e1f",
+          "25b5bfb5-5c16-4e1f-a5f3-00a0a29e112b",
+          "a6190d80-1d54-42db-ab8a-7e11a12c0158",
+          "eddc3445-c2ff-4b41-9bec-987a7230d294",
+          "973ff03b-be51-49b6-8699-44949d1d3fc3",
+          "613114e1-d89b-4da4-b57d-931d285ecfe0",
+          "5ce698e4-30ef-4eea-a641-c092c3ec1465",
+          "2f5d308d-80d8-4098-97fa-d64cc9f652ec",
+          "086baa8e-eced-4efa-ba76-44820ef0453c",
+          "0e275eab-8abb-435b-9645-591516b2f404",
+          "517112c0-2233-474b-9ad9-3211f0c735e0",
+          "dee34628-3608-45c0-9790-941e05f3d6fb",
+          "46307ad1-2982-412e-9eba-c481d2e4114d",
+          "ffcf6793-e68a-40b6-acac-56f7f00cc8f1",
+          "de33d0ce-b7a8-4f21-bff0-07dfc8ac444f",
+          "073ef6af-0494-401f-963f-e42bdd1f5186",
+          "6df8607b-feb2-4de3-b352-dad0fb4517f0",
+          "4f5643ca-8e6f-4133-8def-a77528fac2b2",
+          "ef64b1da-c108-4a53-bf6e-29d67f3e2186",
+          "7efa887c-f3aa-4961-b71a-3e3e724dfa95",
+          "7a9199eb-5876-42fd-9433-7364ee352556",
+          "c7e8ec49-12da-45ef-bcf2-c3d690a88e77",
+          "b055e8bc-7074-4f10-b8e8-36c67cba37e9",
+          "e1a310d7-f434-477b-882a-ab7ad5812e57",
+          "a83e5d71-7f4e-4ba1-b3ac-6e97f7a28e79",
+          "d02987c3-ca6a-46c3-b40a-8c763faa4137",
+          "0ed7a20c-81dd-40b1-8e9f-13070d329962",
+          "95c9feac-5490-40e7-a314-0652b7f9cf4c",
+          "ea52cf2b-dc96-44e6-b136-8db61117fa4e"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1551946475710,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552450620000,
+        "parent_id": "6a125e34-a2b3-4705-af0a-c5e164ccfa24",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Create your first repository then add and commit files"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 4
+      }
+    }
+  ]
+}
+44761 1594557572784 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+  "verticalColumns": false
+}
+Response:+44520
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "073ef6af-0494-401f-963f-e42bdd1f5186": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475705,
+          "id": "073ef6af-0494-401f-963f-e42bdd1f5186",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552450620000,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git add ."
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "086baa8e-eced-4efa-ba76-44820ef0453c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475704,
+          "id": "086baa8e-eced-4efa-ba76-44820ef0453c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552450620000,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git init"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 7
+        }
+      },
+      "0e275eab-8abb-435b-9645-591516b2f404": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475704,
+          "id": "0e275eab-8abb-435b-9645-591516b2f404",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475704,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This creates a hidden folder, "
+              ],
+              [
+                ".git",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", which contains the plumbing needed for Git to work."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "0ed7a20c-81dd-40b1-8e9f-13070d329962": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475710,
+          "id": "0ed7a20c-81dd-40b1-8e9f-13070d329962",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475710,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "A remote URL, for example, "
+              ],
+              [
+                "https://\u003cyour-git-service-address\u003e/user/repo.git",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 1
+        }
+      },
+      "25b5bfb5-5c16-4e1f-a5f3-00a0a29e112b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475701,
+          "id": "25b5bfb5-5c16-4e1f-a5f3-00a0a29e112b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475701,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "On all operating systems:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "2f5d308d-80d8-4098-97fa-d64cc9f652ec": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475704,
+          "id": "2f5d308d-80d8-4098-97fa-d64cc9f652ec",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475704,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Once Git is installed, navigate to the directory you want to place under version control and create an empty Git repository:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "37913107-a419-4981-b1fc-745928c0df66": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "6a125e34-a2b3-4705-af0a-c5e164ccfa24",
+            "b3581026-b0bb-4248-be87-b5784c64f255",
+            "76b17b23-95a9-4e89-8f82-ec8a3ec62a50",
+            "04ee78eb-a4e2-451f-a18f-4b6132c7cd1d",
+            "e3c469c1-1d8e-447a-97fa-8f4b2670ad27",
+            "2c45ad9e-e679-465d-83a9-561229837a80",
+            "df323286-a540-4216-aaf6-c85842881694",
+            "dd79ffd3-abcb-4e0d-8df1-80d202647136",
+            "fa96b97d-1a96-4c33-8c2b-fcdeb06002f5",
+            "399affdf-5c77-4f40-a203-8b6a5de16654",
+            "9889cb01-9b9d-43d8-a056-66c9bcb42680",
+            "313c84eb-dd9a-43c8-b395-78d72c422514",
+            "8481aef2-15de-40b9-aa1d-6e9cc919952f",
+            "853f7b3c-f5b9-463a-ad6d-71114a0e45b9",
+            "6a384b97-0361-4f43-81c2-8537ed4702c0",
+            "98ad87b1-5a88-4d5c-8a26-b2e4ce89100b",
+            "0c23d962-7cec-403c-8e26-7e0c3d99f3cd",
+            "fcc2ce7a-7897-4ae1-9be5-6d71e9091623",
+            "89763338-4654-4a93-82aa-c14ea0da0a23",
+            "1becb842-107e-4d22-98e3-83948d2a46ba",
+            "81dfe434-dd0d-4928-aa79-60cef0ee9e5d",
+            "d22ee6fd-6d95-424c-bcc3-8ccee2d58c07",
+            "2bd8ba82-17f0-4cb9-a3e5-3cffacb1c96a",
+            "711b10b7-68c2-4da4-8501-b8412d112f4e",
+            "55ea0a0e-7756-475f-9073-4b7614f212f0",
+            "843837bd-3d09-465c-ab10-17bd4b856e07",
+            "19ee9c1f-db62-4f5d-8a58-791f695c4fbe",
+            "8473b8bd-2cb6-40de-bfe0-357c55d8e3ef",
+            "02737ac1-5e31-4f62-ae04-5faa549ff9dd",
+            "e3e963bd-42f2-41c8-a10a-15304cf07d5a",
+            "a5e863d8-6a03-49fb-947f-6790e50412eb",
+            "1d5abacd-e9e5-4754-94b2-5f01773829dd",
+            "4119551d-a28c-4c5a-81b7-0c6960db1d9f",
+            "be77aee7-333a-48fe-a261-d614ce3010a8",
+            "2ba4525f-df9c-49d8-b6b0-5f0fb0cf39b9",
+            "3b812637-4556-4f6d-b255-bee991395792",
+            "9448471c-a81b-44ac-a3f6-47fdaf38e1c4",
+            "8a3306f4-4d2d-4548-bcb3-4b7baf2979ff",
+            "b6fd813b-163f-447c-861e-0daae8e1d522",
+            "008196e2-a875-4d47-9461-5a8cfa36d190",
+            "5671aa61-8485-459d-8825-3c0b83dda989",
+            "f7de7d04-06a0-40bf-8ac1-03fda0d4efa3",
+            "72b49046-4c58-45b2-891f-d04b342f5222",
+            "ed5f332e-f2c7-4e6e-a816-4934948332c8",
+            "164391a5-bae5-4865-a5d5-8275f23cce37",
+            "1a2cc6a4-3b0e-4781-83fe-655db778b697",
+            "c7501101-27d8-4177-bec2-99b76fff0b7f",
+            "ad133dbf-ea4a-4d4f-8f98-0120a30ce624",
+            "77f16c7f-e9e6-4678-a25f-074954c0edb0",
+            "1b824b7d-8b0d-41e1-958e-a4fb45cb0000",
+            "2a595f06-43c1-4c60-929a-db83b0926241",
+            "d86b019e-ba87-4d0b-98b7-5c661b59a7f3",
+            "65c822a3-79b7-4e8d-8d82-20d4e1935be2",
+            "b5fdbb9a-13a6-46b1-8455-19157dec5b74",
+            "57fec9be-9f67-4bc3-9b8d-934aad839637",
+            "08b340f2-d643-4ca2-ab30-da708aad3b1e",
+            "f1df31fb-1b36-43ae-8828-1d647461169a",
+            "94ebeaf3-c732-4f82-8de0-b88362a1e049",
+            "df5f15ed-8885-4ec1-bd45-d8dcea529bda",
+            "5b770b23-9cb7-4edb-81da-5a5f3542755a",
+            "2164816c-a43b-44b4-b528-dab69ce86743",
+            "8db67d22-889d-4aef-96a1-2e1d18ab323a",
+            "99d2b2ec-9371-4337-9a89-4a25a15433d4"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946413454,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "37913107-a419-4981-b1fc-745928c0df66",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605600000,
+          "parent_id": "69680b54-4c46-427b-8da8-9fc356b079a5",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Git"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 179
+        }
+      },
+      "46307ad1-2982-412e-9eba-c481d2e4114d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475704,
+          "id": "46307ad1-2982-412e-9eba-c481d2e4114d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475704,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Review the resulting list of files; you can tell Git which of the files to place into version control (avoid adding files with confidential information such as passwords, or files that just clutter the repo):"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "4ecb07b3-f905-42cf-bc23-c8c1ea817e1f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475699,
+          "id": "4ecb07b3-f905-42cf-bc23-c8c1ea817e1f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475699,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "At the command line, first verify that you have Git installed:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "4f5643ca-8e6f-4133-8def-a77528fac2b2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475706,
+          "id": "4f5643ca-8e6f-4133-8def-a77528fac2b2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475706,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "For files that you want never under version control, "
+              ],
+              [
+                "create and populate a file named ",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/git/245/ignoring-files-and-folders#t=201607281145105871327"
+                  ]
+                ]
+              ],
+              [
+                ".gitignore",
+                [
+                  [
+                    "c"
+                  ],
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/git/245/ignoring-files-and-folders#t=201607281145105871327"
+                  ]
+                ]
+              ],
+              [
+                " before running the "
+              ],
+              [
+                "add",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " command."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "517112c0-2233-474b-9ad9-3211f0c735e0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475704,
+          "id": "517112c0-2233-474b-9ad9-3211f0c735e0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475704,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Next, check what files Git will add to your new repository; this step is worth special care:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "5ce698e4-30ef-4eea-a641-c092c3ec1465": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475704,
+          "id": "5ce698e4-30ef-4eea-a641-c092c3ec1465",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475704,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "After installing Git, "
+              ],
+              [
+                "configure your username and email address",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/git/218/getting-started-with-git/6939/setting-your-user-name-and-email"
+                  ]
+                ]
+              ],
+              [
+                ". Do this "
+              ],
+              [
+                "before",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " making a commit."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "613114e1-d89b-4da4-b57d-931d285ecfe0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475703,
+          "id": "613114e1-d89b-4da4-b57d-931d285ecfe0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475703,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If nothing is returned, or the command is not recognized, you may have to install Git on your system by downloading and running the installer. See the "
+              ],
+              [
+                "Git homepage",
+                [
+                  [
+                    "a",
+                    "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git"
+                  ]
+                ]
+              ],
+              [
+                " for exceptionally clear and easy installation instructions."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "6a125e34-a2b3-4705-af0a-c5e164ccfa24": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "89fb8f32-701c-4d99-9648-c570ef832dfc",
+            "c546f948-f280-40c9-a7b9-f1271db1f91a",
+            "a9c27d73-a67e-460c-a0eb-d8308bb0cef4",
+            "e32ca460-0878-4e12-aa3e-f04b8577db49",
+            "81c8a3ef-9e03-46b6-9294-76c151ff3dc6",
+            "f2f0968a-e7bc-40aa-8e80-b5cb45fe17c3",
+            "632bb702-20f0-4e83-ae3a-1401730a2bc4",
+            "a0252708-8474-4e91-80a8-a4955fa267bf",
+            "f7cc5cae-1c57-4193-a7b3-59db33e0ff89"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946440000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "6a125e34-a2b3-4705-af0a-c5e164ccfa24",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946800000,
+          "parent_id": "37913107-a419-4981-b1fc-745928c0df66",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Getting started"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 38
+        }
+      },
+      "6df8607b-feb2-4de3-b352-dad0fb4517f0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475705,
+          "id": "6df8607b-feb2-4de3-b352-dad0fb4517f0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475705,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This will "
+              ],
+              [
+                "“stage”",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/git/244/staging"
+                  ]
+                ]
+              ],
+              [
+                " all files to be added to version control, preparing them to be committed in your first commit."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "7a9199eb-5876-42fd-9433-7364ee352556": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475707,
+          "id": "7a9199eb-5876-42fd-9433-7364ee352556",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475707,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This creates a new "
+              ],
+              [
+                "commit",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/git/323/committing"
+                  ]
+                ]
+              ],
+              [
+                " with the given message. A commit is like a save or snapshot of your entire project. You can now "
+              ],
+              [
+                "push",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/git/2600/pushing"
+                  ]
+                ]
+              ],
+              [
+                ", or upload, it to a remote repository, and later you can jump back to it if necessary."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "7efa887c-f3aa-4961-b71a-3e3e724dfa95": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475706,
+          "id": "7efa887c-f3aa-4961-b71a-3e3e724dfa95",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552450620000,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git commit -m \"Initial commit\""
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "95c9feac-5490-40e7-a314-0652b7f9cf4c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475710,
+          "id": "95c9feac-5490-40e7-a314-0652b7f9cf4c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552450620000,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git remote add origin https://\u003cyour-git-service-address\u003e/owner/repository.git"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "973ff03b-be51-49b6-8699-44949d1d3fc3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475702,
+          "id": "973ff03b-be51-49b6-8699-44949d1d3fc3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552450620000,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "which git"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "a6190d80-1d54-42db-ab8a-7e11a12c0158": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475701,
+          "id": "a6190d80-1d54-42db-ab8a-7e11a12c0158",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552450620000,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git --version"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "a83e5d71-7f4e-4ba1-b3ac-6e97f7a28e79": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475708,
+          "id": "a83e5d71-7f4e-4ba1-b3ac-6e97f7a28e79",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475708,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The "
+              ],
+              [
+                "git remote add",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " command takes two arguments:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "b055e8bc-7074-4f10-b8e8-36c67cba37e9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475707,
+          "id": "b055e8bc-7074-4f10-b8e8-36c67cba37e9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475707,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Adding a remote"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "c546f948-f280-40c9-a7b9-f1271db1f91a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4ecb07b3-f905-42cf-bc23-c8c1ea817e1f",
+            "25b5bfb5-5c16-4e1f-a5f3-00a0a29e112b",
+            "a6190d80-1d54-42db-ab8a-7e11a12c0158",
+            "eddc3445-c2ff-4b41-9bec-987a7230d294",
+            "973ff03b-be51-49b6-8699-44949d1d3fc3",
+            "613114e1-d89b-4da4-b57d-931d285ecfe0",
+            "5ce698e4-30ef-4eea-a641-c092c3ec1465",
+            "2f5d308d-80d8-4098-97fa-d64cc9f652ec",
+            "086baa8e-eced-4efa-ba76-44820ef0453c",
+            "0e275eab-8abb-435b-9645-591516b2f404",
+            "517112c0-2233-474b-9ad9-3211f0c735e0",
+            "dee34628-3608-45c0-9790-941e05f3d6fb",
+            "46307ad1-2982-412e-9eba-c481d2e4114d",
+            "ffcf6793-e68a-40b6-acac-56f7f00cc8f1",
+            "de33d0ce-b7a8-4f21-bff0-07dfc8ac444f",
+            "073ef6af-0494-401f-963f-e42bdd1f5186",
+            "6df8607b-feb2-4de3-b352-dad0fb4517f0",
+            "4f5643ca-8e6f-4133-8def-a77528fac2b2",
+            "ef64b1da-c108-4a53-bf6e-29d67f3e2186",
+            "7efa887c-f3aa-4961-b71a-3e3e724dfa95",
+            "7a9199eb-5876-42fd-9433-7364ee352556",
+            "c7e8ec49-12da-45ef-bcf2-c3d690a88e77",
+            "b055e8bc-7074-4f10-b8e8-36c67cba37e9",
+            "e1a310d7-f434-477b-882a-ab7ad5812e57",
+            "a83e5d71-7f4e-4ba1-b3ac-6e97f7a28e79",
+            "d02987c3-ca6a-46c3-b40a-8c763faa4137",
+            "0ed7a20c-81dd-40b1-8e9f-13070d329962",
+            "95c9feac-5490-40e7-a314-0652b7f9cf4c",
+            "ea52cf2b-dc96-44e6-b136-8db61117fa4e"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475710,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552450620000,
+          "parent_id": "6a125e34-a2b3-4705-af0a-c5e164ccfa24",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Create your first repository then add and commit files"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 4
+        }
+      },
+      "c7e8ec49-12da-45ef-bcf2-c3d690a88e77": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475707,
+          "id": "c7e8ec49-12da-45ef-bcf2-c3d690a88e77",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475707,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If you omit the "
+              ],
+              [
+                "-m",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " parameter, your default editor will open and you can edit and save the commit message there."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "d02987c3-ca6a-46c3-b40a-8c763faa4137": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475708,
+          "id": "d02987c3-ca6a-46c3-b40a-8c763faa4137",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475708,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "A remote name, for example, "
+              ],
+              [
+                "origin",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 5
+        }
+      },
+      "de33d0ce-b7a8-4f21-bff0-07dfc8ac444f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475705,
+          "id": "de33d0ce-b7a8-4f21-bff0-07dfc8ac444f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475705,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If all files in the list should be shared with everyone who has access to the repository, a single command will add everything in your current directory and its subdirectories:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "dee34628-3608-45c0-9790-941e05f3d6fb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475704,
+          "id": "dee34628-3608-45c0-9790-941e05f3d6fb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552450620000,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git status"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "e1a310d7-f434-477b-882a-ab7ad5812e57": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475707,
+          "id": "e1a310d7-f434-477b-882a-ab7ad5812e57",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475707,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To add a new remote, use the "
+              ],
+              [
+                "git remote add",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " command on the terminal, in the directory your repository is stored at."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "ea52cf2b-dc96-44e6-b136-8db61117fa4e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475710,
+          "id": "ea52cf2b-dc96-44e6-b136-8db61117fa4e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475710,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "NOTE: Before adding the remote you have to create the required repository in your git service, You’ll be able to push/pull commits after adding your remote."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "eddc3445-c2ff-4b41-9bec-987a7230d294": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475702,
+          "id": "eddc3445-c2ff-4b41-9bec-987a7230d294",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475702,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "On UNIX-like operating systems:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ef64b1da-c108-4a53-bf6e-29d67f3e2186": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475706,
+          "id": "ef64b1da-c108-4a53-bf6e-29d67f3e2186",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551946475706,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Commit all the files that have been added, along with a commit message:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ffcf6793-e68a-40b6-acac-56f7f00cc8f1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551946475705,
+          "id": "ffcf6793-e68a-40b6-acac-56f7f00cc8f1",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552450620000,
+          "parent_id": "c546f948-f280-40c9-a7b9-f1271db1f91a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "git add \u003cfile/directory name #1\u003e \u003cfile/directory name #2\u003e \u003c ... \u003e"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
