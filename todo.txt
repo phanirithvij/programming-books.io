@@ -1,48 +1,28 @@
 * add redirects from www.programming-books.io
 * verify google analyticss
-* write sitemap
+* write sitemap.txt
 * create book-index for www.programming-books.io
-* [x] (temporarily_) remove comment submission
-* fix comment submission. find some online form submission or write one
-* maybe link to all books at the bottom, not at the top
+* re-add comment submission.
 * then the top would show name of the book, point to the top of book and
   we won't need one level of breadcrumbs at the top of page
 * add -preview option that runs `vercel dev` at the end for a given book
 * add a way to generate html page with structure of the page, for easy finding
   pages to edit. Shows which pages have snippets, images, codeeval.com links etc.
+* make 404.html design match the rest of the book better
 
-to deploy:
-* create book-css
-* create book-html
-* create book-htmlcanvas
-* create book-java
-* create book-kotlin
- * fix lack of twitter cover (or skip for now)
-* create book-csharp
-* create book-python
-* create book-postgresql
-* create book mysql
-* create book-ios
-* create book-android
-* create book-bash
-* create book-powershell
-* create book-batch
- * fix lack of twitter cover
-* create book-git
-* create book-php
-* create book-ruby
-* create book-netframework
- * rename to netcore?
-* create book-nodejs
-* create book-dart
- * fix lack of twitter cover
-* create book-typescript
-* create book-swift
-* create book-c
-* create book-objectivec
-* create book-react
-* create book-ractnative
-* create book-rubyonrails
-* create book-sql
+* kotlin: fix lack of twitter cover (or skip for now)
+* rename book-netframework o netcore?
+* dart: fix lack of twitter cover
 
 * fix images for cpp and other books
+
+Command to create a project or link to existing project:
+vercel www --scope teamkjk --name book-git --confirm
+
+Command to preview locally:
+cd www
+vercel dev
+
+* [x] fix 404 page
+* [x] maybe link to all books at the bottom, not at the top
+* [x] (temporarily_) remove comment submission

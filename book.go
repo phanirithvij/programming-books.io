@@ -215,8 +215,10 @@ func initBook(book *Book) {
 	currBookDir = book.DirOnDisk
 	dir := book.NotionCacheDir()
 	u.CreateDirMust(dir)
-	dir = filepath.Join(book.DirOnDisk, "www")
-	os.RemoveAll(dir)
+	if flgClean {
+		dir = filepath.Join(book.DirOnDisk, "www")
+		os.RemoveAll(dir)
+	}
 	dir = filepath.Join(book.DirOnDisk, "www", "s")
 	u.CreateDirMust(dir)
 	dir = filepath.Join(book.DirOnDisk, "www", "gen")

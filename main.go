@@ -89,6 +89,9 @@ var (
 	flgGistRedownload bool
 	flgDeployProd     bool
 	flgDeployDev      bool
+
+	// if true, re-create "www" directory
+	flgClean bool
 )
 
 func main() {
@@ -101,6 +104,7 @@ func main() {
 		flag.BoolVar(&flgWc, "wc", false, "wc -l")
 		flag.BoolVar(&flgDeployProd, "deploy-prod", false, "deploy to prodution")
 		flag.BoolVar(&flgDeployDev, "deploy-dev", false, "deploy to dev")
+		flag.BoolVar(&flgClean, "clean", false, "if true, re-create 'www' directory")
 		flag.StringVar(&flgGen, "gen", "", "generate a book and deploy preview")
 		flag.Parse()
 	}
