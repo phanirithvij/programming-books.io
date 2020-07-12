@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"html/template"
 	"io/ioutil"
+	"os"
 	"path/filepath"
 
 	"github.com/kjk/notionapi"
@@ -212,6 +213,8 @@ func initBook(book *Book) {
 	book.DirOnDisk = fullDir
 	dir := book.NotionCacheDir()
 	u.CreateDirMust(dir)
+	dir = filepath.Join(book.DirOnDisk, "www")
+	os.RemoveAll(dir)
 	dir = filepath.Join(book.DirOnDisk, "www", "s")
 	u.CreateDirMust(dir)
 	dir = filepath.Join(book.DirOnDisk, "www", "gen")

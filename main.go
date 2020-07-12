@@ -140,6 +140,7 @@ func generateBook(book *Book) {
 	downloadBook(book)
 	currBookDir = book.DirOnDisk
 	genBook(book)
+	deployPreviewWithVercel(book)
 }
 
 func newNotionClient() *notionapi.Client {

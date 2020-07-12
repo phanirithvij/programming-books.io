@@ -6,6 +6,7 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"strings"
 	"time"
@@ -313,6 +314,27 @@ func genBook404(book *Book, w io.Writer) error {
 	return execTemplate("404.tmpl.html", data, path, nil)
 }
 
+func copyVercelRoutes(book *Book) {
+	src := "vercel.json"
+	dst := filepath.Join(book.DirOnDisk, "www", "vercel.json")
+	u.CopyFileMust(dst, src)
+	logf("Copied '%s' => '%s'\n", src, dst)
+}
+
+func copyCover(book *Book) {
+	src := filepath.Join("covers", book.CoverImageName)
+	dst := filepath.Join(book.DirOnDisk, "www", "covers", book.CoverImageName)
+	u.CreateDirForFileMust(dst)
+	u.CopyFileMust(dst, src)
+	logf("Copied '%s' => '%s'\n", src, dst)
+}
+
+func deployPreviewWithVercel(book *Book) {
+	cmd := exec.Command("vercel")
+	cmd.Dir = book.DirOnDisk
+	u.RunCmdLoggedMust(cmd)
+}
+
 func genBook(book *Book) {
 	logf("Started genering book %s\n", book.Title)
 	timeStart := time.Now()
@@ -339,6 +361,9 @@ func genBook(book *Book) {
 	for _, chapter := range book.Chapters() {
 		_ = genPage(book, chapter, nil)
 	}
+
+	copyCover(book)
+	copyVercelRoutes(book)
 
 	logf("Generated book '%s' in %s\n", book.Title, time.Since(timeStart))
 }
