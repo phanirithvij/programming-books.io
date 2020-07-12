@@ -1,0 +1,800 @@
+1940 1594558060828 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+      "table": "block"
+    }
+  ]
+}
+Response:+1740
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "f5f6f5b7-57c0-4837-a380-c4e869b15afe",
+          "fcce57a7-97a1-4353-a76e-5566c8e16bf7",
+          "c1ed8a0a-541d-4150-920c-096a59e420d6",
+          "14c82748-e4b4-4622-b37b-817e9cce5092",
+          "cb499f80-ef0c-420d-99f7-cbae9a0a655f",
+          "87be1fe9-0cbb-471f-a6c9-e311658ece84",
+          "c081dffb-2a10-4a96-bbfc-e9505725c3f5",
+          "59159ec4-d779-45ed-b211-dced22df14ac",
+          "a294048a-eb7b-4772-ab39-7fb7d362bbba",
+          "9423dc32-b21d-4c98-8e35-62d472269b99",
+          "89587a51-6452-4d30-a5f4-080ea35b44bd",
+          "ab25dab0-ba62-4dbc-a3d1-c1c92b56a11d",
+          "4b22a953-ecea-4402-b598-03f59ab6c0e5",
+          "4a7e94b5-1c2b-4a72-9cd0-bfdc0442bd20"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552099904897,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552099904897,
+        "parent_id": "54e1310d-4692-4318-b404-5f886461565a",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Hello World Component"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+26734 1594558060828 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+  "verticalColumns": false
+}
+Response:+26493
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "14c82748-e4b4-4622-b37b-817e9cce5092": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904894,
+          "id": "14c82748-e4b4-4622-b37b-817e9cce5092",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904894,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "import React from 'react'\n\nclass Hello extends React.Component {\n    render() {\n        return \u003ch1\u003eHello, {this.props.name}!\u003c/h1\u003e\n    }\n}\n\nexport default Hello"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "1b5f0225-274f-49b5-b8a1-b6667b053ba4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "f5f6f5b7-57c0-4837-a380-c4e869b15afe",
+            "fcce57a7-97a1-4353-a76e-5566c8e16bf7",
+            "c1ed8a0a-541d-4150-920c-096a59e420d6",
+            "14c82748-e4b4-4622-b37b-817e9cce5092",
+            "cb499f80-ef0c-420d-99f7-cbae9a0a655f",
+            "87be1fe9-0cbb-471f-a6c9-e311658ece84",
+            "c081dffb-2a10-4a96-bbfc-e9505725c3f5",
+            "59159ec4-d779-45ed-b211-dced22df14ac",
+            "a294048a-eb7b-4772-ab39-7fb7d362bbba",
+            "9423dc32-b21d-4c98-8e35-62d472269b99",
+            "89587a51-6452-4d30-a5f4-080ea35b44bd",
+            "ab25dab0-ba62-4dbc-a3d1-c1c92b56a11d",
+            "4b22a953-ecea-4402-b598-03f59ab6c0e5",
+            "4a7e94b5-1c2b-4a72-9cd0-bfdc0442bd20"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904897,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904897,
+          "parent_id": "54e1310d-4692-4318-b404-5f886461565a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Hello World Component"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "22644f42-5b62-4106-ab6f-407fcf2e0146",
+            "54e1310d-4692-4318-b404-5f886461565a",
+            "da8fafc6-5f35-4220-90b1-92f7b2069ee8",
+            "a4124947-09ed-4600-a460-a5f24acfbd6a",
+            "6cafc1d7-8633-42d6-b702-833db7d26eed",
+            "45761919-6bc5-4ffa-b9b6-ef83a7c7ae4e",
+            "3be1a9d3-83e8-46d7-add6-1ee03c2e1899",
+            "3731d999-c1bc-4c1b-a0aa-d1d9fc9593cd",
+            "d91668ae-eb75-4c83-8946-7b1d4f7a037b",
+            "7a9b795a-6e6a-47be-8428-3835a236c536",
+            "d7004271-2e4c-4340-bb8b-d5647d3f0de2",
+            "fe58dcb8-c978-4ad9-bc8b-66067b6739ab",
+            "9c40f65e-1bdc-4f72-a972-d646271de386",
+            "de02e09a-b95b-41ac-9225-187428487c3b",
+            "a8bc3cbf-7d9a-4b54-9632-4ea3f34b4215",
+            "d6b4365e-b5e2-455e-b923-24ce2c042efa",
+            "5163a4c0-2123-4f18-b52c-444de537938e",
+            "d6dde1b5-2eeb-4b63-8741-8b4354c7eb3d",
+            "fed83124-31e9-4e36-941f-0b835aeea1e3",
+            "5ad4bd79-730c-404f-a84b-e8f9eb692c36",
+            "ea8b8930-6415-45dc-adb0-6d60dc3f3886",
+            "066cca80-f253-4328-bdc0-50ac81ba02b8",
+            "866a5fd0-5a0b-4ef5-b0af-0bf0ef5a0f69",
+            "34c251a5-b7b8-4671-8f75-11f5330f0a43",
+            "019d61bd-45f1-4ded-ba13-2dc288859c44",
+            "ce608663-33cc-4b42-bb6b-adecebad2004",
+            "edae1dcd-128b-4d41-ab94-4aead7cf1ee1",
+            "c5841c99-b288-48b9-9d6b-1734bb17732c",
+            "9f918454-eff2-4d55-aa16-396edf968bd3",
+            "2b18d28b-6419-48ef-aaca-668f0278d521",
+            "7107118c-af64-488f-8118-718eda6e81ca",
+            "24659cb7-c4c6-4dea-a32a-a5fdc61ede53",
+            "9530c916-7089-4e5a-859d-6b4424d423b7"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099880945,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571296680000,
+          "parent_id": "37044441-eaa2-4b12-9a54-75276f37e75a",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential React"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 67
+        }
+      },
+      "4a7e94b5-1c2b-4a72-9cd0-bfdc0442bd20": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904897,
+          "id": "4a7e94b5-1c2b-4a72-9cd0-bfdc0442bd20",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904897,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Codepen Link to Example.",
+                [
+                  [
+                    "a",
+                    "https://codepen.io/sunnykgupta/pen/mRPxdo?editors=1010"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "4b22a953-ecea-4402-b598-03f59ab6c0e5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904895,
+          "id": "4b22a953-ecea-4402-b598-03f59ab6c0e5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904895,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Note:",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " Each component can have it’s own state or accept it’s parent’s state as a prop."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "54e1310d-4692-4318-b404-5f886461565a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "6fb73c9c-864f-42d8-be09-533d8b65d3cf",
+            "6a5d8192-ae0f-43bf-97ee-b8505c712c78",
+            "1fd0a4c5-e765-4dde-ba60-a900d938e4ed",
+            "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+            "328febce-a76f-4ae0-8cc3-ac17a0758677",
+            "d4f5eab7-8c80-4fbb-9427-4ee071dc6662",
+            "fdf86184-468b-4bf5-9492-df5b47e88d1a",
+            "1b5f0225-274f-49b5-b8a1-b6667b053ba4"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099860000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "54e1310d-4692-4318-b404-5f886461565a",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552100160000,
+          "parent_id": "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Getting started"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 34
+        }
+      },
+      "59159ec4-d779-45ed-b211-dced22df14ac": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904894,
+          "id": "59159ec4-d779-45ed-b211-dced22df14ac",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904894,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "type": "divider",
+          "version": 5
+        }
+      },
+      "87be1fe9-0cbb-471f-a6c9-e311658ece84": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904894,
+          "id": "87be1fe9-0cbb-471f-a6c9-e311658ece84",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904894,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "A component can be rendered within any other component, or directly into the DOM if it’s the topmost component, using "
+              ],
+              [
+                "ReactDOM.render",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and providing it with both the component and the DOM Node where you want the React tree to be rendered:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "89587a51-6452-4d30-a5f4-080ea35b44bd": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904895,
+          "id": "89587a51-6452-4d30-a5f4-080ea35b44bd",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904895,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "import React from 'react'\n\nclass Hello extends React.Component {\n\n    constructor(props){\n\n        //Since we are extending the default constructor,\n        //handle default activities first.\n        super(props);\n\n        //Extract the first-name from the prop\n        let firstName = this.props.name.split(\" \")[0];\n        \n        //In the constructor, feel free to modify the\n        //state property on the current context.\n        this.state = {\n            name: firstName\n        }\n\n    } //Look maa, no comma required in JSX based class defs!\n\n    render() {\n        return \u003ch1\u003eHello, {this.state.name}!\u003c/h1\u003e\n    }\n}\n\nexport default Hello"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "9423dc32-b21d-4c98-8e35-62d472269b99": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904895,
+          "id": "9423dc32-b21d-4c98-8e35-62d472269b99",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904895,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "For demo sake, let’s make our Hello World app, display only the first name if a full name is given."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "a294048a-eb7b-4772-ab39-7fb7d362bbba": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904895,
+          "id": "a294048a-eb7b-4772-ab39-7fb7d362bbba",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904895,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "By now you know how to make a basic component and accept "
+              ],
+              [
+                "props",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". Lets take this a step further and introduce "
+              ],
+              [
+                "state",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ab25dab0-ba62-4dbc-a3d1-c1c92b56a11d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904895,
+          "id": "ab25dab0-ba62-4dbc-a3d1-c1c92b56a11d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904895,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "type": "divider",
+          "version": 1
+        }
+      },
+      "c081dffb-2a10-4a96-bbfc-e9505725c3f5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904894,
+          "id": "c081dffb-2a10-4a96-bbfc-e9505725c3f5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904894,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "import React from 'react'\nimport ReactDOM from 'react-dom'\nimport Hello from './Hello'\n\nReactDOM.render(\u003cHello name=\"Billy James\" /\u003e, document.getElementById('main'))"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "c1ed8a0a-541d-4150-920c-096a59e420d6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904894,
+          "id": "c1ed8a0a-541d-4150-920c-096a59e420d6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904894,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "A Component can also receive "
+              ],
+              [
+                "props",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". These are properties passed by its parent in order to specify some values the component cannot know by itself; a property can also contain a function that can be called by the component after certain events occur - for example, a button could receive a function for its "
+              ],
+              [
+                "onClick",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " property and call it whenever it is clicked. When writing a component, its "
+              ],
+              [
+                "props",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " can be accessed through the "
+              ],
+              [
+                "props",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " object on the Component itself:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "cb499f80-ef0c-420d-99f7-cbae9a0a655f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904894,
+          "id": "cb499f80-ef0c-420d-99f7-cbae9a0a655f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904894,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The example above shows how the component can render an arbitrary string passed into the "
+              ],
+              [
+                "name",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " prop by its parent. Note that a component cannot modify the props it receives."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "f5f6f5b7-57c0-4837-a380-c4e869b15afe": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904891,
+          "id": "f5f6f5b7-57c0-4837-a380-c4e869b15afe",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904891,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "A React component can be defined as an ES6 class that extends the base "
+              ],
+              [
+                "React.Component",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " class. In its minimal form, a component "
+              ],
+              [
+                "must",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " define a "
+              ],
+              [
+                "render",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " method that specifies how the component renders to the DOM. The "
+              ],
+              [
+                "render",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " method returns React nodes, which can be defined using JSX syntax as HTML-like tags. The following example shows how to define a minimal Component:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "fcce57a7-97a1-4353-a76e-5566c8e16bf7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099904893,
+          "id": "fcce57a7-97a1-4353-a76e-5566c8e16bf7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099904893,
+          "parent_id": "1b5f0225-274f-49b5-b8a1-b6667b053ba4",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "import React from 'react'\n\nclass HelloWorld extends React.Component {\n    render() {\n        return \u003ch1\u003eHello, World!\u003c/h1\u003e\n    }\n}\n\nexport default HelloWorld"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

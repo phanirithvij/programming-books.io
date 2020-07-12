@@ -1,0 +1,676 @@
+1805 1594558062008 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+      "table": "block"
+    }
+  ]
+}
+Response:+1605
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "60e1f7f3-cf6f-4bfc-9554-195ef3a18922",
+          "3fc3e5f9-961d-429d-968c-3b9e5eb9068d",
+          "ed9f0694-fe11-4d9d-9db2-8315bb02b767",
+          "497fbfb0-ca66-4c97-984a-b0ae166d9b84",
+          "f971feaa-d5a1-44c2-b8c8-65391c48d982",
+          "8f71a68a-2779-4853-8cff-c97ec11ca094",
+          "ad4ca5a5-af5a-44cf-874f-f03c0f6ca185",
+          "028068ff-ee53-43f2-8d19-cbafa576e958",
+          "adcd9b64-a788-4406-b2f4-078dbe4eee5f",
+          "106ef3ef-6fba-4ff6-a2a9-60418f3c72a9",
+          "7ea2a977-adb9-444f-aecc-837aef824424"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552099901066,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552099901066,
+        "parent_id": "54e1310d-4692-4318-b404-5f886461565a",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Hello World with Stateless Functions"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+22408 1594558062009 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+  "verticalColumns": false
+}
+Response:+22167
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "028068ff-ee53-43f2-8d19-cbafa576e958": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901064,
+          "id": "028068ff-ee53-43f2-8d19-cbafa576e958",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901064,
+          "parent_id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "// In HTML\n\u003cdiv id=\"element\"\u003e\u003c/div\u003e\n\n// In React\nconst MyComponent = props =\u003e {\n    return \u003ch1\u003eHello, {props.name}!\u003c/h1\u003e;\n};\n\nReactDOM.render(\u003cMyComponent name=\"Arun\" /\u003e, element);\n// Will render \u003ch1\u003eHello, Arun!\u003c/h1\u003e"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "106ef3ef-6fba-4ff6-a2a9-60418f3c72a9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901064,
+          "id": "106ef3ef-6fba-4ff6-a2a9-60418f3c72a9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901064,
+          "parent_id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "import React from 'react'\n\nconst HelloWorld = props =\u003e (\n    \u003ch1\u003eHello, {props.name}!\u003c/h1\u003e\n)\n\nHelloWorld.propTypes = {\n    name: React.PropTypes.string.isRequired\n}\n\nexport default HelloWorld"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "22644f42-5b62-4106-ab6f-407fcf2e0146",
+            "54e1310d-4692-4318-b404-5f886461565a",
+            "da8fafc6-5f35-4220-90b1-92f7b2069ee8",
+            "a4124947-09ed-4600-a460-a5f24acfbd6a",
+            "6cafc1d7-8633-42d6-b702-833db7d26eed",
+            "45761919-6bc5-4ffa-b9b6-ef83a7c7ae4e",
+            "3be1a9d3-83e8-46d7-add6-1ee03c2e1899",
+            "3731d999-c1bc-4c1b-a0aa-d1d9fc9593cd",
+            "d91668ae-eb75-4c83-8946-7b1d4f7a037b",
+            "7a9b795a-6e6a-47be-8428-3835a236c536",
+            "d7004271-2e4c-4340-bb8b-d5647d3f0de2",
+            "fe58dcb8-c978-4ad9-bc8b-66067b6739ab",
+            "9c40f65e-1bdc-4f72-a972-d646271de386",
+            "de02e09a-b95b-41ac-9225-187428487c3b",
+            "a8bc3cbf-7d9a-4b54-9632-4ea3f34b4215",
+            "d6b4365e-b5e2-455e-b923-24ce2c042efa",
+            "5163a4c0-2123-4f18-b52c-444de537938e",
+            "d6dde1b5-2eeb-4b63-8741-8b4354c7eb3d",
+            "fed83124-31e9-4e36-941f-0b835aeea1e3",
+            "5ad4bd79-730c-404f-a84b-e8f9eb692c36",
+            "ea8b8930-6415-45dc-adb0-6d60dc3f3886",
+            "066cca80-f253-4328-bdc0-50ac81ba02b8",
+            "866a5fd0-5a0b-4ef5-b0af-0bf0ef5a0f69",
+            "34c251a5-b7b8-4671-8f75-11f5330f0a43",
+            "019d61bd-45f1-4ded-ba13-2dc288859c44",
+            "ce608663-33cc-4b42-bb6b-adecebad2004",
+            "edae1dcd-128b-4d41-ab94-4aead7cf1ee1",
+            "c5841c99-b288-48b9-9d6b-1734bb17732c",
+            "9f918454-eff2-4d55-aa16-396edf968bd3",
+            "2b18d28b-6419-48ef-aaca-668f0278d521",
+            "7107118c-af64-488f-8118-718eda6e81ca",
+            "24659cb7-c4c6-4dea-a32a-a5fdc61ede53",
+            "9530c916-7089-4e5a-859d-6b4424d423b7"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099880945,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571296680000,
+          "parent_id": "37044441-eaa2-4b12-9a54-75276f37e75a",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential React"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 67
+        }
+      },
+      "3fc3e5f9-961d-429d-968c-3b9e5eb9068d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901063,
+          "id": "3fc3e5f9-961d-429d-968c-3b9e5eb9068d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901063,
+          "parent_id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "For example:"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 1
+        }
+      },
+      "497fbfb0-ca66-4c97-984a-b0ae166d9b84": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901063,
+          "id": "497fbfb0-ca66-4c97-984a-b0ae166d9b84",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901063,
+          "parent_id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "As you can see from the above example that, statelessSum is always will return the same values given a and b. However, statefulSum function will not return the same values given even no parameters. This type of function’s behaviour is also called as a "
+              ],
+              [
+                "side-effect",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                ". Since, the component affects somethings beyond."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "54e1310d-4692-4318-b404-5f886461565a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "6fb73c9c-864f-42d8-be09-533d8b65d3cf",
+            "6a5d8192-ae0f-43bf-97ee-b8505c712c78",
+            "1fd0a4c5-e765-4dde-ba60-a900d938e4ed",
+            "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+            "328febce-a76f-4ae0-8cc3-ac17a0758677",
+            "d4f5eab7-8c80-4fbb-9427-4ee071dc6662",
+            "fdf86184-468b-4bf5-9492-df5b47e88d1a",
+            "1b5f0225-274f-49b5-b8a1-b6667b053ba4"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099860000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "54e1310d-4692-4318-b404-5f886461565a",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552100160000,
+          "parent_id": "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Getting started"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 34
+        }
+      },
+      "60e1f7f3-cf6f-4bfc-9554-195ef3a18922": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901060,
+          "id": "60e1f7f3-cf6f-4bfc-9554-195ef3a18922",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901060,
+          "parent_id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Stateless components are getting their philosophy from functional programming. Which implies that: A function returns all time the same thing exactly on what is given to it."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "6b02b7d4-14ae-4db6-abd9-09c778a093d2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "60e1f7f3-cf6f-4bfc-9554-195ef3a18922",
+            "3fc3e5f9-961d-429d-968c-3b9e5eb9068d",
+            "ed9f0694-fe11-4d9d-9db2-8315bb02b767",
+            "497fbfb0-ca66-4c97-984a-b0ae166d9b84",
+            "f971feaa-d5a1-44c2-b8c8-65391c48d982",
+            "8f71a68a-2779-4853-8cff-c97ec11ca094",
+            "ad4ca5a5-af5a-44cf-874f-f03c0f6ca185",
+            "028068ff-ee53-43f2-8d19-cbafa576e958",
+            "adcd9b64-a788-4406-b2f4-078dbe4eee5f",
+            "106ef3ef-6fba-4ff6-a2a9-60418f3c72a9",
+            "7ea2a977-adb9-444f-aecc-837aef824424"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901066,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901066,
+          "parent_id": "54e1310d-4692-4318-b404-5f886461565a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Hello World with Stateless Functions"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "7ea2a977-adb9-444f-aecc-837aef824424": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901066,
+          "id": "7ea2a977-adb9-444f-aecc-837aef824424",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901066,
+          "parent_id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Since these components do not require a backing instance to manage the state, React has more room for optimizations. The implementation is clean, but as of yet "
+              ],
+              [
+                "no such optimizations for stateless components have been implemented",
+                [
+                  [
+                    "a",
+                    "https://github.com/facebook/react/issues/5677#issuecomment-165125151"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "8f71a68a-2779-4853-8cff-c97ec11ca094": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901064,
+          "id": "8f71a68a-2779-4853-8cff-c97ec11ca094",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901064,
+          "parent_id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The most basic type of react component is one without state. React components that are pure functions of their props and do not require any internal state management can be written as simple JavaScript functions. These are said to be "
+              ],
+              [
+                "Stateless Functional Components",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " because they are a function only of "
+              ],
+              [
+                "props",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", without having any "
+              ],
+              [
+                "state",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " to keep track of."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ad4ca5a5-af5a-44cf-874f-f03c0f6ca185": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901064,
+          "id": "ad4ca5a5-af5a-44cf-874f-f03c0f6ca185",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901064,
+          "parent_id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Here is a simple example to illustrate the concept of a "
+              ],
+              [
+                "Stateless Functional Component",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ":"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "adcd9b64-a788-4406-b2f4-078dbe4eee5f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901064,
+          "id": "adcd9b64-a788-4406-b2f4-078dbe4eee5f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901064,
+          "parent_id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Note that all that this component does is render an "
+              ],
+              [
+                "h1",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " element containing the "
+              ],
+              [
+                "name",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " prop. This component doesn’t keep track of any state. Here’s an ES6 example as well:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ed9f0694-fe11-4d9d-9db2-8315bb02b767": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901063,
+          "id": "ed9f0694-fe11-4d9d-9db2-8315bb02b767",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901063,
+          "parent_id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "const statelessSum = (a, b) =\u003e a + b;\n\nlet a = 0;\nconst statefulSum = () =\u003e a++;"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "f971feaa-d5a1-44c2-b8c8-65391c48d982": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901064,
+          "id": "f971feaa-d5a1-44c2-b8c8-65391c48d982",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901064,
+          "parent_id": "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "So, it is advised to use stateless components more often, since they are "
+              ],
+              [
+                "side-effect free",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " and will create the same behaviour always. That is what you want to be after in your apps because fluctuating state is the worst case scenario for a maintainable program."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

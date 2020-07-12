@@ -1,0 +1,340 @@
+1504 1594558046056 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "9c40f65e-1bdc-4f72-a972-d646271de386",
+      "table": "block"
+    }
+  ]
+}
+Response:+1304
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "5ada161a-e93d-47a3-9e11-13ed8f5804e5",
+          "cfc1bbf9-9d6c-4c4d-b1a8-05ef8eea79a9"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552099920000,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "9c40f65e-1bdc-4f72-a972-d646271de386",
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552100220000,
+        "parent_id": "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d",
+        "parent_table": "block",
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+          }
+        ],
+        "properties": {
+          "title": [
+            [
+              "Basic webpack and babel setup"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 45
+      }
+    }
+  ]
+}
+10966 1594558046056 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "9c40f65e-1bdc-4f72-a972-d646271de386",
+  "verticalColumns": false
+}
+Response:+10725
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "22644f42-5b62-4106-ab6f-407fcf2e0146",
+            "54e1310d-4692-4318-b404-5f886461565a",
+            "da8fafc6-5f35-4220-90b1-92f7b2069ee8",
+            "a4124947-09ed-4600-a460-a5f24acfbd6a",
+            "6cafc1d7-8633-42d6-b702-833db7d26eed",
+            "45761919-6bc5-4ffa-b9b6-ef83a7c7ae4e",
+            "3be1a9d3-83e8-46d7-add6-1ee03c2e1899",
+            "3731d999-c1bc-4c1b-a0aa-d1d9fc9593cd",
+            "d91668ae-eb75-4c83-8946-7b1d4f7a037b",
+            "7a9b795a-6e6a-47be-8428-3835a236c536",
+            "d7004271-2e4c-4340-bb8b-d5647d3f0de2",
+            "fe58dcb8-c978-4ad9-bc8b-66067b6739ab",
+            "9c40f65e-1bdc-4f72-a972-d646271de386",
+            "de02e09a-b95b-41ac-9225-187428487c3b",
+            "a8bc3cbf-7d9a-4b54-9632-4ea3f34b4215",
+            "d6b4365e-b5e2-455e-b923-24ce2c042efa",
+            "5163a4c0-2123-4f18-b52c-444de537938e",
+            "d6dde1b5-2eeb-4b63-8741-8b4354c7eb3d",
+            "fed83124-31e9-4e36-941f-0b835aeea1e3",
+            "5ad4bd79-730c-404f-a84b-e8f9eb692c36",
+            "ea8b8930-6415-45dc-adb0-6d60dc3f3886",
+            "066cca80-f253-4328-bdc0-50ac81ba02b8",
+            "866a5fd0-5a0b-4ef5-b0af-0bf0ef5a0f69",
+            "34c251a5-b7b8-4671-8f75-11f5330f0a43",
+            "019d61bd-45f1-4ded-ba13-2dc288859c44",
+            "ce608663-33cc-4b42-bb6b-adecebad2004",
+            "edae1dcd-128b-4d41-ab94-4aead7cf1ee1",
+            "c5841c99-b288-48b9-9d6b-1734bb17732c",
+            "9f918454-eff2-4d55-aa16-396edf968bd3",
+            "2b18d28b-6419-48ef-aaca-668f0278d521",
+            "7107118c-af64-488f-8118-718eda6e81ca",
+            "24659cb7-c4c6-4dea-a32a-a5fdc61ede53",
+            "9530c916-7089-4e5a-859d-6b4424d423b7"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099880945,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571296680000,
+          "parent_id": "37044441-eaa2-4b12-9a54-75276f37e75a",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential React"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 67
+        }
+      },
+      "5ada161a-e93d-47a3-9e11-13ed8f5804e5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "43092262-d905-424d-9252-336b8c30f724",
+            "f5025857-7495-48e0-afe6-5df91e0f9da5",
+            "4a46ee89-40f6-4674-86ec-5f698658e252",
+            "634d6f88-cc02-4aca-839c-51452f482d8f",
+            "2587a69f-10bf-4897-898a-4eca95a887fc",
+            "29f0aa4b-94a7-42cf-a3c6-f9aa3a7813f0",
+            "d6a6a4c3-9671-48a1-a094-dc0ddf6f1273",
+            "bd5df8bb-1990-4d2b-a859-c9d92aaf3fad",
+            "2ab33fb9-d9fe-4e6c-8b4b-d3744a2692ac",
+            "1eed3403-e429-446f-be6c-f79625a88682",
+            "2df31bde-d8f7-4426-988e-5c6ce05533a7",
+            "6fbbe589-d9ba-4c68-b65f-2097db23fa1c",
+            "20a632d7-22c9-4a8b-a084-81953313cc5e",
+            "3ace8fd0-eb0a-450c-ae9e-2e7536cca989",
+            "bb541c8b-18f6-436f-a25c-82313f3f7ee7",
+            "ecb6d57b-4bd1-45eb-a5a0-49289d38eae5"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099978663,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "5ada161a-e93d-47a3-9e11-13ed8f5804e5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099978663,
+          "parent_id": "9c40f65e-1bdc-4f72-a972-d646271de386",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "How to setup a basic webpack react and babel environment"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "9c40f65e-1bdc-4f72-a972-d646271de386": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "5ada161a-e93d-47a3-9e11-13ed8f5804e5",
+            "cfc1bbf9-9d6c-4c4d-b1a8-05ef8eea79a9"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099920000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "9c40f65e-1bdc-4f72-a972-d646271de386",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552100220000,
+          "parent_id": "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Basic webpack and babel setup"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 45
+        }
+      },
+      "cfc1bbf9-9d6c-4c4d-b1a8-05ef8eea79a9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4fc53e6d-fd26-4b69-b733-1382daf6a71c",
+            "8531e58d-e722-4d82-94d9-df05ddec7f76",
+            "0a5ed55e-e248-4c99-8c40-b415719a0002",
+            "05e88b19-9577-4f77-aee0-0dfd0354f568",
+            "9ec4f460-9ec5-4cb7-8ef4-fc6fd78b11bd",
+            "0a5d104e-787d-4d26-a4a2-1c5ad5bb7eec",
+            "3aa05751-10cf-41c2-b51c-319a1f6c672f",
+            "ccdbb9a4-0b8e-4c84-a262-5e7719e1ff54",
+            "eb2d4231-9291-42e9-9362-67b0a82eff31",
+            "8995dbe0-3ebd-46e7-aa50-aaf872d0a073",
+            "201eaaa4-735b-4c1e-97dc-99dc97802d49",
+            "bb09775f-dc15-4d3a-a2db-78883ef97fc2",
+            "42b553e4-347f-41e0-8c1e-482a6889ba01",
+            "69099434-b1da-4122-9eeb-e6e11512a492",
+            "2464b9d3-6c3c-4d5b-a5b0-38dddd73b7de",
+            "af461ad0-1c3e-4dac-b790-ac341b47ff40",
+            "a735993a-ee9d-4d50-9cc5-955cd1bb43ef",
+            "9a19524f-b0d2-4176-a5eb-ee0f3505c1e9",
+            "bca5801d-c497-426b-be3f-da2f8aa28bbe",
+            "aaccd1cf-11ac-4cf5-ac41-fd3ce1cdc997",
+            "ac053a35-5f62-45bc-a004-bbc86166f5ce",
+            "dab87c49-0a45-4be7-8ca0-f351aa36f6ad",
+            "5b7eb2eb-5a61-418d-84f6-b3dcab0b6613",
+            "dc111a2e-2a41-4517-93d0-de115882946b",
+            "0007986c-82f0-46cd-b26a-23f10ea8b4f7",
+            "ab3ea140-27be-4956-97aa-cab6f7ab6bd7",
+            "8035505e-bc66-4e60-9a99-a6fb3d792c0b",
+            "ff306410-ccb3-4a77-85fc-cfbefcb057ba",
+            "f50eac60-20a0-4d39-b460-1a8eb706c024",
+            "11a8e5d3-9ecb-44eb-af41-398c7c7ebee2",
+            "a605caa3-1b1b-43b0-b9fa-eda3e1586a43",
+            "1e3476e0-36ce-4aaf-af4b-9112a776464e",
+            "d516859b-ded4-462f-9da0-272875e497d4",
+            "ad5db9f6-19b8-41c8-8eb4-03aa80fa0738",
+            "fae6bc8d-df4e-449e-8dae-38f7ed52e06e",
+            "db93a4c9-b3e9-4d63-8c82-8dbcee21f7c1",
+            "36a0d4d8-f47e-4b10-8cf1-97e3355a362d",
+            "87515132-94da-4fba-87d8-e53b65740ea2",
+            "1bed17a4-2b0d-4eef-888f-af5b25456dca",
+            "0d595364-40df-4c9a-89cd-1c017ee40ab1",
+            "36815e31-a763-4b9a-aeac-d0241a0566f1",
+            "6a532436-3640-46ec-9477-ef98cb35ed31",
+            "398a127f-a774-41e2-bf8b-5d8b48d5b390",
+            "f30c4be5-5173-4c2a-a901-2d0116e32c8e",
+            "e736c694-fb72-4cee-8f88-28155b98c430",
+            "f80b3e3b-9ed5-4886-a430-91ae7a0135f0",
+            "db398e0b-776b-4967-b940-7657aa26c9c9"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099979892,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "cfc1bbf9-9d6c-4c4d-b1a8-05ef8eea79a9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099979892,
+          "parent_id": "9c40f65e-1bdc-4f72-a972-d646271de386",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "How to build a pipeline for a customized Hello world with images."
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

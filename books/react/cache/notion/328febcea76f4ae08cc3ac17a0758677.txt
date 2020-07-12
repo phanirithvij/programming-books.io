@@ -1,0 +1,781 @@
+2016 1594558061491 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+      "table": "block"
+    }
+  ]
+}
+Response:+1816
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "5d348528-6ce8-47aa-b476-d70ef1612e2f",
+          "bb972879-103a-4eed-923d-7ad7142bb203",
+          "280a423b-f333-4242-a4fc-a5605851ed6a",
+          "2f1182a1-a7d8-44d0-9348-290cad9cadd5",
+          "eff0dc4f-328a-4297-8d03-8b312dbd83c2",
+          "425b240d-42c1-4a70-8bad-53a4f345a4a5",
+          "d417bc26-77ba-42c0-88a2-0e40cc5d0709",
+          "4115aebf-1543-4fab-907f-c09c5133694c",
+          "9fc9e2f8-0c32-4f3b-a32b-a25157a1d532",
+          "1555131f-ecba-4ef3-a699-7d8e03cf00fc",
+          "38f1cb24-1a04-44df-86a6-34453579d7d5",
+          "c660e0ae-9184-4ecc-baad-ba0988cb3322",
+          "979af9ef-e106-4e8a-a666-a55105471dab",
+          "0e6cfd4c-410d-41fa-98c3-1b0440400c46",
+          "bb4b96e1-83b5-46f2-9535-089a9af0f63c"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552099901934,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552099901934,
+        "parent_id": "54e1310d-4692-4318-b404-5f886461565a",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Absolute Basics of Creating Reusable Components"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+26842 1594558061491 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+  "verticalColumns": false
+}
+Response:+26601
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "0e6cfd4c-410d-41fa-98c3-1b0440400c46": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901933,
+          "id": "0e6cfd4c-410d-41fa-98c3-1b0440400c46",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901933,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "As a final note, react props are immutable once they have been passed in, meaning they cannot be modified from within a component. If the parent of a component changes the value of a prop, React handles replacing the old props with the new, the component will rerender itself using the new values."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "1555131f-ecba-4ef3-a699-7d8e03cf00fc": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901930,
+          "id": "1555131f-ecba-4ef3-a699-7d8e03cf00fc",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901930,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "These components are used in exactly the same way:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "280a423b-f333-4242-a4fc-a5605851ed6a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901928,
+          "id": "280a423b-f333-4242-a4fc-a5605851ed6a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901928,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "It can be useful to think of React components as simple functions - they take input in the form of “props”, and produce output as markup. Many simple components take this a step further, making themselves “Pure Functions”, meaning they do not issue side effects, and are idempotent (given a set of inputs, the component will always produce the same output). This goal can be formally enforced by actually creating components as functions, rather than “classes”. There are three ways of creating a React component:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "22644f42-5b62-4106-ab6f-407fcf2e0146",
+            "54e1310d-4692-4318-b404-5f886461565a",
+            "da8fafc6-5f35-4220-90b1-92f7b2069ee8",
+            "a4124947-09ed-4600-a460-a5f24acfbd6a",
+            "6cafc1d7-8633-42d6-b702-833db7d26eed",
+            "45761919-6bc5-4ffa-b9b6-ef83a7c7ae4e",
+            "3be1a9d3-83e8-46d7-add6-1ee03c2e1899",
+            "3731d999-c1bc-4c1b-a0aa-d1d9fc9593cd",
+            "d91668ae-eb75-4c83-8946-7b1d4f7a037b",
+            "7a9b795a-6e6a-47be-8428-3835a236c536",
+            "d7004271-2e4c-4340-bb8b-d5647d3f0de2",
+            "fe58dcb8-c978-4ad9-bc8b-66067b6739ab",
+            "9c40f65e-1bdc-4f72-a972-d646271de386",
+            "de02e09a-b95b-41ac-9225-187428487c3b",
+            "a8bc3cbf-7d9a-4b54-9632-4ea3f34b4215",
+            "d6b4365e-b5e2-455e-b923-24ce2c042efa",
+            "5163a4c0-2123-4f18-b52c-444de537938e",
+            "d6dde1b5-2eeb-4b63-8741-8b4354c7eb3d",
+            "fed83124-31e9-4e36-941f-0b835aeea1e3",
+            "5ad4bd79-730c-404f-a84b-e8f9eb692c36",
+            "ea8b8930-6415-45dc-adb0-6d60dc3f3886",
+            "066cca80-f253-4328-bdc0-50ac81ba02b8",
+            "866a5fd0-5a0b-4ef5-b0af-0bf0ef5a0f69",
+            "34c251a5-b7b8-4671-8f75-11f5330f0a43",
+            "019d61bd-45f1-4ded-ba13-2dc288859c44",
+            "ce608663-33cc-4b42-bb6b-adecebad2004",
+            "edae1dcd-128b-4d41-ab94-4aead7cf1ee1",
+            "c5841c99-b288-48b9-9d6b-1734bb17732c",
+            "9f918454-eff2-4d55-aa16-396edf968bd3",
+            "2b18d28b-6419-48ef-aaca-668f0278d521",
+            "7107118c-af64-488f-8118-718eda6e81ca",
+            "24659cb7-c4c6-4dea-a32a-a5fdc61ede53",
+            "9530c916-7089-4e5a-859d-6b4424d423b7"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099880945,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571296680000,
+          "parent_id": "37044441-eaa2-4b12-9a54-75276f37e75a",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential React"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 67
+        }
+      },
+      "2f1182a1-a7d8-44d0-9348-290cad9cadd5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901929,
+          "id": "2f1182a1-a7d8-44d0-9348-290cad9cadd5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901929,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Functional (“Stateless”) Components",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "328febce-a76f-4ae0-8cc3-ac17a0758677": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "5d348528-6ce8-47aa-b476-d70ef1612e2f",
+            "bb972879-103a-4eed-923d-7ad7142bb203",
+            "280a423b-f333-4242-a4fc-a5605851ed6a",
+            "2f1182a1-a7d8-44d0-9348-290cad9cadd5",
+            "eff0dc4f-328a-4297-8d03-8b312dbd83c2",
+            "425b240d-42c1-4a70-8bad-53a4f345a4a5",
+            "d417bc26-77ba-42c0-88a2-0e40cc5d0709",
+            "4115aebf-1543-4fab-907f-c09c5133694c",
+            "9fc9e2f8-0c32-4f3b-a32b-a25157a1d532",
+            "1555131f-ecba-4ef3-a699-7d8e03cf00fc",
+            "38f1cb24-1a04-44df-86a6-34453579d7d5",
+            "c660e0ae-9184-4ecc-baad-ba0988cb3322",
+            "979af9ef-e106-4e8a-a666-a55105471dab",
+            "0e6cfd4c-410d-41fa-98c3-1b0440400c46",
+            "bb4b96e1-83b5-46f2-9535-089a9af0f63c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901934,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901934,
+          "parent_id": "54e1310d-4692-4318-b404-5f886461565a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Absolute Basics of Creating Reusable Components"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "38f1cb24-1a04-44df-86a6-34453579d7d5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901930,
+          "id": "38f1cb24-1a04-44df-86a6-34453579d7d5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901930,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "const ParentComponent = function (props) {\n    const someText = \"FooBar\";\n    return (\n        \u003cFirstComponent content={someText} /\u003e\n        \u003cSecondComponent content={someText} /\u003e\n        \u003cThirdComponent content={someText} /\u003e\n    );\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "4115aebf-1543-4fab-907f-c09c5133694c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901930,
+          "id": "4115aebf-1543-4fab-907f-c09c5133694c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901930,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "ES2015 Classes",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "425b240d-42c1-4a70-8bad-53a4f345a4a5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901929,
+          "id": "425b240d-42c1-4a70-8bad-53a4f345a4a5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901929,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "React.createClass()",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "54e1310d-4692-4318-b404-5f886461565a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "6fb73c9c-864f-42d8-be09-533d8b65d3cf",
+            "6a5d8192-ae0f-43bf-97ee-b8505c712c78",
+            "1fd0a4c5-e765-4dde-ba60-a900d938e4ed",
+            "6b02b7d4-14ae-4db6-abd9-09c778a093d2",
+            "328febce-a76f-4ae0-8cc3-ac17a0758677",
+            "d4f5eab7-8c80-4fbb-9427-4ee071dc6662",
+            "fdf86184-468b-4bf5-9492-df5b47e88d1a",
+            "1b5f0225-274f-49b5-b8a1-b6667b053ba4"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099860000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "54e1310d-4692-4318-b404-5f886461565a",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552100160000,
+          "parent_id": "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Getting started"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 34
+        }
+      },
+      "5d348528-6ce8-47aa-b476-d70ef1612e2f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901925,
+          "id": "5d348528-6ce8-47aa-b476-d70ef1612e2f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901925,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Components and Props"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 1
+        }
+      },
+      "979af9ef-e106-4e8a-a666-a55105471dab": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901933,
+          "id": "979af9ef-e106-4e8a-a666-a55105471dab",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901933,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Functional components cannot have “state” within them. So if your component needs to have a state, then go for class based components. Refer "
+              ],
+              [
+                "Creating Components",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/reactjs/1185/components/4649/creating-components#t=201703241332591992903"
+                  ]
+                ]
+              ],
+              [
+                " for more information."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "9fc9e2f8-0c32-4f3b-a32b-a25157a1d532": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901930,
+          "id": "9fc9e2f8-0c32-4f3b-a32b-a25157a1d532",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901930,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "class ThirdComponent extends React.Component {\n    render() {\n        return (\n            \u003cdiv\u003e{this.props.content}\u003c/div\u003e\n        );\n    }\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "bb4b96e1-83b5-46f2-9535-089a9af0f63c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901934,
+          "id": "bb4b96e1-83b5-46f2-9535-089a9af0f63c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901934,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "See "
+              ],
+              [
+                "Thinking In React",
+                [
+                  [
+                    "a",
+                    "https://facebook.github.io/react/docs/thinking-in-react.html"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "Reusable Components",
+                [
+                  [
+                    "a",
+                    "https://facebook.github.io/react/docs/reusable-components.html"
+                  ]
+                ]
+              ],
+              [
+                " for deeper dives into the relationship of props to components."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "bb972879-103a-4eed-923d-7ad7142bb203": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901928,
+          "id": "bb972879-103a-4eed-923d-7ad7142bb203",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901928,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "As React concerns itself only with an application’s view, the bulk of development in React will be the creation of components. A component represents a portion of the view of your application. “Props” are simply the attributes used on a JSX node (e.g. "
+              ],
+              [
+                "\u003cSomeComponent someProp=\"some prop's value\" /\u003e",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "), and are the primary way our application interacts with our components. In the snippet above, inside of SomeComponent, we would have access to "
+              ],
+              [
+                "this.props",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", whose value would be the object "
+              ],
+              [
+                "{someProp: \"some prop's value\"}",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "c660e0ae-9184-4ecc-baad-ba0988cb3322": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901930,
+          "id": "c660e0ae-9184-4ecc-baad-ba0988cb3322",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901930,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The above examples will all produce identical markup."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "d417bc26-77ba-42c0-88a2-0e40cc5d0709": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901929,
+          "id": "d417bc26-77ba-42c0-88a2-0e40cc5d0709",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901929,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "const SecondComponent = React.createClass({\n    render: function () {\n        return (\n            \u003cdiv\u003e{this.props.content}\u003c/div\u003e\n        );\n    }\n});"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "eff0dc4f-328a-4297-8d03-8b312dbd83c2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552099901929,
+          "id": "eff0dc4f-328a-4297-8d03-8b312dbd83c2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552099901929,
+          "parent_id": "328febce-a76f-4ae0-8cc3-ac17a0758677",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "const FirstComponent = props =\u003e (\n    \u003cdiv\u003e{props.content}\u003c/div\u003e\n);"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
