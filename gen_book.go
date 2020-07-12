@@ -20,7 +20,6 @@ const (
 
 	gitHubBaseURL = "https://github.com/essentialbooks/books"
 	notionBaseURL = "https://notion.so/"
-	siteBaseURL   = "https://www.programming-books.io"
 )
 
 var (
@@ -251,7 +250,7 @@ func buildCreadcumb(book *Book, page *Page, d *PageData) {
 
 func genPage(book *Book, page *Page, w io.Writer) error {
 	if w == nil {
-		addSitemapURL(page.CanonnicalURL())
+		addSitemapURL(book, page.CanonnicalURL())
 		for _, article := range page.Pages {
 			_ = genPage(book, article, nil)
 		}
@@ -322,15 +321,30 @@ func copyVercelRoutes(book *Book) {
 }
 
 func copyCover(book *Book) {
-	src := filepath.Join("covers", book.CoverImageName)
-	dst := filepath.Join(book.DirOnDisk, "www", "covers", book.CoverImageName)
-	u.CreateDirForFileMust(dst)
-	u.CopyFileMust(dst, src)
-	logf("Copied '%s' => '%s'\n", src, dst)
+	{
+		src := filepath.Join("covers", book.CoverImageName)
+		dst := filepath.Join(book.DirOnDisk, "www", "covers", book.CoverImageName)
+		u.CreateDirForFileMust(dst)
+		u.CopyFileMust(dst, src)
+		logf("Copied '%s' => '%s'\n", src, dst)
+	}
+
+	{
+		src := filepath.Join("covers", "twitter", book.CoverImageName)
+		dst := filepath.Join(book.DirOnDisk, "www", "covers", "twitter", book.CoverImageName)
+		u.CreateDirForFileMust(dst)
+		u.CopyFileMust(dst, src)
+		logf("Copied '%s' => '%s'\n", src, dst)
+	}
 }
 
-func deployPreviewWithVercel(book *Book) {
-	cmd := exec.Command("vercel")
+func deployWithVercel(book *Book) {
+	var cmd *exec.Cmd
+	if flgProd {
+		cmd = exec.Command("vercel", "--prod")
+	} else {
+		cmd = exec.Command("vercel")
+	}
 	cmd.Dir = book.DirOnDisk
 	u.RunCmdLoggedMust(cmd)
 }
@@ -356,7 +370,7 @@ func genBook(book *Book) {
 	// TODO: per-book 404 should link to top of book, not top of website
 	_ = genBook404(book, nil)
 
-	addSitemapURL(book.CanonnicalURL())
+	addSitemapURL(book, book.CanonnicalURL())
 
 	for _, chapter := range book.Chapters() {
 		_ = genPage(book, chapter, nil)

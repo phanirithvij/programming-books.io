@@ -4,7 +4,6 @@ import (
 	"flag"
 	"fmt"
 	"html/template"
-	"os"
 	"path/filepath"
 	"strings"
 	"time"
@@ -88,17 +87,19 @@ var (
 	// if true, disables downloading pages
 	flgNoDownload     bool
 	flgGistRedownload bool
+	flgProd           bool
 )
 
 func main() {
 	var (
-		flgBook string
-		flgWc   bool
+		flgGen string
+		flgWc  bool
 	)
 
 	{
 		flag.BoolVar(&flgWc, "wc", false, "wc -l")
-		flag.StringVar(&flgBook, "book", "go", "book to generate")
+		flag.BoolVar(&flgProd, "prod", false, "deploy to prodution")
+		flag.StringVar(&flgGen, "gen", "", "generate a book and deploy preview")
 		flag.Parse()
 	}
 
@@ -124,23 +125,29 @@ func main() {
 
 	notionapi.LogFunc = logf
 
-	os.RemoveAll("www")
-	defer func() {
-		os.RemoveAll("www")
-	}()
-	buildFrontend()
+	if flgWc {
+		doLineCount()
+		return
+	}
 
-	book := findBook(flgBook)
-	generateBook(book)
-	fmt.Printf("book: %s, dir: %s\n", book.Title, book.DirShort)
+	if flgGen != "" {
+		buildFrontend()
+
+		book := findBook(flgGen)
+		generateBookAndDeploy(book)
+		fmt.Printf("book: %s, dir: %s\n", book.Title, book.DirShort)
+		return
+	}
+
+	flag.Usage()
 }
 
-func generateBook(book *Book) {
+func generateBookAndDeploy(book *Book) {
 	initBook(book)
 	downloadBook(book)
 	currBookDir = book.DirOnDisk
 	genBook(book)
-	deployPreviewWithVercel(book)
+	deployWithVercel(book)
 }
 
 func newNotionClient() *notionapi.Client {

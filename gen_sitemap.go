@@ -22,9 +22,9 @@ func isFullURL(uri string) bool {
 	return strings.HasPrefix(uri, "https://") || strings.HasPrefix(uri, "http://")
 }
 
-func addSitemapURL(uri string) {
+func addSitemapURL(b *Book, uri string) {
 	if !isFullURL(uri) {
-		uri = urlJoin(siteBaseURL, uri)
+		uri = urlJoin(b.BaseURL(), uri)
 	}
 	muSitemapURLS.Lock()
 	sitemapURLS[uri] = struct{}{}
@@ -40,19 +40,19 @@ Sitemap: %s
 )
 
 // http://www.advancedhtml.co.uk/robots-sitemaps.htm
-func writeRobots() {
-	sitemapURL := urlJoin(siteBaseURL, "sitemap.txt")
+func writeRobots(b *Book) {
+	sitemapURL := urlJoin(b.BaseURL(), "sitemap.txt")
 	robotsTxt := fmt.Sprintf(sitemapTmpl, sitemapURL)
 	robotsTxtPath := filepath.Join("www", "robots.txt")
 	err := ioutil.WriteFile(robotsTxtPath, []byte(robotsTxt), 0644)
 	must(err)
 }
 
-func writeSitemap() {
-	writeRobots()
+func writeSitemap(b *Book) {
+	writeRobots(b)
 
-	addSitemapURL("/")
-	addSitemapURL("about")
+	addSitemapURL(b, "/")
+	addSitemapURL(b, "about")
 
 	var urls []string
 	for uri := range sitemapURLS {

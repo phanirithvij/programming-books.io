@@ -151,16 +151,15 @@ func (p *Page) URLLastPath() string {
 
 // URL returns url of the page
 func (p *Page) URL() string {
-	book := p.Book
 	id := p.NotionID
 	title := urlify(p.Title)
-	// /essentail/go/${title}-${id}
-	return fmt.Sprintf("/%s/%s-%s", book.DirShort, title, id)
+	// /${title}-${id}
+	return fmt.Sprintf("/%s-%s", title, id)
 }
 
 // CanonnicalURL returns full url including host
 func (p *Page) CanonnicalURL() string {
-	return urlJoin(siteBaseURL, p.URL())
+	return urlJoin(p.Book.BaseURL(), p.URL())
 }
 
 // NotionURL returns url to edit 000-index.md document
