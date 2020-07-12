@@ -1,0 +1,751 @@
+1995 1594556088154 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+      "table": "block"
+    }
+  ]
+}
+Response:+1795
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "8a7344f5-3e06-4f83-8220-9b5b9e8a9bbe",
+          "01c65a46-c96e-4cfb-9d57-6f61d6f93e62",
+          "e950a917-060b-4636-b3ad-faf663aa740c",
+          "b4103908-1af0-49b6-a9ab-057b6eca8e8e",
+          "1253abb1-e233-4d35-9bd1-b2d48f98544e",
+          "4890334e-38ff-4a78-a283-0b86881c6371",
+          "17499179-74dd-4425-b4d1-25ba01f49535",
+          "38780c11-4dd5-4b8c-ae67-a0e684265647",
+          "2e4bd62b-8b5b-4a00-b305-f4dad750def6",
+          "0d948058-c73e-4498-92ea-4e7beecd5305",
+          "5fc86e0e-b41f-4647-a4f6-0917c8b21259",
+          "bf4c001a-e1f6-4fae-8b4b-9ca740159c94",
+          "e8c802f1-53a5-4c01-af0f-9958977d9fdc",
+          "9833ed4f-b7fa-4d4b-8810-2cf4a0302d44",
+          "edc63004-4973-4d3c-baa1-7061ea7312e1"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550385655429,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1550480760000,
+        "parent_id": "5d2d39b0-a2fc-4e76-9b20-70d4267b34cc",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Replication in PostgreSQL"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 11
+      }
+    }
+  ]
+}
+27638 1594556088155 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "495631fa-18b3-429e-83ad-9e029a3b3980",
+  "verticalColumns": false
+}
+Response:+27397
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "01c65a46-c96e-4cfb-9d57-6f61d6f93e62": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655424,
+          "id": "01c65a46-c96e-4cfb-9d57-6f61d6f93e62",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655424,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "- **Requirements:**\n\n    + Replication User for replication activities\n    + Directory to store the WAL archives\n\n- **Create Replication user**\n\n    `createuser -U postgres replication -P -c 5 --replication`\n    \n        + option -P will prompt you for new password\n        + option -c is for maximum connections. 5 connections are enough for replication\n        + -replication will grant replication privileges to the user\n\n+ **Create a archive directory in data directory**\n        \n    `mkdir $PGDATA/archive`\n\n+ **Edit the pg_hba.conf file**\n    \n    This is host base authentication file, contains the setting for client autherntication. Add below entry:\n    \n            #hosttype    database_name     user_name       hostname/IP      method\n             host        replication       replication     \u003cslave-IP\u003e/32    md5"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "0d948058-c73e-4498-92ea-4e7beecd5305": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655426,
+          "id": "0d948058-c73e-4498-92ea-4e7beecd5305",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655426,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Configuring the standby server",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "1253abb1-e233-4d35-9bd1-b2d48f98544e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655425,
+          "id": "1253abb1-e233-4d35-9bd1-b2d48f98544e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655425,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Backing up the primay server to the slave server",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "17499179-74dd-4425-b4d1-25ba01f49535": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655425,
+          "id": "17499179-74dd-4425-b4d1-25ba01f49535",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655425,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Important: Don’t start the service again until all configuration and backup steps are complete. You must bring up the standby server in a state where it is ready to be a backup server. This means that all configuration settings must be in place and the databases must be already synchronized. Otherwise, streaming replication will fail to start`"
+              ]
+            ]
+          },
+          "type": "quote",
+          "version": 1
+        }
+      },
+      "2e4bd62b-8b5b-4a00-b305-f4dad750def6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655426,
+          "id": "2e4bd62b-8b5b-4a00-b305-f4dad750def6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655426,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "`pg_basebackup` utility copies the data from primary server data directory to slave data directory.\n\n`$ pg_basebackup -h \u003cprimary IP\u003e -D /var/lib/postgresql/\u003cversion\u003e/main -U replication -v -P --xlog-method=stream`\n\n\n\n-D: This is tells pg_basebackup where to the initial backup\n\n-h: Specifies the system where to look for the primary server\n\n-xlog-method=stream: This will force the pg_basebackup to open another connection and stream enough xlog while backup is running.\n                     It also ensures that fresh backup can be started without failing back to using an archive."
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "38780c11-4dd5-4b8c-ae67-a0e684265647": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655426,
+          "id": "38780c11-4dd5-4b8c-ae67-a0e684265647",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655426,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Now run the pg_basebackup utility",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "4890334e-38ff-4a78-a283-0b86881c6371": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655425,
+          "id": "4890334e-38ff-4a78-a283-0b86881c6371",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655425,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Before making changes on the server stop the primary server."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "495631fa-18b3-429e-83ad-9e029a3b3980": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "8a7344f5-3e06-4f83-8220-9b5b9e8a9bbe",
+            "01c65a46-c96e-4cfb-9d57-6f61d6f93e62",
+            "e950a917-060b-4636-b3ad-faf663aa740c",
+            "b4103908-1af0-49b6-a9ab-057b6eca8e8e",
+            "1253abb1-e233-4d35-9bd1-b2d48f98544e",
+            "4890334e-38ff-4a78-a283-0b86881c6371",
+            "17499179-74dd-4425-b4d1-25ba01f49535",
+            "38780c11-4dd5-4b8c-ae67-a0e684265647",
+            "2e4bd62b-8b5b-4a00-b305-f4dad750def6",
+            "0d948058-c73e-4498-92ea-4e7beecd5305",
+            "5fc86e0e-b41f-4647-a4f6-0917c8b21259",
+            "bf4c001a-e1f6-4fae-8b4b-9ca740159c94",
+            "e8c802f1-53a5-4c01-af0f-9958977d9fdc",
+            "9833ed4f-b7fa-4d4b-8810-2cf4a0302d44",
+            "edc63004-4973-4d3c-baa1-7061ea7312e1"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655429,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550480760000,
+          "parent_id": "5d2d39b0-a2fc-4e76-9b20-70d4267b34cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Replication in PostgreSQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 11
+        }
+      },
+      "5d2d39b0-a2fc-4e76-9b20-70d4267b34cc": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "495631fa-18b3-429e-83ad-9e029a3b3980"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385600000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "5d2d39b0-a2fc-4e76-9b20-70d4267b34cc",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550387400000,
+          "parent_id": "79930434-0f2c-4081-b6c4-b7eb28df368e",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "High Availability"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 31
+        }
+      },
+      "5fc86e0e-b41f-4647-a4f6-0917c8b21259": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655426,
+          "id": "5fc86e0e-b41f-4647-a4f6-0917c8b21259",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655426,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "To configure the standby server, you'll edit postgresql.conf and create a new configuration file named recovery.conf.\n\n`hot_standby = on`\n\nThis specifies whether you are allowed to run queries while recovering\n\n+ **Creating recovery.conf file**\n\n    `standby_mode = on`\n\n    Set the connection string to the primary server. Replace \u003cprimary-external-IP\u003e with the external IP address of the primary server. Replace \u003cpassword\u003e with the password for the user named replication\n\n    `primary_conninfo = 'host=\u003cprimary-external-IP\u003e port=5432 user=replication password=\u003cpassword\u003e'\n\n    (Optional) Set the trigger file location:\n\n    `trigger_file = '/tmp/postgresql.trigger.5432'`\n\n    The `trigger_file` path that you specify is the location where you can add a file when you want the system to fail over to the standby server. The presence of the file \"triggers\" the failover. Alternatively, you can use the pg_ctl promote command to trigger failover."
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "79930434-0f2c-4081-b6c4-b7eb28df368e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "b656c2d9-b7f0-41f9-9104-f7870c3bd3c9",
+            "49e8bfad-1223-41c0-a6af-5fec9d248b3b",
+            "5d490783-2722-485a-a0f8-5c47511443f9",
+            "681a2c9e-fae7-4f18-9f80-461c4c09c58a",
+            "f25f5b01-03a7-4c7d-8e93-9426f864b292",
+            "6feaa1fc-e2a7-4554-bc6c-fd6fa87755f4",
+            "75f90815-1ace-4073-8144-2933da6164c1",
+            "1b89e574-5d0d-4bdf-ab44-b5312db9e0c9",
+            "0af4c7d7-8383-485d-b40c-d8742d4614ed",
+            "c7bb4b02-c189-4ac9-874a-3063a6e701e9",
+            "0ceb6cef-14f0-4b09-9f87-9e98af207550",
+            "0c02c8f2-6e29-480e-9bb2-cdeb1f224d96",
+            "c0eaf930-378b-47c0-895c-8a7b1ce51777",
+            "5d2d39b0-a2fc-4e76-9b20-70d4267b34cc",
+            "584f9f2e-7a4f-4f37-8080-eb3de3eaf6d2",
+            "1a613c38-11be-4622-879f-261a3852b802",
+            "66100120-d0d2-4226-ab23-554ee203d7db",
+            "ba264bb2-630a-4be6-beb7-7d92d929a0ce",
+            "5b31d6d9-d8d3-44d7-85da-edb02d8e7383",
+            "58746f67-7c46-43f0-9125-b5f23fcaace0",
+            "a31bb49f-d2df-4eec-90a6-864c51111958",
+            "ae4c9720-8297-442f-be50-b7c9b974351b",
+            "b6b11111-255f-4c38-8f25-a412bc108e55",
+            "468130e5-ec36-4d5f-995c-0763643830c0",
+            "502c5a79-1bd9-4657-86c0-27fcaa48a9e0",
+            "5ec4fe93-2066-4e62-b48b-247fa2451cf9",
+            "ed4d52f8-abc3-4fae-bd5e-08974843aa30",
+            "b2abeec8-4aaa-4769-99b6-e9ab17e6ddda",
+            "2a19f9ba-e684-4155-becb-0d4da3888f1c",
+            "17c10449-0ab5-4f59-b03c-3db31a4b0d10"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550384742823,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "79930434-0f2c-4081-b6c4-b7eb28df368e",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605360000,
+          "parent_id": "af3eae4f-751d-4bc1-8e1c-7aac2b10eed9",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential PostgreSQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 128
+        }
+      },
+      "8a7344f5-3e06-4f83-8220-9b5b9e8a9bbe": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655424,
+          "id": "8a7344f5-3e06-4f83-8220-9b5b9e8a9bbe",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655424,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Configuring the Primary Server",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "9833ed4f-b7fa-4d4b-8810-2cf4a0302d44": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655426,
+          "id": "9833ed4f-b7fa-4d4b-8810-2cf4a0302d44",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655426,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Attribution",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "b4103908-1af0-49b6-a9ab-057b6eca8e8e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655425,
+          "id": "b4103908-1af0-49b6-a9ab-057b6eca8e8e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655425,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "This is the configuration file of PostgreSQL.\n  \n  `wal_level = hot_standby`\n\n  This parameter decides the behavior of slave server.\n  \n      `hot_standby` logs what is required to accept read only queries on slave server.\n  \n      `streaming` logs what is required to just apply the WAL's on slave.\n  \n      `archive` which logs what is required for archiving.\n  \n  `archive_mode=on`\n        \n  This parameters allows to send WAL segments to archive location using `archive_command` parameter.\n\n  `archive_command = 'test ! -f /path/to/archivedir/%f \u0026\u0026 cp %p /path/to/archivedir/%f'`\n  \n  Basically what above `archive_command` does is it copies the WAL segments to archive directory.\n\n  `wal_senders = 5`\n  This is maximum number of WAL sender processes.\n\n  Now restart the primary server."
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "bf4c001a-e1f6-4fae-8b4b-9ca740159c94": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655426,
+          "id": "bf4c001a-e1f6-4fae-8b4b-9ca740159c94",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655426,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Start the standby server",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "e8c802f1-53a5-4c01-af0f-9958977d9fdc": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655426,
+          "id": "e8c802f1-53a5-4c01-af0f-9958977d9fdc",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655426,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "You now have everything in place and are ready to bring up the standby server"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "e950a917-060b-4636-b3ad-faf663aa740c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655425,
+          "id": "e950a917-060b-4636-b3ad-faf663aa740c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655425,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Edit the postgresql.conf file",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "edc63004-4973-4d3c-baa1-7061ea7312e1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385655428,
+          "id": "edc63004-4973-4d3c-baa1-7061ea7312e1",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385655428,
+          "parent_id": "495631fa-18b3-429e-83ad-9e029a3b3980",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This article is substantially derived from and attributed to "
+              ],
+              [
+                "How to Set Up PostgreSQL for High Availability and Replication with Hot Standby",
+                [
+                  [
+                    "a",
+                    "https://cloud.google.com/solutions/setup-postgres-hot-standby#create_a_user_for_replication"
+                  ]
+                ]
+              ],
+              [
+                ", with minor changes in formatting and examples and some text deleted. The source was published under the "
+              ],
+              [
+                "Creative Commons Public License 3.0",
+                [
+                  [
+                    "a",
+                    "https://creativecommons.org/licenses/by/3.0/"
+                  ]
+                ]
+              ],
+              [
+                ", which is maintained here."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

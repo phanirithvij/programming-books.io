@@ -1,0 +1,339 @@
+1425 1594556107290 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "d2ae8d10-8d69-4613-a546-ae8777077f7b",
+      "table": "block"
+    }
+  ]
+}
+Response:+1225
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "457141db-ec44-4af7-a90a-7c6a3e396cc7",
+          "9b7fa796-6a75-4ed4-8571-4ad1eff65314",
+          "91db6934-484e-421c-886e-457c5038bf11"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550384985174,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "d2ae8d10-8d69-4613-a546-ae8777077f7b",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1550480340000,
+        "parent_id": "f25f5b01-03a7-4c7d-8e93-9426f864b292",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Accessing Postgresql from .NET using the Npgsql provider"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 7
+      }
+    }
+  ]
+}
+11890 1594556107290 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "d2ae8d10-8d69-4613-a546-ae8777077f7b",
+  "verticalColumns": false
+}
+Response:+11649
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "457141db-ec44-4af7-a90a-7c6a3e396cc7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550384985173,
+          "id": "457141db-ec44-4af7-a90a-7c6a3e396cc7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550384985173,
+          "parent_id": "d2ae8d10-8d69-4613-a546-ae8777077f7b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "One of the more popular .NET providers for Postgresql is "
+              ],
+              [
+                "Npgsql",
+                [
+                  [
+                    "a",
+                    "http://www.npgsql.org/"
+                  ]
+                ]
+              ],
+              [
+                ", which is ADO.NET compatible and is used nearly identically as other .NET database providers."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "79930434-0f2c-4081-b6c4-b7eb28df368e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "b656c2d9-b7f0-41f9-9104-f7870c3bd3c9",
+            "49e8bfad-1223-41c0-a6af-5fec9d248b3b",
+            "5d490783-2722-485a-a0f8-5c47511443f9",
+            "681a2c9e-fae7-4f18-9f80-461c4c09c58a",
+            "f25f5b01-03a7-4c7d-8e93-9426f864b292",
+            "6feaa1fc-e2a7-4554-bc6c-fd6fa87755f4",
+            "75f90815-1ace-4073-8144-2933da6164c1",
+            "1b89e574-5d0d-4bdf-ab44-b5312db9e0c9",
+            "0af4c7d7-8383-485d-b40c-d8742d4614ed",
+            "c7bb4b02-c189-4ac9-874a-3063a6e701e9",
+            "0ceb6cef-14f0-4b09-9f87-9e98af207550",
+            "0c02c8f2-6e29-480e-9bb2-cdeb1f224d96",
+            "c0eaf930-378b-47c0-895c-8a7b1ce51777",
+            "5d2d39b0-a2fc-4e76-9b20-70d4267b34cc",
+            "584f9f2e-7a4f-4f37-8080-eb3de3eaf6d2",
+            "1a613c38-11be-4622-879f-261a3852b802",
+            "66100120-d0d2-4226-ab23-554ee203d7db",
+            "ba264bb2-630a-4be6-beb7-7d92d929a0ce",
+            "5b31d6d9-d8d3-44d7-85da-edb02d8e7383",
+            "58746f67-7c46-43f0-9125-b5f23fcaace0",
+            "a31bb49f-d2df-4eec-90a6-864c51111958",
+            "ae4c9720-8297-442f-be50-b7c9b974351b",
+            "b6b11111-255f-4c38-8f25-a412bc108e55",
+            "468130e5-ec36-4d5f-995c-0763643830c0",
+            "502c5a79-1bd9-4657-86c0-27fcaa48a9e0",
+            "5ec4fe93-2066-4e62-b48b-247fa2451cf9",
+            "ed4d52f8-abc3-4fae-bd5e-08974843aa30",
+            "b2abeec8-4aaa-4769-99b6-e9ab17e6ddda",
+            "2a19f9ba-e684-4155-becb-0d4da3888f1c",
+            "17c10449-0ab5-4f59-b03c-3db31a4b0d10"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550384742823,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "79930434-0f2c-4081-b6c4-b7eb28df368e",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605360000,
+          "parent_id": "af3eae4f-751d-4bc1-8e1c-7aac2b10eed9",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential PostgreSQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 128
+        }
+      },
+      "91db6934-484e-421c-886e-457c5038bf11": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550384985174,
+          "id": "91db6934-484e-421c-886e-457c5038bf11",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550384985174,
+          "parent_id": "d2ae8d10-8d69-4613-a546-ae8777077f7b",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "var connString = \"Host=myserv;Username=myuser;Password=mypass;Database=mydb\";\nusing (var conn = new NpgsqlConnection(connString))\n{\n    var querystring = \"INSERT INTO data (some_field) VALUES (@content)\";\n    \n    conn.Open();\n    // Create a new command with CommandText and Connection constructor\n    using (var cmd = new NpgsqlCommand(querystring, conn))\n    {\n        // Add a parameter and set its type with the NpgsqlDbType enum\n        var contentString = \"Hello World!\";\n        cmd.Parameters.Add(\"@content\", NpgsqlDbType.Text).Value = contentString;\n\n        // Execute a query that returns no results\n        cmd.ExecuteNonQuery();\n\n\n        /* It is possible to reuse a command object and open connection instead of creating new ones */\n\n        // Create a new query and set its parameters\n        int keyId = 101;\n        cmd.CommandText = \"SELECT primary_key, some_field FROM data WHERE primary_key = @keyId\";\n        cmd.Parameters.Clear();\n        cmd.Parameters.Add(\"@keyId\", NpgsqlDbType.Integer).Value = keyId;\n\n        // Execute the command and read through the rows one by one\n        using (NpgsqlDataReader reader = cmd.ExecuteReader())\n        {\n            while (reader.Read())   // Returns false for 0 rows, or after reading the last row of the results\n            {\n                // read an integer value\n                int primaryKey = reader.GetInt32(0);\n                // or \n                primaryKey = Convert.ToInt32(reader[\"primary_key\"]);\n\n                // read a text value\n                string someFieldText = reader[\"some_field\"].ToString();\n            }\n        }\n    }\n}    // the C# 'using' directive calls conn.Close() and conn.Dispose() for us"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "9b7fa796-6a75-4ed4-8571-4ad1eff65314": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550384985174,
+          "id": "9b7fa796-6a75-4ed4-8571-4ad1eff65314",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550384985174,
+          "parent_id": "d2ae8d10-8d69-4613-a546-ae8777077f7b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "A typical query is performed by creating a command, binding parameters, and then executing the command. In C#:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "d2ae8d10-8d69-4613-a546-ae8777077f7b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "457141db-ec44-4af7-a90a-7c6a3e396cc7",
+            "9b7fa796-6a75-4ed4-8571-4ad1eff65314",
+            "91db6934-484e-421c-886e-457c5038bf11"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550384985174,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "d2ae8d10-8d69-4613-a546-ae8777077f7b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550480340000,
+          "parent_id": "f25f5b01-03a7-4c7d-8e93-9426f864b292",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Accessing Postgresql from .NET using the Npgsql provider"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "f25f5b01-03a7-4c7d-8e93-9426f864b292": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "42676354-2c7f-41e7-aa7b-4d9883efd15b",
+            "d2ae8d10-8d69-4613-a546-ae8777077f7b",
+            "c456dfac-7fb6-40ac-984d-f364b5a5e942",
+            "c554dd7b-6806-4e98-86d5-80f4dcaf8be4"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550384940000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "f25f5b01-03a7-4c7d-8e93-9426f864b292",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550480340000,
+          "parent_id": "79930434-0f2c-4081-b6c4-b7eb28df368e",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Accessing Data Programatically"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 56
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

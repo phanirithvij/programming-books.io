@@ -1,0 +1,300 @@
+1508 1594556067552 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "5b31d6d9-d8d3-44d7-85da-edb02d8e7383",
+      "table": "block"
+    }
+  ]
+}
+Response:+1308
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "e6e464e7-7487-4c7a-b8fc-19fc24eb6c31",
+          "f359192c-2413-44c2-8767-f582983bf808"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550387160000,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "5b31d6d9-d8d3-44d7-85da-edb02d8e7383",
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1550387460000,
+        "parent_id": "79930434-0f2c-4081-b6c4-b7eb28df368e",
+        "parent_table": "block",
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+          }
+        ],
+        "properties": {
+          "title": [
+            [
+              "Backup script for a production DB"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 47
+      }
+    }
+  ]
+}
+8820 1594556067552 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "5b31d6d9-d8d3-44d7-85da-edb02d8e7383",
+  "verticalColumns": false
+}
+Response:+8580
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "5b31d6d9-d8d3-44d7-85da-edb02d8e7383": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "e6e464e7-7487-4c7a-b8fc-19fc24eb6c31",
+            "f359192c-2413-44c2-8767-f582983bf808"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550387160000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "5b31d6d9-d8d3-44d7-85da-edb02d8e7383",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550387460000,
+          "parent_id": "79930434-0f2c-4081-b6c4-b7eb28df368e",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Backup script for a production DB"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 47
+        }
+      },
+      "79930434-0f2c-4081-b6c4-b7eb28df368e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "b656c2d9-b7f0-41f9-9104-f7870c3bd3c9",
+            "49e8bfad-1223-41c0-a6af-5fec9d248b3b",
+            "5d490783-2722-485a-a0f8-5c47511443f9",
+            "681a2c9e-fae7-4f18-9f80-461c4c09c58a",
+            "f25f5b01-03a7-4c7d-8e93-9426f864b292",
+            "6feaa1fc-e2a7-4554-bc6c-fd6fa87755f4",
+            "75f90815-1ace-4073-8144-2933da6164c1",
+            "1b89e574-5d0d-4bdf-ab44-b5312db9e0c9",
+            "0af4c7d7-8383-485d-b40c-d8742d4614ed",
+            "c7bb4b02-c189-4ac9-874a-3063a6e701e9",
+            "0ceb6cef-14f0-4b09-9f87-9e98af207550",
+            "0c02c8f2-6e29-480e-9bb2-cdeb1f224d96",
+            "c0eaf930-378b-47c0-895c-8a7b1ce51777",
+            "5d2d39b0-a2fc-4e76-9b20-70d4267b34cc",
+            "584f9f2e-7a4f-4f37-8080-eb3de3eaf6d2",
+            "1a613c38-11be-4622-879f-261a3852b802",
+            "66100120-d0d2-4226-ab23-554ee203d7db",
+            "ba264bb2-630a-4be6-beb7-7d92d929a0ce",
+            "5b31d6d9-d8d3-44d7-85da-edb02d8e7383",
+            "58746f67-7c46-43f0-9125-b5f23fcaace0",
+            "a31bb49f-d2df-4eec-90a6-864c51111958",
+            "ae4c9720-8297-442f-be50-b7c9b974351b",
+            "b6b11111-255f-4c38-8f25-a412bc108e55",
+            "468130e5-ec36-4d5f-995c-0763643830c0",
+            "502c5a79-1bd9-4657-86c0-27fcaa48a9e0",
+            "5ec4fe93-2066-4e62-b48b-247fa2451cf9",
+            "ed4d52f8-abc3-4fae-bd5e-08974843aa30",
+            "b2abeec8-4aaa-4769-99b6-e9ab17e6ddda",
+            "2a19f9ba-e684-4155-becb-0d4da3888f1c",
+            "17c10449-0ab5-4f59-b03c-3db31a4b0d10"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550384742823,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "79930434-0f2c-4081-b6c4-b7eb28df368e",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605360000,
+          "parent_id": "af3eae4f-751d-4bc1-8e1c-7aac2b10eed9",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential PostgreSQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 128
+        }
+      },
+      "e6e464e7-7487-4c7a-b8fc-19fc24eb6c31": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "177fbc82-ccab-4d6e-be3e-7f837c90a4b2",
+            "29fcd92d-e32d-4602-9d8d-0dd994cde7ad",
+            "3655d96a-7f92-49d8-a8d7-2e654e78f14b",
+            "55f2c451-70b5-47d0-985a-2de6f2756cf6",
+            "456115b1-44e3-469a-a933-d80f14a086c8",
+            "6d35e910-087c-4861-916b-ee0b03b4443f",
+            "1a5db156-f824-44d5-84e9-9cfbc1842b77",
+            "1e22efcb-cf85-4935-a300-d4d55eed33f0",
+            "fd511dc6-a1f8-4c47-a27a-8294337fbda8",
+            "7802a37e-3606-4775-893f-66ca718b2330",
+            "79a4deb1-3251-4e78-889c-0d395ae56683",
+            "f1da66b6-4a57-47f5-b2df-29f95f6ba26d",
+            "f941c807-f77b-4adb-8e5b-4ab83bf460b0",
+            "544d9a8d-129f-48fb-940e-9645089a1335",
+            "44def452-7df8-4055-a91a-a83e39ab128f",
+            "da33a259-9d6f-490b-8a25-5d6ee8bd9dd9",
+            "de16a0a7-1a29-4d3b-a060-054dfef0ec8e",
+            "974b3159-d0f0-497b-93a7-0fb789d310a4",
+            "993beadf-56dc-4858-9351-96b6c29187eb",
+            "43b7ed0c-b798-4354-b265-b251140a399f",
+            "217c0688-ae62-42e4-bcb4-f44050667062",
+            "1f7272ad-6f09-4388-a9dc-b7ee17ce87bd"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550387197819,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "e6e464e7-7487-4c7a-b8fc-19fc24eb6c31",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550480880000,
+          "parent_id": "5b31d6d9-d8d3-44d7-85da-edb02d8e7383",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Backup script for a production DB"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "f359192c-2413-44c2-8767-f582983bf808": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "41e59f30-1ef9-41ef-ab5a-c5254023e8aa",
+            "363d30b7-a1b2-47ff-8913-a4ed23787286",
+            "f5ad47f3-14ee-4f96-8376-4097ad744b8f",
+            "f62c78e9-b3d8-4821-a9df-e1a630c36d3c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550387198959,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "f359192c-2413-44c2-8767-f582983bf808",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550480880000,
+          "parent_id": "5b31d6d9-d8d3-44d7-85da-edb02d8e7383",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "saveProdDb.sh"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

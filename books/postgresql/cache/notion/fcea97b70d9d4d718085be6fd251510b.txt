@@ -1,0 +1,429 @@
+1507 1594556106386 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "fcea97b7-0d9d-4d71-8085-be6fd251510b",
+      "table": "block"
+    }
+  ]
+}
+Response:+1307
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "f581f688-e400-4539-8976-b01d2a8307c0",
+          "57d798b4-87f7-4b9f-ab95-5855271bac78",
+          "1959cd1f-f113-428c-9f18-127f3a69950a",
+          "d380ce59-7b92-41b1-a859-9cd9a0c8538a",
+          "b70a928a-c413-444b-9a56-166ed057e9e8"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550387353254,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "fcea97b7-0d9d-4d71-8085-be6fd251510b",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1550481120000,
+        "parent_id": "ed4d52f8-abc3-4fae-bd5e-08974843aa30",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Connecting with java.sql.DriverManager"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 6
+      }
+    }
+  ]
+}
+13806 1594556106386 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "fcea97b7-0d9d-4d71-8085-be6fd251510b",
+  "verticalColumns": false
+}
+Response:+13565
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "1959cd1f-f113-428c-9f18-127f3a69950a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550387353251,
+          "id": "1959cd1f-f113-428c-9f18-127f3a69950a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550387353251,
+          "parent_id": "fcea97b7-0d9d-4d71-8085-be6fd251510b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This is done by loading the driver class, typically with java.lang.Class.forname("
+              ],
+              [
+                "\u003cdriver class name\u003e",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                ")."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "57d798b4-87f7-4b9f-ab95-5855271bac78": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550387353251,
+          "id": "57d798b4-87f7-4b9f-ab95-5855271bac78",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550387353251,
+          "parent_id": "fcea97b7-0d9d-4d71-8085-be6fd251510b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "First, the driver has to be "
+              ],
+              [
+                "registered",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " with "
+              ],
+              [
+                "java.sql.DriverManager",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " so that it knows which class to use."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "79930434-0f2c-4081-b6c4-b7eb28df368e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "b656c2d9-b7f0-41f9-9104-f7870c3bd3c9",
+            "49e8bfad-1223-41c0-a6af-5fec9d248b3b",
+            "5d490783-2722-485a-a0f8-5c47511443f9",
+            "681a2c9e-fae7-4f18-9f80-461c4c09c58a",
+            "f25f5b01-03a7-4c7d-8e93-9426f864b292",
+            "6feaa1fc-e2a7-4554-bc6c-fd6fa87755f4",
+            "75f90815-1ace-4073-8144-2933da6164c1",
+            "1b89e574-5d0d-4bdf-ab44-b5312db9e0c9",
+            "0af4c7d7-8383-485d-b40c-d8742d4614ed",
+            "c7bb4b02-c189-4ac9-874a-3063a6e701e9",
+            "0ceb6cef-14f0-4b09-9f87-9e98af207550",
+            "0c02c8f2-6e29-480e-9bb2-cdeb1f224d96",
+            "c0eaf930-378b-47c0-895c-8a7b1ce51777",
+            "5d2d39b0-a2fc-4e76-9b20-70d4267b34cc",
+            "584f9f2e-7a4f-4f37-8080-eb3de3eaf6d2",
+            "1a613c38-11be-4622-879f-261a3852b802",
+            "66100120-d0d2-4226-ab23-554ee203d7db",
+            "ba264bb2-630a-4be6-beb7-7d92d929a0ce",
+            "5b31d6d9-d8d3-44d7-85da-edb02d8e7383",
+            "58746f67-7c46-43f0-9125-b5f23fcaace0",
+            "a31bb49f-d2df-4eec-90a6-864c51111958",
+            "ae4c9720-8297-442f-be50-b7c9b974351b",
+            "b6b11111-255f-4c38-8f25-a412bc108e55",
+            "468130e5-ec36-4d5f-995c-0763643830c0",
+            "502c5a79-1bd9-4657-86c0-27fcaa48a9e0",
+            "5ec4fe93-2066-4e62-b48b-247fa2451cf9",
+            "ed4d52f8-abc3-4fae-bd5e-08974843aa30",
+            "b2abeec8-4aaa-4769-99b6-e9ab17e6ddda",
+            "2a19f9ba-e684-4155-becb-0d4da3888f1c",
+            "17c10449-0ab5-4f59-b03c-3db31a4b0d10"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550384742823,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "79930434-0f2c-4081-b6c4-b7eb28df368e",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605360000,
+          "parent_id": "af3eae4f-751d-4bc1-8e1c-7aac2b10eed9",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential PostgreSQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 128
+        }
+      },
+      "b70a928a-c413-444b-9a56-166ed057e9e8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550387353254,
+          "id": "b70a928a-c413-444b-9a56-166ed057e9e8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550387353254,
+          "parent_id": "fcea97b7-0d9d-4d71-8085-be6fd251510b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Not that user and password can also be included in the JDBC URL, in which case you don’t have to specify them in the "
+              ],
+              [
+                "getConnection",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " method call."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "d380ce59-7b92-41b1-a859-9cd9a0c8538a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550387353252,
+          "id": "d380ce59-7b92-41b1-a859-9cd9a0c8538a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550387353252,
+          "parent_id": "fcea97b7-0d9d-4d71-8085-be6fd251510b",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "/**\n * Connect to a PostgreSQL database.\n * @param url the JDBC URL to connect to; must start with \"jdbc:postgresql:\"\n * @param user the username for the connection\n * @param password the password for the connection\n * @return a connection object for the established connection\n * @throws ClassNotFoundException if the driver class cannot be found on the Java class path\n * @throws java.sql.SQLException if the connection to the database fails\n */\nprivate static java.sql.Connection connect(String url, String user, String password)\n    throws ClassNotFoundException, java.sql.SQLException\n{\n    /*\n     * Register the PostgreSQL JDBC driver.\n     * This may throw a ClassNotFoundException.\n     */\n    Class.forName(\"org.postgresql.Driver\");\n    /*\n     * Tell the driver manager to connect to the database specified with the URL.\n     * This may throw an SQLException.\n     */\n    return java.sql.DriverManager.getConnection(url, user, password);\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "ed4d52f8-abc3-4fae-bd5e-08974843aa30": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "aefa2dd2-554c-4bef-8807-63f6e487477c",
+            "fcea97b7-0d9d-4d71-8085-be6fd251510b",
+            "c41426da-86b6-45eb-97ee-4cbead0145a3",
+            "445b5e2c-1270-44a1-8ef1-4f825416391c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550387340000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "ed4d52f8-abc3-4fae-bd5e-08974843aa30",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550387580000,
+          "parent_id": "79930434-0f2c-4081-b6c4-b7eb28df368e",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Connect from Java"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 31
+        }
+      },
+      "f581f688-e400-4539-8976-b01d2a8307c0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550387353249,
+          "id": "f581f688-e400-4539-8976-b01d2a8307c0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550387353249,
+          "parent_id": "fcea97b7-0d9d-4d71-8085-be6fd251510b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This is the simplest way to connect."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "fcea97b7-0d9d-4d71-8085-be6fd251510b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "f581f688-e400-4539-8976-b01d2a8307c0",
+            "57d798b4-87f7-4b9f-ab95-5855271bac78",
+            "1959cd1f-f113-428c-9f18-127f3a69950a",
+            "d380ce59-7b92-41b1-a859-9cd9a0c8538a",
+            "b70a928a-c413-444b-9a56-166ed057e9e8"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550387353254,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "fcea97b7-0d9d-4d71-8085-be6fd251510b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550481120000,
+          "parent_id": "ed4d52f8-abc3-4fae-bd5e-08974843aa30",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Connecting with java.sql.DriverManager"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 6
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

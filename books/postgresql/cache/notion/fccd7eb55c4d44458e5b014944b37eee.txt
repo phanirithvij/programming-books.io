@@ -1,0 +1,299 @@
+1361 1594556094712 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "fccd7eb5-5c4d-4445-8e5b-014944b37eee",
+      "table": "block"
+    }
+  ]
+}
+Response:+1161
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "9c5b149a-bf6b-42e5-8eae-f66d77e55c3f",
+          "ca7c1193-0c4b-4e5b-8f92-3ecaf55d5b7d"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550385044101,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "fccd7eb5-5c4d-4445-8e5b-014944b37eee",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1550480460000,
+        "parent_id": "75f90815-1ace-4073-8144-2933da6164c1",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Create a table that references other table"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 8
+      }
+    }
+  ]
+}
+8992 1594556094714 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "fccd7eb5-5c4d-4445-8e5b-014944b37eee",
+  "verticalColumns": false
+}
+Response:+8752
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "75f90815-1ace-4073-8144-2933da6164c1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "bfbd895c-cf50-4373-82f3-3079bba54274",
+            "7a2f3056-527b-4fff-a4c4-a9f0977d2285",
+            "811ee386-a943-40f2-96de-03260c5d8883",
+            "952f9234-1cdb-47d5-a71d-8163ff0646ff",
+            "fccd7eb5-5c4d-4445-8e5b-014944b37eee"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385000000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "75f90815-1ace-4073-8144-2933da6164c1",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550480400000,
+          "parent_id": "79930434-0f2c-4081-b6c4-b7eb28df368e",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Table Creation"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 32
+        }
+      },
+      "79930434-0f2c-4081-b6c4-b7eb28df368e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "b656c2d9-b7f0-41f9-9104-f7870c3bd3c9",
+            "49e8bfad-1223-41c0-a6af-5fec9d248b3b",
+            "5d490783-2722-485a-a0f8-5c47511443f9",
+            "681a2c9e-fae7-4f18-9f80-461c4c09c58a",
+            "f25f5b01-03a7-4c7d-8e93-9426f864b292",
+            "6feaa1fc-e2a7-4554-bc6c-fd6fa87755f4",
+            "75f90815-1ace-4073-8144-2933da6164c1",
+            "1b89e574-5d0d-4bdf-ab44-b5312db9e0c9",
+            "0af4c7d7-8383-485d-b40c-d8742d4614ed",
+            "c7bb4b02-c189-4ac9-874a-3063a6e701e9",
+            "0ceb6cef-14f0-4b09-9f87-9e98af207550",
+            "0c02c8f2-6e29-480e-9bb2-cdeb1f224d96",
+            "c0eaf930-378b-47c0-895c-8a7b1ce51777",
+            "5d2d39b0-a2fc-4e76-9b20-70d4267b34cc",
+            "584f9f2e-7a4f-4f37-8080-eb3de3eaf6d2",
+            "1a613c38-11be-4622-879f-261a3852b802",
+            "66100120-d0d2-4226-ab23-554ee203d7db",
+            "ba264bb2-630a-4be6-beb7-7d92d929a0ce",
+            "5b31d6d9-d8d3-44d7-85da-edb02d8e7383",
+            "58746f67-7c46-43f0-9125-b5f23fcaace0",
+            "a31bb49f-d2df-4eec-90a6-864c51111958",
+            "ae4c9720-8297-442f-be50-b7c9b974351b",
+            "b6b11111-255f-4c38-8f25-a412bc108e55",
+            "468130e5-ec36-4d5f-995c-0763643830c0",
+            "502c5a79-1bd9-4657-86c0-27fcaa48a9e0",
+            "5ec4fe93-2066-4e62-b48b-247fa2451cf9",
+            "ed4d52f8-abc3-4fae-bd5e-08974843aa30",
+            "b2abeec8-4aaa-4769-99b6-e9ab17e6ddda",
+            "2a19f9ba-e684-4155-becb-0d4da3888f1c",
+            "17c10449-0ab5-4f59-b03c-3db31a4b0d10"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550384742823,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "79930434-0f2c-4081-b6c4-b7eb28df368e",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605360000,
+          "parent_id": "af3eae4f-751d-4bc1-8e1c-7aac2b10eed9",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential PostgreSQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 128
+        }
+      },
+      "9c5b149a-bf6b-42e5-8eae-f66d77e55c3f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385044099,
+          "id": "9c5b149a-bf6b-42e5-8eae-f66d77e55c3f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550385044099,
+          "parent_id": "fccd7eb5-5c4d-4445-8e5b-014944b37eee",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In this example, User Table will have a column that references the Agency table."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ca7c1193-0c4b-4e5b-8f92-3ecaf55d5b7d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385044101,
+          "id": "ca7c1193-0c4b-4e5b-8f92-3ecaf55d5b7d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550480460000,
+          "parent_id": "fccd7eb5-5c4d-4445-8e5b-014944b37eee",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "SQL"
+              ]
+            ],
+            "title": [
+              [
+                "CREATE TABLE agencies ( -- first create the agency table\n  id SERIAL PRIMARY KEY,\n  name TEXT NOT NULL\n)\n\nCREATE TABLE users (\n  id SERIAL PRIMARY KEY,\n  agency_id NOT NULL INTEGER REFERENCES agencies(id) DEFERRABLE INITIALLY DEFERRED -- this is going to references your agency table.\n)"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "fccd7eb5-5c4d-4445-8e5b-014944b37eee": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "9c5b149a-bf6b-42e5-8eae-f66d77e55c3f",
+            "ca7c1193-0c4b-4e5b-8f92-3ecaf55d5b7d"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550385044101,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "fccd7eb5-5c4d-4445-8e5b-014944b37eee",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550480460000,
+          "parent_id": "75f90815-1ace-4073-8144-2933da6164c1",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Create a table that references other table"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 8
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
