@@ -1,0 +1,732 @@
+1920 1594553599229 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+      "table": "block"
+    }
+  ]
+}
+Response:+1720
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "d944ae27-2bc9-4795-83f1-8f3bfbbbb710",
+          "0478a2eb-35f2-42e3-9d55-c4408738faca",
+          "1477d29f-4384-4a3c-b7b1-7e0b16fda7cb",
+          "7acb28cc-6677-402e-bd0a-f265523a0435",
+          "18deaa0c-f2f6-47f7-9942-c99945d091c5",
+          "f83ece4a-1f55-4f0c-8c30-89cee71369df",
+          "6d907b70-df84-4edb-a9fd-17aca742298c",
+          "77e26d00-c707-4e53-be71-2ae41baa0687",
+          "605d708a-34d9-4ba8-9c55-062ab36ce7fb",
+          "379ea1aa-4da1-410f-a115-b72eeafdf21c",
+          "03ff27bc-d1e8-4c5b-9718-326f1257f8fa",
+          "ed2d4f68-f3d5-426b-ad50-00687dcca3e2",
+          "dd36cd41-6fd3-44dd-b28d-bc0caa248d28"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1551945052955,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551945052955,
+        "parent_id": "8d4886c1-0f85-4e70-8001-4f310f6668e5",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Perfectly aligned buttons inside cards with flexbox"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+25622 1594553599229 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+  "verticalColumns": false
+}
+Response:+25381
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "03ff27bc-d1e8-4c5b-9718-326f1257f8fa": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052955,
+          "id": "03ff27bc-d1e8-4c5b-9718-326f1257f8fa",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052955,
+          "parent_id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In order to move the buttons to the bottom of the block, we need to apply "
+              ],
+              [
+                "display: flex;",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " to the card itself with the direction set to "
+              ],
+              [
+                "column",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". After that, we should select the last element inside the card and set the "
+              ],
+              [
+                "margin-top",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " to "
+              ],
+              [
+                "auto",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". This will push the last paragraph to the bottom of the card and achieve the required result."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "0478a2eb-35f2-42e3-9d55-c4408738faca": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052953,
+          "id": "0478a2eb-35f2-42e3-9d55-c4408738faca",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052953,
+          "parent_id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "parent_table": "block",
+          "properties": {
+            "source": [
+              [
+                "/tmp/8c482495-c3fc-4521-a274-902ac111b27b/b26eca878f21c04d509a17f878cdbeea16484aeb.png"
+              ]
+            ]
+          },
+          "type": "image",
+          "version": 1
+        }
+      },
+      "1477d29f-4384-4a3c-b7b1-7e0b16fda7cb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052954,
+          "id": "1477d29f-4384-4a3c-b7b1-7e0b16fda7cb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052954,
+          "parent_id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This can be achieved using a special trick with "
+              ],
+              [
+                "flexbox",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "18bfe038-1096-49f4-8904-e71ca18d76ed": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "de69ce46-4a84-4664-a79d-a8437cc023a2",
+            "6447d07e-7279-4ef8-ad31-221f6202a958",
+            "b5232adc-60a1-4030-aec3-ac8cfbc40c48",
+            "fd36e28b-d46e-4e85-8e33-850a518cc83b",
+            "98e6c7b5-3bf2-46c6-80d3-c5cbd31a66f9",
+            "7a254330-19a7-4078-9eb8-742c9947c27e",
+            "46bc5a5e-461b-4eea-ae50-1350e8c216f2",
+            "700875db-418d-425e-a5bc-4f233df26393",
+            "8d4886c1-0f85-4e70-8001-4f310f6668e5",
+            "a532af1c-38ff-4edb-a80f-44aaf3ccc3dc",
+            "5fee4d4d-52a7-4aa3-a0a2-aa7058cc0bf7",
+            "e012f912-2f98-4998-b135-e4e66d4b296a",
+            "8af638cc-537f-4b8f-a653-1a9437d3ac91",
+            "8ad0b607-0b54-4717-af1f-aaad85004d7a",
+            "c50f71ff-6d61-466c-bcd2-5bf31d7f79f2",
+            "07e243d7-106d-41a6-a70a-54841524dfcf",
+            "ee0aa8d5-16eb-4655-a3e4-1207a664ff8d",
+            "2f766cdc-785a-4190-bb87-fe34634ce93e",
+            "cfe69373-b211-484f-859d-994b14c21101",
+            "04974825-61b2-4800-ae16-c05860d63e8b",
+            "bb456a6b-e908-423a-9f01-4100ba169355",
+            "dbaba9a4-66d7-412d-b2c9-3da6f51a9e9a",
+            "2abad8a1-f82a-4e33-b817-7e35df65d648",
+            "6ef12527-82ae-43bf-9d83-10c7e4f6b679",
+            "325b6445-db10-4fc3-a31f-291360b669b7",
+            "b21963da-f818-4709-8a20-7a8c6cb88159",
+            "b4240597-9643-4c68-b3a4-8effe38559fd",
+            "c07e46a0-dbd4-4d9a-a7dd-7fa847bce4ff",
+            "ae18c98c-9032-491b-b984-171019e74029",
+            "0e939055-c399-4797-bc21-990b347dae23",
+            "f6444ef0-3c83-43a3-86be-f9a075d908f4",
+            "cf0362b8-6e4e-49e6-9095-491801d0527a",
+            "7178e7e9-93fe-4d60-84de-29271ca4ed9a",
+            "13d6e8c9-4b63-4f68-8735-21b9e3ecde18",
+            "67afe3a0-9215-4b71-a6ba-01022485f703",
+            "1fa750ee-637a-4507-a179-de35cff27ee6",
+            "96ef4707-530e-46e7-83ea-44b8e0942142",
+            "74c97777-0820-445d-a5e9-e83344297798",
+            "e7833d5c-379d-420f-ba51-ef44b8c4115e",
+            "cdcda7af-0abd-41da-9da0-df9cd78cd933",
+            "3dad8422-9fd0-44f5-af2d-9f073bdf094d",
+            "e9225abc-d9b1-4d31-a198-f7989d53b201",
+            "569b653b-8c46-41da-bbb6-43badd1b8184",
+            "846517a8-7e11-4dbb-95f6-d465b22654cc",
+            "a0f52163-92b9-4ebe-a5a6-f92f4bbb23ec",
+            "3a8f7033-0e15-46d4-8e08-f182fcbbd38d",
+            "918e8e2b-d2af-4106-b9de-f23c6e6848ed",
+            "dc371b5c-6e7e-4e07-8e13-217dd1e6172f",
+            "17762587-a566-4b52-9f4c-d879db1cdfd7",
+            "e3859e10-527d-4464-bb5e-abd159e7debe",
+            "567b8685-62e7-458f-84e5-812f701291bf",
+            "293d87a0-951a-45c1-b5e6-000a3f655a44",
+            "bd677d4f-1848-4e73-b270-c999c66de3bf",
+            "26e07e04-43ea-4728-be9d-d1023c1766cc",
+            "26228db1-a709-45ac-b18b-f6da01bf2005",
+            "cc368be6-de28-48b0-bff1-5d7584737114",
+            "f8858db0-ce6b-4454-879a-c60a0cfbcd09",
+            "f83a172b-4b07-4ba9-ac68-3ee297828b82"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551944923897,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "18bfe038-1096-49f4-8904-e71ca18d76ed",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570604820000,
+          "parent_id": "ca9c0a7c-eb82-42d5-879f-ef8a96839b12",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential CSS"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 100
+        }
+      },
+      "18deaa0c-f2f6-47f7-9942-c99945d091c5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052954,
+          "id": "18deaa0c-f2f6-47f7-9942-c99945d091c5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052954,
+          "parent_id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "\u003cdiv class=\"cards\"\u003e\n  \u003cdiv class=\"card\"\u003e\n    \u003cp\u003eLorem ipsum Magna proident ex anim dolor ullamco pariatur reprehenderit culpa esse enim mollit labore dolore voluptate ullamco et ut sed qui minim.\u003c/p\u003e\n    \u003cp\u003e\u003cbutton\u003eAction\u003c/button\u003e\u003c/p\u003e\n  \u003c/div\u003e\n  \u003cdiv class=\"card\"\u003e\n    \u003cp\u003eLorem ipsum Magna proident ex anim dolor ullamco pariatur reprehenderit culpa esse enim mollit labore dolore voluptate ullamco et ut sed qui minim.\u003c/p\u003e\n    \u003cp\u003eLorem ipsum Magna proident ex anim dolor ullamco pariatur reprehenderit culpa esse enim mollit labore dolore voluptate ullamco et ut sed qui minim.\u003c/p\u003e\n    \u003cp\u003eLorem ipsum Magna proident ex anim dolor ullamco pariatur reprehenderit culpa esse enim mollit labore dolore voluptate ullamco et ut sed qui minim.\u003c/p\u003e\n    \u003cp\u003eLorem ipsum Magna proident ex anim dolor ullamco pariatur reprehenderit culpa esse enim mollit labore dolore voluptate ullamco et ut sed qui minim.\u003c/p\u003e\n    \u003cp\u003e\u003cbutton\u003eAction\u003c/button\u003e\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/div\u003e"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "379ea1aa-4da1-410f-a115-b72eeafdf21c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052955,
+          "id": "379ea1aa-4da1-410f-a115-b72eeafdf21c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052955,
+          "parent_id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "parent_table": "block",
+          "properties": {
+            "source": [
+              [
+                "/tmp/8c482495-c3fc-4521-a274-902ac111b27b/300489d6db043a07dc644a8c606a661ea7298cda.png"
+              ]
+            ]
+          },
+          "type": "image",
+          "version": 1
+        }
+      },
+      "4d031b04-1990-4ea7-a72a-4830f62b35b6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "d944ae27-2bc9-4795-83f1-8f3bfbbbb710",
+            "0478a2eb-35f2-42e3-9d55-c4408738faca",
+            "1477d29f-4384-4a3c-b7b1-7e0b16fda7cb",
+            "7acb28cc-6677-402e-bd0a-f265523a0435",
+            "18deaa0c-f2f6-47f7-9942-c99945d091c5",
+            "f83ece4a-1f55-4f0c-8c30-89cee71369df",
+            "6d907b70-df84-4edb-a9fd-17aca742298c",
+            "77e26d00-c707-4e53-be71-2ae41baa0687",
+            "605d708a-34d9-4ba8-9c55-062ab36ce7fb",
+            "379ea1aa-4da1-410f-a115-b72eeafdf21c",
+            "03ff27bc-d1e8-4c5b-9718-326f1257f8fa",
+            "ed2d4f68-f3d5-426b-ad50-00687dcca3e2",
+            "dd36cd41-6fd3-44dd-b28d-bc0caa248d28"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052955,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052955,
+          "parent_id": "8d4886c1-0f85-4e70-8001-4f310f6668e5",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Perfectly aligned buttons inside cards with flexbox"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "605d708a-34d9-4ba8-9c55-062ab36ce7fb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052954,
+          "id": "605d708a-34d9-4ba8-9c55-062ab36ce7fb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052954,
+          "parent_id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The layout will change and become like this:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "6d907b70-df84-4edb-a9fd-17aca742298c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052954,
+          "id": "6d907b70-df84-4edb-a9fd-17aca742298c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052954,
+          "parent_id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "CSS"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "77e26d00-c707-4e53-be71-2ae41baa0687": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052954,
+          "id": "77e26d00-c707-4e53-be71-2ae41baa0687",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052954,
+          "parent_id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                ".cards {\n    display: flex;\n}\n.card {\n    border: 1px solid #ccc;\n    margin: 10px 10px;\n    padding: 0 20px;\n}\nbutton {\n    height: 40px;\n    background: #fff;\n    padding: 0 40px;\n    border: 1px solid #000;\n}\np:last-child {\n    text-align: center;\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "7acb28cc-6677-402e-bd0a-f265523a0435": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052954,
+          "id": "7acb28cc-6677-402e-bd0a-f265523a0435",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052954,
+          "parent_id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "HTML"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "8d4886c1-0f85-4e70-8001-4f310f6668e5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "5bfdff77-b066-48b4-8a45-e81413649bd6",
+            "29729c1c-0654-412a-8872-0e25704dc6fb",
+            "14c337a3-0988-421d-9fc7-b402151ad432",
+            "8594a211-4489-4843-a02f-ca678ce09f8a",
+            "004a80a6-d9f7-4a49-90e9-511cb5b88365",
+            "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+            "b0cb334e-2c2b-453f-baf4-f1825c19f81c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945000000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "8d4886c1-0f85-4e70-8001-4f310f6668e5",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945300000,
+          "parent_id": "18bfe038-1096-49f4-8904-e71ca18d76ed",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Flexbox"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 25
+        }
+      },
+      "d944ae27-2bc9-4795-83f1-8f3bfbbbb710": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052951,
+          "id": "d944ae27-2bc9-4795-83f1-8f3bfbbbb710",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052951,
+          "parent_id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "It’s a regular pattern in design these days to vertically align "
+              ],
+              [
+                "call to actions",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " inside its containing cards like this:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "dd36cd41-6fd3-44dd-b28d-bc0caa248d28": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052955,
+          "id": "dd36cd41-6fd3-44dd-b28d-bc0caa248d28",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052955,
+          "parent_id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                ".cards {\n    display: flex;\n}\n.card {\n    border: 1px solid #ccc;\n    margin: 10px 10px;\n    padding: 0 20px;\n    display: flex;\n    flex-direction: column;\n}\nbutton {\n    height: 40px;\n    background: #fff;\n    padding: 0 40px;\n    border: 1px solid #000;\n}\np:last-child {\n    text-align: center;\n    margin-top: auto;\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "ed2d4f68-f3d5-426b-ad50-00687dcca3e2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052955,
+          "id": "ed2d4f68-f3d5-426b-ad50-00687dcca3e2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052955,
+          "parent_id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Final CSS:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "f83ece4a-1f55-4f0c-8c30-89cee71369df": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551945052954,
+          "id": "f83ece4a-1f55-4f0c-8c30-89cee71369df",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551945052954,
+          "parent_id": "4d031b04-1990-4ea7-a72a-4830f62b35b6",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "First of all, we use CSS to apply "
+              ],
+              [
+                "display: flex;",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " to the container. This will create 2 columns equal in height with the content flowing naturally inside it"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
