@@ -1,0 +1,1547 @@
+2768 1594550799591 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "66659d82-a166-4437-81eb-6b8a145e559f",
+      "table": "block"
+    }
+  ]
+}
+Response:+2568
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "7b49635a-7762-48be-8bb1-a15c1e2f2e0a",
+          "3982fe3b-6b7b-489f-a329-c7ddf470081f",
+          "15b9dc32-2402-4170-a62b-78ae37ccc04f",
+          "8560004c-0b26-4ae3-a87e-0c9a77c0648f",
+          "c10e3690-74c2-4f5e-b034-4b5ccd36e4f5",
+          "05b69c99-f36f-4948-91a4-423db6519d96",
+          "d10bf43b-c924-4df8-be04-d1c8962374c8",
+          "88dee7af-2002-4d3b-8dc1-bd7ed8521a2b",
+          "940fb7d7-7d16-4347-ae77-dacef758a3c2",
+          "eda65b99-9f68-40c3-ad46-aaae34f49544",
+          "82991b29-f893-407e-aa82-31bc9f296f71",
+          "ebe8d7f1-ab88-4618-9be3-e32de13a6f72",
+          "0d881190-44a9-4298-8b28-27feb1d14e99",
+          "db4533ca-75f3-456f-a324-9104a2daec87",
+          "71e2f8f8-7359-44dd-8a25-7d7d11ad2297",
+          "900b3491-d200-427b-b786-e5b9b1a09789",
+          "c0b1cc79-9251-4967-9c68-479c80e84f0f",
+          "7e621d76-283f-4895-9a0b-cd3f72e6e275",
+          "8c031dbd-99ec-4417-bd52-f96a378e7508",
+          "644e243f-f60c-429b-991f-4fe9096b9de8",
+          "e9475823-b9b2-4973-9675-dde37f059ca0",
+          "4a10d2b8-6852-458d-ad18-797de4e98fa0",
+          "776ae553-3056-4175-8056-2c1109a94803",
+          "2a8b909a-926a-4765-9655-6cf026ee9083",
+          "d2cbf6af-9d8a-46f1-9ed7-60aefc498b99",
+          "f4efda28-68e4-43ce-a851-f6c5cfdaaea6",
+          "baadb5e7-6b95-482d-9b17-99aeb1272cd3",
+          "6cf7bc4b-ed0e-44fc-a4c0-3876760a042b",
+          "2400f2f2-eb21-4a1f-9b2d-e2c9bdce8866",
+          "d75b9cbc-fb4a-4519-8a86-b249a98a6a5e"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550523398669,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "66659d82-a166-4437-81eb-6b8a145e559f",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551687398919,
+        "parent_id": "9a0f90cc-6905-4660-8751-556567fcd897",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "A basic example illustrating expression templates"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 4
+      }
+    }
+  ]
+}
+57060 1594550799593 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "66659d82-a166-4437-81eb-6b8a145e559f",
+  "verticalColumns": false
+}
+Response:+56819
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "05b69c99-f36f-4948-91a4-423db6519d96": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398663,
+          "id": "05b69c99-f36f-4948-91a4-423db6519d96",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398663,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "As illustrated above, being able to overload "
+              ],
+              [
+                "operator+()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " provides you with a notation which mimics the natural mathematical notation for matrices."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "0d881190-44a9-4298-8b28-27feb1d14e99": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398666,
+          "id": "0d881190-44a9-4298-8b28-27feb1d14e99",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398666,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The problem stems from the fact that the expression "
+              ],
+              [
+                "Matrix d = a + b + c",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is evaluated too “eagerly” before you have had an opportunity to build the entire expression tree. In other words, what you really want to achieve is to evaluate "
+              ],
+              [
+                "a + b + c",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " in one pass and only once you actually need to assign the resulting expressing to "
+              ],
+              [
+                "d",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "15b9dc32-2402-4170-a62b-78ae37ccc04f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398663,
+          "id": "15b9dc32-2402-4170-a62b-78ae37ccc04f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398663,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "template \u003ctypename T, std::size_t COL, std::size_t ROW\u003e\nclass Matrix {\npublic:\n    using value_type = T;\n\n    Matrix() : values(COL * ROW) {}\n\n    static size_t cols() { return COL; }\n    static size_t rows() { return ROW; }\n\n    const T\u0026 operator()(size_t x, size_t y) const { return values[y * COL + x]; }\n    T\u0026 operator()(size_t x, size_t y) { return values[y * COL + x]; }\n\nprivate:\n    std::vector\u003cT\u003e values;\n};\n\ntemplate \u003ctypename T, std::size_t COL, std::size_t ROW\u003e\nMatrix\u003cT, COL, ROW\u003e\noperator+(const Matrix\u003cT, COL, ROW\u003e\u0026 lhs, const Matrix\u003cT, COL, ROW\u003e\u0026 rhs)\n{\n    Matrix\u003cT, COL, ROW\u003e result;\n\n    for (size_t y = 0; y != lhs.rows(); ++y) {\n        for (size_t x = 0; x != lhs.cols(); ++x) {\n            result(x, y) = lhs(x, y) + rhs(x, y);\n        }\n    }\n    return result;\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "2400f2f2-eb21-4a1f-9b2d-e2c9bdce8866": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398669,
+          "id": "2400f2f2-eb21-4a1f-9b2d-e2c9bdce8866",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398669,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Finally, the last piece of the puzzle is to actually plug your expression template into the "
+              ],
+              [
+                "Matrix",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " class. This is essentially achieved by providing an implementation for "
+              ],
+              [
+                "Matrix::operator=()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", which takes the expression template as an argument and evaluates it in one pass, as you did “manually” before:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "2a8b909a-926a-4765-9655-6cf026ee9083": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398668,
+          "id": "2a8b909a-926a-4765-9655-6cf026ee9083",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398668,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "As you can see, another benefit of using an expression template, is that you have basically managed to evaluate the sum of "
+              ],
+              [
+                "a",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "b",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and assign it to "
+              ],
+              [
+                "d",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " in a single pass."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "3982fe3b-6b7b-489f-a329-c7ddf470081f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398663,
+          "id": "3982fe3b-6b7b-489f-a329-c7ddf470081f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398663,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Before actually diving into expression templates, you should understand why you need them in the first place. To illustrate this, consider the very simple Matrix class given below:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "4a10d2b8-6852-458d-ad18-797de4e98fa0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398668,
+          "id": "4a10d2b8-6852-458d-ad18-797de4e98fa0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398668,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "You can however at a later stage, when you actually need the result of the summation, evaluate the expression "
+              ],
+              [
+                "d = a + b",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " as follows:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "644e243f-f60c-429b-991f-4fe9096b9de8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398667,
+          "id": "644e243f-f60c-429b-991f-4fe9096b9de8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398667,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In fact, nothing stops you from instantiating the "
+              ],
+              [
+                "MatrixSum\u003c\u003e",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " expression template as follows:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "66659d82-a166-4437-81eb-6b8a145e559f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "7b49635a-7762-48be-8bb1-a15c1e2f2e0a",
+            "3982fe3b-6b7b-489f-a329-c7ddf470081f",
+            "15b9dc32-2402-4170-a62b-78ae37ccc04f",
+            "8560004c-0b26-4ae3-a87e-0c9a77c0648f",
+            "c10e3690-74c2-4f5e-b034-4b5ccd36e4f5",
+            "05b69c99-f36f-4948-91a4-423db6519d96",
+            "d10bf43b-c924-4df8-be04-d1c8962374c8",
+            "88dee7af-2002-4d3b-8dc1-bd7ed8521a2b",
+            "940fb7d7-7d16-4347-ae77-dacef758a3c2",
+            "eda65b99-9f68-40c3-ad46-aaae34f49544",
+            "82991b29-f893-407e-aa82-31bc9f296f71",
+            "ebe8d7f1-ab88-4618-9be3-e32de13a6f72",
+            "0d881190-44a9-4298-8b28-27feb1d14e99",
+            "db4533ca-75f3-456f-a324-9104a2daec87",
+            "71e2f8f8-7359-44dd-8a25-7d7d11ad2297",
+            "900b3491-d200-427b-b786-e5b9b1a09789",
+            "c0b1cc79-9251-4967-9c68-479c80e84f0f",
+            "7e621d76-283f-4895-9a0b-cd3f72e6e275",
+            "8c031dbd-99ec-4417-bd52-f96a378e7508",
+            "644e243f-f60c-429b-991f-4fe9096b9de8",
+            "e9475823-b9b2-4973-9675-dde37f059ca0",
+            "4a10d2b8-6852-458d-ad18-797de4e98fa0",
+            "776ae553-3056-4175-8056-2c1109a94803",
+            "2a8b909a-926a-4765-9655-6cf026ee9083",
+            "d2cbf6af-9d8a-46f1-9ed7-60aefc498b99",
+            "f4efda28-68e4-43ce-a851-f6c5cfdaaea6",
+            "baadb5e7-6b95-482d-9b17-99aeb1272cd3",
+            "6cf7bc4b-ed0e-44fc-a4c0-3876760a042b",
+            "2400f2f2-eb21-4a1f-9b2d-e2c9bdce8866",
+            "d75b9cbc-fb4a-4519-8a86-b249a98a6a5e"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398669,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551687398919,
+          "parent_id": "9a0f90cc-6905-4660-8751-556567fcd897",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "A basic example illustrating expression templates"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 4
+        }
+      },
+      "6cf7bc4b-ed0e-44fc-a4c0-3876760a042b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398669,
+          "id": "6cf7bc4b-ed0e-44fc-a4c0-3876760a042b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398669,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "for (std::size_t y = 0; y != a.rows(); ++y) {\n    for (std::size_t x = 0; x != a.cols(); ++x) {\n        d(x, y) = SumABC(x, y);\n    }\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "71e2f8f8-7359-44dd-8a25-7d7d11ad2297": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398667,
+          "id": "71e2f8f8-7359-44dd-8a25-7d7d11ad2297",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398667,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "For example, here is a possible implementation for an expression template corresponding to the summation of 2 types:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "776ae553-3056-4175-8056-2c1109a94803": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398668,
+          "id": "776ae553-3056-4175-8056-2c1109a94803",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398668,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "for (std::size_t y = 0; y != a.rows(); ++y) {\n    for (std::size_t x = 0; x != a.cols(); ++x) {\n        d(x, y) = SumAB(x, y);\n    }\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "7b49635a-7762-48be-8bb1-a15c1e2f2e0a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398660,
+          "id": "7b49635a-7762-48be-8bb1-a15c1e2f2e0a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398660,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "An expression template is a compile-time optimization technique used mostly in scientific computing. It’s main purpose is to avoid unnecessary temporaries and optimize loop calculations using a single pass (typically when performing operations on numerical aggregates). Expression templates were initially devised in order to circumvent the inefficiencies of naïve operator overloading when implementing numerical "
+              ],
+              [
+                "Array",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " or "
+              ],
+              [
+                "Matrix",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " types. An equivalent terminology for expression templates has been introduced by Bjarne Stroustrup, who calls them “fused operations” in the latest version of his book, “The C++ Programming Language”."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "7e621d76-283f-4895-9a0b-cd3f72e6e275": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398667,
+          "id": "7e621d76-283f-4895-9a0b-cd3f72e6e275",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398667,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "template \u003ctypename LHS, typename RHS\u003e\nMatrixSum\u003cLHS, RHS\u003e operator+(const LHS\u0026 lhs, const LHS\u0026 rhs) {\n    return MatrixSum\u003cLHS, RHS\u003e(lhs, rhs);\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "82991b29-f893-407e-aa82-31bc9f296f71": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398664,
+          "id": "82991b29-f893-407e-aa82-31bc9f296f71",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398664,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The previous example however has its own disadvantages because it creates a far more convoluted interface for the Matrix class (you would have to consider methods such as "
+              ],
+              [
+                "Matrix::add2()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", "
+              ],
+              [
+                "Matrix::AddMultiply()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and so on)."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "8560004c-0b26-4ae3-a87e-0c9a77c0648f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398663,
+          "id": "8560004c-0b26-4ae3-a87e-0c9a77c0648f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398663,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Given the previous class definition, you can now write Matrix expressions such as:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "88dee7af-2002-4d3b-8dc1-bd7ed8521a2b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398664,
+          "id": "88dee7af-2002-4d3b-8dc1-bd7ed8521a2b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398664,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To understand why, you have to consider what happens when you write an expression such as "
+              ],
+              [
+                "Matrix d = a + b + c",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". This in fact expands to "
+              ],
+              [
+                "((a + b) + c)",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " or "
+              ],
+              [
+                "operator+(operator+(a, b), c)",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". In other words, the loop inside "
+              ],
+              [
+                "operator+()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is executed twice, whereas it could have been easily performed in a single pass. This also results in 2 temporaries being created, which further degrades performance. In essence, by adding the flexibility to use a notation close to its mathematical counterpart, you have also made the "
+              ],
+              [
+                "Matrix",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " class highly inefficient."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "8c031dbd-99ec-4417-bd52-f96a378e7508": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398667,
+          "id": "8c031dbd-99ec-4417-bd52-f96a378e7508",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398667,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "As you can see, "
+              ],
+              [
+                "operator+()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " no longer returns an “eager evaluation” of the result of adding 2 Matrix instances (which would be another Matrix instance), but instead an expression template representing the addition operation. The most important point to keep in mind is that the expression has not been evaluated yet. It merely holds references to its operands."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "900b3491-d200-427b-b786-e5b9b1a09789": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398667,
+          "id": "900b3491-d200-427b-b786-e5b9b1a09789",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398667,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "template \u003ctypename LHS, typename RHS\u003e\nclass MatrixSum\n{\npublic:\n    using value_type = typename LHS::value_type;\n\n    MatrixSum(const LHS\u0026 lhs, const RHS\u0026 rhs) : rhs(rhs), lhs(lhs) {}\n    \n    value_type operator() (int x, int y) const  {\n        return lhs(x, y) + rhs(x, y);\n    }\nprivate:\n    const LHS\u0026 lhs;\n    const RHS\u0026 rhs;\n};"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "940fb7d7-7d16-4347-ae77-dacef758a3c2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398664,
+          "id": "940fb7d7-7d16-4347-ae77-dacef758a3c2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398664,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "For example, without operator overloading, you could implement a far more efficient Matrix summation using a single pass:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "9a0f90cc-6905-4660-8751-556567fcd897": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "66659d82-a166-4437-81eb-6b8a145e559f",
+            "7d8ae5fe-eaee-4ed8-a02b-ff7ae0d2525c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523360000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "9a0f90cc-6905-4660-8751-556567fcd897",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552304640000,
+          "parent_id": "ad527dc6-d4a7-420b-9234-94d0b9bfb560",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Expression templates"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 37
+        }
+      },
+      "ad527dc6-d4a7-420b-9234-94d0b9bfb560": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "c97e2222-373b-4879-ba1e-de9da33c4b9c",
+            "069713c9-355d-43e5-bbe3-fe65ccc5d89f",
+            "f6fb0c70-b2a7-438e-8fd0-214354d4363c",
+            "cad79b8f-8e22-4786-b522-3ce3f7989dfb",
+            "9582f39a-18d4-4387-a429-d2d9d9c1c0a3",
+            "4e7523ec-807e-469b-846d-6f0e98a9f133",
+            "c48a63c8-822c-4a23-a960-60de4face6ae",
+            "99e19430-5cdd-423f-8fa9-0e2f0bf264ab",
+            "ea4c768f-8ffd-48a6-bc20-bd19b214545c",
+            "3724ad56-a879-48bf-847e-5adcfcb60c18",
+            "52470773-ddd6-4b1b-ad39-7b26f7b28f00",
+            "ee10cf45-84c7-467c-8068-ea9076a2401a",
+            "6fdcface-f439-4f73-87ef-255a8f378573",
+            "4dc21607-5d04-4a95-bced-ba855fbfa11f",
+            "546689ba-7cc0-49cb-ae94-05172f20d6dc",
+            "193b149e-733b-4344-8898-29dc4a2ef0b0",
+            "7b3003e0-5331-46e9-a216-03a87845d9e4",
+            "fe5135d2-0f28-4675-bccd-611b7222102a",
+            "a47adf4d-f2bb-4f72-84ee-798641440dfd",
+            "903c7a47-fbc0-4b12-81a4-646b290a4e1e",
+            "40e8450d-4736-4ad0-be7d-a2d9307ddf4f",
+            "b886ff5d-614b-4aa9-9e99-851b7998439b",
+            "89d591b2-5143-487b-8a09-144b6b266e4c",
+            "ede1fd12-0013-4e8b-a92d-109c2ef39c10",
+            "8655f492-9c51-4f68-ad52-8b6c1e02a277",
+            "f2a0f008-68d4-4ef0-b159-b4601056dc66",
+            "db03800f-1091-419f-bb8b-e6357b79b0ee",
+            "50a27510-120b-4da0-9ecb-cf15396a0108",
+            "bd95f7bc-834a-4faf-992f-446d54f5fc91",
+            "0789dc55-0210-4292-957d-ed83df8e73af",
+            "d5d40e50-c234-4e34-8c36-6916f8e79960",
+            "5644241e-ceec-479a-8322-e9c1780f1515",
+            "de2aa703-c2f6-4f94-bc50-eb5201c26ac3",
+            "333099ca-9ef1-4569-b9ad-a7a9275c368b",
+            "263edcef-95ee-480a-8c67-1e74662a250a",
+            "9a81e0e2-994e-41b0-aa0f-0bb41311ad7d",
+            "1146c4bd-8317-421d-b231-ebcb0eff5721",
+            "ee86edbe-8dd9-497a-a24c-fa516272404e",
+            "13fedea6-df65-4996-9280-9cedb29d5f94",
+            "b96c747c-3d87-49a0-b2bb-264f7c11b216",
+            "2457e2b5-2a2a-4489-9eac-adb5cebfd9b8",
+            "ecf8cc46-eac4-4c36-a422-ed2cca054451",
+            "cbd900b3-1684-4f0d-977a-5a5b2a20aff3",
+            "26e69b2d-1c6d-47ea-af87-47fa9cfbdf56",
+            "cb822004-fe61-4bd8-91b8-d45b2acf0576",
+            "efdc4616-d5e4-4dce-b49c-941c07a9ac4b",
+            "43b2d3b6-c6aa-4441-b665-3932542c711c",
+            "6980d61a-f1fa-491f-8409-409e295a4b03",
+            "e197edf1-7913-4c71-bf9f-78feec182413",
+            "a3104ba4-9a8b-4f2a-ad89-25f36d3b9595",
+            "c0487639-ff5b-4e90-a0b3-9fe411676c2c",
+            "402ef4da-a4e3-4503-ab08-9a4aa56821b5",
+            "3b939fe5-bf07-416e-b626-9b4dcfb5abc4",
+            "94bfa868-4e02-4b90-841b-817c34132524",
+            "8a295383-3e95-42dc-b126-f5d5d4d9927a",
+            "afe087c6-fdaf-4e79-b087-b5329772ae68",
+            "139ade48-e995-4c51-9c31-2edc9475f16e",
+            "3b14aac5-20b3-4de0-9a04-adc1cc273aec",
+            "2be9c7d5-be12-439a-8968-ad057c67187a",
+            "71517390-0244-456d-87c4-82c582ca8abf",
+            "f1b860db-be5a-41ed-a67b-b7b0181ec59f",
+            "d548e856-41b8-49c8-a801-044c518c9fe5",
+            "83f01298-2804-4599-8deb-99728a5d557a",
+            "0b17f7b9-11d1-4229-931e-966fb51d1ba9",
+            "eb50f34f-bfa8-4e16-9ad9-d114eb1d34d9",
+            "96325b08-db02-4f4f-a7a3-7510a746dbe2",
+            "5a1044bb-eec6-47e0-932c-1a000fc67e20",
+            "48a240ac-2fc8-4208-bd39-82f2c3d27cb4",
+            "2ed71a30-e220-47b0-b0e7-1bc14fce30c0",
+            "ea515dbf-689d-48fb-bfb8-93f8853d7ec0",
+            "899c3027-a75e-4a44-9144-10a53c6a2c11",
+            "e1dd94ae-aa5a-4f89-b959-f2ec61771796",
+            "fcd2d991-afe0-4c4f-a9fe-760a139ae1f3",
+            "d0bc06f8-edea-49a0-bdbb-c1bef0d073bd",
+            "6c5aa9dd-7698-4690-bd9e-644763376917",
+            "5fbdea23-a3bd-48e3-9bb9-c7ca69fd9aa2",
+            "44b9891c-fe65-4aa6-8ac6-b623709b7c02",
+            "904db18b-f9e4-4135-accd-8cab1b7efd09",
+            "a29d7b5a-3989-43f1-8efa-86ef82101f43",
+            "c477f25f-108c-44a4-88a0-7be0b1a8f442",
+            "1c542776-d859-4f7e-889a-d3f2c5b93f45",
+            "f05fc49e-c44c-4e93-b1f0-a05de793c5bd",
+            "6770e597-215e-480b-b658-f449f175ed3c",
+            "d3696e4f-8789-4401-af6c-2f073d356228",
+            "5dbd715a-2e96-4062-9cda-4e181e63af5e",
+            "1e5df2e7-ee0b-4037-ab62-15139a784f28",
+            "10c1e1fe-bf0e-4f71-b1f2-173539570a03",
+            "bd2b6b7e-15fe-4593-9be0-b9cb97312af0",
+            "106e396c-5cd1-4e4b-a70c-30ba85edca56",
+            "9a0f90cc-6905-4660-8751-556567fcd897",
+            "1b4aabcd-82e1-426e-b2cd-5f1a6cfa8e60",
+            "e6a35ae0-352c-42a0-9c74-633d5c76667f",
+            "e2db6936-0727-4a61-bd9e-8712c9355a28",
+            "02d273f3-3937-4a5b-86af-fbaa7082fc98",
+            "5eb58f1d-da3c-4ebe-aff3-c98a60cca1a7",
+            "289db939-0630-4d39-8987-cd9042ba485d",
+            "5b32901d-2e27-4970-ba74-be06a103aa30",
+            "4f03abce-5ffe-4575-9601-52e18b342ca2",
+            "4a738092-15a0-42a9-8178-c62e1f86c80c",
+            "f6be37ea-b1ea-4d12-902e-1e55a74f3c28",
+            "66d100a7-32a0-4479-9f62-57e81c004eb6",
+            "b7131d5c-8602-4af3-82a7-7c00e59ad384",
+            "2d35c52b-5348-43d8-baf3-741d0b68c7ff",
+            "8f46fba9-ba8b-4eaf-bb5f-2370fa61981b",
+            "3b6d2215-7c30-4151-b9f1-7d1dc6e9d0de",
+            "b41d10e9-7c12-482e-a1ff-612580407bc1",
+            "5080976c-532d-492c-9735-9abf7dc903ae",
+            "a0e8b380-dc71-4c5e-9564-5a6a96d413b0",
+            "c70aafee-9819-4bd7-9b37-69e9f016666b",
+            "2f06e164-6745-4c46-9402-92f51f9f9266",
+            "b2086806-a259-48af-adcb-172245e66aa0",
+            "0dfb5c8c-d986-4536-97a3-b3f543cfd7fa",
+            "14d06bc1-b112-4b2f-a0a3-67a8dd9c958c",
+            "4f68e8c3-ce07-490a-ad1e-1605c992a0ab",
+            "f2023690-0f94-491a-ac9b-9c913f18d32c",
+            "48c65d67-f77e-4b0b-b90a-83ab75bd68a9",
+            "fc7b0093-a386-4cfb-9e24-ebd1f41fa3fa",
+            "1e648ce1-cc7e-4997-bf6e-9a33d2ac504d",
+            "e105eeaa-e8c4-4f5c-b412-90c65bdf217a",
+            "d5db2d0f-24c4-4bf6-a1d3-fc170bfb1b75",
+            "b4ae7d5c-1d56-46c7-a0d9-9af16a5bad5f",
+            "13e1fda6-ad15-4061-a10e-d4a621970eb7",
+            "29483c03-d3f3-426c-bd91-6dba06c1c86f",
+            "5731e795-bc6e-4f67-a20f-e1ea328ebb4e",
+            "ffc91cd7-ce2e-43bd-83f9-dd500633c0a2",
+            "50856007-ed7d-41fb-8551-374ecae3e24b",
+            "69b8fd2c-ca44-4dcb-84cc-49ed820592d4",
+            "cbbee582-eb1d-4f69-a297-e10ba2cd83ab",
+            "e3f32187-64e1-4609-b294-74d479b50a70",
+            "dadb2eed-6939-4a7d-9afa-46a0514a66be",
+            "7933074e-4123-4c04-8235-24ded3b719ed",
+            "3e515719-4b1e-4dc7-9955-45485e25e7d3",
+            "c793f95d-c3c9-4e23-a753-d7b7871c3bbf",
+            "f0479f5d-620b-453a-b476-4c9e9418b846",
+            "020f0e91-0de0-4617-bb97-e4863949153d",
+            "6dc44543-880c-4829-bd86-818b80f5aac6",
+            "0cb787c7-79fb-4e4c-a8f2-c95bfa483953",
+            "4e04587c-419b-4bb3-bcb4-efe6a43e35e9",
+            "46b28c54-a7e1-4286-9bdc-69ae87c3bad3",
+            "5e61d351-5c67-4222-b553-e5a42137412d",
+            "e819fb9f-77e3-490d-9b3b-288189045e39",
+            "b1cbbef7-66d3-49c3-aaff-f598af5cdf47",
+            "05715f55-0a2a-4c15-8aa1-b8c1e8aa98a4",
+            "f0a4483b-95d9-4c82-8e41-15c96d864674",
+            "2dfdecd0-c228-4dc2-941d-0a4e53390d1c",
+            "2172f363-6ba3-4c7d-b75a-95189cc14546",
+            "6f1bdf3d-1474-4baa-98bd-f39758d46389",
+            "03d0218f-3acf-4c09-8902-6b09a4f35be4",
+            "5291840b-1ac0-4473-9bc3-691467a51c05",
+            "83d53c9b-bf14-42a2-8fb8-238a2fcb905a",
+            "8e4180b2-04a8-47ee-8473-9c3c632e261a",
+            "10708491-24c3-48f4-b554-d2665157037f"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521908832,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "ad527dc6-d4a7-420b-9234-94d0b9bfb560",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570604640000,
+          "parent_id": "204dd4d3-a72c-4a9e-ba37-ebd5fc5ba989",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential C++"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 634
+        }
+      },
+      "baadb5e7-6b95-482d-9b17-99aeb1272cd3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398668,
+          "id": "baadb5e7-6b95-482d-9b17-99aeb1272cd3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398668,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "And here again you can evaluate the final result using a single pass:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "c0b1cc79-9251-4967-9c68-479c80e84f0f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398667,
+          "id": "c0b1cc79-9251-4967-9c68-479c80e84f0f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398667,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "And here is the updated version of "
+              ],
+              [
+                "operator+()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "c10e3690-74c2-4f5e-b034-4b5ccd36e4f5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398663,
+          "id": "c10e3690-74c2-4f5e-b034-4b5ccd36e4f5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398663,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "const std::size_t cols = 2000;\nconst std::size_t rows = 1000;\n\nMatrix\u003cdouble, cols, rows\u003e a, b, c;\n\n// initialize a, b \u0026 c\nfor (std::size_t y = 0; y != rows; ++y) {\n    for (std::size_t x = 0; x != cols; ++x) {\n        a(x, y) = 1.0;\n        b(x, y) = 2.0;\n        c(x, y) = 3.0;\n    }\n}  \n\nMatrix\u003cdouble, cols, rows\u003e d = a + b + c;  // d(x, y) = 6"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "d10bf43b-c924-4df8-be04-d1c8962374c8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398664,
+          "id": "d10bf43b-c924-4df8-be04-d1c8962374c8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398664,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Unfortunately, the previous implementation is also highly inefficient compared to an equivalent “hand-crafted” version."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "d2cbf6af-9d8a-46f1-9ed7-60aefc498b99": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398668,
+          "id": "d2cbf6af-9d8a-46f1-9ed7-60aefc498b99",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398668,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Also, nothing stops you from combining multiple expression templates. For example, "
+              ],
+              [
+                "a + b + c",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " would result in the following expression template:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "d75b9cbc-fb4a-4519-8a86-b249a98a6a5e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398669,
+          "id": "d75b9cbc-fb4a-4519-8a86-b249a98a6a5e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398669,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "template \u003ctypename T, std::size_t COL, std::size_t ROW\u003e\nclass Matrix {\npublic:\n    using value_type = T;\n\n    Matrix() : values(COL * ROW) {}\n\n    static size_t cols() { return COL; }\n    static size_t rows() { return ROW; }\n\n    const T\u0026 operator()(size_t x, size_t y) const { return values[y * COL + x]; }\n    T\u0026 operator()(size_t x, size_t y) { return values[y * COL + x]; }\n\n    template \u003ctypename E\u003e\n    Matrix\u003cT, COL, ROW\u003e\u0026 operator=(const E\u0026 expression) {\n        for (std::size_t y = 0; y != rows(); ++y) {\n            for (std::size_t x = 0; x != cols(); ++x) {\n                values[y * COL + x] = expression(x, y);\n            }\n        }\n        return *this;\n    }\n\nprivate:\n    std::vector\u003cT\u003e values;\n};"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "db4533ca-75f3-456f-a324-9104a2daec87": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398666,
+          "id": "db4533ca-75f3-456f-a324-9104a2daec87",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398666,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This is the core idea behind expression templates: instead of having "
+              ],
+              [
+                "operator+()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " evaluate immediately the result of adding two Matrix instances, it will return an "
+              ],
+              [
+                "“expression template”",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " for future evaluation once the entire expression tree has been built."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "e9475823-b9b2-4973-9675-dde37f059ca0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398668,
+          "id": "e9475823-b9b2-4973-9675-dde37f059ca0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398668,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "MatrixSum\u003cMatrix\u003cdouble\u003e, Matrix\u003cdouble\u003e \u003e SumAB(a, b);"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "ebe8d7f1-ab88-4618-9be3-e32de13a6f72": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398664,
+          "id": "ebe8d7f1-ab88-4618-9be3-e32de13a6f72",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398664,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Instead let us take a step back and see how we can adapt operator overloading to perform in a more efficient way"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "eda65b99-9f68-40c3-ad46-aaae34f49544": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398664,
+          "id": "eda65b99-9f68-40c3-ad46-aaae34f49544",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398664,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "template\u003ctypename T, std::size_t COL, std::size_t ROW\u003e\nMatrix\u003cT, COL, ROW\u003e add3(const Matrix\u003cT, COL, ROW\u003e\u0026 a,\n                         const Matrix\u003cT, COL, ROW\u003e\u0026 b,\n                         const Matrix\u003cT, COL, ROW\u003e\u0026 c)\n{\n    Matrix\u003cT, COL, ROW\u003e result;\n    for (size_t y = 0; y != ROW; ++y) {\n        for (size_t x = 0; x != COL; ++x) {\n            result(x, y) = a(x, y) + b(x, y) + c(x, y);\n        }\n    }\n    return result;\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "f4efda28-68e4-43ce-a851-f6c5cfdaaea6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550523398668,
+          "id": "f4efda28-68e4-43ce-a851-f6c5cfdaaea6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550523398668,
+          "parent_id": "66659d82-a166-4437-81eb-6b8a145e559f",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "MatrixSum\u003cMatrixSum\u003cMatrix\u003cdouble\u003e, Matrix\u003cdouble\u003e \u003e, Matrix\u003cdouble\u003e \u003e SumABC(SumAB, c);"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

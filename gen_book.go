@@ -340,10 +340,12 @@ func copyCover(book *Book) {
 
 func deployWithVercel(book *Book) {
 	var cmd *exec.Cmd
-	if flgProd {
+	if flgDeployProd {
 		cmd = exec.Command("vercel", "--prod")
-	} else {
+	} else if flgDeployDev {
 		cmd = exec.Command("vercel")
+	} else {
+		return
 	}
 	cmd.Dir = book.DirOnDisk
 	u.RunCmdLoggedMust(cmd)

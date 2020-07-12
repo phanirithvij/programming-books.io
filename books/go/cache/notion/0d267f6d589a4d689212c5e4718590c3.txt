@@ -1,0 +1,1232 @@
+2494 1594539419008 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+      "table": "block"
+    }
+  ]
+}
+Response:+2294
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "7f412fbe-661a-4ebd-ac0f-008aa3528de5",
+          "ea9c539e-4f3b-4ace-99c7-ed105af47526",
+          "ec603c46-b22b-459e-b3d2-faa0bc982383",
+          "ed3621cc-2050-48ff-a576-b149e4d9175f",
+          "315e4016-760b-4dd7-a9b0-40af47bfef3e",
+          "d1bf2237-b7ae-4070-a0ef-21df06582666",
+          "a7c30cfd-4020-4946-8f77-3d5092f0f659",
+          "c20ce2eb-749e-410c-9327-1c1b8c41a5e1",
+          "4e5f23ff-1e4a-4932-98d0-ef49f11992ea",
+          "db6be6f1-ca3e-4230-8aea-71ea5193ac5e",
+          "b3df9743-b933-4042-abe5-93fee4691bf1",
+          "ea92a137-a201-4e73-957a-6bbe46790383",
+          "a4770d27-97cc-448b-9327-6bb5a32f64ca",
+          "8e5584ac-d47e-4f61-9c45-f0fc42df5543",
+          "c6ff0d03-1fc3-41a9-a4dd-b6060f68b8df",
+          "d845f4b2-1a72-46ea-a138-1a0cfbb4d46c",
+          "d5d3b368-f04f-4e71-8127-c8d6325ea1c0",
+          "9fd92f77-a703-480b-a335-85c8ae74da58",
+          "7cbbd26d-c313-4949-914c-f907432361de",
+          "501d6070-019a-480c-bf43-02c74c305b9a",
+          "bf746c98-5bd8-484f-a034-1e0c823cb999",
+          "2c6491dc-bb11-45ca-b4d5-0ae9ebc887aa",
+          "6422a43d-701c-4622-b81b-3751386c9cb9",
+          "4532bf27-5c36-41d3-b0a8-81ca963fb604",
+          "03cd9902-49cf-41b6-8663-d65a5ed0c8fd"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1532156278243,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1532215153165,
+        "parent_id": "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Loading and saving image"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 28
+      }
+    }
+  ]
+}
+42296 1594539419009 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+  "verticalColumns": false
+}
+Response:+42055
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "03cd9902-49cf-41b6-8663-d65a5ed0c8fd": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278243,
+          "id": "03cd9902-49cf-41b6-8663-d65a5ed0c8fd",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215187119,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "import \"image/gif\"\n\n// Samewhere in the same package\nf, err := os.Create(\"outimage.gif\")\nif err != nil {\n    log.Fatalf(\"os.Create() failed with %s\\n\", err)\n}\ndefer f.Close()\n\nopt := gif.Options {\n    NumColors: 256,\n    // Add more parameters as needed\n}\n\nerr = gif.Encode(f, img, \u0026opt)\nif err != nil {\n    log.Fatalf(\"gif.Encode() failed with %s\\n\", err)\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "0d267f6d-589a-4d68-9212-c5e4718590c3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "7f412fbe-661a-4ebd-ac0f-008aa3528de5",
+            "ea9c539e-4f3b-4ace-99c7-ed105af47526",
+            "ec603c46-b22b-459e-b3d2-faa0bc982383",
+            "ed3621cc-2050-48ff-a576-b149e4d9175f",
+            "315e4016-760b-4dd7-a9b0-40af47bfef3e",
+            "d1bf2237-b7ae-4070-a0ef-21df06582666",
+            "a7c30cfd-4020-4946-8f77-3d5092f0f659",
+            "c20ce2eb-749e-410c-9327-1c1b8c41a5e1",
+            "4e5f23ff-1e4a-4932-98d0-ef49f11992ea",
+            "db6be6f1-ca3e-4230-8aea-71ea5193ac5e",
+            "b3df9743-b933-4042-abe5-93fee4691bf1",
+            "ea92a137-a201-4e73-957a-6bbe46790383",
+            "a4770d27-97cc-448b-9327-6bb5a32f64ca",
+            "8e5584ac-d47e-4f61-9c45-f0fc42df5543",
+            "c6ff0d03-1fc3-41a9-a4dd-b6060f68b8df",
+            "d845f4b2-1a72-46ea-a138-1a0cfbb4d46c",
+            "d5d3b368-f04f-4e71-8127-c8d6325ea1c0",
+            "9fd92f77-a703-480b-a335-85c8ae74da58",
+            "7cbbd26d-c313-4949-914c-f907432361de",
+            "501d6070-019a-480c-bf43-02c74c305b9a",
+            "bf746c98-5bd8-484f-a034-1e0c823cb999",
+            "2c6491dc-bb11-45ca-b4d5-0ae9ebc887aa",
+            "6422a43d-701c-4622-b81b-3751386c9cb9",
+            "4532bf27-5c36-41d3-b0a8-81ca963fb604",
+            "03cd9902-49cf-41b6-8663-d65a5ed0c8fd"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278243,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215153165,
+          "parent_id": "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Loading and saving image"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 28
+        }
+      },
+      "2c6491dc-bb11-45ca-b4d5-0ae9ebc887aa": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278243,
+          "id": "2c6491dc-bb11-45ca-b4d5-0ae9ebc887aa",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215183899,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "import \"image/jpeg\"\n\n// Somewhere in the same package\nf, err := os.Create(\"outimage.jpg\")\nif err != nil {\n    log.Fatalf(\"os.Create() failed with %s\\n\", err)\n}\ndefer f.Close()\n\n// Specify the quality, between 0-100\n// Higher is better\nopt := jpeg.Options{\n    Quality: 90,\n}\nerr = jpeg.Encode(f, img, \u0026opt)\nif err != nil {\n    log.Fatalf(\"jpeg.Encode() failed with %s\\n\", err)\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "ba663c57-7a4a-472e-8c95-fef8b4d8a8c6",
+            "2803d5d5-229f-4932-af82-a1dcc86eb8bf",
+            "5e911a69-8c43-432d-bf3c-e33fc32dafe1",
+            "cb80712d-ca75-45da-8e0b-20762c637409",
+            "ccc8d069-58ae-4431-9b21-f9973716e3ca",
+            "1ef07599-dd82-47f4-93ba-6dcba8ae7dbf",
+            "58db8c9a-5650-4dea-b2e6-1f1e0fa4a0a6",
+            "f4005538-90d3-4185-ba79-5870807c2615",
+            "80fb91dd-63d4-45e2-8010-b9f5e261da81",
+            "61280245-4798-470c-a5c5-741d90543d22",
+            "4f5f2959-e72c-431e-9955-27b51ad7fd8e",
+            "c3315892-5082-48fd-b19b-663bf8bff028",
+            "fd755f13-f0fc-4e75-ad9b-9ee675e557e8",
+            "ad923a2f-bd99-4701-844a-f2d688d30548",
+            "c522a628-7288-4110-bcc3-00db67e0e9ad",
+            "64647277-99a0-4611-a891-be7ca4877f8c",
+            "503ddd46-a485-4315-a889-73b8db780fba",
+            "39927eb1-3c11-4194-92e6-7e9fd5328d8b",
+            "20bfd8fa-4545-4479-954a-6814eeeef716",
+            "dda02e36-8b30-48a5-a69b-81c56bfa6dbb",
+            "16e8d8c3-d77e-44fa-af68-57a1df368ce8",
+            "4fac57c0-9168-477a-a120-69484979f419",
+            "41f795bf-701d-4784-b319-7349cdb8f2de",
+            "6461fef8-092a-4515-8959-bddbaad99bce",
+            "7a55634f-b819-4a85-bcc6-036eeba61b39",
+            "c4da0534-9333-4df9-9513-4741ae04f808",
+            "05239fc0-69c3-463d-abc5-32b9d808612e",
+            "f7fca201-1c37-48a1-9e3b-8d66235cbe59",
+            "c290f056-6c80-467a-9005-ab3a4024ec1d",
+            "b6e9fbb3-165c-4bcb-907e-469d86783aab",
+            "1479bc5a-08b6-4dbb-8aa0-e2f5ed17782f",
+            "6744c6d0-d620-448d-be66-e224f64b6f8b",
+            "abb984fe-c0d0-4d74-b2d4-94ed3206d1bc",
+            "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+            "fc416b38-f6f3-41bf-a311-bf6c575c73a1",
+            "710edf91-b0f1-4662-9abb-fcd96aba4d80",
+            "96e61372-84ae-4460-a282-7f456b4cf62c",
+            "cabbd741-52a7-4e29-8be4-afcd41ed10b2",
+            "c7fea6b1-76b7-4c54-ab35-f2d8fdd56f13",
+            "b58d1314-5f92-4c11-afcf-00aa10d71364",
+            "6ccd64ac-7a17-4e1e-a353-66e014d9972a",
+            "48f2d17d-3a76-44da-afba-f0ca9c8b61ad",
+            "b55ab9b1-d6e5-499e-a301-4ba7e85d3efd",
+            "e9a96445-11c4-47f9-8808-19e7cd837540",
+            "d3b04193-4690-4e0b-bf6d-c28b69fc93c6",
+            "83dc1f9b-6ec0-4d25-a2d2-e7357b6bebba",
+            "46593e7f-95ef-4e47-bfa6-0b882cb71c93",
+            "41fdbdec-ca7b-42c3-b4b9-8e5ec0a96e13",
+            "d1980344-374d-45c0-82c9-14c2aafa50cf",
+            "c2af7278-9a07-4a3a-acf8-d308f898f32c",
+            "ec235242-1ba7-472a-b82d-9dcc71d2c389",
+            "fe57ef60-321d-4cca-b8b6-f79cb0120245",
+            "a09f2d8c-9bba-44e0-acd0-a9206e8f733f",
+            "7ccfe169-7c31-49c3-83b6-8894ede37d84",
+            "f6070802-3799-4969-b4ef-fb498179d5be",
+            "9f2c4121-df7e-4b3f-8181-31c49676387b",
+            "d8b9c9c2-a49e-4ba8-a04c-f7ff6ee2db0f",
+            "b5c70cd2-244f-48a0-b89a-ebc75ef45ad0",
+            "ddc28bcf-5179-4ae5-b021-b8c0d9423497",
+            "301bb328-156d-4206-94eb-f5489d2cb744",
+            "307fa1e6-11a1-4819-9b56-b002fddddb27",
+            "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+            "f2028ab7-4a35-4cf2-ba6a-86acfb813356",
+            "e6b89f7a-1cc0-4b89-a1fa-6bb1aeda381f",
+            "0ada5cfc-7c4a-4217-af2e-62d01df777de",
+            "827eb397-bd67-47f5-aef7-73c9c688ad6c",
+            "94415463-0ac5-4def-857c-aa8b50dd1b59",
+            "22efc954-59e8-4624-88d6-608f1e963a74"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532155915890,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570604400000,
+          "parent_id": "6011c17b-d910-40d3-b1ad-797e09cf4f0f",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            },
+            {
+              "allow_duplicate": false,
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Go"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 1680
+        }
+      },
+      "315e4016-760b-4dd7-a9b0-40af47bfef3e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532215143787,
+          "id": "315e4016-760b-4dd7-a9b0-40af47bfef3e",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215144597,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In memory, an image can be seen as a matrix of pixel (color). However, when an image being stored in a permanent storage, it may be stored as is (RAW format), "
+              ],
+              [
+                "Bitmap",
+                [
+                  [
+                    "a",
+                    "https://en.wikipedia.org/wiki/Bitmap"
+                  ]
+                ]
+              ],
+              [
+                " or other image formats with particular compression algorithm for saving storage space, e.g. PNG, JPEG, GIF, etc. When loading an image with particular format, the image must be "
+              ],
+              [
+                "decoded",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " to "
+              ],
+              [
+                "image.Image",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " with corresponding algorithm. An "
+              ],
+              [
+                "image.Decode",
+                [
+                  [
+                    "c"
+                  ],
+                  [
+                    "a",
+                    "https://golang.org/pkg/image/#Decode"
+                  ]
+                ]
+              ],
+              [
+                " function declared as"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 16
+        }
+      },
+      "4532bf27-5c36-41d3-b0a8-81ca963fb604": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278243,
+          "id": "4532bf27-5c36-41d3-b0a8-81ca963fb604",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156278243,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To save the image to GIF file, use the following snippets."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "4e5f23ff-1e4a-4932-98d0-ef49f11992ea": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278240,
+          "id": "4e5f23ff-1e4a-4932-98d0-ef49f11992ea",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156278240,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Currently, the image package supports three file formats: "
+              ],
+              [
+                "JPEG",
+                [
+                  [
+                    "a",
+                    "https://golang.org/pkg/image/jpeg/"
+                  ]
+                ]
+              ],
+              [
+                ", "
+              ],
+              [
+                "GIF",
+                [
+                  [
+                    "a",
+                    "https://golang.org/pkg/image/gif/"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "PNG",
+                [
+                  [
+                    "a",
+                    "https://golang.org/pkg/image/png/"
+                  ]
+                ]
+              ],
+              [
+                ". To register a decoder, add the following"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "501d6070-019a-480c-bf43-02c74c305b9a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278242,
+          "id": "501d6070-019a-480c-bf43-02c74c305b9a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156278242,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Save to JPEG"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 5
+        }
+      },
+      "6422a43d-701c-4622-b81b-3751386c9cb9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278243,
+          "id": "6422a43d-701c-4622-b81b-3751386c9cb9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156278243,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Save to GIF"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 1
+        }
+      },
+      "7cbbd26d-c313-4949-914c-f907432361de": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278242,
+          "id": "7cbbd26d-c313-4949-914c-f907432361de",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215179570,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "enc := png.Encoder{\n    CompressionLevel: png.BestSpeed,\n}\nerr := enc.Encode(f, img)"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "7f412fbe-661a-4ebd-ac0f-008aa3528de5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532215138442,
+          "id": "7f412fbe-661a-4ebd-ac0f-008aa3528de5",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215154245,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "$Id: 317"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 12
+        }
+      },
+      "8e5584ac-d47e-4f61-9c45-f0fc42df5543": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278241,
+          "id": "8e5584ac-d47e-4f61-9c45-f0fc42df5543",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156278241,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To save an image into particular format, the corresponding "
+              ],
+              [
+                "encoder",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " must be imported explicitly, i.e."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "9fd92f77-a703-480b-a335-85c8ae74da58": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278242,
+          "id": "9fd92f77-a703-480b-a335-85c8ae74da58",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156278242,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If you want to specify compression level other than "
+              ],
+              [
+                "DefaultCompression",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " level, create an "
+              ],
+              [
+                "encoder",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                ", e.g."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "a4770d27-97cc-448b-9327-6bb5a32f64ca": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278241,
+          "id": "a4770d27-97cc-448b-9327-6bb5a32f64ca",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156278241,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Save to PNG"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 1
+        }
+      },
+      "a7c30cfd-4020-4946-8f77-3d5092f0f659": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278237,
+          "id": "a7c30cfd-4020-4946-8f77-3d5092f0f659",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156278237,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "is provided for this particular usage. In order to be able to handle various image formats, prior to calling the "
+              ],
+              [
+                "image.Decode",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " function, the decoder must be registered through "
+              ],
+              [
+                "image.RegisterFormat",
+                [
+                  [
+                    "c"
+                  ],
+                  [
+                    "a",
+                    "https://golang.org/pkg/image/#RegisterFormat"
+                  ]
+                ]
+              ],
+              [
+                " function defined as"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "b3df9743-b933-4042-abe5-93fee4691bf1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278241,
+          "id": "b3df9743-b933-4042-abe5-93fee4691bf1",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156278241,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "to the application’s "
+              ],
+              [
+                "main",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " package. Somewhere in your code (not necessary in "
+              ],
+              [
+                "main",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " package), to load a JPEG image, use the following snippets:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "bf746c98-5bd8-484f-a034-1e0c823cb999": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278243,
+          "id": "bf746c98-5bd8-484f-a034-1e0c823cb999",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156278243,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To save to "
+              ],
+              [
+                "jpeg",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " format, use the following:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "c20ce2eb-749e-410c-9327-1c1b8c41a5e1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278237,
+          "id": "c20ce2eb-749e-410c-9327-1c1b8c41a5e1",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215162887,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "func RegisterFormat(name, magic string,\n    decode func(io.Reader) (Image, error), decodeConfig func(io.Reader) (Config, error))"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "c6ff0d03-1fc3-41a9-a4dd-b6060f68b8df": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278242,
+          "id": "c6ff0d03-1fc3-41a9-a4dd-b6060f68b8df",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215171309,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "import \"image/png\"    //needed to use `png` encoder"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "21ad69c1-2ac6-4117-a3d5-77e59c6a7997",
+            "d002a62d-5456-4dc5-ac11-61144f71df05",
+            "691f4f4a-5300-4d4e-b2fe-065f77242139",
+            "5971e4ff-b71f-46cd-a7f6-918c88db1fcf",
+            "fd4f2fba-5f29-4a87-8c41-a69173994963",
+            "28a85e59-994d-4fbb-966d-0270ce9959ac",
+            "017fe93c-516d-4076-b563-e9737696f98f",
+            "2a852bc5-8d05-46b1-8d5a-a0378c144262",
+            "51740288-e721-4d4c-9fa3-21e534f3aaa3",
+            "9b2ea018-fd97-41d9-aea4-1fe0bbb9920d",
+            "0a334feb-41b6-47a1-ae27-de5e2eccf26c",
+            "67a6123f-ec78-42e8-8329-de6c7a3a34bb",
+            "76f85588-0e94-4caa-939f-cd1e190e3f7e",
+            "72152142-8429-4b30-b991-6ee33215b79b",
+            "23427dc6-c010-44ea-a6c9-1f2b5e185611",
+            "bd98450e-6849-4274-88a2-fd11ebb8d75b",
+            "78086a27-d6e4-4b8a-825c-2c56ff321dd7",
+            "fb5cfc5e-61de-4f85-8ce4-bffeae534eaf",
+            "6b558223-5d7d-4df0-86f6-8175c51a266f",
+            "2df14c05-ebd8-400f-a03b-6ae5f95e34cc",
+            "397c8a17-7aa7-4675-8082-81d84d7c5462",
+            "c6cdd9a3-ad82-484a-88ef-54145eee1c1e",
+            "cf63fcb5-4853-4ed5-b421-830f21ffe3e0",
+            "6b5c9d8b-e671-4377-8d83-c99b9fbc3864",
+            "0d267f6d-589a-4d68-9212-c5e4718590c3",
+            "9294fd2a-3da0-4b2d-9762-8aa8c49e0b53",
+            "deec25d3-3ac2-4a3f-9137-e974a1d7c100",
+            "37c5b377-b369-4fb5-8495-114c58824c80"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156274163,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570567320000,
+          "parent_id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Images (PNG, JPEG, BMP, TIFF, WEBP, VP8, GIF)"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 157
+        }
+      },
+      "d1bf2237-b7ae-4070-a0ef-21df06582666": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278236,
+          "id": "d1bf2237-b7ae-4070-a0ef-21df06582666",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215160658,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "func Decode(r io.Reader) (Image, string, error)"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 7
+        }
+      },
+      "d5d3b368-f04f-4e71-8127-c8d6325ea1c0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278242,
+          "id": "d5d3b368-f04f-4e71-8127-c8d6325ea1c0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215174384,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "f, err := os.Create(\"outimage.png\")\nif err != nil {\n    log.Fatalf(\"os.Create() failed with %s\\n\", err)\n}\ndefer f.Close()\n\n// Encode to `PNG` with `DefaultCompression` level\n// then save to file\nerr = png.Encode(f, img)\nif err != nil {\n    log.Fatalf(\"png.Encode() failed with %s\\n\", err)\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "d845f4b2-1a72-46ea-a138-1a0cfbb4d46c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278242,
+          "id": "d845f4b2-1a72-46ea-a138-1a0cfbb4d46c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156278242,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "then an image can be saved with the following snippets:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "db6be6f1-ca3e-4230-8aea-71ea5193ac5e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278240,
+          "id": "db6be6f1-ca3e-4230-8aea-71ea5193ac5e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215165721,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "import _ \"image/jpeg\"    //register JPEG decoder"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "ea92a137-a201-4e73-957a-6bbe46790383": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156278241,
+          "id": "ea92a137-a201-4e73-957a-6bbe46790383",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215169008,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "f, err := os.Open(\"inputimage.jpg\")\nif err != nil {\n    log.Fatalf(\"os.Open() failed with %s\\n\", err)\n}\ndefer f.Close()\n\nimg, fmtName, err := image.Decode(f)\nif err != nil {\n    log.Fatalf(\"image.Decode() failed with %s\\n\", err)\n}\n\n// `fmtName` contains the name used during format registration\n// Work with `img` ..."
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "ea9c539e-4f3b-4ace-99c7-ed105af47526": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532215139931,
+          "id": "ea9c539e-4f3b-4ace-99c7-ed105af47526",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215154908,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "$Score: 0"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 12
+        }
+      },
+      "ec603c46-b22b-459e-b3d2-faa0bc982383": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532215142101,
+          "id": "ec603c46-b22b-459e-b3d2-faa0bc982383",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215155796,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "$SOId: 31686"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 12
+        }
+      },
+      "ed3621cc-2050-48ff-a576-b149e4d9175f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532215145070,
+          "id": "ed3621cc-2050-48ff-a576-b149e4d9175f",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532215145070,
+          "parent_id": "0d267f6d-589a-4d68-9212-c5e4718590c3",
+          "parent_table": "block",
+          "type": "text",
+          "version": 4
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

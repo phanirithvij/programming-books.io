@@ -1,0 +1,872 @@
+1995 1594539240250 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+      "table": "block"
+    }
+  ]
+}
+Response:+1795
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "01b99597-30d5-4856-84a6-13e85caaa459",
+          "73875804-cfd1-44e4-b7cc-36639950489f",
+          "9d04311b-616c-4c5e-b305-b3b68e1af333",
+          "50956543-c18b-4b47-bbab-57dc372b2f87",
+          "4c219f61-a40e-45eb-818c-0e6593ca27a3",
+          "c4175dea-6b93-41bb-9fb2-5863f00426ce",
+          "10f1a154-ba56-4d00-aeda-be23e82e683c",
+          "f644a270-46c7-4b89-97fd-afbd4073342b",
+          "43ffa1ec-1a08-497d-aeb3-24c0bf167c78",
+          "667171a5-e0ae-4b0e-8ab1-53c813f54788",
+          "6925b5a7-5388-4fce-b3e7-b9abcd123dda",
+          "75efde74-f4f3-497e-9504-4e635ee50eb2",
+          "acafadbe-58af-458f-aa3b-aae7c8b7f3a0",
+          "b881e072-2c87-4f57-b2ee-2f24825b5801",
+          "5ce1b382-62e4-438b-90ab-fafe0dfad8ff"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1532156007799,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1532235365389,
+        "parent_id": "61280245-4798-470c-a5c5-741d90543d22",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Composition and embedding"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 23
+      }
+    }
+  ]
+}
+29059 1594539240250 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+  "verticalColumns": false
+}
+Response:+28818
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "01b99597-30d5-4856-84a6-13e85caaa459": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532196894529,
+          "id": "01b99597-30d5-4856-84a6-13e85caaa459",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532235366131,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "$Id: 84"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 16
+        }
+      },
+      "10f1a154-ba56-4d00-aeda-be23e82e683c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156007797,
+          "id": "10f1a154-ba56-4d00-aeda-be23e82e683c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156007797,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Composite structs can be instantiated and used the same way as normal structs:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "ba663c57-7a4a-472e-8c95-fef8b4d8a8c6",
+            "2803d5d5-229f-4932-af82-a1dcc86eb8bf",
+            "5e911a69-8c43-432d-bf3c-e33fc32dafe1",
+            "cb80712d-ca75-45da-8e0b-20762c637409",
+            "ccc8d069-58ae-4431-9b21-f9973716e3ca",
+            "1ef07599-dd82-47f4-93ba-6dcba8ae7dbf",
+            "58db8c9a-5650-4dea-b2e6-1f1e0fa4a0a6",
+            "f4005538-90d3-4185-ba79-5870807c2615",
+            "80fb91dd-63d4-45e2-8010-b9f5e261da81",
+            "61280245-4798-470c-a5c5-741d90543d22",
+            "4f5f2959-e72c-431e-9955-27b51ad7fd8e",
+            "c3315892-5082-48fd-b19b-663bf8bff028",
+            "fd755f13-f0fc-4e75-ad9b-9ee675e557e8",
+            "ad923a2f-bd99-4701-844a-f2d688d30548",
+            "c522a628-7288-4110-bcc3-00db67e0e9ad",
+            "64647277-99a0-4611-a891-be7ca4877f8c",
+            "503ddd46-a485-4315-a889-73b8db780fba",
+            "39927eb1-3c11-4194-92e6-7e9fd5328d8b",
+            "20bfd8fa-4545-4479-954a-6814eeeef716",
+            "dda02e36-8b30-48a5-a69b-81c56bfa6dbb",
+            "16e8d8c3-d77e-44fa-af68-57a1df368ce8",
+            "4fac57c0-9168-477a-a120-69484979f419",
+            "41f795bf-701d-4784-b319-7349cdb8f2de",
+            "6461fef8-092a-4515-8959-bddbaad99bce",
+            "7a55634f-b819-4a85-bcc6-036eeba61b39",
+            "c4da0534-9333-4df9-9513-4741ae04f808",
+            "05239fc0-69c3-463d-abc5-32b9d808612e",
+            "f7fca201-1c37-48a1-9e3b-8d66235cbe59",
+            "c290f056-6c80-467a-9005-ab3a4024ec1d",
+            "b6e9fbb3-165c-4bcb-907e-469d86783aab",
+            "1479bc5a-08b6-4dbb-8aa0-e2f5ed17782f",
+            "6744c6d0-d620-448d-be66-e224f64b6f8b",
+            "abb984fe-c0d0-4d74-b2d4-94ed3206d1bc",
+            "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+            "fc416b38-f6f3-41bf-a311-bf6c575c73a1",
+            "710edf91-b0f1-4662-9abb-fcd96aba4d80",
+            "96e61372-84ae-4460-a282-7f456b4cf62c",
+            "cabbd741-52a7-4e29-8be4-afcd41ed10b2",
+            "c7fea6b1-76b7-4c54-ab35-f2d8fdd56f13",
+            "b58d1314-5f92-4c11-afcf-00aa10d71364",
+            "6ccd64ac-7a17-4e1e-a353-66e014d9972a",
+            "48f2d17d-3a76-44da-afba-f0ca9c8b61ad",
+            "b55ab9b1-d6e5-499e-a301-4ba7e85d3efd",
+            "e9a96445-11c4-47f9-8808-19e7cd837540",
+            "d3b04193-4690-4e0b-bf6d-c28b69fc93c6",
+            "83dc1f9b-6ec0-4d25-a2d2-e7357b6bebba",
+            "46593e7f-95ef-4e47-bfa6-0b882cb71c93",
+            "41fdbdec-ca7b-42c3-b4b9-8e5ec0a96e13",
+            "d1980344-374d-45c0-82c9-14c2aafa50cf",
+            "c2af7278-9a07-4a3a-acf8-d308f898f32c",
+            "ec235242-1ba7-472a-b82d-9dcc71d2c389",
+            "fe57ef60-321d-4cca-b8b6-f79cb0120245",
+            "a09f2d8c-9bba-44e0-acd0-a9206e8f733f",
+            "7ccfe169-7c31-49c3-83b6-8894ede37d84",
+            "f6070802-3799-4969-b4ef-fb498179d5be",
+            "9f2c4121-df7e-4b3f-8181-31c49676387b",
+            "d8b9c9c2-a49e-4ba8-a04c-f7ff6ee2db0f",
+            "b5c70cd2-244f-48a0-b89a-ebc75ef45ad0",
+            "ddc28bcf-5179-4ae5-b021-b8c0d9423497",
+            "301bb328-156d-4206-94eb-f5489d2cb744",
+            "307fa1e6-11a1-4819-9b56-b002fddddb27",
+            "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+            "f2028ab7-4a35-4cf2-ba6a-86acfb813356",
+            "e6b89f7a-1cc0-4b89-a1fa-6bb1aeda381f",
+            "0ada5cfc-7c4a-4217-af2e-62d01df777de",
+            "827eb397-bd67-47f5-aef7-73c9c688ad6c",
+            "94415463-0ac5-4def-857c-aa8b50dd1b59",
+            "22efc954-59e8-4624-88d6-608f1e963a74"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532155915890,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570604400000,
+          "parent_id": "6011c17b-d910-40d3-b1ad-797e09cf4f0f",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            },
+            {
+              "allow_duplicate": false,
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Go"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 1680
+        }
+      },
+      "43ffa1ec-1a08-497d-aeb3-24c0bf167c78": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156007797,
+          "id": "43ffa1ec-1a08-497d-aeb3-24c0bf167c78",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156007797,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Embedding"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 1
+        }
+      },
+      "4c219f61-a40e-45eb-818c-0e6593ca27a3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156007795,
+          "id": "4c219f61-a40e-45eb-818c-0e6593ca27a3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532196902393,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "type Request struct {\n    Resource string\n}\n\ntype AuthenticatedRequest struct {\n    Request\n    Username, Password string\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "50956543-c18b-4b47-bbab-57dc372b2f87": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532196897625,
+          "id": "50956543-c18b-4b47-bbab-57dc372b2f87",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532196898504,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Composition provides an alternative to inheritance. A struct may include another type by name in its declaration:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 12
+        }
+      },
+      "5c99711b-5d2b-467d-85fe-082b1bef3268": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "01b99597-30d5-4856-84a6-13e85caaa459",
+            "73875804-cfd1-44e4-b7cc-36639950489f",
+            "9d04311b-616c-4c5e-b305-b3b68e1af333",
+            "50956543-c18b-4b47-bbab-57dc372b2f87",
+            "4c219f61-a40e-45eb-818c-0e6593ca27a3",
+            "c4175dea-6b93-41bb-9fb2-5863f00426ce",
+            "10f1a154-ba56-4d00-aeda-be23e82e683c",
+            "f644a270-46c7-4b89-97fd-afbd4073342b",
+            "43ffa1ec-1a08-497d-aeb3-24c0bf167c78",
+            "667171a5-e0ae-4b0e-8ab1-53c813f54788",
+            "6925b5a7-5388-4fce-b3e7-b9abcd123dda",
+            "75efde74-f4f3-497e-9504-4e635ee50eb2",
+            "acafadbe-58af-458f-aa3b-aae7c8b7f3a0",
+            "b881e072-2c87-4f57-b2ee-2f24825b5801",
+            "5ce1b382-62e4-438b-90ab-fafe0dfad8ff"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156007799,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532235365389,
+          "parent_id": "61280245-4798-470c-a5c5-741d90543d22",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Composition and embedding"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 23
+        }
+      },
+      "5ce1b382-62e4-438b-90ab-fafe0dfad8ff": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156007799,
+          "id": "5ce1b382-62e4-438b-90ab-fafe0dfad8ff",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532235375152,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The downside of it is that you cannot access objects outside of your composition. So "
+              ],
+              [
+                "ResourceFormatter",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " cannot access members from "
+              ],
+              [
+                "AuthenticatedRequest",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 9
+        }
+      },
+      "61280245-4798-470c-a5c5-741d90543d22": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "d1b02ada-12cb-424a-bf4d-46f1864d301e",
+            "afbcb9b2-f64b-48ed-9a6a-d3da53bbbdf6",
+            "daf9c280-9553-4fce-b911-5a3df46ea527",
+            "af594db6-04b4-44a7-9df5-2033a6076b0a",
+            "b9dcb8f4-2c6b-4700-8f1f-d4614d5dfac4",
+            "41924678-33a7-4c34-bec7-df55995bc28e",
+            "b508b3db-42f5-4faf-98bd-a4a7503f5ae0",
+            "c5f5ee87-60b7-465e-9697-34239b08e612",
+            "5671e408-54c3-4373-8871-639d8a79f5f0",
+            "4eb5f7b0-ca13-4959-97e6-24a6639d3eea",
+            "5c99711b-5d2b-467d-85fe-082b1bef3268",
+            "77543968-7898-4e2d-9b43-49bd8f5378c9",
+            "fc4cf2bb-9b23-45a9-a9fe-53b4ed65ae12",
+            "874f1219-69c1-49f0-9a56-9e0b6c193a2a",
+            "d13e7080-e486-4752-9c8d-1df80e82951e",
+            "8b26a9ed-0b0b-4c6e-b4f8-cbc4a523dd28"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156003300,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "61280245-4798-470c-a5c5-741d90543d22",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1590777240000,
+          "parent_id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Structs"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 64
+        }
+      },
+      "667171a5-e0ae-4b0e-8ab1-53c813f54788": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156007797,
+          "id": "667171a5-e0ae-4b0e-8ab1-53c813f54788",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156007797,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In the previous example, "
+              ],
+              [
+                "Request",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is an embedded field. Composition can also be achieved by embedding a different type. This is useful, for example, to decorate a Struct with more functionality. For example, continuing with the Resource example, we want a function that formats the content of the Resource field to prefix it with "
+              ],
+              [
+                "http://",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " or "
+              ],
+              [
+                "https://",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". We have two options: create the new methods on AuthenticatedRequest or "
+              ],
+              [
+                "embed",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " it from a different struct:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "6925b5a7-5388-4fce-b3e7-b9abcd123dda": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156007798,
+          "id": "6925b5a7-5388-4fce-b3e7-b9abcd123dda",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532196909032,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "type ResourceFormatter struct {}\n\nfunc(r *ResourceFormatter) FormatHTTP(resource string) string {\n    return fmt.Sprintf(\"http://%s\", resource)\n}\nfunc(r *ResourceFormatter) FormatHTTPS(resource string) string {\n    return fmt.Sprintf(\"https://%s\", resource)\n}\n\ntype AuthenticatedRequest struct {\n    Request\n    Username, Password string\n    ResourceFormatter\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 7
+        }
+      },
+      "73875804-cfd1-44e4-b7cc-36639950489f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532196896173,
+          "id": "73875804-cfd1-44e4-b7cc-36639950489f",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532235366857,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "$SOId: 1256"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 12
+        }
+      },
+      "75efde74-f4f3-497e-9504-4e635ee50eb2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156007798,
+          "id": "75efde74-f4f3-497e-9504-4e635ee50eb2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156007798,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "And now the main function could do the following:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "9d04311b-616c-4c5e-b305-b3b68e1af333": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532196898733,
+          "id": "9d04311b-616c-4c5e-b305-b3b68e1af333",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532196898733,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "type": "text",
+          "version": 4
+        }
+      },
+      "acafadbe-58af-458f-aa3b-aae7c8b7f3a0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156007798,
+          "id": "acafadbe-58af-458f-aa3b-aae7c8b7f3a0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532196913388,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "func main() {\n    ar := new(AuthenticatedRequest)\n    ar.Resource = \"www.example.com/request\"\n    ar.Username = \"bob\"\n    ar.Password = \"P@ssw0rd\"\n\n    println(ar.FormatHTTP(ar.Resource))\n    println(ar.FormatHTTPS(ar.Resource))\n\n    fmt.Printf(\"%#v\", ar)\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "b881e072-2c87-4f57-b2ee-2f24825b5801": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156007798,
+          "id": "b881e072-2c87-4f57-b2ee-2f24825b5801",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156007798,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Look that the "
+              ],
+              [
+                "AuthenticatedRequest",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " that has a "
+              ],
+              [
+                "ResourceFormatter",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " embedded struct."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "c4175dea-6b93-41bb-9fb2-5863f00426ce": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156007796,
+          "id": "c4175dea-6b93-41bb-9fb2-5863f00426ce",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156007796,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In the example above, "
+              ],
+              [
+                "AuthenticatedRequest",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " will contain four public members: "
+              ],
+              [
+                "Resource",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", "
+              ],
+              [
+                "Request",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", "
+              ],
+              [
+                "Username",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", and "
+              ],
+              [
+                "Password",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "f644a270-46c7-4b89-97fd-afbd4073342b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156007797,
+          "id": "f644a270-46c7-4b89-97fd-afbd4073342b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532196905692,
+          "parent_id": "5c99711b-5d2b-467d-85fe-082b1bef3268",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "func main() {\n    ar := new(AuthenticatedRequest)\n    ar.Resource = \"example.com/request\"\n    ar.Username = \"bob\"\n    ar.Password = \"P@ssw0rd\"\n    fmt.Printf(\"%#v\", ar)\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

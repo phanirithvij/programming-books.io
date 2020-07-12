@@ -1,0 +1,1191 @@
+2624 1594538535077 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+      "table": "block"
+    }
+  ]
+}
+Response:+2424
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "33002ab5-548e-47b3-aacb-c408ee9fda74",
+          "6fd24016-1996-4824-b2f3-05ec968dc3bf",
+          "6858fc0d-e3d5-442b-9df0-c0c4205f610c",
+          "b8837cce-db41-47ed-91d8-f34c670f856a",
+          "4afe2a65-fae1-45d6-8810-7b6705621669",
+          "e9fff331-2500-43ed-ba31-a25eb35878e6",
+          "8f16ceaa-72e6-4d25-8b76-0bb954c1fbb8",
+          "bc875d15-2e46-4e00-bebc-392f9a1b3e3e",
+          "264ad8a4-7654-4854-aa2e-c69deaabaa36",
+          "7e58dbd7-c967-4578-9a1a-2f80b258e707",
+          "0290aa6d-c6f3-4580-9492-279f19b3b509",
+          "21f7b75e-0e36-489f-8028-d5672ba24009",
+          "370312ac-8077-4a2f-851d-19f663a0fcef",
+          "46d9b00a-21ad-4bcd-a3b9-ed74bbcd35b0",
+          "3872f19a-1d95-4230-8077-c6252e7f5459",
+          "ed6ac872-1ec2-464c-9f69-a976b755db33",
+          "7d0a3578-92ec-44d3-b1c5-0226b2fcb65c",
+          "32886d10-d8a6-40fc-80aa-fa28f363201c",
+          "b8786423-1bc4-4ed5-9e33-44856cf98055",
+          "0da2dbb6-41c0-426f-80cb-2edec81d880c",
+          "e4520115-5293-45f1-81ac-fe4f49fb4689",
+          "343991d4-36f8-4328-9b83-20c64e367213",
+          "5ca33aa6-594f-428d-8477-a7945a2bdf82",
+          "34711937-bd09-4421-8b71-1a21f89b4daa",
+          "0a4d55d3-55f8-4e13-a7b0-d1e5e7069ab6",
+          "53e5e655-75cd-4944-9c2a-2f94f81cbd8b",
+          "2262f9f2-b4e7-4f36-b0be-a4add7851b7b",
+          "2e585042-df00-49fa-9a81-c418ecdb6b04"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1532156126136,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1553321100000,
+        "parent_id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "YAML"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 88
+      }
+    }
+  ]
+}
+41763 1594538535079 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+  "verticalColumns": false
+}
+Response:+41522
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "0290aa6d-c6f3-4580-9492-279f19b3b509": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553321099367,
+          "id": "0290aa6d-c6f3-4580-9492-279f19b3b509",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553321100000,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "// no playground\npackage main\n\nimport (\n\t\"fmt\"\n\t\"log\"\n\t\"os\"\n\n\t\"gopkg.in/yaml.v2\"\n)\n\n// :show start\n// Dependency describes a dependency\ntype Dependency struct {\n\tName          string\n\tVersion       string\n\tRepositoryURL string `yaml:\"repository\"`\n}\n\ntype YAMLFile struct {\n\tDependencies []Dependency `yaml:\"dependencies\"`\n}\n\n// :show end\n\nfunc main() {\n\t// :show start\n\tf, err := os.Open(\"data.yml\")\n\tif err != nil {\n\t\tlog.Fatalf(\"os.Open() failed with '%s'\\n\", err)\n\t}\n\tdefer f.Close()\n\n\tdec := yaml.NewDecoder(f)\n\n\tvar yamlFile YAMLFile\n\terr = dec.Decode(\u0026yamlFile)\n\tif err != nil {\n\t\tlog.Fatalf(\"dec.Decode() failed with '%s'\\n\", err)\n\t}\n\n\tfmt.Printf(\"Decoded YAML dependencies: %#v\\n\", yamlFile.Dependencies)\n\t// :show end\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 8
+        }
+      },
+      "0a4d55d3-55f8-4e13-a7b0-d1e5e7069ab6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126135,
+          "id": "0a4d55d3-55f8-4e13-a7b0-d1e5e7069ab6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126135,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "We can attach arbitrary struct tags string to struct fields."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "0da2dbb6-41c0-426f-80cb-2edec81d880c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126134,
+          "id": "0da2dbb6-41c0-426f-80cb-2edec81d880c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126134,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "When serializing structs, only exported fields (whose names start with capital letter) are serialized / deserialized."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "21f7b75e-0e36-489f-8028-d5672ba24009": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126132,
+          "id": "21f7b75e-0e36-489f-8028-d5672ba24009",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1533063587936,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "YAML decoding is very similar to "
+              ],
+              [
+                "JSON decoding",
+                [
+                  [
+                    "a",
+                    "https://www.notion.so/kjkpublic/JSON-1479bc5a08b64dbb8aa0e2f5ed17782f"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 8
+        }
+      },
+      "2262f9f2-b4e7-4f36-b0be-a4add7851b7b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126136,
+          "id": "2262f9f2-b4e7-4f36-b0be-a4add7851b7b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126136,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "When serializing structs, passing the value and a pointer to it generates the same result."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "264ad8a4-7654-4854-aa2e-c69deaabaa36": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1539848295372,
+          "id": "264ad8a4-7654-4854-aa2e-c69deaabaa36",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1539848300708,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "YAML"
+              ]
+            ],
+            "title": [
+              [
+                "dependencies:\n  - name: apache\n    version: 1.2.3\n    repository: http://example.com/charts\n  - name: mysql\n    version: 3.2.1\n    repository: http://another.example.com/charts"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 10
+        }
+      },
+      "29bafea8-c8a5-46ab-9228-4378bb7dc364": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "33002ab5-548e-47b3-aacb-c408ee9fda74",
+            "6fd24016-1996-4824-b2f3-05ec968dc3bf",
+            "6858fc0d-e3d5-442b-9df0-c0c4205f610c",
+            "b8837cce-db41-47ed-91d8-f34c670f856a",
+            "4afe2a65-fae1-45d6-8810-7b6705621669",
+            "e9fff331-2500-43ed-ba31-a25eb35878e6",
+            "8f16ceaa-72e6-4d25-8b76-0bb954c1fbb8",
+            "bc875d15-2e46-4e00-bebc-392f9a1b3e3e",
+            "264ad8a4-7654-4854-aa2e-c69deaabaa36",
+            "7e58dbd7-c967-4578-9a1a-2f80b258e707",
+            "0290aa6d-c6f3-4580-9492-279f19b3b509",
+            "21f7b75e-0e36-489f-8028-d5672ba24009",
+            "370312ac-8077-4a2f-851d-19f663a0fcef",
+            "46d9b00a-21ad-4bcd-a3b9-ed74bbcd35b0",
+            "3872f19a-1d95-4230-8077-c6252e7f5459",
+            "ed6ac872-1ec2-464c-9f69-a976b755db33",
+            "7d0a3578-92ec-44d3-b1c5-0226b2fcb65c",
+            "32886d10-d8a6-40fc-80aa-fa28f363201c",
+            "b8786423-1bc4-4ed5-9e33-44856cf98055",
+            "0da2dbb6-41c0-426f-80cb-2edec81d880c",
+            "e4520115-5293-45f1-81ac-fe4f49fb4689",
+            "343991d4-36f8-4328-9b83-20c64e367213",
+            "5ca33aa6-594f-428d-8477-a7945a2bdf82",
+            "34711937-bd09-4421-8b71-1a21f89b4daa",
+            "0a4d55d3-55f8-4e13-a7b0-d1e5e7069ab6",
+            "53e5e655-75cd-4944-9c2a-2f94f81cbd8b",
+            "2262f9f2-b4e7-4f36-b0be-a4add7851b7b",
+            "2e585042-df00-49fa-9a81-c418ecdb6b04"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126136,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553321100000,
+          "parent_id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "YAML"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 88
+        }
+      },
+      "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "ba663c57-7a4a-472e-8c95-fef8b4d8a8c6",
+            "2803d5d5-229f-4932-af82-a1dcc86eb8bf",
+            "5e911a69-8c43-432d-bf3c-e33fc32dafe1",
+            "cb80712d-ca75-45da-8e0b-20762c637409",
+            "ccc8d069-58ae-4431-9b21-f9973716e3ca",
+            "1ef07599-dd82-47f4-93ba-6dcba8ae7dbf",
+            "58db8c9a-5650-4dea-b2e6-1f1e0fa4a0a6",
+            "f4005538-90d3-4185-ba79-5870807c2615",
+            "80fb91dd-63d4-45e2-8010-b9f5e261da81",
+            "61280245-4798-470c-a5c5-741d90543d22",
+            "4f5f2959-e72c-431e-9955-27b51ad7fd8e",
+            "c3315892-5082-48fd-b19b-663bf8bff028",
+            "fd755f13-f0fc-4e75-ad9b-9ee675e557e8",
+            "ad923a2f-bd99-4701-844a-f2d688d30548",
+            "c522a628-7288-4110-bcc3-00db67e0e9ad",
+            "64647277-99a0-4611-a891-be7ca4877f8c",
+            "503ddd46-a485-4315-a889-73b8db780fba",
+            "39927eb1-3c11-4194-92e6-7e9fd5328d8b",
+            "20bfd8fa-4545-4479-954a-6814eeeef716",
+            "dda02e36-8b30-48a5-a69b-81c56bfa6dbb",
+            "16e8d8c3-d77e-44fa-af68-57a1df368ce8",
+            "4fac57c0-9168-477a-a120-69484979f419",
+            "41f795bf-701d-4784-b319-7349cdb8f2de",
+            "6461fef8-092a-4515-8959-bddbaad99bce",
+            "7a55634f-b819-4a85-bcc6-036eeba61b39",
+            "c4da0534-9333-4df9-9513-4741ae04f808",
+            "05239fc0-69c3-463d-abc5-32b9d808612e",
+            "f7fca201-1c37-48a1-9e3b-8d66235cbe59",
+            "c290f056-6c80-467a-9005-ab3a4024ec1d",
+            "b6e9fbb3-165c-4bcb-907e-469d86783aab",
+            "1479bc5a-08b6-4dbb-8aa0-e2f5ed17782f",
+            "6744c6d0-d620-448d-be66-e224f64b6f8b",
+            "abb984fe-c0d0-4d74-b2d4-94ed3206d1bc",
+            "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+            "fc416b38-f6f3-41bf-a311-bf6c575c73a1",
+            "710edf91-b0f1-4662-9abb-fcd96aba4d80",
+            "96e61372-84ae-4460-a282-7f456b4cf62c",
+            "cabbd741-52a7-4e29-8be4-afcd41ed10b2",
+            "c7fea6b1-76b7-4c54-ab35-f2d8fdd56f13",
+            "b58d1314-5f92-4c11-afcf-00aa10d71364",
+            "6ccd64ac-7a17-4e1e-a353-66e014d9972a",
+            "48f2d17d-3a76-44da-afba-f0ca9c8b61ad",
+            "b55ab9b1-d6e5-499e-a301-4ba7e85d3efd",
+            "e9a96445-11c4-47f9-8808-19e7cd837540",
+            "d3b04193-4690-4e0b-bf6d-c28b69fc93c6",
+            "83dc1f9b-6ec0-4d25-a2d2-e7357b6bebba",
+            "46593e7f-95ef-4e47-bfa6-0b882cb71c93",
+            "41fdbdec-ca7b-42c3-b4b9-8e5ec0a96e13",
+            "d1980344-374d-45c0-82c9-14c2aafa50cf",
+            "c2af7278-9a07-4a3a-acf8-d308f898f32c",
+            "ec235242-1ba7-472a-b82d-9dcc71d2c389",
+            "fe57ef60-321d-4cca-b8b6-f79cb0120245",
+            "a09f2d8c-9bba-44e0-acd0-a9206e8f733f",
+            "7ccfe169-7c31-49c3-83b6-8894ede37d84",
+            "f6070802-3799-4969-b4ef-fb498179d5be",
+            "9f2c4121-df7e-4b3f-8181-31c49676387b",
+            "d8b9c9c2-a49e-4ba8-a04c-f7ff6ee2db0f",
+            "b5c70cd2-244f-48a0-b89a-ebc75ef45ad0",
+            "ddc28bcf-5179-4ae5-b021-b8c0d9423497",
+            "301bb328-156d-4206-94eb-f5489d2cb744",
+            "307fa1e6-11a1-4819-9b56-b002fddddb27",
+            "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+            "f2028ab7-4a35-4cf2-ba6a-86acfb813356",
+            "e6b89f7a-1cc0-4b89-a1fa-6bb1aeda381f",
+            "0ada5cfc-7c4a-4217-af2e-62d01df777de",
+            "827eb397-bd67-47f5-aef7-73c9c688ad6c",
+            "94415463-0ac5-4def-857c-aa8b50dd1b59",
+            "22efc954-59e8-4624-88d6-608f1e963a74"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532155915890,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570604400000,
+          "parent_id": "6011c17b-d910-40d3-b1ad-797e09cf4f0f",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            },
+            {
+              "allow_duplicate": false,
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Go"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 1680
+        }
+      },
+      "2e585042-df00-49fa-9a81-c418ecdb6b04": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126136,
+          "id": "2e585042-df00-49fa-9a81-c418ecdb6b04",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126136,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Passing a pointer is more efficient because passing by value creates unnecessary copy."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "32886d10-d8a6-40fc-80aa-fa28f363201c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126134,
+          "id": "32886d10-d8a6-40fc-80aa-fa28f363201c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126134,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "yaml.Marshal",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " takes interface{} as an argument. You can pass any Go value, it’ll be wrapped into interface{} with their type."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "33002ab5-548e-47b3-aacb-c408ee9fda74": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532208253662,
+          "id": "33002ab5-548e-47b3-aacb-c408ee9fda74",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532208256057,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "$Id: 193"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 12
+        }
+      },
+      "343991d4-36f8-4328-9b83-20c64e367213": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126134,
+          "id": "343991d4-36f8-4328-9b83-20c64e367213",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126134,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Structs are serialized as YAML dictionaries. By default dictionary keys are the same as struct field names."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "34711937-bd09-4421-8b71-1a21f89b4daa": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126135,
+          "id": "34711937-bd09-4421-8b71-1a21f89b4daa",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126135,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "We can provide custom mappings with struct tags."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "370312ac-8077-4a2f-851d-19f663a0fcef": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126132,
+          "id": "370312ac-8077-4a2f-851d-19f663a0fcef",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126132,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If you know the structure of YAML file, you can define structs that mirror this structure and pass a pointer to a struct describing top-level structure to "
+              ],
+              [
+                "yaml.Decoder.Decode()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " function (or "
+              ],
+              [
+                "yaml.Unmarshal()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " if decoding from "
+              ],
+              [
+                "[]byte",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " slice)."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "3872f19a-1d95-4230-8077-c6252e7f5459": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126134,
+          "id": "3872f19a-1d95-4230-8077-c6252e7f5459",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126134,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "It’s best to create explicit mappings using "
+              ],
+              [
+                "yaml",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " struct tags. I only omitted them from the example to illustrate the behavior when they are not specified."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "46d9b00a-21ad-4bcd-a3b9-ed74bbcd35b0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126133,
+          "id": "46d9b00a-21ad-4bcd-a3b9-ed74bbcd35b0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126133,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "YAML decoder does intelligent mapping between struct field names and names in YAML file so that e.g. "
+              ],
+              [
+                "name",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " value in YAML is decoded into field "
+              ],
+              [
+                "Name",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " in a struct."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "4afe2a65-fae1-45d6-8810-7b6705621669": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126130,
+          "id": "4afe2a65-fae1-45d6-8810-7b6705621669",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126130,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Thanks to its expressivness and readability, YAML is popular as a format for configuration files."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "53e5e655-75cd-4944-9c2a-2f94f81cbd8b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126136,
+          "id": "53e5e655-75cd-4944-9c2a-2f94f81cbd8b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126136,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "yaml:\"age\"",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " instructs YAML encoder / decoder to use name "
+              ],
+              [
+                "age",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " for dictionary key representing field "
+              ],
+              [
+                "Age",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "5ca33aa6-594f-428d-8477-a7945a2bdf82": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126135,
+          "id": "5ca33aa6-594f-428d-8477-a7945a2bdf82",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126135,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Struct field Name is serialized under dictionary key Name."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "6858fc0d-e3d5-442b-9df0-c0c4205f610c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532208259278,
+          "id": "6858fc0d-e3d5-442b-9df0-c0c4205f610c",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532208260056,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "type": "text",
+          "version": 14
+        }
+      },
+      "6fd24016-1996-4824-b2f3-05ec968dc3bf": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532208256057,
+          "id": "6fd24016-1996-4824-b2f3-05ec968dc3bf",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532208259278,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "$SOId: 2503"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 12
+        }
+      },
+      "7d0a3578-92ec-44d3-b1c5-0226b2fcb65c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553321126696,
+          "id": "7d0a3578-92ec-44d3-b1c5-0226b2fcb65c",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553321100000,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "// no playground\npackage main\n\nimport (\n\t\"fmt\"\n\t\"log\"\n\n\tyaml \"gopkg.in/yaml.v2\"\n)\n\n// :show start\ntype Person struct {\n\tfullName string\n\tName     string\n\tAge      int    `yaml:\"age\"`\n\tCity     string `yaml:\"city\"`\n}\n\n// :show end\n\nfunc main() {\n\t// :show start\n\tp := Person{\n\t\tName: \"John\",\n\t\tAge:  37,\n\t\tCity: \"SF\",\n\t}\n\td, err := yaml.Marshal(\u0026p)\n\tif err != nil {\n\t\tlog.Fatalf(\"yaml.Marshal failed with '%s'\\n\", err)\n\t}\n\tfmt.Printf(\"Person in YAML:\\n%s\\n\", string(d))\n\t// :show end\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 6
+        }
+      },
+      "7e58dbd7-c967-4578-9a1a-2f80b258e707": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553321040000,
+          "id": "7e58dbd7-c967-4578-9a1a-2f80b258e707",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553321040000,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "type": "text",
+          "version": 6
+        }
+      },
+      "8f16ceaa-72e6-4d25-8b76-0bb954c1fbb8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126131,
+          "id": "8f16ceaa-72e6-4d25-8b76-0bb954c1fbb8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126131,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "There is no package in standard library for hanlding YAML format but there are community libraries including "
+              ],
+              [
+                "gopkg.in/yaml.v2",
+                [
+                  [
+                    "a",
+                    "http://gopkg.in/yaml.v2"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "b8786423-1bc4-4ed5-9e33-44856cf98055": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126134,
+          "id": "b8786423-1bc4-4ed5-9e33-44856cf98055",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126134,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Marshaller will use reflection to inspect passed value and encode it as YAML strings."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "b8837cce-db41-47ed-91d8-f34c670f856a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126130,
+          "id": "b8837cce-db41-47ed-91d8-f34c670f856a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126130,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "YAML",
+                [
+                  [
+                    "a",
+                    "http://yaml.org/"
+                  ]
+                ]
+              ],
+              [
+                " is a popular format for serializing data in a human friendly format. Think JSON but easier to read."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "bc875d15-2e46-4e00-bebc-392f9a1b3e3e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126132,
+          "id": "bc875d15-2e46-4e00-bebc-392f9a1b3e3e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126132,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Reading YAML file into a Go struct"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 1
+        }
+      },
+      "e4520115-5293-45f1-81ac-fe4f49fb4689": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126134,
+          "id": "e4520115-5293-45f1-81ac-fe4f49fb4689",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126134,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In our example, fullName is not serialized."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "e9fff331-2500-43ed-ba31-a25eb35878e6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126131,
+          "id": "e9fff331-2500-43ed-ba31-a25eb35878e6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156126131,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "It’s also used in more complex scenarios like driving "
+              ],
+              [
+                "Ansible",
+                [
+                  [
+                    "a",
+                    "https://www.ansible.com/"
+                  ]
+                ]
+              ],
+              [
+                " server automation."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "ed6ac872-1ec2-464c-9f69-a976b755db33": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156126134,
+          "id": "ed6ac872-1ec2-464c-9f69-a976b755db33",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1538796803961,
+          "parent_id": "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Writing Go struct to YAML file"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 3
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

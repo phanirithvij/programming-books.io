@@ -1,0 +1,809 @@
+1699 1594539419314 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "37c5b377-b369-4fb5-8495-114c58824c80",
+      "table": "block"
+    }
+  ]
+}
+Response:+1499
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "05e16922-6c9e-41b7-8f35-a87caa26b0a8",
+          "86f5f3b6-bdf9-4841-8915-25114b1e22c5",
+          "d4984b64-c58f-45cb-9376-d3d591408caa",
+          "2d6462ba-7071-45fe-8093-803ac55cd256",
+          "413be0fa-fb83-4370-8b94-6e477fa978a6",
+          "1f578905-9a10-4131-bc9f-4f94d2da0205",
+          "d5912fcf-3fbc-4b98-a038-7d1b2199cf5a",
+          "a4d5598a-d109-4152-9b12-ccc561ebb767",
+          "bcf6cb9f-b6d1-41a0-807a-0dc1a494eb30",
+          "909d87b1-4700-493b-bdc3-4e2ebe90c912"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1553742633315,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "37c5b377-b369-4fb5-8495-114c58824c80",
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1553744040000,
+        "parent_id": "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Resizing images"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 59
+      }
+    }
+  ]
+}
+30683 1594539419315 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "37c5b377-b369-4fb5-8495-114c58824c80",
+  "verticalColumns": false
+}
+Response:+30442
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "05e16922-6c9e-41b7-8f35-a87caa26b0a8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553742780000,
+          "id": "05e16922-6c9e-41b7-8f35-a87caa26b0a8",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553742840000,
+          "parent_id": "37c5b377-b369-4fb5-8495-114c58824c80",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "There are several libraries for resizing images in Go. Package "
+              ],
+              [
+                "golang.org/x/image/draw",
+                [
+                  [
+                    "a",
+                    "https://godoc.org/golang.org/x/image/draw"
+                  ]
+                ]
+              ],
+              [
+                " is one of the options:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 149
+        }
+      },
+      "1f578905-9a10-4131-bc9f-4f94d2da0205": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553743260000,
+          "id": "1f578905-9a10-4131-bc9f-4f94d2da0205",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553743440000,
+          "parent_id": "37c5b377-b369-4fb5-8495-114c58824c80",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "scaling interface is very generic and as a result somewhat complicated. Package "
+              ],
+              [
+                "draw",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is, at its core, a compositing engine which allows compositing (drawing) bitmap images with a specific operation. "
+              ],
+              [
+                "draw.Over",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is an operation that draws one image over another, optionally using a mask."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 449
+        }
+      },
+      "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "ba663c57-7a4a-472e-8c95-fef8b4d8a8c6",
+            "2803d5d5-229f-4932-af82-a1dcc86eb8bf",
+            "5e911a69-8c43-432d-bf3c-e33fc32dafe1",
+            "cb80712d-ca75-45da-8e0b-20762c637409",
+            "ccc8d069-58ae-4431-9b21-f9973716e3ca",
+            "1ef07599-dd82-47f4-93ba-6dcba8ae7dbf",
+            "58db8c9a-5650-4dea-b2e6-1f1e0fa4a0a6",
+            "f4005538-90d3-4185-ba79-5870807c2615",
+            "80fb91dd-63d4-45e2-8010-b9f5e261da81",
+            "61280245-4798-470c-a5c5-741d90543d22",
+            "4f5f2959-e72c-431e-9955-27b51ad7fd8e",
+            "c3315892-5082-48fd-b19b-663bf8bff028",
+            "fd755f13-f0fc-4e75-ad9b-9ee675e557e8",
+            "ad923a2f-bd99-4701-844a-f2d688d30548",
+            "c522a628-7288-4110-bcc3-00db67e0e9ad",
+            "64647277-99a0-4611-a891-be7ca4877f8c",
+            "503ddd46-a485-4315-a889-73b8db780fba",
+            "39927eb1-3c11-4194-92e6-7e9fd5328d8b",
+            "20bfd8fa-4545-4479-954a-6814eeeef716",
+            "dda02e36-8b30-48a5-a69b-81c56bfa6dbb",
+            "16e8d8c3-d77e-44fa-af68-57a1df368ce8",
+            "4fac57c0-9168-477a-a120-69484979f419",
+            "41f795bf-701d-4784-b319-7349cdb8f2de",
+            "6461fef8-092a-4515-8959-bddbaad99bce",
+            "7a55634f-b819-4a85-bcc6-036eeba61b39",
+            "c4da0534-9333-4df9-9513-4741ae04f808",
+            "05239fc0-69c3-463d-abc5-32b9d808612e",
+            "f7fca201-1c37-48a1-9e3b-8d66235cbe59",
+            "c290f056-6c80-467a-9005-ab3a4024ec1d",
+            "b6e9fbb3-165c-4bcb-907e-469d86783aab",
+            "1479bc5a-08b6-4dbb-8aa0-e2f5ed17782f",
+            "6744c6d0-d620-448d-be66-e224f64b6f8b",
+            "abb984fe-c0d0-4d74-b2d4-94ed3206d1bc",
+            "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+            "fc416b38-f6f3-41bf-a311-bf6c575c73a1",
+            "710edf91-b0f1-4662-9abb-fcd96aba4d80",
+            "96e61372-84ae-4460-a282-7f456b4cf62c",
+            "cabbd741-52a7-4e29-8be4-afcd41ed10b2",
+            "c7fea6b1-76b7-4c54-ab35-f2d8fdd56f13",
+            "b58d1314-5f92-4c11-afcf-00aa10d71364",
+            "6ccd64ac-7a17-4e1e-a353-66e014d9972a",
+            "48f2d17d-3a76-44da-afba-f0ca9c8b61ad",
+            "b55ab9b1-d6e5-499e-a301-4ba7e85d3efd",
+            "e9a96445-11c4-47f9-8808-19e7cd837540",
+            "d3b04193-4690-4e0b-bf6d-c28b69fc93c6",
+            "83dc1f9b-6ec0-4d25-a2d2-e7357b6bebba",
+            "46593e7f-95ef-4e47-bfa6-0b882cb71c93",
+            "41fdbdec-ca7b-42c3-b4b9-8e5ec0a96e13",
+            "d1980344-374d-45c0-82c9-14c2aafa50cf",
+            "c2af7278-9a07-4a3a-acf8-d308f898f32c",
+            "ec235242-1ba7-472a-b82d-9dcc71d2c389",
+            "fe57ef60-321d-4cca-b8b6-f79cb0120245",
+            "a09f2d8c-9bba-44e0-acd0-a9206e8f733f",
+            "7ccfe169-7c31-49c3-83b6-8894ede37d84",
+            "f6070802-3799-4969-b4ef-fb498179d5be",
+            "9f2c4121-df7e-4b3f-8181-31c49676387b",
+            "d8b9c9c2-a49e-4ba8-a04c-f7ff6ee2db0f",
+            "b5c70cd2-244f-48a0-b89a-ebc75ef45ad0",
+            "ddc28bcf-5179-4ae5-b021-b8c0d9423497",
+            "301bb328-156d-4206-94eb-f5489d2cb744",
+            "307fa1e6-11a1-4819-9b56-b002fddddb27",
+            "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+            "f2028ab7-4a35-4cf2-ba6a-86acfb813356",
+            "e6b89f7a-1cc0-4b89-a1fa-6bb1aeda381f",
+            "0ada5cfc-7c4a-4217-af2e-62d01df777de",
+            "827eb397-bd67-47f5-aef7-73c9c688ad6c",
+            "94415463-0ac5-4def-857c-aa8b50dd1b59",
+            "22efc954-59e8-4624-88d6-608f1e963a74"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532155915890,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570604400000,
+          "parent_id": "6011c17b-d910-40d3-b1ad-797e09cf4f0f",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            },
+            {
+              "allow_duplicate": false,
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Go"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 1680
+        }
+      },
+      "2d6462ba-7071-45fe-8093-803ac55cd256": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553742900000,
+          "id": "2d6462ba-7071-45fe-8093-803ac55cd256",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553742960000,
+          "parent_id": "37c5b377-b369-4fb5-8495-114c58824c80",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "we return "
+              ],
+              [
+                "image.RGBA",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", not "
+              ],
+              [
+                "image.Image",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " because Go's best practice is to accept interface as arguments to functions, but return concrete types"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 223
+        }
+      },
+      "37c5b377-b369-4fb5-8495-114c58824c80": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "05e16922-6c9e-41b7-8f35-a87caa26b0a8",
+            "86f5f3b6-bdf9-4841-8915-25114b1e22c5",
+            "d4984b64-c58f-45cb-9376-d3d591408caa",
+            "2d6462ba-7071-45fe-8093-803ac55cd256",
+            "413be0fa-fb83-4370-8b94-6e477fa978a6",
+            "1f578905-9a10-4131-bc9f-4f94d2da0205",
+            "d5912fcf-3fbc-4b98-a038-7d1b2199cf5a",
+            "a4d5598a-d109-4152-9b12-ccc561ebb767",
+            "bcf6cb9f-b6d1-41a0-807a-0dc1a494eb30",
+            "909d87b1-4700-493b-bdc3-4e2ebe90c912"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553742633315,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "37c5b377-b369-4fb5-8495-114c58824c80",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553744040000,
+          "parent_id": "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Resizing images"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 59
+        }
+      },
+      "413be0fa-fb83-4370-8b94-6e477fa978a6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553742960000,
+          "id": "413be0fa-fb83-4370-8b94-6e477fa978a6",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553743200000,
+          "parent_id": "37c5b377-b369-4fb5-8495-114c58824c80",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "image bounds don't have to start at (0,0) so for the source image we ask for bounding rectangle. We create destination image ourselves so we create bounds that start at (0,0)"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 367
+        }
+      },
+      "5ad463be-df1f-44d2-a2ba-f48632ac424f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553743740000,
+          "id": "5ad463be-df1f-44d2-a2ba-f48632ac424f",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553743800000,
+          "parent_id": "a4d5598a-d109-4152-9b12-ccc561ebb767",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "nearest neighbor - fast, low quality"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 43
+        }
+      },
+      "7334cf26-bda6-4faa-b59d-7f69a21da892": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553743800000,
+          "id": "7334cf26-bda6-4faa-b59d-7f69a21da892",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553743800000,
+          "parent_id": "a4d5598a-d109-4152-9b12-ccc561ebb767",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "catmull-rom - slowest, highest qulity"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 67
+        }
+      },
+      "86f5f3b6-bdf9-4841-8915-25114b1e22c5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553742648305,
+          "id": "86f5f3b6-bdf9-4841-8915-25114b1e22c5",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553742660000,
+          "parent_id": "37c5b377-b369-4fb5-8495-114c58824c80",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "package main\n\nimport (\n\t\"bytes\"\n\t\"fmt\"\n\t\"image\"\n\t\"image/jpeg\"\n\t\"image/png\"\n\t\"io/ioutil\"\n\t\"log\"\n\t\"net/http\"\n\t\"os\"\n\t\"path/filepath\"\n\t\"strings\"\n\n\t\"golang.org/x/image/draw\"\n)\n\nfunc maybeIsPNG(uri string, d []byte) bool {\n\text := strings.ToLower(filepath.Ext(uri))\n\tif ext == \".png\" {\n\t\treturn true\n\t}\n\t// TODO: sniff png header in d\n\treturn false\n}\n\nfunc maybeIsJPEG(uri string, d []byte) bool {\n\text := strings.ToLower(filepath.Ext(uri))\n\tif ext == \".jpeg\" || ext == \".jpg\" {\n\t\treturn true\n\t}\n\t// TODO: sniff png header in d\n\treturn false\n}\n\nfunc downloadImage(uri string) (image.Image, error) {\n\tresp, err := http.Get(uri)\n\tif err != nil {\n\t\treturn nil, fmt.Errorf(\"http.Get('%s') failed with %s\", uri, err)\n\t}\n\tdefer resp.Body.Close()\n\tif resp.StatusCode \u003e= 400 {\n\t\treturn nil, fmt.Errorf(\"http.Get() failed with status '%s'\", resp.Status)\n\t}\n\td, err := ioutil.ReadAll(resp.Body)\n\tif err != nil {\n\t\treturn nil, err\n\t}\n\ttriedPNG := false\n\ttriedJPEG := false\n\tif maybeIsPNG(uri, d) {\n\t\timg, err := png.Decode(bytes.NewBuffer(d))\n\t\tif err == nil {\n\t\t\treturn img, nil\n\t\t}\n\t\ttriedPNG = true\n\t}\n\tif maybeIsJPEG(uri, d) {\n\t\timg, err := jpeg.Decode(bytes.NewBuffer(d))\n\t\tif err == nil {\n\t\t\treturn img, nil\n\t\t}\n\t\ttriedJPEG = true\n\t}\n\tif !triedPNG {\n\t\timg, err := png.Decode(bytes.NewBuffer(d))\n\t\tif err == nil {\n\t\t\treturn img, nil\n\t\t}\n\t}\n\tif !triedJPEG {\n\t\timg, err := jpeg.Decode(bytes.NewBuffer(d))\n\t\tif err == nil {\n\t\t\treturn img, nil\n\t\t}\n\t}\n\treturn nil, fmt.Errorf(\"'%s' is not a valid PNG or JPEG image\", uri)\n}\n\nfunc saveImageAsPNG(dst string, img image.Image) error {\n\tf, err := os.Create(dst)\n\tif err != nil {\n\t\treturn err\n\t}\n\terr = png.Encode(f, img)\n\t// an error during Close is very unlikely but not impossible\n\terr2 := f.Close()\n\tif err == nil \u0026\u0026 err2 == nil {\n\t\treturn nil\n\t}\n\n\t// in case of failure, don't leave invalid file on disk\n\tos.Remove(dst)\n\tif err != nil {\n\t\treturn err\n\t}\n\treturn err2\n}\n\n// :show start\nfunc resize(src image.Image, dstSize image.Point) *image.RGBA {\n\tsrcRect := src.Bounds()\n\tdstRect := image.Rectangle{\n\t\tMin: image.Point{0, 0},\n\t\tMax: dstSize,\n\t}\n\tdst := image.NewRGBA(dstRect)\n\tdraw.CatmullRom.Scale(dst, dstRect, src, srcRect, draw.Over, nil)\n\treturn dst\n}\n\n// :show end\n\nfunc getProportionalY(p image.Point, x int) int {\n\tres := (int64(p.Y) * int64(x)) / int64(p.X)\n\treturn int(res)\n}\n\nfunc main() {\n\timg, err := downloadImage(\"https://www.programming-books.io/covers/Go.png\")\n\tif err != nil {\n\t\tlog.Fatalf(\"downloadImage() failed with '%s'\\n\", err)\n\t}\n\tsize := img.Bounds().Size()\n\tx := 140\n\ty := getProportionalY(size, x)\n\tfmt.Printf(\"resizing %d x %d =\u003e %d x %d\\n\", size.X, size.Y, x, y)\n\tresizedImg := resize(img, image.Point{x, y})\n\terr = saveImageAsPNG(\"go-resized.png\", resizedImg)\n\tif err != nil {\n\t\tlog.Fatalf(\"saveImageAsPNG() failed with '%s'\\n\", err)\n\t}\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 10
+        }
+      },
+      "909d87b1-4700-493b-bdc3-4e2ebe90c912": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553743920000,
+          "id": "909d87b1-4700-493b-bdc3-4e2ebe90c912",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553744040000,
+          "parent_id": "37c5b377-b369-4fb5-8495-114c58824c80",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "putting it all together: to resize a source image to a given size, we create a destination image of desired size and use "
+              ],
+              [
+                "Scale",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " method of one of the global scalers to paint source image into a destination, with resizing being a side effect of using a scaler."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 314
+        }
+      },
+      "a4d5598a-d109-4152-9b12-ccc561ebb767": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "5ad463be-df1f-44d2-a2ba-f48632ac424f",
+            "c8e6de97-82d8-404b-aec7-0f550cacee80",
+            "a53d6c3f-6922-455e-aee9-8b3d2ac405a4",
+            "7334cf26-bda6-4faa-b59d-7f69a21da892"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553743680000,
+          "id": "a4d5598a-d109-4152-9b12-ccc561ebb767",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553743800000,
+          "parent_id": "37c5b377-b369-4fb5-8495-114c58824c80",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "the package implements 4 different scaling algorithms:"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 122
+        }
+      },
+      "a53d6c3f-6922-455e-aee9-8b3d2ac405a4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553743740000,
+          "id": "a53d6c3f-6922-455e-aee9-8b3d2ac405a4",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553743800000,
+          "parent_id": "a4d5598a-d109-4152-9b12-ccc561ebb767",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "bi-linear - even slower, high quality"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 50
+        }
+      },
+      "bcf6cb9f-b6d1-41a0-807a-0dc1a494eb30": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553743200000,
+          "id": "bcf6cb9f-b6d1-41a0-807a-0dc1a494eb30",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553743920000,
+          "parent_id": "37c5b377-b369-4fb5-8495-114c58824c80",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "draw.CatmullRom",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is a global variable for an instance implementing catmull-rom algorithm. Other algorithms are available as "
+              ],
+              [
+                "draw.NearestNeighbor",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", "
+              ],
+              [
+                "draw.ApproxBiLinear",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "draw.BiLinear",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " package global variables"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 394
+        }
+      },
+      "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "21ad69c1-2ac6-4117-a3d5-77e59c6a7997",
+            "d002a62d-5456-4dc5-ac11-61144f71df05",
+            "691f4f4a-5300-4d4e-b2fe-065f77242139",
+            "5971e4ff-b71f-46cd-a7f6-918c88db1fcf",
+            "fd4f2fba-5f29-4a87-8c41-a69173994963",
+            "28a85e59-994d-4fbb-966d-0270ce9959ac",
+            "017fe93c-516d-4076-b563-e9737696f98f",
+            "2a852bc5-8d05-46b1-8d5a-a0378c144262",
+            "51740288-e721-4d4c-9fa3-21e534f3aaa3",
+            "9b2ea018-fd97-41d9-aea4-1fe0bbb9920d",
+            "0a334feb-41b6-47a1-ae27-de5e2eccf26c",
+            "67a6123f-ec78-42e8-8329-de6c7a3a34bb",
+            "76f85588-0e94-4caa-939f-cd1e190e3f7e",
+            "72152142-8429-4b30-b991-6ee33215b79b",
+            "23427dc6-c010-44ea-a6c9-1f2b5e185611",
+            "bd98450e-6849-4274-88a2-fd11ebb8d75b",
+            "78086a27-d6e4-4b8a-825c-2c56ff321dd7",
+            "fb5cfc5e-61de-4f85-8ce4-bffeae534eaf",
+            "6b558223-5d7d-4df0-86f6-8175c51a266f",
+            "2df14c05-ebd8-400f-a03b-6ae5f95e34cc",
+            "397c8a17-7aa7-4675-8082-81d84d7c5462",
+            "c6cdd9a3-ad82-484a-88ef-54145eee1c1e",
+            "cf63fcb5-4853-4ed5-b421-830f21ffe3e0",
+            "6b5c9d8b-e671-4377-8d83-c99b9fbc3864",
+            "0d267f6d-589a-4d68-9212-c5e4718590c3",
+            "9294fd2a-3da0-4b2d-9762-8aa8c49e0b53",
+            "deec25d3-3ac2-4a3f-9137-e974a1d7c100",
+            "37c5b377-b369-4fb5-8495-114c58824c80"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156274163,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570567320000,
+          "parent_id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Images (PNG, JPEG, BMP, TIFF, WEBP, VP8, GIF)"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 157
+        }
+      },
+      "c8e6de97-82d8-404b-aec7-0f550cacee80": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553743740000,
+          "id": "c8e6de97-82d8-404b-aec7-0f550cacee80",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553743800000,
+          "parent_id": "a4d5598a-d109-4152-9b12-ccc561ebb767",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "approximate bi-linear - slower, better quality"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 63
+        }
+      },
+      "d4984b64-c58f-45cb-9376-d3d591408caa": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553742840000,
+          "id": "d4984b64-c58f-45cb-9376-d3d591408caa",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553742900000,
+          "parent_id": "37c5b377-b369-4fb5-8495-114c58824c80",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Notable points:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 32
+        }
+      },
+      "d5912fcf-3fbc-4b98-a038-7d1b2199cf5a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1553743440000,
+          "id": "d5912fcf-3fbc-4b98-a038-7d1b2199cf5a",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553743680000,
+          "parent_id": "37c5b377-b369-4fb5-8495-114c58824c80",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "resizing is implementing as "
+              ],
+              [
+                "Scaler",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " interface which takes destination image, a rectangle within destination image, source image, a rectangle within source images and paints source rectangle into destination rectangle. Resizing happens when destination rectangle has different dimension that source rectangle"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 405
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

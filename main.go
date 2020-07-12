@@ -87,7 +87,8 @@ var (
 	// if true, disables downloading pages
 	flgNoDownload     bool
 	flgGistRedownload bool
-	flgProd           bool
+	flgDeployProd     bool
+	flgDeployDev      bool
 )
 
 func main() {
@@ -98,7 +99,8 @@ func main() {
 
 	{
 		flag.BoolVar(&flgWc, "wc", false, "wc -l")
-		flag.BoolVar(&flgProd, "prod", false, "deploy to prodution")
+		flag.BoolVar(&flgDeployProd, "deploy-prod", false, "deploy to prodution")
+		flag.BoolVar(&flgDeployDev, "deploy-dev", false, "deploy to dev")
 		flag.StringVar(&flgGen, "gen", "", "generate a book and deploy preview")
 		flag.Parse()
 	}

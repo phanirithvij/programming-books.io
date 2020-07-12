@@ -1,0 +1,824 @@
+2025 1594538538260 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+      "table": "block"
+    }
+  ]
+}
+Response:+1825
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "112c14dc-07bf-4c61-85f2-2c379bda7f63",
+          "bbfe56e7-f8af-4566-91d1-dc3c86146105",
+          "1e33050d-3bef-4859-a72d-1bb2fcdc4e5c",
+          "4095ec13-624f-4a0d-a24a-24a1ca0fb017",
+          "67b8cb86-256a-4ec5-a4c9-7ada254ce2c9",
+          "555a469f-b333-440a-a4b8-d208bbaf3a3b",
+          "76ea22fc-479f-4c30-b5af-538abf767d11",
+          "e84620a4-8e5d-4676-9437-63f578bd0914",
+          "650fd275-6c63-4276-a174-1e548c31a318",
+          "2ca1efbf-f19d-4953-9d09-2f513fca0027",
+          "cf8958ef-2e89-4223-b932-12cb3e548a9a",
+          "0e9bd667-95c5-435d-a5e1-646acd8eb0ef",
+          "5ce49059-b9f7-4d34-b97d-27950e9aa733",
+          "8ed13400-9e37-49bf-b907-582446cb6ca2",
+          "1c780581-00ed-4b45-aab9-461f69c05ecd",
+          "a4c08cfa-b103-4332-b167-94d8eac489ea"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1532156074118,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1572945660000,
+        "parent_id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Mutex"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 78
+      }
+    }
+  ]
+}
+28111 1594538538261 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "41f795bf-701d-4784-b319-7349cdb8f2de",
+  "verticalColumns": false
+}
+Response:+27870
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "0e9bd667-95c5-435d-a5e1-646acd8eb0ef": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156074118,
+          "id": "0e9bd667-95c5-435d-a5e1-646acd8eb0ef",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156074118,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If the same goroutines tries to "
+              ],
+              [
+                "Lock()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " a mutex twice, the second "
+              ],
+              [
+                "Lock()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " will block forever."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "112c14dc-07bf-4c61-85f2-2c379bda7f63": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532206036141,
+          "id": "112c14dc-07bf-4c61-85f2-2c379bda7f63",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532206037159,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In Go goroutines share memory."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 16
+        }
+      },
+      "1c780581-00ed-4b45-aab9-461f69c05ecd": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "870340fa-fa00-464f-9de7-66a1d7732ee1",
+            "0444d755-c9ac-467d-bbfa-4b91d6d6bed9",
+            "74cc8a0a-ae1e-4b78-9559-8bfa238458e2",
+            "3968befb-6d13-46b8-819c-459f9df67793",
+            "23761821-30de-4a61-a320-84edf5ce9b80",
+            "01892488-e366-4c62-8e55-d124cc81472c",
+            "de7164e8-b524-4f67-962e-a9f81b72930c",
+            "879faa31-c357-440a-ba2e-5e0b2dbc9d1a",
+            "009474d9-407d-4be5-bb43-b55429c8887d",
+            "7e2ed7ca-7715-4a38-94f3-adc1ba7318d9",
+            "3fe7678a-36b1-45da-ac79-abc74efeab8f",
+            "9e0b8019-4458-4233-bc96-3481c2cca02e",
+            "b8ba90fa-280a-4c3d-ad6e-cb8708f3b926"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156076172,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "1c780581-00ed-4b45-aab9-461f69c05ecd",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1545690415350,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Mutex gotchas"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 29
+        }
+      },
+      "1e33050d-3bef-4859-a72d-1bb2fcdc4e5c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156074116,
+          "id": "1e33050d-3bef-4859-a72d-1bb2fcdc4e5c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1533026648367,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "One way to avoid that is by using "
+              ],
+              [
+                "channels",
+                [
+                  [
+                    "a",
+                    "https://www.notion.so/kjkpublic/Channels-and-select-4fac57c09168477aa12069484979f419"
+                  ]
+                ]
+              ],
+              [
+                " to transfer exclusive ownership of data."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 4
+        }
+      },
+      "2ca1efbf-f19d-4953-9d09-2f513fca0027": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156074117,
+          "id": "2ca1efbf-f19d-4953-9d09-2f513fca0027",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156074117,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Function "
+              ],
+              [
+                "getCached",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " would be simpler if we kept the mutex locked for the duration of the function but we don’t want to keep cache locked when we’re executing "
+              ],
+              [
+                "expensiveOperation()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "ba663c57-7a4a-472e-8c95-fef8b4d8a8c6",
+            "2803d5d5-229f-4932-af82-a1dcc86eb8bf",
+            "5e911a69-8c43-432d-bf3c-e33fc32dafe1",
+            "cb80712d-ca75-45da-8e0b-20762c637409",
+            "ccc8d069-58ae-4431-9b21-f9973716e3ca",
+            "1ef07599-dd82-47f4-93ba-6dcba8ae7dbf",
+            "58db8c9a-5650-4dea-b2e6-1f1e0fa4a0a6",
+            "f4005538-90d3-4185-ba79-5870807c2615",
+            "80fb91dd-63d4-45e2-8010-b9f5e261da81",
+            "61280245-4798-470c-a5c5-741d90543d22",
+            "4f5f2959-e72c-431e-9955-27b51ad7fd8e",
+            "c3315892-5082-48fd-b19b-663bf8bff028",
+            "fd755f13-f0fc-4e75-ad9b-9ee675e557e8",
+            "ad923a2f-bd99-4701-844a-f2d688d30548",
+            "c522a628-7288-4110-bcc3-00db67e0e9ad",
+            "64647277-99a0-4611-a891-be7ca4877f8c",
+            "503ddd46-a485-4315-a889-73b8db780fba",
+            "39927eb1-3c11-4194-92e6-7e9fd5328d8b",
+            "20bfd8fa-4545-4479-954a-6814eeeef716",
+            "dda02e36-8b30-48a5-a69b-81c56bfa6dbb",
+            "16e8d8c3-d77e-44fa-af68-57a1df368ce8",
+            "4fac57c0-9168-477a-a120-69484979f419",
+            "41f795bf-701d-4784-b319-7349cdb8f2de",
+            "6461fef8-092a-4515-8959-bddbaad99bce",
+            "7a55634f-b819-4a85-bcc6-036eeba61b39",
+            "c4da0534-9333-4df9-9513-4741ae04f808",
+            "05239fc0-69c3-463d-abc5-32b9d808612e",
+            "f7fca201-1c37-48a1-9e3b-8d66235cbe59",
+            "c290f056-6c80-467a-9005-ab3a4024ec1d",
+            "b6e9fbb3-165c-4bcb-907e-469d86783aab",
+            "1479bc5a-08b6-4dbb-8aa0-e2f5ed17782f",
+            "6744c6d0-d620-448d-be66-e224f64b6f8b",
+            "abb984fe-c0d0-4d74-b2d4-94ed3206d1bc",
+            "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+            "fc416b38-f6f3-41bf-a311-bf6c575c73a1",
+            "710edf91-b0f1-4662-9abb-fcd96aba4d80",
+            "96e61372-84ae-4460-a282-7f456b4cf62c",
+            "cabbd741-52a7-4e29-8be4-afcd41ed10b2",
+            "c7fea6b1-76b7-4c54-ab35-f2d8fdd56f13",
+            "b58d1314-5f92-4c11-afcf-00aa10d71364",
+            "6ccd64ac-7a17-4e1e-a353-66e014d9972a",
+            "48f2d17d-3a76-44da-afba-f0ca9c8b61ad",
+            "b55ab9b1-d6e5-499e-a301-4ba7e85d3efd",
+            "e9a96445-11c4-47f9-8808-19e7cd837540",
+            "d3b04193-4690-4e0b-bf6d-c28b69fc93c6",
+            "83dc1f9b-6ec0-4d25-a2d2-e7357b6bebba",
+            "46593e7f-95ef-4e47-bfa6-0b882cb71c93",
+            "41fdbdec-ca7b-42c3-b4b9-8e5ec0a96e13",
+            "d1980344-374d-45c0-82c9-14c2aafa50cf",
+            "c2af7278-9a07-4a3a-acf8-d308f898f32c",
+            "ec235242-1ba7-472a-b82d-9dcc71d2c389",
+            "fe57ef60-321d-4cca-b8b6-f79cb0120245",
+            "a09f2d8c-9bba-44e0-acd0-a9206e8f733f",
+            "7ccfe169-7c31-49c3-83b6-8894ede37d84",
+            "f6070802-3799-4969-b4ef-fb498179d5be",
+            "9f2c4121-df7e-4b3f-8181-31c49676387b",
+            "d8b9c9c2-a49e-4ba8-a04c-f7ff6ee2db0f",
+            "b5c70cd2-244f-48a0-b89a-ebc75ef45ad0",
+            "ddc28bcf-5179-4ae5-b021-b8c0d9423497",
+            "301bb328-156d-4206-94eb-f5489d2cb744",
+            "307fa1e6-11a1-4819-9b56-b002fddddb27",
+            "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+            "f2028ab7-4a35-4cf2-ba6a-86acfb813356",
+            "e6b89f7a-1cc0-4b89-a1fa-6bb1aeda381f",
+            "0ada5cfc-7c4a-4217-af2e-62d01df777de",
+            "827eb397-bd67-47f5-aef7-73c9c688ad6c",
+            "94415463-0ac5-4def-857c-aa8b50dd1b59",
+            "22efc954-59e8-4624-88d6-608f1e963a74"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532155915890,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570604400000,
+          "parent_id": "6011c17b-d910-40d3-b1ad-797e09cf4f0f",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            },
+            {
+              "allow_duplicate": false,
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Go"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 1680
+        }
+      },
+      "4095ec13-624f-4a0d-a24a-24a1ca0fb017": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156074116,
+          "id": "4095ec13-624f-4a0d-a24a-24a1ca0fb017",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156074116,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This is Go’s motto: "
+              ],
+              [
+                "do not communicate by sharing memory; instead, share memory by communicating.",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "41f795bf-701d-4784-b319-7349cdb8f2de": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "112c14dc-07bf-4c61-85f2-2c379bda7f63",
+            "bbfe56e7-f8af-4566-91d1-dc3c86146105",
+            "1e33050d-3bef-4859-a72d-1bb2fcdc4e5c",
+            "4095ec13-624f-4a0d-a24a-24a1ca0fb017",
+            "67b8cb86-256a-4ec5-a4c9-7ada254ce2c9",
+            "555a469f-b333-440a-a4b8-d208bbaf3a3b",
+            "76ea22fc-479f-4c30-b5af-538abf767d11",
+            "e84620a4-8e5d-4676-9437-63f578bd0914",
+            "650fd275-6c63-4276-a174-1e548c31a318",
+            "2ca1efbf-f19d-4953-9d09-2f513fca0027",
+            "cf8958ef-2e89-4223-b932-12cb3e548a9a",
+            "0e9bd667-95c5-435d-a5e1-646acd8eb0ef",
+            "5ce49059-b9f7-4d34-b97d-27950e9aa733",
+            "8ed13400-9e37-49bf-b907-582446cb6ca2",
+            "1c780581-00ed-4b45-aab9-461f69c05ecd",
+            "a4c08cfa-b103-4332-b167-94d8eac489ea"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156074118,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1572945660000,
+          "parent_id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Mutex"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 78
+        }
+      },
+      "555a469f-b333-440a-a4b8-d208bbaf3a3b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156074116,
+          "id": "555a469f-b333-440a-a4b8-d208bbaf3a3b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1538786878956,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Here’s a basic pattern that uses a map for a cache and ensures exclusive access with mutex locking:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 3
+        }
+      },
+      "5ce49059-b9f7-4d34-b97d-27950e9aa733": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532205989500,
+          "id": "5ce49059-b9f7-4d34-b97d-27950e9aa733",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532205989500,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "type": "text",
+          "version": 6
+        }
+      },
+      "650fd275-6c63-4276-a174-1e548c31a318": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156074117,
+          "id": "650fd275-6c63-4276-a174-1e548c31a318",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156074117,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "For performance we want to minimize the time spent holding a lock."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "67b8cb86-256a-4ec5-a4c9-7ada254ce2c9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156074116,
+          "id": "67b8cb86-256a-4ec5-a4c9-7ada254ce2c9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156074116,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Another way to ensure exclusive access to data by goroutines is to use mutexes."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "76ea22fc-479f-4c30-b5af-538abf767d11": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1572945660000,
+          "id": "76ea22fc-479f-4c30-b5af-538abf767d11",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1572945660000,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "https://codeeval.dev/gist/890835696fd11492418d898ece2dd1e7",
+                [
+                  [
+                    "a",
+                    "https://codeeval.dev/gist/890835696fd11492418d898ece2dd1e7"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 8
+        }
+      },
+      "8ed13400-9e37-49bf-b907-582446cb6ca2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "ecd6070d-c0b6-4ed4-8674-103ac13458b3",
+            "e23e7e54-bff5-4d82-a21d-b6152fc0992e",
+            "2517df36-968d-4cba-b8b4-68a68bcd84b1",
+            "9790f4a0-6fd1-48f5-86f7-ebbc54f1426a",
+            "14a4f1b7-29ad-47ba-bb05-d10c6213be85",
+            "512e5185-053f-4875-9917-9acd3c944d9d"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156075140,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "8ed13400-9e37-49bf-b907-582446cb6ca2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1573004700000,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Read-Write mutes (RWMutex)"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 55
+        }
+      },
+      "a4c08cfa-b103-4332-b167-94d8eac489ea": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "aaee6461-c247-4b81-8bbe-f399649f6bb1",
+            "8e5f8e33-4884-4e04-b184-fd8c1d71d11e",
+            "9cf55c4f-728e-488a-8d28-945218dd6573",
+            "dc3e4797-a6cd-459e-9952-9f28871ce3bb",
+            "ed2f365b-6d01-43c2-bb36-f1df61c47355",
+            "44613cb0-dbdc-47e9-90d2-50730662546a",
+            "12a3a408-d287-463c-ad83-ae264a29e562",
+            "2e7bb967-7a04-4be2-83ec-3fac1acac7ac",
+            "faa2516d-80c3-4f7d-9c7f-a90b3fd09827",
+            "0dbf234b-e2b3-4a82-9fb1-fa807c57ff67",
+            "d5a6550d-98e7-4a5f-bfb9-df818783128e",
+            "3a747288-8258-4de7-8f32-bf0fe2a306c3",
+            "d3f612f4-0d6b-4d57-ba10-51c122245fdf",
+            "f36ec678-13da-4b67-82f8-31395c2896cd",
+            "a3d97d56-da25-4126-8e24-c91a339982e0",
+            "c11deff3-37ca-4f63-b7f8-69ddb1823287"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156077217,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "a4c08cfa-b103-4332-b167-94d8eac489ea",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1573005000000,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Detecting races"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 129
+        }
+      },
+      "bbfe56e7-f8af-4566-91d1-dc3c86146105": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156074115,
+          "id": "bbfe56e7-f8af-4566-91d1-dc3c86146105",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156074115,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "It’s good for performance but modifying the same memory from multiple goroutines is not safe. It can lead to data races and crashes."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "cf8958ef-2e89-4223-b932-12cb3e548a9a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156074118,
+          "id": "cf8958ef-2e89-4223-b932-12cb3e548a9a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156074118,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Unlike many other languages, Go mutexes are non-recursive."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "e84620a4-8e5d-4676-9437-63f578bd0914": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156074117,
+          "id": "e84620a4-8e5d-4676-9437-63f578bd0914",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1539839666064,
+          "parent_id": "41f795bf-701d-4784-b319-7349cdb8f2de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Zero value of "
+              ],
+              [
+                "sync.Mutex",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is a valid mutex so you don’t need to explicitly initialize it."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 9
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

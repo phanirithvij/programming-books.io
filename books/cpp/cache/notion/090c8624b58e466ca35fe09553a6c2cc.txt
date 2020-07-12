@@ -1,0 +1,2265 @@
+2329 1594550789185 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+      "table": "block"
+    }
+  ]
+}
+Response:+2129
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "fa563af2-2302-4359-89b8-4a5fd50c631b",
+          "d0ad5816-ceb4-4bd6-9edb-e33990d840c9",
+          "4a216756-087f-4139-8a33-bb3ce71b7889",
+          "2839be19-5213-4c31-989c-7a0132b72d48",
+          "7ea341ed-a78e-4365-8feb-c1fc7862771d",
+          "ec58b38d-a77d-4513-8c2f-9b04a1cc737a",
+          "34353e3d-ed3d-4712-88c1-a2578eb153d0",
+          "a6ee547d-bb7d-4d29-a109-f0599fc6f317",
+          "abc64c1e-669e-4940-84b0-60a0dd8fa23c",
+          "3a5ae08f-2892-4e5c-8e6f-ea3c04248a71",
+          "864ada57-3442-4291-a5f8-4c9efa1979e5",
+          "699c394a-276f-40ae-859a-e6cd2bfdaffb",
+          "c1817955-2272-42c5-8cc9-8b49b6f2f1d7",
+          "20559fac-1a47-44c7-ae61-adcbe45cd9f8",
+          "4c41c4c2-7b96-4f12-a94d-c5249e20dc58",
+          "e1e04db3-3a22-4a91-8b7d-dc0b8fec444b",
+          "8882cc83-9f72-4e28-99ba-ee82725e8a51",
+          "64991ebf-47c4-4019-97bb-d8019bb038f5",
+          "ebf5bb3f-0763-4b18-8f48-f9391534e2fc",
+          "ccd8e4d1-dda3-4ce6-94aa-96040772b6a7",
+          "58ccffed-89d4-400d-a36b-084eefc160c4",
+          "c1e1c1c8-45da-4504-8c9c-d7e2cc82f2fa"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550521946796,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552347540000,
+        "parent_id": "94bfa868-4e02-4b90-841b-817c34132524",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Templates"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 26
+      }
+    }
+  ]
+}
+71381 1594550789187 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+  "verticalColumns": false
+}
+Response:+71140
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "090c8624-b58e-466c-a35f-e09553a6c2cc": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "fa563af2-2302-4359-89b8-4a5fd50c631b",
+            "d0ad5816-ceb4-4bd6-9edb-e33990d840c9",
+            "4a216756-087f-4139-8a33-bb3ce71b7889",
+            "2839be19-5213-4c31-989c-7a0132b72d48",
+            "7ea341ed-a78e-4365-8feb-c1fc7862771d",
+            "ec58b38d-a77d-4513-8c2f-9b04a1cc737a",
+            "34353e3d-ed3d-4712-88c1-a2578eb153d0",
+            "a6ee547d-bb7d-4d29-a109-f0599fc6f317",
+            "abc64c1e-669e-4940-84b0-60a0dd8fa23c",
+            "3a5ae08f-2892-4e5c-8e6f-ea3c04248a71",
+            "864ada57-3442-4291-a5f8-4c9efa1979e5",
+            "699c394a-276f-40ae-859a-e6cd2bfdaffb",
+            "c1817955-2272-42c5-8cc9-8b49b6f2f1d7",
+            "20559fac-1a47-44c7-ae61-adcbe45cd9f8",
+            "4c41c4c2-7b96-4f12-a94d-c5249e20dc58",
+            "e1e04db3-3a22-4a91-8b7d-dc0b8fec444b",
+            "8882cc83-9f72-4e28-99ba-ee82725e8a51",
+            "64991ebf-47c4-4019-97bb-d8019bb038f5",
+            "ebf5bb3f-0763-4b18-8f48-f9391534e2fc",
+            "ccd8e4d1-dda3-4ce6-94aa-96040772b6a7",
+            "58ccffed-89d4-400d-a36b-084eefc160c4",
+            "c1e1c1c8-45da-4504-8c9c-d7e2cc82f2fa"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946796,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "94bfa868-4e02-4b90-841b-817c34132524",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Templates"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 26
+        }
+      },
+      "097eeec4-a391-4411-88ae-5e7bcb4ef943": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946794,
+          "id": "097eeec4-a391-4411-88ae-5e7bcb4ef943",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347480000,
+          "parent_id": "c1e1c1c8-45da-4504-8c9c-d7e2cc82f2fa",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "C++"
+              ]
+            ],
+            "title": [
+              [
+                "struct Allocator {\n    template \u003cclass T\u003e\n    T* allocate();\n};\n\ntemplate \u003cclass T, class Alloc\u003e\nclass List {\n    struct Node {\n        T value;\n        Node* next;\n    }\n    Alloc allocator;\n    Node* allocate_node() {\n        // return allocator.allocate\u003cNode\u003e();       // error: \u003c and \u003e are interpreted as\n                                                    // comparison operators\n        return allocator.template allocate\u003cNode\u003e(); // ok; allocate is a template\n        //               ^^^^^^^^ keyword used in this sense here\n    }\n};"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "0cffea22-9a0a-49e1-907a-334e04df93bd": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946795,
+          "id": "0cffea22-9a0a-49e1-907a-334e04df93bd",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347480000,
+          "parent_id": "c1e1c1c8-45da-4504-8c9c-d7e2cc82f2fa",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "C++"
+              ]
+            ],
+            "title": [
+              [
+                "#ifndef FOO_H\n#define FOO_H\nexport template \u003cclass T\u003e T identity(T x);\n#endif"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "1821ef9e-66fd-41a0-a1ae-5873cfe12a9a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946796,
+          "id": "1821ef9e-66fd-41a0-a1ae-5873cfe12a9a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347480000,
+          "parent_id": "c1e1c1c8-45da-4504-8c9c-d7e2cc82f2fa",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "main.cpp",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ":"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 8
+        }
+      },
+      "20559fac-1a47-44c7-ae61-adcbe45cd9f8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946786,
+          "id": "20559fac-1a47-44c7-ae61-adcbe45cd9f8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "postfix-expression",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " -\u003e template ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "id-expression",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 7
+        }
+      },
+      "2444fda2-5f44-4963-b70b-cda207ae3ebb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946795,
+          "id": "2444fda2-5f44-4963-b70b-cda207ae3ebb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347480000,
+          "parent_id": "c1e1c1c8-45da-4504-8c9c-d7e2cc82f2fa",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "foo.h",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ":"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 4
+        }
+      },
+      "2839be19-5213-4c31-989c-7a0132b72d48": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946782,
+          "id": "2839be19-5213-4c31-989c-7a0132b72d48",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "template \u003c ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "template-parameter-list",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " \u003e ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "declaration",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 7
+        }
+      },
+      "2b4701f3-8a95-4e96-b1ac-dd7cf411163d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946792,
+          "id": "2b4701f3-8a95-4e96-b1ac-dd7cf411163d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347480000,
+          "parent_id": "ccd8e4d1-dda3-4ce6-94aa-96040772b6a7",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "C++"
+              ]
+            ],
+            "title": [
+              [
+                "template \u003cclass T\u003e\nstd::set\u003cT\u003e make_singleton(T x) { return std::set\u003cT\u003e(x); }\n\ntemplate std::set\u003cint\u003e make_singleton(int x); // \u003c-- keyword used in this sense here"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 6
+        }
+      },
+      "34353e3d-ed3d-4712-88c1-a2578eb153d0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946783,
+          "id": "34353e3d-ed3d-4712-88c1-a2578eb153d0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "template ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "declaration",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      },
+      "3a5ae08f-2892-4e5c-8e6f-ea3c04248a71": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946784,
+          "id": "3a5ae08f-2892-4e5c-8e6f-ea3c04248a71",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "template \u003c ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "template-parameter-list",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " \u003e class ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "identifier",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "(",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "opt",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ") = ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "id-expression",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 7
+        }
+      },
+      "4a216756-087f-4139-8a33-bb3ce71b7889": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946781,
+          "id": "4a216756-087f-4139-8a33-bb3ce71b7889",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550521946781,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Syntax"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 5
+        }
+      },
+      "4c41c4c2-7b96-4f12-a94d-c5249e20dc58": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946786,
+          "id": "4c41c4c2-7b96-4f12-a94d-c5249e20dc58",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "nested-name-specifier",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " template ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "simple-template-id",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " ::",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      },
+      "52c8b8b3-536a-4f56-898c-c3e4a31f7705": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946795,
+          "id": "52c8b8b3-536a-4f56-898c-c3e4a31f7705",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347480000,
+          "parent_id": "c1e1c1c8-45da-4504-8c9c-d7e2cc82f2fa",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "foo.cpp",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ":"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 4
+        }
+      },
+      "58ccffed-89d4-400d-a36b-084eefc160c4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "c97a31cc-04c4-42d7-8240-033bf17a885f"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946793,
+          "id": "58ccffed-89d4-400d-a36b-084eefc160c4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347420000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Within a template parameter list, it introduces a "
+              ],
+              [
+                "template template parameter",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/c%2B%2B/460/templates/10838/template-template-parameters"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 7
+        }
+      },
+      "59590766-26f3-40a3-aa89-f5aa43688772": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946791,
+          "id": "59590766-26f3-40a3-aa89-f5aa43688772",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347480000,
+          "parent_id": "ebf5bb3f-0763-4b18-8f48-f9391534e2fc",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "C++"
+              ]
+            ],
+            "title": [
+              [
+                "template \u003cclass T\u003e\nvoid print(T x);\n\ntemplate \u003c\u003e // \u003c-- keyword used in this sense here\nvoid print(const char* s) {\n    // output the content of the string\n    printf(\"%s\\n\", s);\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 10
+        }
+      },
+      "64991ebf-47c4-4019-97bb-d8019bb038f5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "a56980d7-1a81-4369-8864-96165051121d"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946790,
+          "id": "64991ebf-47c4-4019-97bb-d8019bb038f5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347420000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "When followed by a list of template parameters enclosed in "
+              ],
+              [
+                "\u003c\u003e",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", it declares a template such as a "
+              ],
+              [
+                "class template",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/c%2B%2B/460/templates/3999/basic-class-template"
+                  ]
+                ]
+              ],
+              [
+                ", a "
+              ],
+              [
+                "function template",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/c%2B%2B/460/templates/1517/function-templates"
+                  ]
+                ]
+              ],
+              [
+                ", or a "
+              ],
+              [
+                "partial specialization",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/c%2B%2B/460/templates/6253/partial-template-specialization"
+                  ]
+                ]
+              ],
+              [
+                " of an existing template."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 3
+        }
+      },
+      "699c394a-276f-40ae-859a-e6cd2bfdaffb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946785,
+          "id": "699c394a-276f-40ae-859a-e6cd2bfdaffb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "template \u003c ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "template-parameter-list",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " \u003e typename ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "identifier",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "(",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "opt",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ") = ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "id-expression",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " /* since C++17 */"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 7
+        }
+      },
+      "7ea341ed-a78e-4365-8feb-c1fc7862771d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946783,
+          "id": "7ea341ed-a78e-4365-8feb-c1fc7862771d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "export template \u003c ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "template-parameter-list",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " \u003e ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "declaration",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " /* until C++11 */"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      },
+      "864ada57-3442-4291-a5f8-4c9efa1979e5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946785,
+          "id": "864ada57-3442-4291-a5f8-4c9efa1979e5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "template \u003c ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "template-parameter-list",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " \u003e typename …(",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "opt",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ") ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "identifier",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "(",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "opt",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ")",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " /* since C++17 */"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      },
+      "8882cc83-9f72-4e28-99ba-ee82725e8a51": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946788,
+          "id": "8882cc83-9f72-4e28-99ba-ee82725e8a51",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550521946788,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The word "
+              ],
+              [
+                "template",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is a "
+              ],
+              [
+                "keyword",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/c%2B%2B/4891/keywords"
+                  ]
+                ]
+              ],
+              [
+                " with five different meanings in the C++ language, depending on the context."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "94bfa868-4e02-4b90-841b-817c34132524": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "090c8624-b58e-466c-a35f-e09553a6c2cc",
+            "eef0876e-4662-42d7-9a36-9ff9a83492df",
+            "e16e7ebd-d0b0-4a80-9f48-5d17268ad6be",
+            "ff672478-a69f-4d06-9776-9fbbae75a548",
+            "909910fb-151b-407e-a007-22d17f23ea21",
+            "ad7c6ad8-6911-402f-a4fa-faba0944f7ab",
+            "868c1d5d-e3c5-4333-89c0-ea5d08d5ca50",
+            "429615c6-583b-480a-8eb2-6f0413b0a1ff",
+            "ad766ada-295f-430b-aabd-9a1168fa909e",
+            "760e0a6e-f58c-47c1-819c-3a76618d63c8",
+            "39cac0d7-a6d3-4ca5-8ffd-281d8b340323",
+            "94a483d4-33e4-436f-9577-1aa12a0c973a",
+            "f1bd470f-f5a8-468b-bff4-4bb1e330b9c6",
+            "a0d14351-9e82-45f5-b55f-74b3976ea99c",
+            "b0a145a4-a715-4726-8b21-19e9ac5266ef",
+            "8c55b85a-8422-4925-8276-26a10afccfee",
+            "4adad083-1d84-4768-96c7-034fafce2e07"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521920000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "94bfa868-4e02-4b90-841b-817c34132524",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347840000,
+          "parent_id": "ad527dc6-d4a7-420b-9234-94d0b9bfb560",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Templates"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 41
+        }
+      },
+      "963f53f7-52a9-4877-9847-8f428cd7bf0a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946795,
+          "id": "963f53f7-52a9-4877-9847-8f428cd7bf0a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347480000,
+          "parent_id": "c1e1c1c8-45da-4504-8c9c-d7e2cc82f2fa",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "C++"
+              ]
+            ],
+            "title": [
+              [
+                "#include \"foo.h\"\ntemplate \u003cclass T\u003e T identity(T x) { return x; }"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "a56980d7-1a81-4369-8864-96165051121d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946790,
+          "id": "a56980d7-1a81-4369-8864-96165051121d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347480000,
+          "parent_id": "64991ebf-47c4-4019-97bb-d8019bb038f5",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "C++"
+              ]
+            ],
+            "title": [
+              [
+                "template \u003cclass T\u003e\nvoid increment(T\u0026 x) { ++x; }"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 6
+        }
+      },
+      "a6ee547d-bb7d-4d29-a109-f0599fc6f317": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946783,
+          "id": "a6ee547d-bb7d-4d29-a109-f0599fc6f317",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "extern template ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "declaration",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "/* since C++11 */"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      },
+      "abc64c1e-669e-4940-84b0-60a0dd8fa23c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946784,
+          "id": "abc64c1e-669e-4940-84b0-60a0dd8fa23c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "template \u003c ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "template-parameter-list",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " \u003e class …(",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "opt",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ") ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "identifier",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "(",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "opt",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ")",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      },
+      "ad527dc6-d4a7-420b-9234-94d0b9bfb560": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "c97e2222-373b-4879-ba1e-de9da33c4b9c",
+            "069713c9-355d-43e5-bbe3-fe65ccc5d89f",
+            "f6fb0c70-b2a7-438e-8fd0-214354d4363c",
+            "cad79b8f-8e22-4786-b522-3ce3f7989dfb",
+            "9582f39a-18d4-4387-a429-d2d9d9c1c0a3",
+            "4e7523ec-807e-469b-846d-6f0e98a9f133",
+            "c48a63c8-822c-4a23-a960-60de4face6ae",
+            "99e19430-5cdd-423f-8fa9-0e2f0bf264ab",
+            "ea4c768f-8ffd-48a6-bc20-bd19b214545c",
+            "3724ad56-a879-48bf-847e-5adcfcb60c18",
+            "52470773-ddd6-4b1b-ad39-7b26f7b28f00",
+            "ee10cf45-84c7-467c-8068-ea9076a2401a",
+            "6fdcface-f439-4f73-87ef-255a8f378573",
+            "4dc21607-5d04-4a95-bced-ba855fbfa11f",
+            "546689ba-7cc0-49cb-ae94-05172f20d6dc",
+            "193b149e-733b-4344-8898-29dc4a2ef0b0",
+            "7b3003e0-5331-46e9-a216-03a87845d9e4",
+            "fe5135d2-0f28-4675-bccd-611b7222102a",
+            "a47adf4d-f2bb-4f72-84ee-798641440dfd",
+            "903c7a47-fbc0-4b12-81a4-646b290a4e1e",
+            "40e8450d-4736-4ad0-be7d-a2d9307ddf4f",
+            "b886ff5d-614b-4aa9-9e99-851b7998439b",
+            "89d591b2-5143-487b-8a09-144b6b266e4c",
+            "ede1fd12-0013-4e8b-a92d-109c2ef39c10",
+            "8655f492-9c51-4f68-ad52-8b6c1e02a277",
+            "f2a0f008-68d4-4ef0-b159-b4601056dc66",
+            "db03800f-1091-419f-bb8b-e6357b79b0ee",
+            "50a27510-120b-4da0-9ecb-cf15396a0108",
+            "bd95f7bc-834a-4faf-992f-446d54f5fc91",
+            "0789dc55-0210-4292-957d-ed83df8e73af",
+            "d5d40e50-c234-4e34-8c36-6916f8e79960",
+            "5644241e-ceec-479a-8322-e9c1780f1515",
+            "de2aa703-c2f6-4f94-bc50-eb5201c26ac3",
+            "333099ca-9ef1-4569-b9ad-a7a9275c368b",
+            "263edcef-95ee-480a-8c67-1e74662a250a",
+            "9a81e0e2-994e-41b0-aa0f-0bb41311ad7d",
+            "1146c4bd-8317-421d-b231-ebcb0eff5721",
+            "ee86edbe-8dd9-497a-a24c-fa516272404e",
+            "13fedea6-df65-4996-9280-9cedb29d5f94",
+            "b96c747c-3d87-49a0-b2bb-264f7c11b216",
+            "2457e2b5-2a2a-4489-9eac-adb5cebfd9b8",
+            "ecf8cc46-eac4-4c36-a422-ed2cca054451",
+            "cbd900b3-1684-4f0d-977a-5a5b2a20aff3",
+            "26e69b2d-1c6d-47ea-af87-47fa9cfbdf56",
+            "cb822004-fe61-4bd8-91b8-d45b2acf0576",
+            "efdc4616-d5e4-4dce-b49c-941c07a9ac4b",
+            "43b2d3b6-c6aa-4441-b665-3932542c711c",
+            "6980d61a-f1fa-491f-8409-409e295a4b03",
+            "e197edf1-7913-4c71-bf9f-78feec182413",
+            "a3104ba4-9a8b-4f2a-ad89-25f36d3b9595",
+            "c0487639-ff5b-4e90-a0b3-9fe411676c2c",
+            "402ef4da-a4e3-4503-ab08-9a4aa56821b5",
+            "3b939fe5-bf07-416e-b626-9b4dcfb5abc4",
+            "94bfa868-4e02-4b90-841b-817c34132524",
+            "8a295383-3e95-42dc-b126-f5d5d4d9927a",
+            "afe087c6-fdaf-4e79-b087-b5329772ae68",
+            "139ade48-e995-4c51-9c31-2edc9475f16e",
+            "3b14aac5-20b3-4de0-9a04-adc1cc273aec",
+            "2be9c7d5-be12-439a-8968-ad057c67187a",
+            "71517390-0244-456d-87c4-82c582ca8abf",
+            "f1b860db-be5a-41ed-a67b-b7b0181ec59f",
+            "d548e856-41b8-49c8-a801-044c518c9fe5",
+            "83f01298-2804-4599-8deb-99728a5d557a",
+            "0b17f7b9-11d1-4229-931e-966fb51d1ba9",
+            "eb50f34f-bfa8-4e16-9ad9-d114eb1d34d9",
+            "96325b08-db02-4f4f-a7a3-7510a746dbe2",
+            "5a1044bb-eec6-47e0-932c-1a000fc67e20",
+            "48a240ac-2fc8-4208-bd39-82f2c3d27cb4",
+            "2ed71a30-e220-47b0-b0e7-1bc14fce30c0",
+            "ea515dbf-689d-48fb-bfb8-93f8853d7ec0",
+            "899c3027-a75e-4a44-9144-10a53c6a2c11",
+            "e1dd94ae-aa5a-4f89-b959-f2ec61771796",
+            "fcd2d991-afe0-4c4f-a9fe-760a139ae1f3",
+            "d0bc06f8-edea-49a0-bdbb-c1bef0d073bd",
+            "6c5aa9dd-7698-4690-bd9e-644763376917",
+            "5fbdea23-a3bd-48e3-9bb9-c7ca69fd9aa2",
+            "44b9891c-fe65-4aa6-8ac6-b623709b7c02",
+            "904db18b-f9e4-4135-accd-8cab1b7efd09",
+            "a29d7b5a-3989-43f1-8efa-86ef82101f43",
+            "c477f25f-108c-44a4-88a0-7be0b1a8f442",
+            "1c542776-d859-4f7e-889a-d3f2c5b93f45",
+            "f05fc49e-c44c-4e93-b1f0-a05de793c5bd",
+            "6770e597-215e-480b-b658-f449f175ed3c",
+            "d3696e4f-8789-4401-af6c-2f073d356228",
+            "5dbd715a-2e96-4062-9cda-4e181e63af5e",
+            "1e5df2e7-ee0b-4037-ab62-15139a784f28",
+            "10c1e1fe-bf0e-4f71-b1f2-173539570a03",
+            "bd2b6b7e-15fe-4593-9be0-b9cb97312af0",
+            "106e396c-5cd1-4e4b-a70c-30ba85edca56",
+            "9a0f90cc-6905-4660-8751-556567fcd897",
+            "1b4aabcd-82e1-426e-b2cd-5f1a6cfa8e60",
+            "e6a35ae0-352c-42a0-9c74-633d5c76667f",
+            "e2db6936-0727-4a61-bd9e-8712c9355a28",
+            "02d273f3-3937-4a5b-86af-fbaa7082fc98",
+            "5eb58f1d-da3c-4ebe-aff3-c98a60cca1a7",
+            "289db939-0630-4d39-8987-cd9042ba485d",
+            "5b32901d-2e27-4970-ba74-be06a103aa30",
+            "4f03abce-5ffe-4575-9601-52e18b342ca2",
+            "4a738092-15a0-42a9-8178-c62e1f86c80c",
+            "f6be37ea-b1ea-4d12-902e-1e55a74f3c28",
+            "66d100a7-32a0-4479-9f62-57e81c004eb6",
+            "b7131d5c-8602-4af3-82a7-7c00e59ad384",
+            "2d35c52b-5348-43d8-baf3-741d0b68c7ff",
+            "8f46fba9-ba8b-4eaf-bb5f-2370fa61981b",
+            "3b6d2215-7c30-4151-b9f1-7d1dc6e9d0de",
+            "b41d10e9-7c12-482e-a1ff-612580407bc1",
+            "5080976c-532d-492c-9735-9abf7dc903ae",
+            "a0e8b380-dc71-4c5e-9564-5a6a96d413b0",
+            "c70aafee-9819-4bd7-9b37-69e9f016666b",
+            "2f06e164-6745-4c46-9402-92f51f9f9266",
+            "b2086806-a259-48af-adcb-172245e66aa0",
+            "0dfb5c8c-d986-4536-97a3-b3f543cfd7fa",
+            "14d06bc1-b112-4b2f-a0a3-67a8dd9c958c",
+            "4f68e8c3-ce07-490a-ad1e-1605c992a0ab",
+            "f2023690-0f94-491a-ac9b-9c913f18d32c",
+            "48c65d67-f77e-4b0b-b90a-83ab75bd68a9",
+            "fc7b0093-a386-4cfb-9e24-ebd1f41fa3fa",
+            "1e648ce1-cc7e-4997-bf6e-9a33d2ac504d",
+            "e105eeaa-e8c4-4f5c-b412-90c65bdf217a",
+            "d5db2d0f-24c4-4bf6-a1d3-fc170bfb1b75",
+            "b4ae7d5c-1d56-46c7-a0d9-9af16a5bad5f",
+            "13e1fda6-ad15-4061-a10e-d4a621970eb7",
+            "29483c03-d3f3-426c-bd91-6dba06c1c86f",
+            "5731e795-bc6e-4f67-a20f-e1ea328ebb4e",
+            "ffc91cd7-ce2e-43bd-83f9-dd500633c0a2",
+            "50856007-ed7d-41fb-8551-374ecae3e24b",
+            "69b8fd2c-ca44-4dcb-84cc-49ed820592d4",
+            "cbbee582-eb1d-4f69-a297-e10ba2cd83ab",
+            "e3f32187-64e1-4609-b294-74d479b50a70",
+            "dadb2eed-6939-4a7d-9afa-46a0514a66be",
+            "7933074e-4123-4c04-8235-24ded3b719ed",
+            "3e515719-4b1e-4dc7-9955-45485e25e7d3",
+            "c793f95d-c3c9-4e23-a753-d7b7871c3bbf",
+            "f0479f5d-620b-453a-b476-4c9e9418b846",
+            "020f0e91-0de0-4617-bb97-e4863949153d",
+            "6dc44543-880c-4829-bd86-818b80f5aac6",
+            "0cb787c7-79fb-4e4c-a8f2-c95bfa483953",
+            "4e04587c-419b-4bb3-bcb4-efe6a43e35e9",
+            "46b28c54-a7e1-4286-9bdc-69ae87c3bad3",
+            "5e61d351-5c67-4222-b553-e5a42137412d",
+            "e819fb9f-77e3-490d-9b3b-288189045e39",
+            "b1cbbef7-66d3-49c3-aaff-f598af5cdf47",
+            "05715f55-0a2a-4c15-8aa1-b8c1e8aa98a4",
+            "f0a4483b-95d9-4c82-8e41-15c96d864674",
+            "2dfdecd0-c228-4dc2-941d-0a4e53390d1c",
+            "2172f363-6ba3-4c7d-b75a-95189cc14546",
+            "6f1bdf3d-1474-4baa-98bd-f39758d46389",
+            "03d0218f-3acf-4c09-8902-6b09a4f35be4",
+            "5291840b-1ac0-4473-9bc3-691467a51c05",
+            "83d53c9b-bf14-42a2-8fb8-238a2fcb905a",
+            "8e4180b2-04a8-47ee-8473-9c3c632e261a",
+            "10708491-24c3-48f4-b554-d2665157037f"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521908832,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "ad527dc6-d4a7-420b-9234-94d0b9bfb560",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570604640000,
+          "parent_id": "204dd4d3-a72c-4a9e-ba37-ebd5fc5ba989",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential C++"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 634
+        }
+      },
+      "af9b9678-f6e8-44c5-bcda-b8d480d0baa8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946795,
+          "id": "af9b9678-f6e8-44c5-bcda-b8d480d0baa8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347480000,
+          "parent_id": "c1e1c1c8-45da-4504-8c9c-d7e2cc82f2fa",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Before C++11, a template could be declared with the "
+              ],
+              [
+                "export",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " "
+              ],
+              [
+                "keyword",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/c%2B%2B/4891/keywords"
+                  ]
+                ]
+              ],
+              [
+                ", making it into an "
+              ],
+              [
+                "exported",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " template. An exported template’s definition does not need to be present in every translation unit in which the template is instantiated. For example, the following was supposed to work:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 4
+        }
+      },
+      "bd0d1eb2-d7d4-4d7b-b467-8676e4a8ee50": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946796,
+          "id": "bd0d1eb2-d7d4-4d7b-b467-8676e4a8ee50",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "c1e1c1c8-45da-4504-8c9c-d7e2cc82f2fa",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Due to difficulty of implementation, the "
+              ],
+              [
+                "export",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " keyword was not supported by most major compilers. It was removed in C++11; now, it is illegal to use the "
+              ],
+              [
+                "export",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " keyword at all. Instead, it is usually necessary to define templates in headers (in contrast to non-template functions, which are usually "
+              ],
+              [
+                "not",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " defined in headers). See "
+              ],
+              [
+                "http://stackoverflow.com/questions/495021/why-can-templates-only-be-implemented-in-the-header-file",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/questions/495021/why-can-templates-only-be-implemented-in-the-header-file"
+                  ]
+                ]
+              ],
+              [
+                " "
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 7
+        }
+      },
+      "c1817955-2272-42c5-8cc9-8b49b6f2f1d7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946785,
+          "id": "c1817955-2272-42c5-8cc9-8b49b6f2f1d7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "postfix-expression",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " . template ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "id-expression",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      },
+      "c1e1c1c8-45da-4504-8c9c-d7e2cc82f2fa": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "097eeec4-a391-4411-88ae-5e7bcb4ef943",
+            "af9b9678-f6e8-44c5-bcda-b8d480d0baa8",
+            "2444fda2-5f44-4963-b70b-cda207ae3ebb",
+            "0cffea22-9a0a-49e1-907a-334e04df93bd",
+            "52c8b8b3-536a-4f56-898c-c3e4a31f7705",
+            "963f53f7-52a9-4877-9847-8f428cd7bf0a",
+            "1821ef9e-66fd-41a0-a1ae-5873cfe12a9a",
+            "d19e9e03-c03d-40fc-9121-eb08628ead8a",
+            "bd0d1eb2-d7d4-4d7b-b467-8676e4a8ee50"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946794,
+          "id": "c1e1c1c8-45da-4504-8c9c-d7e2cc82f2fa",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347480000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "After the scope resolution operator "
+              ],
+              [
+                "::",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and the class member access operators "
+              ],
+              [
+                ".",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "-\u003e",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", it specifies that the following name is a template."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 11
+        }
+      },
+      "c97a31cc-04c4-42d7-8240-033bf17a885f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946793,
+          "id": "c97a31cc-04c4-42d7-8240-033bf17a885f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347480000,
+          "parent_id": "58ccffed-89d4-400d-a36b-084eefc160c4",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "C++"
+              ]
+            ],
+            "title": [
+              [
+                "template \u003cclass T, template \u003cclass U\u003e class Alloc\u003e\n//                 ^^^^^^^^ keyword used in this sense here\nclass List {\n    struct Node {\n        T value;\n        Node* next;\n    };\n    Alloc\u003cNode\u003e allocator;\n    Node* allocate_node() {\n        return allocator.allocate(sizeof(T));\n    }\n    // ...\n};"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 10
+        }
+      },
+      "ccd8e4d1-dda3-4ce6-94aa-96040772b6a7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "2b4701f3-8a95-4e96-b1ac-dd7cf411163d"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946792,
+          "id": "ccd8e4d1-dda3-4ce6-94aa-96040772b6a7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347420000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "When followed by a declaration without "
+              ],
+              [
+                "\u003c\u003e",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", it forms an "
+              ],
+              [
+                "explicit instantiation",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/c%2B%2B/460/templates/28734/explicit-instantiation"
+                  ]
+                ]
+              ],
+              [
+                " declaration or definition."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 3
+        }
+      },
+      "d0ad5816-ceb4-4bd6-9edb-e33990d840c9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946781,
+          "id": "d0ad5816-ceb4-4bd6-9edb-e33990d840c9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550521946781,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Classes, functions, and (since C++14) variables can be templated. A template is a piece of code with some free parameters that will become a concrete class, function, or variable when all parameters are specified. Parameters can be types, values, or themselves templates. A well-known template is "
+              ],
+              [
+                "std::vector",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", which becomes a concrete container type when the element type is specified, "
+              ],
+              [
+                "e.g.,",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " "
+              ],
+              [
+                "std::vector\u003cint\u003e",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "d19e9e03-c03d-40fc-9121-eb08628ead8a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946796,
+          "id": "d19e9e03-c03d-40fc-9121-eb08628ead8a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347480000,
+          "parent_id": "c1e1c1c8-45da-4504-8c9c-d7e2cc82f2fa",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "C++"
+              ]
+            ],
+            "title": [
+              [
+                "#include \"foo.h\"\nint main() {\n    const int x = identity(42); // x is 42\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 9
+        }
+      },
+      "e1e04db3-3a22-4a91-8b7d-dc0b8fec444b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946786,
+          "id": "e1e04db3-3a22-4a91-8b7d-dc0b8fec444b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550521946786,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Remarks"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 5
+        }
+      },
+      "ebf5bb3f-0763-4b18-8f48-f9391534e2fc": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "59590766-26f3-40a3-aa89-f5aa43688772"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946791,
+          "id": "ebf5bb3f-0763-4b18-8f48-f9391534e2fc",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347420000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "When followed by an "
+              ],
+              [
+                "empty",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " "
+              ],
+              [
+                "\u003c\u003e",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", it declares a an "
+              ],
+              [
+                "explicit (full) specialization",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/c%2B%2B/460/templates/5054/template-specialization"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 3
+        }
+      },
+      "ec58b38d-a77d-4513-8c2f-9b04a1cc737a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946783,
+          "id": "ec58b38d-a77d-4513-8c2f-9b04a1cc737a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552347540000,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "template \u003c\u003e ",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "declaration",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      },
+      "fa563af2-2302-4359-89b8-4a5fd50c631b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550521946778,
+          "id": "fa563af2-2302-4359-89b8-4a5fd50c631b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550521946778,
+          "parent_id": "090c8624-b58e-466c-a35f-e09553a6c2cc",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Introduction"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 5
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
