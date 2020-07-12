@@ -1,0 +1,1513 @@
+2486 1594557946998 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+      "table": "block"
+    }
+  ]
+}
+Response:+2286
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "815cc2e0-03fa-42d8-8b83-f8d26fc4a1c2",
+          "4d8f807e-fb08-460f-8434-898ab00d5695",
+          "c208086f-8c28-40fa-8078-89c8b537ddf0",
+          "8fa5900a-7f7c-4fcd-8e45-249bbdb2b54b",
+          "75b3df10-095c-4e38-bdd0-fee840e6e93b",
+          "642b3c4f-9e30-4aa8-8396-13d7811a039a",
+          "46e20c10-ab13-4eca-984d-53fa474e8076",
+          "29077177-7d96-48eb-b0ba-5e381b105de6",
+          "e1cf2762-e0a4-4358-bb6a-7799119f196e",
+          "fa71dbc3-58a5-4322-99b1-36f41e55790b",
+          "4ce227ed-c5ed-455b-b127-40ba3359c369",
+          "5b2ea38f-eb7d-4834-a873-53f119787cf5",
+          "079c5ab4-b05c-4e58-be30-e95cbdfc447b",
+          "e66434cb-b06a-4550-8aa0-2a23f2523c11",
+          "309e2200-7005-4dc5-9f51-15aafa4384f8",
+          "6c390f6b-aba5-48b7-b769-578f259d1bfb",
+          "7ef92e2e-3013-4aac-a2e6-3d00eff8165d",
+          "71e4cdf4-9f42-4561-af1c-35d1a6950b55",
+          "5d893f8c-dce4-4251-9f36-b34701d147f9",
+          "89543069-a5fb-4242-99ee-cc9988a0f69f",
+          "662c2961-e035-4fa4-90bf-8b1de50f713b",
+          "91ebd7c8-d79e-4ffc-9b4e-58dc62ee4704",
+          "d186b2da-fdeb-44f9-9e3e-336213441dc8",
+          "cfcc19e3-535f-4c3f-bf3d-83e07f3c778f",
+          "28effc76-1732-4d46-8716-67033bd1fecb"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1551936616775,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551936616775,
+        "parent_id": "218166d2-ae4c-4856-827d-6080353375ec",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "switch Statements"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+47392 1594557946999 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+  "verticalColumns": false
+}
+Response:+47151
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "079c5ab4-b05c-4e58-be30-e95cbdfc447b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616772,
+          "id": "079c5ab4-b05c-4e58-be30-e95cbdfc447b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616772,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "When the value of "
+              ],
+              [
+                "a",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is 1 or 2, "
+              ],
+              [
+                "a is 1 or 2",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "a is 1, 2 or 3",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " will both be printed. When "
+              ],
+              [
+                "a",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is 3, only "
+              ],
+              [
+                "a is 1, 2 or 3",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " will be printed. Otherwise, "
+              ],
+              [
+                "a is neither 1, 2 nor 3",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " will be printed."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "218166d2-ae4c-4856-827d-6080353375ec": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "37443304-75b2-4275-98c5-e68ac01c0775",
+            "74aba10d-a91e-44e7-bca2-02f4a84d8d82",
+            "18ebfaed-862e-4220-88df-95d32332e129",
+            "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+            "bb0f2cd7-62ba-449e-9e35-2cb3c9eac3ea",
+            "671981a0-d44c-4a64-8012-deec256b3a24"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936600000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "218166d2-ae4c-4856-827d-6080353375ec",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936780000,
+          "parent_id": "84ae4145-718e-4b7b-8cb4-3cf10ee4db6a",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Selection statements"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 38
+        }
+      },
+      "28effc76-1732-4d46-8716-67033bd1fecb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616775,
+          "id": "28effc76-1732-4d46-8716-67033bd1fecb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616775,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "void f(enum msg_type t)\n{\n   if (!is_msg_type_valid(t)) {\n      // Handle this unlikely error\n   }\n\n   switch(t) { \n    // Same code than before\n   }\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "29077177-7d96-48eb-b0ba-5e381b105de6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616768,
+          "id": "29077177-7d96-48eb-b0ba-5e381b105de6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616768,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "default:",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is used to describe that when the value didn’t match any of the choices for "
+              ],
+              [
+                "case n:",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". It is a good practice to include a "
+              ],
+              [
+                "default",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " case in every switch statement to catch unexpected behavior."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "309e2200-7005-4dc5-9f51-15aafa4384f8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616773,
+          "id": "309e2200-7005-4dc5-9f51-15aafa4384f8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616773,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The best example is using a "
+              ],
+              [
+                "switch",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " on an "
+              ],
+              [
+                "enum",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "46e20c10-ab13-4eca-984d-53fa474e8076": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616768,
+          "id": "46e20c10-ab13-4eca-984d-53fa474e8076",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616768,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "case n:",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is used to describe where the execution flow will jump in when the value passed to "
+              ],
+              [
+                "switch",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " statement is "
+              ],
+              [
+                "n",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                ". "
+              ],
+              [
+                "n",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " must be compile-time constant and the same "
+              ],
+              [
+                "n",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " can exist at most once in one "
+              ],
+              [
+                "switch",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " statement."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "4ce227ed-c5ed-455b-b127-40ba3359c369": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616772,
+          "id": "4ce227ed-c5ed-455b-b127-40ba3359c369",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616772,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Below is an example that shows effects of the absence of "
+              ],
+              [
+                "break;",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ":"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "4d8f807e-fb08-460f-8434-898ab00d5695": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616767,
+          "id": "4d8f807e-fb08-460f-8434-898ab00d5695",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616767,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "An example usage of "
+              ],
+              [
+                "switch",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " statement is like this:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "5b2ea38f-eb7d-4834-a873-53f119787cf5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616772,
+          "id": "5b2ea38f-eb7d-4834-a873-53f119787cf5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616772,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "int a = 1;\n\nswitch (a) {\ncase 1:\ncase 2:\n    puts(\"a is 1 or 2\");\ncase 3:\n    puts(\"a is 1, 2 or 3\");\n    break;\ndefault:\n    puts(\"a is neither 1, 2 nor 3\");\n    break;\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "5d893f8c-dce4-4251-9f36-b34701d147f9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616774,
+          "id": "5d893f8c-dce4-4251-9f36-b34701d147f9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616774,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "for the same reason, if you add a new value to the "
+              ],
+              [
+                "enum",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", you will be notified of all the places where you forgot to handle the new value (with a "
+              ],
+              [
+                "default",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " case, you would need to manually explore your code searching for such cases)"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "642b3c4f-9e30-4aa8-8396-13d7811a039a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616768,
+          "id": "642b3c4f-9e30-4aa8-8396-13d7811a039a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616768,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If the value of "
+              ],
+              [
+                "a",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is 1 when the "
+              ],
+              [
+                "switch",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " statement is used, "
+              ],
+              [
+                "a is 1",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " will be printed. If the value of "
+              ],
+              [
+                "a",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is 2 then, "
+              ],
+              [
+                "a is 2",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " will be printed. Otherwise, "
+              ],
+              [
+                "a is neither 1 nor 2",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " will be printed."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "662c2961-e035-4fa4-90bf-8b1de50f713b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616775,
+          "id": "662c2961-e035-4fa4-90bf-8b1de50f713b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616775,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "handling each "
+              ],
+              [
+                "enum",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " value makes the code self explanatory as you can’t hide behind a wild card, you must explicitly handle each of them."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "6c390f6b-aba5-48b7-b769-578f259d1bfb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616773,
+          "id": "6c390f6b-aba5-48b7-b769-578f259d1bfb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616773,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "enum msg_type { ACK, PING, ERROR };\nvoid f(enum msg_type t)\n{\n  switch (t) {\n  case ACK:\n    // do nothing\n    break;\n  case PING:\n    // do something\n    break;\n  case ERROR:\n    // do something else\n    break;\n  }\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "71e4cdf4-9f42-4561-af1c-35d1a6950b55": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616774,
+          "id": "71e4cdf4-9f42-4561-af1c-35d1a6950b55",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616774,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "most compilers will report a warning if you don’t handle a value (this would not be reported if a "
+              ],
+              [
+                "default",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " case were present)"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "75b3df10-095c-4e38-bdd0-fee840e6e93b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616767,
+          "id": "75b3df10-095c-4e38-bdd0-fee840e6e93b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616767,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "int a = 1;\n\nif (a == 1) {\n    puts(\"a is 1\");\n} else if (a == 2) {\n    puts(\"a is 2\");\n} else {\n    puts(\"a is neither 1 nor 2\");\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "763c5ab4-511d-49e3-b3a2-da4091cf550e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "815cc2e0-03fa-42d8-8b83-f8d26fc4a1c2",
+            "4d8f807e-fb08-460f-8434-898ab00d5695",
+            "c208086f-8c28-40fa-8078-89c8b537ddf0",
+            "8fa5900a-7f7c-4fcd-8e45-249bbdb2b54b",
+            "75b3df10-095c-4e38-bdd0-fee840e6e93b",
+            "642b3c4f-9e30-4aa8-8396-13d7811a039a",
+            "46e20c10-ab13-4eca-984d-53fa474e8076",
+            "29077177-7d96-48eb-b0ba-5e381b105de6",
+            "e1cf2762-e0a4-4358-bb6a-7799119f196e",
+            "fa71dbc3-58a5-4322-99b1-36f41e55790b",
+            "4ce227ed-c5ed-455b-b127-40ba3359c369",
+            "5b2ea38f-eb7d-4834-a873-53f119787cf5",
+            "079c5ab4-b05c-4e58-be30-e95cbdfc447b",
+            "e66434cb-b06a-4550-8aa0-2a23f2523c11",
+            "309e2200-7005-4dc5-9f51-15aafa4384f8",
+            "6c390f6b-aba5-48b7-b769-578f259d1bfb",
+            "7ef92e2e-3013-4aac-a2e6-3d00eff8165d",
+            "71e4cdf4-9f42-4561-af1c-35d1a6950b55",
+            "5d893f8c-dce4-4251-9f36-b34701d147f9",
+            "89543069-a5fb-4242-99ee-cc9988a0f69f",
+            "662c2961-e035-4fa4-90bf-8b1de50f713b",
+            "91ebd7c8-d79e-4ffc-9b4e-58dc62ee4704",
+            "d186b2da-fdeb-44f9-9e3e-336213441dc8",
+            "cfcc19e3-535f-4c3f-bf3d-83e07f3c778f",
+            "28effc76-1732-4d46-8716-67033bd1fecb"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616775,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616775,
+          "parent_id": "218166d2-ae4c-4856-827d-6080353375ec",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "switch Statements"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "7ef92e2e-3013-4aac-a2e6-3d00eff8165d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616773,
+          "id": "7ef92e2e-3013-4aac-a2e6-3d00eff8165d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616773,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "There are multiple advantages of doing this:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "815cc2e0-03fa-42d8-8b83-f8d26fc4a1c2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616764,
+          "id": "815cc2e0-03fa-42d8-8b83-f8d26fc4a1c2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616764,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "switch",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " statements are useful when you want to have your program do many different things according to the value of a particular test variable."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "84ae4145-718e-4b7b-8cb4-3cf10ee4db6a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "70354277-e3ea-4870-b354-e4ccea2f776f",
+            "c88395f2-cfa3-4917-9b1d-77ad5ef5da03",
+            "033ae011-39fb-4a86-9a89-54971c729ce8",
+            "218cbf42-b3ba-4b2a-bdab-e522009865b7",
+            "af9762cd-d032-4a74-a2b8-b8413c2edefb",
+            "c613c743-331e-4cb0-8344-4963dbf825f3",
+            "eff989d8-e4d4-4f97-952e-6c58e46dfb73",
+            "44b99e73-a03b-41cc-b542-2de7e97ca081",
+            "68e74303-cec6-4c9d-a46e-83274bc84bf4",
+            "6ae1f6f3-0a87-4bec-b9ca-2ef03a059422",
+            "f3c54523-5f2c-4d48-a50e-cd230eee34ae",
+            "9b4c9f4c-5f47-45ba-86a9-461b3aaa1198",
+            "b81cd45f-aa26-4f19-8238-7b90dd64a769",
+            "fb6df079-bba6-489e-ac6a-3ea61d24e7af",
+            "262dadd4-3655-45db-88b6-06e23e8e3a7b",
+            "9dc6ce73-bdfa-4d4d-b5a1-db84c9227865",
+            "f4db91d9-e502-4cf2-b8cc-184cb2d19911",
+            "1e14553b-8aea-44fb-a0fe-fbc893ff529a",
+            "fceea03f-c65b-4f89-8e06-817d0fcf3348",
+            "fcadea6a-df33-4395-8abc-4c71f5599a2d",
+            "690adfe7-1f94-4d22-83ad-47d3971f3325",
+            "fb1c49da-f858-420f-804f-317776d975e9",
+            "fe373c8a-dc77-4fbb-9ceb-fe91a58a5732",
+            "92dc051b-09a3-4930-9dda-0fb318b57610",
+            "9104b65f-88ef-4b77-89d3-248fa4934ff0",
+            "f3ac34eb-110d-486b-9e30-6bd30082bba0",
+            "ce0d7992-bb1e-4e62-ab26-2f99a9a2f78d",
+            "b76c53dc-9124-4a10-9817-490e3504e93e",
+            "042e8ddf-c9c4-4b73-8432-0a569a4f0a8a",
+            "3615ca16-3d26-4800-98f4-4da1a5c4bef4",
+            "873798b2-99a2-4a3f-9d7c-e6e95e01396f",
+            "f9df1d91-a33b-4691-8612-45ec5ebf45e8",
+            "218166d2-ae4c-4856-827d-6080353375ec",
+            "d3fd04e6-166e-44c4-8df3-6eb488aec6fb",
+            "476e4bcf-2254-4ffd-82b2-b3dcbd9fdf01",
+            "70e63802-c8af-4573-9d30-82507679f19d",
+            "2042e9e8-170e-4e88-a3c5-041aec6ba49b",
+            "a25d942b-f182-4a59-8930-268903693536",
+            "bbc16be7-a6da-4b3f-9e55-a68f0bcdb261",
+            "ae1ce0ef-9ced-4caa-9c8d-f14041e087b0",
+            "56054c40-d551-420f-9fd8-a44a9550fd1d",
+            "a32e93b8-a175-40b5-b72f-e58c30d058bb",
+            "86031ef1-ffce-4374-a32d-1f1886dc6593",
+            "b0240e66-8da1-4190-bbe5-f47d5b561ed2",
+            "898403c6-8861-4eca-b6cf-2fee9068ecce",
+            "5e44bd54-3362-4b1a-934b-acecce2afc7f",
+            "5c0a653d-4ce1-4234-bf16-7d29dc2f993e",
+            "ae726a5e-8d12-41b2-9bd8-209da2cca404",
+            "c45bb8ec-af6d-4f58-b094-cc6980d363e1",
+            "f0f16c22-34d6-4125-8a87-63fdd135ef20",
+            "5e4385c8-606f-406e-b1af-53b610c5bf4a",
+            "e16223c3-400e-4968-bddc-3cc5edf4c5c0",
+            "8ed525aa-8fab-4ee4-9fff-5b43085094dd",
+            "f4f6d384-72dd-4d02-aa47-f083a22f6481",
+            "d4a53a79-3ec2-426e-ac50-24d51d19d403",
+            "52978246-4aff-47a0-915a-a90feded64cd",
+            "19611889-e796-4311-ab76-561c41c4850a",
+            "54f188ad-c5ec-49d7-8bf7-1c5c08e72d2e",
+            "27ddd518-401c-43c0-bb68-381e630e5cfb",
+            "109e287f-796b-4acd-8b1b-dae5f45129bd",
+            "dab23b65-514a-455a-a0f6-c63668012233",
+            "cb11a718-ba93-4278-a486-b649224f5923",
+            "9d53db3a-6a86-4feb-bbea-f4bfb502ed5f",
+            "af5ef860-337b-4d68-aa37-de9259c85852",
+            "5ebf8b4e-135f-4d2e-8d6e-1f6b532dedb7"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551935474458,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "84ae4145-718e-4b7b-8cb4-3cf10ee4db6a",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571298480000,
+          "parent_id": "1ad0beae-92aa-49e1-add1-7960b1db8484",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential C"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 106
+        }
+      },
+      "89543069-a5fb-4242-99ee-cc9988a0f69f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616775,
+          "id": "89543069-a5fb-4242-99ee-cc9988a0f69f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616775,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The reader does not need to figure out “what is hidden by the "
+              ],
+              [
+                "default:",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "”, whether there other "
+              ],
+              [
+                "enum",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " values or whether it is a protection for “just in case”. And if there are other "
+              ],
+              [
+                "enum",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " values, did the coder intentionally use the "
+              ],
+              [
+                "default",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " case for them or is there a bug that was introduced when he added the value?"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "8fa5900a-7f7c-4fcd-8e45-249bbdb2b54b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616767,
+          "id": "8fa5900a-7f7c-4fcd-8e45-249bbdb2b54b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616767,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This example is equivalent to"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "91ebd7c8-d79e-4ffc-9b4e-58dc62ee4704": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616775,
+          "id": "91ebd7c8-d79e-4ffc-9b4e-58dc62ee4704",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616775,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Nevertheless, you can’t prevent someone to write evil code like:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "c208086f-8c28-40fa-8078-89c8b537ddf0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616767,
+          "id": "c208086f-8c28-40fa-8078-89c8b537ddf0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616767,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "int a = 1;\n\nswitch (a) {\ncase 1:\n    puts(\"a is 1\");\n    break;\ncase 2:\n    puts(\"a is 2\");\n    break;\ndefault:\n    puts(\"a is neither 1 nor 2\");\n    break;\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "cfcc19e3-535f-4c3f-bf3d-83e07f3c778f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616775,
+          "id": "cfcc19e3-535f-4c3f-bf3d-83e07f3c778f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616775,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Thus you may add an extra check before your switch to detect it, if you really need it."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "d186b2da-fdeb-44f9-9e3e-336213441dc8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616775,
+          "id": "d186b2da-fdeb-44f9-9e3e-336213441dc8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616775,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "enum msg_type t = (enum msg_type)666; // I'm evil"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "e1cf2762-e0a4-4358-bb6a-7799119f196e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616770,
+          "id": "e1cf2762-e0a4-4358-bb6a-7799119f196e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616770,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "A "
+              ],
+              [
+                "break;",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " statement is required to "
+              ],
+              [
+                "jump out",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/c/5568/jump-statements"
+                  ]
+                ]
+              ],
+              [
+                " of the "
+              ],
+              [
+                "switch",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " block."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "e66434cb-b06a-4550-8aa0-2a23f2523c11": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616772,
+          "id": "e66434cb-b06a-4550-8aa0-2a23f2523c11",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616772,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Note that the "
+              ],
+              [
+                "default",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " case is not necessary, especially when the set of values you get in the "
+              ],
+              [
+                "switch",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is finished and known at compile time."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "fa71dbc3-58a5-4322-99b1-36f41e55790b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936616771,
+          "id": "fa71dbc3-58a5-4322-99b1-36f41e55790b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936616771,
+          "parent_id": "763c5ab4-511d-49e3-b3a2-da4091cf550e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Note:",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " If you accidentally forget to add a "
+              ],
+              [
+                "break",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " after the end of a "
+              ],
+              [
+                "case",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", the compiler will assume that you intend to "
+              ],
+              [
+                "“fall through”",
+                [
+                  [
+                    "a",
+                    "https://en.wikipedia.org/wiki/Switch_statement#Fallthrough"
+                  ]
+                ]
+              ],
+              [
+                " and all the subsequent case statements, if any, will be executed (unless a "
+              ],
+              [
+                "break",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " statement is found in any of the subsequent cases), regardless of whether the subsequent case statement(s) match or not. This particular property is used to implement "
+              ],
+              [
+                "Duff’s Device",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/c/5151/iteration-statements-loops-for-while-do-while/28504/loop-unrolling-and-duffs-device"
+                  ]
+                ]
+              ],
+              [
+                ". This behavior is often considered a flaw in the C language specification."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

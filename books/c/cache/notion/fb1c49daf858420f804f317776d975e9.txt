@@ -1,0 +1,505 @@
+1702 1594557931218 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "fb1c49da-f858-420f-804f-317776d975e9",
+      "table": "block"
+    }
+  ]
+}
+Response:+1502
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "800c314e-66fc-491c-ab63-ed166a2795d3",
+          "be1c5d2e-1475-4c76-aed1-ec1572626cff",
+          "49063ccc-888c-44e9-bd52-2cc26253becf",
+          "0c4a8045-bc73-4a7c-a548-6412b6d84dd4",
+          "2c31fdbb-d537-411f-bf94-9b91d92be773",
+          "2c8b581c-456a-4117-883b-82d8a9c2067e"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1551936240000,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "fb1c49da-f858-420f-804f-317776d975e9",
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551936420000,
+        "parent_id": "84ae4145-718e-4b7b-8cb4-3cf10ee4db6a",
+        "parent_table": "block",
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+          }
+        ],
+        "properties": {
+          "title": [
+            [
+              "Aliasing and effective type"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 44
+      }
+    }
+  ]
+}
+16939 1594557931219 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "fb1c49da-f858-420f-804f-317776d975e9",
+  "verticalColumns": false
+}
+Response:+16698
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "0c4a8045-bc73-4a7c-a548-6412b6d84dd4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "cb6b7a45-1cb8-42af-be8c-346066472b77",
+            "c9ff343a-2355-4aea-bbab-1482c55d5063",
+            "ed3e3cdf-a357-4542-92e3-071c87ffc4eb",
+            "eac00890-b211-4836-a8e4-4e6b00168cc2",
+            "1e91b945-ba56-4c06-b3e6-b4bd9b0afe3f",
+            "0f5d7b06-13a3-43b8-85b1-320803c6c9a6",
+            "7e95d27c-c2e9-4497-857f-72d1a978c592",
+            "0da73d69-c355-46f6-8756-b4d3f85226e7"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936263197,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "0c4a8045-bc73-4a7c-a548-6412b6d84dd4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936263197,
+          "parent_id": "fb1c49da-f858-420f-804f-317776d975e9",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Changing bytes"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "2c31fdbb-d537-411f-bf94-9b91d92be773": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "de639905-6c70-4202-abf9-6dd4c21a6af5",
+            "55ae37ea-51ed-44a6-8419-efda0771314d",
+            "bf0f7b1c-39c3-4e09-ae49-043cf215b72c",
+            "51fb4ebb-c229-4c2a-8afd-7f246e6c1fed",
+            "94a73070-1af9-4863-b89a-bf3cf65a827a",
+            "723dc61d-fd4c-44a1-8fec-6f034476602e",
+            "0242caf2-a379-4861-8130-c8a17ad9b765",
+            "ff238291-bf75-4ab8-8b0c-b268bbea153f"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936264838,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2c31fdbb-d537-411f-bf94-9b91d92be773",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936264838,
+          "parent_id": "fb1c49da-f858-420f-804f-317776d975e9",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Character types cannot be accessed through non-character types."
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "2c8b581c-456a-4117-883b-82d8a9c2067e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "a24b3323-7ab3-4569-851a-067c153025e0",
+            "cb4b76d4-74f1-4992-8751-d1fdf4e58660",
+            "54083bc0-28aa-486c-a175-2e2890c015c5",
+            "42e130f6-87f3-4827-b4b5-ee01da1d3f1b",
+            "6b471fe9-df94-4df0-8605-ccde39a50d39",
+            "f7417c09-01b8-4cf0-afe8-96f6f7b2f4f3",
+            "e6927243-7526-47fd-9f51-8dafa926a16b",
+            "e9ffd540-c7ab-43e2-9951-9e12713d52e4",
+            "4f1c5e23-d864-42cc-9ddc-216f6e1d0f31",
+            "8592f1f0-de00-4f18-b6e3-7cf21f35b3d4",
+            "96b0a74c-a1af-4b37-bac5-27505437b621",
+            "5ba3a79b-d6fd-475e-bac6-dddcd60f6619"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936265118,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2c8b581c-456a-4117-883b-82d8a9c2067e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936265118,
+          "parent_id": "fb1c49da-f858-420f-804f-317776d975e9",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Violating the strict aliasing rules"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "49063ccc-888c-44e9-bd52-2cc26253becf": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "123a6194-a5e0-4cf1-ada7-1b867d694f70",
+            "a1b7da29-23fc-4187-83fc-ef27b60acb2c",
+            "69408813-365f-4e8f-acbe-a6a7093558ac",
+            "3fc5ae90-3814-4abe-a12b-90ba0f376ae6",
+            "f3b4c629-c5f8-4c16-9330-584620f11e3a",
+            "90f0853f-fdfa-4654-9408-c7d1ba230b95",
+            "4ca08dfc-cc1e-4187-807b-9f396bd5728a",
+            "d327d764-54b4-4e15-bac0-380d22e9ec57",
+            "d607a55d-0a03-46a1-a0e3-4a877fe3a81d"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936262199,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "49063ccc-888c-44e9-bd52-2cc26253becf",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936262199,
+          "parent_id": "fb1c49da-f858-420f-804f-317776d975e9",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "restrict qualification"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "800c314e-66fc-491c-ab63-ed166a2795d3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "f3a96719-e8c3-4b84-acde-120638d9676c",
+            "59c65372-ed32-46e0-a3f5-8eab85ba614e",
+            "f62e025f-0ff2-4bb9-b2d3-526435c0fb61",
+            "701d6de9-d973-4691-b887-60a99b1ade23",
+            "da839aa7-0dfd-49ba-8870-06f0e9d62e56",
+            "4f597f49-9819-4eec-8d44-4cbc1b980e8e",
+            "36b9bb36-0b83-4ec9-9472-078b9b479021",
+            "b3b026bd-58df-4673-b47f-81ee32e05438",
+            "d9056084-7c99-44f0-ad44-930ff4021bac",
+            "92d158f2-d014-45ef-8ab5-ce913b9e666d",
+            "2c96ee45-e483-4593-a361-e01c420a0304",
+            "5a212d8c-f55a-4bd1-b556-02ee7e3ea12c",
+            "e3f1d3d4-c621-4e57-a064-8724a621f254",
+            "0be76777-3d8c-4887-8bd3-88ab878ba71f",
+            "b6ce8002-98d7-4351-a1cb-a8419e13fd4b",
+            "03992336-fab4-4b5e-8b6a-7118aff65fba"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936259552,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "800c314e-66fc-491c-ab63-ed166a2795d3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936259552,
+          "parent_id": "fb1c49da-f858-420f-804f-317776d975e9",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Aliasing and effective type"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "84ae4145-718e-4b7b-8cb4-3cf10ee4db6a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "70354277-e3ea-4870-b354-e4ccea2f776f",
+            "c88395f2-cfa3-4917-9b1d-77ad5ef5da03",
+            "033ae011-39fb-4a86-9a89-54971c729ce8",
+            "218cbf42-b3ba-4b2a-bdab-e522009865b7",
+            "af9762cd-d032-4a74-a2b8-b8413c2edefb",
+            "c613c743-331e-4cb0-8344-4963dbf825f3",
+            "eff989d8-e4d4-4f97-952e-6c58e46dfb73",
+            "44b99e73-a03b-41cc-b542-2de7e97ca081",
+            "68e74303-cec6-4c9d-a46e-83274bc84bf4",
+            "6ae1f6f3-0a87-4bec-b9ca-2ef03a059422",
+            "f3c54523-5f2c-4d48-a50e-cd230eee34ae",
+            "9b4c9f4c-5f47-45ba-86a9-461b3aaa1198",
+            "b81cd45f-aa26-4f19-8238-7b90dd64a769",
+            "fb6df079-bba6-489e-ac6a-3ea61d24e7af",
+            "262dadd4-3655-45db-88b6-06e23e8e3a7b",
+            "9dc6ce73-bdfa-4d4d-b5a1-db84c9227865",
+            "f4db91d9-e502-4cf2-b8cc-184cb2d19911",
+            "1e14553b-8aea-44fb-a0fe-fbc893ff529a",
+            "fceea03f-c65b-4f89-8e06-817d0fcf3348",
+            "fcadea6a-df33-4395-8abc-4c71f5599a2d",
+            "690adfe7-1f94-4d22-83ad-47d3971f3325",
+            "fb1c49da-f858-420f-804f-317776d975e9",
+            "fe373c8a-dc77-4fbb-9ceb-fe91a58a5732",
+            "92dc051b-09a3-4930-9dda-0fb318b57610",
+            "9104b65f-88ef-4b77-89d3-248fa4934ff0",
+            "f3ac34eb-110d-486b-9e30-6bd30082bba0",
+            "ce0d7992-bb1e-4e62-ab26-2f99a9a2f78d",
+            "b76c53dc-9124-4a10-9817-490e3504e93e",
+            "042e8ddf-c9c4-4b73-8432-0a569a4f0a8a",
+            "3615ca16-3d26-4800-98f4-4da1a5c4bef4",
+            "873798b2-99a2-4a3f-9d7c-e6e95e01396f",
+            "f9df1d91-a33b-4691-8612-45ec5ebf45e8",
+            "218166d2-ae4c-4856-827d-6080353375ec",
+            "d3fd04e6-166e-44c4-8df3-6eb488aec6fb",
+            "476e4bcf-2254-4ffd-82b2-b3dcbd9fdf01",
+            "70e63802-c8af-4573-9d30-82507679f19d",
+            "2042e9e8-170e-4e88-a3c5-041aec6ba49b",
+            "a25d942b-f182-4a59-8930-268903693536",
+            "bbc16be7-a6da-4b3f-9e55-a68f0bcdb261",
+            "ae1ce0ef-9ced-4caa-9c8d-f14041e087b0",
+            "56054c40-d551-420f-9fd8-a44a9550fd1d",
+            "a32e93b8-a175-40b5-b72f-e58c30d058bb",
+            "86031ef1-ffce-4374-a32d-1f1886dc6593",
+            "b0240e66-8da1-4190-bbe5-f47d5b561ed2",
+            "898403c6-8861-4eca-b6cf-2fee9068ecce",
+            "5e44bd54-3362-4b1a-934b-acecce2afc7f",
+            "5c0a653d-4ce1-4234-bf16-7d29dc2f993e",
+            "ae726a5e-8d12-41b2-9bd8-209da2cca404",
+            "c45bb8ec-af6d-4f58-b094-cc6980d363e1",
+            "f0f16c22-34d6-4125-8a87-63fdd135ef20",
+            "5e4385c8-606f-406e-b1af-53b610c5bf4a",
+            "e16223c3-400e-4968-bddc-3cc5edf4c5c0",
+            "8ed525aa-8fab-4ee4-9fff-5b43085094dd",
+            "f4f6d384-72dd-4d02-aa47-f083a22f6481",
+            "d4a53a79-3ec2-426e-ac50-24d51d19d403",
+            "52978246-4aff-47a0-915a-a90feded64cd",
+            "19611889-e796-4311-ab76-561c41c4850a",
+            "54f188ad-c5ec-49d7-8bf7-1c5c08e72d2e",
+            "27ddd518-401c-43c0-bb68-381e630e5cfb",
+            "109e287f-796b-4acd-8b1b-dae5f45129bd",
+            "dab23b65-514a-455a-a0f6-c63668012233",
+            "cb11a718-ba93-4278-a486-b649224f5923",
+            "9d53db3a-6a86-4feb-bbea-f4bfb502ed5f",
+            "af5ef860-337b-4d68-aa37-de9259c85852",
+            "5ebf8b4e-135f-4d2e-8d6e-1f6b532dedb7"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551935474458,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "84ae4145-718e-4b7b-8cb4-3cf10ee4db6a",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571298480000,
+          "parent_id": "1ad0beae-92aa-49e1-add1-7960b1db8484",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential C"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 106
+        }
+      },
+      "be1c5d2e-1475-4c76-aed1-ec1572626cff": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "a281ad58-a0b4-4954-8cbb-e05e32b4e36e",
+            "f1849094-b21b-4629-9a5c-ff0ffde08faf",
+            "4b2deb80-a1ee-48c1-bfc8-2e38efc9467e"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936261602,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "be1c5d2e-1475-4c76-aed1-ec1572626cff",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936261602,
+          "parent_id": "fb1c49da-f858-420f-804f-317776d975e9",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Effective type"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "fb1c49da-f858-420f-804f-317776d975e9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "800c314e-66fc-491c-ab63-ed166a2795d3",
+            "be1c5d2e-1475-4c76-aed1-ec1572626cff",
+            "49063ccc-888c-44e9-bd52-2cc26253becf",
+            "0c4a8045-bc73-4a7c-a548-6412b6d84dd4",
+            "2c31fdbb-d537-411f-bf94-9b91d92be773",
+            "2c8b581c-456a-4117-883b-82d8a9c2067e"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936240000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "fb1c49da-f858-420f-804f-317776d975e9",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936420000,
+          "parent_id": "84ae4145-718e-4b7b-8cb4-3cf10ee4db6a",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Aliasing and effective type"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 44
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

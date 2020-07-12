@@ -1,0 +1,540 @@
+1649 1594557969486 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "b7c4c6d1-5094-4e65-97b8-533c445b9f8b",
+      "table": "block"
+    }
+  ]
+}
+Response:+1449
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "473c8437-e4cb-46f2-afa9-ac49f5f9974c",
+          "15096500-69fa-46ac-a417-beef78283a12",
+          "9018bcbc-cf4c-4e43-8791-f604cffb678a",
+          "6d1f1484-36f8-460a-9ba6-67d0eed309f0",
+          "fbde0077-82e2-497f-a762-519fcf200942",
+          "a180f600-10be-41ca-8657-14021fb876e5",
+          "d44502ea-59e6-4d22-8322-29f325be8a4d",
+          "61e9d1bb-2efa-4e0d-8978-8c52f3f06ed5"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1551936797155,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "b7c4c6d1-5094-4e65-97b8-533c445b9f8b",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551936797155,
+        "parent_id": "5e44bd54-3362-4b1a-934b-acecce2afc7f",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "User-defined memory management"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+19651 1594557969486 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "b7c4c6d1-5094-4e65-97b8-533c445b9f8b",
+  "verticalColumns": false
+}
+Response:+19410
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "15096500-69fa-46ac-a417-beef78283a12": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936797154,
+          "id": "15096500-69fa-46ac-a417-beef78283a12",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936797154,
+          "parent_id": "b7c4c6d1-5094-4e65-97b8-533c445b9f8b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To implement a simple scheme, a control block is stored in the region of memory immediately before the pointer to be returned from the call. This means that "
+              ],
+              [
+                "free()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " may be implemented by subtracting from the returned pointer and reading off the control information, which is typically the block size plus some information that allows it to be put back in the free list - a linked list of unallocated blocks."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "473c8437-e4cb-46f2-afa9-ac49f5f9974c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936797151,
+          "id": "473c8437-e4cb-46f2-afa9-ac49f5f9974c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936797151,
+          "parent_id": "b7c4c6d1-5094-4e65-97b8-533c445b9f8b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "malloc()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " often calls underlying operating system functions to obtain pages of memory. But there is nothing special about the function and it can be implemented in straight C by declaring a large static array and allocating from it (there is a slight difficulty in ensuring correct alignment, in practice aligning to 8 bytes is almost always adequate)."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "5e44bd54-3362-4b1a-934b-acecce2afc7f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "21998b72-6fa2-436d-acf7-52b9b3bddbfe",
+            "b26071e0-5a74-46c4-9ec9-dfe727186d35",
+            "b9ae2373-8918-40ce-8fa1-62880e3843c7",
+            "eda3203f-a7ba-4134-857a-e4c0750cb9f6",
+            "4b91a871-c18a-4f25-a8fb-d5bfeed8209e",
+            "82ab9d4d-78c2-4787-b21b-c2b74ec5dd1f",
+            "7682bc76-3b57-4228-87df-f60f222f5f7f",
+            "b7c4c6d1-5094-4e65-97b8-533c445b9f8b"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936780000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "5e44bd54-3362-4b1a-934b-acecce2afc7f",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551937020000,
+          "parent_id": "84ae4145-718e-4b7b-8cb4-3cf10ee4db6a",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Memory management"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 35
+        }
+      },
+      "61e9d1bb-2efa-4e0d-8978-8c52f3f06ed5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936797155,
+          "id": "61e9d1bb-2efa-4e0d-8978-8c52f3f06ed5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936797155,
+          "parent_id": "b7c4c6d1-5094-4e65-97b8-533c445b9f8b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This scheme is extremely fast and efficient, and can be made generic with a certain loss of clarity."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "6d1f1484-36f8-460a-9ba6-67d0eed309f0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936797154,
+          "id": "6d1f1484-36f8-460a-9ba6-67d0eed309f0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936797154,
+          "parent_id": "b7c4c6d1-5094-4e65-97b8-533c445b9f8b",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "/* typical control block */\nstruct block\n{\n   size_t size;         /* size of block */\n   struct block *next;  /* next block in free list */ \n   struct block *prev;  /* back pointer to previous block in memory */\n   void *padding;       /* need 16 bytes to make multiple of 8 */\n}\n\nstatic struct block arena[10000]; /* allocate from here */\nstatic struct block *firstfree;"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "84ae4145-718e-4b7b-8cb4-3cf10ee4db6a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "70354277-e3ea-4870-b354-e4ccea2f776f",
+            "c88395f2-cfa3-4917-9b1d-77ad5ef5da03",
+            "033ae011-39fb-4a86-9a89-54971c729ce8",
+            "218cbf42-b3ba-4b2a-bdab-e522009865b7",
+            "af9762cd-d032-4a74-a2b8-b8413c2edefb",
+            "c613c743-331e-4cb0-8344-4963dbf825f3",
+            "eff989d8-e4d4-4f97-952e-6c58e46dfb73",
+            "44b99e73-a03b-41cc-b542-2de7e97ca081",
+            "68e74303-cec6-4c9d-a46e-83274bc84bf4",
+            "6ae1f6f3-0a87-4bec-b9ca-2ef03a059422",
+            "f3c54523-5f2c-4d48-a50e-cd230eee34ae",
+            "9b4c9f4c-5f47-45ba-86a9-461b3aaa1198",
+            "b81cd45f-aa26-4f19-8238-7b90dd64a769",
+            "fb6df079-bba6-489e-ac6a-3ea61d24e7af",
+            "262dadd4-3655-45db-88b6-06e23e8e3a7b",
+            "9dc6ce73-bdfa-4d4d-b5a1-db84c9227865",
+            "f4db91d9-e502-4cf2-b8cc-184cb2d19911",
+            "1e14553b-8aea-44fb-a0fe-fbc893ff529a",
+            "fceea03f-c65b-4f89-8e06-817d0fcf3348",
+            "fcadea6a-df33-4395-8abc-4c71f5599a2d",
+            "690adfe7-1f94-4d22-83ad-47d3971f3325",
+            "fb1c49da-f858-420f-804f-317776d975e9",
+            "fe373c8a-dc77-4fbb-9ceb-fe91a58a5732",
+            "92dc051b-09a3-4930-9dda-0fb318b57610",
+            "9104b65f-88ef-4b77-89d3-248fa4934ff0",
+            "f3ac34eb-110d-486b-9e30-6bd30082bba0",
+            "ce0d7992-bb1e-4e62-ab26-2f99a9a2f78d",
+            "b76c53dc-9124-4a10-9817-490e3504e93e",
+            "042e8ddf-c9c4-4b73-8432-0a569a4f0a8a",
+            "3615ca16-3d26-4800-98f4-4da1a5c4bef4",
+            "873798b2-99a2-4a3f-9d7c-e6e95e01396f",
+            "f9df1d91-a33b-4691-8612-45ec5ebf45e8",
+            "218166d2-ae4c-4856-827d-6080353375ec",
+            "d3fd04e6-166e-44c4-8df3-6eb488aec6fb",
+            "476e4bcf-2254-4ffd-82b2-b3dcbd9fdf01",
+            "70e63802-c8af-4573-9d30-82507679f19d",
+            "2042e9e8-170e-4e88-a3c5-041aec6ba49b",
+            "a25d942b-f182-4a59-8930-268903693536",
+            "bbc16be7-a6da-4b3f-9e55-a68f0bcdb261",
+            "ae1ce0ef-9ced-4caa-9c8d-f14041e087b0",
+            "56054c40-d551-420f-9fd8-a44a9550fd1d",
+            "a32e93b8-a175-40b5-b72f-e58c30d058bb",
+            "86031ef1-ffce-4374-a32d-1f1886dc6593",
+            "b0240e66-8da1-4190-bbe5-f47d5b561ed2",
+            "898403c6-8861-4eca-b6cf-2fee9068ecce",
+            "5e44bd54-3362-4b1a-934b-acecce2afc7f",
+            "5c0a653d-4ce1-4234-bf16-7d29dc2f993e",
+            "ae726a5e-8d12-41b2-9bd8-209da2cca404",
+            "c45bb8ec-af6d-4f58-b094-cc6980d363e1",
+            "f0f16c22-34d6-4125-8a87-63fdd135ef20",
+            "5e4385c8-606f-406e-b1af-53b610c5bf4a",
+            "e16223c3-400e-4968-bddc-3cc5edf4c5c0",
+            "8ed525aa-8fab-4ee4-9fff-5b43085094dd",
+            "f4f6d384-72dd-4d02-aa47-f083a22f6481",
+            "d4a53a79-3ec2-426e-ac50-24d51d19d403",
+            "52978246-4aff-47a0-915a-a90feded64cd",
+            "19611889-e796-4311-ab76-561c41c4850a",
+            "54f188ad-c5ec-49d7-8bf7-1c5c08e72d2e",
+            "27ddd518-401c-43c0-bb68-381e630e5cfb",
+            "109e287f-796b-4acd-8b1b-dae5f45129bd",
+            "dab23b65-514a-455a-a0f6-c63668012233",
+            "cb11a718-ba93-4278-a486-b649224f5923",
+            "9d53db3a-6a86-4feb-bbea-f4bfb502ed5f",
+            "af5ef860-337b-4d68-aa37-de9259c85852",
+            "5ebf8b4e-135f-4d2e-8d6e-1f6b532dedb7"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551935474458,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "84ae4145-718e-4b7b-8cb4-3cf10ee4db6a",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571298480000,
+          "parent_id": "1ad0beae-92aa-49e1-add1-7960b1db8484",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential C"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 106
+        }
+      },
+      "9018bcbc-cf4c-4e43-8791-f604cffb678a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936797154,
+          "id": "9018bcbc-cf4c-4e43-8791-f604cffb678a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936797154,
+          "parent_id": "b7c4c6d1-5094-4e65-97b8-533c445b9f8b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "When the user requests an allocation, the free list is searched until a block of identical or larger size to the amount requested is found, then if necessary it is split. This can lead to memory fragmentation if the user is continually making many allocations and frees of unpredictable size and and at unpredictable intervals (not all real programs behave like that, the simple scheme is often adequate for small programs)."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "a180f600-10be-41ca-8657-14021fb876e5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936797155,
+          "id": "a180f600-10be-41ca-8657-14021fb876e5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936797155,
+          "parent_id": "b7c4c6d1-5094-4e65-97b8-533c445b9f8b",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "union block\n{\n   union block * next;\n   unsigned char payload[32];\n}  \n\nstatic union block arena[100];\nstatic union block * head; \nvoid init(void)\n{\n    int i;\n    for (i = 0; i \u003c 100 - 1; i++)\n        arena[i].next = \u0026arena[i + 1];\n    arena[i].next = 0; /* last one, null */\n    head = \u0026block[0];\n}\n \nvoid *block_alloc()\n{\n    void *answer = head;\n    if (answer)\n        head = head-\u003enext;\n    return answer;\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "b7c4c6d1-5094-4e65-97b8-533c445b9f8b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "473c8437-e4cb-46f2-afa9-ac49f5f9974c",
+            "15096500-69fa-46ac-a417-beef78283a12",
+            "9018bcbc-cf4c-4e43-8791-f604cffb678a",
+            "6d1f1484-36f8-460a-9ba6-67d0eed309f0",
+            "fbde0077-82e2-497f-a762-519fcf200942",
+            "a180f600-10be-41ca-8657-14021fb876e5",
+            "d44502ea-59e6-4d22-8322-29f325be8a4d",
+            "61e9d1bb-2efa-4e0d-8978-8c52f3f06ed5"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936797155,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "b7c4c6d1-5094-4e65-97b8-533c445b9f8b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936797155,
+          "parent_id": "5e44bd54-3362-4b1a-934b-acecce2afc7f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "User-defined memory management"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "d44502ea-59e6-4d22-8322-29f325be8a4d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936797155,
+          "id": "d44502ea-59e6-4d22-8322-29f325be8a4d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936797155,
+          "parent_id": "b7c4c6d1-5094-4e65-97b8-533c445b9f8b",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "void block_free(void *ptr)\n{\n    union block *block = ptr;\n    block-\u003enext = head;\n    head - block;\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "fbde0077-82e2-497f-a762-519fcf200942": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551936797155,
+          "id": "fbde0077-82e2-497f-a762-519fcf200942",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936797155,
+          "parent_id": "b7c4c6d1-5094-4e65-97b8-533c445b9f8b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Many programs require large numbers of allocations of small objects of the same size. This is very easy to implement. Simply use a block with a next pointer. So if a block of 32 bytes is required:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

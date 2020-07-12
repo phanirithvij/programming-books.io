@@ -1,0 +1,420 @@
+1514 1594558016477 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "6d32eb54-6127-4c45-bf74-edc975f9bb24",
+      "table": "block"
+    }
+  ]
+}
+Response:+1314
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "67f189bb-b382-4ff6-9f86-77fc38e3d534",
+          "021d0bf0-8f20-491c-9ab1-2edb3b98bda6",
+          "54278277-0474-4ab9-b30c-d771a7b63761",
+          "61b30f76-450e-40db-ab03-57c1dc4e6130",
+          "ba74566e-e0ee-4d07-a611-7a5538e2db3e"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1551935685745,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "6d32eb54-6127-4c45-bf74-edc975f9bb24",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551935685745,
+        "parent_id": "c613c743-331e-4cb0-8344-4963dbf825f3",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Passing multidimensional arrays to a function"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+15896 1594558016477 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "6d32eb54-6127-4c45-bf74-edc975f9bb24",
+  "verticalColumns": false
+}
+Response:+15655
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "021d0bf0-8f20-491c-9ab1-2edb3b98bda6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551935685744,
+          "id": "021d0bf0-8f20-491c-9ab1-2edb3b98bda6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551935685744,
+          "parent_id": "6d32eb54-6127-4c45-bf74-edc975f9bb24",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "#include \u003cassert.h\u003e\n#include \u003cstdlib.h\u003e\n\n/* When passing a multidimensional array (i.e. an array of arrays) to a\n   function, it decays into a pointer to the first element as usual.  But only\n   the top level decays, so what is passed is a pointer to an array of some fixed\n   size (4 in this case). */\nvoid f(int x[][4]) {\n    assert(sizeof(*x) == sizeof(int) * 4);\n}\n\n/* This prototype is equivalent to f(int x[][4]).\n   The parentheses around *x are required because [index] has a higher\n   precedence than *expr, thus int *x[4] would normally be equivalent to int\n   *(x[4]), i.e. an array of 4 pointers to int.  But if it's declared as a\n   function parameter, it decays into a pointer and becomes int **x, \n   which is not compatable with x[2][4]. */\nvoid g(int (*x)[4]) {\n    assert(sizeof(*x) == sizeof(int) * 4);\n}\n\n/* An array of pointers may be passed to this, since it'll decay into a pointer\n   to pointer, but an array of arrays may not. */\nvoid h(int **x) {\n    assert(sizeof(*x) == sizeof(int*));\n}\n\nint main(void) {\n    int foo[2][4];\n    f(foo);\n    g(foo);\n\n    /* Here we're dynamically creating an array of pointers.  Note that the \n       size of each dimension is not part of the datatype, and so the type \n       system just treats it as a pointer to pointer, not a pointer to array\n       or array of arrays. */\n    int **bar = malloc(sizeof(*bar) * 2);\n    assert(bar);\n    for (size_t i = 0; i \u003c 2; i++) {\n        bar[i] = malloc(sizeof(*bar[i]) * 4);\n        assert(bar[i]);\n    }\n\n    h(bar);\n    \n    for (size_t i = 0; i \u003c 2; i++) {\n        free(bar[i]);\n    }\n    free(bar);\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "54278277-0474-4ab9-b30c-d771a7b63761": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551935685744,
+          "id": "54278277-0474-4ab9-b30c-d771a7b63761",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551935685744,
+          "parent_id": "6d32eb54-6127-4c45-bf74-edc975f9bb24",
+          "parent_table": "block",
+          "type": "divider",
+          "version": 1
+        }
+      },
+      "61b30f76-450e-40db-ab03-57c1dc4e6130": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551935685744,
+          "id": "61b30f76-450e-40db-ab03-57c1dc4e6130",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551935685744,
+          "parent_id": "6d32eb54-6127-4c45-bf74-edc975f9bb24",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "See also"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 5
+        }
+      },
+      "67f189bb-b382-4ff6-9f86-77fc38e3d534": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551935685741,
+          "id": "67f189bb-b382-4ff6-9f86-77fc38e3d534",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551935685741,
+          "parent_id": "6d32eb54-6127-4c45-bf74-edc975f9bb24",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Multidimensional arrays follow the same rules as single-dimensional arrays when passing them to a function. However the combination of decay-to-pointer, operator precedence, and the two different ways to declare a multidimensional array (array of arrays vs array of pointers) may make the declaration of such functions non-intuitive. The following example shows the correct ways to pass multidimensional arrays."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "6d32eb54-6127-4c45-bf74-edc975f9bb24": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "67f189bb-b382-4ff6-9f86-77fc38e3d534",
+            "021d0bf0-8f20-491c-9ab1-2edb3b98bda6",
+            "54278277-0474-4ab9-b30c-d771a7b63761",
+            "61b30f76-450e-40db-ab03-57c1dc4e6130",
+            "ba74566e-e0ee-4d07-a611-7a5538e2db3e"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551935685745,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "6d32eb54-6127-4c45-bf74-edc975f9bb24",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551935685745,
+          "parent_id": "c613c743-331e-4cb0-8344-4963dbf825f3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Passing multidimensional arrays to a function"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "84ae4145-718e-4b7b-8cb4-3cf10ee4db6a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "70354277-e3ea-4870-b354-e4ccea2f776f",
+            "c88395f2-cfa3-4917-9b1d-77ad5ef5da03",
+            "033ae011-39fb-4a86-9a89-54971c729ce8",
+            "218cbf42-b3ba-4b2a-bdab-e522009865b7",
+            "af9762cd-d032-4a74-a2b8-b8413c2edefb",
+            "c613c743-331e-4cb0-8344-4963dbf825f3",
+            "eff989d8-e4d4-4f97-952e-6c58e46dfb73",
+            "44b99e73-a03b-41cc-b542-2de7e97ca081",
+            "68e74303-cec6-4c9d-a46e-83274bc84bf4",
+            "6ae1f6f3-0a87-4bec-b9ca-2ef03a059422",
+            "f3c54523-5f2c-4d48-a50e-cd230eee34ae",
+            "9b4c9f4c-5f47-45ba-86a9-461b3aaa1198",
+            "b81cd45f-aa26-4f19-8238-7b90dd64a769",
+            "fb6df079-bba6-489e-ac6a-3ea61d24e7af",
+            "262dadd4-3655-45db-88b6-06e23e8e3a7b",
+            "9dc6ce73-bdfa-4d4d-b5a1-db84c9227865",
+            "f4db91d9-e502-4cf2-b8cc-184cb2d19911",
+            "1e14553b-8aea-44fb-a0fe-fbc893ff529a",
+            "fceea03f-c65b-4f89-8e06-817d0fcf3348",
+            "fcadea6a-df33-4395-8abc-4c71f5599a2d",
+            "690adfe7-1f94-4d22-83ad-47d3971f3325",
+            "fb1c49da-f858-420f-804f-317776d975e9",
+            "fe373c8a-dc77-4fbb-9ceb-fe91a58a5732",
+            "92dc051b-09a3-4930-9dda-0fb318b57610",
+            "9104b65f-88ef-4b77-89d3-248fa4934ff0",
+            "f3ac34eb-110d-486b-9e30-6bd30082bba0",
+            "ce0d7992-bb1e-4e62-ab26-2f99a9a2f78d",
+            "b76c53dc-9124-4a10-9817-490e3504e93e",
+            "042e8ddf-c9c4-4b73-8432-0a569a4f0a8a",
+            "3615ca16-3d26-4800-98f4-4da1a5c4bef4",
+            "873798b2-99a2-4a3f-9d7c-e6e95e01396f",
+            "f9df1d91-a33b-4691-8612-45ec5ebf45e8",
+            "218166d2-ae4c-4856-827d-6080353375ec",
+            "d3fd04e6-166e-44c4-8df3-6eb488aec6fb",
+            "476e4bcf-2254-4ffd-82b2-b3dcbd9fdf01",
+            "70e63802-c8af-4573-9d30-82507679f19d",
+            "2042e9e8-170e-4e88-a3c5-041aec6ba49b",
+            "a25d942b-f182-4a59-8930-268903693536",
+            "bbc16be7-a6da-4b3f-9e55-a68f0bcdb261",
+            "ae1ce0ef-9ced-4caa-9c8d-f14041e087b0",
+            "56054c40-d551-420f-9fd8-a44a9550fd1d",
+            "a32e93b8-a175-40b5-b72f-e58c30d058bb",
+            "86031ef1-ffce-4374-a32d-1f1886dc6593",
+            "b0240e66-8da1-4190-bbe5-f47d5b561ed2",
+            "898403c6-8861-4eca-b6cf-2fee9068ecce",
+            "5e44bd54-3362-4b1a-934b-acecce2afc7f",
+            "5c0a653d-4ce1-4234-bf16-7d29dc2f993e",
+            "ae726a5e-8d12-41b2-9bd8-209da2cca404",
+            "c45bb8ec-af6d-4f58-b094-cc6980d363e1",
+            "f0f16c22-34d6-4125-8a87-63fdd135ef20",
+            "5e4385c8-606f-406e-b1af-53b610c5bf4a",
+            "e16223c3-400e-4968-bddc-3cc5edf4c5c0",
+            "8ed525aa-8fab-4ee4-9fff-5b43085094dd",
+            "f4f6d384-72dd-4d02-aa47-f083a22f6481",
+            "d4a53a79-3ec2-426e-ac50-24d51d19d403",
+            "52978246-4aff-47a0-915a-a90feded64cd",
+            "19611889-e796-4311-ab76-561c41c4850a",
+            "54f188ad-c5ec-49d7-8bf7-1c5c08e72d2e",
+            "27ddd518-401c-43c0-bb68-381e630e5cfb",
+            "109e287f-796b-4acd-8b1b-dae5f45129bd",
+            "dab23b65-514a-455a-a0f6-c63668012233",
+            "cb11a718-ba93-4278-a486-b649224f5923",
+            "9d53db3a-6a86-4feb-bbea-f4bfb502ed5f",
+            "af5ef860-337b-4d68-aa37-de9259c85852",
+            "5ebf8b4e-135f-4d2e-8d6e-1f6b532dedb7"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551935474458,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "84ae4145-718e-4b7b-8cb4-3cf10ee4db6a",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571298480000,
+          "parent_id": "1ad0beae-92aa-49e1-add1-7960b1db8484",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential C"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 106
+        }
+      },
+      "ba74566e-e0ee-4d07-a611-7a5538e2db3e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551935685745,
+          "id": "ba74566e-e0ee-4d07-a611-7a5538e2db3e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551935685745,
+          "parent_id": "6d32eb54-6127-4c45-bf74-edc975f9bb24",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "http://stackoverflow.com/documentation/c/1006/function-parameters/3892/passing-in-arrays-to-functions#t=201701141223012644924"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "c613c743-331e-4cb0-8344-4963dbf825f3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "22d225de-e628-452d-ad58-ad0565f816d6",
+            "4b4e9635-05dd-4319-a96f-4c3dc216b9f6",
+            "e08e45d7-e0bd-4094-bc9f-e21670829421",
+            "97f78ed0-2427-4212-b4a7-aad59c70e775",
+            "1f5b1a0b-caaa-4285-b62b-f04223438cee",
+            "6d32eb54-6127-4c45-bf74-edc975f9bb24",
+            "17961402-0de5-435a-a219-13a5470de6a2",
+            "23bee620-b925-47b7-ba58-529ef8c0bf46",
+            "d94f0dba-5fa5-4993-ab59-8494f6126b26",
+            "e0e23ef4-bae5-497a-ba1c-82665f43e8e1",
+            "3d328ace-f20d-40a1-8a96-1f284f16500d"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551935640000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "c613c743-331e-4cb0-8344-4963dbf825f3",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551936000000,
+          "parent_id": "84ae4145-718e-4b7b-8cb4-3cf10ee4db6a",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Arrays"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 29
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
