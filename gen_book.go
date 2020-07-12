@@ -6,7 +6,6 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
-	"os/exec"
 	"path/filepath"
 	"strings"
 	"time"
@@ -336,19 +335,6 @@ func copyCover(book *Book) {
 		u.CopyFileMust(dst, src)
 		logf("Copied '%s' => '%s'\n", src, dst)
 	}
-}
-
-func deployWithVercel(book *Book) {
-	var cmd *exec.Cmd
-	if flgDeployProd {
-		cmd = exec.Command("vercel", "--prod")
-	} else if flgDeployDev {
-		cmd = exec.Command("vercel")
-	} else {
-		return
-	}
-	cmd.Dir = book.DirOnDisk
-	u.RunCmdLoggedMust(cmd)
 }
 
 func genBook(book *Book) {

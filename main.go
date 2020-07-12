@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"html/template"
+	"os/exec"
 	"path/filepath"
 	"strings"
 	"time"
@@ -178,4 +179,22 @@ func downloadSingleGist(gistID string) {
 	gist := gistDownloadMust(gistID)
 	cache.saveGist(gistID, gist.Raw)
 	logf("Saved a gist\n")
+}
+
+// vercel www --scope teamkjk --name book-git --confirm
+func deployWithVercel(book *Book) {
+	if !(flgDeployProd || flgDeployDev) {
+		// no deploying
+		fmt.Printf("not deploying\n")
+		return
+	}
+	projectName := "book-" + book.DirShort
+	args := []string{"www", "--scope", "teamkjk", "--name", projectName, "--confirm"}
+	if flgDeployProd {
+		args = append(args, "--prod")
+	}
+	cmd := exec.Command("vercel", args...)
+
+	cmd.Dir = book.DirOnDisk
+	u.RunCmdLoggedMust(cmd)
 }

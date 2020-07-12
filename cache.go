@@ -82,7 +82,11 @@ func (c *Cache) loadGist(rec *siser.Record) {
 }
 
 func (c *Cache) getGistByID(id string) *CacheGist {
-	for _, r := range c.gists {
+	n := len(c.gists)
+	// read from the end because newer entries are at the end
+	// and over-write older entries
+	for i := n - 1; i >= 0; i-- {
+		r := c.gists[i]
 		if r.ID == id {
 			return r
 		}
@@ -122,7 +126,11 @@ func (c *Cache) loadGistOutput(rec *siser.Record) {
 }
 
 func (c *Cache) getGistOuputBySha1(sha1 string) *CacheGistOutput {
-	for _, r := range c.gistOutputs {
+	n := len(c.gistOutputs)
+	// read from the end because newer entries are at the end
+	// and over-write older entries
+	for i := n - 1; i >= 0; i-- {
+		r := c.gistOutputs[i]
 		if sha1 == r.Sha1 {
 			return r
 		}
