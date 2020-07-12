@@ -703,13 +703,14 @@ form button:hover {
 /* this allows to position child absolutely */
 .code-box {
   font-size: 85%;
-  background-color: #f7f6f3;
+  /* background-color: #f7f6f3; */
   /* color: #657b83; */
   /* border: 1px solid #e5e5e5; */
   /*
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   */
+  border-left: 1px solid slategrey;
   overflow-x: visible;
   position: relative; /* so that code-box-playground can be placed to the right */
 }
@@ -730,10 +731,11 @@ form button:hover {
   /* background-color: #fafafa; */
   /* transform: translateY(1px); */
 
-  /* position in the right-bottom corner */
+  /* position in the right-top corner */
   position: absolute;
-  bottom: 4px;
+  top: 4px;
   right: -2px;
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
 }
 
 .code-box-github a,
@@ -778,10 +780,6 @@ svg for down arro
   */
 }
 
-.code-box-playground {
-  margin-right: 8px;
-}
-
 .code-box-playground:hover,
 .code-box-github:hover {
   /* background-color: #e5e5e5; */
@@ -793,7 +791,7 @@ svg for down arro
 
 .lang-output {
   margin-top: -1em;
-  border: 0px;
+  /* border: 0px; */
   border-top: 1px solid #cbcbcb;
   background-color: #f8f8f8;
 }
