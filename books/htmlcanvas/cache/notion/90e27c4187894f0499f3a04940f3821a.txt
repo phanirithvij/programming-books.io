@@ -1,0 +1,443 @@
+1640 1594553980119 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "90e27c41-8789-4f04-99f3-a04940f3821a",
+      "table": "block"
+    }
+  ]
+}
+Response:+1440
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "183a1691-0b71-448d-967f-c62378d5ea11",
+          "94b11a6d-1045-4714-9668-a3e306b3da00",
+          "33473700-dfac-4473-bfd8-caf5edbadadd",
+          "421cbc2a-9237-472f-a6f6-fe299cd22fbc",
+          "b417f39c-1e3b-41e1-bafe-a7412f825462"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1551949800000,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "90e27c41-8789-4f04-99f3-a04940f3821a",
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551950040000,
+        "parent_id": "227fa77d-624c-441d-9801-1d7c998609a6",
+        "parent_table": "block",
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+          }
+        ],
+        "properties": {
+          "title": [
+            [
+              "Transformations"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 33
+      }
+    }
+  ]
+}
+14485 1594553980120 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "90e27c41-8789-4f04-99f3-a04940f3821a",
+  "verticalColumns": false
+}
+Response:+14244
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "183a1691-0b71-448d-967f-c62378d5ea11": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949829294,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "183a1691-0b71-448d-967f-c62378d5ea11",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949829294,
+          "parent_id": "90e27c41-8789-4f04-99f3-a04940f3821a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Transformations"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "227fa77d-624c-441d-9801-1d7c998609a6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "7d650957-f574-48d4-85d0-f1426726d652",
+            "ba65754e-de34-461e-b1e1-560e2d6309e4",
+            "db570444-b7a8-4c65-af50-7de125251743",
+            "4ce6605a-6537-4752-91ee-3480df7bacb9",
+            "43473e47-27d0-430a-914d-cd63a767322a",
+            "c37198be-d8f3-48ef-8bfc-2cebe79b5d8b",
+            "041fccae-eb96-4fce-9577-0aaf8da6dad2",
+            "0d20929d-b856-4186-bfed-fbeecbb675d5",
+            "28d114e4-4088-44fc-827c-5f73d6238ff8",
+            "69ada749-d571-44f8-9e7e-47f98efde9a1",
+            "dd776e0e-e228-4dd6-99b4-439d20e57076",
+            "15ffc166-5db0-493f-b264-5df513042ee7",
+            "55c84186-8698-41c9-8d2d-873c9b4a19c9",
+            "e6a83a07-a607-45f6-8849-92715cb6dc6b",
+            "90e27c41-8789-4f04-99f3-a04940f3821a",
+            "d29786c7-8259-4e77-8b8c-65265f7b95e3",
+            "de5b9aa7-4f44-4592-b8f3-47684b3408b3",
+            "ac5cc01d-563d-4c52-a360-2801411c5860",
+            "bdca4d70-e7e6-44fe-9570-6e68527f05d6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949612631,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "227fa77d-624c-441d-9801-1d7c998609a6",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605000000,
+          "parent_id": "04728687-1a4a-4462-8e20-53bfc46354c2",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential HTML5 Canvas"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 71
+        }
+      },
+      "33473700-dfac-4473-bfd8-caf5edbadadd": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "8e518874-6c91-43c3-a391-550fa027789b",
+            "2b845af1-d9e6-4038-b4fa-246ebc9d02a4",
+            "ef94db7e-e3b0-4ec9-9f68-6dced07fb28f",
+            "16050c6c-2ae4-4226-a9fb-3a1435d5e3bd",
+            "667b3b7f-936d-4267-969b-83f3b079d8e5",
+            "9c2b5200-f195-4207-8257-717948127c45",
+            "5d4cf0d9-825c-4ec1-838d-81f19670cfc1",
+            "7c6603e4-db95-4d6c-ae1e-a72e9c8119c3",
+            "67b28450-8c25-4dd7-bdae-bcad4daf2d91",
+            "166ddb0b-673e-4f84-a171-f6b681aa2396"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949830604,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "33473700-dfac-4473-bfd8-caf5edbadadd",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949830604,
+          "parent_id": "90e27c41-8789-4f04-99f3-a04940f3821a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Drawing many translated scaled and rotated images quickly"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "421cbc2a-9237-472f-a6f6-fe299cd22fbc": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "32183d3d-0b14-47a9-afe2-8c5dd7cc1fb5",
+            "6622fe6f-b6d9-4b8b-9892-898c29e556db",
+            "a96069bd-8abd-4cdd-a92b-3d8bf7cb0224",
+            "3a7d8e85-4378-4523-bd9e-c4c84ec94b2d",
+            "98079efc-749d-46b5-8e39-2cf353f0a19d",
+            "dc375143-976c-45ee-bc45-5b7ce8dcca2d",
+            "b1677fd6-9a9a-431e-9ca1-b993372861e0",
+            "b64744d0-de59-4fb7-9263-3d7f4892d87a",
+            "d5987ca2-8004-40d3-9e53-025d10259a8d",
+            "8241e11d-6afb-4017-b6b6-7639445eacfe",
+            "362c6d1c-121a-4d32-9eae-07f2dff6927f",
+            "adb8db25-4d41-4296-9ab2-614347fe53d0",
+            "84266409-9e21-4462-b3a1-211b82e9f8e9",
+            "f38cf4ef-162c-46c1-9ea6-a198e943817b",
+            "3c953a09-7207-443e-80ef-da8b80395659",
+            "4ed4ab15-5a10-47e4-a604-a73bd8ec4bb0",
+            "9d879645-1282-4c85-a0d6-034bfad99eb7"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949833607,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "421cbc2a-9237-472f-a6f6-fe299cd22fbc",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949833607,
+          "parent_id": "90e27c41-8789-4f04-99f3-a04940f3821a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Introduction to Transformations"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "90e27c41-8789-4f04-99f3-a04940f3821a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "183a1691-0b71-448d-967f-c62378d5ea11",
+            "94b11a6d-1045-4714-9668-a3e306b3da00",
+            "33473700-dfac-4473-bfd8-caf5edbadadd",
+            "421cbc2a-9237-472f-a6f6-fe299cd22fbc",
+            "b417f39c-1e3b-41e1-bafe-a7412f825462"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949800000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "90e27c41-8789-4f04-99f3-a04940f3821a",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950040000,
+          "parent_id": "227fa77d-624c-441d-9801-1d7c998609a6",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Transformations"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 33
+        }
+      },
+      "94b11a6d-1045-4714-9668-a3e306b3da00": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "8748b32a-f63c-401d-9784-76038b99aef9",
+            "cd5e6614-7521-4952-a3ce-ce0ff2a5c0a7",
+            "af6f676c-a454-4dd6-b988-c79c01f29f95",
+            "a2554ef8-cd7f-4cd9-9d3f-0bd51466a59f",
+            "a1f7ee85-9fb6-4c42-a33d-90d9a6aab85d",
+            "a4185278-a14a-4b41-9ca9-181d5c878a62",
+            "5dab6eb9-ed68-4c5a-86f3-025df01f9433",
+            "e1692b0a-44a7-42a0-849a-21436637aa2c",
+            "2d71829e-c299-49e1-add9-449283332763",
+            "be30ab54-b36c-4a55-9fd1-cfd17481d227",
+            "d372cdb6-cd84-457d-9390-7b42875786e8",
+            "e086675f-90ac-437a-bb52-ca33ef7855d1",
+            "09e129ab-bc39-4906-8640-d4b8bf55aa99",
+            "df0bc21c-4189-4154-ae5a-0dd49086f04b",
+            "2d8aa6d8-a95e-4cc2-9f66-c7a1e374b268"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949829797,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "94b11a6d-1045-4714-9668-a3e306b3da00",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949829797,
+          "parent_id": "90e27c41-8789-4f04-99f3-a04940f3821a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Rotate an Image or Path around its centerpoint"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "b417f39c-1e3b-41e1-bafe-a7412f825462": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "d68b3095-dae7-4e99-b9d4-1db0df8016c4",
+            "01531364-911a-44d8-aee0-791aead4098b",
+            "73d96825-460a-454d-bbf9-32ecd741d3d8",
+            "306e4f57-6007-4f97-b07b-0680af6633de",
+            "6d9b9175-23b4-4914-a0d9-990bfd39ade5",
+            "ff7dc70d-6515-4a63-a002-27c4274c0b99",
+            "e63785fd-0c88-4170-9989-da9703c4dd3b",
+            "ea6299fa-08d2-4d5c-88e2-a3b464c5fb7a",
+            "e9c58134-84f6-413b-8df8-195993a812ac",
+            "f5124661-f9fa-4c3d-8e63-b3b9b9670670",
+            "af2e8daa-b649-4f82-a211-7424ff54a34b",
+            "80d4dbd8-294f-4994-af63-91c96ce4ae71",
+            "aca6b768-fcc7-4e36-87d7-9b0363a1f8b3",
+            "d1af4cbf-e4ae-4258-845d-296a662647e6",
+            "49f55328-00dc-401a-9ad7-ab30d4b2b032",
+            "dbcd36b4-02f9-43cd-ab71-f96712a91db0",
+            "2bc78656-82b3-4418-8a2d-1f3a587d9644",
+            "304200cf-97a5-4400-afcd-0acc6495f868",
+            "ac724d6f-3a98-4fc7-876f-0e39930327f2",
+            "62025198-d81a-4b00-af07-99b65fc8fd2a",
+            "a9bca433-7e32-4e06-81cc-e6a7bd1d4b3a",
+            "f133e090-0a2c-438f-b526-68c39db17993",
+            "bc1fb82c-5852-4537-99b0-ad9178ca196d",
+            "c668f469-693b-4fcf-b748-1b91bbe7521b",
+            "64f2f3c2-c9c5-4815-948a-6f2a6af2382a",
+            "e2ec50da-3b6a-484c-b7f9-759c65640eef",
+            "2cf01460-bd94-4781-bc1d-f8858f8373c8",
+            "f4ebe6c2-6795-43ee-ae89-82d547d7a370",
+            "a3b618bc-d07d-4a07-975d-d14fd7df8751",
+            "ecc02b51-1fcf-4431-ba06-e775001b230c",
+            "c947b4ea-5d8e-473b-8429-7a811c33eb89",
+            "bef13842-6648-4a6b-99f5-d29ecf541b64",
+            "5f27a4dc-790b-4ee7-9afb-69bf4f72e24c",
+            "b8d91a84-08c2-4e0d-b297-9f33849e98b9",
+            "e8ce776a-b553-440e-a4ab-827b87c9287e"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949834469,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "b417f39c-1e3b-41e1-bafe-a7412f825462",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949834469,
+          "parent_id": "90e27c41-8789-4f04-99f3-a04940f3821a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "A Transformation Matrix to track translated rotated scaled shapes"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

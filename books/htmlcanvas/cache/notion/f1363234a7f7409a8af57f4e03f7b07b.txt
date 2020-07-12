@@ -1,0 +1,1087 @@
+2382 1594553992514 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+      "table": "block"
+    }
+  ]
+}
+Response:+2182
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "053fe104-2520-46a5-ad43-5d955cb9c892",
+          "9092473e-15ff-4f38-9ec1-c8e9de4563ff",
+          "6a8de5c3-8508-47be-8e25-39429cc80ca8",
+          "c5ae688e-f6f5-4cb7-8ca8-40c33a17ad6d",
+          "cf067fae-6735-4353-8355-119ba93668cb",
+          "ff71c638-3f13-4bd3-ba50-d8f2a0353797",
+          "8fa5c8d6-73dc-4cae-8a9c-9511fa5c98a4",
+          "1dbf30af-c421-4640-b8b9-69e42655e4c0",
+          "6628f46a-6646-4d2a-9da7-d9d029fd7a0e",
+          "7da64317-007a-47c2-bfd0-e1aacc407428",
+          "9137ae5f-201e-46b0-a5c2-08b9ccda7c1b",
+          "f0006898-ae82-4391-aebd-7a945074e887",
+          "08291033-d6da-4593-b6bd-4337ec6be2d8",
+          "b58e8d6f-5aa4-4edd-b5f6-158c9e9929ad",
+          "d04f9c3c-00fc-44d1-9bd9-c7d20e0c78ac",
+          "04d6ec35-f230-4a58-a9bc-9d3c0f43171b",
+          "65df8a92-e7f9-4263-97a6-9b9605180703",
+          "da827ce6-e8af-4317-a843-f1d3044fec4d",
+          "6992cd70-d8b2-47f4-8681-43c329a0a6cd",
+          "50f32e4e-474a-4cfe-a898-f04dd85ff2f2",
+          "f1fabb5e-aa1f-4bc6-b3b8-8290ca524f65",
+          "3f0c783b-7921-4afe-9a7f-ac2e4106bd62",
+          "e0b90c64-3393-409a-8f51-a8cacaaed782"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1551949799248,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551949799248,
+        "parent_id": "15ffc166-5db0-493f-b264-5df513042ee7",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Inner shadows"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 7
+      }
+    }
+  ]
+}
+39055 1594553992515 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+  "verticalColumns": false
+}
+Response:+38814
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "04d6ec35-f230-4a58-a9bc-9d3c0f43171b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799246,
+          "id": "04d6ec35-f230-4a58-a9bc-9d3c0f43171b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799246,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Set compositing to ",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                "destination-over",
+                [
+                  [
+                    "b"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " which causes the fill to be drawn "
+              ],
+              [
+                "under",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " the existing inner-shadow."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 1
+        }
+      },
+      "053fe104-2520-46a5-ad43-5d955cb9c892": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799240,
+          "id": "053fe104-2520-46a5-ad43-5d955cb9c892",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799240,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Canvas does not have CSS’s "
+              ],
+              [
+                "inner-shadow",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "08291033-d6da-4593-b6bd-4337ec6be2d8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799245,
+          "id": "08291033-d6da-4593-b6bd-4337ec6be2d8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799245,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Stroked Fills with an inner-shadow"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 5
+        }
+      },
+      "15ffc166-5db0-493f-b264-5df513042ee7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "72620048-9e79-4ca8-a983-4c42418c65dc",
+            "1560f9fe-5b42-4b5a-bc80-3d089bda3c22",
+            "b47aabef-7af1-40a1-90fa-20a995343d4a",
+            "ae95b631-29e3-4c14-beb1-fa3fc19c3df1",
+            "da4cff32-584b-4068-9510-4c368ba4a28f",
+            "f1363234-a7f7-409a-8af5-7f4e03f7b07b"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949740000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "15ffc166-5db0-493f-b264-5df513042ee7",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950040000,
+          "parent_id": "227fa77d-624c-441d-9801-1d7c998609a6",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Shadows"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 23
+        }
+      },
+      "1dbf30af-c421-4640-b8b9-69e42655e4c0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799245,
+          "id": "1dbf30af-c421-4640-b8b9-69e42655e4c0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799245,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Stroke a shape with a shadow.",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " The shadow will extend both outward and inward from the stroke. We must get rid of the outer-shadow – leaving just the desired inner-shadow."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 1
+        }
+      },
+      "227fa77d-624c-441d-9801-1d7c998609a6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "7d650957-f574-48d4-85d0-f1426726d652",
+            "ba65754e-de34-461e-b1e1-560e2d6309e4",
+            "db570444-b7a8-4c65-af50-7de125251743",
+            "4ce6605a-6537-4752-91ee-3480df7bacb9",
+            "43473e47-27d0-430a-914d-cd63a767322a",
+            "c37198be-d8f3-48ef-8bfc-2cebe79b5d8b",
+            "041fccae-eb96-4fce-9577-0aaf8da6dad2",
+            "0d20929d-b856-4186-bfed-fbeecbb675d5",
+            "28d114e4-4088-44fc-827c-5f73d6238ff8",
+            "69ada749-d571-44f8-9e7e-47f98efde9a1",
+            "dd776e0e-e228-4dd6-99b4-439d20e57076",
+            "15ffc166-5db0-493f-b264-5df513042ee7",
+            "55c84186-8698-41c9-8d2d-873c9b4a19c9",
+            "e6a83a07-a607-45f6-8849-92715cb6dc6b",
+            "90e27c41-8789-4f04-99f3-a04940f3821a",
+            "d29786c7-8259-4e77-8b8c-65265f7b95e3",
+            "de5b9aa7-4f44-4592-b8f3-47684b3408b3",
+            "ac5cc01d-563d-4c52-a360-2801411c5860",
+            "bdca4d70-e7e6-44fe-9570-6e68527f05d6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949612631,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "227fa77d-624c-441d-9801-1d7c998609a6",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605000000,
+          "parent_id": "04728687-1a4a-4462-8e20-53bfc46354c2",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential HTML5 Canvas"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 71
+        }
+      },
+      "3f0c783b-7921-4afe-9a7f-ac2e4106bd62": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799247,
+          "id": "3f0c783b-7921-4afe-9a7f-ac2e4106bd62",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799247,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To draw a filled shape with an inner-shadow, but with no stroke, you can draw the stroke off-canvas and use "
+              ],
+              [
+                "shadowOffsetX",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " to push the shadow back onto the canvas."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "50f32e4e-474a-4cfe-a898-f04dd85ff2f2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799247,
+          "id": "50f32e4e-474a-4cfe-a898-f04dd85ff2f2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799247,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Non-stroked Fills with an inner-shadow"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 1
+        }
+      },
+      "65df8a92-e7f9-4263-97a6-9b9605180703": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799247,
+          "id": "65df8a92-e7f9-4263-97a6-9b9605180703",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799247,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Turn off shadowing",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " by setting "
+              ],
+              [
+                "context.shadowColor",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " to a transparent color."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 1
+        }
+      },
+      "6628f46a-6646-4d2a-9da7-d9d029fd7a0e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799245,
+          "id": "6628f46a-6646-4d2a-9da7-d9d029fd7a0e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799245,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Set compositing to ",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                "destination-in",
+                [
+                  [
+                    "b"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " which keeps the existing stroked shadow only where it is overlapped by any new drawings."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 1
+        }
+      },
+      "6992cd70-d8b2-47f4-8681-43c329a0a6cd": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799247,
+          "id": "6992cd70-d8b2-47f4-8681-43c329a0a6cd",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799247,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "var canvas=document.createElement(\"canvas\");\nvar ctx=canvas.getContext(\"2d\");\ndocument.body.appendChild(canvas);\n\n// draw an opaque shape -- here we use a rounded rectangle\ndefineRoundedRect(30,30,100,75,10);\n\n// set shadowing\nctx.shadowColor='black';\nctx.shadowBlur=10;\n\n// stroke the shadowed rounded rectangle\nctx.lineWidth=4;\nctx.stroke();\n\n// stop shadowing\nctx.shadowColor='rgba(0,0,0,0)';\n\n// set compositing to erase everything outside the stroke\nctx.globalCompositeOperation='destination-in';\nctx.fill();\n\n// set compositing to erase everything outside the stroke\nctx.globalCompositeOperation='destination-over';\nctx.fillStyle='gold';\nctx.fill();\n\n// always clean up -- set compsiting back to default\nctx.globalCompositeOperation='source-over';   \n\nfunction defineRoundedRect(x,y,width,height,radius) {\n    ctx.beginPath();\n    ctx.moveTo(x + radius, y);\n    ctx.lineTo(x + width - radius, y);\n    ctx.quadraticCurveTo(x + width, y, x + width, y + radius);\n    ctx.lineTo(x + width, y + height - radius);\n    ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);\n    ctx.lineTo(x + radius, y + height);\n    ctx.quadraticCurveTo(x, y + height, x, y + height - radius);\n    ctx.lineTo(x, y + radius);\n    ctx.quadraticCurveTo(x, y, x + radius, y);\n    ctx.closePath();\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "6a8de5c3-8508-47be-8e25-39429cc80ca8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799243,
+          "id": "6a8de5c3-8508-47be-8e25-39429cc80ca8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799243,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Canvas will shadow both inside and outside a stroked shape."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "7da64317-007a-47c2-bfd0-e1aacc407428": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799245,
+          "id": "7da64317-007a-47c2-bfd0-e1aacc407428",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799245,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Fill the shape.",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " This causes the stroke and inner-shadow to remain while the outer shadow is erased. "
+              ],
+              [
+                "Well, not exactly! Since a stroke is half-inside and half-outside the filled shape, the outside half of the stroke will be erased also. The fix is to double the ",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                "context.lineWidth",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " so half of the double-sized stroke is still inside the filled shape.",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 1
+        }
+      },
+      "8fa5c8d6-73dc-4cae-8a9c-9511fa5c98a4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799244,
+          "id": "8fa5c8d6-73dc-4cae-8a9c-9511fa5c98a4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799244,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To create strokes with an inner-shadow, use "
+              ],
+              [
+                "destination-in",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " compositing which causes existing content to remain only where existing content is overlapped by new content. Existing content that is not overlapped by new content is erased."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "9092473e-15ff-4f38-9ec1-c8e9de4563ff": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799243,
+          "id": "9092473e-15ff-4f38-9ec1-c8e9de4563ff",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799243,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Canvas will shadow the outside of a filled shape."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "9137ae5f-201e-46b0-a5c2-08b9ccda7c1b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799245,
+          "id": "9137ae5f-201e-46b0-a5c2-08b9ccda7c1b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799245,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "var canvas=document.createElement(\"canvas\");\nvar ctx=canvas.getContext(\"2d\");\ndocument.body.appendChild(canvas);\n\n// draw an opaque shape -- here we use a rounded rectangle\ndefineRoundedRect(30,30,100,75,10);\n\n// set shadowing\nctx.shadowColor='black';\nctx.shadowBlur=10;\n\n// stroke the shadowed rounded rectangle\nctx.lineWidth=4;\nctx.stroke();\n\n// set compositing to erase everything outside the stroke\nctx.globalCompositeOperation='destination-in';\nctx.fill();\n\n// always clean up -- set compsiting back to default\nctx.globalCompositeOperation='source-over';"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "b58e8d6f-5aa4-4edd-b5f6-158c9e9929ad": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799246,
+          "id": "b58e8d6f-5aa4-4edd-b5f6-158c9e9929ad",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799246,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "source": [
+              [
+                "/tmp/da910018-8f5f-4bb6-a477-0f09076d7581/2ef62fe845b9812d2cf0c93dd7cbb4c5c8b1eb35.png"
+              ]
+            ]
+          },
+          "type": "image",
+          "version": 1
+        }
+      },
+      "c5ae688e-f6f5-4cb7-8ca8-40c33a17ad6d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799243,
+          "id": "c5ae688e-f6f5-4cb7-8ca8-40c33a17ad6d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799243,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "But it’s easy to create inner-shadows using compositing."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "cf067fae-6735-4353-8355-119ba93668cb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799244,
+          "id": "cf067fae-6735-4353-8355-119ba93668cb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799244,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Strokes with an inner-shadow"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 1
+        }
+      },
+      "d04f9c3c-00fc-44d1-9bd9-c7d20e0c78ac": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799246,
+          "id": "d04f9c3c-00fc-44d1-9bd9-c7d20e0c78ac",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799246,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To create fills with an inner-shadow, follow steps #1-3 above but further use "
+              ],
+              [
+                "destination-over",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " compositing which causes new content to be drawn "
+              ],
+              [
+                "under existing content",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "da827ce6-e8af-4317-a843-f1d3044fec4d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799247,
+          "id": "da827ce6-e8af-4317-a843-f1d3044fec4d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799247,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Fill the shape",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " with the desired color. The shape will be filled underneath the existing inner-shadow."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 5
+        }
+      },
+      "e0b90c64-3393-409a-8f51-a8cacaaed782": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799247,
+          "id": "e0b90c64-3393-409a-8f51-a8cacaaed782",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799247,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "var canvas=document.createElement(\"canvas\");\nvar ctx=canvas.getContext(\"2d\");\ndocument.body.appendChild(canvas);\n\n// define an opaque shape -- here we use a rounded rectangle\ndefineRoundedRect(30-500,30,100,75,10);\n\n// set shadowing\nctx.shadowColor='black';\nctx.shadowBlur=10;\nctx.shadowOffsetX=500;\n\n// stroke the shadowed rounded rectangle\nctx.lineWidth=4;\nctx.stroke();\n\n// stop shadowing\nctx.shadowColor='rgba(0,0,0,0)';\n\n// redefine an opaque shape -- here we use a rounded rectangle\ndefineRoundedRect(30,30,100,75,10);\n\n// set compositing to erase everything outside the stroke\nctx.globalCompositeOperation='destination-in';\nctx.fill();\n\n// set compositing to erase everything outside the stroke\nctx.globalCompositeOperation='destination-over';\nctx.fillStyle='gold';\nctx.fill();\n\n// always clean up -- set compsiting back to default\nctx.globalCompositeOperation='source-over';   \n\nfunction defineRoundedRect(x,y,width,height,radius) {\n    ctx.beginPath();\n    ctx.moveTo(x + radius, y);\n    ctx.lineTo(x + width - radius, y);\n    ctx.quadraticCurveTo(x + width, y, x + width, y + radius);\n    ctx.lineTo(x + width, y + height - radius);\n    ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);\n    ctx.lineTo(x + radius, y + height);\n    ctx.quadraticCurveTo(x, y + height, x, y + height - radius);\n    ctx.lineTo(x, y + radius);\n    ctx.quadraticCurveTo(x, y, x + radius, y);\n    ctx.closePath();\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "f0006898-ae82-4391-aebd-7a945074e887": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799245,
+          "id": "f0006898-ae82-4391-aebd-7a945074e887",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799245,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "function defineRoundedRect(x,y,width,height,radius) {\n    ctx.beginPath();\n    ctx.moveTo(x + radius, y);\n    ctx.lineTo(x + width - radius, y);\n    ctx.quadraticCurveTo(x + width, y, x + width, y + radius);\n    ctx.lineTo(x + width, y + height - radius);\n    ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);\n    ctx.lineTo(x + radius, y + height);\n    ctx.quadraticCurveTo(x, y + height, x, y + height - radius);\n    ctx.lineTo(x, y + radius);\n    ctx.quadraticCurveTo(x, y, x + radius, y);\n    ctx.closePath();\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "f1363234-a7f7-409a-8af5-7f4e03f7b07b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "053fe104-2520-46a5-ad43-5d955cb9c892",
+            "9092473e-15ff-4f38-9ec1-c8e9de4563ff",
+            "6a8de5c3-8508-47be-8e25-39429cc80ca8",
+            "c5ae688e-f6f5-4cb7-8ca8-40c33a17ad6d",
+            "cf067fae-6735-4353-8355-119ba93668cb",
+            "ff71c638-3f13-4bd3-ba50-d8f2a0353797",
+            "8fa5c8d6-73dc-4cae-8a9c-9511fa5c98a4",
+            "1dbf30af-c421-4640-b8b9-69e42655e4c0",
+            "6628f46a-6646-4d2a-9da7-d9d029fd7a0e",
+            "7da64317-007a-47c2-bfd0-e1aacc407428",
+            "9137ae5f-201e-46b0-a5c2-08b9ccda7c1b",
+            "f0006898-ae82-4391-aebd-7a945074e887",
+            "08291033-d6da-4593-b6bd-4337ec6be2d8",
+            "b58e8d6f-5aa4-4edd-b5f6-158c9e9929ad",
+            "d04f9c3c-00fc-44d1-9bd9-c7d20e0c78ac",
+            "04d6ec35-f230-4a58-a9bc-9d3c0f43171b",
+            "65df8a92-e7f9-4263-97a6-9b9605180703",
+            "da827ce6-e8af-4317-a843-f1d3044fec4d",
+            "6992cd70-d8b2-47f4-8681-43c329a0a6cd",
+            "50f32e4e-474a-4cfe-a898-f04dd85ff2f2",
+            "f1fabb5e-aa1f-4bc6-b3b8-8290ca524f65",
+            "3f0c783b-7921-4afe-9a7f-ac2e4106bd62",
+            "e0b90c64-3393-409a-8f51-a8cacaaed782"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799248,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799248,
+          "parent_id": "15ffc166-5db0-493f-b264-5df513042ee7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Inner shadows"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "f1fabb5e-aa1f-4bc6-b3b8-8290ca524f65": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799247,
+          "id": "f1fabb5e-aa1f-4bc6-b3b8-8290ca524f65",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799247,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "source": [
+              [
+                "/tmp/da910018-8f5f-4bb6-a477-0f09076d7581/9ee9b941d709188eb3f234fd3c92a30f9b8614ac.png"
+              ]
+            ]
+          },
+          "type": "image",
+          "version": 5
+        }
+      },
+      "ff71c638-3f13-4bd3-ba50-d8f2a0353797": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551949799244,
+          "id": "ff71c638-3f13-4bd3-ba50-d8f2a0353797",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551949799244,
+          "parent_id": "f1363234-a7f7-409a-8af5-7f4e03f7b07b",
+          "parent_table": "block",
+          "properties": {
+            "source": [
+              [
+                "/tmp/da910018-8f5f-4bb6-a477-0f09076d7581/b35bc99914e2018c7e138195a403ff8f4d8d5a7f.png"
+              ]
+            ]
+          },
+          "type": "image",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
