@@ -1,0 +1,634 @@
+1767 1594557936459 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+      "table": "block"
+    }
+  ]
+}
+Response:+1567
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "6c45dbe4-dd76-4ba4-b55a-7b3be1d4fe11",
+          "2f59a47e-1a6b-4e6d-ae82-fc28577e10e1",
+          "54b3f518-8f15-4ac4-8af7-a63e9005a533",
+          "a6aaf026-b6fa-4c7e-8034-bd507efc4764",
+          "c715260c-8d33-4527-8cde-1b70a58f82d3",
+          "4e823a29-a987-48ff-b154-06ecb1e08be7",
+          "5bc32409-0d9b-4dcd-b632-924e2ea32415",
+          "1c031cf7-993b-4bfc-bf17-1a39ee15437d",
+          "01f98e2c-13de-400a-b6df-5ff2118af1c2",
+          "402e1409-4a71-44b4-8a34-b83d78f05a97"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552105046964,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1566787020000,
+        "parent_id": "752e5fcf-89e9-482f-8ab5-40b382d1513b",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Captures strongweak references and retain cycles"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 4
+      }
+    }
+  ]
+}
+21224 1594557936460 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+  "verticalColumns": false
+}
+Response:+20983
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "01f98e2c-13de-400a-b6df-5ff2118af1c2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105046963,
+          "id": "01f98e2c-13de-400a-b6df-5ff2118af1c2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105046963,
+          "parent_id": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If an object holds onto a closure, which also holds a strong reference to the object, this is a "
+              ],
+              [
+                "retain cycle",
+                [
+                  [
+                    "b"
+                  ],
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/swift/745/memory-management/2533/reference-cycles-and-weak-references#t=201607211838216466797"
+                  ]
+                ]
+              ],
+              [
+                ". Unless the cycle is broken, the memory storing the object and closure will be leaked (never reclaimed)."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "1c031cf7-993b-4bfc-bf17-1a39ee15437d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105046963,
+          "id": "1c031cf7-993b-4bfc-bf17-1a39ee15437d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105046963,
+          "parent_id": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Retain cycles"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 1
+        }
+      },
+      "2f59a47e-1a6b-4e6d-ae82-fc28577e10e1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105046960,
+          "id": "2f59a47e-1a6b-4e6d-ae82-fc28577e10e1",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105046960,
+          "parent_id": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "When a closure captures a reference type (a class instance), it holds a strong reference by default:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "402e1409-4a71-44b4-8a34-b83d78f05a97": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105046963,
+          "id": "402e1409-4a71-44b4-8a34-b83d78f05a97",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1566787020000,
+          "parent_id": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Swift"
+              ]
+            ],
+            "title": [
+              [
+                "BAD:SOLUTION:[weak self] inguard let strongSelf = self else { return }"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 7
+        }
+      },
+      "4e823a29-a987-48ff-b154-06ecb1e08be7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105046961,
+          "id": "4e823a29-a987-48ff-b154-06ecb1e08be7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1566787020000,
+          "parent_id": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Swift"
+              ]
+            ],
+            "title": [
+              [
+                "assumedunownedcrash!"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "54b3f518-8f15-4ac4-8af7-a63e9005a533": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105046960,
+          "id": "54b3f518-8f15-4ac4-8af7-a63e9005a533",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1566787020000,
+          "parent_id": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Swift"
+              ]
+            ],
+            "title": [
+              [
+                "let closure: () -\u003e Void\ndo {\n    let obj = MyClass()\n    // Captures a strong reference to `obj`: the object will be kept alive\n    // as long as the closure itself is alive.\n    closure = { obj.sayHi() }\n    closure()  // The object is still alive; prints \"Hello\"\n} // obj goes out of scope\nclosure()  // The object is still alive; prints \"Hello\""
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "5bc32409-0d9b-4dcd-b632-924e2ea32415": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105046963,
+          "id": "5bc32409-0d9b-4dcd-b632-924e2ea32415",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105046963,
+          "parent_id": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "For more information, see the "
+              ],
+              [
+                "Memory Management",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/swift/745/memory-management#t=201607211838216466797"
+                  ]
+                ]
+              ],
+              [
+                " topic, and the "
+              ],
+              [
+                "Automatic Reference Counting",
+                [
+                  [
+                    "a",
+                    "https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html"
+                  ]
+                ]
+              ],
+              [
+                " section of The Swift Programming Language."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "6c45dbe4-dd76-4ba4-b55a-7b3be1d4fe11": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105046958,
+          "id": "6c45dbe4-dd76-4ba4-b55a-7b3be1d4fe11",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1566787020000,
+          "parent_id": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Swift"
+              ]
+            ],
+            "title": [
+              [
+                "class MyClass {\n    func sayHi() { print(\"Hello\") }\n    deinit { print(\"Goodbye\") }\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "752e5fcf-89e9-482f-8ab5-40b382d1513b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "d5773de0-58c6-43e5-8706-7f79cc29772e",
+            "9f4d47be-6128-49ea-afc0-39bf1531fb18",
+            "fbd914e0-3412-4c81-80c3-68b463b378c2",
+            "31679d1a-e718-4a40-bc5f-939c2677222f",
+            "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+            "694fb38e-970b-4818-b8cc-967e2a827e4d",
+            "31d94d65-68d4-4adc-9d3f-e83551f65715",
+            "dd0298c7-1f3b-44d1-a82b-a9fe6155cdc6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105020000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "752e5fcf-89e9-482f-8ab5-40b382d1513b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1566786960000,
+          "parent_id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Closures"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 27
+        }
+      },
+      "9c7e7153-66bf-441f-86ea-ac98e0f09636": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "6c45dbe4-dd76-4ba4-b55a-7b3be1d4fe11",
+            "2f59a47e-1a6b-4e6d-ae82-fc28577e10e1",
+            "54b3f518-8f15-4ac4-8af7-a63e9005a533",
+            "a6aaf026-b6fa-4c7e-8034-bd507efc4764",
+            "c715260c-8d33-4527-8cde-1b70a58f82d3",
+            "4e823a29-a987-48ff-b154-06ecb1e08be7",
+            "5bc32409-0d9b-4dcd-b632-924e2ea32415",
+            "1c031cf7-993b-4bfc-bf17-1a39ee15437d",
+            "01f98e2c-13de-400a-b6df-5ff2118af1c2",
+            "402e1409-4a71-44b4-8a34-b83d78f05a97"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105046964,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1566787020000,
+          "parent_id": "752e5fcf-89e9-482f-8ab5-40b382d1513b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Captures strongweak references and retain cycles"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 4
+        }
+      },
+      "a6aaf026-b6fa-4c7e-8034-bd507efc4764": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105046960,
+          "id": "a6aaf026-b6fa-4c7e-8034-bd507efc4764",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105046960,
+          "parent_id": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The closure’s "
+              ],
+              [
+                "capture list",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " can be used to specify a weak or unowned reference:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "c715260c-8d33-4527-8cde-1b70a58f82d3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105046961,
+          "id": "c715260c-8d33-4527-8cde-1b70a58f82d3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1566787020000,
+          "parent_id": "9c7e7153-66bf-441f-86ea-ac98e0f09636",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Swift"
+              ]
+            ],
+            "title": [
+              [
+                "weak"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "e76d4290-6b0e-4932-91a6-0bbd351f3b6b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4743a9b3-3ba1-4406-8fd8-92f831177a73",
+            "40e2faa7-5ff3-4654-a114-f19b837c574b",
+            "743fc1c3-bc9c-4386-8bb8-37bb9430112f",
+            "85fc985e-d4f6-470c-a50e-d230fb7f7029",
+            "b3a03a81-83e5-4085-b462-4a9e0b487f4a",
+            "5b89258e-bcc1-4c2b-b7ec-53d72cea9e9e",
+            "752e5fcf-89e9-482f-8ab5-40b382d1513b",
+            "0bbae402-0f8d-4c53-9284-2bfa4e450424",
+            "9f9ac142-3746-4907-b806-661ae15321d3",
+            "4007debc-6666-4d3f-8faa-5ba1ed7a30fb",
+            "2ebad693-9dff-4aeb-bb97-2b78d049b25e",
+            "08b06e18-c5f3-4e40-a0be-39eaaab9fdc5",
+            "c7a9a16f-d660-4db7-8d5b-012a3f06c296",
+            "aec11d9f-8e77-49ff-9784-b941666239e5",
+            "8e0cbefa-bb13-46a7-ae47-5d4863fae390",
+            "9926a540-7aa3-4e8b-a880-0d25223917b7",
+            "cfa2de35-cd00-48e5-aa49-c7bc809cd199",
+            "75f61437-dd57-4152-ba5d-e1d11169b6f5",
+            "ab64a7f2-ccc3-4ffd-98ca-cb7cc7d65a64",
+            "346889aa-bbe6-4248-9382-9d44810882db",
+            "6eadf518-5b93-4d64-9bc2-0e88e97a1ad5",
+            "45e8edb6-720b-4879-a3f9-bdeeebc97a9f",
+            "5367e1b7-d8c9-42c1-a35c-1508743d5105",
+            "ab0095d7-f330-4c2a-9564-40c927e04cdd",
+            "995be302-8fbf-4acc-9c9b-db5cfdd0521f",
+            "e9e7dd97-8907-4c61-94c8-873542c4221d",
+            "9f971757-8f39-4d94-9d24-c0b8b7100e34",
+            "b51b495d-f653-4e2b-b92d-5af0d351982e",
+            "9da019f7-f538-42a4-bf9f-a95e812e2233",
+            "b5d22e19-0056-4916-bf50-cc1dc2f38c0e",
+            "f3aea850-966d-47e0-bbd2-8564c5d35715",
+            "e80e058c-cecb-4b11-af4a-b91c85302b9d",
+            "2f2b8c00-b4d8-4005-9764-71297a1f77f4",
+            "a95c626d-6b55-449a-91a2-173c29e1c6a7",
+            "41f7ad78-47df-4ba7-9750-0c3f2e60ce1b",
+            "e1154a97-185d-4fcd-81a8-6d4e1e7d3a99",
+            "9455a2c2-402a-4a70-8aeb-9762505167c3",
+            "77ad070c-dd39-4425-a996-cc8967f74b4e",
+            "9667daa4-8e9a-40c6-8498-5fd2b4e46a1e",
+            "67e4333d-b244-489f-94a9-5033eda1d62f",
+            "00935eb8-d316-43d4-9d14-f133a4cf1c91",
+            "41bf5b92-7d0a-4e59-af5d-5b1468ffec68",
+            "18f00844-2ce5-4c04-9bd7-9a256ae07a77",
+            "2f6abffd-8151-4ec2-9a32-2f5da3b5a767",
+            "35e9a1fb-1c65-4c4d-b44b-becc6cd9f6bd",
+            "2e9691dd-0811-4161-964f-0af0c454280b",
+            "cb46a744-6c26-43e6-ba4b-4058eb63b196",
+            "1beb1f79-8f57-4bf1-8bcb-e6737d583cda",
+            "9ae8b978-28e6-44f1-af9c-629e5306665c",
+            "10e2f070-4018-4205-8a93-00bc8fa64375",
+            "bec5b2af-554c-4a6c-87b2-a65a4523f654",
+            "41dd6dc2-8607-4978-9306-8747c2240710",
+            "36fdcbe2-b28e-4eae-96d0-f3255977fddc",
+            "1a7a68fa-5ed7-4026-bd09-6c438ee3c996",
+            "298a6998-40b4-4079-ae0e-f0fc31d96e18",
+            "d04ea4c2-1d96-49c5-b911-1de41c18c770",
+            "d9d0d23b-6862-4787-ba04-328a8305821b",
+            "2a406142-9c5f-402d-939e-888df54da249",
+            "3b5feb34-031d-402a-804d-16d2d230a001",
+            "66275fb3-9144-4a6b-a878-f81e4a354aa6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104898140,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605960000,
+          "parent_id": "4a02310c-f1a7-4b8f-8aff-7088c1decd8b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Swift"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 148
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

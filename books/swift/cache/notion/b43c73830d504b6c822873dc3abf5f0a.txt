@@ -1,0 +1,518 @@
+1668 1594557899341 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "b43c7383-0d50-4b6c-8228-73dc3abf5f0a",
+      "table": "block"
+    }
+  ]
+}
+Response:+1468
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "3f229056-205f-44cb-a38f-41af1ff8b2b5",
+          "8163220d-0492-4192-8e57-6fd074c41a89",
+          "4c9141e1-4c75-4e0b-8591-01ab43317c1e",
+          "97675aa1-d936-4351-9cf8-219e16a97671",
+          "b1b4963c-35eb-4b8f-a370-f7e70b791e71",
+          "e4e616e3-190e-495b-a4a3-76588799b8ef",
+          "073adaf5-6423-462c-abc4-0a82a30cf46f",
+          "c7e96ed4-241b-4f38-ad27-9d2a686d3735"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552105872866,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "b43c7383-0d50-4b6c-8228-73dc3abf5f0a",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552105872866,
+        "parent_id": "2e9691dd-0811-4161-964f-0af0c454280b",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Password Based Key Derivation Calibration Swift 3"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+17691 1594557899341 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "b43c7383-0d50-4b6c-8228-73dc3abf5f0a",
+  "verticalColumns": false
+}
+Response:+17450
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "073adaf5-6423-462c-abc4-0a82a30cf46f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105872866,
+          "id": "073adaf5-6423-462c-abc4-0a82a30cf46f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105872866,
+          "parent_id": "b43c7383-0d50-4b6c-8228-73dc3abf5f0a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Example Output:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "2e9691dd-0811-4161-964f-0af0c454280b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "c5568d6b-b40d-402d-85e4-e5300bbc1eb7",
+            "4e426020-675c-4015-a2e0-e275a2ec2f69",
+            "6f71e474-c6f8-44b3-8993-7dd305941de1",
+            "02d39c35-3b5e-4d01-8e9b-9b4377d55e25",
+            "b43c7383-0d50-4b6c-8228-73dc3abf5f0a"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105860000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2e9691dd-0811-4161-964f-0af0c454280b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552106160000,
+          "parent_id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "PBKDF2 key derivation"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 36
+        }
+      },
+      "3f229056-205f-44cb-a38f-41af1ff8b2b5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105872863,
+          "id": "3f229056-205f-44cb-a38f-41af1ff8b2b5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105872863,
+          "parent_id": "b43c7383-0d50-4b6c-8228-73dc3abf5f0a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Determine the number of PRF rounds to use for a specific delay on the current platform."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "4c9141e1-4c75-4e0b-8591-01ab43317c1e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105872866,
+          "id": "4c9141e1-4c75-4e0b-8591-01ab43317c1e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105872866,
+          "parent_id": "b43c7383-0d50-4b6c-8228-73dc3abf5f0a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "password Sample password.  \nsalt     Sample salt.  \nmsec     Targeted duration we want to achieve for a key derivation.\n\nreturns  The number of iterations to use for the desired processing time."
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "8163220d-0492-4192-8e57-6fd074c41a89": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105872865,
+          "id": "8163220d-0492-4192-8e57-6fd074c41a89",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105872865,
+          "parent_id": "b43c7383-0d50-4b6c-8228-73dc3abf5f0a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Several parameters are defaulted to representative values that should not materially affect the round count."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "97675aa1-d936-4351-9cf8-219e16a97671": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105872866,
+          "id": "97675aa1-d936-4351-9cf8-219e16a97671",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105872866,
+          "parent_id": "b43c7383-0d50-4b6c-8228-73dc3abf5f0a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "func pbkdf2SHA1Calibrate(password: String, salt: Data, msec: Int) -\u003e UInt32 {\n    let actualRoundCount: UInt32 = CCCalibratePBKDF(\n        CCPBKDFAlgorithm(kCCPBKDF2),\n        password.utf8.count,\n        salt.count,\n        CCPseudoRandomAlgorithm(kCCPRFHmacAlgSHA1),\n        kCCKeySizeAES256,\n        UInt32(msec));\n    return actualRoundCount\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "b1b4963c-35eb-4b8f-a370-f7e70b791e71": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105872866,
+          "id": "b1b4963c-35eb-4b8f-a370-f7e70b791e71",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105872866,
+          "parent_id": "b43c7383-0d50-4b6c-8228-73dc3abf5f0a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Example usage:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "b43c7383-0d50-4b6c-8228-73dc3abf5f0a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "3f229056-205f-44cb-a38f-41af1ff8b2b5",
+            "8163220d-0492-4192-8e57-6fd074c41a89",
+            "4c9141e1-4c75-4e0b-8591-01ab43317c1e",
+            "97675aa1-d936-4351-9cf8-219e16a97671",
+            "b1b4963c-35eb-4b8f-a370-f7e70b791e71",
+            "e4e616e3-190e-495b-a4a3-76588799b8ef",
+            "073adaf5-6423-462c-abc4-0a82a30cf46f",
+            "c7e96ed4-241b-4f38-ad27-9d2a686d3735"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105872866,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "b43c7383-0d50-4b6c-8228-73dc3abf5f0a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105872866,
+          "parent_id": "2e9691dd-0811-4161-964f-0af0c454280b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Password Based Key Derivation Calibration Swift 3"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "c7e96ed4-241b-4f38-ad27-9d2a686d3735": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105872866,
+          "id": "c7e96ed4-241b-4f38-ad27-9d2a686d3735",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105872866,
+          "parent_id": "b43c7383-0d50-4b6c-8228-73dc3abf5f0a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "For 100 msec delay, rounds: 93457"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "e4e616e3-190e-495b-a4a3-76588799b8ef": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105872866,
+          "id": "e4e616e3-190e-495b-a4a3-76588799b8ef",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105872866,
+          "parent_id": "b43c7383-0d50-4b6c-8228-73dc3abf5f0a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "let saltData       = Data(bytes: [0x73, 0x61, 0x6c, 0x74, 0x44, 0x61, 0x74, 0x61])\nlet passwordString = \"password\"\nlet delayMsec      = 100\n\nlet rounds = pbkdf2SHA1Calibrate(password:passwordString, salt:saltData, msec:delayMsec)\nprint(\"For \\(delayMsec) msec delay, rounds: \\(rounds)\")"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "e76d4290-6b0e-4932-91a6-0bbd351f3b6b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4743a9b3-3ba1-4406-8fd8-92f831177a73",
+            "40e2faa7-5ff3-4654-a114-f19b837c574b",
+            "743fc1c3-bc9c-4386-8bb8-37bb9430112f",
+            "85fc985e-d4f6-470c-a50e-d230fb7f7029",
+            "b3a03a81-83e5-4085-b462-4a9e0b487f4a",
+            "5b89258e-bcc1-4c2b-b7ec-53d72cea9e9e",
+            "752e5fcf-89e9-482f-8ab5-40b382d1513b",
+            "0bbae402-0f8d-4c53-9284-2bfa4e450424",
+            "9f9ac142-3746-4907-b806-661ae15321d3",
+            "4007debc-6666-4d3f-8faa-5ba1ed7a30fb",
+            "2ebad693-9dff-4aeb-bb97-2b78d049b25e",
+            "08b06e18-c5f3-4e40-a0be-39eaaab9fdc5",
+            "c7a9a16f-d660-4db7-8d5b-012a3f06c296",
+            "aec11d9f-8e77-49ff-9784-b941666239e5",
+            "8e0cbefa-bb13-46a7-ae47-5d4863fae390",
+            "9926a540-7aa3-4e8b-a880-0d25223917b7",
+            "cfa2de35-cd00-48e5-aa49-c7bc809cd199",
+            "75f61437-dd57-4152-ba5d-e1d11169b6f5",
+            "ab64a7f2-ccc3-4ffd-98ca-cb7cc7d65a64",
+            "346889aa-bbe6-4248-9382-9d44810882db",
+            "6eadf518-5b93-4d64-9bc2-0e88e97a1ad5",
+            "45e8edb6-720b-4879-a3f9-bdeeebc97a9f",
+            "5367e1b7-d8c9-42c1-a35c-1508743d5105",
+            "ab0095d7-f330-4c2a-9564-40c927e04cdd",
+            "995be302-8fbf-4acc-9c9b-db5cfdd0521f",
+            "e9e7dd97-8907-4c61-94c8-873542c4221d",
+            "9f971757-8f39-4d94-9d24-c0b8b7100e34",
+            "b51b495d-f653-4e2b-b92d-5af0d351982e",
+            "9da019f7-f538-42a4-bf9f-a95e812e2233",
+            "b5d22e19-0056-4916-bf50-cc1dc2f38c0e",
+            "f3aea850-966d-47e0-bbd2-8564c5d35715",
+            "e80e058c-cecb-4b11-af4a-b91c85302b9d",
+            "2f2b8c00-b4d8-4005-9764-71297a1f77f4",
+            "a95c626d-6b55-449a-91a2-173c29e1c6a7",
+            "41f7ad78-47df-4ba7-9750-0c3f2e60ce1b",
+            "e1154a97-185d-4fcd-81a8-6d4e1e7d3a99",
+            "9455a2c2-402a-4a70-8aeb-9762505167c3",
+            "77ad070c-dd39-4425-a996-cc8967f74b4e",
+            "9667daa4-8e9a-40c6-8498-5fd2b4e46a1e",
+            "67e4333d-b244-489f-94a9-5033eda1d62f",
+            "00935eb8-d316-43d4-9d14-f133a4cf1c91",
+            "41bf5b92-7d0a-4e59-af5d-5b1468ffec68",
+            "18f00844-2ce5-4c04-9bd7-9a256ae07a77",
+            "2f6abffd-8151-4ec2-9a32-2f5da3b5a767",
+            "35e9a1fb-1c65-4c4d-b44b-becc6cd9f6bd",
+            "2e9691dd-0811-4161-964f-0af0c454280b",
+            "cb46a744-6c26-43e6-ba4b-4058eb63b196",
+            "1beb1f79-8f57-4bf1-8bcb-e6737d583cda",
+            "9ae8b978-28e6-44f1-af9c-629e5306665c",
+            "10e2f070-4018-4205-8a93-00bc8fa64375",
+            "bec5b2af-554c-4a6c-87b2-a65a4523f654",
+            "41dd6dc2-8607-4978-9306-8747c2240710",
+            "36fdcbe2-b28e-4eae-96d0-f3255977fddc",
+            "1a7a68fa-5ed7-4026-bd09-6c438ee3c996",
+            "298a6998-40b4-4079-ae0e-f0fc31d96e18",
+            "d04ea4c2-1d96-49c5-b911-1de41c18c770",
+            "d9d0d23b-6862-4787-ba04-328a8305821b",
+            "2a406142-9c5f-402d-939e-888df54da249",
+            "3b5feb34-031d-402a-804d-16d2d230a001",
+            "66275fb3-9144-4a6b-a878-f81e4a354aa6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104898140,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605960000,
+          "parent_id": "4a02310c-f1a7-4b8f-8aff-7088c1decd8b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Swift"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 148
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

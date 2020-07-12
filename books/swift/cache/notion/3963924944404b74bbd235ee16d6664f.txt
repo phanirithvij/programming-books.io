@@ -1,0 +1,806 @@
+1883 1594557953510 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+      "table": "block"
+    }
+  ]
+}
+Response:+1683
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "de1f2a00-ecc5-4480-8cf9-a51a109bb3f6",
+          "473bbe66-7868-4edb-9b5f-e9a9069d4a46",
+          "eb42aad5-e36c-4971-a2ae-55f6273151ec",
+          "ab3fa68f-bb76-4195-91f1-780ae141e451",
+          "8f590d68-6294-4560-8fc0-c176b807dd95",
+          "8826a147-0c10-4a7a-84b3-5b3614aa158d",
+          "9734ff54-7117-4a4c-8313-f4e124db9211",
+          "566c9830-9b86-4ab2-8862-502e41754789",
+          "207f2a95-ccf4-41d5-9048-8bbe38e05b10",
+          "b9087d19-5abf-4448-9dc0-e12422c1bede",
+          "794eb8c1-6c1f-4660-b213-acb478513cdf",
+          "fe185b32-b623-409e-98b3-2ca922bd98e6",
+          "0ab0f846-03ea-42f3-8ee5-ee0fcc6d0906"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552105621215,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552105621215,
+        "parent_id": "9667daa4-8e9a-40c6-8498-5fd2b4e46a1e",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "RxSwift basics"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 7
+      }
+    }
+  ]
+}
+25612 1594557953511 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "39639249-4440-4b74-bbd2-35ee16d6664f",
+  "verticalColumns": false
+}
+Response:+25371
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "0ab0f846-03ea-42f3-8ee5-ee0fcc6d0906": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621215,
+          "id": "0ab0f846-03ea-42f3-8ee5-ee0fcc6d0906",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621215,
+          "parent_id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Take a look "
+              ],
+              [
+                "on this example",
+                [
+                  [
+                    "a",
+                    "https://github.com/scotteg/RxSwiftPlayer"
+                  ]
+                ]
+              ],
+              [
+                ", explore the code by yourself."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 1
+        }
+      },
+      "207f2a95-ccf4-41d5-9048-8bbe38e05b10": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621211,
+          "id": "207f2a95-ccf4-41d5-9048-8bbe38e05b10",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621211,
+          "parent_id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Before we move on, there are some useful resources:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "39639249-4440-4b74-bbd2-35ee16d6664f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "de1f2a00-ecc5-4480-8cf9-a51a109bb3f6",
+            "473bbe66-7868-4edb-9b5f-e9a9069d4a46",
+            "eb42aad5-e36c-4971-a2ae-55f6273151ec",
+            "ab3fa68f-bb76-4195-91f1-780ae141e451",
+            "8f590d68-6294-4560-8fc0-c176b807dd95",
+            "8826a147-0c10-4a7a-84b3-5b3614aa158d",
+            "9734ff54-7117-4a4c-8313-f4e124db9211",
+            "566c9830-9b86-4ab2-8862-502e41754789",
+            "207f2a95-ccf4-41d5-9048-8bbe38e05b10",
+            "b9087d19-5abf-4448-9dc0-e12422c1bede",
+            "794eb8c1-6c1f-4660-b213-acb478513cdf",
+            "fe185b32-b623-409e-98b3-2ca922bd98e6",
+            "0ab0f846-03ea-42f3-8ee5-ee0fcc6d0906"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621215,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621215,
+          "parent_id": "9667daa4-8e9a-40c6-8498-5fd2b4e46a1e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "RxSwift basics"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "473bbe66-7868-4edb-9b5f-e9a9069d4a46": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621210,
+          "id": "473bbe66-7868-4edb-9b5f-e9a9069d4a46",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621210,
+          "parent_id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Every piece of data can be represented as "
+              ],
+              [
+                "Observable",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", which is an asynchronous data stream. The power of FRP is in representation synchronous and asynchronous events as streams, "
+              ],
+              [
+                "Observable",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "s, and providing the same interface to work with it."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "566c9830-9b86-4ab2-8862-502e41754789": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621211,
+          "id": "566c9830-9b86-4ab2-8862-502e41754789",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621211,
+          "parent_id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The diagram above shows a case where no data was emitted and "
+              ],
+              [
+                ".Error",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " event terminates the "
+              ],
+              [
+                "Observable",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "794eb8c1-6c1f-4660-b213-acb478513cdf": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621214,
+          "id": "794eb8c1-6c1f-4660-b213-acb478513cdf",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621214,
+          "parent_id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "RxSwift Slack room",
+                [
+                  [
+                    "a",
+                    "http://rxswift.slack.com/"
+                  ]
+                ]
+              ],
+              [
+                " has a few channels for education problem solving."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 1
+        }
+      },
+      "8826a147-0c10-4a7a-84b3-5b3614aa158d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621211,
+          "id": "8826a147-0c10-4a7a-84b3-5b3614aa158d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621211,
+          "parent_id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In this example there is a stream of "
+              ],
+              [
+                "Int",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " values. As time moves forward, three "
+              ],
+              [
+                ".Next",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " events occurred, and then the stream terminated successfully."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "8f590d68-6294-4560-8fc0-c176b807dd95": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621211,
+          "id": "8f590d68-6294-4560-8fc0-c176b807dd95",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621211,
+          "parent_id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "--(1)--(2)--(3)|--\u003e"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "9667daa4-8e9a-40c6-8498-5fd2b4e46a1e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "69dcef50-3383-4d5d-b619-4f40a0668103",
+            "b86bf197-9205-4273-b219-245538d90642",
+            "39639249-4440-4b74-bbd2-35ee16d6664f",
+            "924e317e-e896-4025-b12e-2b3c4933a286",
+            "47a7b714-d08b-44b7-a1e0-a5d1e6cc2ba2",
+            "79fbb2c9-e8d1-4d90-85a6-42726c542922"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105560000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "9667daa4-8e9a-40c6-8498-5fd2b4e46a1e",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105800000,
+          "parent_id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "RxSwift"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 23
+        }
+      },
+      "9734ff54-7117-4a4c-8313-f4e124db9211": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621211,
+          "id": "9734ff54-7117-4a4c-8313-f4e124db9211",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621211,
+          "parent_id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "--X-\u003e"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "ab3fa68f-bb76-4195-91f1-780ae141e451": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621211,
+          "id": "ab3fa68f-bb76-4195-91f1-780ae141e451",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621211,
+          "parent_id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Let’s take a look at following marble diagram:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "b9087d19-5abf-4448-9dc0-e12422c1bede": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621213,
+          "id": "b9087d19-5abf-4448-9dc0-e12422c1bede",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621213,
+          "parent_id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "RxSwift",
+                [
+                  [
+                    "a",
+                    "https://github.com/ReactiveX/RxSwift"
+                  ]
+                ]
+              ],
+              [
+                ". Look at examples, read docs and getting started."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 5
+        }
+      },
+      "de1f2a00-ecc5-4480-8cf9-a51a109bb3f6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621208,
+          "id": "de1f2a00-ecc5-4480-8cf9-a51a109bb3f6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621208,
+          "parent_id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "FRP, or Functional Reactive Programming, has some basic terms which you need to know."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "e76d4290-6b0e-4932-91a6-0bbd351f3b6b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4743a9b3-3ba1-4406-8fd8-92f831177a73",
+            "40e2faa7-5ff3-4654-a114-f19b837c574b",
+            "743fc1c3-bc9c-4386-8bb8-37bb9430112f",
+            "85fc985e-d4f6-470c-a50e-d230fb7f7029",
+            "b3a03a81-83e5-4085-b462-4a9e0b487f4a",
+            "5b89258e-bcc1-4c2b-b7ec-53d72cea9e9e",
+            "752e5fcf-89e9-482f-8ab5-40b382d1513b",
+            "0bbae402-0f8d-4c53-9284-2bfa4e450424",
+            "9f9ac142-3746-4907-b806-661ae15321d3",
+            "4007debc-6666-4d3f-8faa-5ba1ed7a30fb",
+            "2ebad693-9dff-4aeb-bb97-2b78d049b25e",
+            "08b06e18-c5f3-4e40-a0be-39eaaab9fdc5",
+            "c7a9a16f-d660-4db7-8d5b-012a3f06c296",
+            "aec11d9f-8e77-49ff-9784-b941666239e5",
+            "8e0cbefa-bb13-46a7-ae47-5d4863fae390",
+            "9926a540-7aa3-4e8b-a880-0d25223917b7",
+            "cfa2de35-cd00-48e5-aa49-c7bc809cd199",
+            "75f61437-dd57-4152-ba5d-e1d11169b6f5",
+            "ab64a7f2-ccc3-4ffd-98ca-cb7cc7d65a64",
+            "346889aa-bbe6-4248-9382-9d44810882db",
+            "6eadf518-5b93-4d64-9bc2-0e88e97a1ad5",
+            "45e8edb6-720b-4879-a3f9-bdeeebc97a9f",
+            "5367e1b7-d8c9-42c1-a35c-1508743d5105",
+            "ab0095d7-f330-4c2a-9564-40c927e04cdd",
+            "995be302-8fbf-4acc-9c9b-db5cfdd0521f",
+            "e9e7dd97-8907-4c61-94c8-873542c4221d",
+            "9f971757-8f39-4d94-9d24-c0b8b7100e34",
+            "b51b495d-f653-4e2b-b92d-5af0d351982e",
+            "9da019f7-f538-42a4-bf9f-a95e812e2233",
+            "b5d22e19-0056-4916-bf50-cc1dc2f38c0e",
+            "f3aea850-966d-47e0-bbd2-8564c5d35715",
+            "e80e058c-cecb-4b11-af4a-b91c85302b9d",
+            "2f2b8c00-b4d8-4005-9764-71297a1f77f4",
+            "a95c626d-6b55-449a-91a2-173c29e1c6a7",
+            "41f7ad78-47df-4ba7-9750-0c3f2e60ce1b",
+            "e1154a97-185d-4fcd-81a8-6d4e1e7d3a99",
+            "9455a2c2-402a-4a70-8aeb-9762505167c3",
+            "77ad070c-dd39-4425-a996-cc8967f74b4e",
+            "9667daa4-8e9a-40c6-8498-5fd2b4e46a1e",
+            "67e4333d-b244-489f-94a9-5033eda1d62f",
+            "00935eb8-d316-43d4-9d14-f133a4cf1c91",
+            "41bf5b92-7d0a-4e59-af5d-5b1468ffec68",
+            "18f00844-2ce5-4c04-9bd7-9a256ae07a77",
+            "2f6abffd-8151-4ec2-9a32-2f5da3b5a767",
+            "35e9a1fb-1c65-4c4d-b44b-becc6cd9f6bd",
+            "2e9691dd-0811-4161-964f-0af0c454280b",
+            "cb46a744-6c26-43e6-ba4b-4058eb63b196",
+            "1beb1f79-8f57-4bf1-8bcb-e6737d583cda",
+            "9ae8b978-28e6-44f1-af9c-629e5306665c",
+            "10e2f070-4018-4205-8a93-00bc8fa64375",
+            "bec5b2af-554c-4a6c-87b2-a65a4523f654",
+            "41dd6dc2-8607-4978-9306-8747c2240710",
+            "36fdcbe2-b28e-4eae-96d0-f3255977fddc",
+            "1a7a68fa-5ed7-4026-bd09-6c438ee3c996",
+            "298a6998-40b4-4079-ae0e-f0fc31d96e18",
+            "d04ea4c2-1d96-49c5-b911-1de41c18c770",
+            "d9d0d23b-6862-4787-ba04-328a8305821b",
+            "2a406142-9c5f-402d-939e-888df54da249",
+            "3b5feb34-031d-402a-804d-16d2d230a001",
+            "66275fb3-9144-4a6b-a878-f81e4a354aa6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104898140,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605960000,
+          "parent_id": "4a02310c-f1a7-4b8f-8aff-7088c1decd8b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Swift"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 148
+        }
+      },
+      "eb42aad5-e36c-4971-a2ae-55f6273151ec": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621210,
+          "id": "eb42aad5-e36c-4971-a2ae-55f6273151ec",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621210,
+          "parent_id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Usually "
+              ],
+              [
+                "Observable",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " holds several (or none) events that holds the date - "
+              ],
+              [
+                ".Next",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " events, and then it can be terminated successfully ("
+              ],
+              [
+                ".Success",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ") or with an error ("
+              ],
+              [
+                ".Error",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ")."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "fe185b32-b623-409e-98b3-2ca922bd98e6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105621214,
+          "id": "fe185b32-b623-409e-98b3-2ca922bd98e6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105621214,
+          "parent_id": "39639249-4440-4b74-bbd2-35ee16d6664f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Play around with "
+              ],
+              [
+                "RxMarbles",
+                [
+                  [
+                    "a",
+                    "http://rxmarbles.com/"
+                  ]
+                ]
+              ],
+              [
+                " to know what operator does, and which is the most useful in your case."
+              ]
+            ]
+          },
+          "type": "numbered_list",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

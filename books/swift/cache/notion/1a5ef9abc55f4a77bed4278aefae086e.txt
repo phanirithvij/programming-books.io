@@ -1,0 +1,913 @@
+2096 1594557963583 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+      "table": "block"
+    }
+  ]
+}
+Response:+1896
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "dc4fa488-55bc-448a-bb3b-cd98e3344269",
+          "b88cb80d-f2e6-41ad-9053-ada634092fa2",
+          "4dfb4caa-ea70-4a9d-9c97-325fc693b011",
+          "b67bc7f6-5236-4998-b6f6-f6136a953639",
+          "af1c7339-76d1-4aa5-9efc-bc68505e7192",
+          "af5467ef-09c1-49f4-973b-88cc3d6849c5",
+          "2c301505-40dd-4c9c-a13a-d7ce17415dac",
+          "ba18e5de-1535-4c01-91a9-a84b4ff6e53e",
+          "c2893258-a523-4f03-aceb-c840344530c1",
+          "7915f276-4acb-4541-a010-50915f283731",
+          "28136e46-d8f6-417c-bb88-335e59c26ab9",
+          "cfeb61a7-f892-4c0c-bf1a-152e2ee2e4c0",
+          "f9d80556-1b31-4aa6-9ebe-83141fddd4af",
+          "0f9d78a0-d85a-4ac4-8d2b-9fc99a210a1e",
+          "8cfa0295-032b-46aa-baec-38879af17203",
+          "0265dc72-de25-42f1-8f6e-efea73bc5c69",
+          "58fd6525-1dc4-43a9-9b0b-d6ad22fdb1aa"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552105067956,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552105067956,
+        "parent_id": "9f9ac142-3746-4907-b806-661ae15321d3",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Sorting an Array of Strings"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+30904 1594557963584 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+  "verticalColumns": false
+}
+Response:+30663
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "0265dc72-de25-42f1-8f6e-efea73bc5c69": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067956,
+          "id": "0265dc72-de25-42f1-8f6e-efea73bc5c69",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067956,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To properly sort Strings by the "
+              ],
+              [
+                "numeric",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " value they contain, use "
+              ],
+              [
+                "compare",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " with the "
+              ],
+              [
+                ".numeric",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " option:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "0f9d78a0-d85a-4ac4-8d2b-9fc99a210a1e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067956,
+          "id": "0f9d78a0-d85a-4ac4-8d2b-9fc99a210a1e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067956,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "let words = [\"Hello\", \"bonjour\", \"Salute\", \"ahola\"]\nlet sortedWords = words.sorted { $0.caseInsensitiveCompare($1) == .orderedAscending }\nprint(sortedWords) // [\"ahola\", \"bonjour\", \"Hello\", \"Salute\"]"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "1a5ef9ab-c55f-4a77-bed4-278aefae086e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "dc4fa488-55bc-448a-bb3b-cd98e3344269",
+            "b88cb80d-f2e6-41ad-9053-ada634092fa2",
+            "4dfb4caa-ea70-4a9d-9c97-325fc693b011",
+            "b67bc7f6-5236-4998-b6f6-f6136a953639",
+            "af1c7339-76d1-4aa5-9efc-bc68505e7192",
+            "af5467ef-09c1-49f4-973b-88cc3d6849c5",
+            "2c301505-40dd-4c9c-a13a-d7ce17415dac",
+            "ba18e5de-1535-4c01-91a9-a84b4ff6e53e",
+            "c2893258-a523-4f03-aceb-c840344530c1",
+            "7915f276-4acb-4541-a010-50915f283731",
+            "28136e46-d8f6-417c-bb88-335e59c26ab9",
+            "cfeb61a7-f892-4c0c-bf1a-152e2ee2e4c0",
+            "f9d80556-1b31-4aa6-9ebe-83141fddd4af",
+            "0f9d78a0-d85a-4ac4-8d2b-9fc99a210a1e",
+            "8cfa0295-032b-46aa-baec-38879af17203",
+            "0265dc72-de25-42f1-8f6e-efea73bc5c69",
+            "58fd6525-1dc4-43a9-9b0b-d6ad22fdb1aa"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067956,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067956,
+          "parent_id": "9f9ac142-3746-4907-b806-661ae15321d3",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Sorting an Array of Strings"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "28136e46-d8f6-417c-bb88-335e59c26ab9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067955,
+          "id": "28136e46-d8f6-417c-bb88-335e59c26ab9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067955,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "To address this issue, either sort on a lowercase version of the elements:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "2c301505-40dd-4c9c-a13a-d7ce17415dac": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067954,
+          "id": "2c301505-40dd-4c9c-a13a-d7ce17415dac",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067954,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Alternative syntax with a trailing closure:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "4dfb4caa-ea70-4a9d-9c97-325fc693b011": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067954,
+          "id": "4dfb4caa-ea70-4a9d-9c97-325fc693b011",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067954,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "or "
+              ],
+              [
+                "sort()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "58fd6525-1dc4-43a9-9b0b-d6ad22fdb1aa": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067956,
+          "id": "58fd6525-1dc4-43a9-9b0b-d6ad22fdb1aa",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067956,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "let files = [\"File-42.txt\", \"File-01.txt\", \"File-5.txt\", \"File-007.txt\", \"File-10.txt\"]\nlet sortedFiles = files.sorted() { $0.compare($1, options: .numeric) == .orderedAscending }\nprint(sortedFiles) // [\"File-01.txt\", \"File-5.txt\", \"File-007.txt\", \"File-10.txt\", \"File-42.txt\"]"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "7915f276-4acb-4541-a010-50915f283731": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067955,
+          "id": "7915f276-4acb-4541-a010-50915f283731",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067955,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "let words = [\"Hello\", \"bonjour\", \"Salute\", \"ahola\"]\nlet unexpected = words.sorted()\nprint(unexpected) // [\"Hello\", \"Salute\", \"ahola\", \"bonjour\"]"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "8cfa0295-032b-46aa-baec-38879af17203": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067956,
+          "id": "8cfa0295-032b-46aa-baec-38879af17203",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067956,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Alternatively, use ",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                "localizedCaseInsensitiveCompare",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", which can manage diacritics.",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "9f9ac142-3746-4907-b806-661ae15321d3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "449261bb-81bf-4036-a528-bee45a3c85b5",
+            "eb058294-343c-4228-b18e-ff014889ebe8",
+            "673b837b-8138-469b-86d2-4e8cd724bfa9",
+            "c22b7355-6e27-4dea-89c9-a58fe9984dce",
+            "ffcfb355-56be-4fa1-b5cc-1b4771e7cffd",
+            "01d9be5b-f686-4bb2-be70-c0151da8bbf2",
+            "00fa3f50-f14d-40e4-aa53-32376ea9b7ae",
+            "a9946532-4435-48ef-af15-8464bf7da4e7",
+            "bd2bda9f-4ac5-47a5-80c0-9128c809cbd4",
+            "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+            "63101205-3bc9-40a6-bce0-475a090ba8da",
+            "8f3bb2a5-32dc-4b19-a55a-16a18808f9d7",
+            "d105b889-1bb2-45c9-84d3-7f1a88bf0deb",
+            "430947d8-31d3-401c-88f6-8a073b66a20e",
+            "f5721f74-a463-42ae-b741-e907e3bdfd05",
+            "e8d3c7a8-7473-4458-a0c9-a38200b77b19",
+            "78db516d-8cbf-49c6-8d58-eceab20eb2db",
+            "6267779c-3b57-4235-9524-060c1f02758a",
+            "d14750b0-743d-4b45-a2a2-2cbf4de2f0f4",
+            "ea824de9-1dc5-42a2-ba4c-de278ed3879e",
+            "e618f39d-2e84-4504-8559-fa8ebec134a1"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105020000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "9f9ac142-3746-4907-b806-661ae15321d3",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105320000,
+          "parent_id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Arrays"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 37
+        }
+      },
+      "af1c7339-76d1-4aa5-9efc-bc68505e7192": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067954,
+          "id": "af1c7339-76d1-4aa5-9efc-bc68505e7192",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067954,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "You can pass a closure as an argument for sorting:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "af5467ef-09c1-49f4-973b-88cc3d6849c5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067954,
+          "id": "af5467ef-09c1-49f4-973b-88cc3d6849c5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067954,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "let words = [\"Hello\", \"Bonjour\", \"Salute\", \"Ahola\"]\nlet sortedWords = words.sorted(isOrderedBefore: { $0 \u003e $1 })\nprint(sortedWords) // [\"Salute\", \"Hello\", \"Bonjour\", \"Ahola\"]"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "b67bc7f6-5236-4998-b6f6-f6136a953639": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067954,
+          "id": "b67bc7f6-5236-4998-b6f6-f6136a953639",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067954,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "var mutableWords = [\"Hello\", \"Bonjour\", \"Salute\", \"Ahola\"]\nmutableWords.sort()\nprint(mutableWords) // [\"Ahola\", \"Bonjour\", \"Hello\", \"Salute\"]"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "b88cb80d-f2e6-41ad-9053-ada634092fa2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067954,
+          "id": "b88cb80d-f2e6-41ad-9053-ada634092fa2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067954,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "let words = [\"Hello\", \"Bonjour\", \"Salute\", \"Ahola\"]\nlet sortedWords = words.sorted()\nprint(sortedWords) // [\"Ahola\", \"Bonjour\", \"Hello\", \"Salute\"]"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "ba18e5de-1535-4c01-91a9-a84b4ff6e53e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067954,
+          "id": "ba18e5de-1535-4c01-91a9-a84b4ff6e53e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067954,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "let words = [\"Hello\", \"Bonjour\", \"Salute\", \"Ahola\"]\nlet sortedWords = words.sorted() { $0 \u003e $1 }\nprint(sortedWords) // [\"Salute\", \"Hello\", \"Bonjour\", \"Ahola\"]"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "c2893258-a523-4f03-aceb-c840344530c1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067955,
+          "id": "c2893258-a523-4f03-aceb-c840344530c1",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067955,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "But there will be unexpected results if the elements in the array are not consistent:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "cfeb61a7-f892-4c0c-bf1a-152e2ee2e4c0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067955,
+          "id": "cfeb61a7-f892-4c0c-bf1a-152e2ee2e4c0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067955,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "let words = [\"Hello\", \"bonjour\", \"Salute\", \"ahola\"]\nlet sortedWords = words.sorted { $0.lowercased() \u003c $1.lowercased() }\nprint(sortedWords) // [\"ahola\", \"bonjour\", \"Hello\", \"Salute\"]"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "dc4fa488-55bc-448a-bb3b-cd98e3344269": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067953,
+          "id": "dc4fa488-55bc-448a-bb3b-cd98e3344269",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067953,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The most simple way is to use "
+              ],
+              [
+                "sorted()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ":"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "e76d4290-6b0e-4932-91a6-0bbd351f3b6b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4743a9b3-3ba1-4406-8fd8-92f831177a73",
+            "40e2faa7-5ff3-4654-a114-f19b837c574b",
+            "743fc1c3-bc9c-4386-8bb8-37bb9430112f",
+            "85fc985e-d4f6-470c-a50e-d230fb7f7029",
+            "b3a03a81-83e5-4085-b462-4a9e0b487f4a",
+            "5b89258e-bcc1-4c2b-b7ec-53d72cea9e9e",
+            "752e5fcf-89e9-482f-8ab5-40b382d1513b",
+            "0bbae402-0f8d-4c53-9284-2bfa4e450424",
+            "9f9ac142-3746-4907-b806-661ae15321d3",
+            "4007debc-6666-4d3f-8faa-5ba1ed7a30fb",
+            "2ebad693-9dff-4aeb-bb97-2b78d049b25e",
+            "08b06e18-c5f3-4e40-a0be-39eaaab9fdc5",
+            "c7a9a16f-d660-4db7-8d5b-012a3f06c296",
+            "aec11d9f-8e77-49ff-9784-b941666239e5",
+            "8e0cbefa-bb13-46a7-ae47-5d4863fae390",
+            "9926a540-7aa3-4e8b-a880-0d25223917b7",
+            "cfa2de35-cd00-48e5-aa49-c7bc809cd199",
+            "75f61437-dd57-4152-ba5d-e1d11169b6f5",
+            "ab64a7f2-ccc3-4ffd-98ca-cb7cc7d65a64",
+            "346889aa-bbe6-4248-9382-9d44810882db",
+            "6eadf518-5b93-4d64-9bc2-0e88e97a1ad5",
+            "45e8edb6-720b-4879-a3f9-bdeeebc97a9f",
+            "5367e1b7-d8c9-42c1-a35c-1508743d5105",
+            "ab0095d7-f330-4c2a-9564-40c927e04cdd",
+            "995be302-8fbf-4acc-9c9b-db5cfdd0521f",
+            "e9e7dd97-8907-4c61-94c8-873542c4221d",
+            "9f971757-8f39-4d94-9d24-c0b8b7100e34",
+            "b51b495d-f653-4e2b-b92d-5af0d351982e",
+            "9da019f7-f538-42a4-bf9f-a95e812e2233",
+            "b5d22e19-0056-4916-bf50-cc1dc2f38c0e",
+            "f3aea850-966d-47e0-bbd2-8564c5d35715",
+            "e80e058c-cecb-4b11-af4a-b91c85302b9d",
+            "2f2b8c00-b4d8-4005-9764-71297a1f77f4",
+            "a95c626d-6b55-449a-91a2-173c29e1c6a7",
+            "41f7ad78-47df-4ba7-9750-0c3f2e60ce1b",
+            "e1154a97-185d-4fcd-81a8-6d4e1e7d3a99",
+            "9455a2c2-402a-4a70-8aeb-9762505167c3",
+            "77ad070c-dd39-4425-a996-cc8967f74b4e",
+            "9667daa4-8e9a-40c6-8498-5fd2b4e46a1e",
+            "67e4333d-b244-489f-94a9-5033eda1d62f",
+            "00935eb8-d316-43d4-9d14-f133a4cf1c91",
+            "41bf5b92-7d0a-4e59-af5d-5b1468ffec68",
+            "18f00844-2ce5-4c04-9bd7-9a256ae07a77",
+            "2f6abffd-8151-4ec2-9a32-2f5da3b5a767",
+            "35e9a1fb-1c65-4c4d-b44b-becc6cd9f6bd",
+            "2e9691dd-0811-4161-964f-0af0c454280b",
+            "cb46a744-6c26-43e6-ba4b-4058eb63b196",
+            "1beb1f79-8f57-4bf1-8bcb-e6737d583cda",
+            "9ae8b978-28e6-44f1-af9c-629e5306665c",
+            "10e2f070-4018-4205-8a93-00bc8fa64375",
+            "bec5b2af-554c-4a6c-87b2-a65a4523f654",
+            "41dd6dc2-8607-4978-9306-8747c2240710",
+            "36fdcbe2-b28e-4eae-96d0-f3255977fddc",
+            "1a7a68fa-5ed7-4026-bd09-6c438ee3c996",
+            "298a6998-40b4-4079-ae0e-f0fc31d96e18",
+            "d04ea4c2-1d96-49c5-b911-1de41c18c770",
+            "d9d0d23b-6862-4787-ba04-328a8305821b",
+            "2a406142-9c5f-402d-939e-888df54da249",
+            "3b5feb34-031d-402a-804d-16d2d230a001",
+            "66275fb3-9144-4a6b-a878-f81e4a354aa6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104898140,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605960000,
+          "parent_id": "4a02310c-f1a7-4b8f-8aff-7088c1decd8b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Swift"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 148
+        }
+      },
+      "f9d80556-1b31-4aa6-9ebe-83141fddd4af": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105067955,
+          "id": "f9d80556-1b31-4aa6-9ebe-83141fddd4af",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105067955,
+          "parent_id": "1a5ef9ab-c55f-4a77-bed4-278aefae086e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Or "
+              ],
+              [
+                "import Foundation",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and use NSString’s comparison methods like "
+              ],
+              [
+                "caseInsensitiveCompare",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ":"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

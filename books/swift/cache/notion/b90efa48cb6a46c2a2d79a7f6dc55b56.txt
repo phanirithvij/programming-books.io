@@ -1,0 +1,740 @@
+1939 1594557935046 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+      "table": "block"
+    }
+  ]
+}
+Response:+1739
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "7e44a596-b8f3-4071-b8e8-9275705f2d3c",
+          "8f6d9580-4c87-4bc2-8206-fcc95a95f533",
+          "1e674004-1c3e-418b-8666-016e77e81fe7",
+          "93a41906-f41d-4a2e-9bcb-4a5620a49e96",
+          "174c7a36-2219-460a-9198-8ac5eea5213f",
+          "0668dd9f-2cf6-4b3e-8630-9a265faef5a3",
+          "ab176b33-8fab-4d11-97e8-45840d7411f9",
+          "1e20f49d-03f4-4bbd-b621-b23e3ff69f29",
+          "43eb74bd-6ad1-4ccc-941f-f333d9ef37d7",
+          "0d79db40-595b-4da4-b3c8-c21dd758f2da",
+          "0532fbce-f9fb-4f5c-bbf6-90dfdd6f3c14",
+          "e9db7abe-5ae4-4782-88ad-b2e7aab101de",
+          "9fff6816-e16c-4860-a2f3-cecf7015b680",
+          "3f85c636-074c-4573-bdd9-a240e4536b29"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552104965000,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552104965000,
+        "parent_id": "743fc1c3-bc9c-4386-8bb8-37bb9430112f",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "JSON Parsing Swift 3"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 7
+      }
+    }
+  ]
+}
+27918 1594557935047 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+  "verticalColumns": false
+}
+Response:+27677
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "0532fbce-f9fb-4f5c-bbf6-90dfdd6f3c14": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104965000,
+          "id": "0532fbce-f9fb-4f5c-bbf6-90dfdd6f3c14",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104965000,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Initialize the NSObject we made back into our ViewController.swift var array = ParsingObject Then we would perform the same method we had before with a minor modification."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "0668dd9f-2cf6-4b3e-8630-9a265faef5a3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104964999,
+          "id": "0668dd9f-2cf6-4b3e-8630-9a265faef5a3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104964999,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If you want to put it in a table view, I would create a dictionary first with an NSObject."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "0d79db40-595b-4da4-b3c8-c21dd758f2da": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104965000,
+          "id": "0d79db40-595b-4da4-b3c8-c21dd758f2da",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104965000,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "var name: String?\nvar question: String?"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "174c7a36-2219-460a-9198-8ac5eea5213f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104964999,
+          "id": "174c7a36-2219-460a-9198-8ac5eea5213f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104964999,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "func jsonParsingMethod() {\n        //get the file\n        let filePath = Bundle.main.path(forResource: \"animals\", ofType: \"json\")\n        let content = try! String(contentsOfFile: filePath!)\n        \n        let data: Data = content.data(using: String.Encoding.utf8)!\n        let json: NSDictionary =  try! JSONSerialization.jsonObject(with: data as Data, options:.mutableContainers) as! NSDictionary\n      \n//Call which part of the file you'd like to pare\n        if let results = json[\"mammals\"] as? [[String: AnyObject]] {\n            \n            for res in results {\n                //this will print out the names of the mammals from out file.\n                if let rates = res[\"name\"] as? String {\n                    print(rates)\n                }\n           }\n       }\n    }"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "1e20f49d-03f4-4bbd-b621-b23e3ff69f29": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104964999,
+          "id": "1e20f49d-03f4-4bbd-b621-b23e3ff69f29",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104964999,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Make sure that the variable name is the same as the JSON File"
+              ]
+            ]
+          },
+          "type": "quote",
+          "version": 1
+        }
+      },
+      "1e674004-1c3e-418b-8666-016e77e81fe7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104964999,
+          "id": "1e674004-1c3e-418b-8666-016e77e81fe7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104964999,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Import your JSON File in your project"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "3f85c636-074c-4573-bdd9-a240e4536b29": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104965000,
+          "id": "3f85c636-074c-4573-bdd9-a240e4536b29",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104965000,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -\u003e Int {\n            return array.count\n        }\n        \n        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -\u003e UITableViewCell {\n            let cell = tableView.dequeueReusableCell(withIdentifier: \"Cell\", for: indexPath)\n//This is where our values are stored\n            let object = array[indexPath.row]\n            cell.textLabel?.text = object.name\n            cell.detailTextLabel?.text = object.question\n            return cell\n        }"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "43eb74bd-6ad1-4ccc-941f-f333d9ef37d7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104964999,
+          "id": "43eb74bd-6ad1-4ccc-941f-f333d9ef37d7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104964999,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                ". For example, in our project we have "
+              ],
+              [
+                "name",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "question",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " so in our new swift file, we will use"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "743fc1c3-bc9c-4386-8bb8-37bb9430112f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "bc65dc15-34ba-4c4d-8662-5ec18ec68640",
+            "4102f592-b568-46c9-ab0b-b6ff2ce75b86",
+            "24de6cef-3615-4f09-86e6-0b29fc0ff8e8",
+            "466af2a8-cd08-4573-a164-486e521245fe",
+            "568f45c1-05a1-4e2d-9c52-ac868319cc44",
+            "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+            "8b01bfb6-00f8-4b2a-bc05-fff10dec43bf"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104960000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "743fc1c3-bc9c-4386-8bb8-37bb9430112f",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105320000,
+          "parent_id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "JSON"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 20
+        }
+      },
+      "7e44a596-b8f3-4071-b8e8-9275705f2d3c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104964996,
+          "id": "7e44a596-b8f3-4071-b8e8-9275705f2d3c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104964996,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Here is the JSON File we will be using called "
+              ],
+              [
+                "animals.json",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "8f6d9580-4c87-4bc2-8206-fcc95a95f533": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104964998,
+          "id": "8f6d9580-4c87-4bc2-8206-fcc95a95f533",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104964998,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "{\n    \"Sea Animals\": [\n    {\n     \"name\": \"Fish\",\n     \"question\": \"How many species of fish are there?\"    },\n                {\n                \"name\": \"Sharks\",\n                \"question\": \"How long do sharks live?\"\n                },\n                {\n                \"name\": \"Squid\",\n                \"question\": \"Do squids have brains?\"\n                },\n                {\n                \"name\": \"Octopus\",\n                \"question\": \"How big do octopus get?\"\n                },\n                {\n                \"name\": \"Star Fish\",\n                \"question\": \"How long do star fish live?\"\n                }\n                ],\n    \"mammals\": [\n                {\n      \"name\": \"Dog\",\n      \"question\": \"How long do dogs live?\"\n    },\n    {\n      \"name\": \"Elephant\",\n      \"question\": \"How much do baby elephants weigh?\"\n    },\n    {\n      \"name\": \"Cats\",\n      \"question\": \"Do cats really have 9 lives?\"\n    },\n    {\n      \"name\": \"Tigers\",\n      \"question\": \"Where do tigers live?\"\n    },\n    {\n      \"name\": \"Pandas\",\n      \"question\": \"WHat do pandas eat?\"\n    }   ] }"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "93a41906-f41d-4a2e-9bcb-4a5620a49e96": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104964999,
+          "id": "93a41906-f41d-4a2e-9bcb-4a5620a49e96",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104964999,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "You can perform this simple function to print out your JSON file"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "9fff6816-e16c-4860-a2f3-cecf7015b680": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104965000,
+          "id": "9fff6816-e16c-4860-a2f3-cecf7015b680",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104965000,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Then we show it in our tableview by doing this,"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ab176b33-8fab-4d11-97e8-45840d7411f9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104964999,
+          "id": "ab176b33-8fab-4d11-97e8-45840d7411f9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104964999,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Create a new swift file called "
+              ],
+              [
+                "ParsingObject",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and create your string variables."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "7e44a596-b8f3-4071-b8e8-9275705f2d3c",
+            "8f6d9580-4c87-4bc2-8206-fcc95a95f533",
+            "1e674004-1c3e-418b-8666-016e77e81fe7",
+            "93a41906-f41d-4a2e-9bcb-4a5620a49e96",
+            "174c7a36-2219-460a-9198-8ac5eea5213f",
+            "0668dd9f-2cf6-4b3e-8630-9a265faef5a3",
+            "ab176b33-8fab-4d11-97e8-45840d7411f9",
+            "1e20f49d-03f4-4bbd-b621-b23e3ff69f29",
+            "43eb74bd-6ad1-4ccc-941f-f333d9ef37d7",
+            "0d79db40-595b-4da4-b3c8-c21dd758f2da",
+            "0532fbce-f9fb-4f5c-bbf6-90dfdd6f3c14",
+            "e9db7abe-5ae4-4782-88ad-b2e7aab101de",
+            "9fff6816-e16c-4860-a2f3-cecf7015b680",
+            "3f85c636-074c-4573-bdd9-a240e4536b29"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104965000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104965000,
+          "parent_id": "743fc1c3-bc9c-4386-8bb8-37bb9430112f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "JSON Parsing Swift 3"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "e76d4290-6b0e-4932-91a6-0bbd351f3b6b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4743a9b3-3ba1-4406-8fd8-92f831177a73",
+            "40e2faa7-5ff3-4654-a114-f19b837c574b",
+            "743fc1c3-bc9c-4386-8bb8-37bb9430112f",
+            "85fc985e-d4f6-470c-a50e-d230fb7f7029",
+            "b3a03a81-83e5-4085-b462-4a9e0b487f4a",
+            "5b89258e-bcc1-4c2b-b7ec-53d72cea9e9e",
+            "752e5fcf-89e9-482f-8ab5-40b382d1513b",
+            "0bbae402-0f8d-4c53-9284-2bfa4e450424",
+            "9f9ac142-3746-4907-b806-661ae15321d3",
+            "4007debc-6666-4d3f-8faa-5ba1ed7a30fb",
+            "2ebad693-9dff-4aeb-bb97-2b78d049b25e",
+            "08b06e18-c5f3-4e40-a0be-39eaaab9fdc5",
+            "c7a9a16f-d660-4db7-8d5b-012a3f06c296",
+            "aec11d9f-8e77-49ff-9784-b941666239e5",
+            "8e0cbefa-bb13-46a7-ae47-5d4863fae390",
+            "9926a540-7aa3-4e8b-a880-0d25223917b7",
+            "cfa2de35-cd00-48e5-aa49-c7bc809cd199",
+            "75f61437-dd57-4152-ba5d-e1d11169b6f5",
+            "ab64a7f2-ccc3-4ffd-98ca-cb7cc7d65a64",
+            "346889aa-bbe6-4248-9382-9d44810882db",
+            "6eadf518-5b93-4d64-9bc2-0e88e97a1ad5",
+            "45e8edb6-720b-4879-a3f9-bdeeebc97a9f",
+            "5367e1b7-d8c9-42c1-a35c-1508743d5105",
+            "ab0095d7-f330-4c2a-9564-40c927e04cdd",
+            "995be302-8fbf-4acc-9c9b-db5cfdd0521f",
+            "e9e7dd97-8907-4c61-94c8-873542c4221d",
+            "9f971757-8f39-4d94-9d24-c0b8b7100e34",
+            "b51b495d-f653-4e2b-b92d-5af0d351982e",
+            "9da019f7-f538-42a4-bf9f-a95e812e2233",
+            "b5d22e19-0056-4916-bf50-cc1dc2f38c0e",
+            "f3aea850-966d-47e0-bbd2-8564c5d35715",
+            "e80e058c-cecb-4b11-af4a-b91c85302b9d",
+            "2f2b8c00-b4d8-4005-9764-71297a1f77f4",
+            "a95c626d-6b55-449a-91a2-173c29e1c6a7",
+            "41f7ad78-47df-4ba7-9750-0c3f2e60ce1b",
+            "e1154a97-185d-4fcd-81a8-6d4e1e7d3a99",
+            "9455a2c2-402a-4a70-8aeb-9762505167c3",
+            "77ad070c-dd39-4425-a996-cc8967f74b4e",
+            "9667daa4-8e9a-40c6-8498-5fd2b4e46a1e",
+            "67e4333d-b244-489f-94a9-5033eda1d62f",
+            "00935eb8-d316-43d4-9d14-f133a4cf1c91",
+            "41bf5b92-7d0a-4e59-af5d-5b1468ffec68",
+            "18f00844-2ce5-4c04-9bd7-9a256ae07a77",
+            "2f6abffd-8151-4ec2-9a32-2f5da3b5a767",
+            "35e9a1fb-1c65-4c4d-b44b-becc6cd9f6bd",
+            "2e9691dd-0811-4161-964f-0af0c454280b",
+            "cb46a744-6c26-43e6-ba4b-4058eb63b196",
+            "1beb1f79-8f57-4bf1-8bcb-e6737d583cda",
+            "9ae8b978-28e6-44f1-af9c-629e5306665c",
+            "10e2f070-4018-4205-8a93-00bc8fa64375",
+            "bec5b2af-554c-4a6c-87b2-a65a4523f654",
+            "41dd6dc2-8607-4978-9306-8747c2240710",
+            "36fdcbe2-b28e-4eae-96d0-f3255977fddc",
+            "1a7a68fa-5ed7-4026-bd09-6c438ee3c996",
+            "298a6998-40b4-4079-ae0e-f0fc31d96e18",
+            "d04ea4c2-1d96-49c5-b911-1de41c18c770",
+            "d9d0d23b-6862-4787-ba04-328a8305821b",
+            "2a406142-9c5f-402d-939e-888df54da249",
+            "3b5feb34-031d-402a-804d-16d2d230a001",
+            "66275fb3-9144-4a6b-a878-f81e4a354aa6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104898140,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605960000,
+          "parent_id": "4a02310c-f1a7-4b8f-8aff-7088c1decd8b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Swift"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 148
+        }
+      },
+      "e9db7abe-5ae4-4782-88ad-b2e7aab101de": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104965000,
+          "id": "e9db7abe-5ae4-4782-88ad-b2e7aab101de",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104965000,
+          "parent_id": "b90efa48-cb6a-46c2-a2d7-9a7f6dc55b56",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "func jsonParsingMethod() {\n            //get the file\n            let filePath = Bundle.main.path(forResource: \"animals\", ofType: \"json\")\n            let content = try! String(contentsOfFile: filePath!)\n            \n            let data: Data = content.data(using: String.Encoding.utf8)!\n            let json: NSDictionary =  try! JSONSerialization.jsonObject(with: data as Data, options:.mutableContainers) as! NSDictionary\n            \n//This time let's get Sea Animals\n            let results = json[\"Sea Animals\"] as? [[String: AnyObject]]\n            \n//Get all the stuff using a for-loop\n            for i in 0 ..\u003c results!.count {\n                \n//get the value\n                let dict = results?[i]\n                let resultsArray = ParsingObject()\n                \n//append the value to our NSObject file\n                resultsArray.setValuesForKeys(dict!)\n                array.append(resultsArray)\n                \n            }\n          \n        }"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

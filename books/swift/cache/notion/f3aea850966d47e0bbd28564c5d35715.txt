@@ -1,0 +1,545 @@
+1686 1594557887170 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "f3aea850-966d-47e0-bbd2-8564c5d35715",
+      "table": "block"
+    }
+  ]
+}
+Response:+1486
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "dfc19933-57ec-4677-b156-820fb0b53281",
+          "51ed0530-f95c-49c4-9e74-6d62f58d903e",
+          "a787344e-205d-401b-ac34-46cc548badf4",
+          "337f67b2-f96c-4aec-be26-6d137fc42a8b",
+          "59d6a58e-74f7-4914-93f8-fc4253eb3c6d",
+          "73511fa0-4789-4636-828c-d71cc211288b"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552105500000,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "f3aea850-966d-47e0-bbd2-8564c5d35715",
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552105740000,
+        "parent_id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+        "parent_table": "block",
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+          }
+        ],
+        "properties": {
+          "title": [
+            [
+              "Concurrency"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 27
+      }
+    }
+  ]
+}
+19018 1594557887170 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "f3aea850-966d-47e0-bbd2-8564c5d35715",
+  "verticalColumns": false
+}
+Response:+18777
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "337f67b2-f96c-4aec-be26-6d137fc42a8b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "f4e214f5-07aa-4bd4-873b-552935ff5ff9",
+            "9cff2dd2-2e22-47e5-91ab-6bc763bd923f",
+            "eb59b488-fdbd-42b8-8283-589d95e2e4dc",
+            "e0339223-1429-4114-aac7-2a5fd1ddb7a4",
+            "2fa09060-8743-41a4-ad0d-c040e75fdbeb",
+            "a18d743e-17e1-45de-a687-32b2a18ca397",
+            "626e8b87-7fa3-4070-8d3c-2f7825448b5e",
+            "e682c9ae-fc46-4a86-b151-1d675edccc9a",
+            "20e72f6a-a433-4dd1-9768-ee5b1bac6aea",
+            "391d53c2-909d-4db1-b321-ebf6450ed50c",
+            "0796cfba-4333-46d4-8957-1c2f8a04d3b5",
+            "c9d65787-e05f-491f-940c-b5254cf28a16",
+            "703b1bb0-23fb-4f00-9b96-c1d4eba476ee",
+            "01c61fbd-042e-4e8b-a02e-a30b8237a245",
+            "666ee68c-78f3-43d5-b245-c2666015f87d",
+            "454e5761-62f8-40ce-b0e3-5a87ab5476db",
+            "e375ef18-5f39-4e12-9bf7-a0de601b21d7",
+            "76c85f75-dc0f-48ed-b40c-c47320b055d3",
+            "5a1d499d-3b2e-478b-9c20-611f9d432c77",
+            "bdc249bc-b840-43ce-b8da-3e548253cd2d",
+            "5947c5cc-fa73-447e-ac6d-49a3002454af"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105560025,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "337f67b2-f96c-4aec-be26-6d137fc42a8b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105560025,
+          "parent_id": "f3aea850-966d-47e0-bbd2-8564c5d35715",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Running tasks in a Grand Central Dispatch GCD queue"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "51ed0530-f95c-49c4-9e74-6d62f58d903e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "5443e0b2-8778-4cf2-ab85-881afe4a4077",
+            "08ba424a-1ecc-4a5f-a78c-25411897276d",
+            "7f971a63-3bed-4e58-aec2-d223905053ec",
+            "297b3533-6606-43dc-a00f-ee5280285b32",
+            "e090d701-dc97-45ce-976a-afed5842f0ae",
+            "5b314c6c-6ce0-4400-9a79-c5136f504f9a",
+            "c2a9df1b-f94a-4812-955e-5d9fbc105685",
+            "ab41cc0a-3f37-4528-9fc7-896d8abb76f9",
+            "92efdd35-cc61-4711-b034-7c6b9751e72e",
+            "6d4da0d4-8aba-425a-9281-368a5ada9caa",
+            "8e412efc-1a75-49d4-aebb-8686dd5f4488",
+            "9a05642c-e879-41f1-8a5b-a8930ac5325a",
+            "e9095240-d306-4c9f-99de-e4d5e99c682a",
+            "5a3a381d-dc48-4e41-9eac-5160951a8f68",
+            "6185e50a-96e5-4c03-8ffb-d015e6cf2756",
+            "390623e3-1244-42eb-b9c8-f65e123afe1c",
+            "a3d7cc3d-173b-45a6-a77e-1769d9bfa5bf"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105556935,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "51ed0530-f95c-49c4-9e74-6d62f58d903e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105556935,
+          "parent_id": "f3aea850-966d-47e0-bbd2-8564c5d35715",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Obtaining a Grand Central Dispatch GCD queue"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "59d6a58e-74f7-4914-93f8-fc4253eb3c6d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "1a1b273d-5ec9-411e-8d85-587e425c020d",
+            "d625b9a8-156e-4b52-84a9-8adaae5d27d2",
+            "2c0c6a9a-92d5-4e84-a287-162e782d6412",
+            "1f6b10d8-110e-4397-bc52-054f07fff57c",
+            "b39eaa7b-be3b-48a3-a9d6-6f6a85e61a62",
+            "7979f86a-b309-46e3-9a15-d23a64364078",
+            "5a3b0035-a1a0-47f5-a63f-462fdbcad38c",
+            "cb2754df-d36e-4c10-883c-56c0ef869377",
+            "9c69bb59-dab1-4a0a-8f95-9495515e226a",
+            "94b6f76d-e2d1-48d2-9531-4e3fa03f4bd5",
+            "3df51e10-eee4-43a7-8571-8a95705ec7a5",
+            "424edf83-b024-47ce-8eba-4bd3e108ea0c",
+            "b2955b92-c14c-42dc-a2f7-ba5b5837958a",
+            "b34ce003-b687-43b9-84b0-774bff47d6c7",
+            "82c4a573-28c0-4d20-b4b7-1b445a40e996",
+            "514b5a83-5393-48f6-8b94-86e4be9cf832",
+            "eb58c84a-2c50-4323-9988-4674e3292615"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105561521,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "59d6a58e-74f7-4914-93f8-fc4253eb3c6d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105561521,
+          "parent_id": "f3aea850-966d-47e0-bbd2-8564c5d35715",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Running Tasks in an OperationQueue"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "73511fa0-4789-4636-828c-d71cc211288b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "3c54d50d-cf99-4373-aa90-dc47dad8110b",
+            "36475a15-ce35-414d-b688-cbb7843fc63b",
+            "8d28907b-1ce1-4be2-b9b0-0145e8d7f065",
+            "14be61b7-4b08-4742-9858-cd7befa07659",
+            "5d6fff7b-4fc1-4663-9dbd-4ebc7bd6d173",
+            "34fbfdcd-0bf5-4cdd-a186-82dbd0df6c91",
+            "66736476-e70d-4836-b2f7-44b2b00bb7f3",
+            "fb894ae4-2efc-4c25-9ffa-cd43b8ce179c",
+            "cfac463b-e3ca-494a-aded-c78aab77ada6",
+            "c387ebc2-d20e-4bb3-8ea9-457bcaa3cfde",
+            "496c8cc0-0eb4-405c-9066-acbb67bb5053",
+            "80d29302-20cb-4655-9897-ab1149c8dae9",
+            "3a97ccd8-a6a7-4bc0-bdb7-128cebf353cf",
+            "06fdf1e9-8ddc-48f5-a139-4582de34739f",
+            "7acb3869-0654-41e6-9af3-07435c816b3c",
+            "f58f57d0-7670-4a33-bb32-791620c0c1ca",
+            "0bde47e8-0b1e-482b-ac14-4932da874947",
+            "096b421a-7b7d-41d1-9009-3798b275000a",
+            "a1fd6732-ee94-46c4-8198-7677d52f724d",
+            "c14cbf76-dbbe-4e03-aec4-ff637f526be3"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105561912,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "73511fa0-4789-4636-828c-d71cc211288b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105561912,
+          "parent_id": "f3aea850-966d-47e0-bbd2-8564c5d35715",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Creating High-Level Operations"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "a787344e-205d-401b-ac34-46cc548badf4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "91ae2b6a-23d0-4da4-a5ed-b30921552522",
+            "fcb0dccd-d94d-4266-b67a-eade1e584097",
+            "c5d12548-5fb3-48ee-8d7d-bb34db433d3b",
+            "d9785f57-e3ba-47ee-8cc9-7db46c8df810",
+            "3739a541-8aed-40ec-8e62-91cefccb50ed",
+            "6eacb799-93d0-48e9-8f9d-02edada6a61d",
+            "67f9a2da-766f-4c94-8b8f-67d6feca06e6",
+            "c085e98d-f3d2-4243-9c60-57d5f86f0d60",
+            "c3d52190-324a-4e0c-be23-effc77a88558",
+            "07da48a1-95a8-4806-a7ed-ecf3128a0e2a",
+            "4314a29c-a3dd-4db9-93fd-81e366faf97b",
+            "f5879e58-3239-4327-b34e-24debe24315a"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105558873,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "a787344e-205d-401b-ac34-46cc548badf4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105558873,
+          "parent_id": "f3aea850-966d-47e0-bbd2-8564c5d35715",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Concurrent Loops"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "dfc19933-57ec-4677-b156-820fb0b53281": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "79cc9792-0953-4bbf-89b7-f3a73bd0dce0",
+            "6b1ebbf0-b862-42e2-b985-4f2126a7cb47",
+            "95b2bd88-cfe5-4b8e-96c6-be50cc370968",
+            "d8bf0a80-831e-4e16-9311-4036f905bcb2",
+            "0751e1cc-47c5-4bf3-8cec-ad4b03e0859a",
+            "0b35a69e-565c-4015-a6ca-5df10a062b5f",
+            "548478ce-7dfe-44c4-91d8-ec3a8970baa0",
+            "ffb1fde1-5be1-4e5a-ba96-39b785063ebe",
+            "0d13cbe3-ccea-4a7b-a059-98d7b72048cc",
+            "74a65ba9-e70e-451b-a64a-bf5e866d5c5e",
+            "18b75a6c-26f5-4b7d-aca1-ca29120ee7da",
+            "104fb681-db62-479e-9ecd-97205b0e7552",
+            "b2f1bd4d-dcfa-41e3-b665-f50174572f2e",
+            "91f82157-6aa8-4180-9634-9e00984ab751"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105556236,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "dfc19933-57ec-4677-b156-820fb0b53281",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105556236,
+          "parent_id": "f3aea850-966d-47e0-bbd2-8564c5d35715",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Concurrency"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "e76d4290-6b0e-4932-91a6-0bbd351f3b6b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4743a9b3-3ba1-4406-8fd8-92f831177a73",
+            "40e2faa7-5ff3-4654-a114-f19b837c574b",
+            "743fc1c3-bc9c-4386-8bb8-37bb9430112f",
+            "85fc985e-d4f6-470c-a50e-d230fb7f7029",
+            "b3a03a81-83e5-4085-b462-4a9e0b487f4a",
+            "5b89258e-bcc1-4c2b-b7ec-53d72cea9e9e",
+            "752e5fcf-89e9-482f-8ab5-40b382d1513b",
+            "0bbae402-0f8d-4c53-9284-2bfa4e450424",
+            "9f9ac142-3746-4907-b806-661ae15321d3",
+            "4007debc-6666-4d3f-8faa-5ba1ed7a30fb",
+            "2ebad693-9dff-4aeb-bb97-2b78d049b25e",
+            "08b06e18-c5f3-4e40-a0be-39eaaab9fdc5",
+            "c7a9a16f-d660-4db7-8d5b-012a3f06c296",
+            "aec11d9f-8e77-49ff-9784-b941666239e5",
+            "8e0cbefa-bb13-46a7-ae47-5d4863fae390",
+            "9926a540-7aa3-4e8b-a880-0d25223917b7",
+            "cfa2de35-cd00-48e5-aa49-c7bc809cd199",
+            "75f61437-dd57-4152-ba5d-e1d11169b6f5",
+            "ab64a7f2-ccc3-4ffd-98ca-cb7cc7d65a64",
+            "346889aa-bbe6-4248-9382-9d44810882db",
+            "6eadf518-5b93-4d64-9bc2-0e88e97a1ad5",
+            "45e8edb6-720b-4879-a3f9-bdeeebc97a9f",
+            "5367e1b7-d8c9-42c1-a35c-1508743d5105",
+            "ab0095d7-f330-4c2a-9564-40c927e04cdd",
+            "995be302-8fbf-4acc-9c9b-db5cfdd0521f",
+            "e9e7dd97-8907-4c61-94c8-873542c4221d",
+            "9f971757-8f39-4d94-9d24-c0b8b7100e34",
+            "b51b495d-f653-4e2b-b92d-5af0d351982e",
+            "9da019f7-f538-42a4-bf9f-a95e812e2233",
+            "b5d22e19-0056-4916-bf50-cc1dc2f38c0e",
+            "f3aea850-966d-47e0-bbd2-8564c5d35715",
+            "e80e058c-cecb-4b11-af4a-b91c85302b9d",
+            "2f2b8c00-b4d8-4005-9764-71297a1f77f4",
+            "a95c626d-6b55-449a-91a2-173c29e1c6a7",
+            "41f7ad78-47df-4ba7-9750-0c3f2e60ce1b",
+            "e1154a97-185d-4fcd-81a8-6d4e1e7d3a99",
+            "9455a2c2-402a-4a70-8aeb-9762505167c3",
+            "77ad070c-dd39-4425-a996-cc8967f74b4e",
+            "9667daa4-8e9a-40c6-8498-5fd2b4e46a1e",
+            "67e4333d-b244-489f-94a9-5033eda1d62f",
+            "00935eb8-d316-43d4-9d14-f133a4cf1c91",
+            "41bf5b92-7d0a-4e59-af5d-5b1468ffec68",
+            "18f00844-2ce5-4c04-9bd7-9a256ae07a77",
+            "2f6abffd-8151-4ec2-9a32-2f5da3b5a767",
+            "35e9a1fb-1c65-4c4d-b44b-becc6cd9f6bd",
+            "2e9691dd-0811-4161-964f-0af0c454280b",
+            "cb46a744-6c26-43e6-ba4b-4058eb63b196",
+            "1beb1f79-8f57-4bf1-8bcb-e6737d583cda",
+            "9ae8b978-28e6-44f1-af9c-629e5306665c",
+            "10e2f070-4018-4205-8a93-00bc8fa64375",
+            "bec5b2af-554c-4a6c-87b2-a65a4523f654",
+            "41dd6dc2-8607-4978-9306-8747c2240710",
+            "36fdcbe2-b28e-4eae-96d0-f3255977fddc",
+            "1a7a68fa-5ed7-4026-bd09-6c438ee3c996",
+            "298a6998-40b4-4079-ae0e-f0fc31d96e18",
+            "d04ea4c2-1d96-49c5-b911-1de41c18c770",
+            "d9d0d23b-6862-4787-ba04-328a8305821b",
+            "2a406142-9c5f-402d-939e-888df54da249",
+            "3b5feb34-031d-402a-804d-16d2d230a001",
+            "66275fb3-9144-4a6b-a878-f81e4a354aa6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104898140,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605960000,
+          "parent_id": "4a02310c-f1a7-4b8f-8aff-7088c1decd8b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Swift"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 148
+        }
+      },
+      "f3aea850-966d-47e0-bbd2-8564c5d35715": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "dfc19933-57ec-4677-b156-820fb0b53281",
+            "51ed0530-f95c-49c4-9e74-6d62f58d903e",
+            "a787344e-205d-401b-ac34-46cc548badf4",
+            "337f67b2-f96c-4aec-be26-6d137fc42a8b",
+            "59d6a58e-74f7-4914-93f8-fc4253eb3c6d",
+            "73511fa0-4789-4636-828c-d71cc211288b"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105500000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "f3aea850-966d-47e0-bbd2-8564c5d35715",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105740000,
+          "parent_id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Concurrency"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 27
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

@@ -1,0 +1,652 @@
+1638 1594557972468 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "18bc26d3-ea5b-4c38-ac26-3c27f8134d94",
+      "table": "block"
+    }
+  ]
+}
+Response:+1438
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "05e61124-781d-4a7e-85bd-a38415abd5b1",
+          "7da5e524-0ae2-4cd8-b490-aeb0f8fd5f18",
+          "61952631-72e0-4b9e-9bd4-eb060dd6131b",
+          "ff33413a-3949-4423-bac3-015fa804b40e",
+          "4010a2ea-a5c2-48b6-9440-eb00ec925c3f",
+          "5e8bfc55-e77a-4f9a-af6f-cbc04dfda46c",
+          "f95227af-b507-4b80-bb0a-45e768b26a94",
+          "f06407a9-fc72-4cdb-b738-9d9ae1d551ce"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552105024912,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "18bc26d3-ea5b-4c38-ac26-3c27f8134d94",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1566786840000,
+        "parent_id": "ab64a7f2-ccc3-4ffd-98ca-cb7cc7d65a64",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Types of Optionals"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 11
+      }
+    }
+  ]
+}
+20671 1594557972469 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "18bc26d3-ea5b-4c38-ac26-3c27f8134d94",
+  "verticalColumns": false
+}
+Response:+20430
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "05e61124-781d-4a7e-85bd-a38415abd5b1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105024908,
+          "id": "05e61124-781d-4a7e-85bd-a38415abd5b1",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105024908,
+          "parent_id": "18bc26d3-ea5b-4c38-ac26-3c27f8134d94",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Optionals are a generic enum type that acts as a wrapper. This wrapper allows a variable to have one of two states: the value of the user-defined type or "
+              ],
+              [
+                "nil",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", which represents the absence of a value."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "18bc26d3-ea5b-4c38-ac26-3c27f8134d94": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "05e61124-781d-4a7e-85bd-a38415abd5b1",
+            "7da5e524-0ae2-4cd8-b490-aeb0f8fd5f18",
+            "61952631-72e0-4b9e-9bd4-eb060dd6131b",
+            "ff33413a-3949-4423-bac3-015fa804b40e",
+            "4010a2ea-a5c2-48b6-9440-eb00ec925c3f",
+            "5e8bfc55-e77a-4f9a-af6f-cbc04dfda46c",
+            "f95227af-b507-4b80-bb0a-45e768b26a94",
+            "f06407a9-fc72-4cdb-b738-9d9ae1d551ce"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105024912,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "18bc26d3-ea5b-4c38-ac26-3c27f8134d94",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1566786840000,
+          "parent_id": "ab64a7f2-ccc3-4ffd-98ca-cb7cc7d65a64",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Types of Optionals"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 11
+        }
+      },
+      "4010a2ea-a5c2-48b6-9440-eb00ec925c3f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105024912,
+          "id": "4010a2ea-a5c2-48b6-9440-eb00ec925c3f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105024912,
+          "parent_id": "18bc26d3-ea5b-4c38-ac26-3c27f8134d94",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "?",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " optionals must be explicitly unwrapped, and should be used if you aren’t certain whether or not the variable will have a value when you access it. For example, when turning a string into an "
+              ],
+              [
+                "Int",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", the result is an optional "
+              ],
+              [
+                "Int?",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", because nil will be returned if the string is not a valid number"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "5e8bfc55-e77a-4f9a-af6f-cbc04dfda46c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105024912,
+          "id": "5e8bfc55-e77a-4f9a-af6f-cbc04dfda46c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1566786840000,
+          "parent_id": "18bc26d3-ea5b-4c38-ac26-3c27f8134d94",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Swift"
+              ]
+            ],
+            "title": [
+              [
+                "let str1 = \"42\"\nlet num1: Int? = Int(str1) // 42\n\nlet str2 = \"Hello, World!\"\nlet num2: Int? = Int(str2) // nil"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      },
+      "61952631-72e0-4b9e-9bd4-eb060dd6131b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105024911,
+          "id": "61952631-72e0-4b9e-9bd4-eb060dd6131b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105024911,
+          "parent_id": "18bc26d3-ea5b-4c38-ac26-3c27f8134d94",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In Swift, for a variable to have a "
+              ],
+              [
+                "nil",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " value, it must be an optional. Optionals can be created by appending either a "
+              ],
+              [
+                "\\!",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " or a "
+              ],
+              [
+                "?",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " to the variable type. For example, to make an "
+              ],
+              [
+                "Int",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " optional, you could use"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "7da5e524-0ae2-4cd8-b490-aeb0f8fd5f18": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105024911,
+          "id": "7da5e524-0ae2-4cd8-b490-aeb0f8fd5f18",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105024911,
+          "parent_id": "18bc26d3-ea5b-4c38-ac26-3c27f8134d94",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This ability is particularly important in Swift because one of the stated design objectives of the language is to work well with Apple’s frameworks. Many (most) of Apple’s frameworks utilize "
+              ],
+              [
+                "nil",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " due to its ease of use and significance to programming patterns and API design within Objective-C."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ab64a7f2-ccc3-4ffd-98ca-cb7cc7d65a64": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "83348e42-1c35-4543-b8cc-b3d289dd8cd6",
+            "18bc26d3-ea5b-4c38-ac26-3c27f8134d94",
+            "6fd03293-fcb5-4b9f-8063-d7c52bcdf5b1",
+            "d286d22f-c12b-4e89-ac5a-717a4159ec94",
+            "28812629-24e8-49f8-9f2a-22ca602278a0",
+            "a2f2b74b-40c4-4380-9474-f232f24769b7"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105424007,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "ab64a7f2-ccc3-4ffd-98ca-cb7cc7d65a64",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105440000,
+          "parent_id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Optionals"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 20
+        }
+      },
+      "e76d4290-6b0e-4932-91a6-0bbd351f3b6b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4743a9b3-3ba1-4406-8fd8-92f831177a73",
+            "40e2faa7-5ff3-4654-a114-f19b837c574b",
+            "743fc1c3-bc9c-4386-8bb8-37bb9430112f",
+            "85fc985e-d4f6-470c-a50e-d230fb7f7029",
+            "b3a03a81-83e5-4085-b462-4a9e0b487f4a",
+            "5b89258e-bcc1-4c2b-b7ec-53d72cea9e9e",
+            "752e5fcf-89e9-482f-8ab5-40b382d1513b",
+            "0bbae402-0f8d-4c53-9284-2bfa4e450424",
+            "9f9ac142-3746-4907-b806-661ae15321d3",
+            "4007debc-6666-4d3f-8faa-5ba1ed7a30fb",
+            "2ebad693-9dff-4aeb-bb97-2b78d049b25e",
+            "08b06e18-c5f3-4e40-a0be-39eaaab9fdc5",
+            "c7a9a16f-d660-4db7-8d5b-012a3f06c296",
+            "aec11d9f-8e77-49ff-9784-b941666239e5",
+            "8e0cbefa-bb13-46a7-ae47-5d4863fae390",
+            "9926a540-7aa3-4e8b-a880-0d25223917b7",
+            "cfa2de35-cd00-48e5-aa49-c7bc809cd199",
+            "75f61437-dd57-4152-ba5d-e1d11169b6f5",
+            "ab64a7f2-ccc3-4ffd-98ca-cb7cc7d65a64",
+            "346889aa-bbe6-4248-9382-9d44810882db",
+            "6eadf518-5b93-4d64-9bc2-0e88e97a1ad5",
+            "45e8edb6-720b-4879-a3f9-bdeeebc97a9f",
+            "5367e1b7-d8c9-42c1-a35c-1508743d5105",
+            "ab0095d7-f330-4c2a-9564-40c927e04cdd",
+            "995be302-8fbf-4acc-9c9b-db5cfdd0521f",
+            "e9e7dd97-8907-4c61-94c8-873542c4221d",
+            "9f971757-8f39-4d94-9d24-c0b8b7100e34",
+            "b51b495d-f653-4e2b-b92d-5af0d351982e",
+            "9da019f7-f538-42a4-bf9f-a95e812e2233",
+            "b5d22e19-0056-4916-bf50-cc1dc2f38c0e",
+            "f3aea850-966d-47e0-bbd2-8564c5d35715",
+            "e80e058c-cecb-4b11-af4a-b91c85302b9d",
+            "2f2b8c00-b4d8-4005-9764-71297a1f77f4",
+            "a95c626d-6b55-449a-91a2-173c29e1c6a7",
+            "41f7ad78-47df-4ba7-9750-0c3f2e60ce1b",
+            "e1154a97-185d-4fcd-81a8-6d4e1e7d3a99",
+            "9455a2c2-402a-4a70-8aeb-9762505167c3",
+            "77ad070c-dd39-4425-a996-cc8967f74b4e",
+            "9667daa4-8e9a-40c6-8498-5fd2b4e46a1e",
+            "67e4333d-b244-489f-94a9-5033eda1d62f",
+            "00935eb8-d316-43d4-9d14-f133a4cf1c91",
+            "41bf5b92-7d0a-4e59-af5d-5b1468ffec68",
+            "18f00844-2ce5-4c04-9bd7-9a256ae07a77",
+            "2f6abffd-8151-4ec2-9a32-2f5da3b5a767",
+            "35e9a1fb-1c65-4c4d-b44b-becc6cd9f6bd",
+            "2e9691dd-0811-4161-964f-0af0c454280b",
+            "cb46a744-6c26-43e6-ba4b-4058eb63b196",
+            "1beb1f79-8f57-4bf1-8bcb-e6737d583cda",
+            "9ae8b978-28e6-44f1-af9c-629e5306665c",
+            "10e2f070-4018-4205-8a93-00bc8fa64375",
+            "bec5b2af-554c-4a6c-87b2-a65a4523f654",
+            "41dd6dc2-8607-4978-9306-8747c2240710",
+            "36fdcbe2-b28e-4eae-96d0-f3255977fddc",
+            "1a7a68fa-5ed7-4026-bd09-6c438ee3c996",
+            "298a6998-40b4-4079-ae0e-f0fc31d96e18",
+            "d04ea4c2-1d96-49c5-b911-1de41c18c770",
+            "d9d0d23b-6862-4787-ba04-328a8305821b",
+            "2a406142-9c5f-402d-939e-888df54da249",
+            "3b5feb34-031d-402a-804d-16d2d230a001",
+            "66275fb3-9144-4a6b-a878-f81e4a354aa6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104898140,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605960000,
+          "parent_id": "4a02310c-f1a7-4b8f-8aff-7088c1decd8b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Swift"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 148
+        }
+      },
+      "f06407a9-fc72-4cdb-b738-9d9ae1d551ce": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105024912,
+          "id": "f06407a9-fc72-4cdb-b738-9d9ae1d551ce",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1566786840000,
+          "parent_id": "18bc26d3-ea5b-4c38-ac26-3c27f8134d94",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Swift"
+              ]
+            ],
+            "title": [
+              [
+                "//myButton will not be accessed until viewDidLoad is called,\n//so a ! optional can be used here\nvar myButton: UIButton!\n\noverride func viewDidLoad(){\n    self.myButton = UIButton(frame: self.view.frame)\n    self.myButton.backgroundColor = UIColor.redColor()\n    self.view.addSubview(self.myButton)\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 7
+        }
+      },
+      "f95227af-b507-4b80-bb0a-45e768b26a94": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105024912,
+          "id": "f95227af-b507-4b80-bb0a-45e768b26a94",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105024912,
+          "parent_id": "18bc26d3-ea5b-4c38-ac26-3c27f8134d94",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "\\!",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " optionals are automatically unwrapped, and should "
+              ],
+              [
+                "only",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " be used when you are "
+              ],
+              [
+                "certain",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " that the variable will have a value when you access it. For example, a global "
+              ],
+              [
+                "UIButton!",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " variable that is initialized in "
+              ],
+              [
+                "viewDidLoad()",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "ff33413a-3949-4423-bac3-015fa804b40e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552105024911,
+          "id": "ff33413a-3949-4423-bac3-015fa804b40e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1566786840000,
+          "parent_id": "18bc26d3-ea5b-4c38-ac26-3c27f8134d94",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Swift"
+              ]
+            ],
+            "title": [
+              [
+                "var numberOne: Int! = nil\nvar numberTwo: Int? = nil"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 3
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

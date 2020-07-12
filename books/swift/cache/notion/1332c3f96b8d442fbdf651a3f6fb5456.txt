@@ -1,0 +1,1354 @@
+2585 1594557979283 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+      "table": "block"
+    }
+  ]
+}
+Response:+2385
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "43ed6a21-601b-4259-b688-2131ba601cce",
+          "9e0524f9-43dd-4e19-98f4-5b91a2bba3af",
+          "77b9a676-b4b1-41dc-83cb-1f2107e3b9cc",
+          "327f50d6-9c73-4749-b6c8-92b8292e3239",
+          "7b54b4ed-1be2-4d41-9765-375b22f156d2",
+          "808aeaa3-748b-46e2-9700-98b9ccf726a8",
+          "37d83000-b46e-4bf1-945d-6ab36e0c3b4b",
+          "77a17cdf-e21d-4361-bdab-f56f686613c7",
+          "a1eca1d0-fbee-44a3-bc45-a1d160c3c37b",
+          "5883f456-c435-4cd2-a8e2-4e49217159b0",
+          "e361d2fd-82b1-4a04-800c-eb02b03cbba4",
+          "de0ba523-cb17-46e6-98ee-35226a7db71f",
+          "065b4af7-21f9-43a6-be94-9f5824ae86d4",
+          "3d023c76-c96a-4895-aef0-5b1ffb96b8e7",
+          "6427ea68-3be9-40b7-a9e1-74a4a2cc7799",
+          "6452ca61-8491-4c3c-a707-656f40090c9a",
+          "625a5574-b917-442e-bb32-d4fc1532cff3",
+          "ae39a373-b0a0-4408-b0cb-c0307aeb2327",
+          "5a27d89f-322d-4e54-8488-37fac41a867e",
+          "09ded4ab-28a5-4fb2-90b3-4817df82c780",
+          "a2522656-526e-4fde-9eca-445d3525dbe7",
+          "5bd4fb47-3670-4b13-a523-f2953560b193",
+          "6673b528-5e15-462c-955d-42959d7d8b3a",
+          "846cd39e-baa8-4b0f-b7f8-8da155715a6c",
+          "8ce3cf50-b7eb-4bb9-a2cb-fede714d34e7",
+          "c5ff981d-f0d6-4ba2-b5ca-c4ca15fdd521",
+          "7cfe1072-a0dc-4260-9fe1-4c334370c31c"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552104978131,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552104978131,
+        "parent_id": "b3a03a81-83e5-4085-b462-4a9e0b487f4a",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Delegate pattern"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+45457 1594557979286 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+  "verticalColumns": false
+}
+Response:+45216
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "065b4af7-21f9-43a6-be94-9f5824ae86d4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978129,
+          "id": "065b4af7-21f9-43a6-be94-9f5824ae86d4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978129,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In this example, when the child does something and needs to notify its parent, the child will call:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "09ded4ab-28a5-4fb2-90b3-4817df82c780": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978130,
+          "id": "09ded4ab-28a5-4fb2-90b3-4817df82c780",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978130,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The parent also needs to tell the child that it is the child’s delegate:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "43ed6a21-601b-4259-b688-2131ba601cce",
+            "9e0524f9-43dd-4e19-98f4-5b91a2bba3af",
+            "77b9a676-b4b1-41dc-83cb-1f2107e3b9cc",
+            "327f50d6-9c73-4749-b6c8-92b8292e3239",
+            "7b54b4ed-1be2-4d41-9765-375b22f156d2",
+            "808aeaa3-748b-46e2-9700-98b9ccf726a8",
+            "37d83000-b46e-4bf1-945d-6ab36e0c3b4b",
+            "77a17cdf-e21d-4361-bdab-f56f686613c7",
+            "a1eca1d0-fbee-44a3-bc45-a1d160c3c37b",
+            "5883f456-c435-4cd2-a8e2-4e49217159b0",
+            "e361d2fd-82b1-4a04-800c-eb02b03cbba4",
+            "de0ba523-cb17-46e6-98ee-35226a7db71f",
+            "065b4af7-21f9-43a6-be94-9f5824ae86d4",
+            "3d023c76-c96a-4895-aef0-5b1ffb96b8e7",
+            "6427ea68-3be9-40b7-a9e1-74a4a2cc7799",
+            "6452ca61-8491-4c3c-a707-656f40090c9a",
+            "625a5574-b917-442e-bb32-d4fc1532cff3",
+            "ae39a373-b0a0-4408-b0cb-c0307aeb2327",
+            "5a27d89f-322d-4e54-8488-37fac41a867e",
+            "09ded4ab-28a5-4fb2-90b3-4817df82c780",
+            "a2522656-526e-4fde-9eca-445d3525dbe7",
+            "5bd4fb47-3670-4b13-a523-f2953560b193",
+            "6673b528-5e15-462c-955d-42959d7d8b3a",
+            "846cd39e-baa8-4b0f-b7f8-8da155715a6c",
+            "8ce3cf50-b7eb-4bb9-a2cb-fede714d34e7",
+            "c5ff981d-f0d6-4ba2-b5ca-c4ca15fdd521",
+            "7cfe1072-a0dc-4260-9fe1-4c334370c31c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978131,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978131,
+          "parent_id": "b3a03a81-83e5-4085-b462-4a9e0b487f4a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Delegate pattern"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "327f50d6-9c73-4749-b6c8-92b8292e3239": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978126,
+          "id": "327f50d6-9c73-4749-b6c8-92b8292e3239",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978126,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Let’s dive into a more concrete example. if you have two classes, a parent and a child:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "37d83000-b46e-4bf1-945d-6ab36e0c3b4b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978128,
+          "id": "37d83000-b46e-4bf1-945d-6ab36e0c3b4b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978128,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In Swift, delegates are implemented using a "
+              ],
+              [
+                "protocol",
+                [
+                  [
+                    "c"
+                  ],
+                  [
+                    "a",
+                    "https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html"
+                  ]
+                ]
+              ],
+              [
+                " declaration and so we will declare a "
+              ],
+              [
+                "protocol",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " which the "
+              ],
+              [
+                "delegate",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " will implement. Here delegate is the "
+              ],
+              [
+                "parent",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " object."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "3d023c76-c96a-4895-aef0-5b1ffb96b8e7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978129,
+          "id": "3d023c76-c96a-4895-aef0-5b1ffb96b8e7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978129,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "delegate?.childDidSomething()"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "43ed6a21-601b-4259-b688-2131ba601cce": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978123,
+          "id": "43ed6a21-601b-4259-b688-2131ba601cce",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978123,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "A "
+              ],
+              [
+                "delegate",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " is a common design pattern used in Cocoa and CocoaTouch frameworks, where one class delegates responsibility for implementing some functionality to another. This follows a principle of separation of concerns, where the framework class implements generic functionality while a separate delegate instance implements the specific use case."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "5883f456-c435-4cd2-a8e2-4e49217159b0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978128,
+          "id": "5883f456-c435-4cd2-a8e2-4e49217159b0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978128,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "class Child {\n    weak var delegate: ChildDelegate?\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "5a27d89f-322d-4e54-8488-37fac41a867e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978130,
+          "id": "5a27d89f-322d-4e54-8488-37fac41a867e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978130,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "extension Parent: ChildDelegate {\n    func childDidSomething() {\n        print(\"Yay!\")\n    }\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "5bd4fb47-3670-4b13-a523-f2953560b193": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978130,
+          "id": "5bd4fb47-3670-4b13-a523-f2953560b193",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978130,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "By default a Swift "
+              ],
+              [
+                "protocol",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " does not allow an optional function be implemented. These can only be specified if your protocol is marked with the "
+              ],
+              [
+                "@objc",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " attribute and the "
+              ],
+              [
+                "optional",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " modifier."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "625a5574-b917-442e-bb32-d4fc1532cff3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978130,
+          "id": "625a5574-b917-442e-bb32-d4fc1532cff3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978130,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "class Parent: ChildDelegate {\n    ...\n\n    func childDidSomething() {\n        print(\"Yay!\")\n    }\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "6427ea68-3be9-40b7-a9e1-74a4a2cc7799": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978129,
+          "id": "6427ea68-3be9-40b7-a9e1-74a4a2cc7799",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978129,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "If the delegate has been defined, the delegate will be notified that the child has done something."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "6452ca61-8491-4c3c-a707-656f40090c9a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978129,
+          "id": "6452ca61-8491-4c3c-a707-656f40090c9a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978129,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The parent class will need to extend the "
+              ],
+              [
+                "ChildDelegate",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " protocol to be able to respond to its actions. This can be done directly on the parent class:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "6673b528-5e15-462c-955d-42959d7d8b3a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978131,
+          "id": "6673b528-5e15-462c-955d-42959d7d8b3a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978131,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "For example "
+              ],
+              [
+                "UITableView",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " implements the generic behavior of a table view in iOS, but the user must implement two delegate classes called "
+              ],
+              [
+                "UITableViewDelegate",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "UITableViewDataSource",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " that implement how the specific cells look like and behave."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "77a17cdf-e21d-4361-bdab-f56f686613c7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978128,
+          "id": "77a17cdf-e21d-4361-bdab-f56f686613c7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978128,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "protocol ChildDelegate: class {\n    func childDidSomething()\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "77b9a676-b4b1-41dc-83cb-1f2107e3b9cc": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978126,
+          "id": "77b9a676-b4b1-41dc-83cb-1f2107e3b9cc",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978126,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "For example, A view in userinterface to display a list of data should be responsible only for the logic of how data is displayed, not for deciding what data should be displayed."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "7b54b4ed-1be2-4d41-9765-375b22f156d2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978126,
+          "id": "7b54b4ed-1be2-4d41-9765-375b22f156d2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978126,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "class Parent { }\nclass Child { }"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "7cfe1072-a0dc-4260-9fe1-4c334370c31c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978131,
+          "id": "7cfe1072-a0dc-4260-9fe1-4c334370c31c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978131,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Any methods not marked "
+              ],
+              [
+                "optional",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " in the protocol definition ("
+              ],
+              [
+                "UITableViewDelegate",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " in this case) must be implemented."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "808aeaa3-748b-46e2-9700-98b9ccf726a8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978126,
+          "id": "808aeaa3-748b-46e2-9700-98b9ccf726a8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978126,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "And you want to notify the parent of a change from the child."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "846cd39e-baa8-4b0f-b7f8-8da155715a6c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978131,
+          "id": "846cd39e-baa8-4b0f-b7f8-8da155715a6c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978131,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "@objc public protocol UITableViewDelegate : NSObjectProtocol, UIScrollViewDelegate {\n        \n        // Display customization\n        optional public func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)\n        optional public func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int)\n        optional public func tableView(tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int)\n        optional public func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)\n        ...\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "8ce3cf50-b7eb-4bb9-a2cb-fede714d34e7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978131,
+          "id": "8ce3cf50-b7eb-4bb9-a2cb-fede714d34e7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978131,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "You can implement this protocol by changing your class definition, for example:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "9e0524f9-43dd-4e19-98f4-5b91a2bba3af": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978126,
+          "id": "9e0524f9-43dd-4e19-98f4-5b91a2bba3af",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978126,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Another way to look into delegate pattern is in terms of object communication. "
+              ],
+              [
+                "Objects",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " often needs to talks to each other and to do so an object need conform to a "
+              ],
+              [
+                "protocol",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " in order to become a delegate of another Object. Once this setup has been done, the other object talks back to its delegates when interesting things happens."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "a1eca1d0-fbee-44a3-bc45-a1d160c3c37b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978128,
+          "id": "a1eca1d0-fbee-44a3-bc45-a1d160c3c37b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978128,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The child needs to declare a property to store the reference to the delegate:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "a2522656-526e-4fde-9eca-445d3525dbe7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978130,
+          "id": "a2522656-526e-4fde-9eca-445d3525dbe7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978130,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "// In the parent\nlet child = Child()\nchild.delegate = self"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "ae39a373-b0a0-4408-b0cb-c0307aeb2327": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978130,
+          "id": "ae39a373-b0a0-4408-b0cb-c0307aeb2327",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978130,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Or using an extension:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "b3a03a81-83e5-4085-b462-4a9e0b487f4a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4d15efd0-d13d-4940-8cff-0944bc25136f",
+            "75c1ebbc-80f5-4bd0-9c98-5d9b4a401277",
+            "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+            "c75c7ef5-cff3-4d8a-afb3-7d24fd1f1298",
+            "640816b9-8353-4f91-b68e-cb520b85aaa1",
+            "d166a06c-777a-44ce-8bed-1554a50e34a1",
+            "abe32124-b6b6-49e0-abb4-bee6f903009e",
+            "651fd7b3-bf03-4fad-a583-688f5c0eb96e"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104960000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "b3a03a81-83e5-4085-b462-4a9e0b487f4a",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552105320000,
+          "parent_id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Protocols"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 26
+        }
+      },
+      "c5ff981d-f0d6-4ba2-b5ca-c4ca15fdd521": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978131,
+          "id": "c5ff981d-f0d6-4ba2-b5ca-c4ca15fdd521",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978131,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "class MyViewController : UIViewController, UITableViewDelegate"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "de0ba523-cb17-46e6-98ee-35226a7db71f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978129,
+          "id": "de0ba523-cb17-46e6-98ee-35226a7db71f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978129,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Also in order to mark our delegate as "
+              ],
+              [
+                "weak",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " we must constrain our ChildDelegate protocol to reference types by adding "
+              ],
+              [
+                "class",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " keyword in protocol declaration."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "e361d2fd-82b1-4a04-800c-eb02b03cbba4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104978129,
+          "id": "e361d2fd-82b1-4a04-800c-eb02b03cbba4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552104978129,
+          "parent_id": "1332c3f9-6b8d-442f-bdf6-51a3f6fb5456",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Notice the variable "
+              ],
+              [
+                "delegate",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is an optional and the protocol "
+              ],
+              [
+                "ChildDelegate",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is marked to be only implemented by class type (without this the "
+              ],
+              [
+                "delegate",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " variable can’t be declared as a "
+              ],
+              [
+                "weak",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " reference avoiding any retain cycle. This means that if the "
+              ],
+              [
+                "delegate",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " variable is no longer referenced anywhere else, it will be released). This is so the parent class only registers the delegate when it is needed and available."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "e76d4290-6b0e-4932-91a6-0bbd351f3b6b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4743a9b3-3ba1-4406-8fd8-92f831177a73",
+            "40e2faa7-5ff3-4654-a114-f19b837c574b",
+            "743fc1c3-bc9c-4386-8bb8-37bb9430112f",
+            "85fc985e-d4f6-470c-a50e-d230fb7f7029",
+            "b3a03a81-83e5-4085-b462-4a9e0b487f4a",
+            "5b89258e-bcc1-4c2b-b7ec-53d72cea9e9e",
+            "752e5fcf-89e9-482f-8ab5-40b382d1513b",
+            "0bbae402-0f8d-4c53-9284-2bfa4e450424",
+            "9f9ac142-3746-4907-b806-661ae15321d3",
+            "4007debc-6666-4d3f-8faa-5ba1ed7a30fb",
+            "2ebad693-9dff-4aeb-bb97-2b78d049b25e",
+            "08b06e18-c5f3-4e40-a0be-39eaaab9fdc5",
+            "c7a9a16f-d660-4db7-8d5b-012a3f06c296",
+            "aec11d9f-8e77-49ff-9784-b941666239e5",
+            "8e0cbefa-bb13-46a7-ae47-5d4863fae390",
+            "9926a540-7aa3-4e8b-a880-0d25223917b7",
+            "cfa2de35-cd00-48e5-aa49-c7bc809cd199",
+            "75f61437-dd57-4152-ba5d-e1d11169b6f5",
+            "ab64a7f2-ccc3-4ffd-98ca-cb7cc7d65a64",
+            "346889aa-bbe6-4248-9382-9d44810882db",
+            "6eadf518-5b93-4d64-9bc2-0e88e97a1ad5",
+            "45e8edb6-720b-4879-a3f9-bdeeebc97a9f",
+            "5367e1b7-d8c9-42c1-a35c-1508743d5105",
+            "ab0095d7-f330-4c2a-9564-40c927e04cdd",
+            "995be302-8fbf-4acc-9c9b-db5cfdd0521f",
+            "e9e7dd97-8907-4c61-94c8-873542c4221d",
+            "9f971757-8f39-4d94-9d24-c0b8b7100e34",
+            "b51b495d-f653-4e2b-b92d-5af0d351982e",
+            "9da019f7-f538-42a4-bf9f-a95e812e2233",
+            "b5d22e19-0056-4916-bf50-cc1dc2f38c0e",
+            "f3aea850-966d-47e0-bbd2-8564c5d35715",
+            "e80e058c-cecb-4b11-af4a-b91c85302b9d",
+            "2f2b8c00-b4d8-4005-9764-71297a1f77f4",
+            "a95c626d-6b55-449a-91a2-173c29e1c6a7",
+            "41f7ad78-47df-4ba7-9750-0c3f2e60ce1b",
+            "e1154a97-185d-4fcd-81a8-6d4e1e7d3a99",
+            "9455a2c2-402a-4a70-8aeb-9762505167c3",
+            "77ad070c-dd39-4425-a996-cc8967f74b4e",
+            "9667daa4-8e9a-40c6-8498-5fd2b4e46a1e",
+            "67e4333d-b244-489f-94a9-5033eda1d62f",
+            "00935eb8-d316-43d4-9d14-f133a4cf1c91",
+            "41bf5b92-7d0a-4e59-af5d-5b1468ffec68",
+            "18f00844-2ce5-4c04-9bd7-9a256ae07a77",
+            "2f6abffd-8151-4ec2-9a32-2f5da3b5a767",
+            "35e9a1fb-1c65-4c4d-b44b-becc6cd9f6bd",
+            "2e9691dd-0811-4161-964f-0af0c454280b",
+            "cb46a744-6c26-43e6-ba4b-4058eb63b196",
+            "1beb1f79-8f57-4bf1-8bcb-e6737d583cda",
+            "9ae8b978-28e6-44f1-af9c-629e5306665c",
+            "10e2f070-4018-4205-8a93-00bc8fa64375",
+            "bec5b2af-554c-4a6c-87b2-a65a4523f654",
+            "41dd6dc2-8607-4978-9306-8747c2240710",
+            "36fdcbe2-b28e-4eae-96d0-f3255977fddc",
+            "1a7a68fa-5ed7-4026-bd09-6c438ee3c996",
+            "298a6998-40b4-4079-ae0e-f0fc31d96e18",
+            "d04ea4c2-1d96-49c5-b911-1de41c18c770",
+            "d9d0d23b-6862-4787-ba04-328a8305821b",
+            "2a406142-9c5f-402d-939e-888df54da249",
+            "3b5feb34-031d-402a-804d-16d2d230a001",
+            "66275fb3-9144-4a6b-a878-f81e4a354aa6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552104898140,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605960000,
+          "parent_id": "4a02310c-f1a7-4b8f-8aff-7088c1decd8b",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Swift"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 148
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
