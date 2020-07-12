@@ -1,0 +1,531 @@
+1708 1594557875223 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+      "table": "block"
+    }
+  ]
+}
+Response:+1508
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "897e80e0-ae41-440a-9a9c-9ab445cec1db",
+          "4ad8fff9-d660-4582-82c4-3bc9ef766fe7",
+          "37b5c1e1-0d0a-4c24-92bf-ed21b59c346f",
+          "aeb34456-d1fc-4439-8c35-ba8cb95aa5d2",
+          "5ef060d8-f201-43f0-ade4-41e6bea339bb",
+          "be4df975-1925-4261-8d00-73e85f28ed51",
+          "9cf41b87-9acb-4607-a551-14f7e2425552",
+          "f7293a92-6446-4f9c-a7ba-6b84eea85676",
+          "e55caff7-98df-49b8-a305-9e254582c6e9"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552106292896,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552106292896,
+        "parent_id": "6bc38731-0ff1-48ea-ad14-ad021c6b1faa",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "ReactJS component written in Typescript"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 7
+      }
+    }
+  ]
+}
+17946 1594557875223 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+  "verticalColumns": false
+}
+Response:+17705
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "37b5c1e1-0d0a-4c24-92bf-ed21b59c346f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552106292893,
+          "id": "37b5c1e1-0d0a-4c24-92bf-ed21b59c346f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552106292893,
+          "parent_id": "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "But in order to make full use of TypeScript’s main feature (static type checking) you must do a couple things:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "4ad8fff9-d660-4582-82c4-3bc9ef766fe7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552106292893,
+          "id": "4ad8fff9-d660-4582-82c4-3bc9ef766fe7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552106292893,
+          "parent_id": "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "//helloMessage.tsx:\nvar HelloMessage = React.createClass({\n  render: function() {\n    return \u003cdiv\u003eHello {this.props.name}\u003c/div\u003e;\n  }\n});\n\nReactDOM.render(\u003cHelloMessage name=\"John\" /\u003e, mountNode);"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "5ef060d8-f201-43f0-ade4-41e6bea339bb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552106292894,
+          "id": "5ef060d8-f201-43f0-ade4-41e6bea339bb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552106292894,
+          "parent_id": "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "//helloMessage.tsx:\nclass HelloMessage extends React.Component {\n  render() {\n    return \u003cdiv\u003eHello {this.props.name}\u003c/div\u003e;\n  }\n}\n\nReactDOM.render(\u003cHelloMessage name=\"John\" /\u003e, mountNode);"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "6a366b67-c639-41b0-bf3c-ed26ee5aa702": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "897e80e0-ae41-440a-9a9c-9ab445cec1db",
+            "4ad8fff9-d660-4582-82c4-3bc9ef766fe7",
+            "37b5c1e1-0d0a-4c24-92bf-ed21b59c346f",
+            "aeb34456-d1fc-4439-8c35-ba8cb95aa5d2",
+            "5ef060d8-f201-43f0-ade4-41e6bea339bb",
+            "be4df975-1925-4261-8d00-73e85f28ed51",
+            "9cf41b87-9acb-4607-a551-14f7e2425552",
+            "f7293a92-6446-4f9c-a7ba-6b84eea85676",
+            "e55caff7-98df-49b8-a305-9e254582c6e9"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552106292896,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552106292896,
+          "parent_id": "6bc38731-0ff1-48ea-ad14-ad021c6b1faa",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "ReactJS component written in Typescript"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "6bc38731-0ff1-48ea-ad14-ad021c6b1faa": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "26c80274-ff7a-4062-a140-b0dd5be013e8",
+            "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+            "c15f4b0f-b8e5-4906-89f4-e8eddc91c230"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552106280000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "6bc38731-0ff1-48ea-ad14-ad021c6b1faa",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552106640000,
+          "parent_id": "9f3a0df9-8557-47b1-ab85-b76637971d62",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Using TypeScript with React Native"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 53
+        }
+      },
+      "897e80e0-ae41-440a-9a9c-9ab445cec1db": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552106292889,
+          "id": "897e80e0-ae41-440a-9a9c-9ab445cec1db",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552106292889,
+          "parent_id": "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "You can use ReactJS’s components easily in TypeScript. Just rename the ‘jsx’ file extension to ‘tsx’:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "9cf41b87-9acb-4607-a551-14f7e2425552": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552106292896,
+          "id": "9cf41b87-9acb-4607-a551-14f7e2425552",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552106292896,
+          "parent_id": "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "2) Add Props and State interfaces:",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "9f3a0df9-8557-47b1-ab85-b76637971d62": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "0bb9ee87-fccb-4384-bcb5-0cd8dd8be530",
+            "fc960b9a-9367-4d2a-8ddb-08e631981af5",
+            "491c594b-205c-4cbf-bc7d-4caca40e4d5d",
+            "bcb8cc4c-9223-4de8-b86b-20ff305bd9ee",
+            "3ed0aad5-d965-4a1e-8ddd-54de0d698ad8",
+            "6bc38731-0ff1-48ea-ad14-ad021c6b1faa",
+            "c2126622-f67f-40a4-9ccc-586b8c192c71",
+            "f739d352-c00f-4e51-b6f2-1b425ff8f732",
+            "9c6afd3d-ff59-4ce1-ab70-504d012c758f",
+            "d37c99ee-af9c-4165-85f1-e4b20c9632e0",
+            "89322076-647d-40be-9dc6-fcad7f299f62",
+            "ce3c34ba-e91e-4ecc-aec0-76d8276ac5fa",
+            "0881cd7b-5020-4541-9dea-bcc394fdf53d",
+            "28fc94d5-2430-42bb-8f3f-67270c3c85a5",
+            "5b2bf0af-10e8-488f-92fc-de5383599b4c",
+            "19f1aebd-c780-4856-b18c-c7490fdad251",
+            "9d04aa98-ad4e-4010-9d3f-002b3ff21e5f",
+            "c14589c3-4f59-4c6c-a29e-b754617639d1",
+            "e9f5d93d-6b37-420d-a5fd-bbe803da2372",
+            "a56f51cc-cc02-4ad6-8843-348a0c3ff174",
+            "60872471-6dce-4887-97ac-cb868a73e2cf",
+            "25d32317-e3f4-4f72-8f39-690522bd9823",
+            "265bfa11-c991-4a72-9490-3434922ce6b4",
+            "b96e73eb-668d-4778-a51e-a512e6ac3c1b",
+            "d195a7e1-ea53-4ef2-89da-936b02bdd396",
+            "8574a17d-6710-4853-97a3-69d38944b1c2",
+            "8cb25cca-8c4d-4a56-96c7-eba0cc892783",
+            "de924a60-ad22-44d9-9453-92e13e9a553c",
+            "55d3717f-0cea-4953-92ff-d8118212ba86",
+            "b09a3b3d-16f0-4069-b7b0-40e8ede341b9",
+            "49c6fff9-a062-40da-8d62-3977d31372ae",
+            "1ef36357-af1b-4162-90b9-0b809bc3f9c9"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552106236513,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "9f3a0df9-8557-47b1-ab85-b76637971d62",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605900000,
+          "parent_id": "4b8c06e2-f76e-4753-bac6-c77952d764a4",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential TypeScript"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 98
+        }
+      },
+      "aeb34456-d1fc-4439-8c35-ba8cb95aa5d2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552106292893,
+          "id": "aeb34456-d1fc-4439-8c35-ba8cb95aa5d2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552106292893,
+          "parent_id": "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "1) convert React.createClass to an ES6 Class:",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "be4df975-1925-4261-8d00-73e85f28ed51": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552106292895,
+          "id": "be4df975-1925-4261-8d00-73e85f28ed51",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552106292895,
+          "parent_id": "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "For more info on converting to ES6 look "
+              ],
+              [
+                "here",
+                [
+                  [
+                    "a",
+                    "http://www.newmediacampaigns.com/blog/refactoring-react-components-to-es6-classes"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "e55caff7-98df-49b8-a305-9e254582c6e9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552106292896,
+          "id": "e55caff7-98df-49b8-a305-9e254582c6e9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552106292896,
+          "parent_id": "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Now TypeScript will display an error if the programmer forgets to pass props. Or if trying to pass in props that are not defined in the interface."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "f7293a92-6446-4f9c-a7ba-6b84eea85676": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552106292896,
+          "id": "f7293a92-6446-4f9c-a7ba-6b84eea85676",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552106292896,
+          "parent_id": "6a366b67-c639-41b0-bf3c-ed26ee5aa702",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "interface Props {\n    name:string;\n    optionalParam?:number;\n}\n\ninterface State {\n  //empty in our case\n}\n\nclass HelloMessage extends React.Component\u003cProps, State\u003e {\n  render() {\n    return \u003cdiv\u003eHello {this.props.name}\u003c/div\u003e;\n  }\n}\n// TypeScript will allow you to create without the optional parameter\nReactDOM.render(\u003cHelloMessage name=\"Sebastian\" /\u003e, mountNode);\n// But it does check if you pass in an optional parameter of the wrong type\nReactDOM.render(\u003cHelloMessage name=\"Sebastian\" optionalParam='foo' /\u003e, mountNode);"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
