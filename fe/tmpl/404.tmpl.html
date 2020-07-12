@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="always">
+
+  {{if .Book}}
+  <title>Page in book '{{.Book.Title}}'' not found</title>
+  {{else}}
+  <title>Page not found</title>
+  {{end}}
+
+  <link rel="icon" href="{{ optimize "/s/favicon.ico" }}">
+  <link href="{{ optimize "/s/main.css" }}" rel="stylesheet"> {{ .Analytics }}
+
+  {{if .Book}}
+  <script src="{{.Book.AppJSURL}}"></script>
+  {{end}}
+  <script src="{{ optimize "/s/bundle.js" }}" defer></script>
+  <script>
+    function onLoad() {
+      do404();
+    }
+    document.addEventListener('DOMContentLoaded', onLoad);
+  </script>
+
+  <style>
+    body {
+      background-color: #f4f6f6;
+    }
+
+    a,
+    a:link,
+    a:active,
+    a:visited {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  {{ template "icons.tmpl.html" . }}
+
+  <header class="page__header">
+    <div class="page__header__left">
+      <a id="link-home" href="/">
+        <svg class="icon-home">
+          <use xlink:href="#icon-home"></use>
+        </svg>
+        &nbsp;Essential Books
+      </a>
+    </div>
+    <div>
+    </div>
+    <div class="page__header__right">
+      <!-- Right Side-->
+    </div>
+  </header>
+
+  <div class="page-404">
+    {{if .Book}}
+    <h2>Page in book '{{.Book.Title}} was not found!</h2>
+    {{else}}
+    <h2>Page was not found!</h2>
+    {{end}}
+    <p>Looks like you've followed a broken link or entered a URL that doesn't exist on this site.</p>
+    <p>
+      {{if .Book}}
+      <a href="{{.Book.URL}}">← Back to top of the book</a>
+      {{else}}
+      <a href="/">← Back to top of our website</a>
+      {{end}}
+    </p>
+  </div>
+
+</body>
+
+</html>

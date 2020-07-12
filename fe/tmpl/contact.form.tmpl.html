@@ -1,0 +1,27 @@
+<form name="essentialbooks-feedback" netlify id="contact-form">
+  <p>
+    <div class="contact-light">Feedback about page:</div>
+    <input type="text" name="page-url" id="contact-page-url" readonly />
+  </p>
+
+  <p>
+    <div class="contact-light">Feedback:</div>
+    <textarea name="message" id="msg-for-chris"></textarea>
+    <div class="contact-light">Optional: your email if you want me to get back to you: </div>
+    <input type="email" name="email" />
+  </p>
+
+  <p>
+    <button type="submit" class="contact-btn">
+      Send Feedback
+    </button>
+
+    <button class="contact-btn" style="float: right;" onclick="hideContact(); return false;">
+      Cancel
+    </button>
+  </p>
+
+  <p>
+    <div data-netlify-recaptcha></div>
+  </p>
+</form>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+{{ template "page.head.tmpl.html" . }}
+
+<body class="page">
+  {{ template "page.js.tmpl.html" }}
+  {{ template "icons.tmpl.html" . }}
+  {{ template "header.tmpl.html" . }}
+
+  <div id="toc"></div>
+
+  <div class="content">
+    <div class="article">
+      {{ template "top.hdr.tmpl.html" . }}
+
+      {{ .HTML }}
+
+      {{ template "contact.link.tmpl.html" . }}
+      {{ template "contact.form.tmpl.html" . }}
+
+      <hr class="article-bottom-sep">
+    </div>
+
+    <div id="page-toc"></div>
+
+    <div id="chapter-toc-wrapper">
+      <hr />
+      <div class="hdr">Table Of Contents</div>
+      <div id="book-toc"></div>
+    </div>
+  </div>
+
+  {{ template "footer.tmpl.html" . }}
+  {{ template "search.results.tmpl.html" . }}
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="always">
+
+  <title>Essential Programming Books Covers View</title>
+  <meta name="description" content="Essential Programming Books, covers view.">
+
+  <link rel="icon" href="{{ optimize "/s/favicon.ico" }}">
+  <link href="{{ optimize "/s/main.css" }}" rel="stylesheet"> {{ .Analytics }}
+  <script src="{{ optimize "/s/bundle.js" }}" defer></script>
+</head>
+
+<body class="page">
+  {{ template "icons.tmpl.html" . }}
+
+  <div class="content">
+    <div class="book-body">
+      <h1 class="hcenter">Essential Programming Books</h1>
+      <div class="hcenter smaller">
+        <a href="/about">about this project</a>
+        &middot;
+        <a href="/feedback">feedback</a>
+      </div>
+      <div class="view-switch hcenter">
+        <a href="/" onclick="rv('list')">switch to list view</a>
+      </div>
+
+      <div class="covers">
+        {{range .Books}}
+        <div class="img-cover-wrapper">
+          <a href="{{.URL}}">
+            <img class="img-cover" src="{{.CoverURL}}">
+          </a>
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </div>
+
+  <footer class="page__footer">
+    <div class="page__footer__left">
+      Maintained by
+      <a href="https://blog.kowalczyk.info" target="_blank">Krzysztof Kowalczyk</a>
+    </div>
+
+    <div>
+      <!-- center -->
+    </div>
+
+    <div class="page__footer__right">
+      <a href="https://github.com/essentialbooks/books" target="_blank">
+        <svg class="github">
+          <use xlink:href="#icon-github"></use>
+        </svg>
+        &nbsp;GitHub
+      </a>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

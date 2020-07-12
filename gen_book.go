@@ -22,7 +22,7 @@ var (
 	tmplDir = filepath.Join("fe", "tmpl")
 
 	// directory where generated .html files for books are
-	destEssentialDir = filepath.Join("www", "essential")
+	destEssentialDir = filepath.Join("www")
 
 	templates *template.Template
 

@@ -155,7 +155,7 @@ func (p *Page) URL() string {
 	id := p.NotionID
 	title := urlify(p.Title)
 	// /essentail/go/${title}-${id}
-	return fmt.Sprintf("/essential/%s/%s-%s", book.Dir, title, id)
+	return fmt.Sprintf("/%s/%s-%s", book.DirShort, title, id)
 }
 
 // CanonnicalURL returns full url including host
@@ -171,11 +171,11 @@ func (p *Page) NotionURL() string {
 func (p *Page) destFilePath() string {
 	title := urlify(p.Title)
 	fileName := title + "-" + p.NotionID + ".html"
-	return filepath.Join(destEssentialDir, p.Book.Dir, fileName)
+	return filepath.Join(p.Book.DirOnDisk, destEssentialDir, fileName)
 }
 
 func (p *Page) destImagePath(name string) string {
-	return filepath.Join(destEssentialDir, p.Book.Dir, name)
+	return filepath.Join(p.Book.DirOnDisk, destEssentialDir, name)
 }
 
 // PageTitle returns title for the page

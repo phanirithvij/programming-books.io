@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="always" />
+
+  <title>About Essential Programming Books project</title>
+  <meta name="description" content="About Essential Programming Books project" />
+
+  <link rel="icon" href="{{ optimize "/s/favicon.ico" }}" />
+  <link href="{{ optimize "/s/main.css" }}" rel="stylesheet" />
+  {{ .Analytics }}
+  <script src="{{ optimize "/s/bundle.js" }}" defer></script>
+
+  <style>
+    #content {
+      height: 100%;
+      overflow-y: scroll;
+    }
+
+    .wrapper {
+      max-width: 48em;
+      padding: 0px 16px;
+      padding-bottom: 3em;
+    }
+  </style>
+</head>
+
+<body>
+  {{ template "icons.tmpl.html" . }}
+
+  <header id="header">
+    <div id="header-left">
+      <a id="link-home" href="/"><svg class="icon-home">
+          <use xlink:href="#icon-home"></use>
+        </svg>&nbsp;Essential Books</a>
+    </div>
+    <div id="header-center"></div>
+    <div id="header-right"></div>
+  </header>
+
+  <div id="content">
+    <div class="wrapper">
+      <h1>
+        About this project
+      </h1>
+
+      <p>
+        This project is a continuation of Stack Overflow Documentation, which
+        ended in
+        <a href="https://meta.stackoverflow.com/questions/354217/sunsetting-documentation">August 2017</a>.
+      </p>
+
+      <p>
+        The intent is to preserve that work and improve upon it.
+      </p>
+
+      <p>
+        This project is collaborative. All documentation is released under
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons BY-SA</a>
+        license and hosted on
+        <a href="https://github.com/essentialbooks/books">GitHub</a>. Please
+        do <a href="https://github.com/essentialbooks/books">contribute</a>!
+      </p>
+
+      <h2>Guiding principles behind Essential Books</h2>
+
+      <ul>
+        <li>driven by examples</li>
+        <li>not limited in size like a traditinal book</li>
+        <li>articles are cross-linked</li>
+        <li>search friendly</li>
+      </ul>
+
+      <p>
+        <b>Driven by examples</b>
+      </p>
+      <div>Show, don't tell.</div>
+
+      <p>
+        <b>Not limited in size</b>
+      </p>
+      <p>
+        A traditional book is limited by physical size, number of pages. This
+        limits how much information it can have.
+      </p>
+      <p>
+        We don't have such constraints so there's no limit to how much useful
+        information we can add.
+      </p>
+      <p>
+        Documenting popular libraries, adding step-by-step tutorials for
+        specific tasks. Everything is in scope.
+      </p>
+
+      <p>
+        <b>Search friendly</b>
+      </p>
+      <p>
+        A search bar at the top allows quick navigation to a topic of
+        interest.
+      </p>
+      <p>
+        Instead of scanning table of contents, you can type the topic you're
+        interested in.
+      </p>
+      <p>Want to learn about strings? Type "string" in search.</p>
+      <p>We search titles of chapters and articles.</p>
+      <p>
+        We also add most likely synonims user might use to look for a given
+        topic for example "oop" will find "Object-oriented programming".
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

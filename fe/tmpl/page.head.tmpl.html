@@ -1,0 +1,32 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="always">
+
+  <meta name="twitter:card" value="summary">
+  <meta name="twitter:site" content="@kjk">
+  <meta name="twitter:title" content="{{.Title}}">
+  <!-- do something else for description -->
+  <meta name="twitter:description" content="{{.Description}}">
+  <meta name="twitter:creator" content="@kjk">
+  <meta name="twitter:image" content="{{.Book.CoverTwitterFullURL}}">
+  <!-- do something else for title -->
+  <meta property="og:title" content="{{.Title}}">
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{.CanonnicalURL}}" />
+  <!-- do something else for description -->
+  <meta property="og:description" content="{{.Title}}">
+  <meta property="og:image" content="{{.Book.CoverTwitterFullURL}}">
+
+  <title>{{.PageTitle}}</title>
+  <meta name="description" content="{{.PageTitle}}">
+
+  <link rel="icon" href="{{ optimize "/s/favicon.ico" }}">
+
+  <link href="{{ optimize "/s/main.css" }}" rel="stylesheet">
+  <link href="{{ optimize "/s/bundle.css" }}" rel="stylesheet">
+
+  {{ .Analytics }}
+  <script src="{{.Book.AppJSURL}}" defer></script>
+  <script src="{{ optimize "/s/bundle.js" }}" defer></script>
+</head>

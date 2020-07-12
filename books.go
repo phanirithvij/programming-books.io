@@ -1,12 +1,14 @@
 package main
 
-import "strings"
+import (
+	"strings"
+)
 
 var (
 	bookGo = &Book{
 		Title:          "Go",
 		TitleLong:      "Essential Go",
-		Dir:            "go",
+		DirShort:       "go",
 		CoverImageName: "Go.png",
 		// https://www.notion.so/2cab1ed2b7a44584b56b0d3ca9b80185
 		NotionStartPageID: "2cab1ed2b7a44584b56b0d3ca9b80185",
@@ -14,7 +16,7 @@ var (
 	bookCsharp = &Book{
 		Title:          "C#",
 		TitleLong:      "Essential C#",
-		Dir:            "csharp",
+		DirShort:       "csharp",
 		CoverImageName: "CSharp.png",
 		// https://www.notion.so/kjkpublic/Essential-C-896da5248e65414ab645dd45985879a1
 		NotionStartPageID: "896da5248e65414ab645dd45985879a1",
@@ -22,7 +24,7 @@ var (
 	bookPython = &Book{
 		Title:          "Python",
 		TitleLong:      "Essential Python",
-		Dir:            "python",
+		DirShort:       "python",
 		CoverImageName: "Python.png",
 		// https://www.notion.so/kjkpublic/Essential-Python-12e6f78e68a5497290c96e1365ae6259
 		NotionStartPageID: "12e6f78e68a5497290c96e1365ae6259",
@@ -30,7 +32,7 @@ var (
 	bookKotlin = &Book{
 		Title:          "Kotlin",
 		TitleLong:      "Essential Kotlin",
-		Dir:            "kotlin",
+		DirShort:       "kotlin",
 		CoverImageName: "Kotlin.png",
 		// https://www.notion.so/kjkpublic/Essential-Kotlin-2bdd47318f3a4e8681dda289a8b3472b
 		NotionStartPageID: "2bdd47318f3a4e8681dda289a8b3472b",
@@ -38,7 +40,7 @@ var (
 	bookJavaScript = &Book{
 		Title:          "JavaScript",
 		TitleLong:      "Essential JavaScript",
-		Dir:            "javascript",
+		DirShort:       "javascript",
 		CoverImageName: "JavaScript.png",
 		// https://www.notion.so/kjkpublic/Essential-Javascript-0b121710a160402fa9fd4646b87bed99
 		NotionStartPageID: "0b121710a160402fa9fd4646b87bed99",
@@ -46,7 +48,7 @@ var (
 	bookDart = &Book{
 		Title:          "Dart",
 		TitleLong:      "Essential Dart",
-		Dir:            "dart",
+		DirShort:       "dart",
 		CoverImageName: "Dart.png",
 		// 	https://www.notion.so/kjkpublic/Essential-Dart-0e2d248bf94b4aebaefbcf51ae435df0
 		NotionStartPageID: "0e2d248bf94b4aebaefbcf51ae435df0",
@@ -54,7 +56,7 @@ var (
 	bookJava = &Book{
 		Title:          "Java",
 		TitleLong:      "Essential Java",
-		Dir:            "java",
+		DirShort:       "java",
 		CoverImageName: "Java.png",
 		// https://www.notion.so/kjkpublic/Essential-Java-d37cda98a07046f6b2cc375731ea3bdb
 		NotionStartPageID: "d37cda98a07046f6b2cc375731ea3bdb",
@@ -62,7 +64,7 @@ var (
 	bookAndroid = &Book{
 		Title:          "Android",
 		TitleLong:      "Essential Android",
-		Dir:            "android",
+		DirShort:       "android",
 		CoverImageName: "Android.png",
 		// https://www.notion.so/kjkpublic/Essential-Android-f90b0a6b648343e28dc5ed6e8f5c0780
 		NotionStartPageID: "f90b0a6b648343e28dc5ed6e8f5c0780",
@@ -70,7 +72,7 @@ var (
 	bookSql = &Book{
 		Title:          "SQL",
 		TitleLong:      "Essential SQL",
-		Dir:            "sql",
+		DirShort:       "sql",
 		CoverImageName: "SQL.png",
 		// https://www.notion.so/kjkpublic/Essential-SQL-d1c8bb39bad4494e80abe28414c3d80e
 		NotionStartPageID: "d1c8bb39bad4494e80abe28414c3d80e",
@@ -78,7 +80,7 @@ var (
 	bookCpp = &Book{
 		Title:          "C++",
 		TitleLong:      "Essential C++",
-		Dir:            "cpp",
+		DirShort:       "cpp",
 		CoverImageName: "Cpp.png",
 		// https://www.notion.so/kjkpublic/Essential-C-ad527dc6d4a7420b923494d0b9bfb560
 		NotionStartPageID: "ad527dc6d4a7420b923494d0b9bfb560",
@@ -86,7 +88,7 @@ var (
 	bookIOS = &Book{
 		Title:          "iOS",
 		TitleLong:      "Essential iOS",
-		Dir:            "ios",
+		DirShort:       "ios",
 		CoverImageName: "iOS.png",
 		// https://www.notion.so/kjkpublic/Essential-iOS-3626edc1bd044431afddc89648a7050f
 		NotionStartPageID: "3626edc1bd044431afddc89648a7050f",
@@ -94,7 +96,7 @@ var (
 	bookPostgresql = &Book{
 		Title:          "PostgreSQL",
 		TitleLong:      "Essential PostgreSQL",
-		Dir:            "postgresql",
+		DirShort:       "postgresql",
 		CoverImageName: "PostgreSQL.png",
 		// https://www.notion.so/kjkpublic/Essential-PostgreSQL-799304340f2c4081b6c4b7eb28df368e
 		NotionStartPageID: "799304340f2c4081b6c4b7eb28df368e",
@@ -102,7 +104,7 @@ var (
 	bookMysql = &Book{
 		Title:          "MySQL",
 		TitleLong:      "Essential MySQL",
-		Dir:            "mysql",
+		DirShort:       "mysql",
 		CoverImageName: "MySQL.png",
 		// https://www.notion.so/kjkpublic/Essential-MySQL-4489ab73989f4ae9912486561e165deb
 		NotionStartPageID: "4489ab73989f4ae9912486561e165deb",
@@ -110,7 +112,7 @@ var (
 	bookAlgorithm = &Book{
 		Title:          "Algorithms",
 		TitleLong:      "Essential Algorithms",
-		Dir:            "algorithms",
+		DirShort:       "algorithms",
 		CoverImageName: "Algorithms.png",
 		// https://www.notion.so/kjkpublic/Essential-Algorithms-039ec42ee62f412e983e6d5b6b201b60
 		NotionStartPageID: "039ec42ee62f412e983e6d5b6b201b60",
@@ -118,7 +120,7 @@ var (
 	bookBash = &Book{
 		Title:          "Bash",
 		TitleLong:      "Essential Bash",
-		Dir:            "bash",
+		DirShort:       "bash",
 		CoverImageName: "Bash.png",
 		// https://www.notion.so/kjkpublic/Essential-Bash-77d28932012b489db9a6d0b349cea865
 		NotionStartPageID: "77d28932012b489db9a6d0b349cea865",
@@ -126,7 +128,7 @@ var (
 	bookC = &Book{
 		Title:          "C",
 		TitleLong:      "Essential C",
-		Dir:            "c",
+		DirShort:       "c",
 		CoverImageName: "C.png",
 		// https://www.notion.so/kjkpublic/Essential-C-84ae4145718e4b7b8cb43cf10ee4db6a
 		NotionStartPageID: "84ae4145718e4b7b8cb43cf10ee4db6a",
@@ -134,7 +136,7 @@ var (
 	bookCSS = &Book{
 		Title:          "CSS",
 		TitleLong:      "Essential CSS",
-		Dir:            "css",
+		DirShort:       "css",
 		CoverImageName: "CSS.png",
 		// https://www.notion.so/kjkpublic/Essential-CSS-18bfe038109649f48904e71ca18d76ed
 		NotionStartPageID: "18bfe038109649f48904e71ca18d76ed",
@@ -142,7 +144,7 @@ var (
 	bookGit = &Book{
 		Title:          "Git",
 		TitleLong:      "Essential Git",
-		Dir:            "git",
+		DirShort:       "git",
 		CoverImageName: "Git.png",
 		// https://www.notion.so/kjkpublic/Essential-Git-37913107a4194981b1fc745928c0df66
 		NotionStartPageID: "37913107a4194981b1fc745928c0df66",
@@ -150,7 +152,7 @@ var (
 	bookHTML = &Book{
 		Title:          "HTML",
 		TitleLong:      "Essential HTML",
-		Dir:            "html",
+		DirShort:       "html",
 		CoverImageName: "HTML.png",
 		// https://www.notion.so/kjkpublic/Essential-HTML-1c13e594ccd5472fb58d4c56379e7540
 		NotionStartPageID: "1c13e594ccd5472fb58d4c56379e7540",
@@ -158,7 +160,7 @@ var (
 	bookHTMLCanvas = &Book{
 		Title:          "HTML Canvas",
 		TitleLong:      "Essential HTML Canvas",
-		Dir:            "htmlcanvas",
+		DirShort:       "htmlcanvas",
 		CoverImageName: "HTMLCanvas.png",
 		// https://www.notion.so/kjkpublic/Essential-HTML5-Canvas-227fa77d624c441d98011d7c998609a6
 		NotionStartPageID: "227fa77d624c441d98011d7c998609a6",
@@ -166,7 +168,7 @@ var (
 	bookNETFramework = &Book{
 		Title:          "NET Framework",
 		TitleLong:      "Essential NET Framework",
-		Dir:            "netframework",
+		DirShort:       "netframework",
 		CoverImageName: "NETFramework.png",
 		// https://www.notion.so/kjkpublic/Essential-NET-framework-6289ba4610874393844dfbae890ed035
 		NotionStartPageID: "6289ba4610874393844dfbae890ed035",
@@ -174,7 +176,7 @@ var (
 	bookNode = &Book{
 		Title:          "Node.js",
 		TitleLong:      "Essential Node.js",
-		Dir:            "nodejs",
+		DirShort:       "nodejs",
 		CoverImageName: "Node.js.png",
 		// https://www.notion.so/kjkpublic/Essential-Node-a44f25f371164e69a70578bd98e71eb1
 		NotionStartPageID: "a44f25f371164e69a70578bd98e71eb1",
@@ -182,7 +184,7 @@ var (
 	bookObjectiveC = &Book{
 		Title:          "Objective-C",
 		TitleLong:      "Essential Objective-C",
-		Dir:            "objectivec",
+		DirShort:       "objectivec",
 		CoverImageName: "ObjectiveC.png",
 		// https://www.notion.so/kjkpublic/Essential-Objective-C-d16f98c8a3d641cd88a65fb67e6b0081
 		NotionStartPageID: "d16f98c8a3d641cd88a65fb67e6b0081",
@@ -190,7 +192,7 @@ var (
 	bookPHP = &Book{
 		Title:          "PHP",
 		TitleLong:      "Essential PHP",
-		Dir:            "php",
+		DirShort:       "php",
 		CoverImageName: "PHP.png",
 		// https://www.notion.so/kjkpublic/Essential-PHP-b64d2e8d06e04dbea37e6e7d0e06bb48
 		NotionStartPageID: "b64d2e8d06e04dbea37e6e7d0e06bb48",
@@ -198,7 +200,7 @@ var (
 	bookPowershell = &Book{
 		Title:          "PowerShell",
 		TitleLong:      "Essential PowerShell",
-		Dir:            "powershell",
+		DirShort:       "powershell",
 		CoverImageName: "PowerShell.png",
 		// https://www.notion.so/kjkpublic/Essential-Powershell-6042c6d3aed54250a12900e7f6b326e0
 		NotionStartPageID: "6042c6d3aed54250a12900e7f6b326e0",
@@ -206,7 +208,7 @@ var (
 	bookReact = &Book{
 		Title:          "React",
 		TitleLong:      "Essential React",
-		Dir:            "react",
+		DirShort:       "react",
 		CoverImageName: "Ruby.png", // TODO: need the cover
 		// https://www.notion.so/kjkpublic/Essential-React-2a68b0d047344fdb97c510b64a7a3e2d
 		NotionStartPageID: "2a68b0d047344fdb97c510b64a7a3e2d",
@@ -214,7 +216,7 @@ var (
 	bookReactNative = &Book{
 		Title:          "React Native",
 		TitleLong:      "Essential React Native",
-		Dir:            "reactnative",
+		DirShort:       "reactnative",
 		CoverImageName: "Ruby.png", // TODO: need the cover
 		// https://www.notion.so/kjkpublic/Essential-React-Native-c7980909d5144eb5aee8b28bbe60ec9b
 		NotionStartPageID: "c7980909d5144eb5aee8b28bbe60ec9b",
@@ -222,7 +224,7 @@ var (
 	bookRuby = &Book{
 		Title:          "Ruby",
 		TitleLong:      "Essential Ruby",
-		Dir:            "ruby",
+		DirShort:       "ruby",
 		CoverImageName: "Ruby.png",
 		// https://www.notion.so/kjkpublic/Essential-Ruby-51f7633cdf1f4ab1a7778e8095f599bd
 		NotionStartPageID: "51f7633cdf1f4ab1a7778e8095f599bd",
@@ -230,7 +232,7 @@ var (
 	bookRubyOnRails = &Book{
 		Title:          "Ruby On Rails",
 		TitleLong:      "Essential Ruby On Rails",
-		Dir:            "rubyonrails",
+		DirShort:       "rubyonrails",
 		CoverImageName: "RubyOnRails.png",
 		// https://www.notion.so/kjkpublic/Essential-Ruby-On-Rails-80d02f56455d4162a91223e5fc1341e0
 		NotionStartPageID: "80d02f56455d4162a91223e5fc1341e0",
@@ -238,7 +240,7 @@ var (
 	bookSwift = &Book{
 		Title:          "Swift",
 		TitleLong:      "Essential Swift",
-		Dir:            "swift",
+		DirShort:       "swift",
 		CoverImageName: "Swift.png",
 		// https://www.notion.so/kjkpublic/Essential-Swift-e76d42906b0e493291a60bbd351f3b6b
 		NotionStartPageID: "e76d42906b0e493291a60bbd351f3b6b",
@@ -246,7 +248,7 @@ var (
 	bookTypeScript = &Book{
 		Title:          "TypeScript",
 		TitleLong:      "Essential TypeScript",
-		Dir:            "typescript",
+		DirShort:       "typescript",
 		CoverImageName: "TypeScript.png",
 		// https://www.notion.so/kjkpublic/Essential-TypeScript-9f3a0df9855747b1ab85b76637971d62
 		NotionStartPageID: "9f3a0df9855747b1ab85b76637971d62",
@@ -254,7 +256,7 @@ var (
 	bookBatch = &Book{
 		Title:          "Batch",
 		TitleLong:      "Essential Batch",
-		Dir:            "batch",
+		DirShort:       "batch",
 		CoverImageName: "Batch.png",
 		// https://www.notion.so/kjkpublic/Essential-Batch-cmd-exe-ea84bde7ed4e4353bdc6ae44125abc08
 		NotionStartPageID: "ea84bde7ed4e4353bdc6ae44125abc08",
@@ -301,13 +303,16 @@ var (
 	allBooks = append(booksMain, booksUnpublished...)
 )
 
-func findBook(name string) *Book {
-	name = strings.ToLower(name)
+func findBook(id string) *Book {
 	for _, book := range allBooks {
-		if book.Dir == name {
-			return book
+		// fuzzy match - whatever hits
+		parts := []string{book.Title, book.DirShort, book.NotionStartPageID}
+		for _, s := range parts {
+			if strings.EqualFold(s, id) {
+				return book
+			}
 		}
 	}
-	panicIf(true, "didn't find book with name '%s'", name)
+	panicIf(true, "didn't find book with name '%s'", id)
 	return nil
 }

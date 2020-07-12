@@ -114,7 +114,7 @@ func downloadAndRememberImage(page *Page, imgDir, blockID, link string) {
 		must(err)
 	}
 	book := page.Book
-	relURL := "/essential/" + book.Dir + "/img/" + filepath.Base(path)
+	relURL := "/" + book.DirShort + "/img/" + filepath.Base(path)
 	im := &ImageMapping{
 		link:        link,
 		path:        path,

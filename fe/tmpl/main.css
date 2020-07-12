@@ -1,0 +1,1222 @@
+/* prevent overscroll https://stackoverflow.com/questions/12046315/prevent-overscrolling-of-web-page */
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+
+  /* github font see http://markdotto.com/2018/02/07/github-system-fonts/ */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  color: rgb(35, 35, 35);
+}
+
+h1 svg, h2 svg, h3 svg {
+  margin-left: 8px;
+  fill: transparent;
+  height: 0.6em;
+}
+
+h1:hover svg, h2:hover svg, h3:hover svg {
+  fill: #4183c4;
+}
+
+#page-toc {
+  margin-bottom: 1rem;
+}
+
+.body-book-index {
+  display: flex;
+  flex-direction: column;
+}
+
+/* this is cover on the left and book summary on the right */
+#book-cover-summary {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 8px;
+}
+
+#book-cover-image {
+  margin-left: 16px;
+}
+
+#book-cover-description {
+  margin-left: 16px;
+  margin-top: -8px; /* don't get why I need this */
+}
+
+#book-index-toc-header {
+  margin-top: 16px;
+  padding-bottom: 8px;
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+}
+
+/* hide by default, show when small width */
+#chapter-toc-wrapper {
+  display: none;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 780px) {
+  #chapter-toc-wrapper {
+    display: block;
+  }
+}
+
+/* dim toc on a book chapter page, to de-emphasize it 
+  visually, until user hovers over the element */
+#chapter-toc-wrapper {
+  filter: opacity(0.6);
+}
+
+#chapter-toc-wrapper:hover {
+  filter: opacity(1);
+}
+  
+  
+#chapter-toc-wrapper hr {
+    border: 1px solid rgba(1, 1, 1, 0.1);
+    border-style: dashed;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+#chapter-toc-wrapper div.hdr {
+  margin-top: 16px;
+  padding-bottom: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+}
+
+
+#header,
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 8px 16px;
+  background-color: #f5f5f5;
+}
+
+#footer {
+  font-size: 0.8em;
+  padding: 4px 16px;
+}
+
+#book-toc {
+  font-size: 0.9em;
+
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+#header-left,
+#footer-left {
+  min-width: 180px;
+}
+
+#header-center {
+  width: 50vw;
+}
+
+#footer-center {
+  min-width: 180px;
+}
+
+#header-right,
+#footer-right {
+  min-width: 180px;
+  text-align: right;
+}
+
+#content-book-index {
+  background-color: white;
+
+  height: 100%;
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto;
+}
+
+.page {
+  display: -ms-grid;
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+
+  grid-template-areas:
+    "header   header"
+    "toc      content"
+    "footer   footer";
+
+  height: 100vh;
+}
+
+.page__header {
+  grid-area: header;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  padding: 8px 16px;
+  background-color: #f5f5f5;
+}
+
+/* set left and right to be the same size so that
+  middle gets y-centered */
+.page__header__left {
+  width: 180px;
+}
+
+.page__header__right {
+  width: 180px;
+  text-align: right;
+}
+
+.page__footer {
+  grid-area: footer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  font-size: 0.8em;
+  padding: 4px 16px;
+  background-color: #f5f5f5;
+}
+
+/* set min size of left / right so that midde is v-centered */
+.page__footer__left {
+  min-width: 240px;
+}
+
+.page__footer__right {
+  min-width: 240px;
+  text-align: right;
+}
+
+.content {
+  grid-area: content;
+  overflow-y: scroll;
+}
+
+#toc {
+  grid-area: toc;
+  overflow-y: scroll;
+
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  padding-left: 8px;
+  padding-right: 8px;
+
+  width: 240px;
+
+  font-size: 0.8em;
+  line-height: 1.3em;
+}
+
+.article {
+  max-width: 660px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.book-body {
+  max-width: 100vw;
+  padding: 0px 16px;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+.forum-link {
+  color: gray;
+  font-size: 0.8em;
+  padding-bottom: 16px;
+  display: block;
+}
+
+@media screen and (max-width: 780px) {
+  .article {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #toc {
+    display: none;
+  }
+
+}
+
+.page__header__center {
+  width: 50vw;
+}
+
+/* for very small screens (i.e. phones) remove rarely needed elements and other tweaks */
+@media screen and (max-width: 500px) {
+  .page__footer {
+    display: none;
+  }
+  .page__header__left {
+    display: none;
+  }
+  .page__header__right {
+    display: none;
+  }
+  .article-contribute {
+    display: none;
+  }
+  /* TODO: not centered perfectly */
+  .page__header__center {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+#toc .lvl1 {
+  padding-left: 18px;
+}
+
+#toc .lvl2 {
+  padding-left: 36px;
+}
+
+#toc .lvl3 {
+  padding-left: 54px;
+}
+
+/*
+.article div {
+  width: 660px;
+}
+
+.article p {
+  width: 660px;
+}
+
+.article pre {
+  width: 660px;
+}
+*/
+
+/* TODO: for code div, set min-width to 660px */
+
+.article-contribute {
+  float: right;
+}
+
+/*
+.article {
+  width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+*/
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+.article table {
+  font-size: 0.85em;
+}
+
+td,
+th {
+  padding: 0.5em 1em;
+  text-align: left;
+  /* vertical-align: top; */
+}
+
+/*th {
+  vertical-align: bottom;
+}*/
+
+th:not(:first-child):not(:last-child),
+td:not(:first-child):not(:last-child) {
+  padding: 0 10px;
+}
+
+tbody tr td.with-decimal {
+  padding-left: 10px !important;
+  padding-right: 0px !important;
+}
+
+tbody tr td.decimal {
+  padding-left: 0 !important;
+  padding-right: 10px !important;
+}
+
+.article-top-hdr {
+  font-size: 0.8em;
+}
+
+/* TODO: could make it more explicit by
+setting class on h* elements */
+.article h1:target,
+.article h2:target,
+.article h3:target,
+.article h4:target {
+  transition: all 1s linear;
+  animation: temphilight 1.7s 1;
+}
+
+@keyframes temphilight {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.light {
+  color: gray;
+}
+
+.book-name {
+  padding-right: 32px;
+  padding-left: 0px;
+}
+
+table.book-list th {
+  padding-right: 16px;
+}
+
+.article blockquote {
+  border-left: 2px solid rgb(203, 203, 203);
+  padding-left: 8px;
+  margin-left: 16px;
+}
+
+.toc-article {
+  padding-left: 1em;
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.blue {
+  color: rgb(138, 178, 219);
+}
+
+a.blue:hover {
+  color: #4183c4;
+}
+
+.covers {
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-cover-small-wrapper {
+  margin-bottom: 12px;
+  padding-left: 16px;
+}
+
+.img-cover-wrapper {
+  margin-bottom: 16px;
+  /* width: 256px; height: 363px; */
+  /* ratio: 1.41 */
+  width: 200px;
+  height: 283px;
+
+  /* width: 100px;  height: 241px; */
+}
+
+.img-cover-small {
+  width: 140px;
+  transition: all 0.1s ease-in-out;
+}
+
+.img-cover-small:hover {
+  transform: scale(1.05);
+  border: 1px solid lightgray;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  transition: all 0.1s ease-in-out;
+}
+
+.img-cover:hover {
+  transform: scale(1.05);
+  border: 1px solid lightgray;
+}
+
+.book-img-cover-wrapper {
+  float: right;
+}
+
+.edit-link {
+  /* margin-right: 24px; */
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: #cccccc;
+}
+
+.edit-link:hover {
+  text-decoration: underline;
+  color: #999999;
+}
+
+/*
+style of an image <img> tag:
+- centered horizontally
+- limit width to container (i.e. the page)
+*/
+.img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  display: block; /* needed for margin-left/margin-right to work */
+}
+
+.book-img-cover {
+  width: 264px;
+  height: scale-down;
+}
+
+.article code {
+  background-color: #f8f8f8;
+  background-color: #f5f2f0;
+}
+
+/* styling inspired by http://gameprogrammingpatterns.com/dirty-flag.html#local-and-world-transforms
+*/
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5 {
+  color: #1481b8;
+  /* border-left: solid 8px #d9eaf2;
+    padding-left: 8px; */
+}
+
+h1.title {
+  margin-top: 10px;
+}
+
+/* add visual indication that this is the end of the article */
+hr.article-bottom-sep {
+  border: 1px solid rgba(1, 1, 1, 0.1);
+  border-style: dotted;
+  margin-top: 4px;
+}
+
+/* Note: there might be more elements we need to add here */
+details.notion-toggle > div,
+details.notion-toggle > details {
+  margin-left: 1.4em;
+}
+
+/* neutralize dy margin at the top and the bottom of lists
+   when nested inside toggle list */
+details.notion-toggle > ul,
+details.notion-toggle > ol {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+details.notion-toggle > summary::-webkit-details-marker:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.notion-column-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notion-date {
+  opacity: 0.5;
+}
+
+hr.notion-divider {
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.view-switch {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+
+.book-list {
+  /* center the table with list of books */
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50%;
+}
+
+
+.page-404 {
+  background: #eee;
+  padding: 40px 60px;
+  border-radius: 6px;
+  width: 40em;
+  margin: 50px auto;
+  max-width: 100%;
+}
+
+.breadcrumb-sep:after {
+  content: "\2192";
+  font-family: Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif;
+  color: #a9a9a9;
+  display: inline-block;
+  margin: 0 0px 0 4px;
+}
+
+.breadcrumb-sep:last-child {
+  display: none;
+}
+
+.mtoc-0 {
+  padding-left: 0;
+}
+
+.mtoc-1 {
+  padding-left: 16px;
+}
+
+.mtoc-2 {
+  padding-left: 32px;
+}
+
+.mtoc-3 {
+  padding-left: 48px;
+}
+
+.hcenter {
+  text-align: center;
+}
+
+#msg-for-chris {
+  width: 100%;
+  height: 8em;
+}
+
+form > textarea {
+  font-size: 12pt;
+}
+
+#contact-form {
+  /* background-color: lightsteelblue; */
+  padding: 1em 2em;
+  width: 75vw;
+  position: fixed;
+  right: 8px;
+  bottom: 2em;
+  background-color: white;
+  background-color: #fafafa;
+  z-index: 99;
+  border: 1px solid lightgray;
+
+  /* initially hidden */
+  display: none;
+}
+
+.contact-hidden {
+  display: none;
+}
+
+#contact-page-url {
+  font-size: 85%;
+  border: 0;
+  color: grey;
+  margin-left: 2px;
+  background-color: #fafafa;
+}
+
+form > input {
+  width: 100%;
+  font-size: 16px;
+}
+
+form button {
+  font-size: 16px;
+  background-color: white;
+  padding: 4px 8px;
+}
+
+form button:hover {
+  background-color: lightblue;
+}
+
+.contact-light {
+  font-size: 85%;
+  color: gray;
+  margin-left: 2px;
+  margin-bottom: 4px;
+}
+
+/* this allows to position child absolutely */
+.code-box {
+  font-size: 85%;
+  background-color: #f7f6f3;
+  /* color: #657b83; */
+  /* border: 1px solid #e5e5e5; */
+  /*
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  */
+  overflow-x: visible;
+  position: relative; /* so that code-box-playground can be placed to the right */
+}
+
+/* box that potentially displays file name linking to github and 'run' button for playground */
+.code-box {
+  margin-bottom: 1em;
+  /* padding-bottom: 4px; */
+  /*
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  */
+}
+
+.code-box-nav {
+  font-size: 85%;
+  display: inline-block;
+  /* background-color: #fafafa; */
+  /* transform: translateY(1px); */
+
+  /* position in the right-bottom corner */
+  position: absolute;
+  bottom: 4px;
+  right: -2px;
+}
+
+.code-box-github a,
+.code-box-playground a {
+  /* color: gray; */
+  color: rgba(55, 53, 47, 0.6);
+  text-decoration: none;
+}
+
+.code-box-github:hover a,
+.code-box-playground:hover a {
+  color: black;
+}
+
+/*
+higlight color in notion code box
+rgba(55, 53, 47, 0.08)
+
+color of text:
+rgba(55, 53, 47, 0.6)
+
+background color in notion code box:
+rgb(247, 246, 243)
+
+
+svg for down arro
+<svg viewBox="0 0 30 30" style="width: 10px; height: 100%; display: block; fill: rgba(55, 53, 47, 0.3); flex-shrink: 0; backface-visibility: hidden; margin-left: 4px;"><polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7 "></polygon></svg>
+
+*/
+
+.code-box-github,
+.code-box-playground {
+  display: inline-block;
+  margin: 0;
+  padding: 4px 8px;
+  font-weight: bold;
+  /* background: white; */
+  /*
+  border: 1px solid #e5e5e5;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  */
+}
+
+.code-box-playground {
+  margin-right: 8px;
+}
+
+.code-box-playground:hover,
+.code-box-github:hover {
+  /* background-color: #e5e5e5; */
+  /*color: black;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.26), 0 0 0 1px rgba(0, 0, 0, 0.14);
+  */
+  background-color: rgba(55, 53, 47, 0.08);
+}
+
+.lang-output {
+  margin-top: -1em;
+  border: 0px;
+  border-top: 1px solid #cbcbcb;
+  background-color: #f8f8f8;
+}
+
+/* for compact output */
+div.lang-output pre.chroma {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+/* for non-compact output */
+div.lang-text pre.chroma {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+pre.chroma {
+  display: block;
+  overflow-x: visible;
+  tab-size: 2;
+  margin: 0px;
+  padding: 0.5em;
+
+  /* mimicking font for code snippets in https://sourcegraph.com/github.com/essentialbooks/books/-/blob/books/go/0030-variables/blank_identifier_2.go */
+  font-family: SFMono-Regular, Consolas, Menlo, DejaVu Sans Mono, monospace;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+/* for showing a link to forum at the bottom of article / chapter */
+.forum-link {
+  font-size: 85%;
+  color: gray;
+  font-style: italic;
+  padding-bottom: 8px;
+}
+
+/* the same size as arrow */
+.toc-nav-empty-arrow {
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+  align-self: center;
+  transform: translateY(-1px);
+  padding-right: 2px;
+}
+
+.arrow {
+  /* kind of a hack because it got squished if the link
+     is long in .toc-item. probably could fix with
+     rigth flexbox attributes */
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+  align-self: center;
+  transform: translateY(-1px);
+  padding-right: 2px;
+}
+
+.arrow:hover {
+  background-color: #b3b3b3;
+}
+
+.icon-home {
+  width: 16px;
+  height: 16px;
+  fill: #4183c4;
+  transform: translateY(2px);
+}
+
+.icon-edit {
+  width: 16px;
+  height: 16px;
+  fill: #4183c4;
+  transform: translateY(2px);
+}
+
+.icon-twitter {
+  width: 12px;
+  height: 12px;
+  fill: #4183c4;
+  transform: translateY(2px);
+}
+
+.github {
+  width: 16px;
+  height: 16px;
+  fill: #4183c4;
+  transform: translateY(3px);
+}
+
+.toc-item {
+  display: flex;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+.toc-item:hover {
+  background-color: #eaeaea;
+}
+
+.toc-link {
+  align-self: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  overflow-x: hidden;
+  color: rgb(88, 88, 88);
+}
+
+.bold .toc-link {
+  color: black;
+}
+
+/* when #toc is hovered on with mouse, increase the contrast
+   of link color.
+   TODO: not sure about this, flickers when going to another page.
+   Maybe use mouseover and mouseout events
+   https://developer.mozilla.org/en-US/docs/Web/Events/mouseover
+   https://developer.mozilla.org/en-US/docs/Web/Events/mouseout
+*/
+/*
+#toc:hover .toc-link {
+  color: black;
+}
+*/
+
+/*
+Source higligh from chroma https://github.com/alecthomas/chroma
+Styles: https://xyproto.github.io/splash/docs/
+*/
+
+/* this is abap style
+Other promising styles:
+autumn
+borland
+colorful
+github
+igor
+pastie
+pygments
+rainbow_dash
+trac
+vs
+xcode
+*/
+
+/* Background */
+/*
+.chroma {
+  background-color: #ffffff;
+}
+*/
+
+/* Error */
+.chroma .err {
+  color: #ff0000;
+}
+/* LineTableTD */
+.chroma .lntd {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* LineTable */
+.chroma .lntable {
+  border-spacing: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: auto;
+  overflow: auto;
+  display: block;
+}
+/* LineHighlight */
+.chroma .hl {
+  display: block;
+  width: 100%;
+}
+/* LineNumbersTable */
+.chroma .lnt {
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em;
+}
+/* LineNumbers */
+.chroma .ln {
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em;
+}
+/* Keyword */
+.chroma .k {
+  color: #0000ff;
+}
+/* KeywordConstant */
+.chroma .kc {
+  color: #0000ff;
+}
+/* KeywordDeclaration */
+.chroma .kd {
+  color: #0000ff;
+}
+/* KeywordNamespace */
+.chroma .kn {
+  color: #0000ff;
+}
+/* KeywordPseudo */
+.chroma .kp {
+  color: #0000ff;
+}
+/* KeywordReserved */
+.chroma .kr {
+  color: #0000ff;
+}
+/* KeywordType */
+.chroma .kt {
+  color: #0000ff;
+}
+/* Name */
+.chroma .n {
+  color: #000000;
+}
+/* NameAttribute */
+.chroma .na {
+  color: #000000;
+}
+/* NameBuiltin */
+.chroma .nb {
+  color: #000000;
+}
+/* NameBuiltinPseudo */
+.chroma .bp {
+  color: #000000;
+}
+/* NameClass */
+.chroma .nc {
+  color: #000000;
+}
+/* NameConstant */
+.chroma .no {
+  color: #000000;
+}
+/* NameDecorator */
+.chroma .nd {
+  color: #000000;
+}
+/* NameEntity */
+.chroma .ni {
+  color: #000000;
+}
+/* NameException */
+.chroma .ne {
+  color: #000000;
+}
+/* NameFunction */
+.chroma .nf {
+  color: #000000;
+}
+/* NameFunctionMagic */
+.chroma .fm {
+  color: #000000;
+}
+/* NameLabel */
+.chroma .nl {
+  color: #000000;
+}
+/* NameNamespace */
+.chroma .nn {
+  color: #000000;
+}
+/* NameOther */
+.chroma .nx {
+  color: #000000;
+}
+/* NameProperty */
+.chroma .py {
+  color: #000000;
+}
+/* NameTag */
+.chroma .nt {
+  color: #000000;
+}
+/* NameVariable */
+.chroma .nv {
+  color: #000000;
+}
+/* NameVariableClass */
+.chroma .vc {
+  color: #000000;
+}
+/* NameVariableGlobal */
+.chroma .vg {
+  color: #000000;
+}
+/* NameVariableInstance */
+.chroma .vi {
+  color: #000000;
+}
+/* NameVariableMagic */
+.chroma .vm {
+  color: #000000;
+}
+/* LiteralString */
+.chroma .s {
+  color: #55aa22;
+}
+/* LiteralStringAffix */
+.chroma .sa {
+  color: #55aa22;
+}
+/* LiteralStringBacktick */
+.chroma .sb {
+  color: #55aa22;
+}
+/* LiteralStringChar */
+.chroma .sc {
+  color: #55aa22;
+}
+/* LiteralStringDelimiter */
+.chroma .dl {
+  color: #55aa22;
+}
+/* LiteralStringDoc */
+.chroma .sd {
+  color: #55aa22;
+}
+/* LiteralStringDouble */
+.chroma .s2 {
+  color: #55aa22;
+}
+/* LiteralStringEscape */
+.chroma .se {
+  color: #55aa22;
+}
+/* LiteralStringHeredoc */
+.chroma .sh {
+  color: #55aa22;
+}
+/* LiteralStringInterpol */
+.chroma .si {
+  color: #55aa22;
+}
+/* LiteralStringOther */
+.chroma .sx {
+  color: #55aa22;
+}
+/* LiteralStringRegex */
+.chroma .sr {
+  color: #55aa22;
+}
+/* LiteralStringSingle */
+.chroma .s1 {
+  color: #55aa22;
+}
+/* LiteralStringSymbol */
+.chroma .ss {
+  color: #55aa22;
+}
+/* LiteralNumber */
+.chroma .m {
+  color: #33aaff;
+}
+/* LiteralNumberBin */
+.chroma .mb {
+  color: #33aaff;
+}
+/* LiteralNumberFloat */
+.chroma .mf {
+  color: #33aaff;
+}
+/* LiteralNumberHex */
+.chroma .mh {
+  color: #33aaff;
+}
+/* LiteralNumberInteger */
+.chroma .mi {
+  color: #33aaff;
+}
+/* LiteralNumberIntegerLong */
+.chroma .il {
+  color: #33aaff;
+}
+/* LiteralNumberOct */
+.chroma .mo {
+  color: #33aaff;
+}
+/* OperatorWord */
+.chroma .ow {
+  color: #0000ff;
+}
+/* Comment */
+.chroma .c {
+  color: #888888;
+  font-style: italic;
+}
+/* CommentHashbang */
+.chroma .ch {
+  color: #888888;
+  font-style: italic;
+}
+/* CommentMultiline */
+.chroma .cm {
+  color: #888888;
+  font-style: italic;
+}
+/* CommentSingle */
+.chroma .c1 {
+  color: #888888;
+  font-style: italic;
+}
+/* CommentSpecial */
+.chroma .cs {
+  color: #888888;
+  font-style: italic;
+}
+/* CommentPreproc */
+.chroma .cp {
+  color: #888888;
+  font-style: italic;
+}
+/* CommentPreprocFile */
+.chroma .cpf {
+  color: #888888;
+  font-style: italic;
+}

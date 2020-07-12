@@ -123,14 +123,9 @@ func main() {
 
 	notionapi.LogFunc = logf
 	book := findBook(flgBook)
-	fullDir, err := filepath.Abs(".")
-	must(err)
-	fullDir = filepath.Join(fullDir, "book-"+book.Dir)
-	book.Dir = fullDir
-	u.CreateDirMust(fullDir)
-	u.CreateDirMust(filepath.Join(fullDir, "www"))
-	u.CreateDirMust(filepath.Join(fullDir, "cache", "notion"))
-	fmt.Printf("book: %s, dir: %s\n", book.Title, book.Dir)
+	initBook(book)
+	downloadBook(book)
+	fmt.Printf("book: %s, dir: %s\n", book.Title, book.DirShort)
 }
 
 func newNotionClient() *notionapi.Client {

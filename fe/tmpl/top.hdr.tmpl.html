@@ -1,0 +1,14 @@
+<div class="article-top-hdr">
+  <span>
+    {{ range .Breadcrumbs }}
+      <a href="{{.URL}}">{{.Title}}</a><span class="breadcrumb-sep"></span>
+    {{ end }}
+  </span>
+
+  <span class="article-contribute">
+    <a class="edit-link" href="{{.NotionURL}}" rel="nofollow"
+       target="_blank">suggest change</a>
+  </span>
+</div>
+
+<h1 class="title">{{.Title}}</h1>

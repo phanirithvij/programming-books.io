@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="always">
+
+  <title>Feedback for Essential Programming Books</title>
+  <meta name="description" content="Feedback for Essential Programming Books">
+
+  <link rel="icon" href="{{ optimize "/s/favicon.ico" }}">
+  <link href="{{ optimize "/s/main.css" }}" rel="stylesheet"> {{ .Analytics }}
+  <style type="text/css">
+    .btn {
+      font-size: 12pt;
+      /* background-color: #dbeafa; */
+      border: none;
+      padding: 4px 8px;
+      border: solid 2px #999;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #e7e7e7;
+    }
+
+    #msg-area {
+      width: 100%;
+      max-width: 720px;
+      height: 10em;
+      font-size: 11pt;
+    }
+  </style>
+
+  <script src="{{ optimize "/s/bundle.js" }}" defer></script>
+</head>
+
+<body>
+  {{ template "icons.tmpl.html" . }}
+
+  <header class="page__header">
+    <div class="page__header__left">
+      <a id="link-home" href="/">
+        <svg class="icon-home">
+          <use xlink:href="#icon-home"></use>
+        </svg>
+        &nbsp;Essential Books
+      </a>
+    </div>
+    <div>
+    </div>
+    <div class="page__header__right">
+      <!-- Right Side-->
+    </div>
+  </header>
+  <div class="content">
+    <div class="book-body">
+
+      <h1>
+        Feedback
+      </h1>
+
+      <p>Here are the ways to provide feedback.</p>
+
+      <h3>Page-specific feedback</h3>
+      <p>
+        To provide feedback about a specific page, use a link at the bottom of the page.
+      </p>
+      <h3>Send me an e-mail</h3>
+      <p>
+        You can send me an e-mail to
+        <a href="mailto:kkowalczyk@gmail.com">kkowalczyk@gmail.com</a>
+      </p>
+
+      <h3>Send me a message</h3>
+      <p>You can send me a quick message. Note: I won't be able to reply unless you also include your e-mail address.
+      </p>
+      <p>
+        <form name="essential-feedback" method="POST" netlify style="max-width: 80%">
+          <textarea name="message" id="msg-area"></textarea>
+          <div class="optemail" style="font-size: 85%; color: gray; margin-left: 2px; margin-bottom: 4px;">
+            Optional: your email if you want me to get back to you:
+          </div>
+          <input type="email" name="email" style="width: 100%" />
+
+          <p>
+            <button type="submit" class="btn">Send message</button>
+          </p>
+          <p>
+            <div netlify-recaptcha></div>
+          </p>
+
+        </form>
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>

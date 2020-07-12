@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="always" />
+
+  <meta name="twitter:card" value="summary" />
+  <meta name="twitter:site" content="@kjk" />
+  <meta name="twitter:title" content="{{.Book.TitleLong}}" />
+  <!-- do something else for description -->
+  <meta name="twitter:description" content="{{.Book.TitleLong}} is a free programming book about {{.Book.Title}}" />
+  <meta name="twitter:creator" content="@kjk" />
+  <meta name="twitter:image" content="{{.Book.CoverTwitterFullURL}}" />
+  <!-- do something else for title -->
+  <meta property="og:title" content="{{.Book.TitleLong}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{.Book.CanonnicalURL}}" />
+  <!-- do something else for description -->
+  <meta property="og:description" content="{{.Book.TitleLong}}" />
+  <meta property="og:image" content="{{.Book.CoverTwitterFullURL}}" />
+
+  <title>{{.Book.TitleLong}} - a free {{.Book.Title}} programming book</title>
+  <meta name="description" content="'{{.Book.TitleLong}}' is a free programming book about {{.Book.Title}}" />
+
+  <link rel="icon" href="{{ optimize "/s/favicon.ico" }}" />
+  <link href="{{ optimize "/s/main.css" }}" rel="stylesheet">
+  <link href="{{ optimize "/s/bundle.css" }}" rel="stylesheet">
+
+  {{ .Analytics }}
+  <script src="{{.Book.AppJSURL}}" defer></script>
+  <script src="{{ optimize "/s/bundle.js" }}" defer></script>
+</head>
+
+{{ template "book_index.js.tmpl.html" . }}
+
+<body class="body-book-index">
+  {{ template "icons.tmpl.html" . }}
+
+  {{ template "header.tmpl.html" . }}
+
+  <div id="content-book-index">
+    <div id="book-cover-summary">
+      <div id="book-cover-image">
+        <img width="180px" src="{{.Book.CoverURL}}" />
+      </div>
+
+      <div id="book-cover-description">
+        <p>
+          {{.Book.Summary}}
+        </p>
+        <p>
+          It's written to provide clear and concise explanation of topics for
+          programmers both starting to learn the language as well as those
+          diving in more complex topics.
+        </p>
+        <p>
+          Most examples are linked to online playground that allows you to
+          change the code and re-run it.
+        </p>
+        <p>
+          You can also quickly navigate to desired content using table of
+          content on the left and search at the top (tip: you can navigate
+          search using only a keyboard with '/' shortcut to start a search).
+        </p>
+        <p>
+          The content is based on now abandoned
+          <a href=" https://stackoverflow.com/documentation">StackOverflow Documentation</a>
+          project. It has been heavily edited and improved.
+        </p>
+        <p>
+          Content is licensed under Creative Commons
+          <a href="https://creativecommons.org/licenses/by-sa/3.0">
+            Attribution-ShareAlike 3.0</a>.
+        </p>
+      </div>
+    </div>
+
+    <div id="book-index-toc-header">
+      Chapters
+    </div>
+
+    <div id="book-toc"></div>
+
+    <footer id="footer">
+      <div id="footer-left">
+        Maintained by
+        <a href="https://blog.kowalczyk.info" target="_blank">Krzysztof Kowalczyk</a>
+      </div>
+      <div id="footer-center">
+        <a
+          href="https://twitter.com/intent/tweet?text={{.Book.ShareOnTwitterText}}&url={{.Book.CanonnicalURL}}&via=kjk">Share
+          <b>{{.Book.TitleLong}}</b> on &nbsp;
+          <svg class="icon-twitter">
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
+        </a>
+      </div>
+      <div id="footer-right"></div>
+    </footer>
+
+</html>

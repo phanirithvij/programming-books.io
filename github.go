@@ -117,6 +117,7 @@ var (
 func setGitHubToken(req *http.Request) {
 	token := os.Getenv("GITHUB_TOKEN")
 	if token == "" {
+		logf("GITHUB_TOKEN not set, using API anonymously\n")
 		return
 	}
 	if !didNotifyUsingToken {

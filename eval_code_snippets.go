@@ -90,7 +90,7 @@ func gistDownloadCached(cache *Cache, gistID string) string {
 	timeStart := time.Now()
 	newGist := gistDownloadMust(gistID)
 	logf("gist '%s': downloaded in %s\n", gistID, time.Since(timeStart))
-	if newGist.Raw == gist.Gist {
+	if gist != nil && newGist.Raw == gist.Gist {
 		panicIf(!flgGistRedownload)
 		return newGist.Raw
 	}

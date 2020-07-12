@@ -25,7 +25,8 @@ type Book struct {
 
 	idToPage map[string]*Page
 
-	Dir string // directory name for the book e.g. "go"
+	DirShort  string // directory name for the book e.g. "go"
+	DirOnDisk string // full directory name on disk
 
 	// generated toc javascript data
 	tocData []byte
@@ -43,8 +44,8 @@ type Book struct {
 
 // CacheDir returns a cache dir for this book
 func (b *Book) CacheDir() string {
-	u.PanicIf(b.Dir == "", "b.Dir should not be empty")
-	return filepath.Join("cache", b.Dir)
+	u.PanicIf(b.DirShort == "", "b.DirShort should not be empty")
+	return filepath.Join(b.DirOnDisk, "cache")
 }
 
 // NotionCacheDir returns output cache dir for this book
@@ -58,14 +59,15 @@ func (b *Book) cachePath() string {
 
 // this is where html etc. files for a book end up
 func (b *Book) destDir() string {
-	return filepath.Join(destEssentialDir, b.Dir)
+	return filepath.Join(b.DirOnDisk, destEssentialDir)
 }
 
 // URL returns url of the book, used in index.tmpl.html
 func (b *Book) URL() string {
-	return fmt.Sprintf("/essential/%s/", b.Dir)
+	return fmt.Sprintf("/%s/", b.DirShort)
 }
 
+// Summary returns book summary
 func (b *Book) Summary() template.HTML {
 	if b.summary == "" {
 		b.summary = fmt.Sprintf("<b>%s</b> is a free book about %s programming language.", b.TitleLong, b.Title)
@@ -150,7 +152,7 @@ func (b *Book) ChaptersCount() int {
 }
 
 func updateBookAppJS(book *Book) {
-	srcName := fmt.Sprintf("app-%s.js", book.Dir)
+	srcName := fmt.Sprintf("app-%s.js", book.DirShort)
 	d := book.tocData
 
 	sha1Hex := u.Sha1HexOfBytes(d)
@@ -189,18 +191,30 @@ func calcPageHeadings(page *Page) {
 	page.Headings = headings
 }
 
-func (book *Book) afterPageDownload(page *notionapi.Page) error {
+func (b *Book) afterPageDownload(page *notionapi.Page) error {
 	id := toNoDashID(page.ID)
 	p := &Page{
 		NotionPage: page,
 		NotionID:   id,
-		Book:       book,
+		Book:       b,
 	}
-	book.idToPage[id] = p
+	b.idToPage[id] = p
 	evalCodeSnippetsForPage(p)
-	downloadImages(book, p)
+	downloadImages(b, p)
 	calcPageHeadings(p)
 	return nil
+}
+
+func initBook(book *Book) {
+	fullDir, err := filepath.Abs("..")
+	must(err)
+	fullDir = filepath.Join(fullDir, "book-"+book.DirShort)
+	book.DirOnDisk = fullDir
+	dir := book.NotionCacheDir()
+	u.CreateDirMust(dir)
+	logf("Created '%s' for book '%s'\n", dir, book.Title)
+	book.idToPage = map[string]*Page{}
+	book.cache = loadCache(book.cachePath())
 }
 
 func downloadBook(book *Book) {
