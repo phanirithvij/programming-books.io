@@ -1,0 +1,641 @@
+1640 1594554111805 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "8a6ce80e-8175-47e1-b714-9926a6ae2f02",
+      "table": "block"
+    }
+  ]
+}
+Response:+1440
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "601241c2-d735-4766-9dfa-3f97b3f36d5a",
+          "bbdbbf95-a231-496e-a9c1-cb6aba1d0910",
+          "88ac6bb5-694b-4fdf-9957-66a960631589",
+          "42582609-d273-4b6e-80c9-96e4caac4a16",
+          "d67708d4-695b-42b0-b2f6-f25a54b56f4c"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550518800000,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "8a6ce80e-8175-47e1-b714-9926a6ae2f02",
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1550519460000,
+        "parent_id": "d37cda98-a070-46f6-b2cc-375731ea3bdb",
+        "parent_table": "block",
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+          }
+        ],
+        "properties": {
+          "title": [
+            [
+              "Java deployment"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 36
+      }
+    }
+  ]
+}
+24671 1594554111805 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "8a6ce80e-8175-47e1-b714-9926a6ae2f02",
+  "verticalColumns": false
+}
+Response:+24430
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "42582609-d273-4b6e-80c9-96e4caac4a16": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "0c9b877a-68f5-4dc8-8cfa-12634614ce07",
+            "dd4077a8-2a42-47d2-9bdc-4449964f9242",
+            "93a40c7f-6eab-4ebf-a417-b35fa3ea4267",
+            "bae09c99-4941-4003-ac48-3ad76b28fbec",
+            "9238535f-b9e2-4c4a-b57a-174968b7b405",
+            "46868d6a-af75-4575-9a67-bde94c68e974",
+            "a52ae43d-c304-49b8-bde4-368574a3de81",
+            "0fe86630-5b2b-4c5b-a31c-6ffd46dfaf4a",
+            "07b30ec7-b1e0-4750-8f2f-04541a306b7a",
+            "d4dad4e3-ff6d-4b42-a7e3-3c27f8375b17",
+            "a702682a-73b9-4924-ba3c-83c3989ed92e",
+            "7751ab13-0257-44ea-976b-64e7fb08adf5",
+            "edbbe6a0-9e83-4025-946f-9b0fbfc37e63",
+            "2673059f-0c9d-4886-9034-56aeba880650",
+            "1694b16e-2a71-4fcd-95bb-ef0b81b010bf",
+            "0c8e075d-5720-467d-93d1-3bf8f2de5ea1",
+            "1c7d2936-4b22-4a10-9d57-89511c9d76f0",
+            "53c197e0-bdb6-4d8c-a89f-06e7c5bcb653",
+            "304d67fb-c90c-4523-8f4c-dcebf8eb2f01",
+            "67f800eb-1c9e-402d-b3f6-8e7293df4d05",
+            "a9c20107-21b5-47f7-8e26-cc2db04def85",
+            "697e0e58-6dd6-4563-8ed3-21fac934273d",
+            "1eba038e-aa8d-42f2-afa6-8649b8e500b4",
+            "3204dec7-82b6-4e52-97f6-de93a013fe71",
+            "23e4cacd-8a09-4203-ab07-af5224e5c821",
+            "87b5f56a-c5b4-49ad-b67d-cfce549693b3",
+            "d0784765-fafb-44ef-ab26-315cd6495a87",
+            "2aefce80-4307-417a-b452-678dd3f019ef",
+            "e4e68cbe-1e9f-4e38-9153-6a893019c09d",
+            "7e2f9dad-bd80-403a-8215-ff3cbbbfef1f",
+            "06fd6236-dca4-4b34-b1d6-bcb764551d71",
+            "c2e9dbd6-57fb-40e3-8306-3abdae64af2e",
+            "2a685770-9c32-465a-aff2-8da6555d9d03",
+            "011084cf-6905-4c9a-951a-a3991d750f12",
+            "efd87379-3246-47b6-a85e-3652137a5d00",
+            "8708ccf5-3814-4451-812f-299202ce745a",
+            "6bcbce2d-dc6d-472b-a820-c137f5c25270",
+            "9e26d091-ec95-4f0e-a14e-3229592a4f73",
+            "91675221-0878-4d6f-96b1-9ca7f9d688f9",
+            "ff9f7a3b-519b-4fc3-b8c4-5502e212b22b"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518815466,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "42582609-d273-4b6e-80c9-96e4caac4a16",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551759863174,
+          "parent_id": "8a6ce80e-8175-47e1-b714-9926a6ae2f02",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Introduction to Java Web Start"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 5
+        }
+      },
+      "601241c2-d735-4766-9dfa-3f97b3f36d5a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "8be98689-fc22-45d8-8125-ab8eabedf876",
+            "25f4430c-f966-4bad-8d95-5b38e3f4857c",
+            "1c375f20-8b56-4a99-973c-f01ac69dc6aa",
+            "0f2ff5b3-0241-4367-ac27-a1d0157b6a3c",
+            "6928715b-0f25-4ae5-958f-1e98929ebad1",
+            "411ffd98-d031-4f0b-a335-f1636a39f95a",
+            "479edd6c-4551-4dc8-8bfe-f46bf0be2183",
+            "d35d869e-b871-47c5-9a29-3aeec747499b",
+            "0cc7135a-7060-41a4-8861-a97fa1ae32af",
+            "3918b3da-f890-4c3d-801e-2215cfd9102b"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518812739,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "601241c2-d735-4766-9dfa-3f97b3f36d5a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551752375307,
+          "parent_id": "8a6ce80e-8175-47e1-b714-9926a6ae2f02",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Java deployment"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 9
+        }
+      },
+      "88ac6bb5-694b-4fdf-9957-66a960631589": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "ed467dd0-48f9-4e8c-91eb-bfa493776544",
+            "5efa8e8e-53a0-4139-9c3b-99124460a4dc",
+            "c51b59e2-b9d2-4067-baab-b6c0462836f1",
+            "33847f44-8d0f-4d1e-8871-49b2cd74c1c5",
+            "81acf892-acb1-4fd5-ae73-98544e1e88d3",
+            "5e020d18-e8e8-47b5-8d42-ac61933d0995",
+            "3a2e65c4-e22f-407f-9752-b4fe72aba169",
+            "d6199f27-8c68-448d-b4b0-2db40b2e04b3",
+            "12116ec1-b7ed-4259-8f01-306d9add2dc8",
+            "2755bde0-329a-423d-980e-9c097fa71d6b",
+            "e545b376-d4fc-40ed-87c5-80fb575ba667",
+            "4ac6f17e-12e5-4aef-8a6d-c0093d130324",
+            "7e223947-7454-4a77-be8e-7e425dfb2d38",
+            "2094387e-e5e0-4e90-a6db-38f1757ca0de",
+            "d8c94ea1-1179-4e88-9e68-76f14a731237",
+            "57ec298a-93d7-43bd-8564-3d1c29e56fc1",
+            "d6d660ff-8d6c-46b2-a6bc-a1fb195be097",
+            "401629b3-db07-401a-87c4-aa75edabadb8",
+            "bb401069-1673-4fd1-86b5-3d7ee5bf50b1",
+            "aba4c2c5-f921-472f-a010-a5230bf42b20"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518814400,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "88ac6bb5-694b-4fdf-9957-66a960631589",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551759280292,
+          "parent_id": "8a6ce80e-8175-47e1-b714-9926a6ae2f02",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Creating JAR WAR and EAR files"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 9
+        }
+      },
+      "8a6ce80e-8175-47e1-b714-9926a6ae2f02": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "601241c2-d735-4766-9dfa-3f97b3f36d5a",
+            "bbdbbf95-a231-496e-a9c1-cb6aba1d0910",
+            "88ac6bb5-694b-4fdf-9957-66a960631589",
+            "42582609-d273-4b6e-80c9-96e4caac4a16",
+            "d67708d4-695b-42b0-b2f6-f25a54b56f4c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518800000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "8a6ce80e-8175-47e1-b714-9926a6ae2f02",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550519460000,
+          "parent_id": "d37cda98-a070-46f6-b2cc-375731ea3bdb",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Java deployment"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 36
+        }
+      },
+      "bbdbbf95-a231-496e-a9c1-cb6aba1d0910": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "5bb3d5c7-1ece-40f4-8571-bd085395664f",
+            "86322392-a2ee-4132-9e2c-86bec6444796",
+            "66797788-fe7b-43f3-b98c-6b33d9fe8680",
+            "2ca0b4ae-d7ab-43db-a2da-10c93a39ff34",
+            "214ac927-0dcb-48fc-899e-7ace6ed89e2b",
+            "766d2714-0c00-42eb-90d8-67f41bb7abfd",
+            "281d6dd3-5c21-4ec1-9397-463dbf68a49c",
+            "9afab4f9-2a90-4ef1-a78d-7888d17286e8",
+            "32594234-6f78-428c-9a29-b239abc26cb0",
+            "09ae3b23-a901-4296-8036-a02b0f1549f6",
+            "7ba243b8-b03e-44ca-a0d4-0935b4243ae0",
+            "0518ffb9-81cd-48e0-a7a4-9c779ad964af",
+            "50406d53-5b01-4fbf-afc9-106a29e79d0a",
+            "f1489286-3be9-4e5d-9a1f-0f5f22bebdca",
+            "8bdb4604-3d83-4d1b-987e-4324b92eeb87"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518813630,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "bbdbbf95-a231-496e-a9c1-cb6aba1d0910",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551755292278,
+          "parent_id": "8a6ce80e-8175-47e1-b714-9926a6ae2f02",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Making an executable JAR from the command line"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 5
+        }
+      },
+      "d37cda98-a070-46f6-b2cc-375731ea3bdb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "aaf522ec-ec58-4c19-b129-bf870a37c471",
+            "01da4f13-0c0c-4b03-a4bf-e48c83a4fd76",
+            "3e5f6441-fbb7-4864-8927-1c1c812bd8c7",
+            "39a676e8-4916-4942-a1ec-5020702b7db9",
+            "7416eb9a-1bd0-49c2-bd47-b63df006e231",
+            "b352327f-4045-48dc-891e-ceda03965ca0",
+            "eaad0c1d-9ecf-4d2a-b640-d2df4debfaf8",
+            "89249b2d-411e-48a0-929e-d4742921cff2",
+            "bcd7d24d-a9b8-40ba-ac61-89bb802d73b5",
+            "85c1bbdb-fd02-46ef-97a5-fd455d99d394",
+            "fda67066-f20c-4f73-a7e9-440104e1f868",
+            "98fc7929-b076-4b4c-8088-3851bfc3fdbf",
+            "d8411ba8-1e49-4c45-95a0-bf6bfc36e334",
+            "9dc5af85-594a-4e98-9197-96bed38df371",
+            "e58fed62-9361-43a9-9d33-915bbbe28d40",
+            "dbf1646a-6f86-4971-898a-a9a47703bccc",
+            "9b718882-2700-4d99-b7fa-082a618f32ef",
+            "73fc2f16-29dd-4ebe-9aa4-230f87bd750a",
+            "e5fa4b7a-50ed-4941-8513-fccd67c67989",
+            "18b76d44-dee7-4db7-a2a2-e95e6bd9d155",
+            "814dd116-37ca-4db6-82af-c82641c48f28",
+            "554c1de0-d05d-42a6-83c5-3aa4b3d0fc65",
+            "eaf811df-e51f-4444-9642-8359027b3f7f",
+            "3bdee82f-cd88-45a7-8656-12de08206f33",
+            "452a4215-c66d-493c-80d3-4980568bf1fa",
+            "73baf53a-7a2f-4a55-b55d-1d231e864e0d",
+            "596cd51e-237c-46bd-a4df-28e4d338582d",
+            "c5f4838e-8ea8-4be5-9969-41936c9db840",
+            "f602a51a-866e-489c-b102-d755ada1334d",
+            "8576ab83-1126-4d17-b0cf-2a0ba47249c1",
+            "9fce71c9-8b02-432c-9389-56fc3900e172",
+            "7f371e05-b7ff-48ea-9972-81e7db63652e",
+            "d12c85fb-12be-4d36-9a14-84025fa56b60",
+            "b9a3cb65-69d9-4784-9938-41825e12a7f1",
+            "97438e24-dce9-426e-8d5c-ab77c35f4df5",
+            "0e3fe4e1-0860-4111-a2a9-ca47548a8a88",
+            "e4ecbdd2-4cc1-4fe5-bfa8-fd658d08f5c9",
+            "d6f562ae-bc87-42cb-a1e7-ffb04e5a8c78",
+            "168082aa-5571-487a-900c-cbc49e8a374b",
+            "6c6c87a4-551e-4cdd-b523-66ee2c5d11cb",
+            "97cc20bf-7781-415e-91b6-5a7723bd541f",
+            "1299aa95-a781-4149-a1bc-85d263b01c89",
+            "174a8fd0-08c4-4f2e-91b0-7a7a30744772",
+            "b9903421-9beb-4a68-9bcb-bb33137f6fbd",
+            "efc357da-0d0e-4f18-820d-fb1e40a75c9e",
+            "a13ef5e0-d08a-4e6a-ad56-64b676156279",
+            "58f803cf-d6ca-4afb-a5b4-bb11701e5167",
+            "2e3af3b7-fb1a-45ea-9c61-94dcd8ba030d",
+            "577a95eb-7fe8-47dd-b237-f7a2f432d985",
+            "c5846508-be18-4fc1-871b-a4ccbf7a323f",
+            "6f2fa7ab-2d05-4439-ac96-63b175867e14",
+            "c1a139ac-088d-487a-93c4-a161e63d7a0f",
+            "15c00477-2c1d-42bb-8403-38d722be5306",
+            "e93143db-4ec8-407d-9e59-36ae80fe15a9",
+            "f97b5af1-ebfb-4f93-b626-71360d568e49",
+            "411a7a1f-cef6-409f-ae9d-97669efd41d2",
+            "8a480f36-543e-421b-9c30-b81e4e4de51b",
+            "69b2872f-ba89-4451-889b-c3256180e829",
+            "62b65910-e945-49a5-88d6-ee112102eaaa",
+            "c0b21f8d-4154-4b25-a9c9-44797f096f6b",
+            "8032ba89-4510-41bd-b749-159e44baeedf",
+            "51a41ec0-d6f6-46f1-a1bf-02273088fa3f",
+            "ced04cf4-809b-4eb8-af63-c3041b9bfcb3",
+            "fd5ee180-90d8-419e-bf30-b0b1c5331eae",
+            "08a825c7-7382-4c6e-9784-d7fc3b88843e",
+            "e002cb8c-12c8-449b-b5bd-f52de1b3d39a",
+            "a70f079b-309c-4222-9eae-6757e006e4f9",
+            "a3d49ace-4bd5-4b11-86ab-b55d80696ddd",
+            "842c6e8a-9e84-47b0-b1c3-be9dfcf9a9cc",
+            "326ffb78-894f-49b9-bcf3-6b69c4bcd7d0",
+            "3303a72b-38b0-4750-be58-cd6fb5d6ba18",
+            "0bf58cac-010f-4b78-ae8d-b08f7e1fc917",
+            "0ed5c46b-8e07-44d9-8123-227510c0501a",
+            "9e1981fd-3dd3-4f41-8ad4-fec88463b6b0",
+            "ea8b958b-e16b-4923-b637-db1bf684b7a8",
+            "ff382d4c-e48a-463a-bc32-a1c6bbf07b92",
+            "ee8d32ac-100a-40e0-a368-1b19a4425348",
+            "0927bf61-8573-4b84-9fe1-cb6528be7f67",
+            "07db657f-7fc2-4b93-b9cf-9d8a98f83654",
+            "6e8be33a-59ae-4ce7-a49e-06a124b207b9",
+            "be3469ab-c5bc-45ec-b3e0-6bc9897f0a82",
+            "9450e3e1-ee88-4dd5-982c-03d03bddc553",
+            "37c963fc-8764-46de-bbf6-7851df1871b0",
+            "a72a1c9e-c899-4602-bb27-12024eba3c19",
+            "296055d0-9b28-4bfd-8a83-8fb412da632b",
+            "4d46b70c-bbcb-46ae-82ed-5387aeebf3e3",
+            "99f725fb-1166-4771-8bc9-95eaef31fd78",
+            "49141f6b-0336-474d-8c0f-8a890a4e0e05",
+            "a602bb9b-4cee-4147-b27f-bb77ff90095a",
+            "451f31c6-52f4-4350-8697-59f8fa181821",
+            "6287dcec-432f-4b11-b339-a8c57ab92cb4",
+            "4b209f0b-eae2-4938-ba73-25d69b37d0e6",
+            "bcceb6e0-56a9-4024-9f5a-d6dce4afd5b5",
+            "65b3b4cb-dbb9-4dfb-9c83-9429dfa4e76a",
+            "6dd2e1bb-5fba-432d-9aaf-05e0509441e8",
+            "9f3a8d9f-328f-44ab-ab06-a131a5152b5e",
+            "5b7be3cb-76a0-4500-bd45-bbdbbb857515",
+            "0306fa92-e908-484d-9587-ec2f8839b29c",
+            "f1ae226e-c44a-4f29-805f-9c96503cad02",
+            "b0ef256d-5b03-43f3-9e98-95dc2f1a1ef8",
+            "9fb48b00-5e40-4acd-b683-7ffce58b76df",
+            "3c54d1f8-5883-49c6-ac9a-ae59a7ed8562",
+            "ea7dea1f-0eef-439e-97f7-d0c1244f588e",
+            "24349c65-63f6-49cb-bc3c-1bfa8dcdf502",
+            "7b2c77f5-4e3b-4b65-a1f9-4959ba216215",
+            "a873104f-c973-4151-8a25-4d3aeaee0aca",
+            "b424a141-83be-4561-bc42-9546a105075b",
+            "68d3f97c-3d71-48d3-955c-6eb7411e2d26",
+            "cd39ba46-bf9a-48ed-82fa-26244685c82f",
+            "c386ebaf-21ff-47ef-88ba-5a7b86bb19cc",
+            "053f453d-ac10-4abf-9826-3a34e4d13a72",
+            "a741ed28-53ae-4ea9-9f95-0840d44390eb",
+            "28d11fe4-92df-4393-8cbb-b9dadc487955",
+            "59aca1d4-aa98-4e2a-a6ab-4b16e97533ad",
+            "035f8e12-e9d0-418f-b9f5-52fba2e44607",
+            "ac647426-fa05-4ba9-92e4-2f1b5e397608",
+            "4198a4f2-159f-494d-8e72-71dd624b90b5",
+            "a9a507ad-7ffd-4cf9-9c3d-72dec5c855a7",
+            "bac27a47-c983-46b6-ac55-bf131c4ab1ec",
+            "4ddf910d-8ecc-4478-a0f4-9af6dd01edd1",
+            "012a60f0-6603-428f-90f0-56d12cde3fa4",
+            "7d132e6d-be71-4378-97d7-6e67b266d858",
+            "57531e2f-e003-413e-bf53-4da6d5c290be",
+            "c7dd888e-231c-4e05-8e3e-9196a9821e21",
+            "9d97c673-b77f-4721-9f0d-3eaf24d2c271",
+            "d97c8d19-3493-4c4f-bb5b-450d9f84e1d3",
+            "d73cc3a8-7897-4311-9f5f-f3e15e294c43",
+            "3eb768b9-4667-4f25-acbf-097f9c448d1c",
+            "48f2c1e1-d9e6-4807-9f42-be50dce48bd5",
+            "08507a75-1faa-4949-96a5-ebc8359aa340",
+            "447fd392-7082-4e22-a270-9cd70f7b8c2d",
+            "8a6ce80e-8175-47e1-b714-9926a6ae2f02",
+            "357c838d-8733-457f-97f6-21da1c4b4d21",
+            "06facd5b-8010-41ca-bd4b-7a8b528e8f24",
+            "e3ef9e48-01c2-44e2-88f8-a1ab808c51a7",
+            "710faefa-3483-45a0-a36a-d7a17ed77932",
+            "09568d97-d737-4b31-a861-9e91cb338af5",
+            "575a0e12-5d3f-43b2-a810-16c144e95e5d",
+            "f991cfb6-71b2-4c12-831e-03e303061072",
+            "714ba765-62ea-457d-9f3e-c7d819c242d7",
+            "87ac3ba4-bd8c-44a0-86ea-f0715687a44c",
+            "1f0e916b-e994-4a2f-91b1-8a6715f5100b",
+            "c2df652d-eb55-4286-9fcf-b94bbb067b28",
+            "ee7eec3d-59c2-47f2-a6d1-c1a275d8bc22",
+            "589f380f-d514-49da-aaac-757fd79fac85",
+            "faab9977-b5fb-422f-8a9c-1dcb04654969",
+            "d9409fc4-cc95-48a8-9906-b1dcb34f86f3",
+            "6dd46157-67bc-42db-a307-1e68e8cc3008",
+            "0cc39226-de45-44eb-a2a4-1b58aa601922",
+            "e86ae43e-0731-426f-9fe2-83456202921a",
+            "5bf950bb-491a-4fb0-8388-9ebc5ccbbe38",
+            "9c791e32-4cf1-48a4-bf05-22b43a85f7e1",
+            "ab6f5a9b-c135-4abf-a6fb-d82d9535073e",
+            "15926b43-91b6-44a6-8490-099a3edb1893",
+            "ad42f3e9-4f5e-496a-87cf-1b0e52254116",
+            "a64911f1-e960-4e9c-9e9d-2a9675afaf7f",
+            "66f75f26-7b72-418f-ad75-35bde2b590ba",
+            "3b3e677c-6605-4602-8982-1a8d100dad9f",
+            "0d3bab31-f450-4049-a25a-91b606ec1407",
+            "54220ad8-7197-4c18-9344-8ea0cba46d23",
+            "ab99f25d-1260-45c1-9184-1deff3279065",
+            "d3a02775-800c-4e2c-b649-ee7cf3c68105",
+            "3ba14671-ceb0-4f9a-96ff-3eed05b48b4e",
+            "44e51555-2e05-460d-bfa3-6b1c9af20d4c",
+            "25e15d95-9887-45ad-b4d6-ab80550f92d1",
+            "cd9e1130-9f12-4bd5-b0a9-1d5bbda7a3c0",
+            "3a833461-064c-4403-a1b1-5fea7f8249a5",
+            "716acbfb-3830-41f4-949c-5ef7e5c1d0af",
+            "40582aa2-1d63-4733-86de-6d1dc19d8c14",
+            "378953ae-8dd0-4c65-8b1b-e660677d4ce1",
+            "bfa19745-13f6-4236-a78c-a6f7a428e66d",
+            "ec463bd5-2b01-4a17-8b92-2b804ab978d4",
+            "09d07627-418b-4183-bdd6-905d1c2e74c2",
+            "71bf925d-a7d0-40f4-a229-0ec8cdcbd38f",
+            "14bf6856-b37f-4f06-8025-ba31710eff39",
+            "dbf4e4e3-2aac-4b7d-8895-bf065000b725",
+            "e6438eb6-fd8d-45c7-8c94-8ce9ab2bc7de",
+            "417c4ce2-c69c-4987-9784-8b1ac4455a96",
+            "8fa55837-54c3-43d9-8552-29e613cda437",
+            "d371d779-6e42-4c25-a4b8-9cdf9d2e4286",
+            "a50bb9b3-be2e-41e5-bec9-8e1c47e2e528",
+            "ce0795b3-45e7-4968-be7b-7b5eebf6255f",
+            "73b46557-0e7c-496c-b2d7-0932330e4087",
+            "bd3a4b6b-fab1-47c7-81e1-6a0e68ffc84f",
+            "4eea65f1-af60-4838-a058-ed411be8c530",
+            "9d544348-53ce-44c3-9a93-a015d0abbb2c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550460045863,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "d37cda98-a070-46f6-b2cc-375731ea3bdb",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571297880000,
+          "parent_id": "f3b52b98-b653-47b0-a53e-f353cbfbb0aa",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Java"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 332
+        }
+      },
+      "d67708d4-695b-42b0-b2f6-f25a54b56f4c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "76067779-0f44-4cd8-89e0-270b988a5bb7",
+            "5c50548a-4d52-40ad-8709-9dd059192484",
+            "45e2563b-467a-4933-81ca-28e3a752ebce",
+            "0ca77a83-2d58-44b6-9fd6-1b82fcf37246",
+            "f04b89c4-8171-4959-be23-0b2f92dff14b",
+            "8a96d501-41ab-4f3f-b8c1-dde337710eba",
+            "f5b2e082-838c-4369-a2d3-5f49856b709b",
+            "65abc286-29cb-404b-acb1-11a6dc92d7ed",
+            "afd895a8-0751-4546-9a22-d4cf4a1bee0f",
+            "c23ca62b-17ba-4670-928f-00ced444438e",
+            "2166a7a1-9dc0-479a-885f-13335e0fb87a",
+            "03e23ef7-d98b-4bbd-be64-fe015b28c7cc",
+            "b90a70de-4b58-4d27-9b7a-74c0cceca197",
+            "d0cee57e-8cb7-4df6-9a7c-1153c83ecf74",
+            "90ffbbcc-f856-4a58-86c9-f7716045b80a",
+            "461276b6-f4d9-42b5-bb87-779ebc2148c7",
+            "8b28ed6a-599c-4444-85b4-d8bbe2ea3430",
+            "7e116ec2-6211-4916-acf0-136b291c344a",
+            "cfe12cbd-c387-4b26-935a-de03d4684e9d",
+            "443743b9-60fe-42f6-910f-2cbccc80a8b4",
+            "e0cb0a2f-2fe3-4919-833f-2c7eb12610a2"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518816625,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "d67708d4-695b-42b0-b2f6-f25a54b56f4c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551754772802,
+          "parent_id": "8a6ce80e-8175-47e1-b714-9926a6ae2f02",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Creating an UberJAR for an application and its dependencies"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 5
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

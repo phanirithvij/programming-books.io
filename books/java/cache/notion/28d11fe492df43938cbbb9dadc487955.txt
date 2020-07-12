@@ -1,0 +1,974 @@
+1997 1594554093667 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+      "table": "block"
+    }
+  ]
+}
+Response:+1797
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "7d29d88a-ed87-469f-92e4-744647c04116",
+          "60065f67-bdb0-4c2d-b5a0-bd828d0bb42e",
+          "97c80ca7-0431-49ca-bb4f-8b9147257a0b",
+          "4de5c721-cb8a-4ec1-ac85-4ab0f68d084b",
+          "d552ac03-24f1-4954-998b-22255d3eacce",
+          "ddf2edcc-86f3-40a0-8391-ccbfa492dc16",
+          "59565014-1906-4bc2-9292-5b854b787c8d",
+          "51ec5eca-adac-4d14-83cb-660262ab8265",
+          "778a8480-fc82-49b4-98bc-3cab54e603a5",
+          "2cc80957-3459-405f-add7-6505e1ac7d87",
+          "967fce9a-b6fb-4028-9bae-c24894b4e3ed",
+          "1f42d67d-c571-4cc9-af12-c64f89976b8c"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550518380000,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1550518620000,
+        "parent_id": "d37cda98-a070-46f6-b2cc-375731ea3bdb",
+        "parent_table": "block",
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+          }
+        ],
+        "properties": {
+          "title": [
+            [
+              "Pitfalss - performance"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 59
+      }
+    }
+  ]
+}
+37826 1594554093668 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+  "verticalColumns": false
+}
+Response:+37585
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "1f42d67d-c571-4cc9-af12-c64f89976b8c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "c9d3c21e-af0c-4ea2-b1c0-b7195e2100cd",
+            "4190b87c-de7f-415e-9848-afcaae759b1b",
+            "d8bea49c-519c-4c5b-8b87-34e07a39ce16",
+            "b6d705c1-f497-4215-846f-3e37706e24f7",
+            "8fefa961-ddd1-4bc5-af61-e9f778336262",
+            "a2200b6b-3540-4b3b-ad44-a56a038484c2",
+            "2bac9a40-5af4-4b34-9cf0-3fb79f91b46f",
+            "cfdcd4f4-fe49-4ee9-b7d9-35d3d4477ba5",
+            "95fbf8c2-42e7-4dd6-b050-bcb11f7adb62",
+            "d70dcdad-6c16-4c57-ae9d-00a2162f926f",
+            "1a3554e9-8a03-42ef-876e-ebd7c534acb7",
+            "74b2abfe-d71a-4696-82c3-2050c01d1a54",
+            "b8fcc9d8-174e-4334-8dfc-ffcaec3f98bf",
+            "83fcbb54-b48a-45c1-a949-cfaa752340ad",
+            "1ea2396f-4324-49a5-86cd-4f94cfa42d5d"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518426627,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "1f42d67d-c571-4cc9-af12-c64f89976b8c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551748761433,
+          "parent_id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Pitfall - Calling System.gc is inefficient"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 5
+        }
+      },
+      "28d11fe4-92df-4393-8cbb-b9dadc487955": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "7d29d88a-ed87-469f-92e4-744647c04116",
+            "60065f67-bdb0-4c2d-b5a0-bd828d0bb42e",
+            "97c80ca7-0431-49ca-bb4f-8b9147257a0b",
+            "4de5c721-cb8a-4ec1-ac85-4ab0f68d084b",
+            "d552ac03-24f1-4954-998b-22255d3eacce",
+            "ddf2edcc-86f3-40a0-8391-ccbfa492dc16",
+            "59565014-1906-4bc2-9292-5b854b787c8d",
+            "51ec5eca-adac-4d14-83cb-660262ab8265",
+            "778a8480-fc82-49b4-98bc-3cab54e603a5",
+            "2cc80957-3459-405f-add7-6505e1ac7d87",
+            "967fce9a-b6fb-4028-9bae-c24894b4e3ed",
+            "1f42d67d-c571-4cc9-af12-c64f89976b8c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518380000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550518620000,
+          "parent_id": "d37cda98-a070-46f6-b2cc-375731ea3bdb",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Pitfalss - performance"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 59
+        }
+      },
+      "2cc80957-3459-405f-add7-6505e1ac7d87": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "93f57131-55ac-46de-b510-05811a0e431c",
+            "d60aa99d-fcd8-4034-aff8-f6d7ac0233d0",
+            "e577ceff-d7d8-4595-82e8-95b4f690ebed",
+            "05ae74f7-baf9-4e24-b3cc-59647aad3e6b",
+            "247c618e-49a5-4004-8cae-da486034b261",
+            "9c8ba9b7-c718-4453-b0f3-5e8690ba5a26",
+            "212e7651-8226-4a1b-a720-bfcbf2cd1b6c",
+            "644a8ee9-74a3-4581-bdeb-9daba47c94f7",
+            "a81a561e-44c2-4aee-8d75-e21d0141b18d",
+            "460b93a2-2e71-4ea8-8ea5-8fa5194cfdfd",
+            "0bfaa58e-3097-4bcc-aa35-9044931090b7",
+            "fed42c6d-3833-419b-b90f-d0960c383384",
+            "034717d4-8507-4255-a947-73629d5eed4e"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518424445,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2cc80957-3459-405f-add7-6505e1ac7d87",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551747741267,
+          "parent_id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Pitfall - The overheads of creating log messages"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 5
+        }
+      },
+      "4de5c721-cb8a-4ec1-ac85-4ab0f68d084b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "1a2fbec9-9542-4bf3-a4c8-253d862f7bd0",
+            "816ed6ee-7c32-4090-bd5c-510b898c35db",
+            "bc9255a7-70d0-4237-b49a-efc3e84d4d0e",
+            "b45ec450-dddf-4785-b5d4-72cdb8c3005c",
+            "95512fbe-dd10-4bd0-bb4f-d11c46ce80ac",
+            "d58242c2-472a-4533-ba83-b73fab8e0d54"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518417443,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "4de5c721-cb8a-4ec1-ac85-4ab0f68d084b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551748178339,
+          "parent_id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Pitfall - Using new to create primitive wrapper instances is inefficient"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 5
+        }
+      },
+      "51ec5eca-adac-4d14-83cb-660262ab8265": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "393b1bac-0d04-4218-9455-62782d57b9bc",
+            "a24de202-e09f-4ae7-a817-8410f7104954",
+            "5a444762-1407-4168-9736-6924a864eb10",
+            "e23c8bad-cedb-42cc-ad93-ddfd5132759a",
+            "271dea1c-06c8-419f-83cf-f06a8b2147d8",
+            "1071e1cf-f21b-4c3a-a0a8-95735636c0be",
+            "ed289d6b-1f24-4aad-8e1f-40e686db349e",
+            "5ab011c4-af0f-4496-a910-8b0252d07a84",
+            "830f4008-7198-4e83-8643-a690ef10bd2a",
+            "ba243ca6-7a64-4232-9e3c-93691d423e83",
+            "4bdd1332-75b8-44a4-95f1-443fff89bbd4",
+            "f38a70a1-6b59-4abb-a381-918140e5183d",
+            "e1b4e5ee-ec16-44f0-8504-cfa659b72fca",
+            "208eae1e-508f-41ac-9a98-1b0834201996",
+            "3f28f7d6-2afe-4de2-b29c-448f278994c6",
+            "2f6501a0-2d79-4c05-b0f8-7faa23c1a7e1"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518422646,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "51ec5eca-adac-4d14-83cb-660262ab8265",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551751556515,
+          "parent_id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Pitfall - Over-use of primitive wrapper types is inefficient"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 5
+        }
+      },
+      "59565014-1906-4bc2-9292-5b854b787c8d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "67ef6613-5f6d-4589-9d48-19c920716d82",
+            "26696b53-95b1-4266-9aee-704f2c42e282",
+            "174ee6e9-376d-4e7a-a6c2-80fc1e98b4b9",
+            "a0636f79-9351-48a5-94bf-53e529e31e21",
+            "72c037cf-893c-427b-9d8b-afdf423d4782",
+            "05786096-5122-4265-956e-16739c73a730",
+            "aa1e3615-ef4c-4bcb-ab30-4310ca754ab4",
+            "480f8489-1132-4b78-96c5-1b132c257937",
+            "f70eb2f7-b9ca-49b6-b54d-49dc98b52694",
+            "820d764d-381a-4f32-9f65-4d94d1b2ffc1",
+            "67e39246-8884-4fb9-a7ed-048277746a97",
+            "cf59dc7d-0b62-4d8c-a9fe-aecac6a560cc",
+            "0a6572dd-5df7-4ae6-8c41-6a6d489d8ea7",
+            "d2b0fb63-7cc2-4e6f-ae70-1f1d233198c8",
+            "1542c296-338b-40a7-a3ec-131551291b01",
+            "5e5539cd-1ad5-482e-9f5f-21ba79fbe0c2",
+            "ec8cd713-53b1-4166-aa32-91bf29e11cef",
+            "23a3db85-eaf4-4011-a6a6-aef314924fdc",
+            "d5b6e21b-1d62-4297-838a-45c47f7779d9",
+            "db034c71-9add-4717-bfef-449cb84243c3",
+            "98449c7f-e352-42a8-89f8-0ecd5c623831",
+            "1bea1ce7-2207-4f1b-9a63-6475480eaab3",
+            "7711e878-399d-4c1e-b7ae-2980147e5701",
+            "5ceb77d8-69f8-42f2-81c2-8b65011f8476",
+            "f796c036-c0f6-41e2-b429-4b4275a4c1b8",
+            "dc645109-f5bc-4aad-8a7f-747a32f75b67",
+            "87ab0f28-b022-4776-baf0-6e973060a926"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518421590,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "59565014-1906-4bc2-9292-5b854b787c8d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550518421590,
+          "parent_id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Pitfall - Small reads writes on unbuffered streams are inefficient"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 7
+        }
+      },
+      "60065f67-bdb0-4c2d-b5a0-bd828d0bb42e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "ff3a6472-1252-4073-bb9f-aa3f6713e4be",
+            "ab9fe00e-2790-449c-9a7d-879c93182cb4",
+            "21639681-77e6-4ae3-9fbf-642e09a26f47",
+            "b518900c-a753-4b44-b619-45096679e8b8",
+            "5f94431d-cdda-48af-a389-01d16e437f3e",
+            "25733ecb-cafc-4a8d-b11d-3d777846797a",
+            "2d5c7285-2d36-4c5b-aa75-21bc716c247b",
+            "1f277069-7af0-46a5-aae8-415b1f9e922c",
+            "11e26334-5cb9-4b9f-b70f-64e0afe6b59e",
+            "5673a6c5-55de-40ea-8a55-edd5960fe9e3",
+            "23ebaa1d-9d1d-471c-9a15-ae972525f169",
+            "43f5b9f1-30e3-400a-8338-f545d69f37cd",
+            "c25f3ec7-d6cd-4cd2-956a-b7618d3ef5e5",
+            "2aac5366-6f8c-4f1e-a18f-1914ae35cdbb",
+            "048989fb-2043-4c23-bb9b-a858e766dc58",
+            "a1635150-47d9-4509-873c-c4b0b5312a99",
+            "d6ddd290-a09a-4fd4-8c94-0e5af4bead8a"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518415577,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "60065f67-bdb0-4c2d-b5a0-bd828d0bb42e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551745709160,
+          "parent_id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Pitfall - String concatenation in a loop does not scale"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 9
+        }
+      },
+      "778a8480-fc82-49b4-98bc-3cab54e603a5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "cd2fcbf5-b7f6-4e97-8452-fdef5e16095a",
+            "f47950c3-4286-4740-b6c3-26253a0b7795",
+            "c18785f2-ae95-4360-9ea8-dcf9430c1eb1",
+            "dd35a0b6-ae2e-4ba9-86a2-873c51375b1a"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518423456,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "778a8480-fc82-49b4-98bc-3cab54e603a5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551750956821,
+          "parent_id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Pitfall - Iterating a Maps keys can be inefficient"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 5
+        }
+      },
+      "7d29d88a-ed87-469f-92e4-744647c04116": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "c8782a3f-1fd9-4d41-b88d-0c987e015d90",
+            "4f9dd545-833f-4cec-818e-fa0452f87835",
+            "5e344e93-2074-4774-8828-ccd140b44eec",
+            "a32f8c1d-9880-4f03-8146-f00241da79be"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518414752,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "7d29d88a-ed87-469f-92e4-744647c04116",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551745911758,
+          "parent_id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Java Pitfalls - Performance Issues"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 5
+        }
+      },
+      "967fce9a-b6fb-4028-9bae-c24894b4e3ed": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "92450747-c23b-4772-b315-15d50b35f73b",
+            "236a0fab-2660-4e2f-ab23-3ed519fb5cdb",
+            "bb0a9817-2884-4c23-b13f-e40a80523d1e",
+            "c04d6a85-1651-4046-841b-4c39691ed2e1",
+            "daf68326-49b6-4254-8d76-4602ac0f7af4",
+            "ab0d251a-38a1-45dc-a849-15deb7159bb2",
+            "7a246c43-c8a5-42cc-a705-1fe0b1e74d26"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518425443,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "967fce9a-b6fb-4028-9bae-c24894b4e3ed",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551753598660,
+          "parent_id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Pitfall - Calling new StringString is inefficient"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 5
+        }
+      },
+      "97c80ca7-0431-49ca-bb4f-8b9147257a0b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "3bfbdbd1-7726-41d5-9ff2-cc1acaa67923",
+            "7c0e3aca-dce1-4533-9b52-d46db1349667",
+            "c6d911ac-75a6-448b-9df0-e9688594c985",
+            "4a35247c-4f24-4ec0-a6a3-d35785f10fff",
+            "ba2db181-70af-4653-a770-5e8d6e0bd965",
+            "f7957fec-41b0-4ba5-8b52-11f3074d37ee",
+            "8b57181a-cb42-4ca6-9b71-29d60ccd32a4",
+            "59784029-5b5c-4b0e-8e8f-8c3ea264f77e",
+            "c5a81588-13d9-4c61-bf69-427f401cf3f4",
+            "d9304e16-0e27-4865-9f13-11982a5914b0",
+            "2ad75050-2ef0-4773-9e8b-95d168354f2b"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518417131,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "97c80ca7-0431-49ca-bb4f-8b9147257a0b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551760462144,
+          "parent_id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Pitfall - Using size to test if a collection is empty is inefficient."
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 5
+        }
+      },
+      "d37cda98-a070-46f6-b2cc-375731ea3bdb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "aaf522ec-ec58-4c19-b129-bf870a37c471",
+            "01da4f13-0c0c-4b03-a4bf-e48c83a4fd76",
+            "3e5f6441-fbb7-4864-8927-1c1c812bd8c7",
+            "39a676e8-4916-4942-a1ec-5020702b7db9",
+            "7416eb9a-1bd0-49c2-bd47-b63df006e231",
+            "b352327f-4045-48dc-891e-ceda03965ca0",
+            "eaad0c1d-9ecf-4d2a-b640-d2df4debfaf8",
+            "89249b2d-411e-48a0-929e-d4742921cff2",
+            "bcd7d24d-a9b8-40ba-ac61-89bb802d73b5",
+            "85c1bbdb-fd02-46ef-97a5-fd455d99d394",
+            "fda67066-f20c-4f73-a7e9-440104e1f868",
+            "98fc7929-b076-4b4c-8088-3851bfc3fdbf",
+            "d8411ba8-1e49-4c45-95a0-bf6bfc36e334",
+            "9dc5af85-594a-4e98-9197-96bed38df371",
+            "e58fed62-9361-43a9-9d33-915bbbe28d40",
+            "dbf1646a-6f86-4971-898a-a9a47703bccc",
+            "9b718882-2700-4d99-b7fa-082a618f32ef",
+            "73fc2f16-29dd-4ebe-9aa4-230f87bd750a",
+            "e5fa4b7a-50ed-4941-8513-fccd67c67989",
+            "18b76d44-dee7-4db7-a2a2-e95e6bd9d155",
+            "814dd116-37ca-4db6-82af-c82641c48f28",
+            "554c1de0-d05d-42a6-83c5-3aa4b3d0fc65",
+            "eaf811df-e51f-4444-9642-8359027b3f7f",
+            "3bdee82f-cd88-45a7-8656-12de08206f33",
+            "452a4215-c66d-493c-80d3-4980568bf1fa",
+            "73baf53a-7a2f-4a55-b55d-1d231e864e0d",
+            "596cd51e-237c-46bd-a4df-28e4d338582d",
+            "c5f4838e-8ea8-4be5-9969-41936c9db840",
+            "f602a51a-866e-489c-b102-d755ada1334d",
+            "8576ab83-1126-4d17-b0cf-2a0ba47249c1",
+            "9fce71c9-8b02-432c-9389-56fc3900e172",
+            "7f371e05-b7ff-48ea-9972-81e7db63652e",
+            "d12c85fb-12be-4d36-9a14-84025fa56b60",
+            "b9a3cb65-69d9-4784-9938-41825e12a7f1",
+            "97438e24-dce9-426e-8d5c-ab77c35f4df5",
+            "0e3fe4e1-0860-4111-a2a9-ca47548a8a88",
+            "e4ecbdd2-4cc1-4fe5-bfa8-fd658d08f5c9",
+            "d6f562ae-bc87-42cb-a1e7-ffb04e5a8c78",
+            "168082aa-5571-487a-900c-cbc49e8a374b",
+            "6c6c87a4-551e-4cdd-b523-66ee2c5d11cb",
+            "97cc20bf-7781-415e-91b6-5a7723bd541f",
+            "1299aa95-a781-4149-a1bc-85d263b01c89",
+            "174a8fd0-08c4-4f2e-91b0-7a7a30744772",
+            "b9903421-9beb-4a68-9bcb-bb33137f6fbd",
+            "efc357da-0d0e-4f18-820d-fb1e40a75c9e",
+            "a13ef5e0-d08a-4e6a-ad56-64b676156279",
+            "58f803cf-d6ca-4afb-a5b4-bb11701e5167",
+            "2e3af3b7-fb1a-45ea-9c61-94dcd8ba030d",
+            "577a95eb-7fe8-47dd-b237-f7a2f432d985",
+            "c5846508-be18-4fc1-871b-a4ccbf7a323f",
+            "6f2fa7ab-2d05-4439-ac96-63b175867e14",
+            "c1a139ac-088d-487a-93c4-a161e63d7a0f",
+            "15c00477-2c1d-42bb-8403-38d722be5306",
+            "e93143db-4ec8-407d-9e59-36ae80fe15a9",
+            "f97b5af1-ebfb-4f93-b626-71360d568e49",
+            "411a7a1f-cef6-409f-ae9d-97669efd41d2",
+            "8a480f36-543e-421b-9c30-b81e4e4de51b",
+            "69b2872f-ba89-4451-889b-c3256180e829",
+            "62b65910-e945-49a5-88d6-ee112102eaaa",
+            "c0b21f8d-4154-4b25-a9c9-44797f096f6b",
+            "8032ba89-4510-41bd-b749-159e44baeedf",
+            "51a41ec0-d6f6-46f1-a1bf-02273088fa3f",
+            "ced04cf4-809b-4eb8-af63-c3041b9bfcb3",
+            "fd5ee180-90d8-419e-bf30-b0b1c5331eae",
+            "08a825c7-7382-4c6e-9784-d7fc3b88843e",
+            "e002cb8c-12c8-449b-b5bd-f52de1b3d39a",
+            "a70f079b-309c-4222-9eae-6757e006e4f9",
+            "a3d49ace-4bd5-4b11-86ab-b55d80696ddd",
+            "842c6e8a-9e84-47b0-b1c3-be9dfcf9a9cc",
+            "326ffb78-894f-49b9-bcf3-6b69c4bcd7d0",
+            "3303a72b-38b0-4750-be58-cd6fb5d6ba18",
+            "0bf58cac-010f-4b78-ae8d-b08f7e1fc917",
+            "0ed5c46b-8e07-44d9-8123-227510c0501a",
+            "9e1981fd-3dd3-4f41-8ad4-fec88463b6b0",
+            "ea8b958b-e16b-4923-b637-db1bf684b7a8",
+            "ff382d4c-e48a-463a-bc32-a1c6bbf07b92",
+            "ee8d32ac-100a-40e0-a368-1b19a4425348",
+            "0927bf61-8573-4b84-9fe1-cb6528be7f67",
+            "07db657f-7fc2-4b93-b9cf-9d8a98f83654",
+            "6e8be33a-59ae-4ce7-a49e-06a124b207b9",
+            "be3469ab-c5bc-45ec-b3e0-6bc9897f0a82",
+            "9450e3e1-ee88-4dd5-982c-03d03bddc553",
+            "37c963fc-8764-46de-bbf6-7851df1871b0",
+            "a72a1c9e-c899-4602-bb27-12024eba3c19",
+            "296055d0-9b28-4bfd-8a83-8fb412da632b",
+            "4d46b70c-bbcb-46ae-82ed-5387aeebf3e3",
+            "99f725fb-1166-4771-8bc9-95eaef31fd78",
+            "49141f6b-0336-474d-8c0f-8a890a4e0e05",
+            "a602bb9b-4cee-4147-b27f-bb77ff90095a",
+            "451f31c6-52f4-4350-8697-59f8fa181821",
+            "6287dcec-432f-4b11-b339-a8c57ab92cb4",
+            "4b209f0b-eae2-4938-ba73-25d69b37d0e6",
+            "bcceb6e0-56a9-4024-9f5a-d6dce4afd5b5",
+            "65b3b4cb-dbb9-4dfb-9c83-9429dfa4e76a",
+            "6dd2e1bb-5fba-432d-9aaf-05e0509441e8",
+            "9f3a8d9f-328f-44ab-ab06-a131a5152b5e",
+            "5b7be3cb-76a0-4500-bd45-bbdbbb857515",
+            "0306fa92-e908-484d-9587-ec2f8839b29c",
+            "f1ae226e-c44a-4f29-805f-9c96503cad02",
+            "b0ef256d-5b03-43f3-9e98-95dc2f1a1ef8",
+            "9fb48b00-5e40-4acd-b683-7ffce58b76df",
+            "3c54d1f8-5883-49c6-ac9a-ae59a7ed8562",
+            "ea7dea1f-0eef-439e-97f7-d0c1244f588e",
+            "24349c65-63f6-49cb-bc3c-1bfa8dcdf502",
+            "7b2c77f5-4e3b-4b65-a1f9-4959ba216215",
+            "a873104f-c973-4151-8a25-4d3aeaee0aca",
+            "b424a141-83be-4561-bc42-9546a105075b",
+            "68d3f97c-3d71-48d3-955c-6eb7411e2d26",
+            "cd39ba46-bf9a-48ed-82fa-26244685c82f",
+            "c386ebaf-21ff-47ef-88ba-5a7b86bb19cc",
+            "053f453d-ac10-4abf-9826-3a34e4d13a72",
+            "a741ed28-53ae-4ea9-9f95-0840d44390eb",
+            "28d11fe4-92df-4393-8cbb-b9dadc487955",
+            "59aca1d4-aa98-4e2a-a6ab-4b16e97533ad",
+            "035f8e12-e9d0-418f-b9f5-52fba2e44607",
+            "ac647426-fa05-4ba9-92e4-2f1b5e397608",
+            "4198a4f2-159f-494d-8e72-71dd624b90b5",
+            "a9a507ad-7ffd-4cf9-9c3d-72dec5c855a7",
+            "bac27a47-c983-46b6-ac55-bf131c4ab1ec",
+            "4ddf910d-8ecc-4478-a0f4-9af6dd01edd1",
+            "012a60f0-6603-428f-90f0-56d12cde3fa4",
+            "7d132e6d-be71-4378-97d7-6e67b266d858",
+            "57531e2f-e003-413e-bf53-4da6d5c290be",
+            "c7dd888e-231c-4e05-8e3e-9196a9821e21",
+            "9d97c673-b77f-4721-9f0d-3eaf24d2c271",
+            "d97c8d19-3493-4c4f-bb5b-450d9f84e1d3",
+            "d73cc3a8-7897-4311-9f5f-f3e15e294c43",
+            "3eb768b9-4667-4f25-acbf-097f9c448d1c",
+            "48f2c1e1-d9e6-4807-9f42-be50dce48bd5",
+            "08507a75-1faa-4949-96a5-ebc8359aa340",
+            "447fd392-7082-4e22-a270-9cd70f7b8c2d",
+            "8a6ce80e-8175-47e1-b714-9926a6ae2f02",
+            "357c838d-8733-457f-97f6-21da1c4b4d21",
+            "06facd5b-8010-41ca-bd4b-7a8b528e8f24",
+            "e3ef9e48-01c2-44e2-88f8-a1ab808c51a7",
+            "710faefa-3483-45a0-a36a-d7a17ed77932",
+            "09568d97-d737-4b31-a861-9e91cb338af5",
+            "575a0e12-5d3f-43b2-a810-16c144e95e5d",
+            "f991cfb6-71b2-4c12-831e-03e303061072",
+            "714ba765-62ea-457d-9f3e-c7d819c242d7",
+            "87ac3ba4-bd8c-44a0-86ea-f0715687a44c",
+            "1f0e916b-e994-4a2f-91b1-8a6715f5100b",
+            "c2df652d-eb55-4286-9fcf-b94bbb067b28",
+            "ee7eec3d-59c2-47f2-a6d1-c1a275d8bc22",
+            "589f380f-d514-49da-aaac-757fd79fac85",
+            "faab9977-b5fb-422f-8a9c-1dcb04654969",
+            "d9409fc4-cc95-48a8-9906-b1dcb34f86f3",
+            "6dd46157-67bc-42db-a307-1e68e8cc3008",
+            "0cc39226-de45-44eb-a2a4-1b58aa601922",
+            "e86ae43e-0731-426f-9fe2-83456202921a",
+            "5bf950bb-491a-4fb0-8388-9ebc5ccbbe38",
+            "9c791e32-4cf1-48a4-bf05-22b43a85f7e1",
+            "ab6f5a9b-c135-4abf-a6fb-d82d9535073e",
+            "15926b43-91b6-44a6-8490-099a3edb1893",
+            "ad42f3e9-4f5e-496a-87cf-1b0e52254116",
+            "a64911f1-e960-4e9c-9e9d-2a9675afaf7f",
+            "66f75f26-7b72-418f-ad75-35bde2b590ba",
+            "3b3e677c-6605-4602-8982-1a8d100dad9f",
+            "0d3bab31-f450-4049-a25a-91b606ec1407",
+            "54220ad8-7197-4c18-9344-8ea0cba46d23",
+            "ab99f25d-1260-45c1-9184-1deff3279065",
+            "d3a02775-800c-4e2c-b649-ee7cf3c68105",
+            "3ba14671-ceb0-4f9a-96ff-3eed05b48b4e",
+            "44e51555-2e05-460d-bfa3-6b1c9af20d4c",
+            "25e15d95-9887-45ad-b4d6-ab80550f92d1",
+            "cd9e1130-9f12-4bd5-b0a9-1d5bbda7a3c0",
+            "3a833461-064c-4403-a1b1-5fea7f8249a5",
+            "716acbfb-3830-41f4-949c-5ef7e5c1d0af",
+            "40582aa2-1d63-4733-86de-6d1dc19d8c14",
+            "378953ae-8dd0-4c65-8b1b-e660677d4ce1",
+            "bfa19745-13f6-4236-a78c-a6f7a428e66d",
+            "ec463bd5-2b01-4a17-8b92-2b804ab978d4",
+            "09d07627-418b-4183-bdd6-905d1c2e74c2",
+            "71bf925d-a7d0-40f4-a229-0ec8cdcbd38f",
+            "14bf6856-b37f-4f06-8025-ba31710eff39",
+            "dbf4e4e3-2aac-4b7d-8895-bf065000b725",
+            "e6438eb6-fd8d-45c7-8c94-8ce9ab2bc7de",
+            "417c4ce2-c69c-4987-9784-8b1ac4455a96",
+            "8fa55837-54c3-43d9-8552-29e613cda437",
+            "d371d779-6e42-4c25-a4b8-9cdf9d2e4286",
+            "a50bb9b3-be2e-41e5-bec9-8e1c47e2e528",
+            "ce0795b3-45e7-4968-be7b-7b5eebf6255f",
+            "73b46557-0e7c-496c-b2d7-0932330e4087",
+            "bd3a4b6b-fab1-47c7-81e1-6a0e68ffc84f",
+            "4eea65f1-af60-4838-a058-ed411be8c530",
+            "9d544348-53ce-44c3-9a93-a015d0abbb2c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550460045863,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "d37cda98-a070-46f6-b2cc-375731ea3bdb",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571297880000,
+          "parent_id": "f3b52b98-b653-47b0-a53e-f353cbfbb0aa",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Java"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 332
+        }
+      },
+      "d552ac03-24f1-4954-998b-22255d3eacce": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "9e9dfaec-fcfc-47a3-9f85-2499f7d31cab",
+            "3e662e70-58b4-447c-ba66-89579a028a4e",
+            "1fbb1f4a-ace6-4d43-920b-c5302cc43b76",
+            "817e5b5f-5ec3-40a5-8a97-9d39f7d68459",
+            "27c674b6-0766-4704-afb4-11ca89e7d103",
+            "9940fc75-ab32-4ac4-a3c3-5f54981abb9a",
+            "b1cbe3ec-a2de-483e-b583-e319305fecb4",
+            "d2cf0fb2-4022-4c75-84f0-ae1b06583d3e",
+            "4db8e0e5-d23d-4f8e-9c46-d0738ece374b",
+            "c2125046-6890-4309-bc1c-1e130aa72571",
+            "1996eb78-410c-4bb1-b817-9a98797e9c08",
+            "9e0ad52b-d206-4282-adc4-1c4c5eaf4a47",
+            "938853d6-f261-4744-84c9-7e80ae792233",
+            "f7d4121a-7a85-489c-9fa4-2d00f5090864",
+            "dc8b5ab2-9973-4c43-ad26-a4d1e9b13f1c",
+            "6f0fa459-d045-48d7-a0fc-4df670e52ab9",
+            "1c65da08-a675-4be1-82c8-91f966d34db0",
+            "d1fb6d27-bb94-48d4-818e-c061fe3ed0ed",
+            "80cd33e8-8ba0-4c9a-bcb5-19dc07ebdc88",
+            "fac2bdf1-71ed-491c-a35d-c8f2b344db72",
+            "9b9d2c6d-0e18-414f-90fb-358ec55d97ad",
+            "34c5d03a-ebd7-476e-911a-8be985e3bc29",
+            "f45e1f81-703c-49bb-a5d8-1be7c9a4b9d2"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518418458,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "d552ac03-24f1-4954-998b-22255d3eacce",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551760040222,
+          "parent_id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Pitfall - Interning strings so that you can use is a bad idea"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 5
+        }
+      },
+      "ddf2edcc-86f3-40a0-8391-ccbfa492dc16": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4f588f37-025e-411a-ac9f-eee2782acceb",
+            "5607a19a-406e-4dc8-ba1e-58158071fcb2",
+            "536d4241-acbc-489d-bce7-32b4362dc77f",
+            "8b9667e8-f2c0-4945-bb2d-5e037c6e6129",
+            "0da078ca-5385-42cf-883c-83198a5d845b",
+            "c4cda210-a8b8-4c03-989f-7ce51d800c71",
+            "001edf0c-0c58-4c00-b1fa-09ec37232ea3",
+            "956130ff-5522-4488-be7a-81ac726bd444",
+            "23a3dd6c-eb4f-4b91-8663-091c59cc0894",
+            "85daa5f4-b725-4adb-b1a5-56b9b1f0439c",
+            "9d3e369b-a597-486e-a3ed-3401f068cec4",
+            "6f97994c-b4be-4cd4-b21c-f63ffe57bfee",
+            "e3368f5b-4444-4857-9d90-fd47c121b189",
+            "4c89861d-88a7-4913-b19d-4c395c4c4b99",
+            "b570c2da-44f1-46bc-9bd0-3db64a7b3df5",
+            "8a762aad-8785-4042-8743-9189f5809073",
+            "320a6317-525f-4076-9668-12c8c1968782",
+            "14260a78-b340-4626-b250-d47569ea9d6e",
+            "9ddcabe4-6c0e-4b40-b921-adff0c6d8fe7",
+            "5f21162c-032d-44e6-a6e4-4d07e4291202",
+            "25847bbd-a3ae-4eee-8dc3-9f93179cd43c",
+            "90540078-9ede-42d4-b914-b35f920923d9",
+            "381b9b39-53f4-40e7-9f40-c9b039ee4441",
+            "6bc93ac3-4c8d-47b0-93ea-c906a2483dcd",
+            "d113d605-dcb3-4db2-9f99-cd22358d39b8",
+            "9062a8e6-da0a-4fee-9c3d-ad9227fc25a6",
+            "5ea95105-8964-48f7-ac79-9ac3147f5b64",
+            "743a0145-fc59-4855-b16c-150b4a9e0fe5",
+            "84ef21ab-7759-48b1-b694-78c0ad51539d",
+            "068640ad-6a23-4a41-a1f2-a6a7a4f2cee8",
+            "fee30469-1789-42be-82be-ccdf36f6f920",
+            "49846ff2-fe5c-4388-b72f-ca7a7acecaa0",
+            "28197bcb-3b03-4c79-8afb-df20d23d51a2",
+            "32dd10e9-72ad-4d27-8b60-6db47eb9e99b",
+            "6925ad12-fb10-41a9-8c55-d59a51814589",
+            "9c294ff6-bafa-4059-94ef-97080ed411b7",
+            "09149c13-7aaa-4763-8e24-a84517360457",
+            "402f9f56-7cb3-492b-a7c5-05f9fb0d71c1",
+            "bd20fbd3-029f-4e4f-b089-86951ee77ef9",
+            "4923e8e5-187d-4a0c-8e4a-9823122b9bc0",
+            "e2686b2d-b0dd-486b-a0fe-871c0e1f0ad6",
+            "b661ffa4-83e8-4f4d-bf24-4cb46ae125a4",
+            "8d2bd0bb-6154-4e1b-add1-d52c4b59e815",
+            "a84902d1-ae0a-4a3e-86c0-2ef7ac673b85",
+            "176508c7-1fb5-4ac4-9145-89fe97dfcce4",
+            "88bd192d-9684-4f04-b997-206a5ce64d7b",
+            "d4a62a67-edbf-45f2-874e-9debdd719d3b",
+            "c3138b1a-b839-449d-b1bf-36fd079a2345",
+            "75ccb2ab-c185-43c6-9b70-f6b75567f8ac",
+            "5abbe5c5-63b7-42a5-9255-0116b65c3e0c",
+            "bf3883f6-2c3e-49b2-b2aa-63f96e4281c0"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550518420160,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "ddf2edcc-86f3-40a0-8391-ccbfa492dc16",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551758479416,
+          "parent_id": "28d11fe4-92df-4393-8cbb-b9dadc487955",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Pitfall - Efficiency concerns with regular expressions"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 5
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
