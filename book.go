@@ -211,10 +211,8 @@ func (b *Book) afterPageDownload(page *notionapi.Page) error {
 }
 
 func initBook(book *Book) {
-	fullDir, err := filepath.Abs("..")
-	must(err)
-	fullDir = filepath.Join(fullDir, "book-"+book.DirShort)
-	book.DirOnDisk = fullDir
+	book.DirOnDisk = filepath.Join("books", book.DirShort)
+	currBookDir = book.DirOnDisk
 	dir := book.NotionCacheDir()
 	u.CreateDirMust(dir)
 	dir = filepath.Join(book.DirOnDisk, "www")

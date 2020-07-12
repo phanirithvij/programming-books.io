@@ -147,7 +147,6 @@ func main() {
 func generateBookAndDeploy(book *Book) {
 	initBook(book)
 	downloadBook(book)
-	currBookDir = book.DirOnDisk
 	genBook(book)
 	deployWithVercel(book)
 }
