@@ -1,0 +1,784 @@
+1865 1594557838195 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+      "table": "block"
+    }
+  ]
+}
+Response:+1665
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "04ce191f-63bc-4df8-aee7-0eeac1df481f",
+          "191b07ed-4877-48f6-9b83-b57641cf3c48",
+          "4c0c45ed-815b-4f09-b499-7f416dbf55b8",
+          "15e9cfec-1deb-4657-a116-70095a5c52d2",
+          "a58f5c3a-e6a1-4e3b-a412-470b5171792a",
+          "abd8e069-e7f6-4cde-aacb-83846160b21b",
+          "a3917f23-e01b-433f-875f-36be437b7ac7",
+          "e3e00280-365c-4e97-a43f-dfef2ee9384f",
+          "e6ab44ad-2b4f-45dd-bb1a-ce51b1856d19",
+          "7f6e2cbf-8437-4db2-a1e7-e435d4142d89",
+          "bdca31e9-e2c0-4f9a-85b3-d9778c2c7cc9",
+          "7c675d6b-3aff-4ee1-bcb2-e2ba69a20a0c"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1551950624481,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551950624481,
+        "parent_id": "fa73b3d0-22d6-4a51-bebb-42841b7f95a4",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Creating an initialized List with Custom Types"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+25832 1594557838195 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+  "verticalColumns": false
+}
+Response:+25591
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "04ce191f-63bc-4df8-aee7-0eeac1df481f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950624467,
+          "id": "04ce191f-63bc-4df8-aee7-0eeac1df481f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950624467,
+          "parent_id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "public class Model\n{\n    public string Name { get; set; }\n    public bool? Selected { get; set; }\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "15e9cfec-1deb-4657-a116-70095a5c52d2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950624468,
+          "id": "15e9cfec-1deb-4657-a116-70095a5c52d2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950624468,
+          "parent_id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Here, we are creating several "
+              ],
+              [
+                "new",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " instances of our "
+              ],
+              [
+                "Model",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " class, and initializing them with data. What if we added a constructor?"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "191b07ed-4877-48f6-9b83-b57641cf3c48": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950624468,
+          "id": "191b07ed-4877-48f6-9b83-b57641cf3c48",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950624468,
+          "parent_id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Here we have a Class with no constructor with two properties: "
+              ],
+              [
+                "Name",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and a nullable boolean property "
+              ],
+              [
+                "Selected",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". If we wanted to initialize a "
+              ],
+              [
+                "List\u003cModel\u003e",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", there are a few different ways to execute this."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "4c0c45ed-815b-4f09-b499-7f416dbf55b8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950624468,
+          "id": "4c0c45ed-815b-4f09-b499-7f416dbf55b8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950624468,
+          "parent_id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "var SelectedEmployees = new List\u003cModel\u003e\n {\n      new Model() {Name = \"Item1\", Selected = true},\n      new Model() {Name = \"Item2\", Selected = false},\n      new Model() {Name = \"Item3\", Selected = false},\n      new Model() {Name = \"Item4\"}\n };"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "6289ba46-1087-4393-844d-fbae890ed035": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "cd51d40e-65dc-4d5e-aa99-a0833901d0b8",
+            "820442f1-7223-423c-a49f-93fa52cf3ad7",
+            "fa73b3d0-22d6-4a51-bebb-42841b7f95a4",
+            "f325a25a-1498-455e-9dd1-d3833aa957f9",
+            "2a28de72-302f-4f78-8304-6adcd7189a32",
+            "fb28bc7f-e61f-4ac8-b19d-4670cd051e98",
+            "921d5395-549c-407d-afd3-31f23e97aca9",
+            "5019b4e4-cd69-44b7-a825-05bcb1274fb1",
+            "9a394e05-1934-48fd-ae9f-33da92c04fbe",
+            "4bda71fd-ad0d-41b6-90bd-b47b4f14bed7",
+            "e22cb3bc-f3f4-4401-9c36-3c8a0904b3ad",
+            "05995655-4ee0-4127-b3a5-80bfa8b84e47",
+            "c118455e-068e-4dd3-9b14-ac47a50a2b0e",
+            "8fb3262d-e5fa-4d3b-86ba-dae1d9f482b0",
+            "0ccb57df-12d4-4086-b00e-2e437157652b",
+            "2d62c5ec-1c77-4b11-9525-fc3101ad48c9",
+            "14c88a94-7b13-45dc-9cf2-d5a6b03bcf14",
+            "15fdca89-9d94-44a3-9f0a-3306d537fbd4",
+            "f6facffd-3c1a-4d75-8afe-ca083f1c320b",
+            "778bc6b5-2d2f-430d-b96d-32a23351064e",
+            "36ec1eee-8fca-49be-9ec2-4afd299cc91e",
+            "b7cfb8cb-4348-49e4-a04a-0ba6eacab118",
+            "b3f43cee-5486-4d44-aa91-ecaaf72cc072",
+            "820bac49-e379-434f-9170-6f6bd2664ac2",
+            "babb556e-2d0b-4223-9e90-ef7f40ca7705",
+            "4d4ce762-93e1-476b-ad26-3eca55fc31ca",
+            "5571106d-d8ec-4a50-a8fd-711dda8e0a69",
+            "3cda890b-b69d-472d-a191-dcfd3616e832",
+            "10e9af4b-fd8b-4668-bcc1-8a1d2ce2433e",
+            "31abdfd9-50d6-441e-a8cb-dc351ce38467",
+            "9d9ea739-686f-4cf6-adfe-fffb126a440e",
+            "18dcfe20-840e-4ca3-b30d-2265cd6f3453",
+            "979090b0-0d04-478a-ad39-b7311edd9afb",
+            "e9a0f790-30d1-483b-9212-2fd37ce5f54c",
+            "b4b4834d-3ff1-40e2-9a90-ddac3a7f4364",
+            "13fcd1ea-9ee9-4041-b996-ee82c3fe1e11",
+            "1ebd2121-41bd-4f8b-b684-d47f74390f12",
+            "392fa5c4-47d6-4cff-9709-e8d068082cc4",
+            "17dfbeab-e6d9-4fe9-8b76-cf3666038aec",
+            "79ddd6cb-0e0a-4556-95fd-c28289626981",
+            "13cc7af0-77b1-4d34-91b3-fbb702596d72",
+            "6f3b2b42-b01e-4ced-a29a-8cc1049169f6",
+            "44d59605-d50a-42aa-ab91-c7977fd8a8b4",
+            "4541582a-f233-40f5-8dc4-eb0d6c1eb10e",
+            "f8ca8ac1-616e-4527-8aec-e0317d92b890",
+            "fe958aa5-191d-44da-9d98-41ba1dde934f",
+            "729ad137-501c-428a-a684-1cab5be722ce",
+            "b7cd86c1-4d1b-4e0a-8478-90678a901422",
+            "d7a3662e-5f0a-4776-aabd-4c48cbde30a5",
+            "0271bfe7-c37a-4696-a45b-c1e49994cf18",
+            "c8781654-f141-49b3-940c-e450c22a3af7",
+            "89ba4d3d-6adb-4865-81cb-543bb0cf3f66",
+            "fc35a31f-b4a1-4387-bb6b-e20e80d8c4c4",
+            "3d72526c-fdd6-4572-8bbd-50165f36a8da",
+            "42e32498-54de-43f9-9f2f-92fd72b66fd4",
+            "4cd15e8e-d40c-4679-9ced-0cfcb5a44695",
+            "7a6daccd-4284-4458-a422-3162f3088238",
+            "4d6337c3-ed63-4dd7-8571-3c5ded909939",
+            "524d9bfb-5233-4062-84c4-edd378f0520f",
+            "84b65762-d213-4fb9-9125-90a5928c1c07",
+            "aa68115c-9ad6-4924-adf5-9ec4480b7d6b"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950512759,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "6289ba46-1087-4393-844d-fbae890ed035",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571297640000,
+          "parent_id": "4e05c642-cb8f-4d3f-85ed-e69c06982060",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential .NET framework"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 119
+        }
+      },
+      "7c675d6b-3aff-4ee1-bcb2-e2ba69a20a0c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950624481,
+          "id": "7c675d6b-3aff-4ee1-bcb2-e2ba69a20a0c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950624481,
+          "parent_id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Note that we can interchange our "
+              ],
+              [
+                "List\u003cExtendedModel\u003e",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " with "
+              ],
+              [
+                "Collection\u003cExtendedModel\u003e",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", "
+              ],
+              [
+                "ExtendedModel[]",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", "
+              ],
+              [
+                "object[]",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", or even simply "
+              ],
+              [
+                "[]",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "7f6e2cbf-8437-4db2-a1e7-e435d4142d89": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950624469,
+          "id": "7f6e2cbf-8437-4db2-a1e7-e435d4142d89",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950624469,
+          "parent_id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Notice we reverted the constructor on the "
+              ],
+              [
+                "Model",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " class to simplify the example a little bit."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "a3917f23-e01b-433f-875f-36be437b7ac7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950624469,
+          "id": "a3917f23-e01b-433f-875f-36be437b7ac7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950624469,
+          "parent_id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "var SelectedEmployees = new List\u003cModel\u003e\n{\n    new Model(\"Mark\", true),\n    new Model(\"Alexis\"),\n    new Model(\"\")\n};"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "a58f5c3a-e6a1-4e3b-a412-470b5171792a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950624469,
+          "id": "a58f5c3a-e6a1-4e3b-a412-470b5171792a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950624469,
+          "parent_id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "public class Model\n{\n\n    public Model(string name, bool? selected = false)\n    {\n        Name = name;\n        selected = Selected;\n    }\n    public string Name { get; set; }\n    public bool? Selected { get; set; }\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "abd8e069-e7f6-4cde-aacb-83846160b21b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950624469,
+          "id": "abd8e069-e7f6-4cde-aacb-83846160b21b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950624469,
+          "parent_id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This allows us to initialize our List a "
+              ],
+              [
+                "little",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " differently."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "bdca31e9-e2c0-4f9a-85b3-d9778c2c7cc9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950624469,
+          "id": "bdca31e9-e2c0-4f9a-85b3-d9778c2c7cc9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950624469,
+          "parent_id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "var SelectedWithBirthDate = new List\u003cExtendedModel\u003e\n{\n    new ExtendedModel()\n    {\n        BaseModel = new Model { Name = \"Mark\", Selected = true},\n        BirthDate = new DateTime(2015, 11, 23)\n    },\n                    new ExtendedModel()\n    {\n        BaseModel = new Model { Name = \"Random\"},\n        BirthDate = new DateTime(2015, 11, 23)\n    }\n};"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "c5f973cd-0a1e-4801-8db5-4342b72101eb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "04ce191f-63bc-4df8-aee7-0eeac1df481f",
+            "191b07ed-4877-48f6-9b83-b57641cf3c48",
+            "4c0c45ed-815b-4f09-b499-7f416dbf55b8",
+            "15e9cfec-1deb-4657-a116-70095a5c52d2",
+            "a58f5c3a-e6a1-4e3b-a412-470b5171792a",
+            "abd8e069-e7f6-4cde-aacb-83846160b21b",
+            "a3917f23-e01b-433f-875f-36be437b7ac7",
+            "e3e00280-365c-4e97-a43f-dfef2ee9384f",
+            "e6ab44ad-2b4f-45dd-bb1a-ce51b1856d19",
+            "7f6e2cbf-8437-4db2-a1e7-e435d4142d89",
+            "bdca31e9-e2c0-4f9a-85b3-d9778c2c7cc9",
+            "7c675d6b-3aff-4ee1-bcb2-e2ba69a20a0c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950624481,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950624481,
+          "parent_id": "fa73b3d0-22d6-4a51-bebb-42841b7f95a4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Creating an initialized List with Custom Types"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "e3e00280-365c-4e97-a43f-dfef2ee9384f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950624469,
+          "id": "e3e00280-365c-4e97-a43f-dfef2ee9384f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950624469,
+          "parent_id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "What about a Class where one of the properties is a class itself?"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "e6ab44ad-2b4f-45dd-bb1a-ce51b1856d19": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950624469,
+          "id": "e6ab44ad-2b4f-45dd-bb1a-ce51b1856d19",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551950624469,
+          "parent_id": "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "public class Model\n{\n    public string Name { get; set; }\n    public bool? Selected { get; set; }\n}\n\npublic class ExtendedModel : Model\n{\n    public ExtendedModel()\n    {\n        BaseModel = new Model();\n    }\n\n    public Model BaseModel { get; set; }\n    public DateTime BirthDate { get; set; }\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "fa73b3d0-22d6-4a51-bebb-42841b7f95a4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "91b42596-4ddb-4cdd-8284-5eaa4a90ed78",
+            "e2ae2b37-1595-4109-be33-e74c1cd000f3",
+            "d58f13e6-023a-4f51-b5c9-cd1cab90f087",
+            "523754bb-e6a8-428c-8720-233e5c1710ec",
+            "00543b9e-e405-448b-abf8-f7c6b2b49a7e",
+            "fe8fc542-ec40-4179-80f8-5f5619dbf163",
+            "4478a6e0-b3ff-48e2-b7ba-c891b28cd334",
+            "4c8996fa-07fb-43a6-b271-b24fb8afdd87",
+            "e0c18a7f-ec95-41a2-b03a-7b3d1f50e895",
+            "c5f973cd-0a1e-4801-8db5-4342b72101eb",
+            "3e8e6eea-f60d-43b1-885b-19817b550a28",
+            "bf263e0a-f2f4-4a31-902b-368691d3c0fb"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950580000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "fa73b3d0-22d6-4a51-bebb-42841b7f95a4",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1581635700000,
+          "parent_id": "6289ba46-1087-4393-844d-fbae890ed035",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Collections"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 49
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

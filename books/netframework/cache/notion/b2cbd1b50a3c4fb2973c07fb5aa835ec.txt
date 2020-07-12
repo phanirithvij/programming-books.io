@@ -1,0 +1,726 @@
+1907 1594557769492 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+      "table": "block"
+    }
+  ]
+}
+Response:+1707
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "45ad6eee-bcc7-43f3-a76e-ebb6d66fb8c8",
+          "52e3a22c-92e7-4243-a02e-8aa65d455bed",
+          "2678c428-1ec1-44af-b254-ef40ef97599a",
+          "24bdb528-5c35-4232-99b3-ce9c148cb4fa",
+          "bcec678a-7a53-4094-b587-8e74abc629d0",
+          "3c2c930d-e115-4771-bb47-0429e6f6a45e",
+          "16e58982-61cb-4e66-b69e-2f5b9e27de05",
+          "a1a5462d-d4f2-4bc6-a806-e95815569a5e",
+          "20c3c5d4-ddec-419b-bc1d-465c6114d569",
+          "00e4d450-5b8d-45e4-a110-ab2723ef9fe3",
+          "8180bc83-34db-4879-974c-f629f8eb2823",
+          "caf32796-b61a-4c9e-85ff-6df0654a6f7b",
+          "3ab3b758-026c-404e-b252-eb20c352d1a4"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1551951506810,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551951506810,
+        "parent_id": "18dcfe20-840e-4ca3-b30d-2265cd6f3453",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Send Command to CMD and Receive Output"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+26090 1594557769493 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+  "verticalColumns": false
+}
+Response:+25849
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "00e4d450-5b8d-45e4-a110-ab2723ef9fe3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506809,
+          "id": "00e4d450-5b8d-45e4-a110-ab2723ef9fe3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506809,
+          "parent_id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Getting the password:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "16e58982-61cb-4e66-b69e-2f5b9e27de05": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506809,
+          "id": "16e58982-61cb-4e66-b69e-2f5b9e27de05",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506809,
+          "parent_id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "parent_table": "block",
+          "type": "divider",
+          "version": 1
+        }
+      },
+      "18dcfe20-840e-4ca3-b30d-2265cd6f3453": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "7127ae73-8332-43ce-a934-81f5282b122d",
+            "b84ca56f-7172-4b17-a860-97b9fc1c668f",
+            "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+            "a6069490-8b6c-4c78-843a-9ce3f93c27a2"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951480000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "18dcfe20-840e-4ca3-b30d-2265cd6f3453",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951960000,
+          "parent_id": "6289ba46-1087-4393-844d-fbae890ed035",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "System.Diagnostics"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 36
+        }
+      },
+      "20c3c5d4-ddec-419b-bc1d-465c6114d569": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506809,
+          "id": "20c3c5d4-ddec-419b-bc1d-465c6114d569",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506809,
+          "parent_id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "private static string SendCommand(string command)\n{\n    var cmdOut = string.Empty;\n    \n    var startInfo = new ProcessStartInfo(\"cmd\", command)\n    {\n        WorkingDirectory = @\"C:\\Windows\\System32\",\n        WindowStyle = ProcessWindowStyle.Hidden,    // This does not actually work in conjunction with \"runas\" - the console window will still appear!\n        UseShellExecute = false,\n        CreateNoWindow = true,\n        RedirectStandardOutput = true, \n        RedirectStandardError = true,\n\n        Verb = \"runas\",\n        Domain = \"doman1.co.za\",\n        UserName = \"administrator\",\n        Password = GetPassword()\n    };\n\n    var p = new Process {StartInfo = startInfo};\n\n    p.Start();\n\n    p.OutputDataReceived += (x, y) =\u003e cmdOut += y.Data;\n    p.ErrorDataReceived += (x, y) =\u003e cmdOut += y.Data;\n    p.BeginOutputReadLine();\n    p.BeginErrorReadLine();\n    p.WaitForExit();\n    return cmdOut;\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "24bdb528-5c35-4232-99b3-ce9c148cb4fa": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506809,
+          "id": "24bdb528-5c35-4232-99b3-ce9c148cb4fa",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506809,
+          "parent_id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "var servername = \"SVR-01.domain.co.za\";\nvar currentUsers = SendCommand($\"/C QUERY USER /SERVER:{servername}\")"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "2678c428-1ec1-44af-b254-ef40ef97599a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506808,
+          "id": "2678c428-1ec1-44af-b254-ef40ef97599a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506808,
+          "parent_id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Usage",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "3ab3b758-026c-404e-b252-eb20c352d1a4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506810,
+          "id": "3ab3b758-026c-404e-b252-eb20c352d1a4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506810,
+          "parent_id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Both of the above methods will return a concatenation of STDOUT and STDERR, as "
+              ],
+              [
+                "OutputDataReceived",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "ErrorDataReceived",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " are both appending to the same variable - "
+              ],
+              [
+                "cmdOut",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "3c2c930d-e115-4771-bb47-0429e6f6a45e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506809,
+          "id": "3c2c930d-e115-4771-bb47-0429e6f6a45e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506809,
+          "parent_id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "string currentUsers = “USERNAME SESSIONNAME ID STATE IDLE TIME LOGON TIME Joe.Bloggs ica-cgp#0 2 Active 24692+13:29 25/07/2016 07:50 Jim.McFlannegan ica-cgp#1 3 Active . 25/07/2016 08:33 Andy.McAnderson ica-cgp#2 4 Active . 25/07/2016 08:54 John.Smith ica-cgp#4 5 Active 14 25/07/2016 08:57 Bob.Bobbington ica-cgp#5 6 Active 24692+13:29 25/07/2016 09:05 Tim.Tom ica-cgp#6 7 Active . 25/07/2016 09:08 Bob.Joges ica-cgp#7 8 Active 24692+13:29 25/07/2016 09:13”"
+              ]
+            ]
+          },
+          "type": "quote",
+          "version": 1
+        }
+      },
+      "45ad6eee-bcc7-43f3-a76e-ebb6d66fb8c8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506806,
+          "id": "45ad6eee-bcc7-43f3-a76e-ebb6d66fb8c8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506806,
+          "parent_id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This method allows a "
+              ],
+              [
+                "command",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " to be sent to "
+              ],
+              [
+                "Cmd.exe",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", and returns the standard output (including standard error) as a string:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "52e3a22c-92e7-4243-a02e-8aa65d455bed": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506808,
+          "id": "52e3a22c-92e7-4243-a02e-8aa65d455bed",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506808,
+          "parent_id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "private static string SendCommand(string command)\n{\n    var cmdOut = string.Empty;\n    \n    var startInfo = new ProcessStartInfo(\"cmd\", command)\n    {\n        WorkingDirectory = @\"C:\\Windows\\System32\", // Directory to make the call from\n        WindowStyle = ProcessWindowStyle.Hidden,   // Hide the window\n        UseShellExecute = false,                   // Do not use the OS shell to start the process\n        CreateNoWindow = true,                     // Start the process in a new window \n        RedirectStandardOutput = true,             // This is required to get STDOUT\n        RedirectStandardError = true               // This is required to get STDERR\n    };\n\n    var p = new Process {StartInfo = startInfo};\n\n    p.Start();\n\n    p.OutputDataReceived += (x, y) =\u003e cmdOut += y.Data;\n    p.ErrorDataReceived += (x, y) =\u003e cmdOut += y.Data;\n    p.BeginOutputReadLine();\n    p.BeginErrorReadLine();\n    p.WaitForExit();\n    return cmdOut;\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "6289ba46-1087-4393-844d-fbae890ed035": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "cd51d40e-65dc-4d5e-aa99-a0833901d0b8",
+            "820442f1-7223-423c-a49f-93fa52cf3ad7",
+            "fa73b3d0-22d6-4a51-bebb-42841b7f95a4",
+            "f325a25a-1498-455e-9dd1-d3833aa957f9",
+            "2a28de72-302f-4f78-8304-6adcd7189a32",
+            "fb28bc7f-e61f-4ac8-b19d-4670cd051e98",
+            "921d5395-549c-407d-afd3-31f23e97aca9",
+            "5019b4e4-cd69-44b7-a825-05bcb1274fb1",
+            "9a394e05-1934-48fd-ae9f-33da92c04fbe",
+            "4bda71fd-ad0d-41b6-90bd-b47b4f14bed7",
+            "e22cb3bc-f3f4-4401-9c36-3c8a0904b3ad",
+            "05995655-4ee0-4127-b3a5-80bfa8b84e47",
+            "c118455e-068e-4dd3-9b14-ac47a50a2b0e",
+            "8fb3262d-e5fa-4d3b-86ba-dae1d9f482b0",
+            "0ccb57df-12d4-4086-b00e-2e437157652b",
+            "2d62c5ec-1c77-4b11-9525-fc3101ad48c9",
+            "14c88a94-7b13-45dc-9cf2-d5a6b03bcf14",
+            "15fdca89-9d94-44a3-9f0a-3306d537fbd4",
+            "f6facffd-3c1a-4d75-8afe-ca083f1c320b",
+            "778bc6b5-2d2f-430d-b96d-32a23351064e",
+            "36ec1eee-8fca-49be-9ec2-4afd299cc91e",
+            "b7cfb8cb-4348-49e4-a04a-0ba6eacab118",
+            "b3f43cee-5486-4d44-aa91-ecaaf72cc072",
+            "820bac49-e379-434f-9170-6f6bd2664ac2",
+            "babb556e-2d0b-4223-9e90-ef7f40ca7705",
+            "4d4ce762-93e1-476b-ad26-3eca55fc31ca",
+            "5571106d-d8ec-4a50-a8fd-711dda8e0a69",
+            "3cda890b-b69d-472d-a191-dcfd3616e832",
+            "10e9af4b-fd8b-4668-bcc1-8a1d2ce2433e",
+            "31abdfd9-50d6-441e-a8cb-dc351ce38467",
+            "9d9ea739-686f-4cf6-adfe-fffb126a440e",
+            "18dcfe20-840e-4ca3-b30d-2265cd6f3453",
+            "979090b0-0d04-478a-ad39-b7311edd9afb",
+            "e9a0f790-30d1-483b-9212-2fd37ce5f54c",
+            "b4b4834d-3ff1-40e2-9a90-ddac3a7f4364",
+            "13fcd1ea-9ee9-4041-b996-ee82c3fe1e11",
+            "1ebd2121-41bd-4f8b-b684-d47f74390f12",
+            "392fa5c4-47d6-4cff-9709-e8d068082cc4",
+            "17dfbeab-e6d9-4fe9-8b76-cf3666038aec",
+            "79ddd6cb-0e0a-4556-95fd-c28289626981",
+            "13cc7af0-77b1-4d34-91b3-fbb702596d72",
+            "6f3b2b42-b01e-4ced-a29a-8cc1049169f6",
+            "44d59605-d50a-42aa-ab91-c7977fd8a8b4",
+            "4541582a-f233-40f5-8dc4-eb0d6c1eb10e",
+            "f8ca8ac1-616e-4527-8aec-e0317d92b890",
+            "fe958aa5-191d-44da-9d98-41ba1dde934f",
+            "729ad137-501c-428a-a684-1cab5be722ce",
+            "b7cd86c1-4d1b-4e0a-8478-90678a901422",
+            "d7a3662e-5f0a-4776-aabd-4c48cbde30a5",
+            "0271bfe7-c37a-4696-a45b-c1e49994cf18",
+            "c8781654-f141-49b3-940c-e450c22a3af7",
+            "89ba4d3d-6adb-4865-81cb-543bb0cf3f66",
+            "fc35a31f-b4a1-4387-bb6b-e20e80d8c4c4",
+            "3d72526c-fdd6-4572-8bbd-50165f36a8da",
+            "42e32498-54de-43f9-9f2f-92fd72b66fd4",
+            "4cd15e8e-d40c-4679-9ced-0cfcb5a44695",
+            "7a6daccd-4284-4458-a422-3162f3088238",
+            "4d6337c3-ed63-4dd7-8571-3c5ded909939",
+            "524d9bfb-5233-4062-84c4-edd378f0520f",
+            "84b65762-d213-4fb9-9125-90a5928c1c07",
+            "aa68115c-9ad6-4924-adf5-9ec4480b7d6b"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551950512759,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "6289ba46-1087-4393-844d-fbae890ed035",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571297640000,
+          "parent_id": "4e05c642-cb8f-4d3f-85ed-e69c06982060",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential .NET framework"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 119
+        }
+      },
+      "8180bc83-34db-4879-974c-f629f8eb2823": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506809,
+          "id": "8180bc83-34db-4879-974c-f629f8eb2823",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506809,
+          "parent_id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "static SecureString GetPassword()\n{\n    var plainText = \"password123\";\n    var ss = new SecureString();\n    foreach (char c in plainText)\n    {\n        ss.AppendChar(c);\n    }\n\n    return ss;\n}"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "a1a5462d-d4f2-4bc6-a806-e95815569a5e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506809,
+          "id": "a1a5462d-d4f2-4bc6-a806-e95815569a5e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506809,
+          "parent_id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "On some occasions, access to the server in question may be restricted to certain users. If you have the login credentials for this user, then it is possible to send queries with this method:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "45ad6eee-bcc7-43f3-a76e-ebb6d66fb8c8",
+            "52e3a22c-92e7-4243-a02e-8aa65d455bed",
+            "2678c428-1ec1-44af-b254-ef40ef97599a",
+            "24bdb528-5c35-4232-99b3-ce9c148cb4fa",
+            "bcec678a-7a53-4094-b587-8e74abc629d0",
+            "3c2c930d-e115-4771-bb47-0429e6f6a45e",
+            "16e58982-61cb-4e66-b69e-2f5b9e27de05",
+            "a1a5462d-d4f2-4bc6-a806-e95815569a5e",
+            "20c3c5d4-ddec-419b-bc1d-465c6114d569",
+            "00e4d450-5b8d-45e4-a110-ab2723ef9fe3",
+            "8180bc83-34db-4879-974c-f629f8eb2823",
+            "caf32796-b61a-4c9e-85ff-6df0654a6f7b",
+            "3ab3b758-026c-404e-b252-eb20c352d1a4"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506810,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506810,
+          "parent_id": "18dcfe20-840e-4ca3-b30d-2265cd6f3453",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Send Command to CMD and Receive Output"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "bcec678a-7a53-4094-b587-8e74abc629d0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506809,
+          "id": "bcec678a-7a53-4094-b587-8e74abc629d0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506809,
+          "parent_id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Output",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "caf32796-b61a-4c9e-85ff-6df0654a6f7b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1551951506809,
+          "id": "caf32796-b61a-4c9e-85ff-6df0654a6f7b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551951506809,
+          "parent_id": "b2cbd1b5-0a3c-4fb2-973c-07fb5aa835ec",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Notes",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
