@@ -90,11 +90,8 @@ func gistDownloadCached(cache *Cache, gistID string) string {
 	timeStart := time.Now()
 	newGist := gistDownloadMust(gistID)
 	logf("gist '%s': downloaded in %s\n", gistID, time.Since(timeStart))
-	if gist != nil && newGist.Raw == gist.Gist {
-		panicIf(!flgGistRedownload)
-		return newGist.Raw
-	}
-	cache.saveGist(gistID, newGist.Raw)
+	didChange := cache.saveGist(gistID, newGist.Raw)
+	panicIf(didChange && !flgGistRedownload)
 	return newGist.Raw
 }
 
@@ -160,14 +157,17 @@ func evalGist(gistStr string) (*EvalResponse, string) {
 	return resp, out
 }
 
-func evalCached(cache *Cache, gist string) string {
+func evalCached(cache *Cache, gistID string, gist string) string {
 	sha1 := u.Sha1HexOfBytes([]byte(gist))
+	logf("evalCached() gist id '%s', body sha1 '%s' ", gistID, sha1)
 	gistOut := cache.getGistOuputBySha1(sha1)
 	if gistOut != nil {
+		logf("found in cache\n")
 		return gistOut.Output
 	}
 	_, out := evalGist(gist)
 	cache.saveGistOutput(gist, out)
+	logf("not in cache, did eval\n")
 	return out
 }
 
@@ -185,7 +185,7 @@ func evalCodeEval(page *Page, block *notionapi.Block, gistInfo string) {
 	info := parseCodeEvalInfo(gistInfo)
 	gistStr := gistDownloadCached(page.Book.cache, info.GistID)
 
-	output := evalCached(page.Book.cache, gistStr)
+	output := evalCached(page.Book.cache, info.GistID, gistStr)
 	gist := gistDecode(gistStr)
 	panicIf(gist.Truncated) // TODO: implement if needed
 	gistFile := getGistFile(gist)
