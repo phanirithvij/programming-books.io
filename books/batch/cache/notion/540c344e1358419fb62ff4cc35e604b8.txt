@@ -1,0 +1,730 @@
+1837 1594557424527 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+      "table": "block"
+    }
+  ]
+}
+Response:+1637
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "238eaa51-8680-4de2-9ec1-35c314492fd8",
+          "ac148009-469e-4084-b8e7-a9593be57c8c",
+          "88747bc0-e7dc-465f-955e-c32fb7c07f46",
+          "e387f840-2424-4a10-a814-576335e94628",
+          "5e9fffbe-445e-4e4b-b114-32d7694b83c9",
+          "298b5bb0-d206-472b-8ac5-82a053d1e601",
+          "a50e06f1-4cce-45a4-977c-00cab3b53702",
+          "01717086-b140-4529-9074-89a828b17779",
+          "b79e285d-f09e-4c7a-9803-c361d68f1e63",
+          "73a88d61-f935-4e9a-abf2-1b46ee53dac6",
+          "1f021307-d2d3-451d-90d3-a8308a863b79",
+          "96b4a5cf-bc88-4f7d-8303-f3cbe92a01cf",
+          "6ca0fe1e-df60-4bfa-97fc-52ed3fe3d596"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552515097421,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552517460000,
+        "parent_id": "34f80a6d-d2c8-4337-9515-97d48e342fec",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "SET"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 33
+      }
+    }
+  ]
+}
+32052 1594557424528 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "540c344e-1358-419f-b62f-f4cc35e604b8",
+  "verticalColumns": false
+}
+Response:+31811
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "01717086-b140-4529-9074-89a828b17779": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "88116d67-e9f5-4efb-a864-c4e6b522171b"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106774,
+          "id": "01717086-b140-4529-9074-89a828b17779",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515060000,
+          "parent_id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "set /A result = 4 * ( 6 / 3 )"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 6
+        }
+      },
+      "1f021307-d2d3-451d-90d3-a8308a863b79": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106774,
+          "id": "1f021307-d2d3-451d-90d3-a8308a863b79",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515180000,
+          "parent_id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "set at Microsoft",
+                [
+                  [
+                    "a",
+                    "https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/set_1"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 4
+        }
+      },
+      "238eaa51-8680-4de2-9ec1-35c314492fd8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106773,
+          "id": "238eaa51-8680-4de2-9ec1-35c314492fd8",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515060000,
+          "parent_id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Displays or sets environment variables. With /P switch, it asks the user for input, storing the result in the variable. With /A switch, it performs simple arithmetic calculations, storing the result in the variable. With string assignments, there must be no spaces before and after the equality sign; thus, \"set name = Peter\" does not work, while \"set name=Peter\" does."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
+        }
+      },
+      "298b5bb0-d206-472b-8ac5-82a053d1e601": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106773,
+          "id": "298b5bb0-d206-472b-8ac5-82a053d1e601",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515060000,
+          "parent_id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "set HOME=%HOME%;C:\\Program Files\\My Bin Folder"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 2
+        }
+      },
+      "34f80a6d-d2c8-4337-9515-97d48e342fec": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "c2a1bd8e-4ecc-44de-9b4c-9c89e1a5faf3",
+            "45a61dfb-822a-461e-b04c-2c24d85eab88",
+            "919a7b5d-bcee-4cec-9fd1-983e81eb611f",
+            "a3d58a10-ca22-415c-880f-360a91e5c317",
+            "2564ea90-91d9-4506-bbbd-aa190a709112",
+            "51f8baa6-7587-422e-83e7-734186d3e82b",
+            "8c287099-f78d-443c-b7f3-928bb7ce94a5",
+            "012db9e2-aa45-442d-a6cc-c76d3aa6871a",
+            "b7ceb52d-dfc8-4016-8d9b-e463185382c8",
+            "7467801d-6f90-4c3d-93d3-0c315afc01d6",
+            "4e5fd41e-b3a5-414d-b425-f8f666a4b16e",
+            "158d36f1-c9da-4762-93b7-7ef1c825b016",
+            "431d20db-9186-48bd-85a3-9584876868f8",
+            "bd67e773-d9cf-44a5-9eeb-c8839dcfb7ad",
+            "064c3bab-ba67-4d38-89eb-f0ed47da41ee",
+            "5bf17afc-72c3-4152-a69a-c4f0cb929277",
+            "bad676c1-58e7-47ff-9614-5309fead1b63",
+            "8fab8c9c-eb68-44cc-9797-63e27cbbf301",
+            "987419c9-b64d-4421-bfe2-38f9db65d492",
+            "3efa96b0-8834-478e-b9d8-7574e024e74f",
+            "97dad359-d350-498c-b026-64e1786a5b40",
+            "5603394a-154f-4814-a31c-7bcec6f9ec19",
+            "5c4b094e-0302-4241-aaf8-af3375f612aa",
+            "724f35d4-1217-4a7d-bf5a-79d582f48dc0",
+            "505bd0f7-c76d-4854-a732-a16478224b47",
+            "0a6db5c6-4bf0-4b64-8dbf-c07eeaa04a74",
+            "dffefd5a-9e97-414c-86e2-52afb7e4b128",
+            "78a3d516-d23f-4875-b698-207bbdc8c1bf",
+            "f29bae47-7011-4b32-801c-1024b9b40080",
+            "a112c317-e082-4eef-93ce-8d74d8e6bec7",
+            "0ba8bb21-7e46-4863-8214-c5762f682b47",
+            "540c344e-1358-419f-b62f-f4cc35e604b8",
+            "bbf053c9-3ff6-4f92-b00f-8c61650c395b",
+            "4053d835-d978-44b3-a5ac-7ebe7f72554b",
+            "d249dd37-35fa-4f44-970f-f545f78d229f",
+            "7130bd47-9535-4d56-b9c6-9e60d0a4b4a7",
+            "262e9bcf-5514-40fe-afd4-f0cf585c593d",
+            "02721163-6b85-48f4-abca-0f6f632e0292",
+            "f81bbfb9-99bf-4d2c-a686-eeaeee1c500b",
+            "8e56b955-63a7-40bc-9b91-6e670d50a373",
+            "3d7f7097-2f67-4dfd-9951-e630b4ec3c40",
+            "10070897-1851-4e0d-ad5f-da2521f58785"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552469165360,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "34f80a6d-d2c8-4337-9515-97d48e342fec",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1554879480000,
+          "parent_id": "ea84bde7-ed4e-4353-bdc6-ae44125abc08",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Built-in commands"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 310
+        }
+      },
+      "38931590-a9ed-4e5f-909b-cb4e8b4a010c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106773,
+          "id": "38931590-a9ed-4e5f-909b-cb4e8b4a010c",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515060000,
+          "parent_id": "88747bc0-e7dc-465f-955e-c32fb7c07f46",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Displays a list of environment variables"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 6
+        }
+      },
+      "540c344e-1358-419f-b62f-f4cc35e604b8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "238eaa51-8680-4de2-9ec1-35c314492fd8",
+            "ac148009-469e-4084-b8e7-a9593be57c8c",
+            "88747bc0-e7dc-465f-955e-c32fb7c07f46",
+            "e387f840-2424-4a10-a814-576335e94628",
+            "5e9fffbe-445e-4e4b-b114-32d7694b83c9",
+            "298b5bb0-d206-472b-8ac5-82a053d1e601",
+            "a50e06f1-4cce-45a4-977c-00cab3b53702",
+            "01717086-b140-4529-9074-89a828b17779",
+            "b79e285d-f09e-4c7a-9803-c361d68f1e63",
+            "73a88d61-f935-4e9a-abf2-1b46ee53dac6",
+            "1f021307-d2d3-451d-90d3-a8308a863b79",
+            "96b4a5cf-bc88-4f7d-8303-f3cbe92a01cf",
+            "6ca0fe1e-df60-4bfa-97fc-52ed3fe3d596"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515097421,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552517460000,
+          "parent_id": "34f80a6d-d2c8-4337-9515-97d48e342fec",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "SET"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 33
+        }
+      },
+      "5e9fffbe-445e-4e4b-b114-32d7694b83c9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106773,
+          "id": "5e9fffbe-445e-4e4b-b114-32d7694b83c9",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515060000,
+          "parent_id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "set MYNUMBER=56"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 2
+        }
+      },
+      "63c6f821-18b6-48e5-be69-51c6982f624f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106773,
+          "id": "63c6f821-18b6-48e5-be69-51c6982f624f",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515060000,
+          "parent_id": "e387f840-2424-4a10-a814-576335e94628",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Displays the values of the environment variables whose names start with \"HOME\""
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 2
+        }
+      },
+      "6ca0fe1e-df60-4bfa-97fc-52ed3fe3d596": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515172172,
+          "id": "6ca0fe1e-df60-4bfa-97fc-52ed3fe3d596",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515180000,
+          "parent_id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Shell"
+              ]
+            ],
+            "title": [
+              [
+                "$ SET /?\nDisplays, sets, or removes cmd.exe environment variables.\n\nSET [variable=[string]]\n\n  variable  Specifies the environment-variable name.\n  string    Specifies a series of characters to assign to the variable.\n\nType SET without parameters to display the current environment variables.\n\nIf Command Extensions are enabled SET changes as follows:\n\nSET command invoked with just a variable name, no equal sign or value\nwill display the value of all variables whose prefix matches the name\ngiven to the SET command.  For example:\n\n    SET P\n\nwould display all variables that begin with the letter 'P'\n\nSET command will set the ERRORLEVEL to 1 if the variable name is not\nfound in the current environment.\n\nSET command will not allow an equal sign to be part of the name of\na variable.\n\nTwo new switches have been added to the SET command:\n\n    SET /A expression\n    SET /P variable=[promptString]\n\nThe /A switch specifies that the string to the right of the equal sign\nis a numerical expression that is evaluated.  The expression evaluator\nis pretty simple and supports the following operations, in decreasing\norder of precedence:\n\n    ()                  - grouping\n    ! ~ -               - unary operators\n    * / %               - arithmetic operators\n    + -                 - arithmetic operators\n    \u003c\u003c \u003e\u003e               - logical shift\n    \u0026                   - bitwise and\n    ^                   - bitwise exclusive or\n    |                   - bitwise or\n    = *= /= %= += -=    - assignment\n      \u0026= ^= |= \u003c\u003c= \u003e\u003e=\n    ,                   - expression separator\n\nIf you use any of the logical or modulus operators, you will need to\nenclose the expression string in quotes.  Any non-numeric strings in the\nexpression are treated as environment variable names whose values are\nconverted to numbers before using them.  If an environment variable name\nis specified but is not defined in the current environment, then a value\nof zero is used.  This allows you to do arithmetic with environment\nvariable values without having to type all those % signs to get their\nvalues.  If SET /A is executed from the command line outside of a\ncommand script, then it displays the final value of the expression.  The\nassignment operator requires an environment variable name to the left of\nthe assignment operator.  Numeric values are decimal numbers, unless\nprefixed by 0x for hexadecimal numbers, and 0 for octal numbers.\nSo 0x12 is the same as 18 is the same as 022. Please note that the octal\nnotation can be confusing: 08 and 09 are not valid numbers because 8 and\n9 are not valid octal digits.\n\nThe /P switch allows you to set the value of a variable to a line of input\nentered by the user.  Displays the specified promptString before reading\nthe line of input.  The promptString can be empty.\n\nEnvironment variable substitution has been enhanced as follows:\n\n    %PATH:str1=str2%\n\nwould expand the PATH environment variable, substituting each occurrence\nof \"str1\" in the expanded result with \"str2\".  \"str2\" can be the empty\nstring to effectively delete all occurrences of \"str1\" from the expanded\noutput.  \"str1\" can begin with an asterisk, in which case it will match\neverything from the beginning of the expanded output to the first\noccurrence of the remaining portion of str1.\n\nMay also specify substrings for an expansion.\n\n    %PATH:~10,5%\n\nwould expand the PATH environment variable, and then use only the 5\ncharacters that begin at the 11th (offset 10) character of the expanded\nresult.  If the length is not specified, then it defaults to the\nremainder of the variable value.  If either number (offset or length) is\nnegative, then the number used is the length of the environment variable\nvalue added to the offset or length specified.\n\n    %PATH:~-10%\n\nwould extract the last 10 characters of the PATH variable.\n\n    %PATH:~0,-2%\n\nwould extract all but the last 2 characters of the PATH variable.\n\nFinally, support for delayed environment variable expansion has been\nadded.  This support is always disabled by default, but may be\nenabled/disabled via the /V command line switch to CMD.EXE.  See CMD /?\n\nDelayed environment variable expansion is useful for getting around\nthe limitations of the current expansion which happens when a line\nof text is read, not when it is executed.  The following example\ndemonstrates the problem with immediate variable expansion:\n\n    set VAR=before\n    if \"%VAR%\" == \"before\" (\n        set VAR=after\n        if \"%VAR%\" == \"after\" @echo If you see this, it worked\n    )\n\nwould never display the message, since the %VAR% in BOTH IF statements\nis substituted when the first IF statement is read, since it logically\nincludes the body of the IF, which is a compound statement.  So the\nIF inside the compound statement is really comparing \"before\" with\n\"after\" which will never be equal.  Similarly, the following example\nwill not work as expected:\n\n    set LIST=\n    for %i in (*) do set LIST=%LIST% %i\n    echo %LIST%\n\nin that it will NOT build up a list of files in the current directory,\nbut instead will just set the LIST variable to the last file found.\nAgain, this is because the %LIST% is expanded just once when the\nFOR statement is read, and at that time the LIST variable is empty.\nSo the actual FOR loop we are executing is:\n\n    for %i in (*) do set LIST= %i\n\nwhich just keeps setting LIST to the last file found.\n\nDelayed environment variable expansion allows you to use a different\ncharacter (the exclamation mark) to expand environment variables at\nexecution time.  If delayed variable expansion is enabled, the above\nexamples could be written as follows to work as intended:\n\n    set VAR=before\n    if \"%VAR%\" == \"before\" (\n        set VAR=after\n        if \"!VAR!\" == \"after\" @echo If you see this, it worked\n    )\n\n    set LIST=\n    for %i in (*) do set LIST=!LIST! %i\n    echo %LIST%\n\nIf Command Extensions are enabled, then there are several dynamic\nenvironment variables that can be expanded but which don't show up in\nthe list of variables displayed by SET.  These variable values are\ncomputed dynamically each time the value of the variable is expanded.\nIf the user explicitly defines a variable with one of these names, then\nthat definition will override the dynamic one described below:\n\n%CD% - expands to the current directory string.\n\n%DATE% - expands to current date using same format as DATE command.\n\n%TIME% - expands to current time using same format as TIME command.\n\n%RANDOM% - expands to a random decimal number between 0 and 32767.\n\n%ERRORLEVEL% - expands to the current ERRORLEVEL value\n\n%CMDEXTVERSION% - expands to the current Command Processor Extensions\n    version number.\n\n%CMDCMDLINE% - expands to the original command line that invoked the\n    Command Processor.\n\n%HIGHESTNUMANODENUMBER% - expands to the highest NUMA node number\n    on this machine."
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 22
+        }
+      },
+      "73a88d61-f935-4e9a-abf2-1b46ee53dac6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106774,
+          "id": "73a88d61-f935-4e9a-abf2-1b46ee53dac6",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515060000,
+          "parent_id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "set at ss64.com",
+                [
+                  [
+                    "a",
+                    "http://ss64.com/nt/set.html"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 2
+        }
+      },
+      "88116d67-e9f5-4efb-a864-c4e6b522171b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106774,
+          "id": "88116d67-e9f5-4efb-a864-c4e6b522171b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515060000,
+          "parent_id": "01717086-b140-4529-9074-89a828b17779",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Sets the result variable with the result of a calculation. See also "
+              ],
+              [
+                "#Calculation",
+                [
+                  [
+                    "a",
+                    "https://en.wikibooks.org/wiki/Windows_Batch_Scripting#Calculation"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 6
+        }
+      },
+      "88747bc0-e7dc-465f-955e-c32fb7c07f46": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "38931590-a9ed-4e5f-909b-cb4e8b4a010c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106773,
+          "id": "88747bc0-e7dc-465f-955e-c32fb7c07f46",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515060000,
+          "parent_id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "set"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 6
+        }
+      },
+      "96b4a5cf-bc88-4f7d-8303-f3cbe92a01cf": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515180000,
+          "id": "96b4a5cf-bc88-4f7d-8303-f3cbe92a01cf",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515180000,
+          "parent_id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "parent_table": "block",
+          "type": "text",
+          "version": 5
+        }
+      },
+      "a50e06f1-4cce-45a4-977c-00cab3b53702": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106773,
+          "id": "a50e06f1-4cce-45a4-977c-00cab3b53702",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515060000,
+          "parent_id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "set /P user_input=Enter an integer:"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 2
+        }
+      },
+      "ac148009-469e-4084-b8e7-a9593be57c8c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106773,
+          "id": "ac148009-469e-4084-b8e7-a9593be57c8c",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515060000,
+          "parent_id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Examples:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
+        }
+      },
+      "b79e285d-f09e-4c7a-9803-c361d68f1e63": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106774,
+          "id": "b79e285d-f09e-4c7a-9803-c361d68f1e63",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515060000,
+          "parent_id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Links:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
+        }
+      },
+      "e387f840-2424-4a10-a814-576335e94628": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "63c6f821-18b6-48e5-be69-51c6982f624f"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552515106773,
+          "id": "e387f840-2424-4a10-a814-576335e94628",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552515060000,
+          "parent_id": "540c344e-1358-419f-b62f-f4cc35e604b8",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "set HOME"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 2
+        }
+      },
+      "ea84bde7-ed4e-4353-bdc6-ae44125abc08": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "846c7623-625e-434b-b3c4-81641bf2e016",
+            "cac61c91-5fce-40c8-9a25-c98ec229c5d6",
+            "98bc3672-36ef-4855-9db5-89eddaa811ff",
+            "01b28cfb-0b9b-4540-9515-334357d5f9bf",
+            "9e2a7d8c-43bb-46f2-9962-b0d2f195e19c",
+            "c70d88ba-e6d5-45b7-a5b5-ca99e777b409",
+            "20d44ad6-fccd-4a04-8e34-64a4dd3d4570",
+            "6a6ffadb-a81b-4cc6-a979-f7e1ee4ea4aa",
+            "2b952cca-7aee-49b2-a4a7-09c4c4ad5aef",
+            "5726d65b-176c-49eb-b21d-2daa271031f9",
+            "f4263820-c2db-41e3-99c7-7259970464f1",
+            "f516efa9-81d9-481c-a425-3d271451381d",
+            "06c65868-038c-4e2a-b219-37d82bebc6c0",
+            "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+            "af2ffcc6-632c-4dad-a420-d99695ca6c10",
+            "47408b41-7b4f-4392-a3bc-79fe552b4895",
+            "dc75afb3-5c16-4e29-a901-8d897be1f452",
+            "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+            "09c16824-5f2e-40d9-9e68-4733fb760091",
+            "34f80a6d-d2c8-4337-9515-97d48e342fec",
+            "f83d6179-5cb7-4a38-996c-d6085d1d63cb",
+            "fde438ab-eea3-4c90-9d22-6a9d31209ee8",
+            "07173684-abd3-4e36-8936-eb4394c0525a"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552466635106,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "ea84bde7-ed4e-4353-bdc6-ae44125abc08",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553725920000,
+          "parent_id": "30101c08-cb01-4289-ab64-d6216d3f0630",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Batch"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 513
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

@@ -1,0 +1,998 @@
+2012 1594557412096 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+      "table": "block"
+    }
+  ]
+}
+Response:+1812
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "30a9a4bd-1193-4037-916e-1b357f84cad1",
+          "582517e2-a2fa-4727-98eb-a0e81552ce3f",
+          "bc49d218-d1e7-4bcc-bd0a-25d90497b928",
+          "c59ee9ca-fd01-4c98-87e7-dba62a95e1de",
+          "88d26a15-86a0-4f0c-bb6b-4820dda8d7e7",
+          "5d3f0728-e494-471e-b0c2-30cc392b9820",
+          "80f1cacf-99df-4ab7-bae7-3ea51b3adef9",
+          "ba996801-0329-4422-9164-6a118af5c41b",
+          "48ba5864-77c2-4863-9fac-dd839eb79a5a",
+          "30806598-89f2-4d41-8079-6d555b494691",
+          "1017dddf-ae38-41bf-926d-b0563ad0c2e1",
+          "d35d25a5-e8b6-4488-9f60-d08d0ef52b76",
+          "7e7b7ffc-be45-4750-ac8b-d5a25da9958d",
+          "ce4949d2-cb91-4daf-8b6e-ad3e9cc42461",
+          "4e9cd5e5-188f-4f70-98f4-38e81ae91fa0"
+        ],
+        "copied_from": "bbb8455e-fd1a-49c0-b415-045c1843d014",
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552534973310,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552539840000,
+        "parent_id": "ea84bde7-ed4e-4353-bdc6-ae44125abc08",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Perl one-liners"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 16
+      }
+    }
+  ]
+}
+33106 1594557412096 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+  "verticalColumns": false
+}
+Response:+32865
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "05173063-0724-4b83-8e2d-4fd7db5ea377": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "05173063-0724-4b83-8e2d-4fd7db5ea377",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973310,
+          "parent_id": "80f1cacf-99df-4ab7-bae7-3ea51b3adef9",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Waits for 5 seconds."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "1017dddf-ae38-41bf-926d-b0563ad0c2e1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "1017dddf-ae38-41bf-926d-b0563ad0c2e1",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539720000,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "On the web, Perl one-liners are often posted in the command-line conventions of another operating system, including the use of apostrophe ("
+              ],
+              [
+                "'",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ") to surround the arguments instead of Windows quotation marks. These need to be tweaked for Windows."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 7
+        }
+      },
+      "2e789097-04e0-40b4-99a4-cc2b6bfd94f3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "2e789097-04e0-40b4-99a4-cc2b6bfd94f3",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539840000,
+          "parent_id": "48ba5864-77c2-4863-9fac-dd839eb79a5a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Outputs the text content of the clipboard. When stored to getclip.bat, yields a handy getclip command to complement "
+              ],
+              [
+                "CLIP",
+                [
+                  [
+                    "a",
+                    "https://www.notion.so/kjkpublic/CLIP-77e3c76c1850453db8d9cff9f65e5a0d"
+                  ]
+                ]
+              ],
+              [
+                " command."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 4
+        }
+      },
+      "30806598-89f2-4d41-8079-6d555b494691": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "46591fd4-e338-40c0-829e-3c0c6315a78f"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "30806598-89f2-4d41-8079-6d555b494691",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539720000,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "perl -MText::Diff -e \"print diff 'File1.txt', 'File2.txt'\"",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 7
+        }
+      },
+      "30a9a4bd-1193-4037-916e-1b357f84cad1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "30a9a4bd-1193-4037-916e-1b357f84cad1",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973310,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Some tasks can be conveniently achieved with Perl one-liners. Perl is a scripting language originating in the environment of another operating system. Since many Windows computing environments have Perl installed, Perl one-liners are a natural and compact extension of Windows batch scripting."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "46591fd4-e338-40c0-829e-3c0c6315a78f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "46591fd4-e338-40c0-829e-3c0c6315a78f",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973310,
+          "parent_id": "30806598-89f2-4d41-8079-6d555b494691",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Outputs differences between two files in a format similar to diff command known from other operating systems, including context lines, lines starting with + and lines starting with -."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "48ba5864-77c2-4863-9fac-dd839eb79a5a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "2e789097-04e0-40b4-99a4-cc2b6bfd94f3"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "48ba5864-77c2-4863-9fac-dd839eb79a5a",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539720000,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "perl -MWin32::Clipboard -e \"print Win32::Clipboard-\u003eGet()\"",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 7
+        }
+      },
+      "4e9cd5e5-188f-4f70-98f4-38e81ae91fa0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "4e9cd5e5-188f-4f70-98f4-38e81ae91fa0",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973310,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "W:One-liner program#Perl",
+                [
+                  [
+                    "a",
+                    "https://en.wikipedia.org/wiki/One-liner_program#Perl"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "582517e2-a2fa-4727-98eb-a0e81552ce3f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "582517e2-a2fa-4727-98eb-a0e81552ce3f",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973310,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Examples:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "59cc2402-6230-4080-ae45-874e713fc41d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "59cc2402-6230-4080-ae45-874e713fc41d",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539840000,
+          "parent_id": "c59ee9ca-fd01-4c98-87e7-dba62a95e1de",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Lets Perl act as cut command, displaying the 2nd field or column of the line, in this case b. Use "
+              ],
+              [
+                "$F[2]",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " to display 3rd field; indexing starts at zero. Native solution: "
+              ],
+              [
+                "FOR",
+                [
+                  [
+                    "a",
+                    "https://www.notion.so/kjkpublic/FOR-bad676c158e747ff96145309fead1b63"
+                  ],
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " /f",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 11
+        }
+      },
+      "5d3f0728-e494-471e-b0c2-30cc392b9820": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "a16e9567-2c93-43e4-9862-5de0b6fa0a4a"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "5d3f0728-e494-471e-b0c2-30cc392b9820",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539720000,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "perl -ne \"$. \u003c= 10 and print\" MyFile.txt",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      },
+      "7e7b7ffc-be45-4750-ac8b-d5a25da9958d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "7e7b7ffc-be45-4750-ac8b-d5a25da9958d",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973310,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Perl One-Liners by Peteris Krumins at github.com",
+                [
+                  [
+                    "a",
+                    "https://gist.github.com/mischapeters/1e8eef09a0aafd4f24f0"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "80f1cacf-99df-4ab7-bae7-3ea51b3adef9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "05173063-0724-4b83-8e2d-4fd7db5ea377"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "80f1cacf-99df-4ab7-bae7-3ea51b3adef9",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539720000,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "perl -e \"sleep 5\"",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 7
+        }
+      },
+      "88d26a15-86a0-4f0c-bb6b-4820dda8d7e7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "acb15044-0b68-44bd-8ae7-b8af3aa24c7c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "88d26a15-86a0-4f0c-bb6b-4820dda8d7e7",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539720000,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "perl -ne \"print if /\\x22hello\\x22/\" file.txt",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 7
+        }
+      },
+      "a16e9567-2c93-43e4-9862-5de0b6fa0a4a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "a16e9567-2c93-43e4-9862-5de0b6fa0a4a",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973310,
+          "parent_id": "5d3f0728-e494-471e-b0c2-30cc392b9820",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Lets Perl act as head -10 command, outputting the first 10 lines of the file."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "acb15044-0b68-44bd-8ae7-b8af3aa24c7c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "acb15044-0b68-44bd-8ae7-b8af3aa24c7c",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539780000,
+          "parent_id": "88d26a15-86a0-4f0c-bb6b-4820dda8d7e7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Acts as grep or "
+              ],
+              [
+                "FINDSTR",
+                [
+                  [
+                    "a",
+                    "https://www.notion.so/kjkpublic/FINDSTR-bf58a8295a724f53ae050c0932e819c9"
+                  ]
+                ]
+              ],
+              [
+                ", outputting the lines in "
+              ],
+              [
+                "file.txt",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " that match the regular expression after if. Uses the powerful Perl regular expressions, more powerful than those of "
+              ],
+              [
+                "FINDSTR",
+                [
+                  [
+                    "a",
+                    "https://www.notion.so/kjkpublic/FINDSTR-bf58a8295a724f53ae050c0932e819c9"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 7
+        }
+      },
+      "ba996801-0329-4422-9164-6a118af5c41b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "f36e78fe-48d3-4381-baab-5ecc250f7639"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "ba996801-0329-4422-9164-6a118af5c41b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539720000,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "for /f %i in ('perl -MPOSIX -le \"print strftime '%Y-%m-%d', localtime\"') do @set isodate=%i",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      },
+      "bc49d218-d1e7-4bcc-bd0a-25d90497b928": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "f15cb1ec-bd9a-4287-ab7c-b5faca8f8bda"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "bc49d218-d1e7-4bcc-bd0a-25d90497b928",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539720000,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "echo \"abcbbc\"| perl -pe \"s/a.*?c/ac/\"",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      },
+      "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "30a9a4bd-1193-4037-916e-1b357f84cad1",
+            "582517e2-a2fa-4727-98eb-a0e81552ce3f",
+            "bc49d218-d1e7-4bcc-bd0a-25d90497b928",
+            "c59ee9ca-fd01-4c98-87e7-dba62a95e1de",
+            "88d26a15-86a0-4f0c-bb6b-4820dda8d7e7",
+            "5d3f0728-e494-471e-b0c2-30cc392b9820",
+            "80f1cacf-99df-4ab7-bae7-3ea51b3adef9",
+            "ba996801-0329-4422-9164-6a118af5c41b",
+            "48ba5864-77c2-4863-9fac-dd839eb79a5a",
+            "30806598-89f2-4d41-8079-6d555b494691",
+            "1017dddf-ae38-41bf-926d-b0563ad0c2e1",
+            "d35d25a5-e8b6-4488-9f60-d08d0ef52b76",
+            "7e7b7ffc-be45-4750-ac8b-d5a25da9958d",
+            "ce4949d2-cb91-4daf-8b6e-ad3e9cc42461",
+            "4e9cd5e5-188f-4f70-98f4-38e81ae91fa0"
+          ],
+          "copied_from": "bbb8455e-fd1a-49c0-b415-045c1843d014",
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539840000,
+          "parent_id": "ea84bde7-ed4e-4353-bdc6-ae44125abc08",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Perl one-liners"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 16
+        }
+      },
+      "c59ee9ca-fd01-4c98-87e7-dba62a95e1de": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "59cc2402-6230-4080-ae45-874e713fc41d"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "c59ee9ca-fd01-4c98-87e7-dba62a95e1de",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539720000,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "echo a b| perl -lane \"print $F[1]\"",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      },
+      "ce4949d2-cb91-4daf-8b6e-ad3e9cc42461": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "ce4949d2-cb91-4daf-8b6e-ad3e9cc42461",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973310,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Why doesn't my Perl one-liner work on Windows? at stackoverflow.com",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/questions/660624/why-doesnt-my-perl-one-liner-work-on-windows"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "d35d25a5-e8b6-4488-9f60-d08d0ef52b76": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "d35d25a5-e8b6-4488-9f60-d08d0ef52b76",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973310,
+          "parent_id": "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Links:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ea84bde7-ed4e-4353-bdc6-ae44125abc08": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "846c7623-625e-434b-b3c4-81641bf2e016",
+            "cac61c91-5fce-40c8-9a25-c98ec229c5d6",
+            "98bc3672-36ef-4855-9db5-89eddaa811ff",
+            "01b28cfb-0b9b-4540-9515-334357d5f9bf",
+            "9e2a7d8c-43bb-46f2-9962-b0d2f195e19c",
+            "c70d88ba-e6d5-45b7-a5b5-ca99e777b409",
+            "20d44ad6-fccd-4a04-8e34-64a4dd3d4570",
+            "6a6ffadb-a81b-4cc6-a979-f7e1ee4ea4aa",
+            "2b952cca-7aee-49b2-a4a7-09c4c4ad5aef",
+            "5726d65b-176c-49eb-b21d-2daa271031f9",
+            "f4263820-c2db-41e3-99c7-7259970464f1",
+            "f516efa9-81d9-481c-a425-3d271451381d",
+            "06c65868-038c-4e2a-b219-37d82bebc6c0",
+            "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+            "af2ffcc6-632c-4dad-a420-d99695ca6c10",
+            "47408b41-7b4f-4392-a3bc-79fe552b4895",
+            "dc75afb3-5c16-4e29-a901-8d897be1f452",
+            "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+            "09c16824-5f2e-40d9-9e68-4733fb760091",
+            "34f80a6d-d2c8-4337-9515-97d48e342fec",
+            "f83d6179-5cb7-4a38-996c-d6085d1d63cb",
+            "fde438ab-eea3-4c90-9d22-6a9d31209ee8",
+            "07173684-abd3-4e36-8936-eb4394c0525a"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552466635106,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "ea84bde7-ed4e-4353-bdc6-ae44125abc08",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553725920000,
+          "parent_id": "30101c08-cb01-4289-ab64-d6216d3f0630",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Batch"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 513
+        }
+      },
+      "f15cb1ec-bd9a-4287-ab7c-b5faca8f8bda": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "f15cb1ec-bd9a-4287-ab7c-b5faca8f8bda",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973310,
+          "parent_id": "bc49d218-d1e7-4bcc-bd0a-25d90497b928",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Lets Perl act as sed, the utility that supports textual replacements specified using regular expressions."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "f36e78fe-48d3-4381-baab-5ecc250f7639": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973310,
+          "id": "f36e78fe-48d3-4381-baab-5ecc250f7639",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539840000,
+          "parent_id": "ba996801-0329-4422-9164-6a118af5c41b",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Gets current date in the ISO format into "
+              ],
+              [
+                "isodate",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " variable."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

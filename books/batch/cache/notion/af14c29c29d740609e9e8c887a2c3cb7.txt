@@ -1,0 +1,930 @@
+1760 1594557411111 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+      "table": "block"
+    }
+  ]
+}
+Response:+1560
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "43ea8187-51eb-4128-a325-6c4b3effe702",
+          "6ef2dbaf-b3aa-47e7-83c6-7e4b49c3ed93",
+          "8a306283-43e7-4298-8eed-27ce8aa28852",
+          "d624f190-1e98-4cf0-afc6-a1636cb9b6f1",
+          "a0e556a4-01b9-44b1-a1d0-dcc476518769",
+          "eb441360-5f51-43bc-8421-3f18ae04d56a",
+          "a84abde8-8e23-4e80-8e89-df9b2199d2ee",
+          "ef63f8f9-87c3-4d7d-a0d0-9f6e85dc0e17",
+          "5d90ac85-28a0-4b10-bd5a-0a899d54abfd",
+          "80216195-afa3-4925-960f-ec2762501ced"
+        ],
+        "copied_from": "cee02a02-a03d-425f-b83c-6268da2021d4",
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552534973234,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552539420000,
+        "parent_id": "ea84bde7-ed4e-4353-bdc6-ae44125abc08",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Finding files"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 16
+      }
+    }
+  ]
+}
+29632 1594557411111 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+  "verticalColumns": false
+}
+Response:+29391
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "183748df-34da-421f-aaac-769d4f4955c3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "183748df-34da-421f-aaac-769d4f4955c3",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539360000,
+          "parent_id": "80216195-afa3-4925-960f-ec2762501ced",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Outputs all .bat files in the current directory and in the directories that are in "
+              ],
+              [
+                "PATH",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 7
+        }
+      },
+      "3cec0865-cbbc-4e40-89f3-002ac756336b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "3cec0865-cbbc-4e40-89f3-002ac756336b",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539420000,
+          "parent_id": "a84abde8-8e23-4e80-8e89-df9b2199d2ee",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Searching the current folder recursively, outputs files whose last modification date is in year 2015. Places the modification date and time, followed by a double colon, before the file name. Works as long as the used version of Windows and locale displays dates in a format that contains four-digit years. The double colon is used to make sure the "
+              ],
+              [
+                "findstr",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " command is matching the date and not the file name."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      },
+      "43ea8187-51eb-4128-a325-6c4b3effe702": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "43ea8187-51eb-4128-a325-6c4b3effe702",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539360000,
+          "parent_id": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Files can be found using "
+              ],
+              [
+                "DIR",
+                [
+                  [
+                    "a",
+                    "https://www.notion.so/kjkpublic/DIR-4e5fd41eb3a5414db425f8f666a4b16e"
+                  ]
+                ]
+              ],
+              [
+                ", "
+              ],
+              [
+                "FOR",
+                [
+                  [
+                    "a",
+                    "https://www.notion.so/kjkpublic/FOR-bad676c158e747ff96145309fead1b63"
+                  ]
+                ]
+              ],
+              [
+                ", "
+              ],
+              [
+                "FINDSTR",
+                [
+                  [
+                    "a",
+                    "https://www.notion.so/kjkpublic/FINDSTR-bf58a8295a724f53ae050c0932e819c9"
+                  ]
+                ]
+              ],
+              [
+                ", "
+              ],
+              [
+                "FORFILES",
+                [
+                  [
+                    "a",
+                    "https://www.notion.so/kjkpublic/FORFILES-46e2c40d44a642d7b82ca118d85c5cb9"
+                  ]
+                ]
+              ],
+              [
+                ", and "
+              ],
+              [
+                "WHERE",
+                [
+                  [
+                    "a",
+                    "https://www.notion.so/kjkpublic/WHERE-a5c28a60ed5149e3894ea7d8c3c8fd8d"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 18
+        }
+      },
+      "46191f2e-8835-45f4-9fb2-99df3d08e695": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "46191f2e-8835-45f4-9fb2-99df3d08e695",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539420000,
+          "parent_id": "eb441360-5f51-43bc-8421-3f18ae04d56a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "For each file in the current folder and its sub-folders modified on 10 June 2015 or later, outputs the file modification date and full file path. The date format after "
+              ],
+              [
+                "/d",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is locale specific. Thus, allows to find most recently modified files."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 4
+        }
+      },
+      "50980b43-ae4c-4617-b79b-22820810bca4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "50980b43-ae4c-4617-b79b-22820810bca4",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539420000,
+          "parent_id": "8a306283-43e7-4298-8eed-27ce8aa28852",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Outputs all files in the current folder and its sub-folders such that the file name before the extension contains the word "
+              ],
+              [
+                "base",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and whose extension starts with "
+              ],
+              [
+                "doc",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", which includes "
+              ],
+              [
+                "doc",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "docx",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". The files are output with full paths, one file per line."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 15
+        }
+      },
+      "5d90ac85-28a0-4b10-bd5a-0a899d54abfd": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "a3394eb1-fed7-40c4-ac85-ba8b250057d6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "5d90ac85-28a0-4b10-bd5a-0a899d54abfd",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973234,
+          "parent_id": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "findstr /i /s /m cat.*mat *.txt",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "6098aeaf-f1f8-4d87-b1ab-19dfc2eaae0d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "6098aeaf-f1f8-4d87-b1ab-19dfc2eaae0d",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973234,
+          "parent_id": "ef63f8f9-87c3-4d7d-a0d0-9f6e85dc0e17",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "As above, outputs files changed in 2015. Unlike the above, only outputs the files, not the modification dates."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "6ef2dbaf-b3aa-47e7-83c6-7e4b49c3ed93": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "6ef2dbaf-b3aa-47e7-83c6-7e4b49c3ed93",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973234,
+          "parent_id": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Examples:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "80216195-afa3-4925-960f-ec2762501ced": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "183748df-34da-421f-aaac-769d4f4955c3"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "80216195-afa3-4925-960f-ec2762501ced",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973234,
+          "parent_id": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "where *.bat",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "8a306283-43e7-4298-8eed-27ce8aa28852": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "50980b43-ae4c-4617-b79b-22820810bca4"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "8a306283-43e7-4298-8eed-27ce8aa28852",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973234,
+          "parent_id": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "dir /b /s *base*.doc*",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "96db10f0-dacf-406d-bd7d-7f160fe1e9a8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "96db10f0-dacf-406d-bd7d-7f160fe1e9a8",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539420000,
+          "parent_id": "a0e556a4-01b9-44b1-a1d0-dcc476518769",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "For each file in the current folder and its sub-folders that has the size greater than or equal to 1,000,000 bytes, outputs the file size in bytes and the full path of the file. For the syntax in "
+              ],
+              [
+                "%~zi",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", see "
+              ],
+              [
+                "percent tilde",
+                [
+                  [
+                    "a",
+                    "https://www.notion.so/kjkpublic/percent-tilde-f4263820c2db41e399c77259970464f1"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 12
+        }
+      },
+      "a0e556a4-01b9-44b1-a1d0-dcc476518769": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "96db10f0-dacf-406d-bd7d-7f160fe1e9a8"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "a0e556a4-01b9-44b1-a1d0-dcc476518769",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973234,
+          "parent_id": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "for /r %i in (*) do @if %~zi geq 1000000 echo %~zi %i",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "a3394eb1-fed7-40c4-ac85-ba8b250057d6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "a3394eb1-fed7-40c4-ac85-ba8b250057d6",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539420000,
+          "parent_id": "5d90ac85-28a0-4b10-bd5a-0a899d54abfd",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Finds files by their content. Performs a full text search for regular expression cat.*mat in files with names ending in "
+              ],
+              [
+                ".txt",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", and outputs the files names. The "
+              ],
+              [
+                "/m",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " switch ensures only the file names are output."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 4
+        }
+      },
+      "a84abde8-8e23-4e80-8e89-df9b2199d2ee": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "3cec0865-cbbc-4e40-89f3-002ac756336b"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "a84abde8-8e23-4e80-8e89-df9b2199d2ee",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973234,
+          "parent_id": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "(for /r %i in (*) do @echo %~ti :: %i) | findstr 2015.*::",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "af14c29c-29d7-4060-9e9e-8c887a2c3cb7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "43ea8187-51eb-4128-a325-6c4b3effe702",
+            "6ef2dbaf-b3aa-47e7-83c6-7e4b49c3ed93",
+            "8a306283-43e7-4298-8eed-27ce8aa28852",
+            "d624f190-1e98-4cf0-afc6-a1636cb9b6f1",
+            "a0e556a4-01b9-44b1-a1d0-dcc476518769",
+            "eb441360-5f51-43bc-8421-3f18ae04d56a",
+            "a84abde8-8e23-4e80-8e89-df9b2199d2ee",
+            "ef63f8f9-87c3-4d7d-a0d0-9f6e85dc0e17",
+            "5d90ac85-28a0-4b10-bd5a-0a899d54abfd",
+            "80216195-afa3-4925-960f-ec2762501ced"
+          ],
+          "copied_from": "cee02a02-a03d-425f-b83c-6268da2021d4",
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539420000,
+          "parent_id": "ea84bde7-ed4e-4353-bdc6-ae44125abc08",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Finding files"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 16
+        }
+      },
+      "d624f190-1e98-4cf0-afc6-a1636cb9b6f1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "f5f3d594-9555-4cdc-ab81-26e40bbb7d74"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "d624f190-1e98-4cf0-afc6-a1636cb9b6f1",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973234,
+          "parent_id": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "dir /b /s *.txt | findstr /i pers.*doc",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "ea84bde7-ed4e-4353-bdc6-ae44125abc08": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "846c7623-625e-434b-b3c4-81641bf2e016",
+            "cac61c91-5fce-40c8-9a25-c98ec229c5d6",
+            "98bc3672-36ef-4855-9db5-89eddaa811ff",
+            "01b28cfb-0b9b-4540-9515-334357d5f9bf",
+            "9e2a7d8c-43bb-46f2-9962-b0d2f195e19c",
+            "c70d88ba-e6d5-45b7-a5b5-ca99e777b409",
+            "20d44ad6-fccd-4a04-8e34-64a4dd3d4570",
+            "6a6ffadb-a81b-4cc6-a979-f7e1ee4ea4aa",
+            "2b952cca-7aee-49b2-a4a7-09c4c4ad5aef",
+            "5726d65b-176c-49eb-b21d-2daa271031f9",
+            "f4263820-c2db-41e3-99c7-7259970464f1",
+            "f516efa9-81d9-481c-a425-3d271451381d",
+            "06c65868-038c-4e2a-b219-37d82bebc6c0",
+            "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+            "af2ffcc6-632c-4dad-a420-d99695ca6c10",
+            "47408b41-7b4f-4392-a3bc-79fe552b4895",
+            "dc75afb3-5c16-4e29-a901-8d897be1f452",
+            "bdb9a0ce-e7bf-4ca0-9a8b-b650e6e2cad7",
+            "09c16824-5f2e-40d9-9e68-4733fb760091",
+            "34f80a6d-d2c8-4337-9515-97d48e342fec",
+            "f83d6179-5cb7-4a38-996c-d6085d1d63cb",
+            "fde438ab-eea3-4c90-9d22-6a9d31209ee8",
+            "07173684-abd3-4e36-8936-eb4394c0525a"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552466635106,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "ea84bde7-ed4e-4353-bdc6-ae44125abc08",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1553725920000,
+          "parent_id": "30101c08-cb01-4289-ab64-d6216d3f0630",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential Batch"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 513
+        }
+      },
+      "eb441360-5f51-43bc-8421-3f18ae04d56a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "46191f2e-8835-45f4-9fb2-99df3d08e695"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "eb441360-5f51-43bc-8421-3f18ae04d56a",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973234,
+          "parent_id": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "forfiles /s /d 06/10/2015 /c \"cmd /c echo @fdate @path\"",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "ef63f8f9-87c3-4d7d-a0d0-9f6e85dc0e17": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "6098aeaf-f1f8-4d87-b1ab-19dfc2eaae0d"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "ef63f8f9-87c3-4d7d-a0d0-9f6e85dc0e17",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552534973234,
+          "parent_id": "af14c29c-29d7-4060-9e9e-8c887a2c3cb7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "for /r %i in (*) do @echo %~ti | findstr 2015 \u003eNUL \u0026\u0026 echo %i",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "f5f3d594-9555-4cdc-ab81-26e40bbb7d74": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552534973234,
+          "id": "f5f3d594-9555-4cdc-ab81-26e40bbb7d74",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552539420000,
+          "parent_id": "d624f190-1e98-4cf0-afc6-a1636cb9b6f1",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Combines the result of outputting files including their complete paths with the "
+              ],
+              [
+                "findstr",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " filtering command supporting limited regular expressions, yielding a versatile and powerful combination for finding files by names and the names of their directories."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 3
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
