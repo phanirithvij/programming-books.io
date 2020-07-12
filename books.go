@@ -1,5 +1,7 @@
 package main
 
+import "strings"
+
 var (
 	bookGo = &Book{
 		Title:          "Go",
@@ -298,3 +300,14 @@ var (
 	}
 	allBooks = append(booksMain, booksUnpublished...)
 )
+
+func findBook(name string) *Book {
+	name = strings.ToLower(name)
+	for _, book := range allBooks {
+		if book.Dir == name {
+			return book
+		}
+	}
+	panicIf(true, "didn't find book with name '%s'", name)
+	return nil
+}

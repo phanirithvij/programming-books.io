@@ -208,3 +208,50 @@ func shiftLines(lines []string) {
 		lines[i] = line[toRemove:]
 	}
 }
+
+var (
+	softErrorMode bool
+	delayedErrors []string
+
+	totalHTMLBytes         int
+	totalHTMLBytesMinified int
+)
+
+func maybePanicIfErr(err error) {
+	if err == nil {
+		return
+	}
+	if !softErrorMode {
+		u.Must(err)
+	}
+	delayedErrors = append(delayedErrors, err.Error())
+}
+
+func clearErrors() {
+	delayedErrors = nil
+	totalHTMLBytes = 0
+	totalHTMLBytesMinified = 0
+}
+
+func printAndClearErrors() {
+	fmt.Printf("HTML: optimized %d => %d (saved %d bytes)\n", totalHTMLBytes, totalHTMLBytesMinified, totalHTMLBytes-totalHTMLBytesMinified)
+	if len(delayedErrors) == 0 {
+		return
+	}
+	errStr := strings.Join(delayedErrors, "\n")
+	fmt.Printf("\n%d errors:\n%s\n\n", len(delayedErrors), errStr)
+	clearErrors()
+}
+
+func createDirForFileMaybeMust(path string) {
+	dir := filepath.Dir(path)
+	err := os.MkdirAll(dir, 0755)
+	maybePanicIfErr(err)
+}
+
+func copyFileMaybeMust(dst, src string) error {
+	createDirForFileMaybeMust(dst)
+	err := u.CopyFile(dst, src)
+	maybePanicIfErr(err)
+	return err
+}

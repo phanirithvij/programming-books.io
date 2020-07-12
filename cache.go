@@ -81,6 +81,15 @@ func (c *Cache) loadGist(rec *siser.Record) {
 	c.gists = append(c.gists, gist)
 }
 
+func (c *Cache) getGistByID(id string) *CacheGist {
+	for _, r := range c.gists {
+		if r.ID == id {
+			return r
+		}
+	}
+	return nil
+}
+
 func (c *Cache) saveGistOutput(gist, output string) {
 	rec := &siser.Record{
 		Name: recNameGistOutput,
@@ -110,6 +119,15 @@ func (c *Cache) loadGistOutput(rec *siser.Record) {
 		Sha1:   sha1,
 	}
 	c.gistOutputs = append(c.gistOutputs, gout)
+}
+
+func (c *Cache) getGistOuputBySha1(sha1 string) *CacheGistOutput {
+	for _, r := range c.gistOutputs {
+		if sha1 == r.Sha1 {
+			return r
+		}
+	}
+	return nil
 }
 
 func loadCache(path string) *Cache {
