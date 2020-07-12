@@ -1,0 +1,1259 @@
+2596 1594557744864 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "71bc0573-65a0-407c-a747-12834d62e624",
+      "table": "block"
+    }
+  ]
+}
+Response:+2396
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "5e712cc0-3dfe-4666-b5dc-1829a8059a92",
+          "0549351e-9498-4238-b151-5869b6db0082",
+          "4beca543-881b-4e37-8c7c-9a47099f9cba",
+          "560b55f9-8a14-4340-9737-4a601534a13b",
+          "d8b3ec7a-08fd-4f84-8fab-fc8604f53f66",
+          "bf21b5c8-611d-4fc1-944e-9cdf93573457",
+          "4403646b-64fd-417d-a76d-ef59dfb71ad6",
+          "ab4e3acd-ab6d-45b2-a708-5fa02bcfb0a6",
+          "78e12779-563f-41a0-922f-4da6dbe844bb",
+          "55b74721-cec5-4dd0-8c6c-0aa13a7bb227",
+          "5f690b15-901a-4d22-8e6c-a28231397b99",
+          "bb14f00c-1b7b-4f2e-a7aa-eab7f409985b",
+          "2bfa7305-451d-47eb-84f4-5f7433ceb31f",
+          "92df3728-d559-4a8a-b038-67f6e525e172",
+          "e0f219ce-fad7-4a0a-b5fa-9b6fab46816a",
+          "b6548048-cd31-46f9-9c8b-fed34e047306",
+          "19d9d117-2d8c-4415-a4c7-606135cdf5c4",
+          "65036f69-2c37-46f8-9649-1850875f1e6c",
+          "2c4d0ccd-a583-4ee1-a20e-38ba9e0b0947",
+          "677458e2-34c7-43bb-96be-0ee862ad574e",
+          "8cff549d-db8c-43cd-b1a3-7723cfe747a0",
+          "63dcbefe-d554-47bc-afb0-82aed65daa49",
+          "8e6e5091-647a-48a2-abad-bdd313ca00fa",
+          "5338f988-e30a-4607-a833-a08ff5519a67",
+          "5c697ac3-9da6-4f52-a341-4f41411c4aab",
+          "bc622e74-00a2-49b8-a135-aa8214234ad8",
+          "043cfd66-7427-4934-8c10-bb58a96a1ba3"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1552024474180,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "71bc0573-65a0-407c-a747-12834d62e624",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1552024474180,
+        "parent_id": "e4e32393-007a-4cd6-b1f8-27b0cb8545c5",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Classification using PHP-ML"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 3
+      }
+    }
+  ]
+}
+45146 1594557744865 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "71bc0573-65a0-407c-a747-12834d62e624",
+  "verticalColumns": false
+}
+Response:+44905
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "043cfd66-7427-4934-8c10-bb58a96a1ba3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474179,
+          "id": "043cfd66-7427-4934-8c10-bb58a96a1ba3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474179,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Suppose you have an application that stores characteristics of flowers in nature. For the sake of simplicity we can consider the color and length of petals. So there two characteristics would be used to train our data. color is the simpler one where you can assign an int value to each of them and for length, you can have a range like (0 mm,10 mm)=1 , (10 mm,20 mm)=2. With the initial data train your classifier. Now one of your user needs identify the kind of flower that grows in his backyard. What he does is select the color of the flower and adds the length of the petals. You classifier running can detect the type of flower (“Labels in example above”)"
+              ]
+            ]
+          },
+          "type": "quote",
+          "version": 1
+        }
+      },
+      "0549351e-9498-4238-b151-5869b6db0082": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474174,
+          "id": "0549351e-9498-4238-b151-5869b6db0082",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474174,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Any algorithm that implements classification is known as classifier"
+              ]
+            ]
+          },
+          "type": "quote",
+          "version": 1
+        }
+      },
+      "19d9d117-2d8c-4415-a4c7-606135cdf5c4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474176,
+          "id": "19d9d117-2d8c-4415-a4c7-606135cdf5c4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474176,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "$classifier = new KNearestNeighbors($neighbor_num=4);\n$classifier = new KNearestNeighbors($neighbor_num=3, new Minkowski($lambda=4));"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "2bfa7305-451d-47eb-84f4-5f7433ceb31f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474176,
+          "id": "2bfa7305-451d-47eb-84f4-5f7433ceb31f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474176,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "$classifier-\u003epredict([3, 2]); // return 'b'\n$classifier-\u003epredict([[3, 2], [1, 5]]); // return ['b', 'a']"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "2c4d0ccd-a583-4ee1-a20e-38ba9e0b0947": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474179,
+          "id": "2c4d0ccd-a583-4ee1-a20e-38ba9e0b0947",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474179,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Following is a short example on how to use this classifier"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "4403646b-64fd-417d-a76d-ef59dfb71ad6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474175,
+          "id": "4403646b-64fd-417d-a76d-ef59dfb71ad6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474175,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The "
+              ],
+              [
+                "train",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "predict",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " method are same for all classifiers. The only difference would be in the underlying algorithm used."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "4beca543-881b-4e37-8c7c-9a47099f9cba": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474174,
+          "id": "4beca543-881b-4e37-8c7c-9a47099f9cba",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474174,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The classifiers supported in PHP-ML are"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "5338f988-e30a-4607-a833-a08ff5519a67": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474179,
+          "id": "5338f988-e30a-4607-a833-a08ff5519a67",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474179,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "// Training data\n$samples = [[5, 1, 1], [1, 5, 1], [1, 1, 5]];\n$labels = ['a', 'b', 'c'];\n\n// Initialize classifier\n$classifier = new NaiveBayes();\n// Train classifier\n$classifier-\u003etrain($samples, $labels);\n\n// Make predictions\n$classifier-\u003epredict([3, 1, 1]); // return 'a'\n$classifier-\u003epredict([[3, 1, 1], [1, 4, 1]); // return ['a', 'b']"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "55b74721-cec5-4dd0-8c6c-0aa13a7bb227": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474175,
+          "id": "55b74721-cec5-4dd0-8c6c-0aa13a7bb227",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474175,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "// Import library\nuse Phpml\\Classification\\SVC;\nuse Phpml\\SupportVectorMachine\\Kernel;\n\n// Data for training classifier\n$samples = [[1, 3], [1, 4], [2, 4], [3, 1], [4, 1], [4, 2]];  // Training samples\n$labels = ['a', 'a', 'a', 'b', 'b', 'b'];\n\n// Initialize the classifier\n$classifier = new SVC(Kernel::LINEAR, $cost = 1000);\n// Train the classifier\n$classifier-\u003etrain($samples, $labels);"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "560b55f9-8a14-4340-9737-4a601534a13b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474174,
+          "id": "560b55f9-8a14-4340-9737-4a601534a13b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474174,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "SVC (Support Vector Classification)"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "5c697ac3-9da6-4f52-a341-4f41411c4aab": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474179,
+          "id": "5c697ac3-9da6-4f52-a341-4f41411c4aab",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474179,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Practical case"
+              ]
+            ]
+          },
+          "type": "sub_header",
+          "version": 1
+        }
+      },
+      "5e712cc0-3dfe-4666-b5dc-1829a8059a92": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474173,
+          "id": "5e712cc0-3dfe-4666-b5dc-1829a8059a92",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474173,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Classification in Machine Learning is the problem that identifies to which set of categories does a new observation belong. Classification falls under the category of "
+              ],
+              [
+                "Supervised Machine Learning",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "5f690b15-901a-4d22-8e6c-a28231397b99": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474175,
+          "id": "5f690b15-901a-4d22-8e6c-a28231397b99",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474175,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The code is pretty straight forward. "
+              ],
+              [
+                "$cost",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " used above is a measure of how much we want to avoid misclassifying each training example. For a smaller value of "
+              ],
+              [
+                "$cost",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " you might get misclassified examples. By default it is set to "
+              ],
+              [
+                "1.0",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "63dcbefe-d554-47bc-afb0-82aed65daa49": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474179,
+          "id": "63dcbefe-d554-47bc-afb0-82aed65daa49",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474179,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "NaiveBayes Classifier",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is based on "
+              ],
+              [
+                "Bayes' theorem",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and does not need any parameters in constructor."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "65036f69-2c37-46f8-9649-1850875f1e6c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474178,
+          "id": "65036f69-2c37-46f8-9649-1850875f1e6c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474178,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "$neighbor_num",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is the number of nearest neighbours to scan in "
+              ],
+              [
+                "knn",
+                [
+                  [
+                    "a",
+                    "https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm"
+                  ]
+                ]
+              ],
+              [
+                " algorithm while the second parameter is distance metric which by default in first case would be "
+              ],
+              [
+                "Euclidean",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ". More on Minkowski can be found "
+              ],
+              [
+                "here",
+                [
+                  [
+                    "a",
+                    "https://en.wikipedia.org/wiki/Minkowski_distance"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "677458e2-34c7-43bb-96be-0ee862ad574e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474179,
+          "id": "677458e2-34c7-43bb-96be-0ee862ad574e",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474179,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "// Training data\n$samples = [[1, 3], [1, 4], [2, 4], [3, 1], [4, 1], [4, 2]];\n$labels = ['a', 'a', 'a', 'b', 'b', 'b'];\n\n// Initialize classifier\n$classifier = new KNearestNeighbors();\n// Train classifier\n$classifier-\u003etrain($samples, $labels);\n\n// Make predictions\n$classifier-\u003epredict([3, 2]); // return 'b'\n$classifier-\u003epredict([[3, 2], [1, 5]]); // return ['b', 'a']"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      },
+      "71bc0573-65a0-407c-a747-12834d62e624": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "5e712cc0-3dfe-4666-b5dc-1829a8059a92",
+            "0549351e-9498-4238-b151-5869b6db0082",
+            "4beca543-881b-4e37-8c7c-9a47099f9cba",
+            "560b55f9-8a14-4340-9737-4a601534a13b",
+            "d8b3ec7a-08fd-4f84-8fab-fc8604f53f66",
+            "bf21b5c8-611d-4fc1-944e-9cdf93573457",
+            "4403646b-64fd-417d-a76d-ef59dfb71ad6",
+            "ab4e3acd-ab6d-45b2-a708-5fa02bcfb0a6",
+            "78e12779-563f-41a0-922f-4da6dbe844bb",
+            "55b74721-cec5-4dd0-8c6c-0aa13a7bb227",
+            "5f690b15-901a-4d22-8e6c-a28231397b99",
+            "bb14f00c-1b7b-4f2e-a7aa-eab7f409985b",
+            "2bfa7305-451d-47eb-84f4-5f7433ceb31f",
+            "92df3728-d559-4a8a-b038-67f6e525e172",
+            "e0f219ce-fad7-4a0a-b5fa-9b6fab46816a",
+            "b6548048-cd31-46f9-9c8b-fed34e047306",
+            "19d9d117-2d8c-4415-a4c7-606135cdf5c4",
+            "65036f69-2c37-46f8-9649-1850875f1e6c",
+            "2c4d0ccd-a583-4ee1-a20e-38ba9e0b0947",
+            "677458e2-34c7-43bb-96be-0ee862ad574e",
+            "8cff549d-db8c-43cd-b1a3-7723cfe747a0",
+            "63dcbefe-d554-47bc-afb0-82aed65daa49",
+            "8e6e5091-647a-48a2-abad-bdd313ca00fa",
+            "5338f988-e30a-4607-a833-a08ff5519a67",
+            "5c697ac3-9da6-4f52-a341-4f41411c4aab",
+            "bc622e74-00a2-49b8-a135-aa8214234ad8",
+            "043cfd66-7427-4934-8c10-bb58a96a1ba3"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474180,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474180,
+          "parent_id": "e4e32393-007a-4cd6-b1f8-27b0cb8545c5",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Classification using PHP-ML"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 3
+        }
+      },
+      "78e12779-563f-41a0-922f-4da6dbe844bb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474175,
+          "id": "78e12779-563f-41a0-922f-4da6dbe844bb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474175,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Before we can start with predicting a new observation, we need to train our classifier. Consider the following code"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "8cff549d-db8c-43cd-b1a3-7723cfe747a0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474179,
+          "id": "8cff549d-db8c-43cd-b1a3-7723cfe747a0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474179,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "NaiveBayes Classifier"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 1
+        }
+      },
+      "8e6e5091-647a-48a2-abad-bdd313ca00fa": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474179,
+          "id": "8e6e5091-647a-48a2-abad-bdd313ca00fa",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474179,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The following code demonstrates a simple prediction implementation"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "92df3728-d559-4a8a-b038-67f6e525e172": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474176,
+          "id": "92df3728-d559-4a8a-b038-67f6e525e172",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474176,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The classifier in the case above can take unclassified samples and predicts there labels. "
+              ],
+              [
+                "predict",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " method can take a single sample as well as an array of samples."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ab4e3acd-ab6d-45b2-a708-5fa02bcfb0a6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474175,
+          "id": "ab4e3acd-ab6d-45b2-a708-5fa02bcfb0a6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474175,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "SVC (Support Vector Classification)"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 1
+        }
+      },
+      "b64d2e8d-06e0-4dbe-a37e-6e7d0e06bb48": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "517c8074-a37c-44fd-8a9c-fb9f3eae1dcb",
+            "494832a4-8019-450b-b43e-04be9e23957c",
+            "eb584d64-0967-460c-a9f1-9d66ff8697ea",
+            "6427ea2b-9d2c-4408-a6ff-9721a6dc9cdc",
+            "78acf98d-751b-413c-b0ef-3d520c041518",
+            "feed5453-5dd0-4311-9546-05916acc717b",
+            "c21e2838-bb88-4a0b-8677-7fd7990427b3",
+            "388890af-6e2d-48b5-8627-8159740b2534",
+            "3df608de-d7c1-4570-8555-90ad35d2817a",
+            "dd3184e6-59de-418c-9116-ab565faa8a55",
+            "3f08c649-08b2-4a97-b43f-ac884356a505",
+            "caabd093-67a6-454d-8e67-b40f2303905b",
+            "1f2707b9-a751-475a-ba82-519f75e3c8bd",
+            "7ea927a4-8c64-45ba-9d71-d5d5796e1b71",
+            "5d759c32-1671-4b6c-9cc1-ad59c031c78c",
+            "d2ac9d43-0e3b-4077-a4f0-344ab77dce28",
+            "8e344e73-ab23-422f-9bc5-1b7a660edb69",
+            "a3705b2a-2c83-4e42-b51b-b58874cdba41",
+            "8b30ba45-a57e-44b5-b6c2-501af4626d35",
+            "6feefd3b-c9d8-4156-84d1-a7c4286028c7",
+            "7862f22e-1011-4a4b-8afd-26b9317e46e3",
+            "27de0930-be0d-4503-9a9b-05150c7d754e",
+            "fcd7e413-e4c3-42f0-b0c5-7a7685e669ee",
+            "37215ea5-9547-43fb-89a7-dc17d26d5671",
+            "10044815-3b9e-4513-8fa0-812a9957a6cc",
+            "73d52685-2f50-4a6a-b764-7a1742062923",
+            "2aee6dcb-0989-4be0-82bb-e36362381d91",
+            "a5af103b-d852-4d05-b5ed-007e9bc6dac6",
+            "0f9ca6e7-305f-414a-9ea4-796bcec6a74b",
+            "640a427d-f7cc-4181-99da-abc56c0ee5c7",
+            "6358c964-0c94-4f8a-a8f5-0b120eed603b",
+            "a2437364-c680-4790-94d6-bb7afe6bbac0",
+            "2a04f54f-cf44-4cd5-bb37-8dc6b9f2f1bd",
+            "98823712-1c98-4a43-8727-0a1d762add3b",
+            "d5ddf8b7-ebe7-43b3-ab49-22492b9f0565",
+            "80fa00b7-710d-4ce0-a406-927876f8600b",
+            "1f9d9197-defa-432c-bc3d-187124d72a2f",
+            "dac99271-1f4b-46ca-8985-d6ddd65e5190",
+            "8c42d3d9-a3bc-48da-bce0-bdcb3b7ce79c",
+            "b27336d9-e12f-4163-b64c-0f3bd43d13e4",
+            "ee791784-c85f-4e7b-a57d-79d4a1fcce89",
+            "ca285753-71c7-41a9-b880-7bf2da161416",
+            "75659e2f-e309-433d-9258-b76662aeb4fb",
+            "9507d5d1-9e19-423b-bb30-e7776757fd1a",
+            "c2cfe994-4a4e-42a5-a1f3-29b806f5c459",
+            "60c1d051-8c78-4c95-aa4e-d6680ae7e1ed",
+            "39389e18-4435-40d2-be30-84d806209e25",
+            "0eabffb2-1a8c-43e6-b5d0-24c02329f9d1",
+            "c09beb38-7179-42f3-a2d1-f4b433238aa0",
+            "e738bef3-04ad-47b8-abdb-d2ff70319024",
+            "20bc9dce-d534-40ff-a8c3-c05e75afd5f6",
+            "4bba2444-204c-4803-8e80-ee10663d08c2",
+            "0a6069ee-9200-41b9-b90f-af0e866b3798",
+            "8aad07a8-ece6-477b-8cf0-8ad575a906a8",
+            "f0aa9c04-6b09-48e8-9f6d-39195ed864c6",
+            "cfd0d40b-7b07-441c-bde3-a5be0d2be41b",
+            "d4c8c201-7f26-48eb-a78f-b18c68723b03",
+            "f49c9bfd-2029-4200-9a4b-8089d428dd89",
+            "0fddad86-8858-4ff5-84b9-18129c56229f",
+            "34fff563-be44-4c2d-9eb5-6171986332d6",
+            "6ba36b23-f2c3-4c8b-a9cc-1cf9cb37def5",
+            "0dddc90f-f179-4221-bf9c-4b41d349abb0",
+            "beea7707-e1f5-4975-b2c8-ded58a7e3771",
+            "98e7c9aa-afb7-47fa-8982-4cbc37642c6c",
+            "19d3a490-e861-442a-bbf8-30380bc306b7",
+            "d8cdf9b0-ae04-41c2-ba75-67fe799b9269",
+            "d5631366-098b-4c90-b10a-4c27cda07738",
+            "50dc657c-d5c2-4a7b-9bac-a72649a034bc",
+            "fd667c80-db70-416a-827b-b1c047fdcd5a",
+            "681c5601-034f-4549-9a89-5da2da43ed1e",
+            "7bb5ac60-6cd4-4c77-b217-3d3c51d66ecc",
+            "057eb94f-bb82-4152-b310-dbb929c85b35",
+            "5c659a09-6a5a-44b5-88cd-2ab2cf5e69de",
+            "7c52c9fa-ae12-4339-a606-1e3e64a5e440",
+            "cee10c4b-aca3-4ae1-bef8-0e0c7958d06b",
+            "8790e424-131f-482d-9f67-2821001d711f",
+            "e4e32393-007a-4cd6-b1f8-27b0cb8545c5",
+            "a7c4d158-bfc6-4651-b97b-cf5908cb435e",
+            "0933ee85-f73c-456d-a664-05037c9050a2",
+            "fdac48d7-3a67-46af-8280-cb49d3eb2900",
+            "1ee62efb-a132-4463-ad88-13047e39701a",
+            "3bb8f2d9-3a30-426a-90e4-c8d89d2b2785",
+            "e0331f63-7a2f-4805-a18a-faecbe9cbd66",
+            "3e614d87-5020-40dc-9e8e-4af5ace88042",
+            "68a6b5ab-d251-4ea1-82a1-afa23f2b4071",
+            "99767f42-6259-4914-8dc4-5d6b25fdc196",
+            "8d36e04e-03e7-4133-81d8-8932cbbd4bc0",
+            "f74395f5-0fb4-4a16-adfe-cd4f56f1c218",
+            "82837995-7012-4d5d-a90f-fdf5f95771a1",
+            "88347a4f-4632-4e18-a9bb-6ff61df8922d",
+            "bd21e71f-9d9e-48dc-be35-e136a9a8c144",
+            "742d5ccb-5b6b-4d47-bb6c-9800fd80a6d3",
+            "92dec6b9-c8e9-44be-866a-e1b7eb1d9074",
+            "b8e79283-d1b6-4848-b988-973df27cf924",
+            "a6892b0f-5fd3-4ff3-8ab1-0f05027fe043",
+            "310dc1a9-743f-4997-aa0b-041e5451e745",
+            "29536388-77ef-4997-9c01-5894e8dbf0b6",
+            "09eab12d-0e6a-4f5d-981a-e20def142720",
+            "7b8f9cbd-f897-407c-94d7-825654c81800",
+            "8f27b6c2-32e0-46fe-9052-1bece702489a",
+            "f2cbf97f-76bf-4894-b8a7-9b36dbdaa986",
+            "c2d0558a-e174-47cc-b309-c640ed3984b2",
+            "1765cb3f-cdf2-4b3e-941e-3d64128527a6",
+            "9272c5f6-725a-4a1d-9d6a-bcf68f821ab7",
+            "14002421-cb79-46f2-bd72-40d37b882ed2",
+            "24526f5c-fac3-443f-911e-e2c72b4c6749",
+            "3665ae32-4323-4b83-a8e7-dc3122f82218",
+            "a00936a6-0a0a-4bf3-9db5-563f85e34db0",
+            "6b2e4928-558c-43b9-8be4-fe720bf21677",
+            "6b4b0e90-2cf2-434a-86fc-a820c3b697c0"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552022174667,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "b64d2e8d-06e0-4dbe-a37e-6e7d0e06bb48",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570605660000,
+          "parent_id": "8be972f2-13d4-403a-b7f8-c74e60f7639f",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential PHP"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 174
+        }
+      },
+      "b6548048-cd31-46f9-9c8b-fed34e047306": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474176,
+          "id": "b6548048-cd31-46f9-9c8b-fed34e047306",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474176,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The classfier for this algorithm takes in two parameters and can be initialized like"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "bb14f00c-1b7b-4f2e-a7aa-eab7f409985b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474176,
+          "id": "bb14f00c-1b7b-4f2e-a7aa-eab7f409985b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474176,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Now that we have the classifier trained we can start making some actual predictions. Consider the following codes that we have for predictions"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "bc622e74-00a2-49b8-a135-aa8214234ad8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474179,
+          "id": "bc622e74-00a2-49b8-a135-aa8214234ad8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474179,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Till now we only used arrays of integer in all our case but that is not the case in real life. Therefore let me try to describe a practical situation on how to use classifiers."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "bf21b5c8-611d-4fc1-944e-9cdf93573457": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474175,
+          "id": "bf21b5c8-611d-4fc1-944e-9cdf93573457",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474175,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Naive Bayes"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "d8b3ec7a-08fd-4f84-8fab-fc8604f53f66": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474174,
+          "id": "d8b3ec7a-08fd-4f84-8fab-fc8604f53f66",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474174,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "k-Nearest Neighbors"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "e0f219ce-fad7-4a0a-b5fa-9b6fab46816a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024474176,
+          "id": "e0f219ce-fad7-4a0a-b5fa-9b6fab46816a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024474176,
+          "parent_id": "71bc0573-65a0-407c-a747-12834d62e624",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "k-Nearest Neighbors"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 5
+        }
+      },
+      "e4e32393-007a-4cd6-b1f8-27b0cb8545c5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "fafc3b3b-db91-452d-aede-29780fc974bb",
+            "71bc0573-65a0-407c-a747-12834d62e624",
+            "de9db23d-f1d3-4aad-b30f-e0277d2a4043",
+            "fd8a4b51-c98b-4044-8a8a-df118ac0762e"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1552024440000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "e4e32393-007a-4cd6-b1f8-27b0cb8545c5",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1552024680000,
+          "parent_id": "b64d2e8d-06e0-4dbe-a37e-6e7d0e06bb48",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Machine learning"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 30
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
