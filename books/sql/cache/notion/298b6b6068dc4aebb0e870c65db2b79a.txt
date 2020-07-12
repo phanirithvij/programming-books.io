@@ -1,0 +1,1285 @@
+2084 1594558228520 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+      "table": "block"
+    }
+  ]
+}
+Response:+1884
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "c85c264f-6bcf-4e0a-be5d-c352a8f5ce8c",
+          "59b86efc-e100-426d-8793-5b6751a513b4",
+          "ed3cf6ae-592e-4d82-8005-7d90e48905b7",
+          "80a6eae5-d286-4060-a56e-e84f9f59a2bd",
+          "30d76b8a-b40e-4e55-9a60-a8893cf19987",
+          "6bfd0e4c-120a-46a7-81fc-034a3a30d6c1",
+          "941ed310-e1e4-4d10-bbd1-22daf560ca7f",
+          "0c47a2c1-3c3c-4ee9-82c5-4f094fcbce92",
+          "01a843df-f2e9-4448-9a93-64898d8084af",
+          "a050308c-c15d-4597-b0ad-c9873122014d",
+          "8b40ff49-80c7-4824-93b2-e16d0d7a9f14",
+          "dc37946a-85b5-4515-b34d-6dab620ceac1",
+          "39073132-992e-4cf2-913d-47b5b04ee880",
+          "40a119e9-e27f-426c-8510-a04a955003c9",
+          "9f10d1af-2f78-4cb8-b26a-18772a4d5c08",
+          "021862de-3252-4489-88a4-050785cc9763",
+          "5c5500e7-6458-4fab-b459-fbcd79cccf25"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550457721047,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551692044852,
+        "parent_id": "a110b9fb-5ca4-4783-9f24-944c39372a15",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Left Outer Join"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 8
+      }
+    }
+  ]
+}
+38888 1594558228523 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+  "verticalColumns": false
+}
+Response:+38647
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "01a843df-f2e9-4448-9a93-64898d8084af": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721045,
+          "id": "01a843df-f2e9-4448-9a93-64898d8084af",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721045,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "| Id | FName | LName | PhoneNumber | ManagerId | DepartmentId | Salary | HireDate | |:—|:–––––|:———|:————|:–––––|:———––|:—––|:———–| | 1 | James | Smith | 1234567890 | NULL | 1 | 1000 | 01-01-2002 | | 2 | John | Johnson | 2468101214 | 1 | 1 | 400 | 23-03-2005 | | 3 | Michael | Williams | 1357911131 | 1 | 2 | 600 | 12-05-2009 | | 4 | Johnathon | Smith | 1212121212 | 2 | 1 | 500 | 24-07-2016 |"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "021862de-3252-4489-88a4-050785cc9763": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721047,
+          "id": "021862de-3252-4489-88a4-050785cc9763",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721047,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Finally each expression used within the "
+              ],
+              [
+                "SELECT",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " clause is evaluated to return our final table:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "0c47a2c1-3c3c-4ee9-82c5-4f094fcbce92": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721045,
+          "id": "0c47a2c1-3c3c-4ee9-82c5-4f094fcbce92",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721045,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "There are two tables in the FROM clause:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "298b6b60-68dc-4aeb-b0e8-70c65db2b79a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "c85c264f-6bcf-4e0a-be5d-c352a8f5ce8c",
+            "59b86efc-e100-426d-8793-5b6751a513b4",
+            "ed3cf6ae-592e-4d82-8005-7d90e48905b7",
+            "80a6eae5-d286-4060-a56e-e84f9f59a2bd",
+            "30d76b8a-b40e-4e55-9a60-a8893cf19987",
+            "6bfd0e4c-120a-46a7-81fc-034a3a30d6c1",
+            "941ed310-e1e4-4d10-bbd1-22daf560ca7f",
+            "0c47a2c1-3c3c-4ee9-82c5-4f094fcbce92",
+            "01a843df-f2e9-4448-9a93-64898d8084af",
+            "a050308c-c15d-4597-b0ad-c9873122014d",
+            "8b40ff49-80c7-4824-93b2-e16d0d7a9f14",
+            "dc37946a-85b5-4515-b34d-6dab620ceac1",
+            "39073132-992e-4cf2-913d-47b5b04ee880",
+            "40a119e9-e27f-426c-8510-a04a955003c9",
+            "9f10d1af-2f78-4cb8-b26a-18772a4d5c08",
+            "021862de-3252-4489-88a4-050785cc9763",
+            "5c5500e7-6458-4fab-b459-fbcd79cccf25"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721047,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551692044852,
+          "parent_id": "a110b9fb-5ca4-4783-9f24-944c39372a15",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Left Outer Join"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 8
+        }
+      },
+      "30d76b8a-b40e-4e55-9a60-a8893cf19987": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721044,
+          "id": "30d76b8a-b40e-4e55-9a60-a8893cf19987",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721044,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "| Departments.Name | Employees.FName | |:—————–|:––––––––| | HR | James | | HR | John | | HR | Johnathon | | Sales | Michael | | Tech | NULL |"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "39073132-992e-4cf2-913d-47b5b04ee880": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721045,
+          "id": "39073132-992e-4cf2-913d-47b5b04ee880",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721045,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The records that meet the join criteria ("
+              ],
+              [
+                "Departments.Id = Employees.DepartmentId",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                ") are highlighted in bold; these are passed to the next stage of the query."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "40a119e9-e27f-426c-8510-a04a955003c9": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721045,
+          "id": "40a119e9-e27f-426c-8510-a04a955003c9",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721045,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "As this is a LEFT OUTER JOIN all records are returned from the LEFT side of the join (Departments), while any records on the RIGHT side are given a NULL marker if they do not match the join criteria. In the table below this will return "
+              ],
+              [
+                "Tech",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " with "
+              ],
+              [
+                "NULL",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "59b86efc-e100-426d-8793-5b6751a513b4": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721043,
+          "id": "59b86efc-e100-426d-8793-5b6751a513b4",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721043,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The following example will select all departments and the first name of employees that work in that department. Departments with no employees are still returned in the results, but will have NULL for the employee name:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "5c5500e7-6458-4fab-b459-fbcd79cccf25": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721047,
+          "id": "5c5500e7-6458-4fab-b459-fbcd79cccf25",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721047,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "| Departments.Name | Employees.FName | |:—————–|:––––––––| | HR | James | | HR | John | | Sales | Richard | | Tech | NULL |"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "6bfd0e4c-120a-46a7-81fc-034a3a30d6c1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721044,
+          "id": "6bfd0e4c-120a-46a7-81fc-034a3a30d6c1",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721044,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "type": "divider",
+          "version": 1
+        }
+      },
+      "80a6eae5-d286-4060-a56e-e84f9f59a2bd": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721044,
+          "id": "80a6eae5-d286-4060-a56e-e84f9f59a2bd",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721044,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This would return the following from the "
+              ],
+              [
+                "example database",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/sql/280/example-database#t=201604180847497343904"
+                  ]
+                ]
+              ],
+              [
+                ":"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "8b40ff49-80c7-4824-93b2-e16d0d7a9f14": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721045,
+          "id": "8b40ff49-80c7-4824-93b2-e16d0d7a9f14",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721045,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "| Id | Name | |:—|:——| | 1 | HR | | 2 | Sales | | 3 | Tech |"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "941ed310-e1e4-4d10-bbd1-22daf560ca7f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721044,
+          "id": "941ed310-e1e4-4d10-bbd1-22daf560ca7f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721044,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "So how does this work?"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 1
+        }
+      },
+      "9f10d1af-2f78-4cb8-b26a-18772a4d5c08": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721047,
+          "id": "9f10d1af-2f78-4cb8-b26a-18772a4d5c08",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721047,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "| Id | Name | Id | FName | LName | PhoneNumber | ManagerId | DepartmentId | Salary | HireDate | |:——|:–––––|:——|:–––––––|:———––|:—————|:–––––|:———––|:———|:—————| | "
+              ],
+              [
+                "1",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "HR",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "1",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "James",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "Smith",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "1234567890",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "NULL",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "1",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "1000",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "01-01-2002",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | | "
+              ],
+              [
+                "1",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "HR",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "2",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "John",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "Johnson",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "2468101214",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "1",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "1",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "400",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "23-03-2005",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | | 1 | HR | 3 | Michael | Williams | 1357911131 | 1 | 2 | 600 | 12-05-2009 | | "
+              ],
+              [
+                "1",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "HR",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "4",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "Johnathon",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "Smith",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "1212121212",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "2",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "1",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "500",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "24-07-2016",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | | 2 | Sales | 1 | James | Smith | 1234567890 | NULL | 1 | 1000 | 01-01-2002 | | 2 | Sales | 2 | John | Johnson | 2468101214 | 1 | 1 | 400 | 23-03-2005 | | "
+              ],
+              [
+                "2",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "Sales",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "3",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "Michael",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "Williams",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "1357911131",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "1",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "2",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "600",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | "
+              ],
+              [
+                "12-05-2009",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " | | 2 | Sales | 4 | Johnathon | Smith | 1212121212 | 2 | 1 | 500 | 24-07-2016 | | 3 | Tech | 1 | James | Smith | 1234567890 | NULL | 1 | 1000 | 01-01-2002 | | 3 | Tech | 2 | John | Johnson | 2468101214 | 1 | 1 | 400 | 23-03-2005 | | 3 | Tech | 3 | Michael | Williams | 1357911131 | 1 | 2 | 600 | 12-05-2009 | | 3 | Tech | 4 | Johnathon | Smith | 1212121212 | 2 | 1 | 500 | 24-07-2016 |"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "a050308c-c15d-4597-b0ad-c9873122014d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721045,
+          "id": "a050308c-c15d-4597-b0ad-c9873122014d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721045,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "and"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "a110b9fb-5ca4-4783-9f24-944c39372a15": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "d9d8d430-f19f-4df1-8ee5-8cb0a0e03ab4",
+            "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+            "9df994db-197a-4daf-a990-783b67b00fa0",
+            "8c567d03-e297-4573-9459-1507b79fe429",
+            "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+            "ae385a74-cdcb-4995-a2a8-584c51fe93e3",
+            "8f4dd4ba-24dc-4fb6-9cd8-e546369232f7",
+            "ca9b0ae4-75b5-4500-92a3-7e84c1f2faf6",
+            "5e934f55-9092-4eda-9b3d-1be469961cae",
+            "fa38a33e-82fe-4350-b913-2c544a42ea0b",
+            "43f582ca-99a6-443b-9cdc-0445975d8b31",
+            "17c74131-ae89-47ac-b996-48747ef7f749"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457660000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "a110b9fb-5ca4-4783-9f24-944c39372a15",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457900000,
+          "parent_id": "d1c8bb39-bad4-494e-80ab-e28414c3d80e",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "JOIN"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 27
+        }
+      },
+      "c85c264f-6bcf-4e0a-be5d-c352a8f5ce8c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721043,
+          "id": "c85c264f-6bcf-4e0a-be5d-c352a8f5ce8c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721043,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "A Left Outer Join (also known as a Left Join or Outer Join) is a Join that ensures all rows from the left table are represented; if no matching row from the right table exists, its corresponding fields are "
+              ],
+              [
+                "NULL",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "d1c8bb39-bad4-494e-80ab-e28414c3d80e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "5191d1f9-c4fb-4686-aebe-ac6595e60da0",
+            "258e2fb4-c9bb-4aaf-92ec-b9b8fc34247b",
+            "a110b9fb-5ca4-4783-9f24-944c39372a15",
+            "07b14533-f573-4db1-9f14-02fbcfa349c6",
+            "ebe531bb-4b38-4b8e-803d-bd6ed7e2c35d",
+            "91cd3c4f-4abe-4afd-95fb-980a82f1b915",
+            "2bd9fb04-88fc-49d6-884b-ab3cf352d0b1",
+            "a166da28-a18e-467b-8bad-3fe383f8b9f8",
+            "d59d8794-a6f8-4b48-a28d-188ce00c0fa0",
+            "5fcd8a96-8d78-4c30-94d8-28b2d6b94531",
+            "ea3e10a7-04a9-4088-aee1-651ee9529c40",
+            "aea3972d-67d7-4992-aa3a-2bdcfb7ad4e6",
+            "aaeb95b4-31a0-434f-80e9-535e0037c6fd",
+            "44a79833-d529-4dbd-a98b-07fb1d894bff",
+            "90eeb290-b12b-4e3c-8d6f-5ab6e78841b3",
+            "111e9c71-85a7-4cb1-92e6-81b82c8dad2c",
+            "208cbc7b-c00e-45fb-a39d-962b71299d49",
+            "4f2725d7-1e88-486a-8840-c84d9d7bd661",
+            "8b3eec95-9e20-4b22-8bf7-f4b932be64fa",
+            "4ea1c2d2-ed21-4d2b-a233-e3d96fe5ba00",
+            "5c98fb28-31be-4b5f-a5b6-bd824afed93b",
+            "b7de7c35-4291-410d-a6e3-451eb8a8e8a5",
+            "98b5a6dd-fca5-4233-936e-d3902c5fb491",
+            "c1ff4006-e872-427b-9454-c8faa8237566",
+            "407b3d1d-6ee3-4bb6-9f25-9cd22db2f79f",
+            "56d55a90-21b2-4426-a4c0-2120910cfb8d",
+            "c7a6e7d1-bcff-477e-ad6d-3f9a72de62a2",
+            "f6b7476f-5cad-4ad0-902a-62538b392ecb",
+            "010680eb-9c5c-4acf-831a-de5ca99567ca",
+            "16e26ec8-dcc7-443a-8fe2-4d8a4e03fae6",
+            "0413cdf8-3588-4a92-b18f-aef996085628",
+            "acdc8b9d-aac1-4bdd-bf23-265732926aa3",
+            "e4ce18be-832a-4dd2-9a28-ef6df2533fa5",
+            "d3eaa6f2-91f7-452d-add3-ef7c324c79a9",
+            "39f7d0a0-ca6b-456f-877d-7b0da4ab364a",
+            "dcb3461f-e444-48a8-b683-09d15977b98b",
+            "5e9393cb-2254-46bf-99c5-b362ec875ad9",
+            "db9bcca6-1928-44a6-baea-87f1a8aad7bb",
+            "c7add74d-833c-4731-ada8-001a682748ca",
+            "6cfaa401-66f2-4aef-94d0-ec7358d75463",
+            "97e10969-7e51-46ab-a39d-4135a52b04fe",
+            "81d7eb85-93b6-4e05-b0ec-e5fa7d1ba7db",
+            "d4be36b3-e082-4a3a-8437-66b42ad1856b",
+            "2c1fe926-b253-4c0e-b18c-786e3bccaeca",
+            "509bb6f9-4f36-4041-878f-d56bf359581e",
+            "7cb6a11d-f470-41bb-8b33-f3b8d7d8a49a",
+            "42e0611a-4089-464c-a60d-087eb3ece1b9",
+            "375fed7c-d5dd-4f24-8715-c255f83da986",
+            "4e6caccf-4b6a-42fa-990e-a07e965ec022",
+            "33e99201-5094-441c-b61b-88719352289c",
+            "3aae8746-e40c-4865-b96e-2af416f4eb77",
+            "5b24fdea-8c60-4983-b135-f74def26df25",
+            "383c437d-704c-4892-a70f-c94b70b36d23",
+            "8b178535-1562-406f-85a3-b7545e419ee8",
+            "da5bf25e-3934-4638-b372-8eb6c7e44a7b",
+            "4e9d5cac-4486-4652-a532-71cab0b0ec0e",
+            "99486182-dfe4-4338-9362-88f5b9ba21be",
+            "29f78610-bf30-46ff-94ed-091aa6432ec6",
+            "ad9adb14-035e-4f26-9537-e3c9762e8494",
+            "5f15e0fb-5445-47a3-b07e-6f3caed4f24f",
+            "bff093c3-3c2c-4f54-a85e-ed55d3097cff",
+            "1cf3f0eb-9e08-4b83-a5c9-4dac889c17f7",
+            "2974479c-567b-478d-a2d6-dc55734bd3a2",
+            "84f461bc-fb95-4b98-bf17-c41d3f3a727c",
+            "0e90c098-8b99-404b-8501-959301837566",
+            "b8640a96-c9d5-47b2-8d62-ead109594866"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457663417,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "d1c8bb39-bad4-494e-80ab-e28414c3d80e",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571296380000,
+          "parent_id": "1bc02baf-b457-45de-8dfb-222e0a8870e1",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential SQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 182
+        }
+      },
+      "dc37946a-85b5-4515-b34d-6dab620ceac1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721045,
+          "id": "dc37946a-85b5-4515-b34d-6dab620ceac1",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721045,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "First a "
+              ],
+              [
+                "Cartesian",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " product is created from the two tables giving an intermediate table."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "ed3cf6ae-592e-4d82-8005-7d90e48905b7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457721044,
+          "id": "ed3cf6ae-592e-4d82-8005-7d90e48905b7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457721044,
+          "parent_id": "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "SELECT          Departments.Name, Employees.FName\nFROM            Departments \nLEFT OUTER JOIN Employees \nON              Departments.Id = Employees.DepartmentId"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

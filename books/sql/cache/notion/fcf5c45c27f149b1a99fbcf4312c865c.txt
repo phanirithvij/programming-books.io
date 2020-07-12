@@ -1,0 +1,904 @@
+2078 1594558234269 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+      "table": "block"
+    }
+  ]
+}
+Response:+1878
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "40e97e82-cb1a-4398-94c0-da3d2471917f",
+          "b0af69ad-cbc1-48e0-ae83-2a26fc2b2f22",
+          "38015b4f-69e6-4c9b-b791-a471936c6ee0",
+          "51e88ec3-d0df-4d1b-b030-15bdc86bc9e1",
+          "6de0a446-87e4-48f9-9a79-86eefbe69966",
+          "e11900d1-50cf-407a-a1ea-49f3441de9f5",
+          "ef308d80-1be6-415d-b9d4-1913962d534d",
+          "8964c6bd-751f-4298-9872-c986b162ce03",
+          "d494b809-d8c5-44b4-943a-88400c26d715",
+          "788f6853-d772-40c6-93bd-c1498c7520b3",
+          "0009b490-eb42-4605-94c9-ce6b6682b373",
+          "673ac2fe-cafb-4bba-9028-ddc7deb62c2a",
+          "d03516b9-fa1b-446b-bbc1-9b12af803b72",
+          "6c5172c8-6e62-4dc8-a2ea-e9ab34d77fed",
+          "5786c2a1-5244-4859-b668-881c09f6e2d7",
+          "a6ad7b7e-0748-46e6-a3f8-8b35a9d1adb2",
+          "284e47b8-b4d9-40c4-8834-8c9dd11b797a"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550457718250,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551692026981,
+        "parent_id": "a110b9fb-5ca4-4783-9f24-944c39372a15",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Self Join"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 8
+      }
+    }
+  ]
+}
+31708 1594558234270 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+  "verticalColumns": false
+}
+Response:+31467
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "0009b490-eb42-4605-94c9-ce6b6682b373": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718248,
+          "id": "0009b490-eb42-4605-94c9-ce6b6682b373",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718248,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "| e.Id | e.FName | e.ManagerId | m.Id | m.FName | m.ManagerId | |:—–|:–––––|:————|:—–|:–––––|:————| | 1 | James | NULL | 1 | James | NULL | | 1 | James | NULL | 2 | John | 1 | | 1 | James | NULL | 3 | Michael | 1 | | 1 | James | NULL | 4 | Johnathon | 2 | | 2 | John | 1 | 1 | James | NULL | | 2 | John | 1 | 2 | John | 1 | | 2 | John | 1 | 3 | Michael | 1 | | 2 | John | 1 | 4 | Johnathon | 2 | | 3 | Michael | 1 | 1 | James | NULL | | 3 | Michael | 1 | 2 | John | 1 | | 3 | Michael | 1 | 3 | Michael | 1 | | 3 | Michael | 1 | 4 | Johnathon | 2 | | 4 | Johnathon | 2 | 1 | James | NULL | | 4 | Johnathon | 2 | 2 | John | 1 | | 4 | Johnathon | 2 | 3 | Michael | 1 | | 4 | Johnathon | 2 | 4 | Johnathon | 2 |"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "284e47b8-b4d9-40c4-8834-8c9dd11b797a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718250,
+          "id": "284e47b8-b4d9-40c4-8834-8c9dd11b797a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718250,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "| Employee | Manager | |:–––––|:––––| | John | James | | Michael | James | | Johnathon | John |"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "38015b4f-69e6-4c9b-b791-a471936c6ee0": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718247,
+          "id": "38015b4f-69e6-4c9b-b791-a471936c6ee0",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718247,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Plain Text"
+              ]
+            ],
+            "title": [
+              [
+                "SELECT \n    e.FName AS \"Employee\", \n    m.FName AS \"Manager\"\nFROM   \n    Employees e\nJOIN   \n    Employees m \n    ON e.ManagerId = m.Id"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 5
+        }
+      },
+      "40e97e82-cb1a-4398-94c0-da3d2471917f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718242,
+          "id": "40e97e82-cb1a-4398-94c0-da3d2471917f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718242,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "A table may be joined to itself, with different rows matching each other by some condition. In this use case, aliases must be used in order to distinguish the two occurrences of the table."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "51e88ec3-d0df-4d1b-b030-15bdc86bc9e1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718247,
+          "id": "51e88ec3-d0df-4d1b-b030-15bdc86bc9e1",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718247,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This query will return the following data:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "5786c2a1-5244-4859-b668-881c09f6e2d7": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718249,
+          "id": "5786c2a1-5244-4859-b668-881c09f6e2d7",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718249,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "| e.FName | m.FName | |:–––––|:––––| | John | James | | Michael | James | | Johnathon | John |"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "673ac2fe-cafb-4bba-9028-ddc7deb62c2a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718248,
+          "id": "673ac2fe-cafb-4bba-9028-ddc7deb62c2a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718248,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The next action is to only keep the records that meet the "
+              ],
+              [
+                "JOIN",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " criteria, so any records where the aliased "
+              ],
+              [
+                "e",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " table "
+              ],
+              [
+                "ManagerId",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " equals the aliased "
+              ],
+              [
+                "m",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " table "
+              ],
+              [
+                "Id",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ":"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "6c5172c8-6e62-4dc8-a2ea-e9ab34d77fed": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718249,
+          "id": "6c5172c8-6e62-4dc8-a2ea-e9ab34d77fed",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718249,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Then, each expression used within the "
+              ],
+              [
+                "SELECT",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " clause is evaluated to return this table:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "6de0a446-87e4-48f9-9a79-86eefbe69966": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718247,
+          "id": "6de0a446-87e4-48f9-9a79-86eefbe69966",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718247,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "| Employee | Manager | |:–––––|:––––| | John | James | | Michael | James | | Johnathon | John |"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "788f6853-d772-40c6-93bd-c1498c7520b3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718248,
+          "id": "788f6853-d772-40c6-93bd-c1498c7520b3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718248,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The first action is to create a "
+              ],
+              [
+                "Cartesian",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " product of all records in the tables used in the "
+              ],
+              [
+                "FROM",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                " clause. In this case it’s the Employees table twice, so the intermediate table will look like this (I’ve removed any fields not used in this example):"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "8964c6bd-751f-4298-9872-c986b162ce03": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718248,
+          "id": "8964c6bd-751f-4298-9872-c986b162ce03",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718248,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "The original table contains these records:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "a110b9fb-5ca4-4783-9f24-944c39372a15": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "d9d8d430-f19f-4df1-8ee5-8cb0a0e03ab4",
+            "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+            "9df994db-197a-4daf-a990-783b67b00fa0",
+            "8c567d03-e297-4573-9459-1507b79fe429",
+            "298b6b60-68dc-4aeb-b0e8-70c65db2b79a",
+            "ae385a74-cdcb-4995-a2a8-584c51fe93e3",
+            "8f4dd4ba-24dc-4fb6-9cd8-e546369232f7",
+            "ca9b0ae4-75b5-4500-92a3-7e84c1f2faf6",
+            "5e934f55-9092-4eda-9b3d-1be469961cae",
+            "fa38a33e-82fe-4350-b913-2c544a42ea0b",
+            "43f582ca-99a6-443b-9cdc-0445975d8b31",
+            "17c74131-ae89-47ac-b996-48747ef7f749"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457660000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "a110b9fb-5ca4-4783-9f24-944c39372a15",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457900000,
+          "parent_id": "d1c8bb39-bad4-494e-80ab-e28414c3d80e",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "JOIN"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 27
+        }
+      },
+      "a6ad7b7e-0748-46e6-a3f8-8b35a9d1adb2": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718249,
+          "id": "a6ad7b7e-0748-46e6-a3f8-8b35a9d1adb2",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718249,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Finally, column names "
+              ],
+              [
+                "e.FName",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " and "
+              ],
+              [
+                "m.FName",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " are replaced by their alias column names, assigned with the "
+              ],
+              [
+                "AS",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/sql/222/select/1264/select-using-column-aliases#t=201609282325090459635"
+                  ]
+                ]
+              ],
+              [
+                " operator:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "b0af69ad-cbc1-48e0-ae83-2a26fc2b2f22": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718247,
+          "id": "b0af69ad-cbc1-48e0-ae83-2a26fc2b2f22",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718247,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "In the below example, for each Employee in the "
+              ],
+              [
+                "example database Employees table",
+                [
+                  [
+                    "a",
+                    "http://stackoverflow.com/documentation/sql/280/example-database#t=201604180847497343904"
+                  ]
+                ]
+              ],
+              [
+                ", a record is returned containing the employee’s first name together with the corresponding first name of the employee’s manager. Since managers are also employees, the table is joined with itself:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "d03516b9-fa1b-446b-bbc1-9b12af803b72": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718249,
+          "id": "d03516b9-fa1b-446b-bbc1-9b12af803b72",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718249,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "| e.Id | e.FName | e.ManagerId | m.Id | m.FName | m.ManagerId | |:—–|:–––––|:————|:—–|:––––|:————| | 2 | John | 1 | 1 | James | NULL | | 3 | Michael | 1 | 1 | James | NULL | | 4 | Johnathon | 2 | 2 | John | 1 |"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 5
+        }
+      },
+      "d1c8bb39-bad4-494e-80ab-e28414c3d80e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "5191d1f9-c4fb-4686-aebe-ac6595e60da0",
+            "258e2fb4-c9bb-4aaf-92ec-b9b8fc34247b",
+            "a110b9fb-5ca4-4783-9f24-944c39372a15",
+            "07b14533-f573-4db1-9f14-02fbcfa349c6",
+            "ebe531bb-4b38-4b8e-803d-bd6ed7e2c35d",
+            "91cd3c4f-4abe-4afd-95fb-980a82f1b915",
+            "2bd9fb04-88fc-49d6-884b-ab3cf352d0b1",
+            "a166da28-a18e-467b-8bad-3fe383f8b9f8",
+            "d59d8794-a6f8-4b48-a28d-188ce00c0fa0",
+            "5fcd8a96-8d78-4c30-94d8-28b2d6b94531",
+            "ea3e10a7-04a9-4088-aee1-651ee9529c40",
+            "aea3972d-67d7-4992-aa3a-2bdcfb7ad4e6",
+            "aaeb95b4-31a0-434f-80e9-535e0037c6fd",
+            "44a79833-d529-4dbd-a98b-07fb1d894bff",
+            "90eeb290-b12b-4e3c-8d6f-5ab6e78841b3",
+            "111e9c71-85a7-4cb1-92e6-81b82c8dad2c",
+            "208cbc7b-c00e-45fb-a39d-962b71299d49",
+            "4f2725d7-1e88-486a-8840-c84d9d7bd661",
+            "8b3eec95-9e20-4b22-8bf7-f4b932be64fa",
+            "4ea1c2d2-ed21-4d2b-a233-e3d96fe5ba00",
+            "5c98fb28-31be-4b5f-a5b6-bd824afed93b",
+            "b7de7c35-4291-410d-a6e3-451eb8a8e8a5",
+            "98b5a6dd-fca5-4233-936e-d3902c5fb491",
+            "c1ff4006-e872-427b-9454-c8faa8237566",
+            "407b3d1d-6ee3-4bb6-9f25-9cd22db2f79f",
+            "56d55a90-21b2-4426-a4c0-2120910cfb8d",
+            "c7a6e7d1-bcff-477e-ad6d-3f9a72de62a2",
+            "f6b7476f-5cad-4ad0-902a-62538b392ecb",
+            "010680eb-9c5c-4acf-831a-de5ca99567ca",
+            "16e26ec8-dcc7-443a-8fe2-4d8a4e03fae6",
+            "0413cdf8-3588-4a92-b18f-aef996085628",
+            "acdc8b9d-aac1-4bdd-bf23-265732926aa3",
+            "e4ce18be-832a-4dd2-9a28-ef6df2533fa5",
+            "d3eaa6f2-91f7-452d-add3-ef7c324c79a9",
+            "39f7d0a0-ca6b-456f-877d-7b0da4ab364a",
+            "dcb3461f-e444-48a8-b683-09d15977b98b",
+            "5e9393cb-2254-46bf-99c5-b362ec875ad9",
+            "db9bcca6-1928-44a6-baea-87f1a8aad7bb",
+            "c7add74d-833c-4731-ada8-001a682748ca",
+            "6cfaa401-66f2-4aef-94d0-ec7358d75463",
+            "97e10969-7e51-46ab-a39d-4135a52b04fe",
+            "81d7eb85-93b6-4e05-b0ec-e5fa7d1ba7db",
+            "d4be36b3-e082-4a3a-8437-66b42ad1856b",
+            "2c1fe926-b253-4c0e-b18c-786e3bccaeca",
+            "509bb6f9-4f36-4041-878f-d56bf359581e",
+            "7cb6a11d-f470-41bb-8b33-f3b8d7d8a49a",
+            "42e0611a-4089-464c-a60d-087eb3ece1b9",
+            "375fed7c-d5dd-4f24-8715-c255f83da986",
+            "4e6caccf-4b6a-42fa-990e-a07e965ec022",
+            "33e99201-5094-441c-b61b-88719352289c",
+            "3aae8746-e40c-4865-b96e-2af416f4eb77",
+            "5b24fdea-8c60-4983-b135-f74def26df25",
+            "383c437d-704c-4892-a70f-c94b70b36d23",
+            "8b178535-1562-406f-85a3-b7545e419ee8",
+            "da5bf25e-3934-4638-b372-8eb6c7e44a7b",
+            "4e9d5cac-4486-4652-a532-71cab0b0ec0e",
+            "99486182-dfe4-4338-9362-88f5b9ba21be",
+            "29f78610-bf30-46ff-94ed-091aa6432ec6",
+            "ad9adb14-035e-4f26-9537-e3c9762e8494",
+            "5f15e0fb-5445-47a3-b07e-6f3caed4f24f",
+            "bff093c3-3c2c-4f54-a85e-ed55d3097cff",
+            "1cf3f0eb-9e08-4b83-a5c9-4dac889c17f7",
+            "2974479c-567b-478d-a2d6-dc55734bd3a2",
+            "84f461bc-fb95-4b98-bf17-c41d3f3a727c",
+            "0e90c098-8b99-404b-8501-959301837566",
+            "b8640a96-c9d5-47b2-8d62-ead109594866"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457663417,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "d1c8bb39-bad4-494e-80ab-e28414c3d80e",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571296380000,
+          "parent_id": "1bc02baf-b457-45de-8dfb-222e0a8870e1",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential SQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 182
+        }
+      },
+      "d494b809-d8c5-44b4-943a-88400c26d715": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718248,
+          "id": "d494b809-d8c5-44b4-943a-88400c26d715",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718248,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "| Id | FName | LName | PhoneNumber | ManagerId | DepartmentId | Salary | HireDate | |:—|:–––––|:———|:————|:–––––|:———––|:—––|:———–| | 1 | James | Smith | 1234567890 | NULL | 1 | 1000 | 01-01-2002 | | 2 | John | Johnson | 2468101214 | 1 | 1 | 400 | 23-03-2005 | | 3 | Michael | Williams | 1357911131 | 1 | 2 | 600 | 12-05-2009 | | 4 | Johnathon | Smith | 1212121212 | 2 | 1 | 500 | 24-07-2016 |"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "e11900d1-50cf-407a-a1ea-49f3441de9f5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718247,
+          "id": "e11900d1-50cf-407a-a1ea-49f3441de9f5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718247,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "type": "divider",
+          "version": 5
+        }
+      },
+      "ef308d80-1be6-415d-b9d4-1913962d534d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718247,
+          "id": "ef308d80-1be6-415d-b9d4-1913962d534d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550457718247,
+          "parent_id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "So how does this work?"
+              ]
+            ]
+          },
+          "type": "header",
+          "version": 1
+        }
+      },
+      "fcf5c45c-27f1-49b1-a99f-bcf4312c865c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "40e97e82-cb1a-4398-94c0-da3d2471917f",
+            "b0af69ad-cbc1-48e0-ae83-2a26fc2b2f22",
+            "38015b4f-69e6-4c9b-b791-a471936c6ee0",
+            "51e88ec3-d0df-4d1b-b030-15bdc86bc9e1",
+            "6de0a446-87e4-48f9-9a79-86eefbe69966",
+            "e11900d1-50cf-407a-a1ea-49f3441de9f5",
+            "ef308d80-1be6-415d-b9d4-1913962d534d",
+            "8964c6bd-751f-4298-9872-c986b162ce03",
+            "d494b809-d8c5-44b4-943a-88400c26d715",
+            "788f6853-d772-40c6-93bd-c1498c7520b3",
+            "0009b490-eb42-4605-94c9-ce6b6682b373",
+            "673ac2fe-cafb-4bba-9028-ddc7deb62c2a",
+            "d03516b9-fa1b-446b-bbc1-9b12af803b72",
+            "6c5172c8-6e62-4dc8-a2ea-e9ab34d77fed",
+            "5786c2a1-5244-4859-b668-881c09f6e2d7",
+            "a6ad7b7e-0748-46e6-a3f8-8b35a9d1adb2",
+            "284e47b8-b4d9-40c4-8834-8c9dd11b797a"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457718250,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "fcf5c45c-27f1-49b1-a99f-bcf4312c865c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551692026981,
+          "parent_id": "a110b9fb-5ca4-4783-9f24-944c39372a15",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Self Join"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 8
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}

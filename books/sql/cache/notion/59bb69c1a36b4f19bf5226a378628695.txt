@@ -1,0 +1,861 @@
+1839 1594558214756 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+      "table": "block"
+    }
+  ]
+}
+Response:+1639
+{
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "73c79ae8-acf8-4864-8d15-ba1e5cc1fee5",
+          "034e7a62-d5db-4208-92ad-a1b9b54debdd",
+          "9266d5aa-ba05-4c73-9827-53ab65a14447",
+          "9edd49fe-4507-4f88-84fc-66e010fc5f74",
+          "89e37e0e-0a22-4337-b681-5949b2e1aed3",
+          "062a6e6a-1c17-4ac4-9145-2c1a1dd0e7c5",
+          "aacc3f41-0034-4b0d-8a92-0e1559627202",
+          "1f4fbd9c-8806-40cb-849e-5a3028499896",
+          "9f5b3480-631c-4ba7-88f5-e670a6e79c9a",
+          "89902246-184d-4029-946d-6e87dbd15480",
+          "86905065-cb0a-4933-99b5-95372929962b",
+          "1114f8fb-505d-42c2-8bda-652070433a7c"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550459058066,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551692703540,
+        "parent_id": "84f461bc-fb95-4b98-bf17-c41d3f3a727c",
+        "parent_table": "block",
+        "properties": {
+          "title": [
+            [
+              "Unquoted identifiers"
+            ]
+          ]
+        },
+        "type": "page",
+        "version": 9
+      }
+    }
+  ]
+}
+26284 1594558214757 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "59bb69c1-a36b-4f19-bf52-26a378628695",
+  "verticalColumns": false
+}
+Response:+26043
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "034e7a62-d5db-4208-92ad-a1b9b54debdd": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459058060,
+          "id": "034e7a62-d5db-4208-92ad-a1b9b54debdd",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459058060,
+          "parent_id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Depending on SQL implementation, and/or database settings, other characters may be allowed, some even as the first character, e.g."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "062a6e6a-1c17-4ac4-9145-2c1a1dd0e7c5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459058065,
+          "id": "062a6e6a-1c17-4ac4-9145-2c1a1dd0e7c5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459058065,
+          "parent_id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "PostgreSQL: "
+              ],
+              [
+                "$",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", and other Unicode letters "
+              ],
+              [
+                "(",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                "source",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "a",
+                    "https://www.postgresql.org/docs/current/static/sql-syntax-lexical.html"
+                  ]
+                ]
+              ],
+              [
+                ")",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "1114f8fb-505d-42c2-8bda-652070433a7c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459058066,
+          "id": "1114f8fb-505d-42c2-8bda-652070433a7c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459058066,
+          "parent_id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "SQLite: Case-preserving; case insensitivity only for ASCII characters."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "1f4fbd9c-8806-40cb-849e-5a3028499896": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459058065,
+          "id": "1f4fbd9c-8806-40cb-849e-5a3028499896",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459058065,
+          "parent_id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "MS SQL: Case-preserving, sensitivity defined by database character set, so can be case-sensitive."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "59bb69c1-a36b-4f19-bf52-26a378628695": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "73c79ae8-acf8-4864-8d15-ba1e5cc1fee5",
+            "034e7a62-d5db-4208-92ad-a1b9b54debdd",
+            "9266d5aa-ba05-4c73-9827-53ab65a14447",
+            "9edd49fe-4507-4f88-84fc-66e010fc5f74",
+            "89e37e0e-0a22-4337-b681-5949b2e1aed3",
+            "062a6e6a-1c17-4ac4-9145-2c1a1dd0e7c5",
+            "aacc3f41-0034-4b0d-8a92-0e1559627202",
+            "1f4fbd9c-8806-40cb-849e-5a3028499896",
+            "9f5b3480-631c-4ba7-88f5-e670a6e79c9a",
+            "89902246-184d-4029-946d-6e87dbd15480",
+            "86905065-cb0a-4933-99b5-95372929962b",
+            "1114f8fb-505d-42c2-8bda-652070433a7c"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459058066,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551692703540,
+          "parent_id": "84f461bc-fb95-4b98-bf17-c41d3f3a727c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Unquoted identifiers"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 9
+        }
+      },
+      "73c79ae8-acf8-4864-8d15-ba1e5cc1fee5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459058057,
+          "id": "73c79ae8-acf8-4864-8d15-ba1e5cc1fee5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459058057,
+          "parent_id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Unquoted identifiers can use letters ("
+              ],
+              [
+                "a",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "-"
+              ],
+              [
+                "z",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "), digits ("
+              ],
+              [
+                "0",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "-"
+              ],
+              [
+                "9",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "), and underscore ("
+              ],
+              [
+                "\\_",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "), and must start with a letter."
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "84f461bc-fb95-4b98-bf17-c41d3f3a727c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "ee745728-4848-47ac-865f-32b268fa1ca8",
+            "59bb69c1-a36b-4f19-bf52-26a378628695"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459040000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "84f461bc-fb95-4b98-bf17-c41d3f3a727c",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551730560000,
+          "parent_id": "d1c8bb39-bad4-494e-80ab-e28414c3d80e",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Identifier"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 33
+        }
+      },
+      "86905065-cb0a-4933-99b5-95372929962b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459058066,
+          "id": "86905065-cb0a-4933-99b5-95372929962b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459058066,
+          "parent_id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "PostgreSQL: Converted to lowercase, then handled like quoted identifier."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "89902246-184d-4029-946d-6e87dbd15480": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459058066,
+          "id": "89902246-184d-4029-946d-6e87dbd15480",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459058066,
+          "parent_id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Oracle: Converted to uppercase, then handled like quoted identifier."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "89e37e0e-0a22-4337-b681-5949b2e1aed3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459058064,
+          "id": "89e37e0e-0a22-4337-b681-5949b2e1aed3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459058064,
+          "parent_id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Oracle: "
+              ],
+              [
+                "$",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", "
+              ],
+              [
+                "\\#",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", and other letters from database character set "
+              ],
+              [
+                "(",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                "source",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "a",
+                    "https://docs.oracle.com/database/121/SQLRF/sql_elements008.htm#SQLRF00223"
+                  ]
+                ]
+              ],
+              [
+                ")",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "9266d5aa-ba05-4c73-9827-53ab65a14447": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459058062,
+          "id": "9266d5aa-ba05-4c73-9827-53ab65a14447",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459058062,
+          "parent_id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "MS SQL: "
+              ],
+              [
+                "@",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", "
+              ],
+              [
+                "$",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", "
+              ],
+              [
+                "\\#",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                ", and other Unicode letters "
+              ],
+              [
+                "(",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                "source",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "a",
+                    "https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-identifiers"
+                  ]
+                ]
+              ],
+              [
+                ")",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "9edd49fe-4507-4f88-84fc-66e010fc5f74": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459058063,
+          "id": "9edd49fe-4507-4f88-84fc-66e010fc5f74",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459058063,
+          "parent_id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "MySQL: "
+              ],
+              [
+                "$",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " "
+              ],
+              [
+                "(",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                "source",
+                [
+                  [
+                    "i"
+                  ],
+                  [
+                    "a",
+                    "https://dev.mysql.com/doc/refman/5.7/en/identifiers.html"
+                  ]
+                ]
+              ],
+              [
+                ")",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "9f5b3480-631c-4ba7-88f5-e670a6e79c9a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459058065,
+          "id": "9f5b3480-631c-4ba7-88f5-e670a6e79c9a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459058065,
+          "parent_id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "MySQL: Case-preserving, sensitivity depends on database setting and underlying file system."
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "aacc3f41-0034-4b0d-8a92-0e1559627202": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550459058065,
+          "id": "aacc3f41-0034-4b0d-8a92-0e1559627202",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550459058065,
+          "parent_id": "59bb69c1-a36b-4f19-bf52-26a378628695",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Unquoted identifiers are case-insensitive. How this is handled depends greatly on SQL implementation:"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 1
+        }
+      },
+      "d1c8bb39-bad4-494e-80ab-e28414c3d80e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "5191d1f9-c4fb-4686-aebe-ac6595e60da0",
+            "258e2fb4-c9bb-4aaf-92ec-b9b8fc34247b",
+            "a110b9fb-5ca4-4783-9f24-944c39372a15",
+            "07b14533-f573-4db1-9f14-02fbcfa349c6",
+            "ebe531bb-4b38-4b8e-803d-bd6ed7e2c35d",
+            "91cd3c4f-4abe-4afd-95fb-980a82f1b915",
+            "2bd9fb04-88fc-49d6-884b-ab3cf352d0b1",
+            "a166da28-a18e-467b-8bad-3fe383f8b9f8",
+            "d59d8794-a6f8-4b48-a28d-188ce00c0fa0",
+            "5fcd8a96-8d78-4c30-94d8-28b2d6b94531",
+            "ea3e10a7-04a9-4088-aee1-651ee9529c40",
+            "aea3972d-67d7-4992-aa3a-2bdcfb7ad4e6",
+            "aaeb95b4-31a0-434f-80e9-535e0037c6fd",
+            "44a79833-d529-4dbd-a98b-07fb1d894bff",
+            "90eeb290-b12b-4e3c-8d6f-5ab6e78841b3",
+            "111e9c71-85a7-4cb1-92e6-81b82c8dad2c",
+            "208cbc7b-c00e-45fb-a39d-962b71299d49",
+            "4f2725d7-1e88-486a-8840-c84d9d7bd661",
+            "8b3eec95-9e20-4b22-8bf7-f4b932be64fa",
+            "4ea1c2d2-ed21-4d2b-a233-e3d96fe5ba00",
+            "5c98fb28-31be-4b5f-a5b6-bd824afed93b",
+            "b7de7c35-4291-410d-a6e3-451eb8a8e8a5",
+            "98b5a6dd-fca5-4233-936e-d3902c5fb491",
+            "c1ff4006-e872-427b-9454-c8faa8237566",
+            "407b3d1d-6ee3-4bb6-9f25-9cd22db2f79f",
+            "56d55a90-21b2-4426-a4c0-2120910cfb8d",
+            "c7a6e7d1-bcff-477e-ad6d-3f9a72de62a2",
+            "f6b7476f-5cad-4ad0-902a-62538b392ecb",
+            "010680eb-9c5c-4acf-831a-de5ca99567ca",
+            "16e26ec8-dcc7-443a-8fe2-4d8a4e03fae6",
+            "0413cdf8-3588-4a92-b18f-aef996085628",
+            "acdc8b9d-aac1-4bdd-bf23-265732926aa3",
+            "e4ce18be-832a-4dd2-9a28-ef6df2533fa5",
+            "d3eaa6f2-91f7-452d-add3-ef7c324c79a9",
+            "39f7d0a0-ca6b-456f-877d-7b0da4ab364a",
+            "dcb3461f-e444-48a8-b683-09d15977b98b",
+            "5e9393cb-2254-46bf-99c5-b362ec875ad9",
+            "db9bcca6-1928-44a6-baea-87f1a8aad7bb",
+            "c7add74d-833c-4731-ada8-001a682748ca",
+            "6cfaa401-66f2-4aef-94d0-ec7358d75463",
+            "97e10969-7e51-46ab-a39d-4135a52b04fe",
+            "81d7eb85-93b6-4e05-b0ec-e5fa7d1ba7db",
+            "d4be36b3-e082-4a3a-8437-66b42ad1856b",
+            "2c1fe926-b253-4c0e-b18c-786e3bccaeca",
+            "509bb6f9-4f36-4041-878f-d56bf359581e",
+            "7cb6a11d-f470-41bb-8b33-f3b8d7d8a49a",
+            "42e0611a-4089-464c-a60d-087eb3ece1b9",
+            "375fed7c-d5dd-4f24-8715-c255f83da986",
+            "4e6caccf-4b6a-42fa-990e-a07e965ec022",
+            "33e99201-5094-441c-b61b-88719352289c",
+            "3aae8746-e40c-4865-b96e-2af416f4eb77",
+            "5b24fdea-8c60-4983-b135-f74def26df25",
+            "383c437d-704c-4892-a70f-c94b70b36d23",
+            "8b178535-1562-406f-85a3-b7545e419ee8",
+            "da5bf25e-3934-4638-b372-8eb6c7e44a7b",
+            "4e9d5cac-4486-4652-a532-71cab0b0ec0e",
+            "99486182-dfe4-4338-9362-88f5b9ba21be",
+            "29f78610-bf30-46ff-94ed-091aa6432ec6",
+            "ad9adb14-035e-4f26-9537-e3c9762e8494",
+            "5f15e0fb-5445-47a3-b07e-6f3caed4f24f",
+            "bff093c3-3c2c-4f54-a85e-ed55d3097cff",
+            "1cf3f0eb-9e08-4b83-a5c9-4dac889c17f7",
+            "2974479c-567b-478d-a2d6-dc55734bd3a2",
+            "84f461bc-fb95-4b98-bf17-c41d3f3a727c",
+            "0e90c098-8b99-404b-8501-959301837566",
+            "b8640a96-c9d5-47b2-8d62-ead109594866"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457663417,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "d1c8bb39-bad4-494e-80ab-e28414c3d80e",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571296380000,
+          "parent_id": "1bc02baf-b457-45de-8dfb-222e0a8870e1",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "Essential SQL"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 182
+        }
+      }
+    },
+    "notion_user": {
+      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
+        "role": "reader",
+        "value": {
+          "clipper_onboarding_completed": true,
+          "email": "kkowalczyk@gmail.com",
+          "family_name": "Kowalczyk",
+          "given_name": "Krzysztof",
+          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
+          "version": 326
+        }
+      }
+    },
+    "space": {}
+  }
+}
