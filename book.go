@@ -157,7 +157,7 @@ func updateBookAppJS(book *Book) {
 
 	sha1Hex := u.Sha1HexOfBytes(d)
 	name := nameToSha1Name(srcName, sha1Hex)
-	dst := filepath.Join("www", "s", name)
+	dst := filepath.Join(book.DirOnDisk, "www", "s", name)
 	err := ioutil.WriteFile(dst, d, 0644)
 	maybePanicIfErr(err)
 	if err != nil {
@@ -211,6 +211,10 @@ func initBook(book *Book) {
 	fullDir = filepath.Join(fullDir, "book-"+book.DirShort)
 	book.DirOnDisk = fullDir
 	dir := book.NotionCacheDir()
+	u.CreateDirMust(dir)
+	dir = filepath.Join(book.DirOnDisk, "www", "s")
+	u.CreateDirMust(dir)
+	dir = filepath.Join(book.DirOnDisk, "www", "gen")
 	u.CreateDirMust(dir)
 	logf("Created '%s' for book '%s'\n", dir, book.Title)
 	book.idToPage = map[string]*Page{}

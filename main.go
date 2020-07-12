@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"html/template"
+	"os"
 	"path/filepath"
 	"strings"
 	"time"
@@ -122,10 +123,23 @@ func main() {
 	}
 
 	notionapi.LogFunc = logf
+
+	os.RemoveAll("www")
+	defer func() {
+		os.RemoveAll("www")
+	}()
+	buildFrontend()
+
 	book := findBook(flgBook)
+	generateBook(book)
+	fmt.Printf("book: %s, dir: %s\n", book.Title, book.DirShort)
+}
+
+func generateBook(book *Book) {
 	initBook(book)
 	downloadBook(book)
-	fmt.Printf("book: %s, dir: %s\n", book.Title, book.DirShort)
+	currBookDir = book.DirOnDisk
+	genBook(book)
 }
 
 func newNotionClient() *notionapi.Client {

@@ -7,8 +7,6 @@ import (
 	"sort"
 	"strings"
 	"sync"
-
-	"github.com/kjk/u"
 )
 
 var (
@@ -47,7 +45,7 @@ func writeRobots() {
 	robotsTxt := fmt.Sprintf(sitemapTmpl, sitemapURL)
 	robotsTxtPath := filepath.Join("www", "robots.txt")
 	err := ioutil.WriteFile(robotsTxtPath, []byte(robotsTxt), 0644)
-	u.Must(err)
+	must(err)
 }
 
 func writeSitemap() {
@@ -64,7 +62,7 @@ func writeSitemap() {
 	s := strings.Join(urls, "\n")
 	sitemapPath := filepath.Join("www", "sitemap.txt")
 	err := ioutil.WriteFile(sitemapPath, []byte(s), 0644)
-	u.Must(err)
+	must(err)
 
 	clearSitemapURLS()
 }

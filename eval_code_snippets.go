@@ -283,7 +283,7 @@ func evalCodeSnippetsForPage(page *Page) {
 		if err != nil {
 			logf("genBlock: setSourceFileData() failed with '%s'\n", err)
 			logf("page: %s\n", sf.NotionOriginURL)
-			//u.Must(err)
+			//must(err)
 		}
 
 		if sf.Directive.Glot {

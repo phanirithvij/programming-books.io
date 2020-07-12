@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"strconv"
 	"strings"
@@ -222,7 +223,7 @@ func maybePanicIfErr(err error) {
 		return
 	}
 	if !softErrorMode {
-		u.Must(err)
+		must(err)
 	}
 	delayedErrors = append(delayedErrors, err.Error())
 }
@@ -254,4 +255,19 @@ func copyFileMaybeMust(dst, src string) error {
 	err := u.CopyFile(dst, src)
 	maybePanicIfErr(err)
 	return err
+}
+
+func buildFrontend() {
+	{
+		os.Remove("package-lock.json")
+		os.RemoveAll("node_modules")
+		cmd := exec.Command("yarn", "install")
+		u.RunCmdMust(cmd)
+	}
+	// could also be
+	// .\node_modules\.bin\rollup -c
+	{
+		cmd := exec.Command("yarn", "build-dev")
+		u.RunCmdMust(cmd)
+	}
 }
