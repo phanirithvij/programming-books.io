@@ -1,4 +1,4 @@
-3147 1594553985384 httpcache-v1
+2898 1594620576082 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -10,7 +10,7 @@ Body:+110
     }
   ]
 }
-Response:+2947
+Response:+2698
 {
   "results": [
     {
@@ -20,9 +20,8 @@ Response:+2947
         "content": [
           "a2e682e5-0b26-4994-a4f5-1dcfec0df612",
           "22af6674-4033-4ec5-bd07-14ca3edf2b03",
-          "06d68042-259c-4be1-b4fb-d30d5602800e",
           "f5f4ac00-6696-4e9e-88f9-7cf002ba1613",
-          "989290a5-3f5c-4662-a439-42e8f5b37ca8",
+          "ba192914-76ee-4b82-b149-324e93e172ed",
           "6b9bb237-fb6e-4fdc-9951-7164d3d80832",
           "3948fa67-11dc-4b81-baa9-3896118c2182",
           "5709f714-adeb-472b-ba80-f8bf7729541b",
@@ -48,12 +47,8 @@ Response:+2947
           "69636773-8dba-4c59-b181-fb3f1700ef54",
           "3c18183c-671b-4003-a1d9-67126ff09599",
           "dd66a1c5-0580-46ea-a6a1-3272d29d17fb",
-          "e7f97176-6134-451f-b5ef-9f999aee3391",
           "ff633802-1802-4dc6-978f-f456ac6e63b4",
           "bb89dc8c-8fd3-42c3-9b7f-e7893bc30eb5",
-          "b27318ff-62ac-4bdb-9c41-c3b289bb3801",
-          "d45517ee-b7fa-46d0-96da-cc329141d47f",
-          "40c7acc6-84d1-4c90-8e7b-2e4d0fb944f4",
           "83c1a960-52fc-48ba-9135-9fcf787068bc",
           "0b1735a7-79cd-4ed8-ac18-953fa43a20c8"
         ],
@@ -70,7 +65,7 @@ Response:+2947
         "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "last_edited_by_table": "notion_user",
-        "last_edited_time": 1551949751020,
+        "last_edited_time": 1594617960000,
         "parent_id": "0d20929d-b856-4186-bfed-fbeecbb675d5",
         "parent_table": "block",
         "properties": {
@@ -81,12 +76,12 @@ Response:+2947
           ]
         },
         "type": "page",
-        "version": 3
+        "version": 12
       }
     }
   ]
 }
-60804 1594553985385 httpcache-v1
+56642 1594620576084 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -99,33 +94,13 @@ Body:+152
   "pageId": "1a4ae6db-1010-4e76-b69a-87a803d10615",
   "verticalColumns": false
 }
-Response:+60563
+Response:+56401
 {
   "cursor": {
     "stack": []
   },
   "recordMap": {
     "block": {
-      "06d68042-259c-4be1-b4fb-d30d5602800e": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1551949751015,
-          "id": "06d68042-259c-4be1-b4fb-d30d5602800e",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551949751015,
-          "parent_id": "1a4ae6db-1010-4e76-b69a-87a803d10615",
-          "parent_table": "block",
-          "type": "divider",
-          "version": 1
-        }
-      },
       "09337a3f-1459-459b-a212-f7e69b2ba8a1": {
         "role": "comment_only",
         "value": {
@@ -273,9 +248,8 @@ Response:+60563
           "content": [
             "a2e682e5-0b26-4994-a4f5-1dcfec0df612",
             "22af6674-4033-4ec5-bd07-14ca3edf2b03",
-            "06d68042-259c-4be1-b4fb-d30d5602800e",
             "f5f4ac00-6696-4e9e-88f9-7cf002ba1613",
-            "989290a5-3f5c-4662-a439-42e8f5b37ca8",
+            "ba192914-76ee-4b82-b149-324e93e172ed",
             "6b9bb237-fb6e-4fdc-9951-7164d3d80832",
             "3948fa67-11dc-4b81-baa9-3896118c2182",
             "5709f714-adeb-472b-ba80-f8bf7729541b",
@@ -301,12 +275,8 @@ Response:+60563
             "69636773-8dba-4c59-b181-fb3f1700ef54",
             "3c18183c-671b-4003-a1d9-67126ff09599",
             "dd66a1c5-0580-46ea-a6a1-3272d29d17fb",
-            "e7f97176-6134-451f-b5ef-9f999aee3391",
             "ff633802-1802-4dc6-978f-f456ac6e63b4",
             "bb89dc8c-8fd3-42c3-9b7f-e7893bc30eb5",
-            "b27318ff-62ac-4bdb-9c41-c3b289bb3801",
-            "d45517ee-b7fa-46d0-96da-cc329141d47f",
-            "40c7acc6-84d1-4c90-8e7b-2e4d0fb944f4",
             "83c1a960-52fc-48ba-9135-9fcf787068bc",
             "0b1735a7-79cd-4ed8-ac18-953fa43a20c8"
           ],
@@ -323,7 +293,7 @@ Response:+60563
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551949751020,
+          "last_edited_time": 1594617960000,
           "parent_id": "0d20929d-b856-4186-bfed-fbeecbb675d5",
           "parent_table": "block",
           "properties": {
@@ -333,8 +303,10 @@ Response:+60563
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 3
+          "version": 12
         }
       },
       "1f832efd-1b01-4ca1-ad67-b6239c8e5715": {
@@ -558,26 +530,6 @@ Response:+60563
           "version": 1
         }
       },
-      "40c7acc6-84d1-4c90-8e7b-2e4d0fb944f4": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1551949751020,
-          "id": "40c7acc6-84d1-4c90-8e7b-2e4d0fb944f4",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551949751020,
-          "parent_id": "1a4ae6db-1010-4e76-b69a-87a803d10615",
-          "parent_table": "block",
-          "type": "divider",
-          "version": 5
-        }
-      },
       "49ae33f6-d5e1-40e1-9a34-a36c3bdb340c": {
         "role": "comment_only",
         "value": {
@@ -591,13 +543,13 @@ Response:+60563
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551949751016,
+          "last_edited_time": 1594617960000,
           "parent_id": "1a4ae6db-1010-4e76-b69a-87a803d10615",
           "parent_table": "block",
           "properties": {
             "language": [
               [
-                "Plain Text"
+                "JavaScript"
               ]
             ],
             "title": [
@@ -606,8 +558,10 @@ Response:+60563
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
-          "version": 5
+          "version": 7
         }
       },
       "52b892e8-7a75-4ac2-8f1a-01b7ac467167": {
@@ -1056,33 +1010,6 @@ Response:+60563
           "version": 5
         }
       },
-      "989290a5-3f5c-4662-a439-42e8f5b37ca8": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1551949751015,
-          "id": "989290a5-3f5c-4662-a439-42e8f5b37ca8",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551949751015,
-          "parent_id": "1a4ae6db-1010-4e76-b69a-87a803d10615",
-          "parent_table": "block",
-          "properties": {
-            "source": [
-              [
-                "/tmp/571cda51-218f-456b-a5d7-288bd9066640/0fcffab1a55e8fb49584b09e64ba5cd15feef044.png"
-              ]
-            ]
-          },
-          "type": "image",
-          "version": 5
-        }
-      },
       "9ff4cd96-e8f6-4349-bd2f-f72774d5548b": {
         "role": "comment_only",
         "value": {
@@ -1153,38 +1080,6 @@ Response:+60563
           "version": 1
         }
       },
-      "b27318ff-62ac-4bdb-9c41-c3b289bb3801": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1551949751020,
-          "id": "b27318ff-62ac-4bdb-9c41-c3b289bb3801",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551949751020,
-          "parent_id": "1a4ae6db-1010-4e76-b69a-87a803d10615",
-          "parent_table": "block",
-          "properties": {
-            "language": [
-              [
-                "Plain Text"
-              ]
-            ],
-            "title": [
-              [
-                "// text over top centered at Math.PI * 1.5 ( 270 deg)\nctx.textBaseline = \"middle\";\nctx.fillCircleText(text, centX, centY, rad, Math.PI * 1.5);\n\n\n// Use measureCircleText to get angular size\nvar circleTextMetric = ctx.measureCircleText(\"Text to measure\", rad);\nconsole.log(circleTextMetric.width);            // width of text if rendered normally\nconsole.log(circleTextMetric.angularWidth);     // angular width of text\nconsole.log(circleTextMetric.pixelAngularSize); // angular size of a pixel"
-              ]
-            ]
-          },
-          "type": "code",
-          "version": 5
-        }
-      },
       "b51959f8-9bf7-4237-9b2f-900f33be0d31": {
         "role": "comment_only",
         "value": {
@@ -1223,6 +1118,44 @@ Response:+60563
           "version": 1
         }
       },
+      "ba192914-76ee-4b82-b149-324e93e172ed": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1594617900000,
+          "file_ids": [
+            "77245390-f5ec-41e8-aa99-37699cf3814a"
+          ],
+          "format": {
+            "block_aspect_ratio": 0.9536082474226805,
+            "block_full_width": false,
+            "block_height": 370,
+            "block_page_width": false,
+            "block_preserve_scale": true,
+            "block_width": 388,
+            "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/77245390-f5ec-41e8-aa99-37699cf3814a/Untitled.png"
+          },
+          "id": "ba192914-76ee-4b82-b149-324e93e172ed",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1594617900000,
+          "parent_id": "1a4ae6db-1010-4e76-b69a-87a803d10615",
+          "parent_table": "block",
+          "properties": {
+            "source": [
+              [
+                "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/77245390-f5ec-41e8-aa99-37699cf3814a/Untitled.png"
+              ]
+            ]
+          },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "image",
+          "version": 13
+        }
+      },
       "bb89dc8c-8fd3-42c3-9b7f-e7893bc30eb5": {
         "role": "comment_only",
         "value": {
@@ -1236,23 +1169,25 @@ Response:+60563
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551949751020,
+          "last_edited_time": 1594617960000,
           "parent_id": "1a4ae6db-1010-4e76-b69a-87a803d10615",
           "parent_table": "block",
           "properties": {
             "language": [
               [
-                "Plain Text"
+                "JavaScript"
               ]
             ],
             "title": [
               [
-                "const rad = canvas.height * 0.4;\nconst text = \"Hello circle TEXT!\";\nconst fontSize = 40;\nconst centX = canvas.width / 2;\nconst centY = canvas.height / 2;\nctx.clearRect(0,0,canvas.width,canvas.height)\n\nctx.font = fontSize + \"px verdana\";\nctx.textAlign = \"center\";\nctx.textBaseline = \"bottom\";\nctx.fillStyle = \"#000\";\nctx.strokeStyle = \"#666\";\n\n// Text under stretched from Math.PI to 0 (180 - 0 deg)\nctx.fillCircleText(text, centX, centY, rad, Math.PI, 0);\n\n// text over top centered at Math.PI * 1.5 ( 270 deg)\nctx.fillCircleText(text, centX, centY, rad, Math.PI * 1.5);\n\n// text under top centered at Math.PI * 1.5 ( 270 deg)\nctx.textBaseline = \"top\";\nctx.fillCircleText(text, centX, centY, rad, Math.PI * 1.5);"
+                "const rad = canvas.height * 0.4;\nconst text = \"Hello circle TEXT!\";\nconst fontSize = 40;\nconst centX = canvas.width / 2;\nconst centY = canvas.height / 2;\nctx.clearRect(0,0,canvas.width,canvas.height)\n\nctx.font = fontSize + \"px verdana\";\nctx.textAlign = \"center\";\nctx.textBaseline = \"bottom\";\nctx.fillStyle = \"#000\";\nctx.strokeStyle = \"#666\";\n\n// Text under stretched from Math.PI to 0 (180 - 0 deg)\nctx.fillCircleText(text, centX, centY, rad, Math.PI, 0);\n\n// text over top centered at Math.PI * 1.5 ( 270 deg)\nctx.fillCircleText(text, centX, centY, rad, Math.PI * 1.5);\n\n// text under top centered at Math.PI * 1.5 ( 270 deg)\nctx.textBaseline = \"top\";\nctx.fillCircleText(text, centX, centY, rad, Math.PI * 1.5);\n\n// text over top centered at Math.PI * 1.5 ( 270 deg)\nctx.textBaseline = \"middle\";\nctx.fillCircleText(text, centX, centY, rad, Math.PI * 1.5);\n\n\n// Use measureCircleText to get angular size\nvar circleTextMetric = ctx.measureCircleText(\"Text to measure\", rad);\nconsole.log(circleTextMetric.width);            // width of text if rendered normally\nconsole.log(circleTextMetric.angularWidth);     // angular width of text\nconsole.log(circleTextMetric.pixelAngularSize); // angular size of a pixel\n\n// Use measure text to draw a arc around the text\nctx.textBaseline = \"middle\";\nvar width = ctx.measureCircleText(text, rad).angularWidth;    \nctx.fillCircleText(text, centX, centY, rad, Math.PI * 1.5);\n\n// render the arc around the text\nctx.strokeStyle= \"red\";\nctx.lineWidth = 3;\nctx.beginPath();\nctx.arc(centX, centY, rad + fontSize / 2,Math.PI * 1.5 - width/2,Math.PI*1.5 + width/2);\nctx.arc(centX, centY, rad - fontSize / 2,Math.PI * 1.5 + width/2,Math.PI*1.5 - width/2,true);\nctx.closePath();\nctx.stroke();"
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
-          "version": 1
+          "version": 9
         }
       },
       "cb644a56-cd99-4b02-a88a-239fbdd772b1": {
@@ -1307,38 +1242,6 @@ Response:+60563
             ]
           },
           "type": "bulleted_list",
-          "version": 1
-        }
-      },
-      "d45517ee-b7fa-46d0-96da-cc329141d47f": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1551949751020,
-          "id": "d45517ee-b7fa-46d0-96da-cc329141d47f",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551949751020,
-          "parent_id": "1a4ae6db-1010-4e76-b69a-87a803d10615",
-          "parent_table": "block",
-          "properties": {
-            "language": [
-              [
-                "Plain Text"
-              ]
-            ],
-            "title": [
-              [
-                "// Use measure text to draw a arc around the text\nctx.textBaseline = \"middle\";\nvar width = ctx.measureCircleText(text, rad).angularWidth;    \nctx.fillCircleText(text, centX, centY, rad, Math.PI * 1.5);\n\n// render the arc around the text\nctx.strokeStyle= \"red\";\nctx.lineWidth = 3;\nctx.beginPath();\nctx.arc(centX, centY, rad + fontSize / 2,Math.PI * 1.5 - width/2,Math.PI*1.5 + width/2);\nctx.arc(centX, centY, rad - fontSize / 2,Math.PI * 1.5 + width/2,Math.PI*1.5 - width/2,true);\nctx.closePath();\nctx.stroke();"
-              ]
-            ]
-          },
-          "type": "code",
           "version": 1
         }
       },
@@ -1403,26 +1306,6 @@ Response:+60563
             ]
           },
           "type": "bulleted_list",
-          "version": 1
-        }
-      },
-      "e7f97176-6134-451f-b5ef-9f999aee3391": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1551949751019,
-          "id": "e7f97176-6134-451f-b5ef-9f999aee3391",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551949751019,
-          "parent_id": "1a4ae6db-1010-4e76-b69a-87a803d10615",
-          "parent_table": "block",
-          "type": "divider",
           "version": 1
         }
       },
