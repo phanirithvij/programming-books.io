@@ -1,4 +1,4 @@
-1481 1594553546355 httpcache-v1
+1532 1594610683998 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -10,7 +10,7 @@ Body:+110
     }
   ]
 }
-Response:+1281
+Response:+1332
 {
   "results": [
     {
@@ -20,8 +20,9 @@ Response:+1281
         "content": [
           "7f6ca240-d661-4ecd-81f8-8fbe36d52228",
           "2adf7448-821f-4853-bb2e-da1656d4f2af",
-          "ea77881e-85d2-456c-93c3-71801fa7bdf5",
+          "0090ae05-10f3-405e-bd25-5d43bae328d5",
           "ac56cb28-4eb6-4d84-8164-fd26d38bee0a",
+          "bddd38b0-76e5-4a9a-9dd6-071544863b7a",
           "c0eb2a30-cca2-4161-9ee2-943dc7aca55a"
         ],
         "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -37,7 +38,7 @@ Response:+1281
         "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "last_edited_by_table": "notion_user",
-        "last_edited_time": 1551945383501,
+        "last_edited_time": 1594604340000,
         "parent_id": "04974825-61b2-4800-ae16-c05860d63e8b",
         "parent_table": "block",
         "properties": {
@@ -48,12 +49,12 @@ Response:+1281
           ]
         },
         "type": "page",
-        "version": 7
+        "version": 17
       }
     }
   ]
 }
-14863 1594553546355 httpcache-v1
+16377 1594610683998 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -66,13 +67,51 @@ Body:+152
   "pageId": "116db463-0e85-47f6-9071-6536f5747591",
   "verticalColumns": false
 }
-Response:+14622
+Response:+16136
 {
   "cursor": {
     "stack": []
   },
   "recordMap": {
     "block": {
+      "0090ae05-10f3-405e-bd25-5d43bae328d5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1594604220000,
+          "file_ids": [
+            "2837dae8-ab5c-4234-8bb3-084d98315b6d"
+          ],
+          "format": {
+            "block_aspect_ratio": 0.2,
+            "block_full_width": false,
+            "block_height": 110,
+            "block_page_width": false,
+            "block_preserve_scale": true,
+            "block_width": 550,
+            "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2837dae8-ab5c-4234-8bb3-084d98315b6d/Untitled.png"
+          },
+          "id": "0090ae05-10f3-405e-bd25-5d43bae328d5",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1594604220000,
+          "parent_id": "116db463-0e85-47f6-9071-6536f5747591",
+          "parent_table": "block",
+          "properties": {
+            "source": [
+              [
+                "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2837dae8-ab5c-4234-8bb3-084d98315b6d/Untitled.png"
+              ]
+            ]
+          },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "image",
+          "version": 13
+        }
+      },
       "04974825-61b2-4800-ae16-c05860d63e8b": {
         "role": "comment_only",
         "value": {
@@ -125,8 +164,9 @@ Response:+14622
           "content": [
             "7f6ca240-d661-4ecd-81f8-8fbe36d52228",
             "2adf7448-821f-4853-bb2e-da1656d4f2af",
-            "ea77881e-85d2-456c-93c3-71801fa7bdf5",
+            "0090ae05-10f3-405e-bd25-5d43bae328d5",
             "ac56cb28-4eb6-4d84-8164-fd26d38bee0a",
+            "bddd38b0-76e5-4a9a-9dd6-071544863b7a",
             "c0eb2a30-cca2-4161-9ee2-943dc7aca55a"
           ],
           "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -142,7 +182,7 @@ Response:+14622
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945383501,
+          "last_edited_time": 1594604340000,
           "parent_id": "04974825-61b2-4800-ae16-c05860d63e8b",
           "parent_table": "block",
           "properties": {
@@ -152,8 +192,10 @@ Response:+14622
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 7
+          "version": 17
         }
       },
       "18bfe038-1096-49f4-8904-e71ca18d76ed": {
@@ -389,6 +431,48 @@ Response:+14622
           "version": 1
         }
       },
+      "bddd38b0-76e5-4a9a-9dd6-071544863b7a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1594604294380,
+          "id": "bddd38b0-76e5-4a9a-9dd6-071544863b7a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1594604340000,
+          "parent_id": "116db463-0e85-47f6-9071-6536f5747591",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Markdown"
+              ]
+            ],
+            "title": [
+              [
+                ":table\nValue | Description\n"
+              ],
+              [
+                "top",
+                [
+                  [
+                    "i"
+                  ]
+                ]
+              ],
+              [
+                " | This is the default value. It places the caption above the table.\nbottom | This value places the caption below the table."
+              ]
+            ]
+          },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "code",
+          "version": 37
+        }
+      },
       "c0eb2a30-cca2-4161-9ee2-943dc7aca55a": {
         "role": "comment_only",
         "value": {
@@ -402,56 +486,13 @@ Response:+14622
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945383501,
+          "last_edited_time": 1594604280000,
           "parent_id": "116db463-0e85-47f6-9071-6536f5747591",
           "parent_table": "block",
-          "properties": {
-            "title": [
-              [
-                "Value | Description |\n—— | —— |"
-              ],
-              [
-                "top",
-                [
-                  [
-                    "i"
-                  ]
-                ]
-              ],
-              [
-                " | This is the default value. It places the caption above the table. |\nbottom | This value places the caption below the table. |"
-              ]
-            ]
-          },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
-          "version": 5
-        }
-      },
-      "ea77881e-85d2-456c-93c3-71801fa7bdf5": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1551945383500,
-          "id": "ea77881e-85d2-456c-93c3-71801fa7bdf5",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945383500,
-          "parent_id": "116db463-0e85-47f6-9071-6536f5747591",
-          "parent_table": "block",
-          "properties": {
-            "source": [
-              [
-                "/tmp/38a07527-85e9-4a26-b159-1044daaec075/62fb116794fe97de60755d6f4e9986b298f1d703.png"
-              ]
-            ]
-          },
-          "type": "image",
-          "version": 1
+          "version": 7
         }
       }
     },

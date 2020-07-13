@@ -1,4 +1,4 @@
-2302 1594553561400 httpcache-v1
+2353 1594610695998 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -10,7 +10,7 @@ Body:+110
     }
   ]
 }
-Response:+2102
+Response:+2153
 {
   "results": [
     {
@@ -28,13 +28,14 @@ Response:+2102
           "de8686fd-f15f-453c-bede-7f82a7aa008f",
           "090467af-1f82-4ab8-81fe-1c3c6f3bbcf6",
           "68bcbc73-4036-40b5-b373-c5ad62fbacc2",
-          "99605fe7-b97d-4de9-a16c-3a06610cc0f1",
-          "25d9cd8a-7c82-48b4-bd0e-4d0c2dbd7a17",
+          "f72ebbdd-a68e-4d6c-b109-9e7ba8107a6b",
           "e09204f4-3a49-4c4f-8e4a-2ea6e87097b1",
           "0a793ca6-000c-41e3-b4c2-bbf6631410fc",
           "c255b769-c69b-4572-8fe0-4f20b589f7ef",
           "f658b9bf-1af5-4773-91b3-8519a77f79c9",
           "22101ace-6b9f-47ba-bc13-ed98e0f69e35",
+          "e72ba684-bcae-4bce-b556-62ded56c0697",
+          "048d6f1f-ef43-4822-8b42-e7d6a154c87c",
           "1d73034d-70a4-4e29-9587-23d21829bd67",
           "667b847e-9ae6-40ba-8685-f44ac9937ab6",
           "ca4fa2ff-6a7f-4cea-9b1a-4ea5782d6fbe",
@@ -53,7 +54,7 @@ Response:+2102
         "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "last_edited_by_table": "notion_user",
-        "last_edited_time": 1551945351177,
+        "last_edited_time": 1594608900000,
         "parent_id": "2f766cdc-785a-4190-bb87-fe34634ce93e",
         "parent_table": "block",
         "properties": {
@@ -64,12 +65,12 @@ Response:+2102
           ]
         },
         "type": "page",
-        "version": 3
+        "version": 12
       }
     }
   ]
 }
-35120 1594553561401 httpcache-v1
+36633 1594610695999 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -82,13 +83,58 @@ Body:+152
   "pageId": "7286e349-d655-4977-b2fd-83ca874297e7",
   "verticalColumns": false
 }
-Response:+34879
+Response:+36392
 {
   "cursor": {
     "stack": []
   },
   "recordMap": {
     "block": {
+      "048d6f1f-ef43-4822-8b42-e7d6a154c87c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1594608900000,
+          "id": "048d6f1f-ef43-4822-8b42-e7d6a154c87c",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1594608900000,
+          "parent_id": "7286e349-d655-4977-b2fd-83ca874297e7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "auto",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " | Gives the element the same stacking context as its parent. ("
+              ],
+              [
+                "Default",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                ") |"
+              ]
+            ]
+          },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 9
+        }
+      },
       "090467af-1f82-4ab8-81fe-1c3c6f3bbcf6": {
         "role": "comment_only",
         "value": {
@@ -298,100 +344,20 @@ Response:+34879
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945351175,
+          "last_edited_time": 1594608900000,
           "parent_id": "7286e349-d655-4977-b2fd-83ca874297e7",
           "parent_table": "block",
           "properties": {
             "title": [
               [
                 "Parameter | Details |\n— | — |"
-              ],
-              [
-                "number",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " | An integer value. A higher number is higher on the "
-              ],
-              [
-                "z-index",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " stack. "
-              ],
-              [
-                "0",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " is the default value. Negative values are allowed. |"
-              ],
-              [
-                "auto",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " | Gives the element the same stacking context as its parent. ("
-              ],
-              [
-                "Default",
-                [
-                  [
-                    "b"
-                  ]
-                ]
-              ],
-              [
-                ") |"
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
-          "version": 5
-        }
-      },
-      "25d9cd8a-7c82-48b4-bd0e-4d0c2dbd7a17": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1551945351174,
-          "id": "25d9cd8a-7c82-48b4-bd0e-4d0c2dbd7a17",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945351174,
-          "parent_id": "7286e349-d655-4977-b2fd-83ca874297e7",
-          "parent_table": "block",
-          "properties": {
-            "title": [
-              [
-                "green on top of red, red on top of blue"
-              ]
-            ]
-          },
-          "type": "text",
-          "version": 1
+          "version": 7
         }
       },
       "2cd6e4c0-32a0-470a-bab8-f64661bd927a": {
@@ -526,7 +492,7 @@ Response:+34879
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945351174,
+          "last_edited_time": 1594608900000,
           "parent_id": "7286e349-d655-4977-b2fd-83ca874297e7",
           "parent_table": "block",
           "properties": {
@@ -536,8 +502,10 @@ Response:+34879
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
-          "version": 5
+          "version": 7
         }
       },
       "7286e349-d655-4977-b2fd-83ca874297e7": {
@@ -555,13 +523,14 @@ Response:+34879
             "de8686fd-f15f-453c-bede-7f82a7aa008f",
             "090467af-1f82-4ab8-81fe-1c3c6f3bbcf6",
             "68bcbc73-4036-40b5-b373-c5ad62fbacc2",
-            "99605fe7-b97d-4de9-a16c-3a06610cc0f1",
-            "25d9cd8a-7c82-48b4-bd0e-4d0c2dbd7a17",
+            "f72ebbdd-a68e-4d6c-b109-9e7ba8107a6b",
             "e09204f4-3a49-4c4f-8e4a-2ea6e87097b1",
             "0a793ca6-000c-41e3-b4c2-bbf6631410fc",
             "c255b769-c69b-4572-8fe0-4f20b589f7ef",
             "f658b9bf-1af5-4773-91b3-8519a77f79c9",
             "22101ace-6b9f-47ba-bc13-ed98e0f69e35",
+            "e72ba684-bcae-4bce-b556-62ded56c0697",
+            "048d6f1f-ef43-4822-8b42-e7d6a154c87c",
             "1d73034d-70a4-4e29-9587-23d21829bd67",
             "667b847e-9ae6-40ba-8685-f44ac9937ab6",
             "ca4fa2ff-6a7f-4cea-9b1a-4ea5782d6fbe",
@@ -580,7 +549,7 @@ Response:+34879
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945351177,
+          "last_edited_time": 1594608900000,
           "parent_id": "2f766cdc-785a-4190-bb87-fe34634ce93e",
           "parent_table": "block",
           "properties": {
@@ -590,8 +559,10 @@ Response:+34879
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 3
+          "version": 12
         }
       },
       "759e5569-6f93-4850-bb64-a57aa66a0007": {
@@ -713,33 +684,6 @@ Response:+34879
           },
           "type": "header",
           "version": 1
-        }
-      },
-      "99605fe7-b97d-4de9-a16c-3a06610cc0f1": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1551945351174,
-          "id": "99605fe7-b97d-4de9-a16c-3a06610cc0f1",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945351174,
-          "parent_id": "7286e349-d655-4977-b2fd-83ca874297e7",
-          "parent_table": "block",
-          "properties": {
-            "source": [
-              [
-                "/tmp/1561c837-1166-45ec-8beb-531a107f4923/a7c6097a1a104be096438a9d3b4dc46ccc255a01.png"
-              ]
-            ]
-          },
-          "type": "image",
-          "version": 5
         }
       },
       "9a659702-b4bb-42bf-befa-ad2563ce094d": {
@@ -966,6 +910,62 @@ Response:+34879
           "version": 5
         }
       },
+      "e72ba684-bcae-4bce-b556-62ded56c0697": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1594608900000,
+          "id": "e72ba684-bcae-4bce-b556-62ded56c0697",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1594608900000,
+          "parent_id": "7286e349-d655-4977-b2fd-83ca874297e7",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "number",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " | An integer value. A higher number is higher on the "
+              ],
+              [
+                "z-index",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " stack. "
+              ],
+              [
+                "0",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                " is the default value. Negative values are allowed. |"
+              ]
+            ]
+          },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 10
+        }
+      },
       "f2e4c889-e0e4-4300-8a07-c414f16dc414": {
         "role": "comment_only",
         "value": {
@@ -1030,13 +1030,13 @@ Response:+34879
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945351175,
+          "last_edited_time": 1594608900000,
           "parent_id": "7286e349-d655-4977-b2fd-83ca874297e7",
           "parent_table": "block",
           "properties": {
             "language": [
               [
-                "Plain Text"
+                "CSS"
               ]
             ],
             "title": [
@@ -1045,8 +1045,48 @@ Response:+34879
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
-          "version": 1
+          "version": 3
+        }
+      },
+      "f72ebbdd-a68e-4d6c-b109-9e7ba8107a6b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1594608840000,
+          "file_ids": [
+            "e67f39a3-0971-45a2-9f23-7cd924b9ddc1"
+          ],
+          "format": {
+            "block_aspect_ratio": 1.06,
+            "block_full_width": false,
+            "block_height": 371,
+            "block_page_width": false,
+            "block_preserve_scale": true,
+            "block_width": 350,
+            "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e67f39a3-0971-45a2-9f23-7cd924b9ddc1/Untitled.png"
+          },
+          "id": "f72ebbdd-a68e-4d6c-b109-9e7ba8107a6b",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1594608840000,
+          "parent_id": "7286e349-d655-4977-b2fd-83ca874297e7",
+          "parent_table": "block",
+          "properties": {
+            "source": [
+              [
+                "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e67f39a3-0971-45a2-9f23-7cd924b9ddc1/Untitled.png"
+              ]
+            ]
+          },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "image",
+          "version": 13
         }
       }
     },

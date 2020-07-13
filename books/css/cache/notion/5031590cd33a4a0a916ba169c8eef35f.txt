@@ -1,4 +1,4 @@
-1581 1594553562947 httpcache-v1
+1632 1594610696870 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -10,7 +10,7 @@ Body:+110
     }
   ]
 }
-Response:+1381
+Response:+1432
 {
   "results": [
     {
@@ -23,8 +23,9 @@ Response:+1381
           "a020e341-80fc-4e4b-b876-0672ca9ad55a",
           "851bd7a9-5daf-4d15-a3c2-f58ef8c23d13",
           "4ad9665b-36bf-42c5-9f17-44f88e80ced7",
-          "3260ab57-0e8b-461d-abbe-ca09394cb0fc",
-          "db37d032-11b7-47d7-84d1-184926dca410"
+          "43ff9e2a-f9fd-4af1-9456-e4dd12320661",
+          "db37d032-11b7-47d7-84d1-184926dca410",
+          "1bc3734c-4df1-4811-9cb6-946ce5762713"
         ],
         "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -39,7 +40,7 @@ Response:+1381
         "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "last_edited_by_table": "notion_user",
-        "last_edited_time": 1551945441413,
+        "last_edited_time": 1594609020000,
         "parent_id": "325b6445-db10-4fc3-a31f-291360b669b7",
         "parent_table": "block",
         "properties": {
@@ -50,12 +51,12 @@ Response:+1381
           ]
         },
         "type": "page",
-        "version": 7
+        "version": 11
       }
     }
   ]
 }
-15865 1594553562947 httpcache-v1
+17370 1594610696871 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -68,7 +69,7 @@ Body:+152
   "pageId": "5031590c-d33a-4a0a-916b-a169c8eef35f",
   "verticalColumns": false
 }
-Response:+15624
+Response:+17129
 {
   "cursor": {
     "stack": []
@@ -172,6 +173,25 @@ Response:+15624
           "version": 100
         }
       },
+      "1bc3734c-4df1-4811-9cb6-946ce5762713": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1594609020000,
+          "id": "1bc3734c-4df1-4811-9cb6-946ce5762713",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1594609020000,
+          "parent_id": "5031590c-d33a-4a0a-916b-a169c8eef35f",
+          "parent_table": "block",
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 8
+        }
+      },
       "325b6445-db10-4fc3-a31f-291360b669b7": {
         "role": "comment_only",
         "value": {
@@ -217,31 +237,42 @@ Response:+15624
           "version": 31
         }
       },
-      "3260ab57-0e8b-461d-abbe-ca09394cb0fc": {
+      "43ff9e2a-f9fd-4af1-9456-e4dd12320661": {
         "role": "comment_only",
         "value": {
           "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
-          "created_time": 1551945441413,
-          "id": "3260ab57-0e8b-461d-abbe-ca09394cb0fc",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_time": 1594609020000,
+          "file_ids": [
+            "4e8428c8-b4bc-4d08-a0e0-427e4235066e"
+          ],
+          "format": {
+            "block_aspect_ratio": 1,
+            "block_full_width": false,
+            "block_height": 115,
+            "block_page_width": false,
+            "block_preserve_scale": true,
+            "block_width": 115,
+            "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4e8428c8-b4bc-4d08-a0e0-427e4235066e/Untitled.png"
+          },
+          "id": "43ff9e2a-f9fd-4af1-9456-e4dd12320661",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945441413,
+          "last_edited_time": 1594609020000,
           "parent_id": "5031590c-d33a-4a0a-916b-a169c8eef35f",
           "parent_table": "block",
           "properties": {
             "source": [
               [
-                "/tmp/e1c2d239-7e55-4cfa-8b5a-dafd2eaccc0b/38e86dcd515fb96c5d52bcbf143191a5632d7b07.png"
+                "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4e8428c8-b4bc-4d08-a0e0-427e4235066e/Untitled.png"
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "image",
-          "version": 1
+          "version": 13
         }
       },
       "4ad9665b-36bf-42c5-9f17-44f88e80ced7": {
@@ -286,8 +317,9 @@ Response:+15624
             "a020e341-80fc-4e4b-b876-0672ca9ad55a",
             "851bd7a9-5daf-4d15-a3c2-f58ef8c23d13",
             "4ad9665b-36bf-42c5-9f17-44f88e80ced7",
-            "3260ab57-0e8b-461d-abbe-ca09394cb0fc",
-            "db37d032-11b7-47d7-84d1-184926dca410"
+            "43ff9e2a-f9fd-4af1-9456-e4dd12320661",
+            "db37d032-11b7-47d7-84d1-184926dca410",
+            "1bc3734c-4df1-4811-9cb6-946ce5762713"
           ],
           "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -302,7 +334,7 @@ Response:+15624
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945441413,
+          "last_edited_time": 1594609020000,
           "parent_id": "325b6445-db10-4fc3-a31f-291360b669b7",
           "parent_table": "block",
           "properties": {
@@ -312,8 +344,10 @@ Response:+15624
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 7
+          "version": 11
         }
       },
       "77c75f40-7bf2-47b7-b5af-560795da2bd3": {
@@ -329,13 +363,13 @@ Response:+15624
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945441412,
+          "last_edited_time": 1594609020000,
           "parent_id": "5031590c-d33a-4a0a-916b-a169c8eef35f",
           "parent_table": "block",
           "properties": {
             "language": [
               [
-                "Plain Text"
+                "HTML"
               ]
             ],
             "title": [
@@ -344,8 +378,10 @@ Response:+15624
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
-          "version": 1
+          "version": 3
         }
       },
       "851bd7a9-5daf-4d15-a3c2-f58ef8c23d13": {
@@ -361,13 +397,13 @@ Response:+15624
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945441412,
+          "last_edited_time": 1594609020000,
           "parent_id": "5031590c-d33a-4a0a-916b-a169c8eef35f",
           "parent_table": "block",
           "properties": {
             "language": [
               [
-                "Plain Text"
+                "CSS"
               ]
             ],
             "title": [
@@ -376,8 +412,10 @@ Response:+15624
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
-          "version": 1
+          "version": 3
         }
       },
       "858afcbe-f197-468c-9dbe-5eec7b88904e": {
