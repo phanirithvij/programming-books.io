@@ -94,7 +94,7 @@ func downloadAndCacheImage(c *notionapi.Client, imgDir string, blockID, uri stri
 	cachedPath = filepath.Join(imgDir, sha+ext)
 
 	u.WriteFileMust(cachedPath, imgData)
-	logf("finished in %s.\nWrote as '%s'\n", time.Since(timeStart), cachedPath)
+	logf(" in %s.\nWrote as '%s'\n", time.Since(timeStart), cachedPath)
 
 	return cachedPath, nil
 }
