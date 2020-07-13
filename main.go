@@ -135,6 +135,13 @@ func main() {
 
 	notionapi.LogFunc = logf
 
+	// ad-hoc, rarely done tasks
+	if true {
+		//genTwitterImagesAndExit()
+		optimizeAllImages()
+		return
+	}
+
 	if flgWc {
 		doLineCount()
 		return

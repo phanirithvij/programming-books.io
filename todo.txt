@@ -9,23 +9,55 @@
 * add a way to generate html page with structure of the page, for easy finding
   pages to edit. Shows which pages have snippets, images, codeeval.com links etc.
 * make 404.html design match the rest of the book better
-* a way to re-download and re-execute a gist. When a gist changes, we don't really know
-  TODO: ideally, there would be a way to check if gist changed
-
-* kotlin: fix lack of twitter cover (or skip for now)
-* rename book-netframework o netcore?
-* dart: fix lack of twitter cover
-
-* fix images for cpp and other books
+* add ability to have one gist serve as multiple examples
+  idea: accept url like:
+  https://codeeval.dev/gist/2f493d47f6d8bb328a3a86e4bbefff9c/main.go
+  where main.go is the file to execute
+  Gist could have multiple files. They would have to have ":run" directive
 
 Command to create a project or link to existing project:
 vercel www --scope teamkjk --name book-git --confirm
-
 
 Command to preview locally:
 cd www
 vercel dev
 
+* [x] optimized imaged
+* [x] regenerated twitter images
 * [x] fix 404 page
 * [x] maybe link to all books at the bottom, not at the top
 * [x] (temporarily_) remove comment submission
+* [x] fixed images for C++ book
+
+Fix images in all books:
+android
+bash
+batch
+c
+cpp
+csharp
+css
+dart
+git
+go
+html
+htmlcanvas
+ios
+java
+javascript
+kotlin
+mysql
+netframework
+nodejs
+objectivec
+php
+postgresql
+powershell
+python
+react
+reactnative
+ruby
+rubyonrails
+sql
+swift
+typescript
