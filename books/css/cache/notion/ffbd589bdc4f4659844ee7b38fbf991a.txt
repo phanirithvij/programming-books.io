@@ -1,4 +1,4 @@
-1399 1594553639075 httpcache-v1
+1450 1594615637316 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -10,7 +10,7 @@ Body:+110
     }
   ]
 }
-Response:+1199
+Response:+1250
 {
   "results": [
     {
@@ -19,8 +19,9 @@ Response:+1199
         "alive": true,
         "content": [
           "843b8745-5d06-4c9d-8821-32d7faf724c3",
-          "97c0d3f0-91b3-4e32-967e-5e5b9088744f",
-          "8de71004-41ff-46a7-b375-b8b4920160c9"
+          "8de71004-41ff-46a7-b375-b8b4920160c9",
+          "e27fc23b-0a5c-4c23-9477-36fb428b60ad",
+          "4d35fb79-e7ac-4157-a67d-8f3f691e5a08"
         ],
         "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -35,23 +36,23 @@ Response:+1199
         "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "last_edited_by_table": "notion_user",
-        "last_edited_time": 1551945088055,
+        "last_edited_time": 1594615260000,
         "parent_id": "e012f912-2f98-4998-b135-e4e66d4b296a",
         "parent_table": "block",
         "properties": {
           "title": [
             [
-              "CSS3 in-range selector example"
+              "CSS3 :in-range selector example"
             ]
           ]
         },
         "type": "page",
-        "version": 3
+        "version": 8
       }
     }
   ]
 }
-12610 1594553639077 httpcache-v1
+13515 1594615637317 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -64,7 +65,7 @@ Body:+152
   "pageId": "ffbd589b-dc4f-4659-844e-e7b38fbf991a",
   "verticalColumns": false
 }
-Response:+12369
+Response:+13274
 {
   "cursor": {
     "stack": []
@@ -168,6 +169,25 @@ Response:+12369
           "version": 100
         }
       },
+      "4d35fb79-e7ac-4157-a67d-8f3f691e5a08": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1594615260000,
+          "id": "4d35fb79-e7ac-4157-a67d-8f3f691e5a08",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1594615260000,
+          "parent_id": "ffbd589b-dc4f-4659-844e-e7b38fbf991a",
+          "parent_table": "block",
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 8
+        }
+      },
       "843b8745-5d06-4c9d-8821-32d7faf724c3": {
         "role": "comment_only",
         "value": {
@@ -181,23 +201,25 @@ Response:+12369
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945088050,
+          "last_edited_time": 1594615260000,
           "parent_id": "ffbd589b-dc4f-4659-844e-e7b38fbf991a",
           "parent_table": "block",
           "properties": {
             "language": [
               [
-                "Plain Text"
+                "HTML"
               ]
             ],
             "title": [
               [
-                "\u003cstyle\u003e\ninput:in-range {\n    border: 1px solid blue;\n}\n\u003c/style\u003e"
+                "\u003cstyle\u003e\ninput:in-range {\n    border: 1px solid blue;\n}\n\u003c/style\u003e\n\u003cinput type=\"number\" min=\"10\" max=\"20\" value=\"15\"\u003e\n\u003cp\u003eThe border for this value will be blue\u003c/p\u003e"
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
-          "version": 1
+          "version": 5
         }
       },
       "8de71004-41ff-46a7-b375-b8b4920160c9": {
@@ -213,7 +235,7 @@ Response:+12369
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945088055,
+          "last_edited_time": 1594615260000,
           "parent_id": "ffbd589b-dc4f-4659-844e-e7b38fbf991a",
           "parent_table": "block",
           "properties": {
@@ -231,52 +253,13 @@ Response:+12369
               ],
               [
                 " CSS pseudo-class matches when an element has its value attribute inside the specified range limitations for this element. It allows the page to give a feedback that the value currently defined using the element is inside the range limits."
-              ],
-              [
-                "[1]",
-                [
-                  [
-                    "a",
-                    "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
-                  ]
-                ]
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
-          "version": 1
-        }
-      },
-      "97c0d3f0-91b3-4e32-967e-5e5b9088744f": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1551945088053,
-          "id": "97c0d3f0-91b3-4e32-967e-5e5b9088744f",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945088053,
-          "parent_id": "ffbd589b-dc4f-4659-844e-e7b38fbf991a",
-          "parent_table": "block",
-          "properties": {
-            "language": [
-              [
-                "Plain Text"
-              ]
-            ],
-            "title": [
-              [
-                "\u003cinput type=\"number\" min=\"10\" max=\"20\" value=\"15\"\u003e\n\u003cp\u003eThe border for this value will be blue\u003c/p\u003e"
-              ]
-            ]
-          },
-          "type": "code",
-          "version": 1
+          "version": 5
         }
       },
       "e012f912-2f98-4998-b135-e4e66d4b296a": {
@@ -333,14 +316,47 @@ Response:+12369
           "version": 37
         }
       },
+      "e27fc23b-0a5c-4c23-9477-36fb428b60ad": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1594615260000,
+          "id": "e27fc23b-0a5c-4c23-9477-36fb428b60ad",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1594615260000,
+          "parent_id": "ffbd589b-dc4f-4659-844e-e7b38fbf991a",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range",
+                [
+                  [
+                    "a",
+                    "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 10
+        }
+      },
       "ffbd589b-dc4f-4659-844e-e7b38fbf991a": {
         "role": "comment_only",
         "value": {
           "alive": true,
           "content": [
             "843b8745-5d06-4c9d-8821-32d7faf724c3",
-            "97c0d3f0-91b3-4e32-967e-5e5b9088744f",
-            "8de71004-41ff-46a7-b375-b8b4920160c9"
+            "8de71004-41ff-46a7-b375-b8b4920160c9",
+            "e27fc23b-0a5c-4c23-9477-36fb428b60ad",
+            "4d35fb79-e7ac-4157-a67d-8f3f691e5a08"
           ],
           "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -355,18 +371,20 @@ Response:+12369
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1551945088055,
+          "last_edited_time": 1594615260000,
           "parent_id": "e012f912-2f98-4998-b135-e4e66d4b296a",
           "parent_table": "block",
           "properties": {
             "title": [
               [
-                "CSS3 in-range selector example"
+                "CSS3 :in-range selector example"
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 3
+          "version": 8
         }
       }
     },
