@@ -1,10 +1,12 @@
+To get the first version:
+* create book-index for www.programming-books.io
 * add redirects from www.programming-books.io
+* fix react and reactive native covers (re-using ruby)
+
+* add option to generate and deploy all books
 * verify google analyticss
 * write sitemap.txt
-* create book-index for www.programming-books.io
-* re-add comment submission.
-* then the top would show name of the book, point to the top of book and
-  we won't need one level of breadcrumbs at the top of page
+* re-add comment submission
 * add -preview option that runs `vercel dev` at the end for a given book
 * add a way to generate html page with structure of the page, for easy finding
   pages to edit. Shows which pages have snippets, images, codeeval.com links etc.
@@ -22,12 +24,10 @@ Command to preview locally:
 cd www
 vercel dev
 
+* [x] update DNS for all books to be in ${book}.programming-books.io
 * [x] optimized imaged
 * [x] regenerated twitter images
 * [x] fix 404 page
 * [x] maybe link to all books at the bottom, not at the top
 * [x] (temporarily_) remove comment submission
 * [x] fixed images for C++ book
-
-Fix images in all books:
-typescript

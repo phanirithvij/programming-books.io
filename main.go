@@ -54,11 +54,11 @@ func shouldCopyImage(path string) bool {
 	return !strings.Contains(path, "@2x")
 }
 
-func copyCoversMust() {
+func copyCoversMust(dir string) {
 	srcDir := "covers"
-	dstDir := filepath.Join("www", "covers")
+	dstDir := filepath.Join(dir, "covers")
 	u.DirCopyRecurMust(dstDir, srcDir, shouldCopyImage)
-	dstDir = filepath.Join("www", "covers_small")
+	dstDir = filepath.Join(dir, "covers_small")
 	srcDir = filepath.Join("covers", "covers_small")
 	u.DirCopyRecurMust(dstDir, srcDir, shouldCopyImage)
 }
@@ -148,6 +148,10 @@ func main() {
 	}
 
 	if flgGen {
+		if flgBook == "index" {
+			genBookIndexAndDeploy(allBooks)
+			return
+		}
 		book := findBook(flgBook)
 		generateBookAndDeploy(book)
 		fmt.Printf("book: %s, dir: %s\n", book.Title, book.DirShort)
@@ -209,5 +213,22 @@ func deployWithVercel(book *Book) {
 	cmd := exec.Command("vercel", args...)
 
 	cmd.Dir = book.DirOnDisk
+	u.RunCmdLoggedMust(cmd)
+}
+
+func deployBookIndexWithVercel() {
+	if !(flgDeployProd || flgDeployDev) {
+		// no deploying
+		fmt.Printf("not deploying\n")
+		return
+	}
+	projectName := "book-index"
+	args := []string{"www", "--scope", "teamkjk", "--name", projectName, "--confirm"}
+	if flgDeployProd {
+		args = append(args, "--prod")
+	}
+	cmd := exec.Command("vercel", args...)
+
+	cmd.Dir = filepath.Join("books", "books-index")
 	u.RunCmdLoggedMust(cmd)
 }

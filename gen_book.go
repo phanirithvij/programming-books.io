@@ -124,17 +124,6 @@ func getPageCommon() PageCommon {
 	}
 }
 
-func gen404TopLevel() {
-	d := struct {
-		PageCommon
-		Book *Book
-	}{
-		PageCommon: getPageCommon(),
-	}
-	path := filepath.Join(destDir, "404.html")
-	_ = execTemplateToFileMaybeMust("404.tmpl.html", d, path)
-}
-
 func splitBooks(books []*Book) ([]*Book, []*Book) {
 	var left []*Book
 	var right []*Book
@@ -157,54 +146,6 @@ func execTemplate(tmplName string, d interface{}, path string, w io.Writer) erro
 	// this code path is for generating static files
 	_ = execTemplateToFileMaybeMust(tmplName, d, path)
 	return nil
-}
-
-func genIndex(books []*Book, w io.Writer) error {
-	leftBooks, rightBooks := splitBooks(books)
-	d := struct {
-		PageCommon
-		Books      []*Book
-		LeftBooks  []*Book
-		RightBooks []*Book
-		NotionURL  string
-	}{
-		PageCommon: getPageCommon(),
-		Books:      books,
-		LeftBooks:  leftBooks,
-		RightBooks: rightBooks,
-		NotionURL:  gitHubBaseURL,
-	}
-
-	path := filepath.Join(destDir, "index.html")
-	return execTemplate("index2.tmpl.html", d, path, w)
-}
-
-func genIndexGrid(books []*Book, w io.Writer) error {
-	d := struct {
-		PageCommon
-		Books []*Book
-	}{
-		PageCommon: getPageCommon(),
-		Books:      books,
-	}
-	path := filepath.Join(destDir, "index-grid.html")
-	return execTemplate("index-grid.tmpl.html", d, path, w)
-}
-
-func genFeedback(w io.Writer) error {
-	path := filepath.Join(destDir, "feedback.html")
-	d := struct {
-		PageCommon
-	}{
-		PageCommon: getPageCommon(),
-	}
-	return execTemplate("feedback.tmpl.html", d, path, w)
-}
-
-func genAbout(w io.Writer) error {
-	d := getPageCommon()
-	path := filepath.Join(destDir, "about.html")
-	return execTemplate("about.tmpl.html", d, path, w)
 }
 
 type Breadcrumb struct {
