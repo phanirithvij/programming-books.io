@@ -17,10 +17,44 @@
   </style>
 
   <script>
+    // https://www.programming-books.io/essential/go/concurrency-16e8d8c3d77e44faaf6857a1df368ce8
+    // =>
+    // ["go", "${url}"] or ["go"] or null
+    function parseBookURL(loc) {
+      let parsedURL = loc;
+      // /essential/go/concurrency-16e8d8c3d77e44faaf6857a1df368ce8
+      let path = parsedURL.pathname;
+      if (!path.startsWith("/essential/")) {
+        return nil;
+      }
+      let parts = path.split("/");
+      // ["", "essential", "go", "concurrency-16e8d8c3d77e44faaf6857a1df368ce8"]
+      const book = parts[2];
+      if (parts.length == 3) {
+        return [book];
+      }
+      return [book, parts[3]];
+    }
+
+    // https://www.programming-books.io/essential/go/concurrency-16e8d8c3d77e44faaf6857a1df368ce8
+    // =>
+    // https://essential-go.programming-books.io/concurrency-16e8d8c3d77e44faaf6857a1df368ce8
+    function urlToBookURL(loc) {
+      let b = parseBookURL(loc);
+      if (b == null) {
+        return null;
+      }
+      if (b.length === 1) {
+        return "https://essential-" + b[0] + ".programming-books.io"
+      }
+      return "https://essential-" + b[0] + ".programming-books.io/" + b[1];
+    }
+
     function do404() {
-      // TODO: write me
-      // parse url and redirecto /${book}/${url} to
-      // essential-${book}.programming-books.io/${url}
+      const newURL = urlToBookURL(window.location);
+      if (newURL) {
+        window.location = newURL;
+      }
     }
     function onLoad() {
       do404();
