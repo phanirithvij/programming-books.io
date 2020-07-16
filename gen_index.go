@@ -82,11 +82,19 @@ func gen404Indexl(dir string) {
 	_ = execTemplateToFileMaybeMust("404-index.tmpl.html", d, path)
 }
 
+func copyVercelIndexRoutes(dir string) {
+	src := "vercel.json"
+	dst := filepath.Join(dir, "vercel.json")
+	u.CopyFileMust(dst, src)
+	logf("Copied '%s' => '%s'\n", src, dst)
+}
+
 func genBookIndexAndDeploy(books []*Book) {
 	currBookDir = filepath.Dir(indexDestDir)
 	u.CreateDirMust(indexDestDir)
 	dir := filepath.Join(indexDestDir, "s")
 	u.CreateDirMust(dir)
+	copyVercelIndexRoutes(indexDestDir)
 
 	copyCoversMust(indexDestDir)
 

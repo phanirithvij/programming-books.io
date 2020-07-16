@@ -47,16 +47,14 @@
         <thead>
           <tr class="book-header">
             <th class="book-name">Book</th>
-            <th>Chapters</th>
           </tr>
         </thead>
         <tbody>
           {{ range .Books }}
           <tr>
             <td class="book-name">
-              <a href="{{.URL}}">{{.TitleLong}}</a>
+              <a href="{{.BookFullIndexURL}}">{{.TitleLong}}</a>
             </td>
-            <td class="light">{{ .PagesCount}}</td>
           </tr>
           {{ end }}
         </tbody>
@@ -66,7 +64,7 @@
     <div id="right">
       {{ range .RightBooks }}
       <div class="img-cover-small-wrapper">
-        <a href="{{.URL}}">
+        <a href="{{.BookFullIndexURL}}">
           <img class="img-cover-small" src="{{.CoverSmallURL}}" />
         </a>
       </div>

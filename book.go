@@ -68,6 +68,10 @@ func (b *Book) URL() string {
 	return "/"
 }
 
+func (b *Book) BookFullIndexURL() string {
+	return "https://essential-" + b.DirShort + ".programming-books.io"
+}
+
 // Summary returns book summary
 func (b *Book) Summary() template.HTML {
 	if b.summary == "" {
