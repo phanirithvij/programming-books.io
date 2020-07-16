@@ -71,14 +71,28 @@ func gen404TopLevel(dir string) {
 	_ = execTemplateToFileMaybeMust("404.tmpl.html", d, path)
 }
 
+func gen404Indexl(dir string) {
+	d := struct {
+		PageCommon
+		Book *Book
+	}{
+		PageCommon: getPageCommon(),
+	}
+	path := filepath.Join(dir, "404.html")
+	_ = execTemplateToFileMaybeMust("404-index.tmpl.html", d, path)
+}
+
 func genBookIndexAndDeploy(books []*Book) {
-	u.CreateDirForFile(indexDestDir)
+	currBookDir = filepath.Dir(indexDestDir)
+	u.CreateDirMust(indexDestDir)
+	dir := filepath.Join(indexDestDir, "s")
+	u.CreateDirMust(dir)
 
 	copyCoversMust(indexDestDir)
 
 	_ = genIndex(books, nil)
 	_ = genIndexGrid(books, nil)
-	gen404TopLevel(indexDestDir)
+	gen404Indexl(indexDestDir)
 	_ = genAbout(indexDestDir, nil)
 	_ = genFeedback(indexDestDir, nil)
 	deployBookIndexWithVercel()

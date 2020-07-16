@@ -229,6 +229,6 @@ func deployBookIndexWithVercel() {
 	}
 	cmd := exec.Command("vercel", args...)
 
-	cmd.Dir = filepath.Join("books", "books-index")
+	cmd.Dir = filepath.Join("books", "index")
 	u.RunCmdLoggedMust(cmd)
 }
