@@ -68,10 +68,6 @@ func (b *Book) URL() string {
 	return "/"
 }
 
-func (b *Book) BookFullIndexURL() string {
-	return "https://essential-" + b.DirShort + ".programming-books.io"
-}
-
 // Summary returns book summary
 func (b *Book) Summary() template.HTML {
 	if b.summary == "" {
@@ -81,7 +77,7 @@ func (b *Book) Summary() template.HTML {
 }
 
 func (b *Book) BaseURL() string {
-	return "https://" + b.DirShort + ".programming-books.io"
+	return "https://essential-" + b.DirShort + ".programming-books.io"
 }
 
 // CanonnicalURL returns full url including host

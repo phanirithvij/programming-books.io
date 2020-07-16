@@ -53,7 +53,7 @@
           {{ range .Books }}
           <tr>
             <td class="book-name">
-              <a href="{{.BookFullIndexURL}}">{{.TitleLong}}</a>
+              <a href="{{.BaseURL}}">{{.TitleLong}}</a>
             </td>
           </tr>
           {{ end }}
@@ -64,7 +64,7 @@
     <div id="right">
       {{ range .RightBooks }}
       <div class="img-cover-small-wrapper">
-        <a href="{{.BookFullIndexURL}}">
+        <a href="{{.BaseURL}}">
           <img class="img-cover-small" src="{{.CoverSmallURL}}" />
         </a>
       </div>
