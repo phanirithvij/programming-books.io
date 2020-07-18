@@ -213,6 +213,8 @@ func (b *Book) afterPageDownload(page *notionapi.Page) error {
 func initBook(book *Book) {
 	book.DirOnDisk = filepath.Join("books", book.DirShort)
 	currBookDir = book.DirOnDisk
+	// cache is only valid for the book
+	hashToOptimizedURL = map[string]string{}
 	dir := book.NotionCacheDir()
 	u.CreateDirMust(dir)
 	if flgClean {

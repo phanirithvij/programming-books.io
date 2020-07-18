@@ -179,10 +179,11 @@ func main() {
 		}
 		if flgAllBooks {
 			genBookIndexAndDeploy(allBooks)
-			for _, book := range allBooks {
+			n := len(allBooks)
+			for i, book := range allBooks {
 				book = findBook(book.DirShort)
 				generateBookAndDeploy(book)
-				fmt.Printf("book: %s, dir: %s\n", book.Title, book.DirShort)
+				fmt.Printf("book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
 			}
 			return
 		}

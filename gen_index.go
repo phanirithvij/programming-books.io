@@ -91,6 +91,8 @@ func copyVercelIndexRoutes(dir string) {
 
 func genBookIndexAndDeploy(books []*Book) {
 	currBookDir = filepath.Dir(indexDestDir)
+	// cache is only valid for the book
+	hashToOptimizedURL = map[string]string{}
 	u.CreateDirMust(indexDestDir)
 	dir := filepath.Join(indexDestDir, "s")
 	u.CreateDirMust(dir)
