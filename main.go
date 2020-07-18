@@ -174,6 +174,7 @@ func main() {
 
 	if flgGen {
 		if flgBook == "index" {
+			buildFrontend()
 			genBookIndexAndDeploy(allBooks)
 			return
 		}
