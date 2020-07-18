@@ -1,12 +1,9 @@
 To get the first version:
-* create book-index for www.programming-books.io
-* add redirects from www.programming-books.io
-* fix react and reactive native covers (re-using ruby)
 
 * add option to generate and deploy all books
-* verify google analyticss
 * write sitemap.txt
 * re-add comment submission
+* re-introduce optimization see https://github.com/tdewolff/minify/issues/313#issuecomment-660327688
 * add -preview option that runs `vercel dev` at the end for a given book
 * add a way to generate html page with structure of the page, for easy finding
   pages to edit. Shows which pages have snippets, images, codeeval.com links etc.
@@ -24,6 +21,10 @@ Command to preview locally:
 cd www
 vercel dev
 
+* [x] verify google analyticss
+* [x] create book-index for www.programming-books.io
+* [x] add redirects from www.programming-books.io
+* [x] fix react and reactive native covers (re-using ruby)
 * [x] update DNS for all books to be in ${book}.programming-books.io
 * [x] optimized imaged
 * [x] regenerated twitter images

@@ -1,4 +1,4 @@
-1413 1594553819267 httpcache-v1
+1458 1595065766042 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -10,7 +10,7 @@ Body:+110
     }
   ]
 }
-Response:+1213
+Response:+1258
 {
   "results": [
     {
@@ -22,6 +22,7 @@ Response:+1213
           "a67afbe1-2b46-4489-bbba-1b9f8eef7192",
           "037b17d2-9b4f-44ee-bfa0-65390611b770"
         ],
+        "content_classification": "malware",
         "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "created_by_table": "notion_user",
@@ -46,12 +47,12 @@ Response:+1213
           ]
         },
         "type": "page",
-        "version": 3
+        "version": 4
       }
     }
   ]
 }
-14462 1594553819268 httpcache-v1
+14601 1595065766042 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -64,7 +65,7 @@ Body:+152
   "pageId": "0317d51d-a2f5-45e6-8c9f-b1de3597e795",
   "verticalColumns": false
 }
-Response:+14221
+Response:+14360
 {
   "cursor": {
     "stack": []
@@ -80,6 +81,7 @@ Response:+14221
             "a67afbe1-2b46-4489-bbba-1b9f8eef7192",
             "037b17d2-9b4f-44ee-bfa0-65390611b770"
           ],
+          "content_classification": "malware",
           "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
@@ -103,8 +105,10 @@ Response:+14221
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 3
+          "version": 4
         }
       },
       "037b17d2-9b4f-44ee-bfa0-65390611b770": {
@@ -482,7 +486,7 @@ Response:+14221
           "mobile_onboarding_completed": true,
           "onboarding_completed": true,
           "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
-          "version": 326
+          "version": 327
         }
       }
     },

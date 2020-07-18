@@ -77,6 +77,7 @@ func isPreview() bool {
 }
 
 var (
+	flgAnalytics                bool
 	flgPreviewStatic            bool
 	flgPreviewOnDemand          bool
 	flgReportStackOverflowLinks bool
@@ -97,22 +98,46 @@ func main() {
 	var (
 		flgGen          bool
 		flgBook         string
+		flgAllBooks     bool
 		flgWc           bool
 		flgDownloadGist string
 	)
 
 	{
+		flag.BoolVar(&flgAnalytics, "analytics", false, "add google analytics code")
 		flag.BoolVar(&flgWc, "wc", false, "wc -l")
 		flag.BoolVar(&flgDeployProd, "deploy-prod", false, "deploy to prodution")
 		flag.BoolVar(&flgDeployDev, "deploy-dev", false, "deploy to dev")
 		flag.BoolVar(&flgClean, "clean", false, "if true, re-create 'www' directory")
 		flag.BoolVar(&flgGen, "gen", false, "generate a book and deploy preview")
 		flag.StringVar(&flgBook, "book", "", "name of the book")
+		flag.BoolVar(&flgAllBooks, "all-books", false, "if true, apply to all books")
 		flag.StringVar(&flgDownloadGist, "download-gist", "", "id of the gist to (re)download. Must also provide a book")
 		flag.BoolVar(&flgDisableNotionCache, "no-cache", false, "if true, disables cache for notion")
 		flag.Parse()
-	}
 
+		if flgDeployProd {
+			flgAnalytics = true
+		}
+		if flgAllBooks {
+			flgClean = true
+		}
+
+		if flgAnalytics {
+			googleAnalyticsTmpl := `
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113489735-1"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'UA-113489735-1');
+			</script>
+		`
+			googleAnalytics = template.HTML(googleAnalyticsTmpl)
+		}
+
+	}
 	closeLog := openLog()
 	defer closeLog()
 
@@ -150,6 +175,15 @@ func main() {
 	if flgGen {
 		if flgBook == "index" {
 			genBookIndexAndDeploy(allBooks)
+			return
+		}
+		if flgAllBooks {
+			genBookIndexAndDeploy(allBooks)
+			for _, book := range allBooks {
+				book = findBook(book.DirShort)
+				generateBookAndDeploy(book)
+				fmt.Printf("book: %s, dir: %s\n", book.Title, book.DirShort)
+			}
 			return
 		}
 		book := findBook(flgBook)
@@ -198,7 +232,7 @@ func downloadSingleGist(book *Book, gistID string) {
 	logf("Gist didn't change!\n")
 }
 
-// vercel www --scope teamkjk --name book-git --confirm
+// vercel . --scope teamkjk --name book-git --confirm
 func deployWithVercel(book *Book) {
 	if !(flgDeployProd || flgDeployDev) {
 		// no deploying
@@ -211,7 +245,6 @@ func deployWithVercel(book *Book) {
 		args = append(args, "--prod")
 	}
 	cmd := exec.Command("vercel", args...)
-
 	cmd.Dir = book.DirOnDisk
 	u.RunCmdLoggedMust(cmd)
 }
