@@ -73,13 +73,12 @@ func copyImages(book *Book) {
 }
 
 func isPreview() bool {
-	return flgPreviewStatic || flgPreviewOnDemand
+	return flgPreview
 }
 
 var (
 	flgAnalytics                bool
-	flgPreviewStatic            bool
-	flgPreviewOnDemand          bool
+	flgPreview                  bool
 	flgReportStackOverflowLinks bool
 	// if true, disables downloading pages
 	flgNoDownload     bool
@@ -107,6 +106,7 @@ func main() {
 		flag.BoolVar(&flgAnalytics, "analytics", false, "add google analytics code")
 		flag.BoolVar(&flgWc, "wc", false, "wc -l")
 		flag.BoolVar(&flgDeployProd, "deploy-prod", false, "deploy to prodution")
+		flag.BoolVar(&flgPreview, "preview", false, "if true, runs vercel dev to preview the book")
 		flag.BoolVar(&flgDeployDev, "deploy-dev", false, "deploy to dev")
 		flag.BoolVar(&flgClean, "clean", false, "if true, re-create 'www' directory")
 		flag.BoolVar(&flgGen, "gen", false, "generate a book and deploy preview")
@@ -119,9 +119,15 @@ func main() {
 		if flgDeployProd {
 			flgAnalytics = true
 		}
+
 		if flgAllBooks {
 			flgClean = true
+			panicIf(flgPreview, "-preview is not compatible with -all-books")
 		}
+
+		// if flgDeployDev || flgDeployProd {
+		// 	panicIf(flgPreview, "-preview is not compatible with -deploy-prod or -deploy-dev")
+		// }
 
 		if flgAnalytics {
 			googleAnalyticsTmpl := `
@@ -191,6 +197,9 @@ func main() {
 		book := findBook(flgBook)
 		generateBookAndDeploy(book)
 		fmt.Printf("book: %s, dir: %s\n", book.Title, book.DirShort)
+		if flgPreview {
+			previewBook(book)
+		}
 		return
 	}
 
@@ -265,5 +274,12 @@ func deployBookIndexWithVercel() {
 	cmd := exec.Command("vercel", args...)
 
 	cmd.Dir = filepath.Join("books", "index")
+	u.RunCmdLoggedMust(cmd)
+}
+
+func previewBook(book *Book) {
+	cmd := exec.Command("vercel", "dev")
+	cmd.Dir = filepath.Join(book.DirOnDisk, "www")
+	fmt.Printf("Running ver cel dev in dir '%s'\n", cmd.Dir)
 	u.RunCmdLoggedMust(cmd)
 }

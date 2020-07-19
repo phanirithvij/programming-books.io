@@ -76,7 +76,7 @@ func funcInc(i int) int {
 
 func loadTemplatesMust() *template.Template {
 	// we reload templates in preview mode
-	if templates != nil && !flgPreviewOnDemand {
+	if templates != nil {
 		return templates
 	}
 	pattern := filepath.Join("fe", "tmpl", "*.tmpl.html")
