@@ -239,10 +239,14 @@ func isBlockTextTodo(block *notionapi.Block) bool {
 		return false
 	}
 	b := blocks[0]
-	switch {
-	case strings.HasPrefix(b.Text, "@TODO"):
-		return true
-	case strings.HasPrefix(b.Text, "#TODO"):
+	// if a block starts with: @TODO, #TODO, :TODO
+	// it's a todo block, which we should skip
+	if len(b.Text) < 5 {
+		return false
+	}
+	s := strings.ToLower(b.Text[:5])
+	switch s {
+	case "@todo", "#todo", ":todo":
 		return true
 	}
 	return false

@@ -296,7 +296,6 @@ func genBook(book *Book) {
 
 	_ = genBookIndex(book, nil)
 
-	// TODO: per-book 404 should link to top of book, not top of website
 	_ = genBook404(book, nil)
 
 	addSitemapURL(book, book.CanonnicalURL())
