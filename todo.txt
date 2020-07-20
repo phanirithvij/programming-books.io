@@ -1,8 +1,5 @@
 To get the first version:
 
-* the index and search is different than in essential/books. It's generated in
-  genBookTOCSearchMust(). Is it because .Headings is not set?
-* make sitemap hash per book
 * make funcOptimizeAsset per book and re-introduce optimization see https://github.com/tdewolff/minify/issues/313#issuecomment-660327688
 * add a way to generate html page with structure of the page, for easy finding
   pages to edit. Shows which pages have snippets, images, codeeval.com links etc.
@@ -12,7 +9,6 @@ To get the first version:
   https://codeeval.dev/gist/2f493d47f6d8bb328a3a86e4bbefff9c/main.go
   where main.go is the file to execute
   Gist could have multiple files. They would have to have ":run" directive
-* write sitemap.txt
 
 Command to create a project or link to existing project:
 vercel www --scope teamkjk --name book-git --confirm
@@ -21,6 +17,7 @@ Command to preview locally:
 cd www
 vercel dev
 
+* [x] make sitemap map per book and write sitemap.txt
 * [x] add -preview option that runs `vercel dev` after generating a book
 * [x] re-add comment submission using https://formsubmit.co/
 * [x] add option to generate and deploy all books

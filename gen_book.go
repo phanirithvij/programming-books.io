@@ -304,6 +304,7 @@ func genBook(book *Book) {
 		_ = genPage(book, chapter, nil)
 	}
 
+	writeSitemap(book)
 	copyCover(book)
 	copyVercelRoutes(book)
 

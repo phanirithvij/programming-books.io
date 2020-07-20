@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
+	"sync"
 
 	"github.com/kjk/notionapi"
 	"github.com/kjk/notionapi/caching_downloader"
@@ -41,6 +42,9 @@ type Book struct {
 	client *notionapi.Client
 	// cache related
 	cache *Cache
+
+	muSitemapURLS sync.Mutex
+	sitemapURLS   map[string]struct{}
 }
 
 // CacheDir returns a cache dir for this book
@@ -226,6 +230,7 @@ func initBook(book *Book) {
 	u.CreateDirMust(dir)
 	logf("Created '%s' for book '%s'\n", dir, book.Title)
 	book.idToPage = map[string]*Page{}
+	book.sitemapURLS = map[string]struct{}{}
 	book.cache = loadCache(book)
 }
 
