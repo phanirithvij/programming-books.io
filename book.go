@@ -28,7 +28,9 @@ type Book struct {
 	idToPage map[string]*Page
 
 	DirShort  string // directory name for the book e.g. "go"
-	DirOnDisk string // full directory name on disk
+	DirOnDisk string // full directory name on disk, disks/${DirShort}
+	DirWWW    string // full path of sub-directory "www"
+	DirCache  string // full path of sub-directory "cache"
 
 	// generated toc javascript data
 	tocData []byte
@@ -47,19 +49,13 @@ type Book struct {
 	sitemapURLS   map[string]struct{}
 }
 
-// CacheDir returns a cache dir for this book
-func (b *Book) CacheDir() string {
-	u.PanicIf(b.DirShort == "", "b.DirShort should not be empty")
-	return filepath.Join(b.DirOnDisk, "cache")
-}
-
 // NotionCacheDir returns output cache dir for this book
 func (b *Book) NotionCacheDir() string {
-	return filepath.Join(b.CacheDir(), "notion")
+	return filepath.Join(b.DirCache, "notion")
 }
 
 func (b *Book) cachePath() string {
-	return filepath.Join(b.CacheDir(), "cache.txt")
+	return filepath.Join(b.DirCache, "cache.txt")
 }
 
 // this is where html etc. files for a book end up
@@ -166,7 +162,7 @@ func updateBookAppJS(book *Book) {
 
 	sha1Hex := u.Sha1HexOfBytes(d)
 	name := nameToSha1Name(srcName, sha1Hex)
-	dst := filepath.Join(book.DirOnDisk, "www", "s", name)
+	dst := filepath.Join(book.DirWWW, "s", name)
 	err := ioutil.WriteFile(dst, d, 0644)
 	maybePanicIfErr(err)
 	if err != nil {
@@ -215,18 +211,20 @@ func (b *Book) afterPageDownload(page *notionapi.Page) error {
 
 func initBook(book *Book) {
 	book.DirOnDisk = filepath.Join("books", book.DirShort)
+	book.DirCache = filepath.Join(book.DirOnDisk, "cache")
+	book.DirWWW = filepath.Join(book.DirOnDisk, "www")
 	currBookDir = book.DirOnDisk
 	// cache is only valid for the book
 	hashToOptimizedURL = map[string]string{}
 	dir := book.NotionCacheDir()
 	u.CreateDirMust(dir)
 	if flgClean {
-		dir = filepath.Join(book.DirOnDisk, "www")
+		dir = filepath.Join(book.DirWWW)
 		os.RemoveAll(dir)
 	}
-	dir = filepath.Join(book.DirOnDisk, "www", "s")
+	dir = filepath.Join(book.DirWWW, "s")
 	u.CreateDirMust(dir)
-	dir = filepath.Join(book.DirOnDisk, "www", "gen")
+	dir = filepath.Join(book.DirWWW, "gen")
 	u.CreateDirMust(dir)
 	logf("Created '%s' for book '%s'\n", dir, book.Title)
 	book.idToPage = map[string]*Page{}

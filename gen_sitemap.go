@@ -33,7 +33,7 @@ func writeSitemap(b *Book) {
 	// http://www.advancedhtml.co.uk/robots-sitemaps.htm
 	sitemapURL := urlJoin(b.BaseURL(), "sitemap.txt")
 	robotsTxt := fmt.Sprintf(sitemapTmpl, sitemapURL)
-	robotsTxtPath := filepath.Join(b.DirOnDisk, "www", "robots.txt")
+	robotsTxtPath := filepath.Join(b.DirWWW, "robots.txt")
 	err := ioutil.WriteFile(robotsTxtPath, []byte(robotsTxt), 0644)
 	must(err)
 
@@ -46,7 +46,7 @@ func writeSitemap(b *Book) {
 	}
 	sort.Strings(urls)
 	s := strings.Join(urls, "\n")
-	sitemapPath := filepath.Join(b.DirOnDisk, "www", "sitemap.txt")
+	sitemapPath := filepath.Join(b.DirWWW, "sitemap.txt")
 	err = ioutil.WriteFile(sitemapPath, []byte(s), 0644)
 	must(err)
 }
