@@ -175,12 +175,11 @@ func updateBookAppJS(book *Book) {
 func calcPageHeadings(page *Page) {
 	var headings []*HeadingInfo
 	cb := func(block *notionapi.Block) {
-		isHeader := false
 		switch block.Type {
 		case notionapi.BlockHeader, notionapi.BlockSubHeader, notionapi.BlockSubSubHeader:
-			isHeader = true
-		}
-		if !isHeader {
+			// do nothing, those are headers
+		default:
+			// not a header, so exit
 			return
 		}
 		id := notionapi.ToNoDashID(block.ID)

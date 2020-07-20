@@ -116,6 +116,12 @@ func main() {
 		flag.BoolVar(&flgDisableNotionCache, "no-cache", false, "if true, disables cache for notion")
 		flag.Parse()
 
+		// change to true for easier ad-hoc debugging in visual studio code
+		if false {
+			flgBook = "go"
+			flgGen = true
+		}
+
 		if flgDeployProd {
 			flgAnalytics = true
 		}
