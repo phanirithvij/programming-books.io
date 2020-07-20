@@ -27,10 +27,11 @@ type Book struct {
 
 	idToPage map[string]*Page
 
-	DirShort  string // directory name for the book e.g. "go"
-	DirOnDisk string // full directory name on disk, disks/${DirShort}
-	DirWWW    string // full path of sub-directory "www"
-	DirCache  string // full path of sub-directory "cache"
+	DirShort       string // directory name for the book e.g. "go"
+	DirOnDisk      string // full directory name on disk, disks/${DirShort}
+	DirWWW         string // full path of sub-directory "www"
+	DirCache       string // full path of sub-directory "cache"
+	NotionCacheDir string
 
 	// generated toc javascript data
 	tocData []byte
@@ -47,11 +48,6 @@ type Book struct {
 
 	muSitemapURLS sync.Mutex
 	sitemapURLS   map[string]struct{}
-}
-
-// NotionCacheDir returns output cache dir for this book
-func (b *Book) NotionCacheDir() string {
-	return filepath.Join(b.DirCache, "notion")
 }
 
 func (b *Book) cachePath() string {
@@ -211,12 +207,13 @@ func (b *Book) afterPageDownload(page *notionapi.Page) error {
 
 func initBook(book *Book) {
 	book.DirOnDisk = filepath.Join("books", book.DirShort)
-	book.DirCache = filepath.Join(book.DirOnDisk, "cache")
 	book.DirWWW = filepath.Join(book.DirOnDisk, "www")
+	book.DirCache = filepath.Join(book.DirOnDisk, "cache")
+	book.NotionCacheDir = filepath.Join(book.DirCache, "notion")
 	currBookDir = book.DirOnDisk
 	// cache is only valid for the book
 	hashToOptimizedURL = map[string]string{}
-	dir := book.NotionCacheDir()
+	dir := book.NotionCacheDir
 	u.CreateDirMust(dir)
 	if flgClean {
 		dir = filepath.Join(book.DirWWW)
@@ -239,7 +236,7 @@ func downloadBook(book *Book) {
 	nDownloadedPages = 0
 
 	book.client = newNotionClient()
-	cacheDir := book.NotionCacheDir()
+	cacheDir := book.NotionCacheDir
 	dirCache, err := caching_downloader.NewDirectoryCache(cacheDir)
 	must(err)
 	d := caching_downloader.New(dirCache, book.client)

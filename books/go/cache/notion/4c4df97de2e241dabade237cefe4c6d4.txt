@@ -1,4 +1,4 @@
-2647 1595209390287 httpcache-v1
+2697 1595237285598 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -10,7 +10,7 @@ Body:+110
     }
   ]
 }
-Response:+2447
+Response:+2497
 {
   "results": [
     {
@@ -33,6 +33,7 @@ Response:+2447
           "c591470b-8283-40f9-998f-a6d0f35d7d26",
           "db36a89c-da2b-418d-bd51-36d1ae6f09c0",
           "82f56c19-eb58-45b6-bd78-5caac35bd5cb",
+          "a4312fde-1c6f-409b-b061-25f784034264",
           "0ee64455-fa7a-4316-ab00-fcad5b2148b0",
           "71548a4b-dfb0-4d27-8672-c62538bf5a6f",
           "55564c03-b18b-481d-af8d-2e5be689bf54",
@@ -60,7 +61,7 @@ Response:+2447
         "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
         "last_edited_by_table": "notion_user",
-        "last_edited_time": 1595201100000,
+        "last_edited_time": 1595215800000,
         "parent_id": "64647277-99a0-4611-a891-be7ca4877f8c",
         "parent_table": "block",
         "properties": {
@@ -71,12 +72,12 @@ Response:+2447
           ]
         },
         "type": "page",
-        "version": 124
+        "version": 126
       }
     }
   ]
 }
-40417 1595209390289 httpcache-v1
+41406 1595237285602 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -89,7 +90,7 @@ Body:+152
   "pageId": "4c4df97d-e2e2-41da-bade-237cefe4c6d4",
   "verticalColumns": false
 }
-Response:+40176
+Response:+41165
 {
   "cursor": {
     "stack": []
@@ -374,6 +375,7 @@ Response:+40176
             "c591470b-8283-40f9-998f-a6d0f35d7d26",
             "db36a89c-da2b-418d-bd51-36d1ae6f09c0",
             "82f56c19-eb58-45b6-bd78-5caac35bd5cb",
+            "a4312fde-1c6f-409b-b061-25f784034264",
             "0ee64455-fa7a-4316-ab00-fcad5b2148b0",
             "71548a4b-dfb0-4d27-8672-c62538bf5a6f",
             "55564c03-b18b-481d-af8d-2e5be689bf54",
@@ -401,7 +403,7 @@ Response:+40176
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1595201100000,
+          "last_edited_time": 1595215800000,
           "parent_id": "64647277-99a0-4611-a891-be7ca4877f8c",
           "parent_table": "block",
           "properties": {
@@ -414,7 +416,7 @@ Response:+40176
           "shard_id": 241632,
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 124
+          "version": 126
         }
       },
       "51e982b0-28b6-45e7-9dbd-dfe5b2195fa8": {
@@ -699,18 +701,20 @@ Response:+40176
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1566770820000,
+          "last_edited_time": 1595215800000,
           "parent_id": "4c4df97d-e2e2-41da-bade-237cefe4c6d4",
           "parent_table": "block",
           "properties": {
             "title": [
               [
-                "You can't compare a function to another function. Go decided to not implement that because the rules for comparing functions have tricky corner cases that could be surprising to users."
+                "You can't compare a function to another function. "
               ]
             ]
           },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
-          "version": 378
+          "version": 380
         }
       },
       "87dd5655-4404-4cf9-be05-ef6bc1b25d2a": {
@@ -783,6 +787,32 @@ Response:+40176
           },
           "type": "sub_header",
           "version": 8
+        }
+      },
+      "a4312fde-1c6f-409b-b061-25f784034264": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1595215800000,
+          "id": "a4312fde-1c6f-409b-b061-25f784034264",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1595215800000,
+          "parent_id": "4c4df97d-e2e2-41da-bade-237cefe4c6d4",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Comparing functions has tricky corner cases so Go designers decided to not implement it at all."
+              ]
+            ]
+          },
+          "shard_id": 241632,
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 83
         }
       },
       "af60aebe-e780-4364-8771-13f1413b018c": {

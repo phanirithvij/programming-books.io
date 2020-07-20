@@ -305,6 +305,7 @@ func genBook(book *Book) {
 	}
 
 	writeSitemap(book)
+	genOverview(book)
 	copyCover(book)
 	copyVercelRoutes(book)
 

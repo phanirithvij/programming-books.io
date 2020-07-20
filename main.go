@@ -14,6 +14,8 @@ import (
 	"github.com/kjk/u"
 )
 
+type any = interface{}
+
 var (
 	googleAnalytics template.HTML
 	doMinify        bool
@@ -64,7 +66,7 @@ func copyCoversMust(dir string) {
 }
 
 func copyImages(book *Book) {
-	src := filepath.Join(book.NotionCacheDir(), "img")
+	src := filepath.Join(book.NotionCacheDir, "img")
 	if !u.DirExists(src) {
 		return
 	}

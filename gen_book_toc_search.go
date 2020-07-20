@@ -33,48 +33,53 @@ const (
 	itemIdxFirstSynonym = 4
 )
 
+func genTocItem(page *Page, idx int) []any {
+	title := strings.TrimSpace(page.Title)
+	uri := page.URLLastPath()
+	return []interface{}{uri, idx, -1, title}
+}
+
+func genHeadings(page *Page, idx int) [][]any {
+	var res [][]any
+
+	uri := page.URLLastPath()
+	headings := page.Headings
+	for _, heading := range headings {
+		title := heading.Text
+		id := heading.ID
+		if len(id) > 0 {
+			id = uri + "#" + notionapi.ToDashID(id)
+		}
+		tocItem := []any{id, idx, -1, title}
+		res = append(res, tocItem)
+	}
+
+	return res
+}
+
 // TODO: make it recursive and with arbitrary nesting
 func genBookTOCSearchMust(book *Book) {
-	var toc [][]interface{}
+	var toc [][]any
 	for _, chapter := range book.Chapters() {
-		title := strings.TrimSpace(chapter.Title)
-		uri := chapter.URLLastPath()
-		tocItem := []interface{}{uri, -1, -1, title}
+		tocItem := genTocItem(chapter, -1)
+
 		toc = append(toc, tocItem)
 		chapIdx := len(toc) - 1
 		u.PanicIf(chapIdx < 0)
 
-		headings := chapter.Headings
-		for _, heading := range headings {
-			title := heading.Text
-			id := heading.ID
-			if len(id) > 0 {
-				id = uri + "#" + notionapi.ToDashID(id)
-			}
-			tocItem = []interface{}{id, chapIdx, -1, title}
-			toc = append(toc, tocItem)
-		}
+		headings := genHeadings(chapter, chapIdx)
+		toc = append(toc, headings...)
 
-		for _, article := range chapter.Pages {
-			title := strings.TrimSpace(article.Title)
-			uri := article.URLLastPath()
-			tocItem = []interface{}{uri, chapIdx, -1, title}
-			for _, syn := range article.getSearch() {
+		for _, page := range chapter.Pages {
+			tocItem = genTocItem(page, chapIdx)
+			for _, syn := range page.getSearch() {
 				tocItem = append(tocItem, syn)
 			}
 			toc = append(toc, tocItem)
 
-			headings := article.Headings
-			articleIdx := len(toc) - 1
-			for _, heading := range headings {
-				title := heading.Text
-				id := heading.ID
-				if len(id) > 0 {
-					id = uri + "#" + notionapi.ToDashID(id)
-				}
-				tocItem = []interface{}{id, articleIdx, -1, title}
-				toc = append(toc, tocItem)
-			}
+			pageIdx := len(toc) - 1
+			headings := genHeadings(page, pageIdx)
+			toc = append(toc, headings...)
 		}
 	}
 
