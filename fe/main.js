@@ -4,7 +4,7 @@ import PageToc from "./PageToc.svelte";
 import BookToc from "./BookToc.svelte";
 import { item } from "./item.js";
 import { viewGet, viewSet, viewClear } from "./store.js";
-import { logflare } from "./util.js";
+import { logCurrentURL } from "./util.js";
 
 // pageId looks like "5ab3b56329c44058b5b24d3f364183ce"
 // find full url of the page matching this pageId
@@ -124,21 +124,6 @@ function doIndexPage() {
   } else {
     console.log("Unknown view:", view);
   }
-}
-
-function logCurrentURL() {
-  const path = window.location.pathname;
-  const host = window.location.hostname;
-  const book = host.split(".")[0];
-  const d = {
-    "log_entry": `page ${book} ${host}${path}`,
-    meatadata: {
-      url: path,
-      host: host,
-      book: book,
-    },
-  }
-  logflare(d);
 }
 
 logCurrentURL();

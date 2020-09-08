@@ -101,3 +101,20 @@ export function logflare(d) {
   .then(thenFn)
   .catch(catchFn);
 }
+
+export function logCurrentURL() {
+  const path = window.location.pathname;
+  const host = window.location.hostname;
+  // essential-go => go
+  let book = host.split(".")[0];
+  book = book.replace("essential-", "");
+  const d = {
+    "log_entry": `page ${book} ${host}${path}`,
+    meatadata: {
+      url: path,
+      host: host,
+      book: book,
+    },
+  }
+  logflare(d);
+}
