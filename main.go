@@ -126,6 +126,7 @@ func main() {
 
 		if flgDeployProd {
 			flgAnalytics = true
+			flgGen = true
 		}
 
 		if flgAllBooks {
