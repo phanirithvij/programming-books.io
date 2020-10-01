@@ -79,15 +79,15 @@ export function makeDebouncer(timeInMs) {
   };
 }
 
-// d is json data to be logged to logflare
 const logflareURL = "https://api.logflare.app/logs?api_key=EMVM15g1Nf_M&source=b72adcc3-d077-46cc-92c3-2f0c55cf3b69";
 
+// d is json data to be logged to logflare
 export function logflare(d) {
   const data = {
     headers: {
       'Content-Type': 'application/json; charset=utf-8'
     },
-    method: "post",
+    method: "POST",
     body: JSON.stringify(d),
   };
   function thenFn(res) {
@@ -102,7 +102,7 @@ export function logflare(d) {
   .catch(catchFn);
 }
 
-export function logCurrentURL() {
+export function logflareLogCurrentURL() {
   const path = window.location.pathname;
   const host = window.location.hostname;
   // essential-go => go
@@ -110,11 +110,61 @@ export function logCurrentURL() {
   book = book.replace("essential-", "");
   const d = {
     "log_entry": `page ${book} ${host}${path}`,
-    meatadata: {
+    metadata: {
       url: path,
       host: host,
       book: book,
     },
   }
   logflare(d);
+}
+
+export function logdna(d) {
+  // gBookTitle
+  const logdnaURL = "https://logs.logdna.com/logs/ingest?hostname=webapp&apikey=5e2fad67070734f20552764956a6d49b&app=essential-go";
+  const lines = {
+    lines: [d]
+  };
+  const data = {
+    headers: {
+      'Content-Type': 'application/json; charset=UTF-8'
+    },
+    method: "POST",
+    mode: 'no-cors',
+    body: JSON.stringify(lines),
+  };
+  function thenFn(res) {
+    console.log(`sent log to logdna`);
+    console.log(res);
+  }
+  function catchFn(res) {
+    console.log(`exception in logdna`);
+  }
+  fetch(logdnaURL, data)
+  .then(thenFn)
+  .catch(catchFn);
+}
+
+export function logdnaLogCurrentURL() {
+  const path = window.location.pathname;
+  const host = window.location.hostname;
+  // essential-go => go
+  let book = host.split(".")[0];
+  book = book.replace("essential-", "");
+  const d = {
+    //"timestamp": Date.now().valueOf(),
+    "line": `page ${book} ${host}${path}`,
+    "app": "essential-go",
+    meta: {
+      url: path,
+      host: host,
+      book: book,
+    },
+  }
+  logdna(d);
+}
+
+export function logCurrentURL() {
+  //logdnaLogCurrentURL();
+  logflareLogCurrentURL();
 }

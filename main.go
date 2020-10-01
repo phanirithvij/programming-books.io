@@ -124,6 +124,10 @@ func main() {
 			flgGen = true
 		}
 
+		if flgPreview {
+			flgGen = true
+		}
+
 		if flgDeployProd {
 			flgAnalytics = true
 			flgGen = true
