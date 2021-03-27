@@ -307,7 +307,7 @@ func genBook(book *Book) {
 	writeSitemap(book)
 	genOverview(book)
 	copyCover(book)
-	copyVercelRoutes(book)
+	//copyVercelRoutes(book)
 
 	logf("Generated book '%s' in %s\n", book.Title, time.Since(timeStart))
 }

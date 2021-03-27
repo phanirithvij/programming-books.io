@@ -17,51 +17,8 @@
   </style>
 
   <script>
-    // https://www.programming-books.io/essential/go/concurrency-16e8d8c3d77e44faaf6857a1df368ce8
-    // =>
-    // ["go", "${url}"] or ["go"] or null
-    function parseBookURL(loc) {
-      let parsedURL = loc;
-      // /essential/go/concurrency-16e8d8c3d77e44faaf6857a1df368ce8
-      let path = parsedURL.pathname;
-      if (!path.startsWith("/essential/")) {
-        return nil;
-      }
-      let parts = path.split("/");
-      // ["", "essential", "go", "concurrency-16e8d8c3d77e44faaf6857a1df368ce8"]
-      const book = parts[2];
-      if (parts.length == 3) {
-        return [book];
-      }
-      return [book, parts[3]];
-    }
-
-    // https://www.programming-books.io/essential/go/concurrency-16e8d8c3d77e44faaf6857a1df368ce8
-    // =>
-    // https://www.programming-books.io/go/concurrency-16e8d8c3d77e44faaf6857a1df368ce8
-    function urlToBookURL(loc) {
-      let b = parseBookURL(loc);
-      if (b == null) {
-        return null;
-      }
-      if (b.length === 1) {
-        return "https://www.programming-books.io/" + b[0]
-      }
-      return "https://www.programming-books.io/" + b[0] + "/" + b[1];
-    }
-
-    function do404() {
-      const newURL = urlToBookURL(window.location);
-      if (newURL) {
-        window.location = newURL;
-      }
-    }
-    function onLoad() {
-      do404();
-    }
-    document.addEventListener('DOMContentLoaded', onLoad);
+    // TODO: maybe add redirect as in https://github.com/essentialbooks/tools/commit/826d69858e383be2cff7e52c25fb28d9df0bf4c7
   </script>
-
 </head>
 
 <body>

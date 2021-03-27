@@ -112,6 +112,7 @@ func main() {
 		dir, err := filepath.Abs(dir)
 		must(err)
 		gDestDir = dir
+		indexDestDir = filepath.Join(gDestDir, "www")
 	}
 
 	{
@@ -130,7 +131,8 @@ func main() {
 
 		// change to true for easier ad-hoc debugging in visual studio code
 		if false {
-			flgBook = "go"
+			//flgBook = "go"
+			flgAllBooks = true
 			flgGen = true
 		}
 
@@ -175,8 +177,6 @@ func main() {
 		logf("Downloaded %d pages, %d from cache. Total time: %s\n", nTotalDownloaded, nTotalFromCache, time.Since(timeStart))
 	}()
 
-	updateGeneratedRepo()
-
 	{
 		//notionAuthToken = os.Getenv("NOTION_TOKEN")
 		// we don't need authentication and the result change
@@ -204,9 +204,12 @@ func main() {
 	}
 
 	if flgGen {
+		updateGeneratedRepo()
+		buildFrontend()
+
 		if flgBook == "index" {
-			buildFrontend()
 			genBookIndexAndDeploy(allBooks)
+			//commitAndPushGeneratedRepo
 			return
 		}
 		if flgAllBooks {
@@ -217,6 +220,7 @@ func main() {
 				generateBookAndDeploy(book)
 				fmt.Printf("book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
 			}
+			//commitAndPushGeneratedRepo
 			return
 		}
 		book := findBook(flgBook)
@@ -239,11 +243,8 @@ func main() {
 
 func generateBookAndDeploy(book *Book) {
 	downloadBook(book)
-
-	buildFrontend()
-
 	genBook(book)
-	deployWithVercel(book)
+	//deployWithVercel(book)
 }
 
 func newNotionClient() *notionapi.Client {
@@ -319,7 +320,7 @@ func updateGeneratedRepo() {
 	u.GitPullMust(dir)
 }
 
-func commitGeneratedRepo() {
+func commitAndPushGeneratedRepo() {
 	dir := gDestDir
 	{
 		cmd := exec.Command("git", "add", ".")

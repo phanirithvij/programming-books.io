@@ -28,7 +28,7 @@ type Book struct {
 	idToPage map[string]*Page
 
 	DirShort       string // directory name for the book e.g. "go"
-	DirOnDisk      string // full directory name on disk, disks/${DirShort}
+	DirOnDisk      string // full directory name on disk, books/${DirShort}
 	DirWWW         string // full path of sub-directory "www"
 	DirCache       string // full path of sub-directory "cache"
 	NotionCacheDir string
@@ -56,7 +56,7 @@ func (b *Book) cachePath() string {
 
 // this is where html etc. files for a book end up
 func (b *Book) destDir() string {
-	return filepath.Join(gDestDir, b.DirOnDisk, destEssentialDir)
+	return filepath.Join(gDestDir, "www", b.DirOnDisk, destEssentialDir)
 }
 
 // URL returns url of the book, used in index.tmpl.html
@@ -73,7 +73,7 @@ func (b *Book) Summary() template.HTML {
 }
 
 func (b *Book) BaseURL() string {
-	return "https://www.programming-books.io/" + b.DirShort
+	return "https://www.programming-books.io/essential/" + b.DirShort
 }
 
 // CanonnicalURL returns full url including host
@@ -206,9 +206,9 @@ func (b *Book) afterPageDownload(page *notionapi.Page) error {
 }
 
 func initBook(book *Book) {
-	book.DirOnDisk = filepath.Join("books", book.DirShort)
-	book.DirWWW = filepath.Join(book.DirOnDisk, "www")
-	book.DirCache = filepath.Join(book.DirOnDisk, "cache")
+	book.DirOnDisk = filepath.Join(gDestDir, "www", "essential", book.DirShort)
+	book.DirWWW = book.DirOnDisk
+	book.DirCache = filepath.Join("books", book.DirShort, "cache")
 	book.NotionCacheDir = filepath.Join(book.DirCache, "notion")
 	currBookDir = book.DirOnDisk
 	// cache is only valid for the book

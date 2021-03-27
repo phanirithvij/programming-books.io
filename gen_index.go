@@ -8,7 +8,7 @@ import (
 )
 
 var (
-	indexDestDir = filepath.Join("books", "index", "www")
+	indexDestDir string
 )
 
 func genIndexGrid(books []*Book, w io.Writer) error {
@@ -96,7 +96,7 @@ func genBookIndexAndDeploy(books []*Book) {
 	u.CreateDirMust(indexDestDir)
 	dir := filepath.Join(indexDestDir, "s")
 	u.CreateDirMust(dir)
-	copyVercelIndexRoutes(indexDestDir)
+	//copyVercelIndexRoutes(indexDestDir)
 
 	copyCoversMust(indexDestDir)
 
@@ -105,5 +105,5 @@ func genBookIndexAndDeploy(books []*Book) {
 	gen404Indexl(indexDestDir)
 	_ = genAbout(indexDestDir, nil)
 	_ = genFeedback(indexDestDir, nil)
-	deployBookIndexWithVercel()
+	//deployBookIndexWithVercel()
 }
