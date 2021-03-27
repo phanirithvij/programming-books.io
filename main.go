@@ -62,7 +62,7 @@ func copyCoversMust(dir string) {
 	dstDir := filepath.Join(dir, "covers")
 	u.DirCopyRecurMust(dstDir, srcDir, shouldCopyImage)
 	dstDir = filepath.Join(dir, "covers_small")
-	srcDir = filepath.Join("covers", "covers_small")
+	srcDir = filepath.Join("covers_small")
 	u.DirCopyRecurMust(dstDir, srcDir, shouldCopyImage)
 }
 
