@@ -227,7 +227,7 @@ func main() {
 		generateBookAndDeploy(book)
 		fmt.Printf("book: %s, dir: %s\n", book.Title, book.DirShort)
 		if flgPreview {
-			previewBook(book)
+			//previewBook(book)
 		}
 		return
 	}
@@ -244,7 +244,6 @@ func main() {
 func generateBookAndDeploy(book *Book) {
 	downloadBook(book)
 	genBook(book)
-	//deployWithVercel(book)
 }
 
 func newNotionClient() *notionapi.Client {
@@ -269,45 +268,8 @@ func downloadSingleGist(book *Book, gistID string) {
 	logf("Gist didn't change!\n")
 }
 
-// vercel . --scope teamkjk --name book-git --confirm
-func deployWithVercel(book *Book) {
-	if !(flgDeployProd || flgDeployDev) {
-		// no deploying
-		fmt.Printf("not deploying\n")
-		return
-	}
-	projectName := "book-" + book.DirShort
-	args := []string{"www", "--scope", "teamkjk", "--name", projectName, "--confirm"}
-	if flgDeployProd {
-		args = append(args, "--prod")
-	}
-	cmd := exec.Command("vercel", args...)
-	cmd.Dir = book.DirOnDisk
-	u.RunCmdLoggedMust(cmd)
-}
-
-func deployBookIndexWithVercel() {
-	if !(flgDeployProd || flgDeployDev) {
-		// no deploying
-		fmt.Printf("not deploying\n")
-		return
-	}
-	projectName := "book-index"
-	args := []string{"www", "--scope", "teamkjk", "--name", projectName, "--confirm"}
-	if flgDeployProd {
-		args = append(args, "--prod")
-	}
-	cmd := exec.Command("vercel", args...)
-
-	cmd.Dir = filepath.Join("books", "index")
-	u.RunCmdLoggedMust(cmd)
-}
-
 func previewBook(book *Book) {
-	cmd := exec.Command("vercel", "dev")
-	cmd.Dir = filepath.Join(book.DirOnDisk, "www")
-	fmt.Printf("Running ver cel dev in dir '%s'\n", cmd.Dir)
-	u.RunCmdLoggedMust(cmd)
+	panic("previewBook NYI")
 }
 
 func updateGeneratedRepo() {

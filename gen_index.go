@@ -105,5 +105,4 @@ func genBookIndexAndDeploy(books []*Book) {
 	gen404Indexl(indexDestDir)
 	_ = genAbout(indexDestDir, nil)
 	_ = genFeedback(indexDestDir, nil)
-	//deployBookIndexWithVercel()
 }

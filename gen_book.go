@@ -14,10 +14,7 @@ import (
 )
 
 const (
-	// top-level directory where .html files are generated
-	destDir = "www"
-
-	gitHubBaseURL = "https://github.com/essentialbooks/books"
+	gitHubBaseURL = "https://github.com/essentialbooks/tools"
 	notionBaseURL = "https://notion.so/"
 )
 
@@ -251,17 +248,10 @@ func genBook404(book *Book, w io.Writer) error {
 	return execTemplate("404.tmpl.html", data, path, nil)
 }
 
-func copyVercelRoutes(book *Book) {
-	src := "vercel.json"
-	dst := filepath.Join(book.DirWWW, "vercel.json")
-	u.CopyFileMust(dst, src)
-	logf("Copied '%s' => '%s'\n", src, dst)
-}
-
 func copyCover(book *Book) {
 	{
 		src := filepath.Join("covers", book.CoverImageName)
-		dst := filepath.Join(book.DirWWW, "covers", book.CoverImageName)
+		dst := filepath.Join(book.DirOnDisk, "covers", book.CoverImageName)
 		u.CreateDirForFileMust(dst)
 		u.CopyFileMust(dst, src)
 		logf("Copied '%s' => '%s'\n", src, dst)
@@ -269,7 +259,7 @@ func copyCover(book *Book) {
 
 	{
 		src := filepath.Join("covers", "twitter", book.CoverImageName)
-		dst := filepath.Join(book.DirWWW, "covers", "twitter", book.CoverImageName)
+		dst := filepath.Join(book.DirOnDisk, "covers", "twitter", book.CoverImageName)
 		u.CreateDirForFileMust(dst)
 		u.CopyFileMust(dst, src)
 		logf("Copied '%s' => '%s'\n", src, dst)

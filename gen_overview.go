@@ -129,7 +129,7 @@ func genOverview(book *Book) {
 		lines = append(lines, "</ul>")
 	}
 	lines = append(lines, "</ul>")
-	path := filepath.Join(book.DirWWW, "overview.html")
+	path := filepath.Join(book.DirOnDisk, "overview.html")
 	str := strings.Join(lines, "\n")
 	str = fmt.Sprintf(htmlOverview, str)
 	u.WriteFileMust(path, []byte(str))

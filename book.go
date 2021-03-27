@@ -29,7 +29,6 @@ type Book struct {
 
 	DirShort       string // directory name for the book e.g. "go"
 	DirOnDisk      string // full directory on disk, ${generated}/www/essential/${DirShort}
-	DirWWW         string // full path of sub-directory "www"
 	DirCache       string // full path of sub-directory "cache"
 	NotionCacheDir string
 
@@ -159,7 +158,7 @@ func updateBookAppJS(book *Book) {
 
 	sha1Hex := u.Sha1HexOfBytes(d)
 	name := nameToSha1Name(srcName, sha1Hex)
-	dst := filepath.Join(book.DirWWW, "s", name)
+	dst := filepath.Join(book.DirOnDisk, "s", name)
 	err := ioutil.WriteFile(dst, d, 0644)
 	maybePanicIfErr(err)
 	if err != nil {
@@ -208,7 +207,6 @@ func (b *Book) afterPageDownload(page *notionapi.Page) error {
 
 func initBook(book *Book) {
 	book.DirOnDisk = filepath.Join(gDestDir, "www", "essential", book.DirShort)
-	book.DirWWW = book.DirOnDisk
 	book.DirCache = filepath.Join("books", book.DirShort, "cache")
 	book.NotionCacheDir = filepath.Join(book.DirCache, "notion")
 	currBookDir = book.DirOnDisk
@@ -217,12 +215,12 @@ func initBook(book *Book) {
 	dir := book.NotionCacheDir
 	u.CreateDirMust(dir)
 	if flgClean {
-		dir = filepath.Join(book.DirWWW)
+		dir = filepath.Join(book.DirOnDisk)
 		os.RemoveAll(dir)
 	}
-	dir = filepath.Join(book.DirWWW, "s")
+	dir = filepath.Join(book.DirOnDisk, "s")
 	u.CreateDirMust(dir)
-	dir = filepath.Join(book.DirWWW, "gen")
+	dir = filepath.Join(book.DirOnDisk, "gen")
 	u.CreateDirMust(dir)
 	logf("Created '%s' for book '%s'\n", dir, book.Title)
 	book.idToPage = map[string]*Page{}
