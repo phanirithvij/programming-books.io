@@ -129,7 +129,7 @@ func getEvalResponseString(resp *EvalResponse) string {
 	return resp.Stdout + resp.Stderr + resp.Error
 }
 
-func evalGist(gistStr string) (*EvalResponse, string) {
+func evalGist(gistStr string) (*EvalResponse, error) {
 	gist := gistDecode(gistStr)
 	panicIf(gist.Truncated) // TODO: implement if needed
 	var files []File
@@ -150,10 +150,8 @@ func evalGist(gistStr string) (*EvalResponse, string) {
 		Files:    files,
 	}
 	resp, err := evalCode(e)
-	must(err)
-	out := getEvalResponseString(resp)
 	// logf("Eval response:\n%s\n", out)
-	return resp, out
+	return resp, err
 }
 
 func evalCached(cache *Cache, gistID string, gist string) string {
@@ -164,7 +162,14 @@ func evalCached(cache *Cache, gistID string, gist string) string {
 		logf("found in cache\n")
 		return gistOut.Output
 	}
-	_, out := evalGist(gist)
+	resp, err := evalGist(gist)
+	if err != nil {
+		logf("\nfailed to execute gist: %s, gist sha1: %s\n", gistID, sha1)
+		logf("error: %s\n", err)
+		logf("gist body:\n%s\n", gist)
+		must(err)
+	}
+	out := getEvalResponseString(resp)
 	cache.saveGistOutput(gist, out)
 	logf("not in cache, did eval\n")
 	return out

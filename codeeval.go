@@ -50,7 +50,8 @@ func evalCode(e *Eval) (*EvalResponse, error) {
 		return nil, err
 	}
 	if rsp.StatusCode != 200 {
-		return nil, fmt.Errorf("request failed with '%s'", rsp.Status)
+		err = fmt.Errorf("request failed with '%s'", rsp.Status)
+		return nil, err
 	}
 	defer u.CloseNoError(rsp.Body)
 	d, err = ioutil.ReadAll(rsp.Body)
