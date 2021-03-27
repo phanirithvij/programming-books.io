@@ -149,7 +149,7 @@ func evalGist(gistStr string) (*EvalResponse, string) {
 		Language: lang,
 		Files:    files,
 	}
-	resp, err := evalGo(e)
+	resp, err := evalCode(e)
 	must(err)
 	out := getEvalResponseString(resp)
 	// logf("Eval response:\n%s\n", out)

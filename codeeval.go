@@ -12,7 +12,7 @@ import (
 )
 
 var (
-	evalGoServer = "https://codeeval.dev"
+	evalCodeServer = "https://codeeval.dev"
 )
 
 type File struct {
@@ -36,10 +36,10 @@ type EvalResponse struct {
 
 // http://localhost:8533
 
-func evalGo(e *Eval) (*EvalResponse, error) {
+func evalCode(e *Eval) (*EvalResponse, error) {
 	d, err := json.Marshal(e)
 	must(err)
-	uri := evalGoServer + "/api/eval"
+	uri := evalCodeServer + "/api/eval"
 	body := bytes.NewReader(d)
 	req, err := http.NewRequest("POST", uri, body)
 	if err != nil {
