@@ -56,7 +56,7 @@ func (b *Book) cachePath() string {
 
 // this is where html etc. files for a book end up
 func (b *Book) destDir() string {
-	return filepath.Join(b.DirOnDisk, destEssentialDir)
+	return filepath.Join(gDestDir, b.DirOnDisk, destEssentialDir)
 }
 
 // URL returns url of the book, used in index.tmpl.html
@@ -73,7 +73,7 @@ func (b *Book) Summary() template.HTML {
 }
 
 func (b *Book) BaseURL() string {
-	return "https://essential-" + b.DirShort + ".programming-books.io"
+	return "https://www.programming-books.io/" + b.DirShort
 }
 
 // CanonnicalURL returns full url including host

@@ -38,16 +38,16 @@
 
     // https://www.programming-books.io/essential/go/concurrency-16e8d8c3d77e44faaf6857a1df368ce8
     // =>
-    // https://essential-go.programming-books.io/concurrency-16e8d8c3d77e44faaf6857a1df368ce8
+    // https://www.programming-books.io/go/concurrency-16e8d8c3d77e44faaf6857a1df368ce8
     function urlToBookURL(loc) {
       let b = parseBookURL(loc);
       if (b == null) {
         return null;
       }
       if (b.length === 1) {
-        return "https://essential-" + b[0] + ".programming-books.io"
+        return "https://www.programming-books.io/" + b[0]
       }
-      return "https://essential-" + b[0] + ".programming-books.io/" + b[1];
+      return "https://www.programming-books.io/" + b[0] + "/" + b[1];
     }
 
     function do404() {

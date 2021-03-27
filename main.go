@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"html/template"
+	"os"
 	"os/exec"
 	"path/filepath"
 	"strings"
@@ -93,6 +94,8 @@ var (
 	// if true, disables notion cache, forcing re-download of notion page
 	// even if cached verison on disk exits
 	flgDisableNotionCache bool
+
+	gDestDir string
 )
 
 func main() {
@@ -103,6 +106,13 @@ func main() {
 		flgWc           bool
 		flgDownloadGist string
 	)
+
+	{
+		dir := filepath.Join("..", "generated")
+		dir, err := filepath.Abs(dir)
+		must(err)
+		gDestDir = dir
+	}
 
 	{
 		flag.BoolVar(&flgAnalytics, "analytics", false, "add google analytics code")
@@ -164,6 +174,8 @@ func main() {
 	defer func() {
 		logf("Downloaded %d pages, %d from cache. Total time: %s\n", nTotalDownloaded, nTotalFromCache, time.Since(timeStart))
 	}()
+
+	updateGeneratedRepo()
 
 	{
 		//notionAuthToken = os.Getenv("NOTION_TOKEN")
@@ -295,4 +307,28 @@ func previewBook(book *Book) {
 	cmd.Dir = filepath.Join(book.DirOnDisk, "www")
 	fmt.Printf("Running ver cel dev in dir '%s'\n", cmd.Dir)
 	u.RunCmdLoggedMust(cmd)
+}
+
+func updateGeneratedRepo() {
+	dir := gDestDir
+	if !u.PathExists(dir) {
+		fmt.Printf("updateGeneratedRepo: directory %s doesn't exist. Must git clone https://github.com/essentialbooks/generated there\n", dir)
+		os.Exit(1)
+	}
+	u.EnsureGitClean(dir)
+	u.GitPullMust(dir)
+}
+
+func commitGeneratedRepo() {
+	dir := gDestDir
+	{
+		cmd := exec.Command("git", "add", ".")
+		cmd.Dir = dir
+		u.RunCmdMust(cmd)
+	}
+	{
+		cmd := exec.Command("git", "commit", "-am", "update generated")
+		cmd.Dir = dir
+		u.RunCmdMust(cmd)
+	}
 }
