@@ -170,11 +170,11 @@ func (p *Page) NotionURL() string {
 func (p *Page) destFilePath() string {
 	title := urlify(p.Title)
 	fileName := title + "-" + p.NotionID + ".html"
-	return filepath.Join(p.Book.DirOnDisk, destEssentialDir, fileName)
+	return filepath.Join(p.Book.DirOnDisk, fileName)
 }
 
 func (p *Page) destImagePath(name string) string {
-	return filepath.Join(p.Book.DirOnDisk, destEssentialDir, name)
+	return filepath.Join(p.Book.DirOnDisk, name)
 }
 
 // PageTitle returns title for the page

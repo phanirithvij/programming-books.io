@@ -28,7 +28,7 @@ type Book struct {
 	idToPage map[string]*Page
 
 	DirShort       string // directory name for the book e.g. "go"
-	DirOnDisk      string // full directory name on disk, books/${DirShort}
+	DirOnDisk      string // full directory on disk, ${generated}/www/essential/${DirShort}
 	DirWWW         string // full path of sub-directory "www"
 	DirCache       string // full path of sub-directory "cache"
 	NotionCacheDir string
@@ -56,7 +56,7 @@ func (b *Book) cachePath() string {
 
 // this is where html etc. files for a book end up
 func (b *Book) destDir() string {
-	return filepath.Join(gDestDir, "www", b.DirOnDisk, destEssentialDir)
+	return b.DirOnDisk
 }
 
 // URL returns url of the book, used in index.tmpl.html
@@ -73,7 +73,8 @@ func (b *Book) Summary() template.HTML {
 }
 
 func (b *Book) BaseURL() string {
-	return "https://www.programming-books.io/essential/" + b.DirShort
+	//return "https://www.programming-books.io/essential/" + b.DirShort
+	return "/essential/" + b.DirShort
 }
 
 // CanonnicalURL returns full url including host

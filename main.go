@@ -323,12 +323,17 @@ func updateGeneratedRepo() {
 func commitAndPushGeneratedRepo() {
 	dir := gDestDir
 	{
-		cmd := exec.Command("git", "add", ".")
+		cmd := exec.Command("git", "add", "www")
 		cmd.Dir = dir
 		u.RunCmdMust(cmd)
 	}
 	{
-		cmd := exec.Command("git", "commit", "-am", "update generated")
+		cmd := exec.Command("git", "commit", "-am", "update generated html")
+		cmd.Dir = dir
+		u.RunCmdMust(cmd)
+	}
+	{
+		cmd := exec.Command("git", "push")
 		cmd.Dir = dir
 		u.RunCmdMust(cmd)
 	}

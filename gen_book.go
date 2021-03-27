@@ -24,9 +24,7 @@ const (
 var (
 	tmplDir = filepath.Join("fe", "tmpl")
 
-	// directory where generated .html files for books are
-	destEssentialDir = "www"
-	currBookDir      string // a bit of a hack
+	currBookDir string // a bit of a hack
 
 	templates *template.Template
 
@@ -61,7 +59,7 @@ func funcOptimizeAsset(url string) string {
 
 	dstSha1Hex := u.Sha1HexOfBytes(d)
 	dstName := nameToSha1Name(name, dstSha1Hex)
-	dstPath := filepath.Join(currBookDir, "www", "s", dstName)
+	dstPath := filepath.Join(currBookDir, "s", dstName)
 	dstURL := "/s/" + dstName
 	err = ioutil.WriteFile(dstPath, d, 0644)
 	must(err)
