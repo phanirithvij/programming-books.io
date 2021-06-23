@@ -1,0 +1,986 @@
+10786 noahttpcache
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "table": "block",
+      "id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d"
+    }
+  ]
+}
+Response:+10586
+{
+  "recordMapWithRoles": {
+    "block": {
+      "1bc02baf-b457-45de-8dfb-222e0a8870e1": {
+        "role": "none"
+      },
+      "3aae8746-e40c-4865-b96e-2af416f4eb77": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "b935e984-ad1e-465d-8d70-1f6079617612",
+            "a7788a37-dd2e-4a8a-a30b-f0148faa091d"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458620000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "3aae8746-e40c-4865-b96e-2af416f4eb77",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458980000,
+          "parent_id": "d1c8bb39-bad4-494e-80ab-e28414c3d80e",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [["Cascading Delete"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 30
+        }
+      },
+      "9d463535-c38f-45c5-9275-6211e56977cf": {
+        "role": "none"
+      },
+      "a4137b6c-ff58-427c-b046-a604eff5b8e3": {
+        "role": "none"
+      },
+      "a7788a37-dd2e-4a8a-a30b-f0148faa091d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "a0840489-978b-4498-933e-8d0041fe5a92",
+            "83cdeb98-b3ab-44fa-8b7e-044411231d3f",
+            "89473d4d-c0e3-406d-9ecb-a58fc68bd918",
+            "62bcd8de-c231-417c-8a95-1871715f76be",
+            "340afe90-e893-4355-90c7-87acfb5bb128",
+            "954a6c22-746b-43b7-b820-602757171050",
+            "ae63acaa-bc6d-4116-848a-b8cd1b0eb97a",
+            "9278a66d-551a-4601-b1eb-76e125695f11",
+            "2a0977d4-b268-462d-978e-e19601cbfeec",
+            "40708d9c-6846-4959-a7fa-c3f165282d39",
+            "dfeb1ee0-809a-43f5-9d5e-dbfcc4766aeb",
+            "9b05a196-7bbe-4ed2-9d26-135851d2f8c5",
+            "26ec8c4f-05c9-439b-84ba-dbbf01f135d8",
+            "7b27e88b-070e-4c90-8dd5-213f6f32f1a6",
+            "28342064-a292-4bf9-afc5-6e46312d209f",
+            "02d88648-4557-413b-8e32-e76c344b6c6b",
+            "05dbb74d-c552-4f10-92fa-9e9bbbc45acf",
+            "3a6e1676-e02a-4293-84a3-25d532ebdee6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656028,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551692573601,
+          "parent_id": "3aae8746-e40c-4865-b96e-2af416f4eb77",
+          "parent_table": "block",
+          "properties": {
+            "title": [["ON DELETE CASCADE"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 5
+        }
+      },
+      "d1c8bb39-bad4-494e-80ab-e28414c3d80e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "5191d1f9-c4fb-4686-aebe-ac6595e60da0",
+            "258e2fb4-c9bb-4aaf-92ec-b9b8fc34247b",
+            "a110b9fb-5ca4-4783-9f24-944c39372a15",
+            "07b14533-f573-4db1-9f14-02fbcfa349c6",
+            "ebe531bb-4b38-4b8e-803d-bd6ed7e2c35d",
+            "91cd3c4f-4abe-4afd-95fb-980a82f1b915",
+            "2bd9fb04-88fc-49d6-884b-ab3cf352d0b1",
+            "a166da28-a18e-467b-8bad-3fe383f8b9f8",
+            "d59d8794-a6f8-4b48-a28d-188ce00c0fa0",
+            "5fcd8a96-8d78-4c30-94d8-28b2d6b94531",
+            "ea3e10a7-04a9-4088-aee1-651ee9529c40",
+            "aea3972d-67d7-4992-aa3a-2bdcfb7ad4e6",
+            "aaeb95b4-31a0-434f-80e9-535e0037c6fd",
+            "44a79833-d529-4dbd-a98b-07fb1d894bff",
+            "90eeb290-b12b-4e3c-8d6f-5ab6e78841b3",
+            "111e9c71-85a7-4cb1-92e6-81b82c8dad2c",
+            "208cbc7b-c00e-45fb-a39d-962b71299d49",
+            "4f2725d7-1e88-486a-8840-c84d9d7bd661",
+            "8b3eec95-9e20-4b22-8bf7-f4b932be64fa",
+            "4ea1c2d2-ed21-4d2b-a233-e3d96fe5ba00",
+            "5c98fb28-31be-4b5f-a5b6-bd824afed93b",
+            "b7de7c35-4291-410d-a6e3-451eb8a8e8a5",
+            "98b5a6dd-fca5-4233-936e-d3902c5fb491",
+            "c1ff4006-e872-427b-9454-c8faa8237566",
+            "407b3d1d-6ee3-4bb6-9f25-9cd22db2f79f",
+            "56d55a90-21b2-4426-a4c0-2120910cfb8d",
+            "c7a6e7d1-bcff-477e-ad6d-3f9a72de62a2",
+            "f6b7476f-5cad-4ad0-902a-62538b392ecb",
+            "010680eb-9c5c-4acf-831a-de5ca99567ca",
+            "16e26ec8-dcc7-443a-8fe2-4d8a4e03fae6",
+            "0413cdf8-3588-4a92-b18f-aef996085628",
+            "acdc8b9d-aac1-4bdd-bf23-265732926aa3",
+            "e4ce18be-832a-4dd2-9a28-ef6df2533fa5",
+            "d3eaa6f2-91f7-452d-add3-ef7c324c79a9",
+            "39f7d0a0-ca6b-456f-877d-7b0da4ab364a",
+            "dcb3461f-e444-48a8-b683-09d15977b98b",
+            "5e9393cb-2254-46bf-99c5-b362ec875ad9",
+            "db9bcca6-1928-44a6-baea-87f1a8aad7bb",
+            "c7add74d-833c-4731-ada8-001a682748ca",
+            "6cfaa401-66f2-4aef-94d0-ec7358d75463",
+            "97e10969-7e51-46ab-a39d-4135a52b04fe",
+            "81d7eb85-93b6-4e05-b0ec-e5fa7d1ba7db",
+            "d4be36b3-e082-4a3a-8437-66b42ad1856b",
+            "2c1fe926-b253-4c0e-b18c-786e3bccaeca",
+            "509bb6f9-4f36-4041-878f-d56bf359581e",
+            "7cb6a11d-f470-41bb-8b33-f3b8d7d8a49a",
+            "42e0611a-4089-464c-a60d-087eb3ece1b9",
+            "375fed7c-d5dd-4f24-8715-c255f83da986",
+            "4e6caccf-4b6a-42fa-990e-a07e965ec022",
+            "33e99201-5094-441c-b61b-88719352289c",
+            "3aae8746-e40c-4865-b96e-2af416f4eb77",
+            "5b24fdea-8c60-4983-b135-f74def26df25",
+            "383c437d-704c-4892-a70f-c94b70b36d23",
+            "8b178535-1562-406f-85a3-b7545e419ee8",
+            "da5bf25e-3934-4638-b372-8eb6c7e44a7b",
+            "4e9d5cac-4486-4652-a532-71cab0b0ec0e",
+            "99486182-dfe4-4338-9362-88f5b9ba21be",
+            "29f78610-bf30-46ff-94ed-091aa6432ec6",
+            "ad9adb14-035e-4f26-9537-e3c9762e8494",
+            "5f15e0fb-5445-47a3-b07e-6f3caed4f24f",
+            "bff093c3-3c2c-4f54-a85e-ed55d3097cff",
+            "1cf3f0eb-9e08-4b83-a5c9-4dac889c17f7",
+            "2974479c-567b-478d-a2d6-dc55734bd3a2",
+            "84f461bc-fb95-4b98-bf17-c41d3f3a727c",
+            "0e90c098-8b99-404b-8501-959301837566",
+            "b8640a96-c9d5-47b2-8d62-ead109594866"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457663417,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "d1c8bb39-bad4-494e-80ab-e28414c3d80e",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571296380000,
+          "parent_id": "1bc02baf-b457-45de-8dfb-222e0a8870e1",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [["Essential SQL"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 182
+        }
+      },
+      "e2672b89-0eb5-45f2-8129-51f1daca829e": {
+        "role": "none"
+      }
+    },
+    "space": {
+      "cf9fa7dd-b245-42a0-b929-d5a276b3afe0": {
+        "role": "none"
+      }
+    }
+  },
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "a0840489-978b-4498-933e-8d0041fe5a92",
+          "83cdeb98-b3ab-44fa-8b7e-044411231d3f",
+          "89473d4d-c0e3-406d-9ecb-a58fc68bd918",
+          "62bcd8de-c231-417c-8a95-1871715f76be",
+          "340afe90-e893-4355-90c7-87acfb5bb128",
+          "954a6c22-746b-43b7-b820-602757171050",
+          "ae63acaa-bc6d-4116-848a-b8cd1b0eb97a",
+          "9278a66d-551a-4601-b1eb-76e125695f11",
+          "2a0977d4-b268-462d-978e-e19601cbfeec",
+          "40708d9c-6846-4959-a7fa-c3f165282d39",
+          "dfeb1ee0-809a-43f5-9d5e-dbfcc4766aeb",
+          "9b05a196-7bbe-4ed2-9d26-135851d2f8c5",
+          "26ec8c4f-05c9-439b-84ba-dbbf01f135d8",
+          "7b27e88b-070e-4c90-8dd5-213f6f32f1a6",
+          "28342064-a292-4bf9-afc5-6e46312d209f",
+          "02d88648-4557-413b-8e32-e76c344b6c6b",
+          "05dbb74d-c552-4f10-92fa-9e9bbbc45acf",
+          "3a6e1676-e02a-4293-84a3-25d532ebdee6"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1550458656028,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1551692573601,
+        "parent_id": "3aae8746-e40c-4865-b96e-2af416f4eb77",
+        "parent_table": "block",
+        "properties": {
+          "title": [["ON DELETE CASCADE"]]
+        },
+        "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+        "type": "page",
+        "version": 5
+      }
+    }
+  ]
+}
+30271 noahttpcache
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "pageId": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+  "chunkNumber": 0,
+  "limit": 50,
+  "cursor": {
+    "stack": []
+  },
+  "verticalColumns": false
+}
+Response:+30031
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "02d88648-4557-413b-8e32-e76c344b6c6b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656028,
+          "id": "02d88648-4557-413b-8e32-e76c344b6c6b",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656028,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "it won’t work, because Microsoft-SQL-server doesn’t allow you to set a foreign key with "
+              ],
+              ["ON DELETE CASCADE", [["c"]]],
+              [
+                " on a recursive tree structure. One reason for this is, that the tree is possibly cyclic, and that would possibly lead to a deadlock."
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 1
+        }
+      },
+      "05dbb74d-c552-4f10-92fa-9e9bbbc45acf": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656028,
+          "id": "05dbb74d-c552-4f10-92fa-9e9bbbc45acf",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656028,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "PostgreSQL on the other hand can do this; the requirement is that the tree is non-cyclic. If the tree is cyclic, you’ll get a runtime error. In that case, you’ll just have to implement the delete function yourselfs."
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 1
+        }
+      },
+      "26ec8c4f-05c9-439b-84ba-dbbf01f135d8": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656028,
+          "id": "26ec8c4f-05c9-439b-84ba-dbbf01f135d8",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656028,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "and the rooms are automagically deleted when the client is deleted. Problem solved - with no application code changes."
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 1
+        }
+      },
+      "28342064-a292-4bf9-afc5-6e46312d209f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656028,
+          "id": "28342064-a292-4bf9-afc5-6e46312d209f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656028,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "language": [["Plain Text"]],
+            "title": [
+              [
+                "IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_T_FMS_Navigation_T_FMS_Navigation]') AND parent_object_id = OBJECT_ID(N'[dbo].[T_FMS_Navigation]'))\nALTER TABLE [dbo].[T_FMS_Navigation]  WITH CHECK ADD  CONSTRAINT [FK_T_FMS_Navigation_T_FMS_Navigation] FOREIGN KEY([NA_NA_UID])\nREFERENCES [dbo].[T_FMS_Navigation] ([NA_UID]) \nON DELETE CASCADE \nGO\n\nIF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_T_FMS_Navigation_T_FMS_Navigation]') AND parent_object_id = OBJECT_ID(N'[dbo].[T_FMS_Navigation]'))\nALTER TABLE [dbo].[T_FMS_Navigation] CHECK CONSTRAINT [FK_T_FMS_Navigation_T_FMS_Navigation]\nGO"
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "code",
+          "version": 5
+        }
+      },
+      "2a0977d4-b268-462d-978e-e19601cbfeec": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656027,
+          "id": "2a0977d4-b268-462d-978e-e19601cbfeec",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656027,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "There is a better solution than doing it in your code. You can just add "
+              ],
+              ["ON DELETE CASCADE", [["c"]]],
+              [" to your foreign key."]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 1
+        }
+      },
+      "340afe90-e893-4355-90c7-87acfb5bb128": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656027,
+          "id": "340afe90-e893-4355-90c7-87acfb5bb128",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656027,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Assuming a client moves on to some other software, you’ll have to delete his data in your software. But if you do"
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 1
+        }
+      },
+      "3a6e1676-e02a-4293-84a3-25d532ebdee6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656028,
+          "id": "3a6e1676-e02a-4293-84a3-25d532ebdee6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656028,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              ["A word of caution:", [["b"]]],
+              [
+                " This means you can’t simply delete and re-insert the client table anymore, because if you do this, it will delete all entries in “T_Room”… (no non-delta updates anymore)"
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 5
+        }
+      },
+      "3aae8746-e40c-4865-b96e-2af416f4eb77": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "b935e984-ad1e-465d-8d70-1f6079617612",
+            "a7788a37-dd2e-4a8a-a30b-f0148faa091d"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458620000,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "3aae8746-e40c-4865-b96e-2af416f4eb77",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458980000,
+          "parent_id": "d1c8bb39-bad4-494e-80ab-e28414c3d80e",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            }
+          ],
+          "properties": {
+            "title": [["Cascading Delete"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 30
+        }
+      },
+      "40708d9c-6846-4959-a7fa-c3f165282d39": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656027,
+          "id": "40708d9c-6846-4959-a7fa-c3f165282d39",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656027,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "language": [["Plain Text"]],
+            "title": [
+              [
+                "ALTER TABLE dbo.T_Room  -- WITH CHECK -- SQL-Server can specify WITH CHECK/WITH NOCHECK\nADD  CONSTRAINT FK_T_Room_T_Client FOREIGN KEY(RM_CLI_ID)\nREFERENCES dbo.T_Client (CLI_ID) \nON DELETE CASCADE"
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "code",
+          "version": 5
+        }
+      },
+      "62bcd8de-c231-417c-8a95-1871715f76be": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656027,
+          "id": "62bcd8de-c231-417c-8a95-1871715f76be",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656027,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "language": [["Plain Text"]],
+            "title": [
+              [
+                "ALTER TABLE dbo.T_Room  WITH CHECK ADD  CONSTRAINT FK_T_Room_T_Client FOREIGN KEY(RM_CLI_ID)\nREFERENCES dbo.T_Client (CLI_ID)\nGO"
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "code",
+          "version": 1
+        }
+      },
+      "7b27e88b-070e-4c90-8dd5-213f6f32f1a6": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656028,
+          "id": "7b27e88b-070e-4c90-8dd5-213f6f32f1a6",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656028,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "One word of caution: In Microsoft SQL-Server, this won’t work if you have a table that references itselfs. So if you try to define a delete cascade on a recursive tree structure, like this:"
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 1
+        }
+      },
+      "83cdeb98-b3ab-44fa-8b7e-044411231d3f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656026,
+          "id": "83cdeb98-b3ab-44fa-8b7e-044411231d3f",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656026,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "title": [["Now, every client has N rooms."]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 1
+        }
+      },
+      "89473d4d-c0e3-406d-9ecb-a58fc68bd918": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656026,
+          "id": "89473d4d-c0e3-406d-9ecb-a58fc68bd918",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656026,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "This should mean that you have a foreign key on your room table, referencing the client table."
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 5
+        }
+      },
+      "9278a66d-551a-4601-b1eb-76e125695f11": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656027,
+          "id": "9278a66d-551a-4601-b1eb-76e125695f11",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656027,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Now you’d have write code in your application that deletes the client’s rooms before it deletes the client. Assume further that in the future, many more foreign key dependencies will be added in your database, because your application’s functionality expands. Horrible. For every modification in your database, you’ll have to adapt your application’s code in N places. Possibly you’ll have to adapt code in other applications as well (e.g. interfaces to other systems)."
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 5
+        }
+      },
+      "954a6c22-746b-43b7-b820-602757171050": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656027,
+          "id": "954a6c22-746b-43b7-b820-602757171050",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656027,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "language": [["Plain Text"]],
+            "title": [["DELETE FROM T_Client WHERE CLI_ID = x"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "code",
+          "version": 1
+        }
+      },
+      "9b05a196-7bbe-4ed2-9d26-135851d2f8c5": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656027,
+          "id": "9b05a196-7bbe-4ed2-9d26-135851d2f8c5",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656027,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "language": [["Plain Text"]],
+            "title": [["DELETE FROM T_Client WHERE CLI_ID = x"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "code",
+          "version": 1
+        }
+      },
+      "a0840489-978b-4498-933e-8d0041fe5a92": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656023,
+          "id": "a0840489-978b-4498-933e-8d0041fe5a92",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656023,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Assume you have a application that administers rooms. Assume further that your application operates on a per client basis (tenant). You have several clients. So your database will contain one table for clients, and one for rooms."
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 5
+        }
+      },
+      "a7788a37-dd2e-4a8a-a30b-f0148faa091d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "a0840489-978b-4498-933e-8d0041fe5a92",
+            "83cdeb98-b3ab-44fa-8b7e-044411231d3f",
+            "89473d4d-c0e3-406d-9ecb-a58fc68bd918",
+            "62bcd8de-c231-417c-8a95-1871715f76be",
+            "340afe90-e893-4355-90c7-87acfb5bb128",
+            "954a6c22-746b-43b7-b820-602757171050",
+            "ae63acaa-bc6d-4116-848a-b8cd1b0eb97a",
+            "9278a66d-551a-4601-b1eb-76e125695f11",
+            "2a0977d4-b268-462d-978e-e19601cbfeec",
+            "40708d9c-6846-4959-a7fa-c3f165282d39",
+            "dfeb1ee0-809a-43f5-9d5e-dbfcc4766aeb",
+            "9b05a196-7bbe-4ed2-9d26-135851d2f8c5",
+            "26ec8c4f-05c9-439b-84ba-dbbf01f135d8",
+            "7b27e88b-070e-4c90-8dd5-213f6f32f1a6",
+            "28342064-a292-4bf9-afc5-6e46312d209f",
+            "02d88648-4557-413b-8e32-e76c344b6c6b",
+            "05dbb74d-c552-4f10-92fa-9e9bbbc45acf",
+            "3a6e1676-e02a-4293-84a3-25d532ebdee6"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656028,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1551692573601,
+          "parent_id": "3aae8746-e40c-4865-b96e-2af416f4eb77",
+          "parent_table": "block",
+          "properties": {
+            "title": [["ON DELETE CASCADE"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 5
+        }
+      },
+      "ae63acaa-bc6d-4116-848a-b8cd1b0eb97a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656027,
+          "id": "ae63acaa-bc6d-4116-848a-b8cd1b0eb97a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656027,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "Then you’ll get a foreign key violation, because you can’t delete the client when he still has rooms."
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 1
+        }
+      },
+      "d1c8bb39-bad4-494e-80ab-e28414c3d80e": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "5191d1f9-c4fb-4686-aebe-ac6595e60da0",
+            "258e2fb4-c9bb-4aaf-92ec-b9b8fc34247b",
+            "a110b9fb-5ca4-4783-9f24-944c39372a15",
+            "07b14533-f573-4db1-9f14-02fbcfa349c6",
+            "ebe531bb-4b38-4b8e-803d-bd6ed7e2c35d",
+            "91cd3c4f-4abe-4afd-95fb-980a82f1b915",
+            "2bd9fb04-88fc-49d6-884b-ab3cf352d0b1",
+            "a166da28-a18e-467b-8bad-3fe383f8b9f8",
+            "d59d8794-a6f8-4b48-a28d-188ce00c0fa0",
+            "5fcd8a96-8d78-4c30-94d8-28b2d6b94531",
+            "ea3e10a7-04a9-4088-aee1-651ee9529c40",
+            "aea3972d-67d7-4992-aa3a-2bdcfb7ad4e6",
+            "aaeb95b4-31a0-434f-80e9-535e0037c6fd",
+            "44a79833-d529-4dbd-a98b-07fb1d894bff",
+            "90eeb290-b12b-4e3c-8d6f-5ab6e78841b3",
+            "111e9c71-85a7-4cb1-92e6-81b82c8dad2c",
+            "208cbc7b-c00e-45fb-a39d-962b71299d49",
+            "4f2725d7-1e88-486a-8840-c84d9d7bd661",
+            "8b3eec95-9e20-4b22-8bf7-f4b932be64fa",
+            "4ea1c2d2-ed21-4d2b-a233-e3d96fe5ba00",
+            "5c98fb28-31be-4b5f-a5b6-bd824afed93b",
+            "b7de7c35-4291-410d-a6e3-451eb8a8e8a5",
+            "98b5a6dd-fca5-4233-936e-d3902c5fb491",
+            "c1ff4006-e872-427b-9454-c8faa8237566",
+            "407b3d1d-6ee3-4bb6-9f25-9cd22db2f79f",
+            "56d55a90-21b2-4426-a4c0-2120910cfb8d",
+            "c7a6e7d1-bcff-477e-ad6d-3f9a72de62a2",
+            "f6b7476f-5cad-4ad0-902a-62538b392ecb",
+            "010680eb-9c5c-4acf-831a-de5ca99567ca",
+            "16e26ec8-dcc7-443a-8fe2-4d8a4e03fae6",
+            "0413cdf8-3588-4a92-b18f-aef996085628",
+            "acdc8b9d-aac1-4bdd-bf23-265732926aa3",
+            "e4ce18be-832a-4dd2-9a28-ef6df2533fa5",
+            "d3eaa6f2-91f7-452d-add3-ef7c324c79a9",
+            "39f7d0a0-ca6b-456f-877d-7b0da4ab364a",
+            "dcb3461f-e444-48a8-b683-09d15977b98b",
+            "5e9393cb-2254-46bf-99c5-b362ec875ad9",
+            "db9bcca6-1928-44a6-baea-87f1a8aad7bb",
+            "c7add74d-833c-4731-ada8-001a682748ca",
+            "6cfaa401-66f2-4aef-94d0-ec7358d75463",
+            "97e10969-7e51-46ab-a39d-4135a52b04fe",
+            "81d7eb85-93b6-4e05-b0ec-e5fa7d1ba7db",
+            "d4be36b3-e082-4a3a-8437-66b42ad1856b",
+            "2c1fe926-b253-4c0e-b18c-786e3bccaeca",
+            "509bb6f9-4f36-4041-878f-d56bf359581e",
+            "7cb6a11d-f470-41bb-8b33-f3b8d7d8a49a",
+            "42e0611a-4089-464c-a60d-087eb3ece1b9",
+            "375fed7c-d5dd-4f24-8715-c255f83da986",
+            "4e6caccf-4b6a-42fa-990e-a07e965ec022",
+            "33e99201-5094-441c-b61b-88719352289c",
+            "3aae8746-e40c-4865-b96e-2af416f4eb77",
+            "5b24fdea-8c60-4983-b135-f74def26df25",
+            "383c437d-704c-4892-a70f-c94b70b36d23",
+            "8b178535-1562-406f-85a3-b7545e419ee8",
+            "da5bf25e-3934-4638-b372-8eb6c7e44a7b",
+            "4e9d5cac-4486-4652-a532-71cab0b0ec0e",
+            "99486182-dfe4-4338-9362-88f5b9ba21be",
+            "29f78610-bf30-46ff-94ed-091aa6432ec6",
+            "ad9adb14-035e-4f26-9537-e3c9762e8494",
+            "5f15e0fb-5445-47a3-b07e-6f3caed4f24f",
+            "bff093c3-3c2c-4f54-a85e-ed55d3097cff",
+            "1cf3f0eb-9e08-4b83-a5c9-4dac889c17f7",
+            "2974479c-567b-478d-a2d6-dc55734bd3a2",
+            "84f461bc-fb95-4b98-bf17-c41d3f3a727c",
+            "0e90c098-8b99-404b-8501-959301837566",
+            "b8640a96-c9d5-47b2-8d62-ead109594866"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550457663417,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "d1c8bb39-bad4-494e-80ab-e28414c3d80e",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571296380000,
+          "parent_id": "1bc02baf-b457-45de-8dfb-222e0a8870e1",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [["Essential SQL"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 182
+        }
+      },
+      "dfeb1ee0-809a-43f5-9d5e-dbfcc4766aeb": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1550458656027,
+          "id": "dfeb1ee0-809a-43f5-9d5e-dbfcc4766aeb",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1550458656027,
+          "parent_id": "a7788a37-dd2e-4a8a-a30b-f0148faa091d",
+          "parent_table": "block",
+          "properties": {
+            "title": [["Now you can say"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 1
+        }
+      }
+    },
+    "space": {}
+  }
+}
