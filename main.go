@@ -11,7 +11,6 @@ import (
 	"time"
 
 	"github.com/kjk/notionapi"
-	"github.com/kjk/notionapi/caching_downloader"
 	"github.com/kjk/u"
 )
 
@@ -37,18 +36,18 @@ var (
 
 func eventObserver(ev interface{}) {
 	switch v := ev.(type) {
-	case *caching_downloader.EventError:
+	case *notionapi.EventError:
 		logf(v.Error)
-	case *caching_downloader.EventDidDownload:
+	case *notionapi.EventDidDownload:
 		nProcessed++
 		nDownloadedPages++
 		logf("%03d '%s' : downloaded in %s\n", nProcessed, v.PageID, v.Duration)
-	case *caching_downloader.EventDidReadFromCache:
+	case *notionapi.EventDidReadFromCache:
 		nProcessed++
 		nNotionPagesFromCache++
 		// TODO: only verbose
 		//logf("%03d '%s' : read from cache in %s\n", nProcessed, v.PageID, v.Duration)
-	case *caching_downloader.EventGotVersions:
+	case *notionapi.EventGotVersions:
 		logf("downloaded info about %d versions in %s\n", v.Count, v.Duration)
 	}
 }

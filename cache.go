@@ -65,8 +65,8 @@ func (c *Cache) saveGist(gistID, gistContent string) bool {
 		return false
 	}
 	u.PanicIf(gistID == "" || gistContent == "")
-	rec.Append("GistID", gistID)
-	rec.Append("Gist", gistContent)
+	rec.Write("GistID", gistID)
+	rec.Write("Gist", gistContent)
 	err := c.saveRecord(rec)
 	must(err)
 
@@ -106,8 +106,8 @@ func (c *Cache) saveGistOutput(gist, output string) {
 	}
 	//TODO: probably remove, it's ok to have no output
 	//u.PanicIf(output == "")
-	rec.Append("Gist", gist)
-	rec.Append("GistOutput", output)
+	rec.Write("Gist", gist)
+	rec.Write("GistOutput", output)
 	err := c.saveRecord(rec)
 	must(err)
 	sha1 := u.Sha1HexOfBytes([]byte(gist))

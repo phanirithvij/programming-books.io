@@ -9,7 +9,6 @@ import (
 	"sync"
 
 	"github.com/kjk/notionapi"
-	"github.com/kjk/notionapi/caching_downloader"
 	"github.com/kjk/u"
 )
 
@@ -236,9 +235,8 @@ func downloadBook(book *Book) {
 
 	book.client = newNotionClient()
 	cacheDir := book.NotionCacheDir
-	dirCache, err := caching_downloader.NewDirectoryCache(cacheDir)
+	d, err := notionapi.NewCachingClient(cacheDir, book.client)
 	must(err)
-	d := caching_downloader.New(dirCache, book.client)
 	d.EventObserver = eventObserver
 	d.RedownloadNewerVersions = !flgNoDownload
 	d.NoReadCache = flgDisableNotionCache

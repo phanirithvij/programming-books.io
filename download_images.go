@@ -35,8 +35,8 @@ func guessExt(fileName string, contentType string) string {
 	panic(fmt.Errorf("didn't find ext for file '%s', content type '%s'", fileName, contentType))
 }
 
-func downloadImage(c *notionapi.Client, blockID string, uri string) ([]byte, string, error) {
-	img, err := c.DownloadFile(uri, blockID)
+func downloadImage(c *notionapi.Client, parentTable string, blockID string, uri string) ([]byte, string, error) {
+	img, err := c.DownloadFile(uri, blockID, "")
 	if err != nil {
 		return nil, "", err
 	}
@@ -72,7 +72,7 @@ func findImageInDir(imgDir string, sha1 string) string {
 }
 
 // return path of cached image on disk
-func downloadAndCacheImage(c *notionapi.Client, imgDir string, blockID, uri string) (string, error) {
+func downloadAndCacheImage(c *notionapi.Client, block *notionapi.Block, imgDir string, uri string) (string, error) {
 	err := os.MkdirAll(imgDir, 0755)
 	must(err)
 
@@ -85,7 +85,7 @@ func downloadAndCacheImage(c *notionapi.Client, imgDir string, blockID, uri stri
 
 	timeStart := time.Now()
 	logf("Downloading %s ... ", uri)
-	imgData, ext, err := downloadImage(c, blockID, uri)
+	imgData, ext, err := downloadImage(c, block.ParentTable, block.ID, uri)
 	if err != nil {
 		logf("\n  Failed with %s\n", err)
 		return "", err
@@ -99,7 +99,7 @@ func downloadAndCacheImage(c *notionapi.Client, imgDir string, blockID, uri stri
 	return cachedPath, nil
 }
 
-func downloadAndRememberImage(page *Page, imgDir, blockID, link string) {
+func downloadAndRememberImage(page *Page, block *notionapi.Block, imgDir string, link string) {
 	if !isFullURL(link) {
 		id := toNoDashID(page.NotionID)
 		logf("downloadAndRememberImage(): skipping '%s' because not a valid url\npage: https://notion.so/%s\n\n", link, id)
@@ -107,7 +107,7 @@ func downloadAndRememberImage(page *Page, imgDir, blockID, link string) {
 	}
 
 	client := newNotionClient()
-	path, err := downloadAndCacheImage(client, imgDir, blockID, link)
+	path, err := downloadAndCacheImage(client, block, imgDir, link)
 	if err != nil {
 		id := toNoDashID(page.NotionID)
 		logf("downloadAndCacheImage('%s') from page https://notion.so/%s failed with '%s'\n", link, id, err)
@@ -129,7 +129,7 @@ func downloadImages(book *Book, page *Page) {
 	imgDir := filepath.Join(book.NotionCacheDir, "img")
 
 	handleImage := func(block *notionapi.Block) {
-		downloadAndRememberImage(page, imgDir, block.ID, block.Source)
+		downloadAndRememberImage(page, block, imgDir, block.Source)
 	}
 
 	fn := func(block *notionapi.Block) {
@@ -141,7 +141,7 @@ func downloadImages(book *Book, page *Page) {
 	root := page.NotionPage.Root()
 	format := root.FormatPage()
 	if format.PageCover != "" {
-		downloadAndRememberImage(page, imgDir, root.ID, format.PageCover)
+		downloadAndRememberImage(page, root, imgDir, format.PageCover)
 	}
 	page.NotionPage.ForEachBlock(fn)
 }

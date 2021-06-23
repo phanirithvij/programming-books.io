@@ -49,13 +49,16 @@ func evalCode(e *Eval) (*EvalResponse, error) {
 	if err != nil {
 		return nil, err
 	}
-	if rsp.StatusCode != 200 {
-		err = fmt.Errorf("request failed with '%s'", rsp.Status)
-		return nil, err
-	}
 	defer u.CloseNoError(rsp.Body)
 	d, err = ioutil.ReadAll(rsp.Body)
 	must(err)
+	if rsp.StatusCode != 200 {
+		err = fmt.Errorf("request failed with '%s'", rsp.Status)
+		if len(d) > 0 {
+			logf("\nServer error:\n%s\n", string(d))
+		}
+		return nil, err
+	}
 	var res EvalResponse
 	err = json.Unmarshal(d, &res)
 	must(err)
