@@ -129,7 +129,7 @@ func downloadImages(book *Book, page *Page) {
 	imgDir := filepath.Join(book.NotionCacheDir, "img")
 
 	handleImage := func(block *notionapi.Block) {
-		downloadAndRememberImage(page, block, imgDir, block.Source)
+		downloadAndRememberImage(page, block, imgDir, block.ImageURL)
 	}
 
 	fn := func(block *notionapi.Block) {

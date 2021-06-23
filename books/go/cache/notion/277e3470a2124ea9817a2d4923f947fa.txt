@@ -1,190 +1,19 @@
-2241 1594539349823 httpcache-v1
+11606 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
 {
   "requests": [
     {
-      "id": "277e3470-a212-4ea9-817a-2d4923f947fa",
-      "table": "block"
+      "table": "block",
+      "id": "277e3470-a212-4ea9-817a-2d4923f947fa"
     }
   ]
 }
-Response:+2041
+Response:+11406
 {
-  "results": [
-    {
-      "role": "comment_only",
-      "value": {
-        "alive": true,
-        "content": [
-          "9886d5da-b510-48c4-b1a1-136f5068d502",
-          "fa4bf347-d17b-44e7-b161-ef7dadd66699",
-          "741ad799-7c49-4ed0-8816-080ff1030e78",
-          "47dcd153-2a00-436d-b11d-e3f842aadb53",
-          "8a02545e-1f3b-4911-b430-9608d68cc609",
-          "3cd08a09-2bfe-4743-bb5f-aa2fd6958630",
-          "91ef47d8-ee09-4977-b619-8832b007041d",
-          "6c632a00-e269-41fc-a99c-75a3f1569ed4",
-          "dfb361c4-4cbf-49b7-a4ba-3a7fcc29266d",
-          "9bc39b6b-a717-4c4c-a59a-9636eb95acae",
-          "20d43dd9-be29-4b96-a453-b91f59ce178a",
-          "d13079fc-a0d9-4e3b-a514-e4490bcc470a",
-          "e574da1b-ecb9-48b2-b223-7f68fc550735",
-          "22421fb1-9764-4a96-990a-c5b10747cc07",
-          "3d7c5e4d-3017-4169-be13-520750b80052",
-          "6523e0c0-f2c5-45c1-9620-cfa9ae8e6ce5",
-          "193c5966-b013-43b9-b3da-172ac40b417d",
-          "fe950fe1-2fb2-4ce9-9488-5f2ea05d3d1e",
-          "e8a11f18-6f8e-473b-ae67-9b8047c65b89",
-          "32ce18fe-2cdd-4ba0-9fce-c0867a7d2dae"
-        ],
-        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_table": "notion_user",
-        "created_time": 1532156143233,
-        "format": {
-          "page_full_width": true,
-          "page_small_text": true
-        },
-        "id": "277e3470-a212-4ea9-817a-2d4923f947fa",
-        "ignore_block_count": true,
-        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_table": "notion_user",
-        "last_edited_time": 1532208931969,
-        "parent_id": "96e61372-84ae-4460-a282-7f456b4cf62c",
-        "parent_table": "block",
-        "properties": {
-          "title": [
-            [
-              "Create a HTTPS Server"
-            ]
-          ]
-        },
-        "type": "page",
-        "version": 25
-      }
-    }
-  ]
-}
-33469 1594539349824 httpcache-v1
-Method: POST
-URL: https://www.notion.so/api/v3/loadPageChunk
-Body:+152
-{
-  "chunkNumber": 0,
-  "cursor": {
-    "stack": []
-  },
-  "limit": 50,
-  "pageId": "277e3470-a212-4ea9-817a-2d4923f947fa",
-  "verticalColumns": false
-}
-Response:+33228
-{
-  "cursor": {
-    "stack": []
-  },
-  "recordMap": {
+  "recordMapWithRoles": {
     "block": {
-      "193c5966-b013-43b9-b3da-172ac40b417d": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1532156143232,
-          "id": "193c5966-b013-43b9-b3da-172ac40b417d",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1532156143232,
-          "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
-          "parent_table": "block",
-          "properties": {
-            "title": [
-              [
-                "Note: A self-signed certificate could be used e.g. for internal projects, debugging, testing, etc. Any browser out there will mention, that this certificate is not safe. In order to avoid this, the certificate must signed by a certification authority. Mostly, this is not available for free. One exception is the “Let’s Encrypt” movement: https://letsencrypt.org"
-              ]
-            ]
-          },
-          "type": "text",
-          "version": 5
-        }
-      },
-      "20d43dd9-be29-4b96-a453-b91f59ce178a": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1532156143230,
-          "id": "20d43dd9-be29-4b96-a453-b91f59ce178a",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1532156143230,
-          "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
-          "parent_table": "block",
-          "properties": {
-            "title": [
-              [
-                "sha256",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " Forces the SHA256 hashing algorithms which major browsers consider as secure (at the year 2017)"
-              ]
-            ]
-          },
-          "type": "bulleted_list",
-          "version": 5
-        }
-      },
-      "22421fb1-9764-4a96-990a-c5b10747cc07": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1532156143231,
-          "id": "22421fb1-9764-4a96-990a-c5b10747cc07",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1532156143231,
-          "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
-          "parent_table": "block",
-          "properties": {
-            "title": [
-              [
-                "out",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " Names the file where to write the certificate"
-              ]
-            ]
-          },
-          "type": "bulleted_list",
-          "version": 5
-        }
-      },
       "277e3470-a212-4ea9-817a-2d4923f947fa": {
         "role": "comment_only",
         "value": {
@@ -228,12 +57,9 @@ Response:+33228
           "parent_id": "96e61372-84ae-4460-a282-7f456b4cf62c",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "Create a HTTPS Server"
-              ]
-            ]
+            "title": [["Create a HTTPS Server"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
           "version": 25
         }
@@ -341,12 +167,386 @@ Response:+33228
             }
           ],
           "properties": {
+            "title": [["Essential Go"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 1680
+        }
+      },
+      "5f982f10-57d4-4e67-8b00-a9920cc2ad7e": {
+        "role": "none"
+      },
+      "6011c17b-d910-40d3-b1ad-797e09cf4f0f": {
+        "role": "none"
+      },
+      "96e61372-84ae-4460-a282-7f456b4cf62c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "3dafe91a-49e7-47d3-9510-e514639535ee",
+            "a5958f58-202a-4258-8209-1ea53653fa6c",
+            "48ead09b-5721-4772-9e87-10e3f47f0ac6",
+            "55fa70c9-acf8-4e6c-a61b-43010c34e657",
+            "27c868d1-c463-47f9-b2f7-f4b55f40d1f5",
+            "277e3470-a212-4ea9-817a-2d4923f947fa",
+            "bbe16c96-5ef4-4181-be05-a223f3521f4a",
+            "87dcd962-c2a5-4283-a88d-814f6a56feb9",
+            "c7b6aa15-87b2-407b-918a-3312a4d5ae2f",
+            "a1ce5808-a188-49b6-a839-3729d05b19f6",
+            "2f90f3ba-9eab-4016-99db-b119feab6665"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156141109,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "96e61372-84ae-4460-a282-7f456b4cf62c",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1567581720000,
+          "parent_id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "parent_table": "block",
+          "properties": {
+            "title": [["HTTP Server"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 35
+        }
+      },
+      "9d463535-c38f-45c5-9275-6211e56977cf": {
+        "role": "none"
+      },
+      "e0f8a911-ba87-4e9f-bd32-470003febad4": {
+        "role": "none"
+      }
+    },
+    "space": {
+      "cf9fa7dd-b245-42a0-b929-d5a276b3afe0": {
+        "role": "none"
+      }
+    }
+  },
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "9886d5da-b510-48c4-b1a1-136f5068d502",
+          "fa4bf347-d17b-44e7-b161-ef7dadd66699",
+          "741ad799-7c49-4ed0-8816-080ff1030e78",
+          "47dcd153-2a00-436d-b11d-e3f842aadb53",
+          "8a02545e-1f3b-4911-b430-9608d68cc609",
+          "3cd08a09-2bfe-4743-bb5f-aa2fd6958630",
+          "91ef47d8-ee09-4977-b619-8832b007041d",
+          "6c632a00-e269-41fc-a99c-75a3f1569ed4",
+          "dfb361c4-4cbf-49b7-a4ba-3a7fcc29266d",
+          "9bc39b6b-a717-4c4c-a59a-9636eb95acae",
+          "20d43dd9-be29-4b96-a453-b91f59ce178a",
+          "d13079fc-a0d9-4e3b-a514-e4490bcc470a",
+          "e574da1b-ecb9-48b2-b223-7f68fc550735",
+          "22421fb1-9764-4a96-990a-c5b10747cc07",
+          "3d7c5e4d-3017-4169-be13-520750b80052",
+          "6523e0c0-f2c5-45c1-9620-cfa9ae8e6ce5",
+          "193c5966-b013-43b9-b3da-172ac40b417d",
+          "fe950fe1-2fb2-4ce9-9488-5f2ea05d3d1e",
+          "e8a11f18-6f8e-473b-ae67-9b8047c65b89",
+          "32ce18fe-2cdd-4ba0-9fce-c0867a7d2dae"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1532156143233,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "277e3470-a212-4ea9-817a-2d4923f947fa",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1532208931969,
+        "parent_id": "96e61372-84ae-4460-a282-7f456b4cf62c",
+        "parent_table": "block",
+        "properties": {
+          "title": [["Create a HTTPS Server"]]
+        },
+        "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+        "type": "page",
+        "version": 25
+      }
+    }
+  ]
+}
+31517 noahttpcache
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "pageId": "277e3470-a212-4ea9-817a-2d4923f947fa",
+  "chunkNumber": 0,
+  "limit": 50,
+  "cursor": {
+    "stack": []
+  },
+  "verticalColumns": false
+}
+Response:+31277
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "193c5966-b013-43b9-b3da-172ac40b417d": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156143232,
+          "id": "193c5966-b013-43b9-b3da-172ac40b417d",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156143232,
+          "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
+          "parent_table": "block",
+          "properties": {
             "title": [
               [
-                "Essential Go"
+                "Note: A self-signed certificate could be used e.g. for internal projects, debugging, testing, etc. Any browser out there will mention, that this certificate is not safe. In order to avoid this, the certificate must signed by a certification authority. Mostly, this is not available for free. One exception is the “Let’s Encrypt” movement: https://letsencrypt.org"
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 5
+        }
+      },
+      "20d43dd9-be29-4b96-a453-b91f59ce178a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156143230,
+          "id": "20d43dd9-be29-4b96-a453-b91f59ce178a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156143230,
+          "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              ["sha256", [["c"]]],
+              [
+                " Forces the SHA256 hashing algorithms which major browsers consider as secure (at the year 2017)"
+              ]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "22421fb1-9764-4a96-990a-c5b10747cc07": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156143231,
+          "id": "22421fb1-9764-4a96-990a-c5b10747cc07",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156143231,
+          "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              ["out", [["c"]]],
+              [" Names the file where to write the certificate"]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "bulleted_list",
+          "version": 5
+        }
+      },
+      "277e3470-a212-4ea9-817a-2d4923f947fa": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "9886d5da-b510-48c4-b1a1-136f5068d502",
+            "fa4bf347-d17b-44e7-b161-ef7dadd66699",
+            "741ad799-7c49-4ed0-8816-080ff1030e78",
+            "47dcd153-2a00-436d-b11d-e3f842aadb53",
+            "8a02545e-1f3b-4911-b430-9608d68cc609",
+            "3cd08a09-2bfe-4743-bb5f-aa2fd6958630",
+            "91ef47d8-ee09-4977-b619-8832b007041d",
+            "6c632a00-e269-41fc-a99c-75a3f1569ed4",
+            "dfb361c4-4cbf-49b7-a4ba-3a7fcc29266d",
+            "9bc39b6b-a717-4c4c-a59a-9636eb95acae",
+            "20d43dd9-be29-4b96-a453-b91f59ce178a",
+            "d13079fc-a0d9-4e3b-a514-e4490bcc470a",
+            "e574da1b-ecb9-48b2-b223-7f68fc550735",
+            "22421fb1-9764-4a96-990a-c5b10747cc07",
+            "3d7c5e4d-3017-4169-be13-520750b80052",
+            "6523e0c0-f2c5-45c1-9620-cfa9ae8e6ce5",
+            "193c5966-b013-43b9-b3da-172ac40b417d",
+            "fe950fe1-2fb2-4ce9-9488-5f2ea05d3d1e",
+            "e8a11f18-6f8e-473b-ae67-9b8047c65b89",
+            "32ce18fe-2cdd-4ba0-9fce-c0867a7d2dae"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156143233,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "277e3470-a212-4ea9-817a-2d4923f947fa",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532208931969,
+          "parent_id": "96e61372-84ae-4460-a282-7f456b4cf62c",
+          "parent_table": "block",
+          "properties": {
+            "title": [["Create a HTTPS Server"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 25
+        }
+      },
+      "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "ba663c57-7a4a-472e-8c95-fef8b4d8a8c6",
+            "2803d5d5-229f-4932-af82-a1dcc86eb8bf",
+            "5e911a69-8c43-432d-bf3c-e33fc32dafe1",
+            "cb80712d-ca75-45da-8e0b-20762c637409",
+            "ccc8d069-58ae-4431-9b21-f9973716e3ca",
+            "1ef07599-dd82-47f4-93ba-6dcba8ae7dbf",
+            "58db8c9a-5650-4dea-b2e6-1f1e0fa4a0a6",
+            "f4005538-90d3-4185-ba79-5870807c2615",
+            "80fb91dd-63d4-45e2-8010-b9f5e261da81",
+            "61280245-4798-470c-a5c5-741d90543d22",
+            "4f5f2959-e72c-431e-9955-27b51ad7fd8e",
+            "c3315892-5082-48fd-b19b-663bf8bff028",
+            "fd755f13-f0fc-4e75-ad9b-9ee675e557e8",
+            "ad923a2f-bd99-4701-844a-f2d688d30548",
+            "c522a628-7288-4110-bcc3-00db67e0e9ad",
+            "64647277-99a0-4611-a891-be7ca4877f8c",
+            "503ddd46-a485-4315-a889-73b8db780fba",
+            "39927eb1-3c11-4194-92e6-7e9fd5328d8b",
+            "20bfd8fa-4545-4479-954a-6814eeeef716",
+            "dda02e36-8b30-48a5-a69b-81c56bfa6dbb",
+            "16e8d8c3-d77e-44fa-af68-57a1df368ce8",
+            "4fac57c0-9168-477a-a120-69484979f419",
+            "41f795bf-701d-4784-b319-7349cdb8f2de",
+            "6461fef8-092a-4515-8959-bddbaad99bce",
+            "7a55634f-b819-4a85-bcc6-036eeba61b39",
+            "c4da0534-9333-4df9-9513-4741ae04f808",
+            "05239fc0-69c3-463d-abc5-32b9d808612e",
+            "f7fca201-1c37-48a1-9e3b-8d66235cbe59",
+            "c290f056-6c80-467a-9005-ab3a4024ec1d",
+            "b6e9fbb3-165c-4bcb-907e-469d86783aab",
+            "1479bc5a-08b6-4dbb-8aa0-e2f5ed17782f",
+            "6744c6d0-d620-448d-be66-e224f64b6f8b",
+            "abb984fe-c0d0-4d74-b2d4-94ed3206d1bc",
+            "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+            "fc416b38-f6f3-41bf-a311-bf6c575c73a1",
+            "710edf91-b0f1-4662-9abb-fcd96aba4d80",
+            "96e61372-84ae-4460-a282-7f456b4cf62c",
+            "cabbd741-52a7-4e29-8be4-afcd41ed10b2",
+            "c7fea6b1-76b7-4c54-ab35-f2d8fdd56f13",
+            "b58d1314-5f92-4c11-afcf-00aa10d71364",
+            "6ccd64ac-7a17-4e1e-a353-66e014d9972a",
+            "48f2d17d-3a76-44da-afba-f0ca9c8b61ad",
+            "b55ab9b1-d6e5-499e-a301-4ba7e85d3efd",
+            "e9a96445-11c4-47f9-8808-19e7cd837540",
+            "d3b04193-4690-4e0b-bf6d-c28b69fc93c6",
+            "83dc1f9b-6ec0-4d25-a2d2-e7357b6bebba",
+            "46593e7f-95ef-4e47-bfa6-0b882cb71c93",
+            "41fdbdec-ca7b-42c3-b4b9-8e5ec0a96e13",
+            "d1980344-374d-45c0-82c9-14c2aafa50cf",
+            "c2af7278-9a07-4a3a-acf8-d308f898f32c",
+            "ec235242-1ba7-472a-b82d-9dcc71d2c389",
+            "fe57ef60-321d-4cca-b8b6-f79cb0120245",
+            "a09f2d8c-9bba-44e0-acd0-a9206e8f733f",
+            "7ccfe169-7c31-49c3-83b6-8894ede37d84",
+            "f6070802-3799-4969-b4ef-fb498179d5be",
+            "9f2c4121-df7e-4b3f-8181-31c49676387b",
+            "d8b9c9c2-a49e-4ba8-a04c-f7ff6ee2db0f",
+            "b5c70cd2-244f-48a0-b89a-ebc75ef45ad0",
+            "ddc28bcf-5179-4ae5-b021-b8c0d9423497",
+            "301bb328-156d-4206-94eb-f5489d2cb744",
+            "307fa1e6-11a1-4819-9b56-b002fddddb27",
+            "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+            "f2028ab7-4a35-4cf2-ba6a-86acfb813356",
+            "e6b89f7a-1cc0-4b89-a1fa-6bb1aeda381f",
+            "0ada5cfc-7c4a-4217-af2e-62d01df777de",
+            "827eb397-bd67-47f5-aef7-73c9c688ad6c",
+            "94415463-0ac5-4def-857c-aa8b50dd1b59",
+            "22efc954-59e8-4624-88d6-608f1e963a74"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532155915890,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570604400000,
+          "parent_id": "6011c17b-d910-40d3-b1ad-797e09cf4f0f",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            },
+            {
+              "allow_duplicate": false,
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [["Essential Go"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
           "version": 1680
         }
@@ -368,17 +568,14 @@ Response:+33228
           "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
           "parent_table": "block",
           "properties": {
-            "language": [
-              [
-                "Go"
-              ]
-            ],
+            "language": [["Go"]],
             "title": [
               [
                 "package main\n\nimport (\n    \"log\"\n    \"net/http\"\n)\n\nfunc main() {\n    http.HandleFunc(\"/\", func(w http.ResponseWriter, r *http.Request) {\n        w.Write([]byte(\"Hello, world!\"))\n    })\n\n    log.Fatal(http.ListenAndServeTLS(\":443\",\"cert.pem\",\"key.pem\", nil))\n}"
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
           "version": 3
         }
@@ -400,17 +597,14 @@ Response:+33228
           "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
           "parent_table": "block",
           "properties": {
-            "language": [
-              [
-                "Shell"
-              ]
-            ],
+            "language": [["Shell"]],
             "title": [
               [
                 "openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout key.pem -out cert.pem -subj \"/CN=example.com\" -days 3650`"
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
           "version": 3
         }
@@ -433,19 +627,11 @@ Response:+33228
           "parent_table": "block",
           "properties": {
             "title": [
-              [
-                "subj",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " Defines the domain name for which this certificate is valid"
-              ]
+              ["subj", [["c"]]],
+              [" Defines the domain name for which this certificate is valid"]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "bulleted_list",
           "version": 1
         }
@@ -467,12 +653,9 @@ Response:+33228
           "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "Generate a certificate"
-              ]
-            ]
+            "title": [["Generate a certificate"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "sub_header",
           "version": 1
         }
@@ -495,30 +678,13 @@ Response:+33228
           "parent_table": "block",
           "properties": {
             "title": [
-              [
-                "days",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " Fow how many days should this certificate valid? "
-              ],
-              [
-                "3650",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " are approx. 10 years."
-              ]
+              ["days", [["c"]]],
+              [" Fow how many days should this certificate valid? "],
+              ["3650", [["c"]]],
+              [" are approx. 10 years."]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "bulleted_list",
           "version": 1
         }
@@ -540,20 +706,9 @@ Response:+33228
           "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "req",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " Use the certificate request tool"
-              ]
-            ]
+            "title": [["req", [["c"]]], [" Use the certificate request tool"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "bulleted_list",
           "version": 1
         }
@@ -574,12 +729,9 @@ Response:+33228
           "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "$SOId: 3248"
-              ]
-            ]
+            "title": [["$SOId: 3248"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 14
         }
@@ -605,19 +757,11 @@ Response:+33228
               [
                 "In order to run a HTTPS server, a certificate is necessary. Generating a self-signed certificate with "
               ],
-              [
-                "openssl",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " is done by executing this command:"
-              ]
+              ["openssl", [["c"]]],
+              [" is done by executing this command:"]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 5
         }
@@ -639,12 +783,9 @@ Response:+33228
           "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "The parameters are:"
-              ]
-            ]
+            "title": [["The parameters are:"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 5
         }
@@ -683,12 +824,9 @@ Response:+33228
           "parent_id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "HTTP Server"
-              ]
-            ]
+            "title": [["HTTP Server"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
           "version": 35
         }
@@ -709,12 +847,9 @@ Response:+33228
           "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "$Id: 208"
-              ]
-            ]
+            "title": [["$Id: 208"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 16
         }
@@ -737,30 +872,15 @@ Response:+33228
           "parent_table": "block",
           "properties": {
             "title": [
-              [
-                "newkey rsa:4096",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
+              ["newkey rsa:4096", [["c"]]],
               [
                 " Creates a new key and certificate by using the RSA algorithms with "
               ],
-              [
-                "4096",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " bit key length"
-              ]
+              ["4096", [["c"]]],
+              [" bit key length"]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "bulleted_list",
           "version": 1
         }
@@ -783,19 +903,13 @@ Response:+33228
           "parent_table": "block",
           "properties": {
             "title": [
-              [
-                "nodes",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
+              ["nodes", [["c"]]],
               [
                 " Disables the password protection for the private key. Without this parameter, your server had to ask you for the password each time its starts."
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "bulleted_list",
           "version": 5
         }
@@ -818,19 +932,11 @@ Response:+33228
           "parent_table": "block",
           "properties": {
             "title": [
-              [
-                "x509",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " Creates a self-signed certificate"
-              ]
+              ["x509", [["c"]]],
+              [" Creates a self-signed certificate"]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "bulleted_list",
           "version": 1
         }
@@ -853,19 +959,11 @@ Response:+33228
           "parent_table": "block",
           "properties": {
             "title": [
-              [
-                "keyout",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " Names the file where to write the key"
-              ]
+              ["keyout", [["c"]]],
+              [" Names the file where to write the key"]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "bulleted_list",
           "version": 1
         }
@@ -891,30 +989,15 @@ Response:+33228
               [
                 "You can handle configure TLS for the server with the following code. "
               ],
-              [
-                "cert.pem",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " and "
-              ],
-              [
-                "key.pem",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
+              ["cert.pem", [["c"]]],
+              [" and "],
+              ["key.pem", [["c"]]],
               [
                 " are your SSL certificate and key, which where generated with the above command."
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 5
         }
@@ -935,12 +1018,9 @@ Response:+33228
           "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "$Score: 7"
-              ]
-            ]
+            "title": [["$Score: 7"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 16
         }
@@ -962,30 +1042,11 @@ Response:+33228
           "parent_id": "277e3470-a212-4ea9-817a-2d4923f947fa",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "The necessary Go code"
-              ]
-            ]
+            "title": [["The necessary Go code"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "sub_header",
           "version": 1
-        }
-      }
-    },
-    "notion_user": {
-      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
-        "role": "reader",
-        "value": {
-          "clipper_onboarding_completed": true,
-          "email": "kkowalczyk@gmail.com",
-          "family_name": "Kowalczyk",
-          "given_name": "Krzysztof",
-          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "mobile_onboarding_completed": true,
-          "onboarding_completed": true,
-          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
-          "version": 326
         }
       }
     },

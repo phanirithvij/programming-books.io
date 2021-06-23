@@ -1,16 +1,16 @@
-13070 1616832415113 httpcache-v1
+13062 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
 {
   "requests": [
     {
-      "id": "ede1fd12-0013-4e8b-a92d-109c2ef39c10",
-      "table": "block"
+      "table": "block",
+      "id": "ede1fd12-0013-4e8b-a92d-109c2ef39c10"
     }
   ]
 }
-Response:+12869
+Response:+12862
 {
   "recordMapWithRoles": {
     "block": {
@@ -204,12 +204,9 @@ Response:+12869
             }
           ],
           "properties": {
-            "title": [
-              [
-                "Essential C++"
-              ]
-            ]
+            "title": [["Essential C++"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
           "version": 637
         }
@@ -253,12 +250,9 @@ Response:+12869
             }
           ],
           "properties": {
-            "title": [
-              [
-                "std::atomic\u003cT\u003e"
-              ]
-            ]
+            "title": [["std::atomic<T>"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
           "version": 658
         }
@@ -307,32 +301,29 @@ Response:+12869
           }
         ],
         "properties": {
-          "title": [
-            [
-              "std::atomic\u003cT\u003e"
-            ]
-          ]
+          "title": [["std::atomic<T>"]]
         },
+        "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
         "type": "page",
         "version": 658
       }
     }
   ]
 }
-18909 1616832415113 httpcache-v1
+17951 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
 {
+  "pageId": "ede1fd12-0013-4e8b-a92d-109c2ef39c10",
   "chunkNumber": 0,
+  "limit": 50,
   "cursor": {
     "stack": []
   },
-  "limit": 50,
-  "pageId": "ede1fd12-0013-4e8b-a92d-109c2ef39c10",
   "verticalColumns": false
 }
-Response:+18668
+Response:+17711
 {
   "cursor": {
     "stack": []
@@ -356,21 +347,8 @@ Response:+18668
           "parent_id": "ede1fd12-0013-4e8b-a92d-109c2ef39c10",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "Example of using "
-              ],
-              [
-                "std::atomic_int:",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ]
-            ]
+            "title": [["Example of using "], ["std::atomic_int:", [["c"]]]]
           },
-          "shard_id": 241632,
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 17
@@ -398,13 +376,8 @@ Response:+18668
           "parent_id": "ede1fd12-0013-4e8b-a92d-109c2ef39c10",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "std::atomic\u003cT\u003e specialization in standard library"
-              ]
-            ]
+            "title": [["std::atomic<T> specialization in standard library"]]
           },
-          "shard_id": 241632,
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
           "version": 67
@@ -436,7 +409,6 @@ Response:+18668
               ]
             ]
           },
-          "shard_id": 241632,
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 10
@@ -457,20 +429,10 @@ Response:+18668
           "parent_table": "block",
           "properties": {
             "title": [
-              [
-                "std::atomic",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " adds necessary barriers to make the operations thread safe."
-              ]
+              ["std::atomic", [["c"]]],
+              [" adds necessary barriers to make the operations thread safe."]
             ]
           },
-          "shard_id": 241632,
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 104
@@ -496,7 +458,6 @@ Response:+18668
               ]
             ]
           },
-          "shard_id": 241632,
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 182
@@ -683,13 +644,8 @@ Response:+18668
             }
           ],
           "properties": {
-            "title": [
-              [
-                "Essential C++"
-              ]
-            ]
+            "title": [["Essential C++"]]
           },
-          "shard_id": 241632,
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
           "version": 637
@@ -708,7 +664,6 @@ Response:+18668
           "last_edited_time": 1595322060000,
           "parent_id": "ede1fd12-0013-4e8b-a92d-109c2ef39c10",
           "parent_table": "block",
-          "shard_id": 241632,
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 9
@@ -729,20 +684,12 @@ Response:+18668
           "parent_table": "block",
           "properties": {
             "title": [
-              [
-                "std::atomic\u003cT\u003e",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
+              ["std::atomic<T>", [["c"]]],
               [
                 " template allows thread safe writing, reading and incrementing numeric values."
               ]
             ]
           },
-          "shard_id": 241632,
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 162
@@ -784,13 +731,8 @@ Response:+18668
             }
           ],
           "properties": {
-            "title": [
-              [
-                "std::atomic\u003cT\u003e"
-              ]
-            ]
+            "title": [["std::atomic<T>"]]
           },
-          "shard_id": 241632,
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
           "version": 658

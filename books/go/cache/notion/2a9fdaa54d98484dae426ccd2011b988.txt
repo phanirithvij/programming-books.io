@@ -1,159 +1,19 @@
-1733 1594539297304 httpcache-v1
+10521 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
 {
   "requests": [
     {
-      "id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
-      "table": "block"
+      "table": "block",
+      "id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988"
     }
   ]
 }
-Response:+1533
+Response:+10321
 {
-  "results": [
-    {
-      "role": "comment_only",
-      "value": {
-        "alive": true,
-        "content": [
-          "680f9052-5347-4d29-beaf-21adaf104e4a",
-          "a7fde6bb-4e8a-4722-99fd-c11e42ae2914",
-          "9c401bfb-b926-4fcd-b013-61884f054df3",
-          "00436a7e-3b8a-41bf-aa39-8de2f39cbffa",
-          "ef02c9dd-59d2-4199-af87-f6d8cae180bc",
-          "e8808aaf-5edc-4121-8792-5325fa56574a",
-          "1a520260-efb5-4edb-97c0-c4901f37dcfc",
-          "c00db962-d3cb-49df-a597-d0ea58d6abe6",
-          "e873f0a4-f2e2-4aa0-a796-009044746582",
-          "d0b4d41a-e296-468c-8398-bb8c45d21761"
-        ],
-        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_table": "notion_user",
-        "created_time": 1532156085128,
-        "format": {
-          "page_full_width": true,
-          "page_small_text": true
-        },
-        "id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
-        "ignore_block_count": true,
-        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_table": "notion_user",
-        "last_edited_time": 1573014180000,
-        "parent_id": "7a55634f-b819-4a85-bcc6-036eeba61b39",
-        "parent_table": "block",
-        "properties": {
-          "title": [
-            [
-              "Reading files"
-            ]
-          ]
-        },
-        "type": "page",
-        "version": 55
-      }
-    }
-  ]
-}
-20726 1594539297304 httpcache-v1
-Method: POST
-URL: https://www.notion.so/api/v3/loadPageChunk
-Body:+152
-{
-  "chunkNumber": 0,
-  "cursor": {
-    "stack": []
-  },
-  "limit": 50,
-  "pageId": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
-  "verticalColumns": false
-}
-Response:+20485
-{
-  "cursor": {
-    "stack": []
-  },
-  "recordMap": {
+  "recordMapWithRoles": {
     "block": {
-      "00436a7e-3b8a-41bf-aa39-8de2f39cbffa": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1532156085126,
-          "id": "00436a7e-3b8a-41bf-aa39-8de2f39cbffa",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1532156085126,
-          "parent_id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
-          "parent_table": "block",
-          "properties": {
-            "title": [
-              [
-                "Open file for reading, close file"
-              ]
-            ]
-          },
-          "type": "sub_header",
-          "version": 5
-        }
-      },
-      "1a520260-efb5-4edb-97c0-c4901f37dcfc": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1532156085127,
-          "id": "1a520260-efb5-4edb-97c0-c4901f37dcfc",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1532156085127,
-          "parent_id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
-          "parent_table": "block",
-          "properties": {
-            "title": [
-              [
-                "You should always close files to avoid leaking file descriptors. "
-              ],
-              [
-                "defer",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " is perfect for ensuring "
-              ],
-              [
-                "Close",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " will be called on exit of the function."
-              ]
-            ]
-          },
-          "type": "text",
-          "version": 1
-        }
-      },
       "2a9fdaa5-4d98-484d-ae42-6ccd2011b988": {
         "role": "comment_only",
         "value": {
@@ -187,12 +47,9 @@ Response:+20485
           "parent_id": "7a55634f-b819-4a85-bcc6-036eeba61b39",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "Reading files"
-              ]
-            ]
+            "title": [["Reading files"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
           "version": 55
         }
@@ -300,12 +157,337 @@ Response:+20485
             }
           ],
           "properties": {
+            "title": [["Essential Go"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 1680
+        }
+      },
+      "5f982f10-57d4-4e67-8b00-a9920cc2ad7e": {
+        "role": "none"
+      },
+      "6011c17b-d910-40d3-b1ad-797e09cf4f0f": {
+        "role": "none"
+      },
+      "7a55634f-b819-4a85-bcc6-036eeba61b39": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "613ca276-0f27-4b1c-8689-92f9324bd466",
+            "6f0c0062-d1a3-4497-8185-3ab56dc1741f",
+            "420c8d2a-126a-466a-8563-4c0c18b86e07",
+            "cf43ecf4-b56d-426c-82f2-1c317bba6260",
+            "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
+            "5390af0b-aa7a-492e-8c17-fc37a2a87706",
+            "2db8f87e-b508-4bfb-a59f-46deb2f51159",
+            "ef49276e-dcaf-4a41-8bb0-22de73c87638",
+            "88d65c3f-c0c1-4a4e-90bf-a98ba3feb231",
+            "bb6bdcc3-1ec2-46ee-91cf-849254d38a66"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156084245,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "7a55634f-b819-4a85-bcc6-036eeba61b39",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1594589820000,
+          "parent_id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "parent_table": "block",
+          "properties": {
+            "title": [["Files and I/O"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 129
+        }
+      },
+      "9d463535-c38f-45c5-9275-6211e56977cf": {
+        "role": "none"
+      },
+      "e0f8a911-ba87-4e9f-bd32-470003febad4": {
+        "role": "none"
+      }
+    },
+    "space": {
+      "cf9fa7dd-b245-42a0-b929-d5a276b3afe0": {
+        "role": "none"
+      }
+    }
+  },
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "680f9052-5347-4d29-beaf-21adaf104e4a",
+          "a7fde6bb-4e8a-4722-99fd-c11e42ae2914",
+          "9c401bfb-b926-4fcd-b013-61884f054df3",
+          "00436a7e-3b8a-41bf-aa39-8de2f39cbffa",
+          "ef02c9dd-59d2-4199-af87-f6d8cae180bc",
+          "e8808aaf-5edc-4121-8792-5325fa56574a",
+          "1a520260-efb5-4edb-97c0-c4901f37dcfc",
+          "c00db962-d3cb-49df-a597-d0ea58d6abe6",
+          "e873f0a4-f2e2-4aa0-a796-009044746582",
+          "d0b4d41a-e296-468c-8398-bb8c45d21761"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1532156085128,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1573014180000,
+        "parent_id": "7a55634f-b819-4a85-bcc6-036eeba61b39",
+        "parent_table": "block",
+        "properties": {
+          "title": [["Reading files"]]
+        },
+        "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+        "type": "page",
+        "version": 55
+      }
+    }
+  ]
+}
+19560 noahttpcache
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "pageId": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
+  "chunkNumber": 0,
+  "limit": 50,
+  "cursor": {
+    "stack": []
+  },
+  "verticalColumns": false
+}
+Response:+19320
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "00436a7e-3b8a-41bf-aa39-8de2f39cbffa": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156085126,
+          "id": "00436a7e-3b8a-41bf-aa39-8de2f39cbffa",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156085126,
+          "parent_id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
+          "parent_table": "block",
+          "properties": {
+            "title": [["Open file for reading, close file"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "sub_header",
+          "version": 5
+        }
+      },
+      "1a520260-efb5-4edb-97c0-c4901f37dcfc": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156085127,
+          "id": "1a520260-efb5-4edb-97c0-c4901f37dcfc",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532156085127,
+          "parent_id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
+          "parent_table": "block",
+          "properties": {
             "title": [
               [
-                "Essential Go"
-              ]
+                "You should always close files to avoid leaking file descriptors. "
+              ],
+              ["defer", [["c"]]],
+              [" is perfect for ensuring "],
+              ["Close", [["c"]]],
+              [" will be called on exit of the function."]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 1
+        }
+      },
+      "2a9fdaa5-4d98-484d-ae42-6ccd2011b988": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "680f9052-5347-4d29-beaf-21adaf104e4a",
+            "a7fde6bb-4e8a-4722-99fd-c11e42ae2914",
+            "9c401bfb-b926-4fcd-b013-61884f054df3",
+            "00436a7e-3b8a-41bf-aa39-8de2f39cbffa",
+            "ef02c9dd-59d2-4199-af87-f6d8cae180bc",
+            "e8808aaf-5edc-4121-8792-5325fa56574a",
+            "1a520260-efb5-4edb-97c0-c4901f37dcfc",
+            "c00db962-d3cb-49df-a597-d0ea58d6abe6",
+            "e873f0a4-f2e2-4aa0-a796-009044746582",
+            "d0b4d41a-e296-468c-8398-bb8c45d21761"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532156085128,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1573014180000,
+          "parent_id": "7a55634f-b819-4a85-bcc6-036eeba61b39",
+          "parent_table": "block",
+          "properties": {
+            "title": [["Reading files"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 55
+        }
+      },
+      "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "ba663c57-7a4a-472e-8c95-fef8b4d8a8c6",
+            "2803d5d5-229f-4932-af82-a1dcc86eb8bf",
+            "5e911a69-8c43-432d-bf3c-e33fc32dafe1",
+            "cb80712d-ca75-45da-8e0b-20762c637409",
+            "ccc8d069-58ae-4431-9b21-f9973716e3ca",
+            "1ef07599-dd82-47f4-93ba-6dcba8ae7dbf",
+            "58db8c9a-5650-4dea-b2e6-1f1e0fa4a0a6",
+            "f4005538-90d3-4185-ba79-5870807c2615",
+            "80fb91dd-63d4-45e2-8010-b9f5e261da81",
+            "61280245-4798-470c-a5c5-741d90543d22",
+            "4f5f2959-e72c-431e-9955-27b51ad7fd8e",
+            "c3315892-5082-48fd-b19b-663bf8bff028",
+            "fd755f13-f0fc-4e75-ad9b-9ee675e557e8",
+            "ad923a2f-bd99-4701-844a-f2d688d30548",
+            "c522a628-7288-4110-bcc3-00db67e0e9ad",
+            "64647277-99a0-4611-a891-be7ca4877f8c",
+            "503ddd46-a485-4315-a889-73b8db780fba",
+            "39927eb1-3c11-4194-92e6-7e9fd5328d8b",
+            "20bfd8fa-4545-4479-954a-6814eeeef716",
+            "dda02e36-8b30-48a5-a69b-81c56bfa6dbb",
+            "16e8d8c3-d77e-44fa-af68-57a1df368ce8",
+            "4fac57c0-9168-477a-a120-69484979f419",
+            "41f795bf-701d-4784-b319-7349cdb8f2de",
+            "6461fef8-092a-4515-8959-bddbaad99bce",
+            "7a55634f-b819-4a85-bcc6-036eeba61b39",
+            "c4da0534-9333-4df9-9513-4741ae04f808",
+            "05239fc0-69c3-463d-abc5-32b9d808612e",
+            "f7fca201-1c37-48a1-9e3b-8d66235cbe59",
+            "c290f056-6c80-467a-9005-ab3a4024ec1d",
+            "b6e9fbb3-165c-4bcb-907e-469d86783aab",
+            "1479bc5a-08b6-4dbb-8aa0-e2f5ed17782f",
+            "6744c6d0-d620-448d-be66-e224f64b6f8b",
+            "abb984fe-c0d0-4d74-b2d4-94ed3206d1bc",
+            "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+            "fc416b38-f6f3-41bf-a311-bf6c575c73a1",
+            "710edf91-b0f1-4662-9abb-fcd96aba4d80",
+            "96e61372-84ae-4460-a282-7f456b4cf62c",
+            "cabbd741-52a7-4e29-8be4-afcd41ed10b2",
+            "c7fea6b1-76b7-4c54-ab35-f2d8fdd56f13",
+            "b58d1314-5f92-4c11-afcf-00aa10d71364",
+            "6ccd64ac-7a17-4e1e-a353-66e014d9972a",
+            "48f2d17d-3a76-44da-afba-f0ca9c8b61ad",
+            "b55ab9b1-d6e5-499e-a301-4ba7e85d3efd",
+            "e9a96445-11c4-47f9-8808-19e7cd837540",
+            "d3b04193-4690-4e0b-bf6d-c28b69fc93c6",
+            "83dc1f9b-6ec0-4d25-a2d2-e7357b6bebba",
+            "46593e7f-95ef-4e47-bfa6-0b882cb71c93",
+            "41fdbdec-ca7b-42c3-b4b9-8e5ec0a96e13",
+            "d1980344-374d-45c0-82c9-14c2aafa50cf",
+            "c2af7278-9a07-4a3a-acf8-d308f898f32c",
+            "ec235242-1ba7-472a-b82d-9dcc71d2c389",
+            "fe57ef60-321d-4cca-b8b6-f79cb0120245",
+            "a09f2d8c-9bba-44e0-acd0-a9206e8f733f",
+            "7ccfe169-7c31-49c3-83b6-8894ede37d84",
+            "f6070802-3799-4969-b4ef-fb498179d5be",
+            "9f2c4121-df7e-4b3f-8181-31c49676387b",
+            "d8b9c9c2-a49e-4ba8-a04c-f7ff6ee2db0f",
+            "b5c70cd2-244f-48a0-b89a-ebc75ef45ad0",
+            "ddc28bcf-5179-4ae5-b021-b8c0d9423497",
+            "301bb328-156d-4206-94eb-f5489d2cb744",
+            "307fa1e6-11a1-4819-9b56-b002fddddb27",
+            "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+            "f2028ab7-4a35-4cf2-ba6a-86acfb813356",
+            "e6b89f7a-1cc0-4b89-a1fa-6bb1aeda381f",
+            "0ada5cfc-7c4a-4217-af2e-62d01df777de",
+            "827eb397-bd67-47f5-aef7-73c9c688ad6c",
+            "94415463-0ac5-4def-857c-aa8b50dd1b59",
+            "22efc954-59e8-4624-88d6-608f1e963a74"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532155915890,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570604400000,
+          "parent_id": "6011c17b-d910-40d3-b1ad-797e09cf4f0f",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            },
+            {
+              "allow_duplicate": false,
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [["Essential Go"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
           "version": 1680
         }
@@ -326,12 +508,9 @@ Response:+20485
           "parent_id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "Read the whole file"
-              ]
-            ]
+            "title": [["Read the whole file"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "sub_header",
           "version": 31
         }
@@ -365,18 +544,15 @@ Response:+20485
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1572987480000,
+          "last_edited_time": 1594589820000,
           "parent_id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "Files and I/O"
-              ]
-            ]
+            "title": [["Files and I/O"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 128
+          "version": 129
         }
       },
       "9c401bfb-b926-4fcd-b013-61884f054df3": {
@@ -396,17 +572,14 @@ Response:+20485
           "parent_id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
           "parent_table": "block",
           "properties": {
-            "language": [
-              [
-                "Go"
-              ]
-            ],
+            "language": [["Go"]],
             "title": [
               [
                 "d, err := ioutil.ReadFile(\"foo.txt\")\nif err != nil {\n    log.Fatalf(\"ioutil.ReadFile failed with '%s'\\n\", err)\n}\nfmt.Printf(\"Size of 'foo.txt': %d bytes\\n\", len(d))"
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
           "version": 3
         }
@@ -428,12 +601,9 @@ Response:+20485
           "parent_id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "The simplest way to read a whole file is:"
-              ]
-            ]
+            "title": [["The simplest way to read a whole file is:"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 1
         }
@@ -455,12 +625,9 @@ Response:+20485
           "parent_id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "Read file line by line"
-              ]
-            ]
+            "title": [["Read file line by line"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "sub_header",
           "version": 7
         }
@@ -480,6 +647,7 @@ Response:+20485
           "last_edited_time": 1538787385350,
           "parent_id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
           "parent_table": "block",
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 8
         }
@@ -512,6 +680,7 @@ Response:+20485
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 8
         }
@@ -534,44 +703,16 @@ Response:+20485
           "parent_table": "block",
           "properties": {
             "title": [
-              [
-                "Open returns "
-              ],
-              [
-                "*os.File",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " which implements "
-              ],
-              [
-                "io.Reader",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " and "
-              ],
-              [
-                "io.Closer",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                " interfaces."
-              ]
+              ["Open returns "],
+              ["*os.File", [["c"]]],
+              [" which implements "],
+              ["io.Reader", [["c"]]],
+              [" and "],
+              ["io.Closer", [["c"]]],
+              [" interfaces."]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 5
         }
@@ -593,35 +734,16 @@ Response:+20485
           "parent_id": "2a9fdaa5-4d98-484d-ae42-6ccd2011b988",
           "parent_table": "block",
           "properties": {
-            "language": [
-              [
-                "Go"
-              ]
-            ],
+            "language": [["Go"]],
             "title": [
               [
                 "f, err := os.Open(\"foo.txt\")\nif err != nil {\n    log.Fatalf(\"os.Open failed with '%s'\\n\", err)\n}\ndefer f.Close()"
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
           "version": 3
-        }
-      }
-    },
-    "notion_user": {
-      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
-        "role": "reader",
-        "value": {
-          "clipper_onboarding_completed": true,
-          "email": "kkowalczyk@gmail.com",
-          "family_name": "Kowalczyk",
-          "given_name": "Krzysztof",
-          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "mobile_onboarding_completed": true,
-          "onboarding_completed": true,
-          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
-          "version": 326
         }
       }
     },

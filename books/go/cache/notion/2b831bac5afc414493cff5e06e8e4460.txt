@@ -1,184 +1,19 @@
-1932 1594539323190 httpcache-v1
+11489 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
 {
   "requests": [
     {
-      "id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
-      "table": "block"
+      "table": "block",
+      "id": "2b831bac-5afc-4144-93cf-f5e06e8e4460"
     }
   ]
 }
-Response:+1732
+Response:+11289
 {
-  "results": [
-    {
-      "role": "comment_only",
-      "value": {
-        "alive": true,
-        "content": [
-          "b85a0904-008c-4a81-9187-8908b1cac025",
-          "2b02d814-98a9-4cf8-96b9-c069bd76fdc3",
-          "591097f9-1472-479c-af96-2926d33fad1f",
-          "3a8ea029-1cac-4c38-a53d-4582efe0c6dd",
-          "1abee498-f2b3-4e54-9587-8ab56b39bf7a",
-          "ccd7a656-5731-4844-b9eb-4dd69883a1bb",
-          "55a3a0e1-8dd5-48b2-bb46-e6e5a0f2bd86",
-          "73ef34ca-0e2a-419f-bc6f-6f6ef01ef673",
-          "c66a1eb7-91a3-4999-960c-b04161acfaf6",
-          "42c758cf-1e89-416b-aed4-6f09aabc1660",
-          "03d52c69-9664-4152-804d-648dfe91c480",
-          "a6e826f7-b6f7-4e64-ad86-7a7cad303553",
-          "2e80bd74-edd5-43c1-a65a-e5807c7cf85d",
-          "bb4fbfc6-bbae-4073-9c90-9ecf9dc5d3d3"
-        ],
-        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_table": "notion_user",
-        "created_time": 1532155991146,
-        "format": {
-          "page_full_width": true,
-          "page_small_text": true
-        },
-        "id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
-        "ignore_block_count": true,
-        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_table": "notion_user",
-        "last_edited_time": 1570694280000,
-        "parent_id": "80fb91dd-63d4-45e2-8010-b9f5e261da81",
-        "parent_table": "block",
-        "properties": {
-          "title": [
-            [
-              "Create a map"
-            ]
-          ]
-        },
-        "type": "page",
-        "version": 28
-      }
-    }
-  ]
-}
-26904 1594539323190 httpcache-v1
-Method: POST
-URL: https://www.notion.so/api/v3/loadPageChunk
-Body:+152
-{
-  "chunkNumber": 0,
-  "cursor": {
-    "stack": []
-  },
-  "limit": 50,
-  "pageId": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
-  "verticalColumns": false
-}
-Response:+26663
-{
-  "cursor": {
-    "stack": []
-  },
-  "recordMap": {
+  "recordMapWithRoles": {
     "block": {
-      "03d52c69-9664-4152-804d-648dfe91c480": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1532155991145,
-          "id": "03d52c69-9664-4152-804d-648dfe91c480",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1532155991145,
-          "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
-          "parent_table": "block",
-          "properties": {
-            "title": [
-              [
-                "You can create an empty map simply by not entering any value within the brackets "
-              ],
-              [
-                "{}",
-                [
-                  [
-                    "c"
-                  ]
-                ]
-              ],
-              [
-                "."
-              ]
-            ]
-          },
-          "type": "text",
-          "version": 1
-        }
-      },
-      "1abee498-f2b3-4e54-9587-8ab56b39bf7a": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1532155991144,
-          "id": "1abee498-f2b3-4e54-9587-8ab56b39bf7a",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1532196424876,
-          "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
-          "parent_table": "block",
-          "properties": {
-            "language": [
-              [
-                "Go"
-              ]
-            ],
-            "title": [
-              [
-                "var mapIntInt = map[int]int{10: 100, 20: 100, 30: 1000}\nvar mapIntString = map[int]string{10: \"foo\", 20: \"bar\", 30: \"baz\"}\nvar mapStringInt = map[string]int{\"foo\": 10, \"bar\": 20, \"baz\": 30}\nvar mapStringString = map[string]string{\"foo\": \"one\", \"bar\": \"two\", \"baz\": \"three\"}"
-              ]
-            ]
-          },
-          "type": "code",
-          "version": 3
-        }
-      },
-      "2b02d814-98a9-4cf8-96b9-c069bd76fdc3": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1532155991144,
-          "id": "2b02d814-98a9-4cf8-96b9-c069bd76fdc3",
-          "ignore_block_count": true,
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1538772881329,
-          "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
-          "parent_table": "block",
-          "properties": {
-            "title": [
-              [
-                "Using automatic type short variable declaration:"
-              ]
-            ]
-          },
-          "type": "text",
-          "version": 5
-        }
-      },
       "2b831bac-5afc-4144-93cf-f5e06e8e4460": {
         "role": "comment_only",
         "value": {
@@ -216,12 +51,9 @@ Response:+26663
           "parent_id": "80fb91dd-63d4-45e2-8010-b9f5e261da81",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "Create a map"
-              ]
-            ]
+            "title": [["Create a map"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
           "version": 28
         }
@@ -329,12 +161,383 @@ Response:+26663
             }
           ],
           "properties": {
+            "title": [["Essential Go"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 1680
+        }
+      },
+      "5f982f10-57d4-4e67-8b00-a9920cc2ad7e": {
+        "role": "none"
+      },
+      "6011c17b-d910-40d3-b1ad-797e09cf4f0f": {
+        "role": "none"
+      },
+      "80fb91dd-63d4-45e2-8010-b9f5e261da81": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "9dfdbd9e-29d4-4bd4-aaf6-74e27fd7c3cb",
+            "4bc59053-6975-4e5e-8919-1a910bc911ac",
+            "6e4e7ecf-a7c9-47a2-96f4-df46d15401a2",
+            "692ddd64-a5f6-485e-b73d-a70e00890b0b",
+            "9d14a5a5-b997-43b1-8f56-7e4ba56d5fe2",
+            "45eb3d50-1f9f-4ca6-8b1e-08ac9f0ec06a",
+            "6a7ae1b2-fbdf-453b-9e76-b5d6fa83dfff",
+            "731aacfa-d37a-4cd2-b79a-e21e6b403486",
+            "caf809ad-083c-4202-861d-a215926168cb",
+            "30e84bdd-61fd-4732-8453-350e58025ccb",
+            "2b831bac-5afc-4144-93cf-f5e06e8e4460",
+            "a3477b9e-d9ed-4351-a19e-a0a191e2d01d",
+            "e177cb31-9729-4817-8031-4bfc62f7f565",
+            "d072e2f5-e118-4b51-88cc-80aeed96f150",
+            "c0554d1e-1b31-464a-9b5c-8463bd3c1095",
+            "6543212d-8e7d-4467-9711-d688dc00eb6a",
+            "90b9baa6-982e-4dc1-a8ea-21976757cae5",
+            "89c4539a-f43f-422c-8ccb-b720f9cfdaea",
+            "ef0d76af-9188-4e07-a1c5-a606f17a341c",
+            "f7fd36d6-2c1b-4438-84f8-3b73c72fc5ac",
+            "3d93460b-d45a-43c8-9135-8ca7a264bd8a"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532155989204,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "80fb91dd-63d4-45e2-8010-b9f5e261da81",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1572987540000,
+          "parent_id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "parent_table": "block",
+          "properties": {
+            "title": [["Maps"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 99
+        }
+      },
+      "9d463535-c38f-45c5-9275-6211e56977cf": {
+        "role": "none"
+      },
+      "e0f8a911-ba87-4e9f-bd32-470003febad4": {
+        "role": "none"
+      }
+    },
+    "space": {
+      "cf9fa7dd-b245-42a0-b929-d5a276b3afe0": {
+        "role": "none"
+      }
+    }
+  },
+  "results": [
+    {
+      "role": "comment_only",
+      "value": {
+        "alive": true,
+        "content": [
+          "b85a0904-008c-4a81-9187-8908b1cac025",
+          "2b02d814-98a9-4cf8-96b9-c069bd76fdc3",
+          "591097f9-1472-479c-af96-2926d33fad1f",
+          "3a8ea029-1cac-4c38-a53d-4582efe0c6dd",
+          "1abee498-f2b3-4e54-9587-8ab56b39bf7a",
+          "ccd7a656-5731-4844-b9eb-4dd69883a1bb",
+          "55a3a0e1-8dd5-48b2-bb46-e6e5a0f2bd86",
+          "73ef34ca-0e2a-419f-bc6f-6f6ef01ef673",
+          "c66a1eb7-91a3-4999-960c-b04161acfaf6",
+          "42c758cf-1e89-416b-aed4-6f09aabc1660",
+          "03d52c69-9664-4152-804d-648dfe91c480",
+          "a6e826f7-b6f7-4e64-ad86-7a7cad303553",
+          "2e80bd74-edd5-43c1-a65a-e5807c7cf85d",
+          "bb4fbfc6-bbae-4073-9c90-9ecf9dc5d3d3"
+        ],
+        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "created_by_table": "notion_user",
+        "created_time": 1532155991146,
+        "format": {
+          "page_full_width": true,
+          "page_small_text": true
+        },
+        "id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
+        "ignore_block_count": true,
+        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+        "last_edited_by_table": "notion_user",
+        "last_edited_time": 1570694280000,
+        "parent_id": "80fb91dd-63d4-45e2-8010-b9f5e261da81",
+        "parent_table": "block",
+        "properties": {
+          "title": [["Create a map"]]
+        },
+        "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+        "type": "page",
+        "version": 28
+      }
+    }
+  ]
+}
+26086 noahttpcache
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "pageId": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
+  "chunkNumber": 0,
+  "limit": 50,
+  "cursor": {
+    "stack": []
+  },
+  "verticalColumns": false
+}
+Response:+25846
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "03d52c69-9664-4152-804d-648dfe91c480": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532155991145,
+          "id": "03d52c69-9664-4152-804d-648dfe91c480",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532155991145,
+          "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
+          "parent_table": "block",
+          "properties": {
             "title": [
               [
-                "Essential Go"
+                "You can create an empty map simply by not entering any value within the brackets "
+              ],
+              ["{}", [["c"]]],
+              ["."]
+            ]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 1
+        }
+      },
+      "1abee498-f2b3-4e54-9587-8ab56b39bf7a": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532155991144,
+          "id": "1abee498-f2b3-4e54-9587-8ab56b39bf7a",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1532196424876,
+          "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
+          "parent_table": "block",
+          "properties": {
+            "language": [["Go"]],
+            "title": [
+              [
+                "var mapIntInt = map[int]int{10: 100, 20: 100, 30: 1000}\nvar mapIntString = map[int]string{10: \"foo\", 20: \"bar\", 30: \"baz\"}\nvar mapStringInt = map[string]int{\"foo\": 10, \"bar\": 20, \"baz\": 30}\nvar mapStringString = map[string]string{\"foo\": \"one\", \"bar\": \"two\", \"baz\": \"three\"}"
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "code",
+          "version": 3
+        }
+      },
+      "2b02d814-98a9-4cf8-96b9-c069bd76fdc3": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532155991144,
+          "id": "2b02d814-98a9-4cf8-96b9-c069bd76fdc3",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1538772881329,
+          "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
+          "parent_table": "block",
+          "properties": {
+            "title": [["Using automatic type short variable declaration:"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "text",
+          "version": 5
+        }
+      },
+      "2b831bac-5afc-4144-93cf-f5e06e8e4460": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "b85a0904-008c-4a81-9187-8908b1cac025",
+            "2b02d814-98a9-4cf8-96b9-c069bd76fdc3",
+            "591097f9-1472-479c-af96-2926d33fad1f",
+            "3a8ea029-1cac-4c38-a53d-4582efe0c6dd",
+            "1abee498-f2b3-4e54-9587-8ab56b39bf7a",
+            "ccd7a656-5731-4844-b9eb-4dd69883a1bb",
+            "55a3a0e1-8dd5-48b2-bb46-e6e5a0f2bd86",
+            "73ef34ca-0e2a-419f-bc6f-6f6ef01ef673",
+            "c66a1eb7-91a3-4999-960c-b04161acfaf6",
+            "42c758cf-1e89-416b-aed4-6f09aabc1660",
+            "03d52c69-9664-4152-804d-648dfe91c480",
+            "a6e826f7-b6f7-4e64-ad86-7a7cad303553",
+            "2e80bd74-edd5-43c1-a65a-e5807c7cf85d",
+            "bb4fbfc6-bbae-4073-9c90-9ecf9dc5d3d3"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532155991146,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
+          "ignore_block_count": true,
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570694280000,
+          "parent_id": "80fb91dd-63d4-45e2-8010-b9f5e261da81",
+          "parent_table": "block",
+          "properties": {
+            "title": [["Create a map"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+          "type": "page",
+          "version": 28
+        }
+      },
+      "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "ba663c57-7a4a-472e-8c95-fef8b4d8a8c6",
+            "2803d5d5-229f-4932-af82-a1dcc86eb8bf",
+            "5e911a69-8c43-432d-bf3c-e33fc32dafe1",
+            "cb80712d-ca75-45da-8e0b-20762c637409",
+            "ccc8d069-58ae-4431-9b21-f9973716e3ca",
+            "1ef07599-dd82-47f4-93ba-6dcba8ae7dbf",
+            "58db8c9a-5650-4dea-b2e6-1f1e0fa4a0a6",
+            "f4005538-90d3-4185-ba79-5870807c2615",
+            "80fb91dd-63d4-45e2-8010-b9f5e261da81",
+            "61280245-4798-470c-a5c5-741d90543d22",
+            "4f5f2959-e72c-431e-9955-27b51ad7fd8e",
+            "c3315892-5082-48fd-b19b-663bf8bff028",
+            "fd755f13-f0fc-4e75-ad9b-9ee675e557e8",
+            "ad923a2f-bd99-4701-844a-f2d688d30548",
+            "c522a628-7288-4110-bcc3-00db67e0e9ad",
+            "64647277-99a0-4611-a891-be7ca4877f8c",
+            "503ddd46-a485-4315-a889-73b8db780fba",
+            "39927eb1-3c11-4194-92e6-7e9fd5328d8b",
+            "20bfd8fa-4545-4479-954a-6814eeeef716",
+            "dda02e36-8b30-48a5-a69b-81c56bfa6dbb",
+            "16e8d8c3-d77e-44fa-af68-57a1df368ce8",
+            "4fac57c0-9168-477a-a120-69484979f419",
+            "41f795bf-701d-4784-b319-7349cdb8f2de",
+            "6461fef8-092a-4515-8959-bddbaad99bce",
+            "7a55634f-b819-4a85-bcc6-036eeba61b39",
+            "c4da0534-9333-4df9-9513-4741ae04f808",
+            "05239fc0-69c3-463d-abc5-32b9d808612e",
+            "f7fca201-1c37-48a1-9e3b-8d66235cbe59",
+            "c290f056-6c80-467a-9005-ab3a4024ec1d",
+            "b6e9fbb3-165c-4bcb-907e-469d86783aab",
+            "1479bc5a-08b6-4dbb-8aa0-e2f5ed17782f",
+            "6744c6d0-d620-448d-be66-e224f64b6f8b",
+            "abb984fe-c0d0-4d74-b2d4-94ed3206d1bc",
+            "29bafea8-c8a5-46ab-9228-4378bb7dc364",
+            "fc416b38-f6f3-41bf-a311-bf6c575c73a1",
+            "710edf91-b0f1-4662-9abb-fcd96aba4d80",
+            "96e61372-84ae-4460-a282-7f456b4cf62c",
+            "cabbd741-52a7-4e29-8be4-afcd41ed10b2",
+            "c7fea6b1-76b7-4c54-ab35-f2d8fdd56f13",
+            "b58d1314-5f92-4c11-afcf-00aa10d71364",
+            "6ccd64ac-7a17-4e1e-a353-66e014d9972a",
+            "48f2d17d-3a76-44da-afba-f0ca9c8b61ad",
+            "b55ab9b1-d6e5-499e-a301-4ba7e85d3efd",
+            "e9a96445-11c4-47f9-8808-19e7cd837540",
+            "d3b04193-4690-4e0b-bf6d-c28b69fc93c6",
+            "83dc1f9b-6ec0-4d25-a2d2-e7357b6bebba",
+            "46593e7f-95ef-4e47-bfa6-0b882cb71c93",
+            "41fdbdec-ca7b-42c3-b4b9-8e5ec0a96e13",
+            "d1980344-374d-45c0-82c9-14c2aafa50cf",
+            "c2af7278-9a07-4a3a-acf8-d308f898f32c",
+            "ec235242-1ba7-472a-b82d-9dcc71d2c389",
+            "fe57ef60-321d-4cca-b8b6-f79cb0120245",
+            "a09f2d8c-9bba-44e0-acd0-a9206e8f733f",
+            "7ccfe169-7c31-49c3-83b6-8894ede37d84",
+            "f6070802-3799-4969-b4ef-fb498179d5be",
+            "9f2c4121-df7e-4b3f-8181-31c49676387b",
+            "d8b9c9c2-a49e-4ba8-a04c-f7ff6ee2db0f",
+            "b5c70cd2-244f-48a0-b89a-ebc75ef45ad0",
+            "ddc28bcf-5179-4ae5-b021-b8c0d9423497",
+            "301bb328-156d-4206-94eb-f5489d2cb744",
+            "307fa1e6-11a1-4819-9b56-b002fddddb27",
+            "c84a4530-4ec3-4980-81c6-7aa1ea0d9c49",
+            "f2028ab7-4a35-4cf2-ba6a-86acfb813356",
+            "e6b89f7a-1cc0-4b89-a1fa-6bb1aeda381f",
+            "0ada5cfc-7c4a-4217-af2e-62d01df777de",
+            "827eb397-bd67-47f5-aef7-73c9c688ad6c",
+            "94415463-0ac5-4def-857c-aa8b50dd1b59",
+            "22efc954-59e8-4624-88d6-608f1e963a74"
+          ],
+          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "created_by_table": "notion_user",
+          "created_time": 1532155915890,
+          "format": {
+            "page_full_width": true,
+            "page_small_text": true
+          },
+          "id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
+          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1570604400000,
+          "parent_id": "6011c17b-d910-40d3-b1ad-797e09cf4f0f",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
+            },
+            {
+              "allow_duplicate": false,
+              "allow_search_engine_indexing": false,
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [["Essential Go"]]
+          },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
           "version": 1680
         }
@@ -362,6 +565,7 @@ Response:+26663
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 1
         }
@@ -383,12 +587,9 @@ Response:+26663
           "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "The same code, but with Variable types:"
-              ]
-            ]
+            "title": [["The same code, but with Variable types:"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 1
         }
@@ -410,17 +611,14 @@ Response:+26663
           "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
           "parent_table": "block",
           "properties": {
-            "language": [
-              [
-                "Go"
-              ]
-            ],
+            "language": [["Go"]],
             "title": [
               [
                 "type RouteHit struct {\n    Domain string\n    Route  string\n}\n\nvar hitMap = map[RouteHit]int{\n  RouteHit{\"example.com\",\"/home\"}: 1,\n  RouteHit{\"example.com\",\"/help\"}: 2}\nhitMap := map[RouteHit]int{\n  RouteHit{\"example.com\",\"/home\"}: 1,\n  RouteHit{\"example.com\",\"/help\"}: 2}"
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
           "version": 3
         }
@@ -442,12 +640,9 @@ Response:+26663
           "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "You can use custom types as the value:"
-              ]
-            ]
+            "title": [["You can use custom types as the value:"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 1
         }
@@ -469,17 +664,14 @@ Response:+26663
           "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
           "parent_table": "block",
           "properties": {
-            "language": [
-              [
-                "Go"
-              ]
-            ],
+            "language": [["Go"]],
             "title": [
               [
                 "mapIntInt := map[int]int{10: 100, 20: 100, 30: 1000}\nmapIntString := map[int]string{10: \"foo\", 20: \"bar\", 30: \"baz\"}\nmapStringInt := map[string]int{\"foo\": 10, \"bar\": 20, \"baz\": 30}\nmapStringString := map[string]string{\"foo\": \"one\", \"bar\": \"two\", \"baz\": \"three\"}"
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
           "version": 7
         }
@@ -501,17 +693,14 @@ Response:+26663
           "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
           "parent_table": "block",
           "properties": {
-            "language": [
-              [
-                "Go"
-              ]
-            ],
+            "language": [["Go"]],
             "title": [
               [
                 "// Custom struct types\ntype Person struct {\n  FirstName, LastName string\n}\n\nvar mapStringPerson = map[string]Person{\n  \"john\": Person{\"John\", \"Doe\"},\n  \"jane\": Person{\"Jane\", \"Doe\"}}\nmapStringPerson := map[string]Person{\n  \"john\": Person{\"John\", \"Doe\"},\n  \"jane\": Person{\"Jane\", \"Doe\"}}"
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
           "version": 3
         }
@@ -560,12 +749,9 @@ Response:+26663
           "parent_id": "2cab1ed2-b7a4-4584-b56b-0d3ca9b80185",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "Maps"
-              ]
-            ]
+            "title": [["Maps"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
           "version": 99
         }
@@ -587,17 +773,14 @@ Response:+26663
           "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
           "parent_table": "block",
           "properties": {
-            "language": [
-              [
-                "Go"
-              ]
-            ],
+            "language": [["Go"]],
             "title": [
               [
                 "mapIntInt := map[int]int{}\nmapIntString := map[int]string{}\nmapStringInt := map[string]int{}\nmapStringString := map[string]string{}\nmapStringPerson := map[string]Person{}"
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
           "version": 3
         }
@@ -624,18 +807,12 @@ Response:+26663
               ],
               [
                 "composite literal",
-                [
-                  [
-                    "a",
-                    "https://golang.org/ref/spec#Composite_literals"
-                  ]
-                ]
+                [["a", "https://golang.org/ref/spec#Composite_literals"]]
               ],
-              [
-                "."
-              ]
+              ["."]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 18
         }
@@ -657,17 +834,14 @@ Response:+26663
           "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
           "parent_table": "block",
           "properties": {
-            "language": [
-              [
-                "Go"
-              ]
-            ],
+            "language": [["Go"]],
             "title": [
               [
                 "// using a map as argument for fmt.Println()\nfmt.Println(map[string]string{\n  \"FirstName\": \"John\",\n  \"LastName\": \"Doe\",\n  \"Age\": \"30\"})\n\n// equivalent to\ndata := map[string]string{\n  \"FirstName\": \"John\",\n  \"LastName\": \"Doe\",\n  \"Age\": \"30\"}\nfmt.Println(data)"
               ]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "code",
           "version": 3
         }
@@ -690,22 +864,12 @@ Response:+26663
           "parent_table": "block",
           "properties": {
             "title": [
-              [
-                "Your struct can also be the "
-              ],
-              [
-                "key",
-                [
-                  [
-                    "i"
-                  ]
-                ]
-              ],
-              [
-                " to the map:"
-              ]
+              ["Your struct can also be the "],
+              ["key", [["i"]]],
+              [" to the map:"]
             ]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 1
         }
@@ -727,30 +891,11 @@ Response:+26663
           "parent_id": "2b831bac-5afc-4144-93cf-f5e06e8e4460",
           "parent_table": "block",
           "properties": {
-            "title": [
-              [
-                "You can also include your own structs in a map:"
-              ]
-            ]
+            "title": [["You can also include your own structs in a map:"]]
           },
+          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "text",
           "version": 1
-        }
-      }
-    },
-    "notion_user": {
-      "bb760e2d-d679-4b64-b2a9-03005b21870a": {
-        "role": "reader",
-        "value": {
-          "clipper_onboarding_completed": true,
-          "email": "kkowalczyk@gmail.com",
-          "family_name": "Kowalczyk",
-          "given_name": "Krzysztof",
-          "id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "mobile_onboarding_completed": true,
-          "onboarding_completed": true,
-          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/2dcaa66c-7674-4ff6-9924-601785b63561/head-bw-640x960.png",
-          "version": 326
         }
       }
     },

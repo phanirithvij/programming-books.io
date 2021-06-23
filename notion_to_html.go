@@ -201,7 +201,7 @@ func (c *Converter) RenderCode(block *notionapi.Block) bool {
 // TODO: download images locally like blog
 func (c *Converter) RenderImage(block *notionapi.Block) bool {
 	link := block.ImageURL
-	im := findImageMapping(c.page.Images, block.Source)
+	im := findImageMapping(c.page.Images, block.ImageURL)
 	if im != nil {
 		link = im.relativeURL
 	}
