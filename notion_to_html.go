@@ -255,10 +255,7 @@ func isBlockTextTodo(block *notionapi.Block) bool {
 func isBlockTextEmpty(block *notionapi.Block) bool {
 	u.PanicIf(block.Type != notionapi.BlockText, "only supported on '%s' block, called on '%s' block", notionapi.BlockText, block.Type)
 	blocks := block.InlineContent
-	if len(blocks) == 0 {
-		return true
-	}
-	return false
+	return len(blocks) == 0
 }
 
 func (c *Converter) isLastBlock() bool {

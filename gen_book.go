@@ -19,8 +19,6 @@ const (
 )
 
 var (
-	tmplDir = filepath.Join("fe", "tmpl")
-
 	currBookDir string // a bit of a hack
 
 	templates *template.Template
@@ -32,8 +30,7 @@ var (
 )
 
 var (
-	// sha1 of original content to url of optimized
-	// content
+	// sha1 of original content to url of optimized content
 	hashToOptimizedURL = map[string]string{}
 )
 

@@ -208,7 +208,7 @@ func gitoembedToRelativePath(uri string) string {
 	}
 	uri = parsed.Query().Get("url")
 	// https://github.com/essentialbooks/books/blob/master/books/go/0020-basic-types/booleans.go
-	parsed, err = url.Parse(uri)
+	parsed, _ = url.Parse(uri)
 	if parsed.Host != "github.com" {
 		return ""
 	}
@@ -246,7 +246,8 @@ func removeAnnotationLines(lines []string) []string {
 func setSourceFileData(sf *SourceFile, data []byte) error {
 	sf.CodeFull = string(data)
 	lines := dataToLines(data)
-	directive, lines, err := extractFileDirectives(lines)
+	var err error
+	directive, lines, _ := extractFileDirectives(lines)
 	sf.Directive = directive
 	linesToRun := removeAnnotationLines(lines)
 	sf.CodeToRun = strings.Join(linesToRun, "\n")

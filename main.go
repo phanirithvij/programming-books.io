@@ -45,8 +45,9 @@ func eventObserver(ev interface{}) {
 	case *notionapi.EventDidReadFromCache:
 		nProcessed++
 		nNotionPagesFromCache++
-		// TODO: only verbose
-		//logf("%03d '%s' : read from cache in %s\n", nProcessed, v.PageID, v.Duration)
+		if nNotionPagesFromCache < 4 || nNotionPagesFromCache%16 == 0 {
+			logf("%03d '%s' : read from cache in %s\n", nProcessed, v.PageID, v.Duration)
+		}
 	case *notionapi.EventGotVersions:
 		logf("downloaded info about %d versions in %s\n", v.Count, v.Duration)
 	}

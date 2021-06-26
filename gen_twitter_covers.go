@@ -171,5 +171,4 @@ func genSmallCoversAndExit() {
 		saveImageAsPNGAndOptimize(dstPath, sub)
 	}
 	os.Exit(0)
-
 }

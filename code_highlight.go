@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bytes"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -99,21 +98,4 @@ func htmlHighlight(w io.Writer, source, lang, defaultLang string) error {
 	err := <-ch
 	return err
 
-}
-
-func testHang() {
-	//d, err := ioutil.ReadFile("hili_hang.txt")
-	//must(err)
-	// s := string(d)
-	s := `// 64-bit floats have 53 digits of precision, including the whole-number-part.
-double a =     0011111110111001100110011001100110011001100110011001100110011010; // imperfect representation of 0.1
-double b =     0011111111001001100110011001100110011001100110011001100110011010; // imperfect representation of 0.2
-double c =     0011111111010011001100110011001100110011001100110011001100110011; // imperfect representation of 0.3
-double a + b = 0011111111010011001100110011001100110011001100110011001100110100; // Note that this is not quite equal to the "canonical" 0.3!a
-`
-
-	for i := 0; i < 1024*32; i++ {
-		var buf bytes.Buffer
-		htmlHighlight(&buf, s, "C++", "")
-	}
 }

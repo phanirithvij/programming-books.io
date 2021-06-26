@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -13,12 +12,6 @@ import (
 
 var must = u.Must
 var panicIf = u.PanicIf
-
-func logIfError(err error) {
-	if err != nil {
-		fmt.Printf("Error: %s\n", err)
-	}
-}
 
 // whitelisted characters valid in url
 func validateRune(c rune) byte {
@@ -213,9 +206,6 @@ func shiftLines(lines []string) {
 var (
 	softErrorMode bool
 	delayedErrors []string
-
-	totalHTMLBytes         int
-	totalHTMLBytesMinified int
 )
 
 func maybePanicIfErr(err error) {
@@ -226,22 +216,6 @@ func maybePanicIfErr(err error) {
 		must(err)
 	}
 	delayedErrors = append(delayedErrors, err.Error())
-}
-
-func clearErrors() {
-	delayedErrors = nil
-	totalHTMLBytes = 0
-	totalHTMLBytesMinified = 0
-}
-
-func printAndClearErrors() {
-	fmt.Printf("HTML: optimized %d => %d (saved %d bytes)\n", totalHTMLBytes, totalHTMLBytesMinified, totalHTMLBytes-totalHTMLBytesMinified)
-	if len(delayedErrors) == 0 {
-		return
-	}
-	errStr := strings.Join(delayedErrors, "\n")
-	fmt.Printf("\n%d errors:\n%s\n\n", len(delayedErrors), errStr)
-	clearErrors()
 }
 
 func createDirForFileMaybeMust(path string) {
