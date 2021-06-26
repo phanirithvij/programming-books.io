@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"html/template"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -17,8 +16,7 @@ import (
 type any = interface{}
 
 var (
-	googleAnalytics template.HTML
-	doMinify        bool
+	doMinify bool
 
 	notionAuthToken string
 
@@ -80,9 +78,7 @@ func isPreview() bool {
 }
 
 var (
-	flgAnalytics                bool
-	flgPreview                  bool
-	flgReportStackOverflowLinks bool
+	flgPreview bool
 	// if true, disables downloading pages
 	flgNoDownload     bool
 	flgGistRedownload bool
@@ -116,7 +112,6 @@ func main() {
 	}
 
 	{
-		flag.BoolVar(&flgAnalytics, "analytics", false, "add google analytics code")
 		flag.BoolVar(&flgWc, "wc", false, "wc -l")
 		flag.BoolVar(&flgDeployProd, "deploy-prod", false, "deploy to prodution")
 		flag.BoolVar(&flgPreview, "preview", false, "if true, runs vercel dev to preview the book")
@@ -141,7 +136,6 @@ func main() {
 		}
 
 		if flgDeployProd {
-			flgAnalytics = true
 			flgGen = true
 		}
 
@@ -153,20 +147,6 @@ func main() {
 		// if flgDeployDev || flgDeployProd {
 		// 	panicIf(flgPreview, "-preview is not compatible with -deploy-prod or -deploy-dev")
 		// }
-
-		if flgAnalytics {
-			googleAnalyticsTmpl := `
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113489735-1"></script>
-			<script>
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-
-				gtag('config', 'UA-113489735-1');
-			</script>
-		`
-			googleAnalytics = template.HTML(googleAnalyticsTmpl)
-		}
 
 	}
 	closeLog := openLog()

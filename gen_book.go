@@ -112,7 +112,7 @@ type PageCommon struct {
 
 func getPageCommon() PageCommon {
 	return PageCommon{
-		Analytics: googleAnalytics,
+		Analytics: "",
 	}
 }
 
