@@ -198,7 +198,9 @@ func (b *Book) afterPageDownload(page *notionapi.Page) error {
 		Book:       b,
 	}
 	b.idToPage[id] = p
-	evalCodeSnippetsForPage(p)
+	if !flgDownloadOnly {
+		evalCodeSnippetsForPage(p)
+	}
 	downloadImages(b, p)
 	calcPageHeadings(p)
 	return nil

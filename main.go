@@ -194,7 +194,7 @@ func main() {
 		if flgAllBooks {
 			n := len(allBooks)
 			for i, book := range allBooks {
-				//book = findBook(book.DirShort)
+				book = findAndInitBook(book.DirShort)
 				generateBookAndDeploy(book)
 				fmt.Printf("book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
 			}
@@ -205,7 +205,7 @@ func main() {
 			genBookIndexAndDeploy(allBooks)
 			return
 		}
-		book := findBook(flgBook)
+		book := findAndInitBook(flgBook)
 		generateBookAndDeploy(book)
 		fmt.Printf("book: %s, dir: %s\n", book.Title, book.DirShort)
 		if flgPreview {
@@ -215,7 +215,7 @@ func main() {
 	}
 
 	if flgDownloadGist != "" {
-		book := findBook(flgBook)
+		book := findAndInitBook(flgBook)
 		downloadSingleGist(book, flgDownloadGist)
 		return
 	}
