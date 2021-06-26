@@ -231,6 +231,7 @@ func downloadBook(book *Book) {
 
 	book.client = newNotionClient()
 	cacheDir := book.NotionCacheDir
+	u.CreateDirMust(cacheDir)
 	d, err := notionapi.NewCachingClient(cacheDir, book.client)
 	must(err)
 	d.EventObserver = eventObserver
