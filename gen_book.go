@@ -267,6 +267,8 @@ func genBook(book *Book) {
 	logf("Started genering book %s\n", book.Title)
 	timeStart := time.Now()
 
+	bookFromPages(book)
+
 	copyImages(book)
 	bookPagesToHTML(book)
 

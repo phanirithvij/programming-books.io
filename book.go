@@ -246,5 +246,4 @@ func downloadBook(book *Book) {
 	must(err)
 	nPages := len(pages)
 	logf("Got %d pages for %s, downloaded: %d, from cache: %d\n", nPages, book.Title, nDownloadedPages, nNotionPagesFromCache)
-	bookFromPages(book)
 }

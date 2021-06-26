@@ -84,6 +84,8 @@ var (
 	flgGistRedownload bool
 	flgDeployProd     bool
 	flgDeployDev      bool
+	// if true, will only download (no eval, no generation)
+	flgDownloadOnly bool
 
 	// if true, re-create "www" directory
 	flgClean bool
@@ -120,6 +122,7 @@ func main() {
 		flag.BoolVar(&flgGen, "gen", false, "generate a book and deploy preview")
 		flag.StringVar(&flgBook, "book", "", "name of the book")
 		flag.BoolVar(&flgAllBooks, "all-books", false, "if true, apply to all books")
+		flag.BoolVar(&flgDownloadOnly, "download-only", false, "only download the books from notion (no eval, no html generation")
 		flag.StringVar(&flgDownloadGist, "download-gist", "", "id of the gist to (re)download. Must also provide a book")
 		flag.BoolVar(&flgDisableNotionCache, "no-cache", false, "if true, disables cache for notion")
 		flag.Parse()
@@ -131,11 +134,7 @@ func main() {
 			flgGen = true
 		}
 
-		if flgPreview {
-			flgGen = true
-		}
-
-		if flgDeployProd {
+		if flgPreview || flgDeployProd || flgDownloadOnly {
 			flgGen = true
 		}
 
@@ -193,14 +192,17 @@ func main() {
 			return
 		}
 		if flgAllBooks {
-			genBookIndexAndDeploy(allBooks)
 			n := len(allBooks)
 			for i, book := range allBooks {
-				book = findBook(book.DirShort)
+				//book = findBook(book.DirShort)
 				generateBookAndDeploy(book)
 				fmt.Printf("book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
 			}
 			//commitAndPushGeneratedRepo
+			if flgDownloadOnly {
+				return
+			}
+			genBookIndexAndDeploy(allBooks)
 			return
 		}
 		book := findBook(flgBook)
@@ -223,6 +225,9 @@ func main() {
 
 func generateBookAndDeploy(book *Book) {
 	downloadBook(book)
+	if flgDownloadOnly {
+		return
+	}
 	genBook(book)
 }
 
