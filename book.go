@@ -217,10 +217,6 @@ func initBook(book *Book) {
 		dir = filepath.Join(book.DirOnDisk)
 		os.RemoveAll(dir)
 	}
-	dir = filepath.Join(book.DirOnDisk, "s")
-	u.CreateDirMust(dir)
-	dir = filepath.Join(book.DirOnDisk, "gen")
-	u.CreateDirMust(dir)
 	logf("Created '%s' for book '%s'\n", dir, book.Title)
 	book.idToPage = map[string]*Page{}
 	book.sitemapURLS = map[string]struct{}{}

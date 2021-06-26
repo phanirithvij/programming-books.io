@@ -269,6 +269,11 @@ func genBook(book *Book) {
 
 	bookFromPages(book)
 
+	dir := filepath.Join(book.DirOnDisk, "s")
+	u.CreateDirMust(dir)
+	dir = filepath.Join(book.DirOnDisk, "gen")
+	u.CreateDirMust(dir)
+
 	copyImages(book)
 	bookPagesToHTML(book)
 
