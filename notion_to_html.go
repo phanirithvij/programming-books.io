@@ -22,14 +22,7 @@ type Converter struct {
 	page *Page
 	book *Book
 
-	notionClient *notionapi.Client
-	converter    *tohtml.Converter
-}
-
-func areNotionIDsEqual(id1, id2 string) bool {
-	id1 = toNoDashID(id1)
-	id2 = toNoDashID(id2)
-	return id1 == id2
+	converter *tohtml.Converter
 }
 
 func (c *Converter) reportIfInvalidLink(uri string, extractedID string) {

@@ -39,14 +39,5 @@ func logVerbose(format string, args ...interface{}) {
 		return
 	}
 	s := fmtSmart(format, args...)
-	_, _ = fmt.Fprintf(logFile, s)
-}
-
-func logFatalf(format string, args ...interface{}) {
-	s := fmtSmart(format, args...)
-	fmt.Print(s)
-	if logFile != nil {
-		_, _ = fmt.Fprint(logFile, s)
-	}
-	os.Exit(1)
+	_, _ = fmt.Fprint(logFile, s)
 }

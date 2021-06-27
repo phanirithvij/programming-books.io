@@ -134,10 +134,6 @@ func main() {
 			flgGen = true
 		}
 
-		if flgPreview || flgDeployProd || flgDownloadOnly {
-			flgGen = true
-		}
-
 		if flgAllBooks {
 			flgClean = true
 			panicIf(flgPreview, "-preview is not compatible with -all-books")
@@ -173,6 +169,13 @@ func main() {
 	// ad-hoc, rarely done tasks
 	if false {
 		genTwitterImagesAndExit()
+		return
+	}
+	if false {
+		genSmallCoversAndExit()
+		return
+	}
+	if false {
 		optimizeAllImages()
 		return
 	}
@@ -201,7 +204,7 @@ func main() {
 		booksToProcess = allBooks
 	}
 
-	if flgGen {
+	if flgGen || flgDeployProd || flgDownloadOnly {
 		n := len(booksToProcess)
 		for i, book := range booksToProcess {
 			initBook(book)
@@ -218,12 +221,15 @@ func main() {
 			fmt.Printf("generated book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
 		}
 		genBooksIndex(allBooks)
-		//commitAndPushGeneratedRepo
+		if false {
+			commitAndPushGeneratedRepo()
+		}
 		return
 	}
 
 	if flgPreview {
 		previewWebsite()
+		return
 	}
 
 	flag.Usage()
@@ -249,10 +255,6 @@ func downloadSingleGist(book *Book, gistID string) {
 		return
 	}
 	logf("Gist didn't change!\n")
-}
-
-func previewWebsite() {
-	panic("previewWebsite NYI")
 }
 
 func updateGeneratedRepo() {

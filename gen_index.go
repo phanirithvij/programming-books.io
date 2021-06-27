@@ -96,7 +96,7 @@ func genBooksIndex(books []*Book) {
 	u.CreateDirMust(indexDestDir)
 	dir := filepath.Join(indexDestDir, "s")
 	u.CreateDirMust(dir)
-	//copyVercelIndexRoutes(indexDestDir)
+	copyVercelIndexRoutes(indexDestDir)
 
 	copyCoversMust(indexDestDir)
 

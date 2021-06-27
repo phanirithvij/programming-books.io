@@ -34,17 +34,22 @@ var (
 	hashToOptimizedURL = map[string]string{}
 )
 
-func funcOptimizeAsset(url string) string {
+func funcOptimizeAsset(uri string) string {
 	// url is like "s/app.js" we convert to a file
 	// tmpl/app.js
-	name := strings.TrimPrefix(url, "/s/")
+	//logf("funcOptimizeAsset: url: '%s'\n", uri)
+	name := strings.TrimSpace(uri)
+	name = strings.TrimPrefix(name, "/s/")
 	name = strings.TrimPrefix(name, "s/")
 	srcPath := filepath.Join("fe", "tmpl", name)
 	d, err := ioutil.ReadFile(srcPath)
 	if err != nil {
+		logf("funcOptimizeAsset: url: '%s', name: '%s', didn't find srcPath '%s', \n", uri, name, srcPath)
 		// for bundle.js and bundle.css
 		srcPath = filepath.Join("www", "gen", name)
 		d, err = ioutil.ReadFile(srcPath)
+	} else {
+		logf("funcOptimizeAsset: url: '%s', found srcPath '%s', \n", uri, srcPath)
 	}
 	must(err)
 
