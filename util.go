@@ -86,14 +86,6 @@ func urlJoin(s1, s2 string) string {
 	return s1 + "/" + s2
 }
 
-// "foo.js" => "foo-${sha1}.js"
-func nameToSha1Name(name, sha1Hex string) string {
-	ext := filepath.Ext(name)
-	n := len(name)
-	s := name[:n-len(ext)]
-	return s + "-" + sha1Hex[:8] + ext
-}
-
 func dataToLines(d []byte) []string {
 	s := string(d)
 	return strings.Split(s, "\n")

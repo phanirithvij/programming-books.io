@@ -1,6 +1,13 @@
 To get the first version:
 
-* make funcOptimizeAsset per book and re-introduce optimization see https://github.com/tdewolff/minify/issues/313#issuecomment-660327688
+* fix:
+
+fe/main.js → www/gen/bundle.js...
+(!) Circular dependency
+fe\Toc.svelte -> fe\TocItem.svelte -> fe\Toc.svelte
+
+I think I fixed it in some other code base. Use <svelte:self> ?
+
 * make 404.html design match the rest of the book better
 * add ability to have one gist serve as multiple examples
   idea: accept url like:
@@ -9,14 +16,11 @@ To get the first version:
   Gist could have multiple files. They would have to have ":run" directive
 
 Command to create a project or link to existing project:
-vercel www --scope teamkjk --name book-git --confirm
-
-Command to preview locally:
-cd www
-vercel dev
 
 * [ ] make sitemap for all books
 
+Done:
+* [x] no longer optimize assets to reduce how often they are rebuild
 * [x] add a way to generate html page with structure of the page,
       for easy finding pages to edit. Shows which pages have snippets,
       images, codeeval.com links etc.

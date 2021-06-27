@@ -7,7 +7,6 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
-	"strings"
 	"time"
 
 	"github.com/kjk/u"
@@ -19,61 +18,12 @@ const (
 )
 
 var (
-	currBookDir string // a bit of a hack
-
 	templates *template.Template
 
 	funcMap = template.FuncMap{
-		"inc":      funcInc,
-		"optimize": funcOptimizeAsset,
+		"inc": funcInc,
 	}
 )
-
-var (
-	// sha1 of original content to url of optimized content
-	hashToOptimizedURL = map[string]string{}
-)
-
-func funcOptimizeAsset(uri string) string {
-	// url is like "s/app.js" we convert to a file
-	// tmpl/app.js
-	//logvf("funcOptimizeAsset: url: '%s'\n", uri)
-	name := strings.TrimSpace(uri)
-	name = strings.TrimPrefix(name, "/s/")
-	name = strings.TrimPrefix(name, "s/")
-	srcPath := filepath.Join("fe", "tmpl", name)
-	d, err := ioutil.ReadFile(srcPath)
-	if err != nil {
-		logvf("funcOptimizeAsset: url: '%s', name: '%s', didn't find srcPath '%s', \n", uri, name, srcPath)
-		// for bundle.js and bundle.css
-		srcPath = filepath.Join("www", "gen", name)
-		d, err = ioutil.ReadFile(srcPath)
-	}
-	if err != nil {
-		logf("funcOptimizeAsset: url: '%s', name: '%s', didn't find srcPath '%s', \n", uri, name, srcPath)
-	} else {
-		logvf("funcOptimizeAsset: url: '%s', name: '%s', found srcPath '%s', \n", uri, name, srcPath)
-	}
-	must(err)
-
-	// those files are referenced from multiple .html files
-	// so only write them out once for a given book
-	srcSha1Hex := u.Sha1HexOfBytes(d)
-	uniqueFileID := currBookDir + srcSha1Hex
-	if newURL := hashToOptimizedURL[uniqueFileID]; newURL != "" {
-		return newURL
-	}
-
-	dstSha1Hex := u.Sha1HexOfBytes(d)
-	dstName := nameToSha1Name(name, dstSha1Hex)
-	dstPath := filepath.Join(currBookDir, "s", dstName)
-	dstURL := "s/" + dstName
-	err = ioutil.WriteFile(dstPath, d, 0644)
-	must(err)
-	logf("Copied %s => %s\n", srcPath, dstPath)
-	hashToOptimizedURL[uniqueFileID] = dstURL
-	return dstURL
-}
 
 func funcInc(i int) int {
 	return i + 1
@@ -280,7 +230,6 @@ func genBook(book *Book) {
 	logf("Started genering book %s\n", book.Title)
 	timeStart := time.Now()
 
-	currBookDir = book.DirOnDisk
 	// TODO: atomic generation i.e. generate to a temp directory and at the end remove
 	// existing and replace with temp. Won't need flgClean anymore
 	if flgClean {
@@ -288,9 +237,6 @@ func genBook(book *Book) {
 	}
 
 	bookFromPages(book)
-
-	dir := filepath.Join(book.DirOnDisk, "s")
-	u.CreateDirMust(dir)
 
 	copyImages(book)
 	bookPagesToHTML(book)
@@ -317,7 +263,6 @@ func genBook(book *Book) {
 	writeSitemap(book)
 	genOverview(book)
 	copyCover(book)
-	//copyVercelRoutes(book)
 
 	logf("Generated book '%s' in %s\n", book.Title, time.Since(timeStart))
 }

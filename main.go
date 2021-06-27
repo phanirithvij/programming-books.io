@@ -79,17 +79,18 @@ func isPreview() bool {
 
 var (
 	flgPreview bool
-	// if true, disables downloading pages
+	// disables downloading pages
 	flgNoDownload     bool
 	flgGistRedownload bool
-	// if true, will only download (no eval, no generation)
+	// will only download (no eval, no generation)
 	flgDownloadOnly bool
 
-	// if true, re-create "www" directory
+	// re-create "www" directory
 	flgClean bool
-	// if true, disables notion cache, forcing re-download of notion page
+	// disables notion cache, forcing re-download of notion page
 	// even if cached verison on disk exits
 	flgDisableNotionCache bool
+	flgNoCleanCheck       bool
 
 	gDestDir string
 )
@@ -115,8 +116,9 @@ func main() {
 
 	{
 		flag.BoolVar(&flgWc, "wc", false, "wc -l")
-		flag.BoolVar(&flgPreview, "preview", false, "if true, runs vercel dev to preview the book")
-		flag.BoolVar(&flgClean, "clean", false, "if true, re-create 'www' directory")
+		flag.BoolVar(&flgNoCleanCheck, "no-clean-check", false, "don't check if destination directory is not clean")
+		flag.BoolVar(&flgPreview, "preview", false, "preview the book locally")
+		flag.BoolVar(&flgClean, "clean", false, "re-create 'www' directory")
 		flag.BoolVar(&flgGen, "gen", false, "generate a book and deploy preview")
 		flag.StringVar(&flgBook, "book", "", "name of the book")
 		flag.BoolVar(&flgAllBooks, "all-books", false, "if true, apply to all books")
@@ -198,10 +200,6 @@ func main() {
 		updateGeneratedRepo()
 	}
 
-	if flgClean && flgAllBooks && flgGen {
-		os.RemoveAll(indexDestDir)
-	}
-
 	var booksToProcess []*Book
 	if flgBook != "" {
 		book := findBook(flgBook)
@@ -224,7 +222,13 @@ func main() {
 		if flgDownloadOnly {
 			return
 		}
+
+		if flgClean && flgAllBooks {
+			os.RemoveAll(indexDestDir)
+		}
 		buildFrontend()
+		copyGlobalAssets()
+
 		for i, book := range booksToProcess {
 			genBook(book)
 			logf("generated book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
@@ -249,6 +253,20 @@ func main() {
 	if showUsage {
 		flag.Usage()
 	}
+}
+
+func copyFilesMust(dstDir string, srcDir string, files []string) {
+	for _, file := range files {
+		srcPath := filepath.Join(srcDir, file)
+		dstPath := filepath.Join(dstDir, file)
+		u.CopyFileMust(dstPath, srcPath)
+	}
+}
+func copyGlobalAssets() {
+	dstDir := filepath.Join(indexDestDir, "s")
+	must(os.MkdirAll(dstDir, 0755))
+	copyFilesMust(dstDir, filepath.Join("www", "gen"), []string{"bundle.css", "bundle.js"})
+	copyFilesMust(dstDir, filepath.Join("fe", "tmpl"), []string{"favicon.ico", "index.css", "main.css"})
 }
 
 func newNotionClient() *notionapi.Client {
@@ -278,6 +296,9 @@ func updateGeneratedRepo() {
 	if !u.PathExists(dir) {
 		fmt.Printf("updateGeneratedRepo: directory %s doesn't exist. Must git clone https://github.com/essentialbooks/generated there\n", dir)
 		os.Exit(1)
+	}
+	if flgNoCleanCheck {
+		return
 	}
 	u.EnsureGitClean(dir)
 	u.GitPullMust(dir)

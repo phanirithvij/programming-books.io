@@ -3,8 +3,6 @@ package main
 import (
 	"io"
 	"path/filepath"
-
-	"github.com/kjk/u"
 )
 
 var (
@@ -60,17 +58,6 @@ func genIndex(books []*Book, w io.Writer) error {
 	return execTemplate("index2.tmpl.html", d, path, w)
 }
 
-func gen404TopLevel(dir string) {
-	d := struct {
-		PageCommon
-		Book *Book
-	}{
-		PageCommon: getPageCommon(),
-	}
-	path := filepath.Join(dir, "404.html")
-	_ = execTemplateToFileMaybeMust("404.tmpl.html", d, path)
-}
-
 func gen404Indexl(dir string) {
 	d := struct {
 		PageCommon
@@ -82,22 +69,7 @@ func gen404Indexl(dir string) {
 	_ = execTemplateToFileMaybeMust("404-index.tmpl.html", d, path)
 }
 
-func copyVercelIndexRoutes(dir string) {
-	src := "vercel.json"
-	dst := filepath.Join(dir, "vercel.json")
-	u.CopyFileMust(dst, src)
-	logf("Copied '%s' => '%s'\n", src, dst)
-}
-
 func genBooksIndex(books []*Book) {
-	currBookDir = indexDestDir
-	// cache is only valid for the book
-	hashToOptimizedURL = map[string]string{}
-	u.CreateDirMust(indexDestDir)
-	dir := filepath.Join(indexDestDir, "s")
-	u.CreateDirMust(dir)
-	copyVercelIndexRoutes(indexDestDir)
-
 	copyCoversMust(indexDestDir)
 
 	_ = genIndex(books, nil)

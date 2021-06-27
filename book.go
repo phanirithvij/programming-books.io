@@ -151,18 +151,15 @@ func (b *Book) ChaptersCount() int {
 }
 
 func updateBookAppJS(book *Book) {
-	srcName := fmt.Sprintf("app-%s.js", book.DirShort)
+	name := fmt.Sprintf("app-%s.js", book.DirShort)
 	d := book.tocData
-
-	sha1Hex := u.Sha1HexOfBytes(d)
-	name := nameToSha1Name(srcName, sha1Hex)
-	dst := filepath.Join(book.DirOnDisk, "s", name)
+	dst := filepath.Join(indexDestDir, "s", name)
 	err := ioutil.WriteFile(dst, d, 0644)
 	maybePanicIfErr(err)
 	if err != nil {
 		return
 	}
-	book.AppJSURL = "s/" + name
+	book.AppJSURL = "/s/" + name
 	logf("Created %s\n", dst)
 }
 
@@ -209,8 +206,6 @@ func initBook(book *Book) {
 	book.DirOnDisk = filepath.Join(gDestDir, "www", "essential", book.DirShort)
 	book.DirCache = filepath.Join("books", book.DirShort, "cache")
 	book.NotionCacheDir = filepath.Join(book.DirCache, "notion")
-	// cache is only valid for the book
-	hashToOptimizedURL = map[string]string{}
 	book.idToPage = map[string]*Page{}
 	book.sitemapURLS = map[string]struct{}{}
 	book.cache = loadCache(book)
