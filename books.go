@@ -303,13 +303,12 @@ var (
 	allBooks = append(booksMain, booksUnpublished...)
 )
 
-func findAndInitBook(id string) *Book {
+func findBook(id string) *Book {
 	for _, book := range allBooks {
 		// fuzzy match - whatever hits
 		parts := []string{book.Title, book.DirShort, book.NotionStartPageID}
 		for _, s := range parts {
 			if strings.EqualFold(s, id) {
-				initBook(book)
 				return book
 			}
 		}

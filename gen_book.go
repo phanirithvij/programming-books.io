@@ -35,9 +35,10 @@ var (
 )
 
 func funcOptimizeAsset(url string) string {
-	// url is like /s/app.js which we convert to a file
+	// url is like "s/app.js" we convert to a file
 	// tmpl/app.js
 	name := strings.TrimPrefix(url, "/s/")
+	name = strings.TrimPrefix(name, "s/")
 	srcPath := filepath.Join("fe", "tmpl", name)
 	d, err := ioutil.ReadFile(srcPath)
 	if err != nil {
@@ -46,19 +47,23 @@ func funcOptimizeAsset(url string) string {
 		d, err = ioutil.ReadFile(srcPath)
 	}
 	must(err)
+
+	// those files are referenced from multiple .html files
+	// so only write them out once for a given book
 	srcSha1Hex := u.Sha1HexOfBytes(d)
-	if newURL := hashToOptimizedURL[srcSha1Hex]; newURL != "" {
+	uniqueFileID := currBookDir + srcSha1Hex
+	if newURL := hashToOptimizedURL[uniqueFileID]; newURL != "" {
 		return newURL
 	}
 
 	dstSha1Hex := u.Sha1HexOfBytes(d)
 	dstName := nameToSha1Name(name, dstSha1Hex)
 	dstPath := filepath.Join(currBookDir, "s", dstName)
-	dstURL := "/s/" + dstName
+	dstURL := "s/" + dstName
 	err = ioutil.WriteFile(dstPath, d, 0644)
 	must(err)
 	logf("Copied %s => %s\n", srcPath, dstPath)
-	hashToOptimizedURL[srcSha1Hex] = dstURL
+	hashToOptimizedURL[uniqueFileID] = dstURL
 	return dstURL
 }
 
@@ -219,7 +224,7 @@ func bookPagesToHTML(book *Book) {
 	logf("bookPagesToHTML: processed %d pages for book %s\n", nProcessed, book.TitleLong)
 }
 
-func genBookIndex(book *Book, w io.Writer) error {
+func genBookIndexHTML(book *Book, w io.Writer) error {
 	data := struct {
 		PageCommon
 		Book *Book
@@ -267,6 +272,14 @@ func genBook(book *Book) {
 	logf("Started genering book %s\n", book.Title)
 	timeStart := time.Now()
 
+	u.CreateDirMust(book.NotionCacheDir)
+	logf("Created '%s' for book '%s'\n", book.NotionCacheDir, book.Title)
+	// TODO: atomic generation i.e. generate to a temp directory and at the end remove
+	// existing and replace with temp. Won't need flgClean anymore
+	if flgClean {
+		os.RemoveAll(book.DirOnDisk)
+	}
+
 	bookFromPages(book)
 
 	dir := filepath.Join(book.DirOnDisk, "s")
@@ -286,7 +299,7 @@ func genBook(book *Book) {
 		return
 	}
 
-	_ = genBookIndex(book, nil)
+	_ = genBookIndexHTML(book, nil)
 
 	_ = genBook404(book, nil)
 

@@ -172,8 +172,8 @@ func main() {
 
 	// ad-hoc, rarely done tasks
 	if false {
-		//genTwitterImagesAndExit()
-		//optimizeAllImages()
+		genTwitterImagesAndExit()
+		optimizeAllImages()
 		return
 	}
 
@@ -182,53 +182,51 @@ func main() {
 		return
 	}
 
-	if flgGen {
-		updateGeneratedRepo()
-		buildFrontend()
-
-		if flgBook == "index" {
-			genBookIndexAndDeploy(allBooks)
-			//commitAndPushGeneratedRepo
-			return
-		}
-		if flgAllBooks {
-			n := len(allBooks)
-			for i, book := range allBooks {
-				book = findAndInitBook(book.DirShort)
-				generateBookAndDeploy(book)
-				fmt.Printf("book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
-			}
-			//commitAndPushGeneratedRepo
-			if flgDownloadOnly {
-				return
-			}
-			genBookIndexAndDeploy(allBooks)
-			return
-		}
-		book := findAndInitBook(flgBook)
-		generateBookAndDeploy(book)
-		fmt.Printf("book: %s, dir: %s\n", book.Title, book.DirShort)
-		if flgPreview {
-			//previewBook(book)
-		}
-		return
-	}
-
 	if flgDownloadGist != "" {
-		book := findAndInitBook(flgBook)
+		book := findBook(flgBook)
+		initBook(book)
 		downloadSingleGist(book, flgDownloadGist)
 		return
 	}
 
-	flag.Usage()
-}
+	if flgClean {
+		os.RemoveAll(indexDestDir)
+	}
 
-func generateBookAndDeploy(book *Book) {
-	downloadBook(book)
-	if flgDownloadOnly {
+	var booksToProcess []*Book
+	if flgBook != "" {
+		booksToProcess = []*Book{findBook(flgBook)}
+	}
+	if flgAllBooks {
+		booksToProcess = allBooks
+	}
+
+	if flgGen {
+		n := len(booksToProcess)
+		for i, book := range booksToProcess {
+			initBook(book)
+			downloadBook(book)
+			fmt.Printf("downloaded book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
+		}
+		if flgDownloadOnly {
+			return
+		}
+		updateGeneratedRepo()
+		buildFrontend()
+		for i, book := range booksToProcess {
+			genBook(book)
+			fmt.Printf("generated book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
+		}
+		genBooksIndex(allBooks)
+		//commitAndPushGeneratedRepo
 		return
 	}
-	genBook(book)
+
+	if flgPreview {
+		previewWebsite()
+	}
+
+	flag.Usage()
 }
 
 func newNotionClient() *notionapi.Client {
@@ -253,8 +251,8 @@ func downloadSingleGist(book *Book, gistID string) {
 	logf("Gist didn't change!\n")
 }
 
-func previewBook(book *Book) {
-	panic("previewBook NYI")
+func previewWebsite() {
+	panic("previewWebsite NYI")
 }
 
 func updateGeneratedRepo() {

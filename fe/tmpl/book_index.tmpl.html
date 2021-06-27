@@ -24,13 +24,13 @@
   <title>{{.Book.TitleLong}} - a free {{.Book.Title}} programming book</title>
   <meta name="description" content="'{{.Book.TitleLong}}' is a free programming book about {{.Book.Title}}" />
 
-  <link rel="icon" href="{{ optimize "/s/favicon.ico" }}" />
-  <link href="{{ optimize "/s/main.css" }}" rel="stylesheet">
-  <link href="{{ optimize "/s/bundle.css" }}" rel="stylesheet">
+  <link rel="icon" href="{{ optimize " /s/favicon.ico" }}" />
+  <link href="{{ optimize " /s/main.css" }}" rel="stylesheet">
+  <link href="{{ optimize " /s/bundle.css" }}" rel="stylesheet">
 
   {{ .Analytics }}
   <script src="{{.Book.AppJSURL}}" defer></script>
-  <script src="{{ optimize "/s/bundle.js" }}" defer></script>
+  <script src="{{ optimize " /s/bundle.js" }}" defer></script>
 </head>
 
 {{ template "book_index.js.tmpl.html" . }}
@@ -99,5 +99,6 @@
       </div>
       <div id="footer-right"></div>
     </footer>
-
+  </div>
+</body>
 </html>

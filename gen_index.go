@@ -89,7 +89,7 @@ func copyVercelIndexRoutes(dir string) {
 	logf("Copied '%s' => '%s'\n", src, dst)
 }
 
-func genBookIndexAndDeploy(books []*Book) {
+func genBooksIndex(books []*Book) {
 	currBookDir = indexDestDir
 	// cache is only valid for the book
 	hashToOptimizedURL = map[string]string{}

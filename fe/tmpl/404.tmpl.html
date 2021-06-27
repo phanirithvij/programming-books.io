@@ -12,13 +12,13 @@
   <title>Page not found</title>
   {{end}}
 
-  <link rel="icon" href="{{ optimize "/s/favicon.ico" }}">
-  <link href="{{ optimize "/s/main.css" }}" rel="stylesheet"> {{ .Analytics }}
+  <link rel="icon" href="{{ optimize "s/favicon.ico" }}">
+  <link href="{{ optimize "s/main.css" }}" rel="stylesheet"> {{ .Analytics }}
 
   {{if .Book}}
   <script src="{{.Book.AppJSURL}}"></script>
   {{end}}
-  <script src="{{ optimize "/s/bundle.js" }}" defer></script>
+  <script src="{{ optimize "s/bundle.js" }}" defer></script>
   <script>
     function onLoad() {
       do404();

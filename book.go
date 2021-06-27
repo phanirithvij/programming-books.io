@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"html/template"
 	"io/ioutil"
-	"os"
 	"path/filepath"
 	"sync"
 
@@ -163,7 +162,7 @@ func updateBookAppJS(book *Book) {
 	if err != nil {
 		return
 	}
-	book.AppJSURL = "/s/" + name
+	book.AppJSURL = "s/" + name
 	logf("Created %s\n", dst)
 }
 
@@ -213,13 +212,6 @@ func initBook(book *Book) {
 	currBookDir = book.DirOnDisk
 	// cache is only valid for the book
 	hashToOptimizedURL = map[string]string{}
-	dir := book.NotionCacheDir
-	u.CreateDirMust(dir)
-	if flgClean {
-		dir = filepath.Join(book.DirOnDisk)
-		os.RemoveAll(dir)
-	}
-	logf("Created '%s' for book '%s'\n", dir, book.Title)
 	book.idToPage = map[string]*Page{}
 	book.sitemapURLS = map[string]struct{}{}
 	book.cache = loadCache(book)
