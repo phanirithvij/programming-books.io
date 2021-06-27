@@ -103,6 +103,7 @@ func main() {
 		flgAllBooks     bool
 		flgWc           bool
 		flgDownloadGist string
+		flgCheckinHTML  bool
 	)
 
 	{
@@ -124,6 +125,7 @@ func main() {
 		flag.BoolVar(&flgAllBooks, "all-books", false, "if true, apply to all books")
 		flag.BoolVar(&flgDownloadOnly, "download-only", false, "only download the books from notion (no eval, no html generation")
 		flag.StringVar(&flgDownloadGist, "download-gist", "", "id of the gist to (re)download. Must also provide a book")
+		flag.BoolVar(&flgCheckinHTML, "checkin-html", false, "checkin generated html")
 		flag.BoolVar(&flgDisableNotionCache, "no-cache", false, "if true, disables cache for notion")
 		flag.Parse()
 
@@ -132,11 +134,6 @@ func main() {
 			//flgBook = "go"
 			flgAllBooks = true
 			flgGen = true
-		}
-
-		if flgAllBooks {
-			flgClean = true
-			panicIf(flgPreview, "-preview is not compatible with -all-books")
 		}
 
 		// if flgDeployDev || flgDeployProd {
@@ -187,6 +184,9 @@ func main() {
 
 	if flgDownloadGist != "" {
 		book := findBook(flgBook)
+		if book == nil {
+			logf("-download-gist also requires valid -book, given: '%s'\n", flgBook)
+		}
 		initBook(book)
 		downloadSingleGist(book, flgDownloadGist)
 		return
@@ -198,18 +198,22 @@ func main() {
 
 	var booksToProcess []*Book
 	if flgBook != "" {
-		booksToProcess = []*Book{findBook(flgBook)}
+		book := findBook(flgBook)
+		panicIf(book == nil, "'%s' is not a valid book name", flgBook)
+		booksToProcess = []*Book{book}
 	}
 	if flgAllBooks {
 		booksToProcess = allBooks
 	}
 
+	showUsage := true
 	if flgGen || flgDeployProd || flgDownloadOnly {
+		showUsage = false
 		n := len(booksToProcess)
 		for i, book := range booksToProcess {
 			initBook(book)
 			downloadBook(book)
-			fmt.Printf("downloaded book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
+			logvf("downloaded book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
 		}
 		if flgDownloadOnly {
 			return
@@ -218,13 +222,18 @@ func main() {
 		buildFrontend()
 		for i, book := range booksToProcess {
 			genBook(book)
-			fmt.Printf("generated book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
+			logf("generated book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
 		}
 		genBooksIndex(allBooks)
-		if false {
-			commitAndPushGeneratedRepo()
+		if flgPreview {
+			previewWebsite()
 		}
 		return
+	}
+
+	if flgCheckinHTML {
+		showUsage = false
+		commitAndPushGeneratedHTMLToRepo()
 	}
 
 	if flgPreview {
@@ -232,7 +241,9 @@ func main() {
 		return
 	}
 
-	flag.Usage()
+	if showUsage {
+		flag.Usage()
+	}
 }
 
 func newNotionClient() *notionapi.Client {
@@ -267,7 +278,7 @@ func updateGeneratedRepo() {
 	u.GitPullMust(dir)
 }
 
-func commitAndPushGeneratedRepo() {
+func commitAndPushGeneratedHTMLToRepo() {
 	dir := gDestDir
 	{
 		cmd := exec.Command("git", "add", "www")

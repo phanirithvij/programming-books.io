@@ -313,6 +313,5 @@ func findBook(id string) *Book {
 			}
 		}
 	}
-	panicIf(true, "didn't find book with name '%s'", id)
 	return nil
 }
