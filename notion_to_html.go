@@ -338,7 +338,7 @@ func notionToHTML(page *Page, book *Book) []byte {
 		return []byte(page.BodyHTML)
 	}
 
-	logVerbose("Generating HTML for %s\n", page.NotionURL())
+	logvf("Generating HTML for %s\n", page.NotionURL())
 	res := Converter{
 		book: book,
 		page: page,

@@ -34,7 +34,7 @@ func logf(format string, args ...interface{}) {
 	}
 }
 
-func logVerbose(format string, args ...interface{}) {
+func logvf(format string, args ...interface{}) {
 	if logFile == nil {
 		return
 	}

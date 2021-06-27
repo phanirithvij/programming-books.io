@@ -43,7 +43,7 @@ func eventObserver(ev interface{}) {
 	case *notionapi.EventDidReadFromCache:
 		nProcessed++
 		nNotionPagesFromCache++
-		if nNotionPagesFromCache < 4 || nNotionPagesFromCache%16 == 0 {
+		if nNotionPagesFromCache < 2 {
 			logf("%03d '%s' : read from cache in %s\n", nProcessed, v.PageID, v.Duration)
 		}
 	case *notionapi.EventGotVersions:

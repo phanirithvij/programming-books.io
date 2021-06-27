@@ -209,7 +209,6 @@ func initBook(book *Book) {
 	book.DirOnDisk = filepath.Join(gDestDir, "www", "essential", book.DirShort)
 	book.DirCache = filepath.Join("books", book.DirShort, "cache")
 	book.NotionCacheDir = filepath.Join(book.DirCache, "notion")
-	currBookDir = book.DirOnDisk
 	// cache is only valid for the book
 	hashToOptimizedURL = map[string]string{}
 	book.idToPage = map[string]*Page{}
@@ -218,7 +217,9 @@ func initBook(book *Book) {
 }
 
 func downloadBook(book *Book) {
-	logf("Loading %s...\n", book.Title)
+	u.CreateDirMust(book.NotionCacheDir)
+	logf("Downloading %s, created cache dir: '%s'\n", book.Title, book.NotionCacheDir)
+
 	nProcessed = 0
 	nNotionPagesFromCache = 0
 	nDownloadedPages = 0

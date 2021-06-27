@@ -84,7 +84,7 @@ func parseCodeEvalInfo(s string) *CodeEvalInfo {
 func gistDownloadCached(cache *Cache, gistID string) string {
 	gist := cache.getGistByID(gistID)
 	if gist != nil && !flgGistRedownload {
-		logVerbose("gist '%s': got from cache\n", gistID)
+		logvf("gist '%s': got from cache\n", gistID)
 		return gist.Gist
 	}
 	timeStart := time.Now()
@@ -156,22 +156,24 @@ func evalGist(gistStr string) (*EvalResponse, error) {
 
 func evalCached(cache *Cache, gistID string, gist string) string {
 	sha1 := u.Sha1HexOfBytes([]byte(gist))
-	logf("evalCached() gist id '%s', body sha1 '%s' ", gistID, sha1)
+	logvf("evalCached() gist id '%s', body sha1 '%s' ", gistID, sha1)
 	gistOut := cache.getGistOuputBySha1(sha1)
 	if gistOut != nil {
-		logf("found in cache\n")
+		logvf("found in cache\n")
 		return gistOut.Output
 	}
 	resp, err := evalGist(gist)
+	// TODO: fix the failure of evalGist()
 	if err != nil {
-		logf("\nfailed to execute gist: %s, gist sha1: %s\n", gistID, sha1)
-		logf("error: %s\n", err)
-		logf("gist body:\n%s\n", gist)
-		must(err)
+		logvf("\nfailed to execute gist: %s, gist sha1: %s\n", gistID, sha1)
+		logvf("error: %s\n", err)
+		//logf("gist body:\n%s\n", gist)
+		out := fmt.Sprintf("failed to execute gist '%s'\n", gist)
+		return out
 	}
 	out := getEvalResponseString(resp)
 	cache.saveGistOutput(gist, out)
-	logf("not in cache, did eval\n")
+	logvf("not in cache, did eval\n")
 	return out
 }
 
@@ -291,11 +293,11 @@ func evalCodeSnippetsForPage(page *Page) {
 		}
 
 		if sf.Directive.Glot {
-			logVerbose("!code glot %s\n", sf.NotionOriginURL)
+			logvf("!code glot %s\n", sf.NotionOriginURL)
 			createGistFromGlot(sf)
 			// for those we respect no output/no playground
 		} else {
-			//logVerbose("!code no glot %s\n", sf.NotionOriginURL)
+			//logvf("!code no glot %s\n", sf.NotionOriginURL)
 			// for embedded code blocks by default we don't set playground
 			// or output unless explicitly asked for
 			sf.Directive.NoPlayground = true

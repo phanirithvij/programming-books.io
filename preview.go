@@ -33,7 +33,7 @@ func findFileForURL(uri *url.URL) string {
 }
 
 func handleIndex(w http.ResponseWriter, r *http.Request) {
-	logf("uri: %s\n", r.URL.Path)
+	//logf("uri: %s\n", r.URL.Path)
 	path := findFileForURL(r.URL)
 	if path != "" {
 		http.ServeFile(w, r, path)

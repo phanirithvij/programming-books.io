@@ -37,19 +37,22 @@ var (
 func funcOptimizeAsset(uri string) string {
 	// url is like "s/app.js" we convert to a file
 	// tmpl/app.js
-	//logf("funcOptimizeAsset: url: '%s'\n", uri)
+	//logvf("funcOptimizeAsset: url: '%s'\n", uri)
 	name := strings.TrimSpace(uri)
 	name = strings.TrimPrefix(name, "/s/")
 	name = strings.TrimPrefix(name, "s/")
 	srcPath := filepath.Join("fe", "tmpl", name)
 	d, err := ioutil.ReadFile(srcPath)
 	if err != nil {
-		logf("funcOptimizeAsset: url: '%s', name: '%s', didn't find srcPath '%s', \n", uri, name, srcPath)
+		logvf("funcOptimizeAsset: url: '%s', name: '%s', didn't find srcPath '%s', \n", uri, name, srcPath)
 		// for bundle.js and bundle.css
 		srcPath = filepath.Join("www", "gen", name)
 		d, err = ioutil.ReadFile(srcPath)
+	}
+	if err != nil {
+		logf("funcOptimizeAsset: url: '%s', name: '%s', didn't find srcPath '%s', \n", uri, name, srcPath)
 	} else {
-		logf("funcOptimizeAsset: url: '%s', found srcPath '%s', \n", uri, srcPath)
+		logvf("funcOptimizeAsset: url: '%s', name: '%s', found srcPath '%s', \n", uri, name, srcPath)
 	}
 	must(err)
 
@@ -277,8 +280,7 @@ func genBook(book *Book) {
 	logf("Started genering book %s\n", book.Title)
 	timeStart := time.Now()
 
-	u.CreateDirMust(book.NotionCacheDir)
-	logf("Created '%s' for book '%s'\n", book.NotionCacheDir, book.Title)
+	currBookDir = book.DirOnDisk
 	// TODO: atomic generation i.e. generate to a temp directory and at the end remove
 	// existing and replace with temp. Won't need flgClean anymore
 	if flgClean {

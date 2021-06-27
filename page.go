@@ -318,7 +318,6 @@ func extractMeta(p *Page) {
 func bookPageFromNotionPage(book *Book, page *notionapi.Page) *Page {
 	id := toNoDashID(page.ID)
 	p := book.idToPage[id]
-	panicIf(p == nil)
 	p.Title = cleanTitle(page.Root().Title)
 
 	extractMeta(p)
@@ -330,7 +329,7 @@ func bookPageFromNotionPage(book *Book, page *notionapi.Page) *Page {
 	for _, subPage := range subPages {
 		bookPage := bookPageFromNotionPage(book, subPage)
 		if !isPreview() && bookPage.isDraft() {
-			logVerbose("skipping draft page %s '%s'\n", bookPage.NotionID, bookPage.Title)
+			logvf("skipping draft page %s '%s'\n", bookPage.NotionID, bookPage.Title)
 			continue
 		}
 		bookPage.Book = book
