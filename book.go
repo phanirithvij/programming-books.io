@@ -70,8 +70,8 @@ func (b *Book) Summary() template.HTML {
 }
 
 func (b *Book) BaseURL() string {
-	//return "https://www.programming-books.io/essential/" + b.DirShort
-	return "/essential/" + b.DirShort
+	// return "https://www.programming-books.io/essential/" + b.DirShort + "/"
+	return "/essential/" + b.DirShort + "/"
 }
 
 // CanonnicalURL returns full url including host
