@@ -82,8 +82,6 @@ var (
 	// if true, disables downloading pages
 	flgNoDownload     bool
 	flgGistRedownload bool
-	flgDeployProd     bool
-	flgDeployDev      bool
 	// if true, will only download (no eval, no generation)
 	flgDownloadOnly bool
 
@@ -117,9 +115,7 @@ func main() {
 
 	{
 		flag.BoolVar(&flgWc, "wc", false, "wc -l")
-		flag.BoolVar(&flgDeployProd, "deploy-prod", false, "deploy to prodution")
 		flag.BoolVar(&flgPreview, "preview", false, "if true, runs vercel dev to preview the book")
-		flag.BoolVar(&flgDeployDev, "deploy-dev", false, "deploy to dev")
 		flag.BoolVar(&flgClean, "clean", false, "if true, re-create 'www' directory")
 		flag.BoolVar(&flgGen, "gen", false, "generate a book and deploy preview")
 		flag.StringVar(&flgBook, "book", "", "name of the book")
@@ -196,7 +192,13 @@ func main() {
 		return
 	}
 
-	if flgClean {
+	if flgGen && !flgDownloadOnly {
+		// if we'll be generating a book, ensure the essentialbooks/generated
+		// repo is locally present, not modified and update it to latest version
+		updateGeneratedRepo()
+	}
+
+	if flgClean && flgAllBooks && flgGen {
 		os.RemoveAll(indexDestDir)
 	}
 
@@ -211,7 +213,7 @@ func main() {
 	}
 
 	showUsage := true
-	if flgGen || flgDeployProd || flgDownloadOnly {
+	if flgGen || flgDownloadOnly {
 		showUsage = false
 		n := len(booksToProcess)
 		for i, book := range booksToProcess {
@@ -222,7 +224,6 @@ func main() {
 		if flgDownloadOnly {
 			return
 		}
-		updateGeneratedRepo()
 		buildFrontend()
 		for i, book := range booksToProcess {
 			genBook(book)

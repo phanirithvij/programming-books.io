@@ -889,7 +889,7 @@ pre.chroma {
 
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */ /* this shows scroller on latest chrome */
 }
 
 .toc-item:hover {
@@ -901,7 +901,7 @@ pre.chroma {
   white-space: nowrap;
   text-overflow: ellipsis;
 
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   color: rgb(88, 88, 88);
 }
 
