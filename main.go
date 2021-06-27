@@ -104,6 +104,7 @@ func main() {
 		flgWc           bool
 		flgDownloadGist string
 		flgCheckinHTML  bool
+		flgRebuildAll   bool
 	)
 
 	{
@@ -127,6 +128,7 @@ func main() {
 		flag.StringVar(&flgDownloadGist, "download-gist", "", "id of the gist to (re)download. Must also provide a book")
 		flag.BoolVar(&flgCheckinHTML, "checkin-html", false, "checkin generated html")
 		flag.BoolVar(&flgDisableNotionCache, "no-cache", false, "if true, disables cache for notion")
+		flag.BoolVar(&flgRebuildAll, "rebuild-all", false, "same as -books-all -clean -gen")
 		flag.Parse()
 
 		// change to true for easier ad-hoc debugging in visual studio code
@@ -136,11 +138,13 @@ func main() {
 			flgGen = true
 		}
 
-		// if flgDeployDev || flgDeployProd {
-		// 	panicIf(flgPreview, "-preview is not compatible with -deploy-prod or -deploy-dev")
-		// }
-
+		if flgRebuildAll {
+			flgAllBooks = true
+			flgClean = true
+			flgGen = true
+		}
 	}
+
 	closeLog := openLog()
 	defer closeLog()
 
