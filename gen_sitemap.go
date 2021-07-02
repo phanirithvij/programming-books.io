@@ -14,7 +14,7 @@ func isFullURL(uri string) bool {
 
 func addSitemapURL(b *Book, uri string) {
 	if !isFullURL(uri) {
-		uri = urlJoin(b.BaseURL(), uri)
+		uri = urlJoin(siteBaseURL, uri)
 	}
 	b.muSitemapURLS.Lock()
 	b.sitemapURLS[uri] = struct{}{}
@@ -31,7 +31,7 @@ Sitemap: %s
 
 func writeSitemap(b *Book) {
 	// http://www.advancedhtml.co.uk/robots-sitemaps.htm
-	sitemapURL := urlJoin(b.BaseURL(), "sitemap.txt")
+	sitemapURL := urlJoin(siteBaseURL, "sitemap.txt")
 	robotsTxt := fmt.Sprintf(sitemapTmpl, sitemapURL)
 	robotsTxtPath := filepath.Join(b.DirOnDisk, "robots.txt")
 	err := ioutil.WriteFile(robotsTxtPath, []byte(robotsTxt), 0644)

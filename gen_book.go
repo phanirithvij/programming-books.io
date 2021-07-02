@@ -13,6 +13,7 @@ import (
 )
 
 const (
+	siteBaseURL   = "https://www.programming-books.io"
 	gitHubBaseURL = "https://github.com/essentialbooks/tools"
 	notionBaseURL = "https://notion.so/"
 )

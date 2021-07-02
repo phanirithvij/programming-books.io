@@ -35,14 +35,14 @@ const (
 
 func genTocItem(page *Page, idx int) []any {
 	title := strings.TrimSpace(page.Title)
-	uri := page.URLLastPath()
+	uri := page.URLRelative()
 	return []interface{}{uri, idx, -1, title}
 }
 
 func genHeadings(page *Page, idx int) [][]any {
 	var res [][]any
 
-	uri := page.URLLastPath()
+	uri := page.URLRelative()
 	headings := page.Headings
 	for _, heading := range headings {
 		title := heading.Text

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
 	"path/filepath"
 	"strings"
@@ -142,10 +141,12 @@ func (p *Page) HTML() template.HTML {
 	return p.BodyHTML
 }
 
-// URLLastPath returns path of the URL
-func (p *Page) URLLastPath() string {
+// URLRelative url assuming the referal is from a document
+// at the same level
+func (p *Page) URLRelative() string {
 	id := p.NotionID
 	title := urlify(p.Title)
+	// ${title}-${id}
 	return title + "-" + id
 }
 
@@ -154,12 +155,12 @@ func (p *Page) URL() string {
 	id := p.NotionID
 	title := urlify(p.Title)
 	// /${title}-${id}
-	return fmt.Sprintf("/%s-%s", title, id)
+	return urlJoin(p.Book.URL(), "/"+title+"-"+id)
 }
 
 // CanonnicalURL returns full url including host
 func (p *Page) CanonnicalURL() string {
-	return urlJoin(p.Book.BaseURL(), p.URL())
+	return urlJoin(siteBaseURL, p.URL())
 }
 
 // NotionURL returns url to edit 000-index.md document
