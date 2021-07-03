@@ -35,8 +35,8 @@ func guessExt(fileName string, contentType string) string {
 	panic(fmt.Errorf("didn't find ext for file '%s', content type '%s'", fileName, contentType))
 }
 
-func downloadImage(c *notionapi.Client, parentTable string, blockID string, uri string) ([]byte, string, error) {
-	img, err := c.DownloadFile(uri, blockID, "")
+func downloadImage(c *notionapi.Client, uri string, block *notionapi.Block) ([]byte, string, error) {
+	img, err := c.DownloadFile(uri, block)
 	if err != nil {
 		return nil, "", err
 	}
@@ -85,7 +85,7 @@ func downloadAndCacheImage(c *notionapi.Client, block *notionapi.Block, imgDir s
 
 	timeStart := time.Now()
 	logf("Downloading %s ... ", uri)
-	imgData, ext, err := downloadImage(c, block.ParentTable, block.ID, uri)
+	imgData, ext, err := downloadImage(c, uri, block)
 	if err != nil {
 		logf("\n  Failed with %s\n", err)
 		return "", err

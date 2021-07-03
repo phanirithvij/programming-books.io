@@ -21,7 +21,7 @@
     <div id="left">
       {{ range .LeftBooks }}
       <div class="img-cover-small-wrapper">
-        <a href="{{.BaseURL}}">
+        <a href="{{.URL}}">
           <img class="img-cover-small" src="{{.CoverSmallURL}}" />
         </a>
       </div>
@@ -50,7 +50,7 @@
           {{ range .Books }}
           <tr>
             <td class="book-name">
-              <a href="{{.BaseURL}}">{{.TitleLong}}</a>
+              <a href="{{.URL}}">{{.TitleLong}}</a>
             </td>
           </tr>
           {{ end }}
@@ -61,7 +61,7 @@
     <div id="right">
       {{ range .RightBooks }}
       <div class="img-cover-small-wrapper">
-        <a href="{{.BaseURL}}">
+        <a href="{{.URL}}">
           <img class="img-cover-small" src="{{.CoverSmallURL}}" />
         </a>
       </div>

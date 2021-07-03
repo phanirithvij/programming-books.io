@@ -58,7 +58,7 @@ func (b *Book) destDir() string {
 
 // URL returns url of the book, used in index.tmpl.html
 func (b *Book) URL() string {
-	return "/"
+	return "/essential/" + b.DirShort + "/"
 }
 
 // Summary returns book summary
@@ -69,14 +69,9 @@ func (b *Book) Summary() template.HTML {
 	return template.HTML(b.summary)
 }
 
-func (b *Book) BaseURL() string {
-	// return "https://www.programming-books.io/essential/" + b.DirShort + "/"
-	return "/essential/" + b.DirShort + "/"
-}
-
 // CanonnicalURL returns full url including host
 func (b *Book) CanonnicalURL() string {
-	return urlJoin(b.BaseURL(), b.URL())
+	return urlJoin(siteBaseURL, b.URL())
 }
 
 // ShareOnTwitterText returns text for sharing on twitter
@@ -98,14 +93,14 @@ func (b *Book) CoverSmallURL() string {
 
 // CoverFullURL returns a URL for the cover including host
 func (b *Book) CoverFullURL() string {
-	return urlJoin(b.BaseURL(), b.CoverURL())
+	return urlJoin(siteBaseURL, b.CoverURL())
 }
 
 // CoverTwitterFullURL returns a URL for the cover including host
 func (b *Book) CoverTwitterFullURL() string {
 	u.PanicIf(b.CoverImageName == "")
 	coverURL := fmt.Sprintf("/covers/twitter/%s", b.CoverImageName)
-	return urlJoin(b.BaseURL(), coverURL)
+	return urlJoin(siteBaseURL, coverURL)
 }
 
 // Chapters returns pages that are top-level chapters
