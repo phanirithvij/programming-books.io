@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"html/template"
 	"io/ioutil"
+	"os"
 	"path/filepath"
 	"sync"
 
@@ -39,7 +40,7 @@ type Book struct {
 	// e.g. "Python.png"
 	CoverImageName string
 
-	client *notionapi.Client
+	client *notionapi.CachingClient
 	// cache related
 	cache *Cache
 
@@ -210,16 +211,19 @@ func downloadBook(book *Book) {
 	u.CreateDirMust(book.NotionCacheDir)
 	logf("Downloading %s, created cache dir: '%s'\n", book.Title, book.NotionCacheDir)
 
-	book.client = newNotionClient()
+	c := newNotionClient()
+	c.Logger = os.Stdout
+	c.DebugLog = true
 	cacheDir := book.NotionCacheDir
 	u.CreateDirMust(cacheDir)
-	d, err := notionapi.NewCachingClient(cacheDir, book.client)
+	d, err := notionapi.NewCachingClient(cacheDir, c)
 	must(err)
 	if flgDisableNotionCache {
 		d.Policy = notionapi.PolicyDownloadAlways
 	} else if flgNoDownload {
 		d.Policy = notionapi.PolicyCacheOnly
 	}
+	book.client = d
 
 	startPageID := book.NotionStartPageID
 	pages, err := d.DownloadPagesRecursively(startPageID, book.afterPageDownload)
