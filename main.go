@@ -32,25 +32,6 @@ var (
 	nDownloadedPages      = 0
 )
 
-func eventObserver(ev interface{}) {
-	switch v := ev.(type) {
-	case *notionapi.EventError:
-		logf(v.Error)
-	case *notionapi.EventDidDownload:
-		nProcessed++
-		nDownloadedPages++
-		logf("%03d '%s' : downloaded in %s\n", nProcessed, v.PageID, v.Duration)
-	case *notionapi.EventDidReadFromCache:
-		nProcessed++
-		nNotionPagesFromCache++
-		if nNotionPagesFromCache < 2 {
-			logf("%03d '%s' : read from cache in %s\n", nProcessed, v.PageID, v.Duration)
-		}
-	case *notionapi.EventGotVersions:
-		logf("downloaded info about %d versions in %s\n", v.Count, v.Duration)
-	}
-}
-
 func shouldCopyImage(path string) bool {
 	return !strings.Contains(path, "@2x")
 }

@@ -210,22 +210,20 @@ func downloadBook(book *Book) {
 	u.CreateDirMust(book.NotionCacheDir)
 	logf("Downloading %s, created cache dir: '%s'\n", book.Title, book.NotionCacheDir)
 
-	nProcessed = 0
-	nNotionPagesFromCache = 0
-	nDownloadedPages = 0
-
 	book.client = newNotionClient()
 	cacheDir := book.NotionCacheDir
 	u.CreateDirMust(cacheDir)
 	d, err := notionapi.NewCachingClient(cacheDir, book.client)
 	must(err)
-	d.EventObserver = eventObserver
-	d.RedownloadNewerVersions = !flgNoDownload
-	d.NoReadCache = flgDisableNotionCache
+	if flgDisableNotionCache {
+		d.Policy = notionapi.PolicyDownloadAlways
+	} else if flgNoDownload {
+		d.Policy = notionapi.PolicyCacheOnly
+	}
 
 	startPageID := book.NotionStartPageID
 	pages, err := d.DownloadPagesRecursively(startPageID, book.afterPageDownload)
 	must(err)
 	nPages := len(pages)
-	logf("Got %d pages for %s, downloaded: %d, from cache: %d\n", nPages, book.Title, nDownloadedPages, nNotionPagesFromCache)
+	logf("Got %d pages for %s, downloaded: %d, from cache: %d\n", nPages, book.Title, d.DownloadedCount, d.FromCacheCount)
 }
