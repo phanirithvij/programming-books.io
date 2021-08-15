@@ -113,7 +113,7 @@ func downloadAndRememberImage(page *Page, block *notionapi.Block, imgDir string,
 		logf("downloadAndCacheImage('%s') from page https://notion.so/%s failed with '%s'\n", link, id, err)
 		must(err)
 	}
-	relURL := "/img/" + filepath.Base(path)
+	relURL := "/essential/" + page.Book.DirShort + "/img/" + filepath.Base(path)
 	im := &ImageMapping{
 		link:        link,
 		path:        path,
