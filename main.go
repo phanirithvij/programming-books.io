@@ -6,7 +6,9 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"runtime"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/kjk/notionapi"
@@ -139,6 +141,7 @@ func main() {
 	}
 
 	notionapi.LogFunc = logf
+	notionapi.PanicOnFailures = true
 
 	// ad-hoc, rarely done tasks
 	if false {
@@ -184,30 +187,45 @@ func main() {
 	if flgAllBooks {
 		booksToProcess = allBooks
 	}
+	for _, book := range booksToProcess {
+		initBook(book)
+	}
 
 	showUsage := true
 	if flgGen || flgDownloadOnly {
+		nThreads := runtime.NumCPU() + 1
+		logf("Generating %d books using %d threads\n", len(booksToProcess), nThreads)
+
 		showUsage = false
 		n := len(booksToProcess)
+		var wg sync.WaitGroup
 		for i, book := range booksToProcess {
-			initBook(book)
 			downloadBook(book)
 			logvf("downloaded book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
+			if flgDownloadOnly {
+				continue
+			}
+			if i == 0 {
+				if flgClean && flgAllBooks {
+					os.RemoveAll(indexDestDir)
+				}
+				buildFrontend()
+				copyGlobalAssets()
+			}
+			wg.Add(1)
+			// no throttling because we assume book downloading takes at least as much time
+			// as generation
+			go func(b *Book) {
+				genBook(b)
+				logf("generated book %d out of %d, name: %s, dir: %s\n", i+1, n, b.Title, b.DirShort)
+				wg.Done()
+			}(book)
 		}
-		if flgDownloadOnly {
+		wg.Wait()
+		if !flgDownloadOnly {
 			return
 		}
 
-		if flgClean && flgAllBooks {
-			os.RemoveAll(indexDestDir)
-		}
-		buildFrontend()
-		copyGlobalAssets()
-
-		for i, book := range booksToProcess {
-			genBook(book)
-			logf("generated book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
-		}
 		genBooksIndex(allBooks)
 		if flgPreview {
 			previewWebsite()

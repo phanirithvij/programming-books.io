@@ -71,6 +71,7 @@ func downloadBook(book *Book) {
 	}
 	book.client = d
 
+	d.PreLoadCache()
 	startPageID := book.NotionStartPageID
 
 	nDownloaded := 0
@@ -79,7 +80,7 @@ func downloadBook(book *Book) {
 		nTotalPages++
 		if di.FromCache {
 			nTotalDownloaded++
-			if nTotalPages == 1 || nTotalPages%16 == 0 {
+			if nTotalPages == 1 || nTotalPages%64 == 0 {
 				logf("CACHE '%s' %d\n", di.Page.NotionID.NoDashID, nTotalPages)
 			}
 		} else {
