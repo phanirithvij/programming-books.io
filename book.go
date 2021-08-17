@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"html/template"
 	"io/ioutil"
-	"os"
 	"path/filepath"
 	"sync"
 
@@ -195,9 +194,12 @@ func downloadBook(book *Book) {
 	u.CreateDirMust(book.NotionCacheDir)
 	logf("Downloading %s, created cache dir: '%s'\n", book.Title, book.NotionCacheDir)
 
-	c := newNotionClient()
-	c.Logger = os.Stdout
-	c.DebugLog = true
+	c := &notionapi.Client{
+		AuthToken: notionAuthToken,
+	}
+	c.Logger = logFile
+	//c.Logger = os.Stdout
+	//c.DebugLog = true
 	cacheDir := book.NotionCacheDir
 	u.CreateDirMust(cacheDir)
 	d, err := notionapi.NewCachingClient(cacheDir, c)
@@ -212,7 +214,20 @@ func downloadBook(book *Book) {
 
 	startPageID := book.NotionStartPageID
 
+	nDownloaded := 0
+	nTotalPages := 0
 	afterPageDownload := func(di *notionapi.DownloadInfo) error {
+		nTotalPages++
+		if di.FromCache {
+			nTotalDownloaded++
+			if nTotalPages == 1 || nTotalPages%16 == 0 {
+				logf("CACHE '%s' %d\n", di.Page.NotionID.NoDashID, nTotalPages)
+			}
+		} else {
+			nTotalFromCache++
+			nDownloaded++
+			logf("DL    '%s', %d\n", di.Page.NotionID.NoDashID, nTotalPages)
+		}
 		page := di.Page
 		id := page.GetNotionID().NoDashID
 		p := &Page{

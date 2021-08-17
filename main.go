@@ -244,14 +244,6 @@ func copyGlobalAssets() {
 	copyFilesMust(dstDir, filepath.Join("fe", "tmpl"), []string{"favicon.ico", "index.css", "main.css"})
 }
 
-func newNotionClient() *notionapi.Client {
-	client := &notionapi.Client{
-		AuthToken: notionAuthToken,
-	}
-	// client.Logger = logFile
-	return client
-}
-
 // download a single gist and store in the cache for a given book
 func downloadSingleGist(book *Book, gistID string) {
 	bookName := book.DirShort
