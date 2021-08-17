@@ -182,22 +182,6 @@ func calcPageHeadings(page *Page) {
 	page.Headings = headings
 }
 
-func (b *Book) afterPageDownload(page *notionapi.Page) error {
-	id := toNoDashID(page.ID)
-	p := &Page{
-		NotionPage: page,
-		NotionID:   id,
-		Book:       b,
-	}
-	b.idToPage[id] = p
-	if !flgDownloadOnly {
-		evalCodeSnippetsForPage(p)
-	}
-	downloadImages(b, p)
-	calcPageHeadings(p)
-	return nil
-}
-
 func initBook(book *Book) {
 	book.DirOnDisk = filepath.Join(gDestDir, "www", "essential", book.DirShort)
 	book.DirCache = filepath.Join("books", book.DirShort, "cache")
@@ -218,6 +202,7 @@ func downloadBook(book *Book) {
 	u.CreateDirMust(cacheDir)
 	d, err := notionapi.NewCachingClient(cacheDir, c)
 	must(err)
+	d.CacheDirFiles = filepath.Join(cacheDir, "img")
 	if flgDisableNotionCache {
 		d.Policy = notionapi.PolicyDownloadAlways
 	} else if flgNoDownload {
@@ -226,7 +211,25 @@ func downloadBook(book *Book) {
 	book.client = d
 
 	startPageID := book.NotionStartPageID
-	pages, err := d.DownloadPagesRecursively(startPageID, book.afterPageDownload)
+
+	afterPageDownload := func(di *notionapi.DownloadInfo) error {
+		page := di.Page
+		id := page.GetNotionID().NoDashID
+		p := &Page{
+			NotionPage: page,
+			NotionID:   id,
+			Book:       book,
+		}
+		book.idToPage[id] = p
+		if !flgDownloadOnly {
+			evalCodeSnippetsForPage(p)
+		}
+		downloadImages(d, book, p)
+		calcPageHeadings(p)
+		return nil
+	}
+
+	pages, err := d.DownloadPagesRecursively(startPageID, afterPageDownload)
 	must(err)
 	nPages := len(pages)
 	logf("Got %d pages for %s, downloaded: %d, from cache: %d\n", nPages, book.Title, d.DownloadedCount, d.FromCacheCount)

@@ -1,118 +1,19 @@
 package main
 
 import (
-	"crypto/sha1"
-	"fmt"
-	"io/ioutil"
-	"os"
 	"path/filepath"
-	"strings"
-	"time"
-
-	"github.com/kjk/u"
 
 	"github.com/kjk/notionapi"
 )
 
-func guessExt(fileName string, contentType string) string {
-	ext := strings.ToLower(filepath.Ext(fileName))
-	// TODO: maybe allow every non-empty extension. This
-	// white-listing might not be a good idea
-	switch ext {
-	case ".png", ".jpg", ".jpeg", ".gif", ".webp", ".bmp", ".tiff", ".svg":
-		return ext
-	}
-
-	contentType = strings.ToLower(contentType)
-	switch contentType {
-	case "image/png":
-		return ".png"
-	case "image/jpeg":
-		return ".jpg"
-	case "image/svg+xml":
-		return ".svg"
-	}
-	panic(fmt.Errorf("didn't find ext for file '%s', content type '%s'", fileName, contentType))
-}
-
-func downloadImage(c *notionapi.Client, uri string, block *notionapi.Block) ([]byte, string, error) {
-	img, err := c.DownloadFile(uri, block)
-	if err != nil {
-		return nil, "", err
-	}
-	ext := guessExt(uri, img.Header.Get("Content-Type"))
-	return img.Data, ext, nil
-}
-
-func sha1OfLink(link string) string {
-	link = strings.ToLower(link)
-	h := sha1.New()
-	h.Write([]byte(link))
-	return fmt.Sprintf("%x", h.Sum(nil))
-}
-
-var (
-	dirToImgFiles = map[string][]os.FileInfo{}
-)
-
-// checks if an image corresponding to this sha1 is present
-// (same name after removing extension)
-func findImageInDir(imgDir string, sha1 string) string {
-	imgFiles := dirToImgFiles[imgDir]
-	if imgFiles == nil {
-		imgFiles, _ = ioutil.ReadDir(imgDir)
-		dirToImgFiles[imgDir] = imgFiles
-	}
-	for _, fi := range imgFiles {
-		if strings.HasPrefix(fi.Name(), sha1) {
-			return filepath.Join(imgDir, fi.Name())
-		}
-	}
-	return ""
-}
-
-// return path of cached image on disk
-func downloadAndCacheImage(c *notionapi.Client, block *notionapi.Block, imgDir string, uri string) (string, error) {
-	err := os.MkdirAll(imgDir, 0755)
-	must(err)
-
-	sha := sha1OfLink(uri)
-	cachedPath := findImageInDir(imgDir, sha)
-	if cachedPath != "" {
-		logvf("Image %s already downloaded as %s\n", uri, cachedPath)
-		return cachedPath, nil
-	}
-
-	timeStart := time.Now()
-	logf("Downloading %s ... ", uri)
-	imgData, ext, err := downloadImage(c, uri, block)
-	if err != nil {
-		logf("\n  Failed with %s\n", err)
-		return "", err
-	}
-
-	cachedPath = filepath.Join(imgDir, sha+ext)
-
-	u.WriteFileMust(cachedPath, imgData)
-	logf(" in %s.\nWrote as '%s'\n", time.Since(timeStart), cachedPath)
-
-	return cachedPath, nil
-}
-
-func downloadAndRememberImage(page *Page, block *notionapi.Block, imgDir string, link string) {
-	if !isFullURL(link) {
-		id := toNoDashID(page.NotionID)
-		logf("downloadAndRememberImage(): skipping '%s' because not a valid url\npage: https://notion.so/%s\n\n", link, id)
-		return
-	}
-
-	client := newNotionClient()
-	path, err := downloadAndCacheImage(client, block, imgDir, link)
+func downloadImage(d *notionapi.CachingClient, page *Page, block *notionapi.Block, link string) {
+	rsp, err := d.DownloadFile(link, block)
 	if err != nil {
 		id := toNoDashID(page.NotionID)
-		logf("downloadAndCacheImage('%s') from page https://notion.so/%s failed with '%s'\n", link, id, err)
+		logf("downloadImage('%s') from page https://notion.so/%s failed with '%s'\n", link, id, err)
 		must(err)
 	}
+	path := rsp.CacheFilePath
 	relURL := "/essential/" + page.Book.DirShort + "/img/" + filepath.Base(path)
 	im := &ImageMapping{
 		link:        link,
@@ -122,11 +23,9 @@ func downloadAndRememberImage(page *Page, block *notionapi.Block, imgDir string,
 	page.Images = append(page.Images, im)
 }
 
-func downloadImages(book *Book, page *Page) {
-	imgDir := filepath.Join(book.NotionCacheDir, "img")
-
+func downloadImages(d *notionapi.CachingClient, book *Book, page *Page) {
 	handleImage := func(block *notionapi.Block) {
-		downloadAndRememberImage(page, block, imgDir, block.ImageURL)
+		downloadImage(d, page, block, block.Source)
 	}
 
 	fn := func(block *notionapi.Block) {
@@ -138,7 +37,7 @@ func downloadImages(book *Book, page *Page) {
 	root := page.NotionPage.Root()
 	format := root.FormatPage()
 	if format.PageCover != "" {
-		downloadAndRememberImage(page, root, imgDir, format.PageCover)
+		downloadImage(d, page, root, format.PageCover)
 	}
 	page.NotionPage.ForEachBlock(fn)
 }

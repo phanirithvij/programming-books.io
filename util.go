@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -10,8 +11,25 @@ import (
 	"github.com/kjk/u"
 )
 
-var must = u.Must
-var panicIf = u.PanicIf
+func panicIf(cond bool, args ...interface{}) {
+	if !cond {
+		return
+	}
+	s := "condition failed"
+	if len(args) > 0 {
+		s = fmt.Sprintf("%s", args[0])
+		if len(args) > 1 {
+			s = fmt.Sprintf(s, args[1:]...)
+		}
+	}
+	panic(s)
+}
+
+func must(err error) {
+	if err != nil {
+		panic(err)
+	}
+}
 
 // whitelisted characters valid in url
 func validateRune(c rune) byte {

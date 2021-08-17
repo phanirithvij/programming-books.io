@@ -26,12 +26,6 @@ var (
 	nTotalFromCache  int
 )
 
-var (
-	nProcessed            = 0
-	nNotionPagesFromCache = 0
-	nDownloadedPages      = 0
-)
-
 func shouldCopyImage(path string) bool {
 	return !strings.Contains(path, "@2x")
 }
