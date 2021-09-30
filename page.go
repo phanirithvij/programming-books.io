@@ -6,7 +6,6 @@ import (
 	"strings"
 
 	"github.com/kjk/notionapi"
-	"github.com/kjk/u"
 )
 
 // HeadingInfo describes header/sub header
@@ -214,7 +213,7 @@ func getSubPages(page *notionapi.Page, pageIDToPage map[string]*Page) []*notiona
 		toRemove[idx] = true
 		id := toNoDashID(block.ID)
 		subPage := pageIDToPage[id]
-		u.PanicIf(subPage == nil, "no sub page for id %s", id)
+		panicIf(subPage == nil, "no sub page for id %s", id)
 		res = append(res, subPage.NotionPage)
 	}
 	removeBlocks(page, toRemove)
@@ -342,7 +341,7 @@ func bookPageFromNotionPage(book *Book, page *notionapi.Page) *Page {
 func bookFromPages(book *Book) {
 	startPageID := book.NotionStartPageID
 	page := book.idToPage[startPageID].NotionPage
-	u.PanicIf(page.Root().Type != notionapi.BlockPage, "start block is of type '%s' and not '%s'", page.Root().Type, notionapi.BlockPage)
+	panicIf(page.Root().Type != notionapi.BlockPage, "start block is of type '%s' and not '%s'", page.Root().Type, notionapi.BlockPage)
 	book.TitleLong = page.Root().Title
 	book.RootPage = bookPageFromNotionPage(book, page)
 	//evalCodeSnippets(book)

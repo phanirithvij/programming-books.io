@@ -7,8 +7,6 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
-
-	"github.com/kjk/u"
 )
 
 const (
@@ -135,7 +133,7 @@ func githubGet(endpoint string) string {
 	resp, err := http.DefaultClient.Do(req)
 	must(err)
 	panicIf(resp.StatusCode >= 400, "http.Do('%s') failed with '%s'", uri, resp.Status)
-	defer u.CloseNoError(resp.Body)
+	defer closeNoError(resp.Body)
 	d, err := ioutil.ReadAll(resp.Body)
 	must(err)
 	return string(d)
@@ -149,7 +147,7 @@ func githubPost(endpoint string, body io.Reader) string {
 	resp, err := http.DefaultClient.Do(req)
 	must(err)
 	panicIf(resp.StatusCode >= 400, "http.Do('%s') failed with '%s'", uri, resp.Status)
-	defer u.CloseNoError(resp.Body)
+	defer closeNoError(resp.Body)
 	d, err := ioutil.ReadAll(resp.Body)
 	must(err)
 	return string(d)

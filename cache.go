@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"io"
 	"os"
 
 	"github.com/kjk/siser"
@@ -37,19 +38,19 @@ type Cache struct {
 
 func recGetMust(rec *siser.Record, name string) string {
 	v, ok := rec.Get(name)
-	u.PanicIf(!ok)
+	panicIf(!ok)
 	return v
 }
 
 func recGetMustNonEmpty(rec *siser.Record, name string) string {
 	v, ok := rec.Get(name)
-	u.PanicIf(!ok || v == "")
+	panicIf(!ok || v == "")
 	return v
 }
 
 func (c *Cache) saveRecord(rec *siser.Record) error {
 	f := openForAppend(c.path)
-	defer u.CloseNoError(f)
+	defer closeNoError(f)
 	w := siser.NewWriter(f)
 	_, err := w.WriteRecord(rec)
 	return err
@@ -64,7 +65,7 @@ func (c *Cache) saveGist(gistID, gistContent string) bool {
 	if existing != nil && existing.Gist == gistContent {
 		return false
 	}
-	u.PanicIf(gistID == "" || gistContent == "")
+	panicIf(gistID == "" || gistContent == "")
 	rec.Write("GistID", gistID)
 	rec.Write("Gist", gistContent)
 	err := c.saveRecord(rec)
@@ -79,7 +80,7 @@ func (c *Cache) saveGist(gistID, gistContent string) bool {
 }
 
 func (c *Cache) loadGist(rec *siser.Record) {
-	u.PanicIf(rec.Name != recNameGist)
+	panicIf(rec.Name != recNameGist)
 	gist := &CacheGist{
 		ID:   recGetMustNonEmpty(rec, "GistID"),
 		Gist: recGetMustNonEmpty(rec, "Gist"),
@@ -105,7 +106,7 @@ func (c *Cache) saveGistOutput(gist, output string) {
 		Name: recNameGistOutput,
 	}
 	//TODO: probably remove, it's ok to have no output
-	//u.PanicIf(output == "")
+	//panicIf(output == "")
 	rec.Write("Gist", gist)
 	rec.Write("GistOutput", output)
 	err := c.saveRecord(rec)
@@ -159,7 +160,7 @@ func loadCache(book *Book) *Cache {
 		logf("  cache file %s doesn't exist\n", path)
 		return c
 	}
-	defer u.CloseNoError(f)
+	defer closeNoError(f)
 
 	nRecords := 0
 	r := siser.NewReader(bufio.NewReader(f))
@@ -178,4 +179,10 @@ func loadCache(book *Book) *Cache {
 	must(r.Err())
 	logf(" got %d cache records\n", nRecords)
 	return c
+}
+
+// closeNoError is like io.Closer Close() but ignores an error
+// use as: defer CloseNoError(f)
+func closeNoError(f io.Closer) {
+	_ = f.Close()
 }

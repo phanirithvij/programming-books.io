@@ -5,7 +5,6 @@ import (
 	"strings"
 
 	"github.com/kjk/notionapi"
-	"github.com/kjk/u"
 )
 
 /*
@@ -65,7 +64,7 @@ func genBookTOCSearchMust(book *Book) {
 
 		toc = append(toc, tocItem)
 		chapIdx := len(toc) - 1
-		u.PanicIf(chapIdx < 0)
+		panicIf(chapIdx < 0)
 
 		headings := genHeadings(chapter, chapIdx)
 		toc = append(toc, headings...)
@@ -102,7 +101,7 @@ func genBookTOCSearchMust(book *Book) {
 	} else {
 		d, err = json.MarshalIndent(toc, "", "  ")
 	}
-	u.PanicIfErr(err)
+	panicIfErr(err)
 	s := "gTocItems = " + string(d) + ";"
 	book.tocData = []byte(s)
 

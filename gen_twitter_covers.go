@@ -15,28 +15,28 @@ import (
 
 func loadImageMust(path string) image.Image {
 	r, err := os.Open(path)
-	u.PanicIfErr(err)
+	panicIfErr(err)
 	defer r.Close()
 	img, _, err := image.Decode(r)
-	u.PanicIfErr(err)
+	panicIfErr(err)
 	return img
 }
 
 func saveImageAsPNGMust(path string, img image.Image) {
 	w, err := os.Create(path)
-	u.PanicIfErr(err)
+	panicIfErr(err)
 	defer func() {
 		err = w.Close()
-		u.PanicIfErr(err)
+		panicIfErr(err)
 	}()
 	err = png.Encode(w, img)
-	u.PanicIfErr(err)
+	panicIfErr(err)
 }
 
 func optiImageMust(path string) {
 	cmd := exec.Command("optipng", "-o7", path)
 	_, err := cmd.CombinedOutput()
-	u.PanicIfErr(err)
+	panicIfErr(err)
 }
 
 func saveImageAsPNGAndOptimize(path string, img image.Image) {
@@ -52,7 +52,7 @@ func getSubimage(img image.Image, r image.Rectangle) image.Image {
 	case *image.Paletted:
 		return im.SubImage(r)
 	}
-	u.PanicIf(true, "unsupported image type %T", img)
+	panicIf(true, "unsupported image type %T", img)
 	return img
 }
 
@@ -74,7 +74,7 @@ func printImageInfo(path string, img image.Image) {
 func getExistingImagesMust(dir string) map[string]bool {
 	m := make(map[string]bool)
 	fileInfos, err := ioutil.ReadDir(dir)
-	u.PanicIfErr(err)
+	panicIfErr(err)
 	for _, fi := range fileInfos {
 		name := fi.Name()
 		ext := strings.ToLower(filepath.Ext(name))
@@ -89,7 +89,7 @@ func getExistingImagesMust(dir string) map[string]bool {
 func getCoversListMust(dir string) []string {
 	var res []string
 	fileInfos, err := ioutil.ReadDir(dir)
-	u.PanicIfErr(err)
+	panicIfErr(err)
 	for _, fi := range fileInfos {
 		name := fi.Name()
 		ext := strings.ToLower(filepath.Ext(name))

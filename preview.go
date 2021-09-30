@@ -19,13 +19,13 @@ func findFileForURL(uri *url.URL) string {
 		fileName = "index.html"
 	}
 	path := filepath.Join(dir, fileName)
-	if u.FileExists(path) {
+	if fileExists(path) {
 		return path
 	}
-	if u.FileExists(path + ".html") {
+	if fileExists(path + ".html") {
 		return path + ".html"
 	}
-	if u.FileExists(path + "/index.html") {
+	if fileExists(path + "/index.html") {
 		return path + "/"
 	}
 	logf("didn't find file or url '%s'\n", uriPath)

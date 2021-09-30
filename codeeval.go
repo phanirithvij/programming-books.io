@@ -7,8 +7,6 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strings"
-
-	"github.com/kjk/u"
 )
 
 var (
@@ -49,7 +47,7 @@ func evalCode(e *Eval) (*EvalResponse, error) {
 	if err != nil {
 		return nil, err
 	}
-	defer u.CloseNoError(rsp.Body)
+	defer closeNoError(rsp.Body)
 	d, err = ioutil.ReadAll(rsp.Body)
 	must(err)
 	if rsp.StatusCode != 200 {

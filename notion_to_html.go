@@ -7,8 +7,6 @@ import (
 
 	"github.com/kjk/notionapi"
 	"github.com/kjk/notionapi/tohtml"
-
-	"github.com/kjk/u"
 )
 
 /*
@@ -112,7 +110,7 @@ func (c *Converter) RenderEmbed(block *notionapi.Block) bool {
 		//c.genReplitEmbed(block)
 		//return true
 	}
-	u.PanicIf(true, "unsupported embed %s", uri)
+	panicIf(true, "unsupported embed %s", uri)
 	return false
 }
 
@@ -226,7 +224,7 @@ func (c *Converter) RenderPage(block *notionapi.Block) bool {
 
 // In notion I want to have @TODO lines that are not rendered in html output
 func isBlockTextTodo(block *notionapi.Block) bool {
-	u.PanicIf(block.Type != notionapi.BlockText, "only supported on '%s' block, called on '%s' block", notionapi.BlockText, block.Type)
+	panicIf(block.Type != notionapi.BlockText, "only supported on '%s' block, called on '%s' block", notionapi.BlockText, block.Type)
 	blocks := block.InlineContent
 	if len(blocks) == 0 {
 		return false
@@ -246,7 +244,7 @@ func isBlockTextTodo(block *notionapi.Block) bool {
 }
 
 func isBlockTextEmpty(block *notionapi.Block) bool {
-	u.PanicIf(block.Type != notionapi.BlockText, "only supported on '%s' block, called on '%s' block", notionapi.BlockText, block.Type)
+	panicIf(block.Type != notionapi.BlockText, "only supported on '%s' block, called on '%s' block", notionapi.BlockText, block.Type)
 	blocks := block.InlineContent
 	return len(blocks) == 0
 }

@@ -43,7 +43,7 @@ func copyCoversMust(dir string) {
 
 func copyImages(book *Book) {
 	src := filepath.Join(book.NotionCacheDir, "img")
-	if !u.DirExists(src) {
+	if !dirExists(src) {
 		return
 	}
 	dst := filepath.Join(book.destDir(), "img")
@@ -77,7 +77,6 @@ func main() {
 		flgGen          bool
 		flgBook         string
 		flgAllBooks     bool
-		flgWc           bool
 		flgDownloadGist string
 		flgCheckinHTML  bool
 		flgRebuildAll   bool
@@ -92,7 +91,6 @@ func main() {
 	}
 
 	{
-		flag.BoolVar(&flgWc, "wc", false, "wc -l")
 		flag.BoolVar(&flgNoCleanCheck, "no-clean-check", false, "don't check if destination directory is not clean")
 		flag.BoolVar(&flgPreview, "preview", false, "preview the book locally")
 		flag.BoolVar(&flgClean, "clean", false, "re-create 'www' directory")
@@ -154,11 +152,6 @@ func main() {
 	}
 	if false {
 		optimizeAllImages()
-		return
-	}
-
-	if flgWc {
-		doLineCount()
 		return
 	}
 
@@ -278,7 +271,7 @@ func downloadSingleGist(book *Book, gistID string) {
 
 func updateGeneratedRepo() {
 	dir := gDestDir
-	if !u.PathExists(dir) {
+	if !pathExists(dir) {
 		fmt.Printf("updateGeneratedRepo: directory %s doesn't exist. Must git clone https://github.com/essentialbooks/generated there\n", dir)
 		os.Exit(1)
 	}
@@ -294,16 +287,16 @@ func commitAndPushGeneratedHTMLToRepo() {
 	{
 		cmd := exec.Command("git", "add", "www")
 		cmd.Dir = dir
-		u.RunCmdMust(cmd)
+		runCmdMust(cmd)
 	}
 	{
 		cmd := exec.Command("git", "commit", "-am", "update generated html")
 		cmd.Dir = dir
-		u.RunCmdMust(cmd)
+		runCmdMust(cmd)
 	}
 	{
 		cmd := exec.Command("git", "push")
 		cmd.Dir = dir
-		u.RunCmdMust(cmd)
+		runCmdMust(cmd)
 	}
 }

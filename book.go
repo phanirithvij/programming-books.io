@@ -8,7 +8,6 @@ import (
 	"sync"
 
 	"github.com/kjk/notionapi"
-	"github.com/kjk/u"
 )
 
 // Book represents a book
@@ -81,13 +80,13 @@ func (b *Book) ShareOnTwitterText() string {
 
 // CoverURL returns url to cover image
 func (b *Book) CoverURL() string {
-	u.PanicIf(b.CoverImageName == "")
+	panicIf(b.CoverImageName == "")
 	return fmt.Sprintf("/covers/%s", b.CoverImageName)
 }
 
 // CoverSmallURL returns url to small cover image
 func (b *Book) CoverSmallURL() string {
-	u.PanicIf(b.CoverImageName == "")
+	panicIf(b.CoverImageName == "")
 	return fmt.Sprintf("/covers_small/%s", b.CoverImageName)
 }
 
@@ -98,7 +97,7 @@ func (b *Book) CoverFullURL() string {
 
 // CoverTwitterFullURL returns a URL for the cover including host
 func (b *Book) CoverTwitterFullURL() string {
-	u.PanicIf(b.CoverImageName == "")
+	panicIf(b.CoverImageName == "")
 	coverURL := fmt.Sprintf("/covers/twitter/%s", b.CoverImageName)
 	return urlJoin(siteBaseURL, coverURL)
 }

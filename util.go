@@ -25,6 +25,20 @@ func panicIf(cond bool, args ...interface{}) {
 	panic(s)
 }
 
+func panicIfErr(err error, args ...interface{}) {
+	if err == nil {
+		return
+	}
+	s := err.Error()
+	if len(args) > 0 {
+		s = fmt.Sprintf("%s", args[0])
+		if len(args) > 1 {
+			s = fmt.Sprintf(s, args[1:]...)
+		}
+	}
+	panic(s)
+}
+
 func must(err error) {
 	if err != nil {
 		panic(err)
@@ -254,13 +268,56 @@ func buildFrontend() {
 		os.Remove("package-lock.json")
 		os.RemoveAll("node_modules")
 		cmd := exec.Command("yarn", "install")
-		u.RunCmdMust(cmd)
+		runCmdMust(cmd)
 	}
 	// could also be
 	// .\node_modules\.bin\rollup -c
 	{
 		cmd := exec.Command("yarn", "build-dev")
-		u.RunCmdMust(cmd)
+		runCmdMust(cmd)
 	}
 	didBuildFrontEnd = true
+}
+
+func fileExists(path string) bool {
+	st, err := os.Lstat(path)
+	return err == nil && st.Mode().IsRegular()
+}
+
+func pathExists(path string) bool {
+	_, err := os.Lstat(path)
+	return err == nil
+}
+
+func dirExists(path string) bool {
+	st, err := os.Lstat(path)
+	return err == nil && st.IsDir()
+}
+
+func fmtCmdShort(cmd exec.Cmd) string {
+	cmd.Path = filepath.Base(cmd.Path)
+	return cmd.String()
+}
+func runCmdMust(cmd *exec.Cmd) string {
+	fmt.Printf("> %s\n", fmtCmdShort(*cmd))
+	canCapture := (cmd.Stdout == nil) && (cmd.Stderr == nil)
+	if canCapture {
+		out, err := cmd.CombinedOutput()
+		if err == nil {
+			if len(out) > 0 {
+				fmt.Printf("Output:\n%s\n", string(out))
+			}
+			return string(out)
+		}
+		fmt.Printf("cmd '%s' failed with '%s'. Output:\n%s\n", cmd, err, string(out))
+		must(err)
+		return string(out)
+	}
+	err := cmd.Run()
+	if err == nil {
+		return ""
+	}
+	fmt.Printf("cmd '%s' failed with '%s'\n", cmd, err)
+	must(err)
+	return ""
 }
