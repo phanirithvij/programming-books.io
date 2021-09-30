@@ -31,8 +31,8 @@ func setDefaultFileNameFromLanguage(sf *SourceFile) error {
 	case "cpp", "cplusplus", "c++":
 		ext = ".cpp"
 	default:
-		logf("detectFileNameFromLanguage: lang '%s' is not supported\n", sf.Lang)
-		logf("Notion page: %s\n", sf.NotionOriginURL)
+		logf(ctx(), "detectFileNameFromLanguage: lang '%s' is not supported\n", sf.Lang)
+		logf(ctx(), "Notion page: %s\n", sf.NotionOriginURL)
 		panic("")
 	}
 	sf.Directive.FileName = "main" + ext
@@ -89,7 +89,7 @@ func gistDownloadCached(cache *Cache, gistID string) string {
 	}
 	timeStart := time.Now()
 	newGist := gistDownloadMust(gistID)
-	logf("gist '%s': downloaded in %s\n", gistID, time.Since(timeStart))
+	logf(ctx(), "gist '%s': downloaded in %s\n", gistID, time.Since(timeStart))
 	cache.saveGist(gistID, newGist.Raw)
 	return newGist.Raw
 }
@@ -134,7 +134,7 @@ func evalGist(gistStr string) (*EvalResponse, error) {
 	panicIf(gist.Truncated) // TODO: implement if needed
 	var files []File
 	for name, gf := range gist.Files {
-		// logf("  file: '%s'\n", name)
+		// logf(ctx(), "  file: '%s'\n", name)
 		panicIf(gf.Truncated)
 		f := File{
 			Name:    name,
@@ -150,7 +150,7 @@ func evalGist(gistStr string) (*EvalResponse, error) {
 		Files:    files,
 	}
 	resp, err := evalCode(e)
-	// logf("Eval response:\n%s\n", out)
+	// logf(ctx(), "Eval response:\n%s\n", out)
 	return resp, err
 }
 
@@ -167,7 +167,7 @@ func evalCached(cache *Cache, gistID string, gist string) string {
 	if err != nil {
 		logvf("\nfailed to execute gist: %s, gist sha1: %s\n", gistID, sha1)
 		logvf("error: %s\n", err)
-		//logf("gist body:\n%s\n", gist)
+		//logf(ctx(), "gist body:\n%s\n", gist)
 		out := fmt.Sprintf("failed to execute gist '%s'\n", gist)
 		return out
 	}
@@ -241,7 +241,7 @@ func evalCodeSnippetsForPage(page *Page) {
 		panicIf(block.Type != notionapi.BlockEmbed)
 		uri := block.FormatEmbed().DisplaySource
 		if strings.Contains(uri, "https://codeeval.dev") {
-			logf("found codeeval: '%s'\n", uri)
+			logf(ctx(), "found codeeval: '%s'\n", uri)
 			panic("embed blocks NYI")
 		}
 	}
@@ -268,7 +268,7 @@ func evalCodeSnippetsForPage(page *Page) {
 			if len(lines) > 0 {
 				firstLine = lines[0]
 			}
-			logf("Page: %s\n  %s\n", page.Title, firstLine)
+			logf(ctx(), "Page: %s\n  %s\n", page.Title, firstLine)
 		}
 
 		//lang := getLangFromFileExt(filepath.Ext(path))
@@ -287,8 +287,8 @@ func evalCodeSnippetsForPage(page *Page) {
 		data := []byte(block.Code)
 		err := setSourceFileData(sf, data)
 		if err != nil {
-			logf("genBlock: setSourceFileData() failed with '%s'\n", err)
-			logf("page: %s\n", sf.NotionOriginURL)
+			logf(ctx(), "genBlock: setSourceFileData() failed with '%s'\n", err)
+			logf(ctx(), "page: %s\n", sf.NotionOriginURL)
 			//must(err)
 		}
 
@@ -332,6 +332,6 @@ func createGistFromGlot(sf *SourceFile) {
 		gist := createGistMust(newGist)
 		//gistURL := "https://gist.github.com/" + gist.ID
 		codeEvalURL := "https://codeeval.dev/gist/" + gist.ID
-		logf("Created a gist %s\n%s\n\n", sf.NotionOriginURL, codeEvalURL)
+		logf(ctx(), "Created a gist %s\n%s\n\n", sf.NotionOriginURL, codeEvalURL)
 	*/
 }

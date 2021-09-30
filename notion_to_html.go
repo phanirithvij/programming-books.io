@@ -25,13 +25,13 @@ type Converter struct {
 
 func (c *Converter) reportIfInvalidLink(uri string, extractedID string) {
 	pageID := c.page.getID()
-	logf("Found invalid link '%s' (id: '%s') in page https://notion.so/%s\n", uri, extractedID, pageID)
+	logf(ctx(), "Found invalid link '%s' (id: '%s') in page https://notion.so/%s\n", uri, extractedID, pageID)
 	if extractedID == "" {
 		return
 	}
 	page := findPageByID(c.book, extractedID)
 	if page != nil {
-		logf(" strange, we actually found it via findPageByID()\n")
+		logf(ctx(), " strange, we actually found it via findPageByID()\n")
 	}
 }
 
@@ -62,7 +62,7 @@ func (c *Converter) getURLAndTitleForBlock(block *notionapi.Block) (string, stri
 	page := c.book.idToPage[id]
 	if page == nil {
 		title := cleanTitle(block.Title)
-		logf("No article for id %s %s\n", id, title)
+		logf(ctx(), "No article for id %s %s\n", id, title)
 		url := "/article/" + id + "/" + urlify(title)
 		return url, title
 	}
@@ -86,10 +86,10 @@ func findImageMapping(images []*ImageMapping, link string) *ImageMapping {
 			return im
 		}
 	}
-	logf("Didn't find image with link '%s'\n", link)
-	logf("Available images:\n")
+	logf(ctx(), "Didn't find image with link '%s'\n", link)
+	logf(ctx(), "Available images:\n")
 	for _, im := range images {
-		logf("  link: %s, relativeURL: %s, path: %s\n", im.link, im.relativeURL, im.path)
+		logf(ctx(), "  link: %s, relativeURL: %s, path: %s\n", im.link, im.relativeURL, im.path)
 	}
 	return nil
 }
@@ -118,8 +118,8 @@ func (c *Converter) RenderEmbed(block *notionapi.Block) bool {
 func (c *Converter) genReplitEmbed(block *notionapi.Block) {
 	uri := block.FormatEmbed().DisplaySource
 	uri = strings.Replace(uri, "?lite=true", "", -1)
-	logf("Page: https://notion.so/%s\n", c.page.NotionID)
-	logf("  Replit: %s\n", uri)
+	logf(ctx(), "Page: https://notion.so/%s\n", c.page.NotionID)
+	logf(ctx(), "  Replit: %s\n", uri)
 	panic("we no longer use replit")
 }
 */
@@ -158,7 +158,7 @@ func (c *Converter) genGitEmbed(block *notionapi.Block) {
 	// currently we only handle source code file embeds but might handle
 	// others (graphs etc.)
 	if f == nil {
-		logf("genEmbed: didn't find source file for url %s\n", uri)
+		logf(ctx(), "genEmbed: didn't find source file for url %s\n", uri)
 		return
 	}
 

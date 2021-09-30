@@ -147,7 +147,7 @@ func (c *Cache) getGistOuputBySha1(sha1 string) *CacheGistOutput {
 
 func loadCache(book *Book) *Cache {
 	path := book.cachePath()
-	logf("loadCache: %s\n", path)
+	logf(ctx(), "loadCache: %s\n", path)
 	u.CreateDirForFileMust(path)
 
 	c := &Cache{
@@ -157,7 +157,7 @@ func loadCache(book *Book) *Cache {
 	f, err := os.Open(path)
 	if err != nil {
 		// it's ok if file doesn't exist
-		logf("  cache file %s doesn't exist\n", path)
+		logf(ctx(), "  cache file %s doesn't exist\n", path)
 		return c
 	}
 	defer closeNoError(f)
@@ -177,7 +177,7 @@ func loadCache(book *Book) *Cache {
 		nRecords++
 	}
 	must(r.Err())
-	logf(" got %d cache records\n", nRecords)
+	logf(ctx(), " got %d cache records\n", nRecords)
 	return c
 }
 

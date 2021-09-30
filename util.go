@@ -1,15 +1,25 @@
 package main
 
 import (
+	"context"
 	"fmt"
+	"io/ioutil"
+	"log"
 	"os"
 	"os/exec"
+	"os/signal"
 	"path/filepath"
+	"runtime"
 	"strconv"
 	"strings"
+	"syscall"
 
 	"github.com/kjk/u"
 )
+
+func ctx() context.Context {
+	return context.Background()
+}
 
 func panicIf(cond bool, args ...interface{}) {
 	if !cond {
@@ -298,6 +308,7 @@ func fmtCmdShort(cmd exec.Cmd) string {
 	cmd.Path = filepath.Base(cmd.Path)
 	return cmd.String()
 }
+
 func runCmdMust(cmd *exec.Cmd) string {
 	fmt.Printf("> %s\n", fmtCmdShort(*cmd))
 	canCapture := (cmd.Stdout == nil) && (cmd.Stderr == nil)
@@ -320,4 +331,63 @@ func runCmdMust(cmd *exec.Cmd) string {
 	fmt.Printf("cmd '%s' failed with '%s'\n", cmd, err)
 	must(err)
 	return ""
+}
+
+func readFileMust(path string) []byte {
+	d, err := ioutil.ReadFile(path)
+	must(err)
+	return d
+}
+
+func createDirForFile(path string) error {
+	return os.MkdirAll(filepath.Dir(path), 0755)
+}
+
+func formatSize(n int64) string {
+	sizes := []int64{1024 * 1024 * 1024, 1024 * 1024, 1024}
+	suffixes := []string{"GB", "MB", "kB"}
+	for i, size := range sizes {
+		if n >= size {
+			s := fmt.Sprintf("%.2f", float64(n)/float64(size))
+			return strings.TrimSuffix(s, ".00") + " " + suffixes[i]
+		}
+	}
+	return fmt.Sprintf("%d bytes", n)
+}
+
+func getFileSize(path string) int64 {
+	st, err := os.Lstat(path)
+	if err == nil {
+		return st.Size()
+	}
+	return -1
+}
+
+func isWindows() bool {
+	return strings.Contains(runtime.GOOS, "windows")
+}
+
+// from https://gist.github.com/hyg/9c4afcd91fe24316cbf0
+func openBrowser(url string) {
+	var err error
+
+	switch runtime.GOOS {
+	case "linux":
+		err = exec.Command("xdg-open", url).Start()
+	case "windows":
+		err = exec.Command("rundll32", "url.dll,FileProtocolHandler", url).Start()
+	case "darwin":
+		err = exec.Command("open", url).Start()
+	default:
+		err = fmt.Errorf("unsupported platform")
+	}
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+func waitForCtrlC() {
+	c := make(chan os.Signal, 2)
+	signal.Notify(c, os.Interrupt /* SIGINT */, syscall.SIGTERM)
+	<-c
 }

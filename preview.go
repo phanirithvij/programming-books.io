@@ -28,12 +28,12 @@ func findFileForURL(uri *url.URL) string {
 	if fileExists(path + "/index.html") {
 		return path + "/"
 	}
-	logf("didn't find file or url '%s'\n", uriPath)
+	logf(ctx(), "didn't find file or url '%s'\n", uriPath)
 	return ""
 }
 
 func handleIndex(w http.ResponseWriter, r *http.Request) {
-	//logf("uri: %s\n", r.URL.Path)
+	//logf(ctx(), "uri: %s\n", r.URL.Path)
 	path := findFileForURL(r.URL)
 	if path != "" {
 		http.ServeFile(w, r, path)
@@ -72,10 +72,10 @@ func previewWebsite() {
 			err = nil
 		}
 		must(err)
-		logf("HTTP server shutdown gracefully\n")
+		logf(ctx(), "HTTP server shutdown gracefully\n")
 	}()
-	logf("Started listening on %s\n", httpSrv.Addr)
-	u.OpenBrowser("http://" + httpSrv.Addr)
+	logf(ctx(), "Started listening on %s\n", httpSrv.Addr)
+	openBrowser("http://" + httpSrv.Addr)
 
-	u.WaitForCtrlC()
+	waitForCtrlC()
 }

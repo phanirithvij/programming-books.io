@@ -53,7 +53,7 @@ func evalCode(e *Eval) (*EvalResponse, error) {
 	if rsp.StatusCode != 200 {
 		err = fmt.Errorf("request failed with '%s'", rsp.Status)
 		if len(d) > 0 {
-			logf("\nServer error:\n%s\n", string(d))
+			logf(ctx(), "\nServer error:\n%s\n", string(d))
 		}
 		return nil, err
 	}
@@ -79,24 +79,24 @@ func dbgEval(e *Eval) {
 		}
 		//s := getFirstLines(f.Content, 5)
 		s := f.Content
-		logf("File: '%s', Content:\n%s\n", name, s)
+		logf(ctx(), "File: '%s', Content:\n%s\n", name, s)
 	}
 
 	if e.Command != "" {
-		logf("Command: '%s'\n", e.Command)
+		logf(ctx(), "Command: '%s'\n", e.Command)
 	}
 }
 
 func dbgEvalResponse(r *EvalResponse) {
-	logf("\nEvalResponse:\n")
+	logf(ctx(), "\nEvalResponse:\n")
 	if r.Stdout != "" {
-		logf("Stdout:\n%s\n", r.Stdout)
+		logf(ctx(), "Stdout:\n%s\n", r.Stdout)
 	}
 	if r.Stderr != "" {
-		logf("Stderr:\n%s\n", r.Stderr)
+		logf(ctx(), "Stderr:\n%s\n", r.Stderr)
 	}
 	if r.Error != "" {
-		logf("Error:\n%s\n", r.Error)
+		logf(ctx(), "Error:\n%s\n", r.Error)
 	}
-	logf("DurationMS: %.2f\n\n", r.DurationMS)
+	logf(ctx(), "DurationMS: %.2f\n\n", r.DurationMS)
 }

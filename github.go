@@ -101,7 +101,7 @@ func gistDecode(s string) *Gist {
 	var res Gist
 	err := json.Unmarshal([]byte(s), &res)
 	if err != nil {
-		logf("json:\n%s\n", s)
+		logf(ctx(), "json:\n%s\n", s)
 	}
 	must(err)
 	res.Raw = s
@@ -115,11 +115,11 @@ var (
 func setGitHubToken(req *http.Request) {
 	token := os.Getenv("GITHUB_TOKEN")
 	if token == "" {
-		logf("GITHUB_TOKEN not set, using API anonymously\n")
+		logf(ctx(), "GITHUB_TOKEN not set, using API anonymously\n")
 		return
 	}
 	if !didNotifyUsingToken {
-		logf("GITHUB_TOKEN set, using it for GitHub API requests\n")
+		logf(ctx(), "GITHUB_TOKEN set, using it for GitHub API requests\n")
 		didNotifyUsingToken = true
 	}
 	req.Header.Set("Authorization", "token "+token)

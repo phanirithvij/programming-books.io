@@ -154,7 +154,7 @@ func updateBookAppJS(book *Book) {
 		return
 	}
 	book.AppJSURL = "/s/" + name
-	logf("Created %s\n", dst)
+	logf(ctx(), "Created %s\n", dst)
 }
 
 func calcPageHeadings(page *Page) {

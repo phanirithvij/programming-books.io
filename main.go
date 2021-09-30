@@ -123,7 +123,7 @@ func main() {
 
 	timeStart := time.Now()
 	defer func() {
-		logf("Downloaded %d pages, %d from cache. Total time: %s\n", nTotalDownloaded, nTotalFromCache, time.Since(timeStart))
+		logf(ctx(), "Downloaded %d pages, %d from cache. Total time: %s\n", nTotalDownloaded, nTotalFromCache, time.Since(timeStart))
 	}()
 
 	{
@@ -132,13 +132,13 @@ func main() {
 		// in authenticated vs. non-authenticated state
 		notionAuthToken = ""
 		if notionAuthToken != "" {
-			logf("NOTION_TOKEN provided, can write back\n")
+			logf(ctx(), "NOTION_TOKEN provided, can write back\n")
 		} else {
-			logf("NOTION_TOKEN not provided, read only\n")
+			logf(ctx(), "NOTION_TOKEN not provided, read only\n")
 		}
 	}
 
-	notionapi.LogFunc = logf
+	notionapi.LogFunc = logsf
 	notionapi.PanicOnFailures = true
 
 	// ad-hoc, rarely done tasks
@@ -158,7 +158,7 @@ func main() {
 	if flgDownloadGist != "" {
 		book := findBook(flgBook)
 		if book == nil {
-			logf("-download-gist also requires valid -book, given: '%s'\n", flgBook)
+			logf(ctx(), "-download-gist also requires valid -book, given: '%s'\n", flgBook)
 		}
 		initBook(book)
 		downloadSingleGist(book, flgDownloadGist)
@@ -187,7 +187,7 @@ func main() {
 	showUsage := true
 	if flgGen || flgDownloadOnly {
 		nThreads := runtime.NumCPU() + 1
-		logf("Generating %d books using %d threads\n", len(booksToProcess), nThreads)
+		logf(ctx(), "Generating %d books using %d threads\n", len(booksToProcess), nThreads)
 
 		showUsage = false
 		n := len(booksToProcess)
@@ -210,7 +210,7 @@ func main() {
 			// as generation
 			go func(b *Book) {
 				genBook(b)
-				logf("generated book %d out of %d, name: %s, dir: %s\n", i+1, n, b.Title, b.DirShort)
+				logf(ctx(), "generated book %d out of %d, name: %s, dir: %s\n", i+1, n, b.Title, b.DirShort)
 				wg.Done()
 			}(book)
 		}
@@ -258,15 +258,15 @@ func copyGlobalAssets() {
 // download a single gist and store in the cache for a given book
 func downloadSingleGist(book *Book, gistID string) {
 	bookName := book.DirShort
-	logf("Downloading gist '%s' and storing in the cache for the book '%s'\n", gistID, bookName)
+	logf(ctx(), "Downloading gist '%s' and storing in the cache for the book '%s'\n", gistID, bookName)
 	cache := loadCache(book)
 	gist := gistDownloadMust(gistID)
 	didChange := cache.saveGist(gistID, gist.Raw)
 	if didChange {
-		logf("Saved a new or updated version of gist\n")
+		logf(ctx(), "Saved a new or updated version of gist\n")
 		return
 	}
-	logf("Gist didn't change!\n")
+	logf(ctx(), "Gist didn't change!\n")
 }
 
 func updateGeneratedRepo() {

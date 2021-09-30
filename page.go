@@ -306,7 +306,7 @@ func extractMeta(p *Page) {
 		toRemove[idx] = true
 		if !isKnownMeta(mv.Key) {
 			uri := "https://notion.so/" + toNoDashID(page.ID)
-			logf("Unknown meta value '%s' = '%s' in page %s\n", mv.Key, mv.Value, uri)
+			logf(ctx(), "Unknown meta value '%s' = '%s' in page %s\n", mv.Key, mv.Value, uri)
 		}
 		p.Metadata = append(p.Metadata, mv)
 	}

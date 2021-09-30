@@ -79,7 +79,7 @@ func getLangFromFileExt(fileName string) string {
 	case ".yml":
 		return "yaml"
 	}
-	logf("Couldn't deduce language from file name '%s'\n", fileName)
+	logf(ctx(), "Couldn't deduce language from file name '%s'\n", fileName)
 	// TODO: more languages
 	return ""
 }

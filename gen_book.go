@@ -162,7 +162,7 @@ func genPage(book *Book, page *Page, w io.Writer) error {
 	path := page.destFilePath()
 	err := execTemplate("page.tmpl.html", d, path, w)
 	if err != nil {
-		logf("Failed to minify page %s in book %s\n", page.NotionID, book.Title)
+		logf(ctx(), "Failed to minify page %s in book %s\n", page.NotionID, book.Title)
 	}
 	for _, imagePath := range page.images {
 		imageName := filepath.Base(imagePath)
@@ -180,7 +180,7 @@ func bookPagesToHTML(book *Book) {
 		page.BodyHTML = template.HTML(string(html))
 		nProcessed++
 	}
-	logf("bookPagesToHTML: processed %d pages for book %s\n", nProcessed, book.TitleLong)
+	logf(ctx(), "bookPagesToHTML: processed %d pages for book %s\n", nProcessed, book.TitleLong)
 }
 
 func genBookIndexHTML(book *Book, w io.Writer) error {
@@ -215,7 +215,7 @@ func copyCover(book *Book) {
 		dst := filepath.Join(book.DirOnDisk, "covers", book.CoverImageName)
 		u.CreateDirForFileMust(dst)
 		u.CopyFileMust(dst, src)
-		logf("Copied '%s' => '%s'\n", src, dst)
+		logf(ctx(), "Copied '%s' => '%s'\n", src, dst)
 	}
 
 	{
@@ -223,12 +223,12 @@ func copyCover(book *Book) {
 		dst := filepath.Join(book.DirOnDisk, "covers", "twitter", book.CoverImageName)
 		u.CreateDirForFileMust(dst)
 		u.CopyFileMust(dst, src)
-		logf("Copied '%s' => '%s'\n", src, dst)
+		logf(ctx(), "Copied '%s' => '%s'\n", src, dst)
 	}
 }
 
 func genBook(book *Book) {
-	logf("Started genering book %s\n", book.Title)
+	logf(ctx(), "Started genering book %s\n", book.Title)
 	timeStart := time.Now()
 
 	// TODO: atomic generation i.e. generate to a temp directory and at the end remove
@@ -265,5 +265,5 @@ func genBook(book *Book) {
 	genOverview(book)
 	copyCover(book)
 
-	logf("Generated book '%s' in %s\n", book.Title, time.Since(timeStart))
+	logf(ctx(), "Generated book '%s' in %s\n", book.Title, time.Since(timeStart))
 }

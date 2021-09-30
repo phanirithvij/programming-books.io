@@ -88,7 +88,7 @@ func htmlHighlight(w io.Writer, source, lang, defaultLang string) error {
 	}()
 	reportOvertime := func() {
 		ioutil.WriteFile("hili_hang.txt", []byte(source), 0644)
-		logf("Too long processing lang: %s, defaultLang: %s, source:\n%s\n\n", lang, defaultLang, source)
+		logf(ctx(), "Too long processing lang: %s, defaultLang: %s, source:\n%s\n\n", lang, defaultLang, source)
 		ch <- nil
 	}
 	timer := time.AfterFunc(time.Second*5, reportOvertime)

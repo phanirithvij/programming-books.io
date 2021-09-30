@@ -10,7 +10,7 @@ import (
 
 // run optipng in parallel
 func optimizeWithOptipng(path string) {
-	logf("Optimizing '%s'\n", path)
+	logf(ctx(), "Optimizing '%s'\n", path)
 	cmd := exec.Command("optipng", "-o5", path)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
@@ -18,7 +18,7 @@ func optimizeWithOptipng(path string) {
 	if err != nil {
 		// it's ok if fails. some jpeg images are saved as .png
 		// which trips it
-		logf("optipng failed with '%s'\n", err)
+		logf(ctx(), "optipng failed with '%s'\n", err)
 	}
 }
 

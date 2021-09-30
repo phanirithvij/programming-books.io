@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"os"
 )
@@ -26,7 +27,15 @@ func openLog() func() {
 	}
 }
 
-func logf(format string, args ...interface{}) {
+func logsf(format string, args ...interface{}) {
+	s := fmtSmart(format, args...)
+	fmt.Print(s)
+	if logFile != nil {
+		_, _ = fmt.Fprint(logFile, s)
+	}
+}
+
+func logf(ctx context.Context, format string, args ...interface{}) {
 	s := fmtSmart(format, args...)
 	fmt.Print(s)
 	if logFile != nil {

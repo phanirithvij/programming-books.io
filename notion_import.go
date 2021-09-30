@@ -17,7 +17,7 @@ func downloadImage(d *notionapi.CachingClient, page *Page, block *notionapi.Bloc
 	rsp, err := d.DownloadFile(link, block)
 	if err != nil {
 		id := toNoDashID(page.NotionID)
-		logf("downloadImage('%s') from page https://notion.so/%s failed with '%s'\n", link, id, err)
+		logf(ctx(), "downloadImage('%s') from page https://notion.so/%s failed with '%s'\n", link, id, err)
 		must(err)
 	}
 	path := rsp.CacheFilePath
@@ -51,7 +51,7 @@ func downloadImages(d *notionapi.CachingClient, book *Book, page *Page) {
 
 func downloadBook(book *Book) {
 	u.CreateDirMust(book.NotionCacheDir)
-	logf("Downloading %s, created cache dir: '%s'\n", book.Title, book.NotionCacheDir)
+	logf(ctx(), "Downloading %s, created cache dir: '%s'\n", book.Title, book.NotionCacheDir)
 
 	c := &notionapi.Client{
 		AuthToken: notionAuthToken,
@@ -81,12 +81,12 @@ func downloadBook(book *Book) {
 		if di.FromCache {
 			nTotalDownloaded++
 			if nTotalPages == 1 || nTotalPages%64 == 0 {
-				logf("CACHE '%s' %d\n", di.Page.NotionID.NoDashID, nTotalPages)
+				logf(ctx(), "CACHE '%s' %d\n", di.Page.NotionID.NoDashID, nTotalPages)
 			}
 		} else {
 			nTotalFromCache++
 			nDownloaded++
-			logf("DL    '%s', %d\n", di.Page.NotionID.NoDashID, nTotalPages)
+			logf(ctx(), "DL    '%s', %d\n", di.Page.NotionID.NoDashID, nTotalPages)
 		}
 		page := di.Page
 		id := page.GetNotionID().NoDashID
@@ -107,5 +107,5 @@ func downloadBook(book *Book) {
 	pages, err := d.DownloadPagesRecursively(startPageID, afterPageDownload)
 	must(err)
 	nPages := len(pages)
-	logf("Got %d pages for %s, downloaded: %d, from cache: %d\n", nPages, book.Title, d.DownloadedCount, d.FromCacheCount)
+	logf(ctx(), "Got %d pages for %s, downloaded: %d, from cache: %d\n", nPages, book.Title, d.DownloadedCount, d.FromCacheCount)
 }
