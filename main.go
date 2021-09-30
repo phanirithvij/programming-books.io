@@ -171,6 +171,11 @@ func main() {
 		updateGeneratedRepo()
 	}
 
+	if flgPreview {
+		previewWebsite2(allBooks)
+		return
+	}
+
 	var booksToProcess []*Book
 	if flgBook != "" {
 		book := findBook(flgBook)
@@ -248,6 +253,7 @@ func copyFilesMust(dstDir string, srcDir string, files []string) {
 		u.CopyFileMust(dstPath, srcPath)
 	}
 }
+
 func copyGlobalAssets() {
 	dstDir := filepath.Join(indexDestDir, "s")
 	must(os.MkdirAll(dstDir, 0755))
