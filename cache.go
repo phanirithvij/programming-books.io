@@ -7,7 +7,6 @@ import (
 	"os"
 
 	"github.com/kjk/siser"
-	"github.com/kjk/u"
 )
 
 const (
@@ -111,7 +110,7 @@ func (c *Cache) saveGistOutput(gist, output string) {
 	rec.Write("GistOutput", output)
 	err := c.saveRecord(rec)
 	must(err)
-	sha1 := u.Sha1HexOfBytes([]byte(gist))
+	sha1 := sha1HexOfBytes([]byte(gist))
 	gout := &CacheGistOutput{
 		Gist:   gist,
 		Output: output,
@@ -123,7 +122,7 @@ func (c *Cache) saveGistOutput(gist, output string) {
 func (c *Cache) loadGistOutput(rec *siser.Record) {
 	gist := recGetMustNonEmpty(rec, "Gist")
 	output := recGetMust(rec, "GistOutput")
-	sha1 := u.Sha1HexOfBytes([]byte(gist))
+	sha1 := sha1HexOfBytes([]byte(gist))
 	gout := &CacheGistOutput{
 		Gist:   gist,
 		Output: output,
@@ -148,7 +147,7 @@ func (c *Cache) getGistOuputBySha1(sha1 string) *CacheGistOutput {
 func loadCache(book *Book) *Cache {
 	path := book.cachePath()
 	logf(ctx(), "loadCache: %s\n", path)
-	u.CreateDirForFileMust(path)
+	must(createDirForFile(path))
 
 	c := &Cache{
 		path: path,

@@ -5,8 +5,6 @@ import (
 	"net/url"
 	"path/filepath"
 	"time"
-
-	"github.com/kjk/u"
 )
 
 // return "" if didn't find a file
@@ -40,7 +38,7 @@ func handleIndex(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	path = filepath.Join(indexDestDir, "404.html")
-	d := u.ReadFileMust(path)
+	d := readFileMust(path)
 	w.Header().Add("Content-Type", "text/html; charset=utf-8")
 	w.WriteHeader(http.StatusNotFound)
 	w.Write(d)

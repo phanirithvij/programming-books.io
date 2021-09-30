@@ -4,7 +4,6 @@ import (
 	"path/filepath"
 
 	"github.com/kjk/notionapi"
-	"github.com/kjk/u"
 )
 
 // convert 2131b10c-ebf6-4938-a127-7089ff02dbe4 to 2131b10cebf64938a1277089ff02dbe4
@@ -50,7 +49,7 @@ func downloadImages(d *notionapi.CachingClient, book *Book, page *Page) {
 }
 
 func downloadBook(book *Book) {
-	u.CreateDirMust(book.NotionCacheDir)
+	createDirMust(book.NotionCacheDir)
 	logf(ctx(), "Downloading %s, created cache dir: '%s'\n", book.Title, book.NotionCacheDir)
 
 	c := &notionapi.Client{
@@ -60,7 +59,7 @@ func downloadBook(book *Book) {
 	//c.Logger = os.Stdout
 	//c.DebugLog = true
 	cacheDir := book.NotionCacheDir
-	u.CreateDirMust(cacheDir)
+	createDirMust(cacheDir)
 	d, err := notionapi.NewCachingClient(cacheDir, c)
 	must(err)
 	d.CacheDirFiles = filepath.Join(cacheDir, "img")

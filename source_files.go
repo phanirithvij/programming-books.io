@@ -5,8 +5,6 @@ import (
 	"net/url"
 	"strconv"
 	"strings"
-
-	"github.com/kjk/u"
 )
 
 // FileDirective describes reulst of parsing a line like:
@@ -80,7 +78,7 @@ func (f *SourceFile) Output() string {
 
 // Sha1 returns sha1 (in hex) of the code snippet
 func (f *SourceFile) Sha1() string {
-	return u.Sha1HexOfBytes([]byte(f.CodeFull))
+	return sha1HexOfBytes([]byte(f.CodeFull))
 }
 
 // CodeToShow returns part of the file tbat we want to show

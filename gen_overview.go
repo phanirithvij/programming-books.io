@@ -6,7 +6,6 @@ import (
 	"strings"
 
 	"github.com/kjk/notionapi"
-	"github.com/kjk/u"
 )
 
 var htmlOverview = `<!doctype html>
@@ -132,5 +131,5 @@ func genOverview(book *Book) {
 	path := filepath.Join(book.DirOnDisk, "overview.html")
 	str := strings.Join(lines, "\n")
 	str = fmt.Sprintf(htmlOverview, str)
-	u.WriteFileMust(path, []byte(str))
+	writeFileMust(path, []byte(str))
 }

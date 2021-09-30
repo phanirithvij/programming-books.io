@@ -9,7 +9,6 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/kjk/u"
 	"golang.org/x/image/draw"
 )
 
@@ -107,7 +106,7 @@ func getCoversListMust(dir string) []string {
 func genTwitterImagesAndExit() {
 	srcDir := "covers"
 	dstDir := filepath.Join(srcDir, "twitter")
-	u.CreateDirMust(dstDir)
+	createDirMust(dstDir)
 	covers := getCoversListMust(srcDir)
 	existingImages := getExistingImagesMust(dstDir)
 	// logf(ctx(), "covers: %v\n", covers)
@@ -154,7 +153,7 @@ func genSmallCoverImage(img image.Image) *image.RGBA {
 func genSmallCoversAndExit() {
 	srcDir := "covers"
 	dstDir := filepath.Join(srcDir, "covers_small")
-	u.CreateDirMust(dstDir)
+	createDirMust(dstDir)
 	covers := getCoversListMust(srcDir)
 	existingImages := getExistingImagesMust(dstDir)
 	// logf(ctx(), "covers: %v\n", covers)

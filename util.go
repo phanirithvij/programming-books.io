@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"crypto/sha1"
 	"fmt"
 	"io/ioutil"
 	"log"
@@ -339,6 +340,11 @@ func readFileMust(path string) []byte {
 	return d
 }
 
+func writeFileMust(path string, data []byte) {
+	err := ioutil.WriteFile(path, data, 0644)
+	must(err)
+}
+
 func createDirForFile(path string) error {
 	return os.MkdirAll(filepath.Dir(path), 0755)
 }
@@ -390,4 +396,20 @@ func waitForCtrlC() {
 	c := make(chan os.Signal, 2)
 	signal.Notify(c, os.Interrupt /* SIGINT */, syscall.SIGTERM)
 	<-c
+}
+
+func sha1HexOfBytes(data []byte) string {
+	return fmt.Sprintf("%x", sha1OfBytes(data))
+}
+
+func sha1OfBytes(data []byte) []byte {
+	h := sha1.New()
+	h.Write(data)
+	return h.Sum(nil)
+}
+
+func createDirMust(dir string) string {
+	err := os.MkdirAll(dir, 0755)
+	must(err)
+	return dir
 }

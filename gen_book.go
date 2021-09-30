@@ -213,7 +213,7 @@ func copyCover(book *Book) {
 	{
 		src := filepath.Join("covers", book.CoverImageName)
 		dst := filepath.Join(book.DirOnDisk, "covers", book.CoverImageName)
-		u.CreateDirForFileMust(dst)
+		must(createDirForFile(dst))
 		u.CopyFileMust(dst, src)
 		logf(ctx(), "Copied '%s' => '%s'\n", src, dst)
 	}
@@ -221,7 +221,7 @@ func copyCover(book *Book) {
 	{
 		src := filepath.Join("covers", "twitter", book.CoverImageName)
 		dst := filepath.Join(book.DirOnDisk, "covers", "twitter", book.CoverImageName)
-		u.CreateDirForFileMust(dst)
+		must(createDirForFile(dst))
 		u.CopyFileMust(dst, src)
 		logf(ctx(), "Copied '%s' => '%s'\n", src, dst)
 	}

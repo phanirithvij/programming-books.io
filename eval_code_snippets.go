@@ -6,8 +6,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kjk/u"
-
 	"github.com/kjk/notionapi"
 )
 
@@ -155,7 +153,7 @@ func evalGist(gistStr string) (*EvalResponse, error) {
 }
 
 func evalCached(cache *Cache, gistID string, gist string) string {
-	sha1 := u.Sha1HexOfBytes([]byte(gist))
+	sha1 := sha1HexOfBytes([]byte(gist))
 	logvf("evalCached() gist id '%s', body sha1 '%s' ", gistID, sha1)
 	gistOut := cache.getGistOuputBySha1(sha1)
 	if gistOut != nil {
