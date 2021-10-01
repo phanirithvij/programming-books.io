@@ -1,4 +1,4 @@
-6993 noahttpcache
+7399 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -10,7 +10,7 @@ Body:+110
     }
   ]
 }
-Response:+6794
+Response:+7200
 {
   "recordMapWithRoles": {
     "block": {
@@ -113,6 +113,11 @@ Response:+6794
           "created_by_table": "notion_user",
           "created_time": 1552534973256,
           "format": {
+            "copied_from_pointer": {
+              "id": "c5fb3b87-7427-4383-8c34-184054bb84dc",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "block"
+            },
             "page_full_width": true,
             "page_small_text": true
           },
@@ -128,7 +133,7 @@ Response:+6794
           },
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 15
+          "version": 16
         }
       }
     },
@@ -167,6 +172,11 @@ Response:+6794
         "created_by_table": "notion_user",
         "created_time": 1552534973256,
         "format": {
+          "copied_from_pointer": {
+            "id": "c5fb3b87-7427-4383-8c34-184054bb84dc",
+            "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+            "table": "block"
+          },
           "page_full_width": true,
           "page_small_text": true
         },
@@ -182,12 +192,12 @@ Response:+6794
         },
         "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
         "type": "page",
-        "version": 15
+        "version": 16
       }
     }
   ]
 }
-34601 noahttpcache
+34809 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -200,7 +210,7 @@ Body:+152
   },
   "verticalColumns": false
 }
-Response:+34361
+Response:+34569
 {
   "cursor": {
     "stack": []
@@ -1007,6 +1017,11 @@ Response:+34361
           "created_by_table": "notion_user",
           "created_time": 1552534973256,
           "format": {
+            "copied_from_pointer": {
+              "id": "c5fb3b87-7427-4383-8c34-184054bb84dc",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "block"
+            },
             "page_full_width": true,
             "page_small_text": true
           },
@@ -1022,7 +1037,7 @@ Response:+34361
           },
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 15
+          "version": 16
         }
       }
     },

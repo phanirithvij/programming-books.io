@@ -58,7 +58,7 @@ func genIndex(books []*Book, w io.Writer) error {
 	return execTemplate("index2.tmpl.html", d, path, w)
 }
 
-func gen404Indexl(dir string) {
+func gen404Indexl(dir string, w io.Writer) error {
 	d := struct {
 		PageCommon
 		Book *Book
@@ -66,7 +66,7 @@ func gen404Indexl(dir string) {
 		PageCommon: getPageCommon(),
 	}
 	path := filepath.Join(dir, "404.html")
-	_ = execTemplateToFileMaybeMust("404-index.tmpl.html", d, path)
+	return execTemplate("404-index.tmpl.html", d, path, w)
 }
 
 func genBooksIndex(books []*Book) {
@@ -74,7 +74,7 @@ func genBooksIndex(books []*Book) {
 
 	_ = genIndex(books, nil)
 	_ = genIndexGrid(books, nil)
-	gen404Indexl(indexDestDir)
+	gen404Indexl(indexDestDir, nil)
 	_ = genAbout(indexDestDir, nil)
 	_ = genFeedback(indexDestDir, nil)
 }

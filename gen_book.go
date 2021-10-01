@@ -237,7 +237,7 @@ func genBook(book *Book) {
 		os.RemoveAll(book.DirOnDisk)
 	}
 
-	bookFromPages(book)
+	buildBookPages(book)
 
 	copyImages(book)
 	bookPagesToHTML(book)

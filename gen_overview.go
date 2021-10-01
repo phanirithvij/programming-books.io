@@ -115,7 +115,7 @@ func genOverviewPage(page *Page) []string {
 }
 
 // generates overview.html which shows the structure of the html
-func genOverview(book *Book) {
+func genOverviewContent(book *Book) []byte {
 	lines := []string{}
 	lines = append(lines, "<ul>")
 	for _, chapter := range book.Chapters() {
@@ -128,8 +128,13 @@ func genOverview(book *Book) {
 		lines = append(lines, "</ul>")
 	}
 	lines = append(lines, "</ul>")
-	path := filepath.Join(book.DirOnDisk, "overview.html")
 	str := strings.Join(lines, "\n")
 	str = fmt.Sprintf(htmlOverview, str)
-	writeFileMust(path, []byte(str))
+	return []byte(str)
+}
+
+func genOverview(book *Book) {
+	d := genOverviewContent(book)
+	path := filepath.Join(book.DirOnDisk, "overview.html")
+	writeFileMust(path, d)
 }

@@ -1,4 +1,4 @@
-13690 noahttpcache
+14096 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -10,7 +10,7 @@ Body:+110
     }
   ]
 }
-Response:+13490
+Response:+13896
 {
   "recordMapWithRoles": {
     "block": {
@@ -116,6 +116,11 @@ Response:+13490
           "created_by_table": "notion_user",
           "created_time": 1552534973329,
           "format": {
+            "copied_from_pointer": {
+              "id": "74811ded-8a4e-4801-82bb-bfe6ac6fdf0e",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "block"
+            },
             "page_full_width": true,
             "page_small_text": true
           },
@@ -131,7 +136,7 @@ Response:+13490
           },
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 28
+          "version": 29
         }
       },
       "e0f8a911-ba87-4e9f-bd32-470003febad4": {
@@ -297,6 +302,11 @@ Response:+13490
         "created_by_table": "notion_user",
         "created_time": 1552534973329,
         "format": {
+          "copied_from_pointer": {
+            "id": "74811ded-8a4e-4801-82bb-bfe6ac6fdf0e",
+            "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+            "table": "block"
+          },
           "page_full_width": true,
           "page_small_text": true
         },
@@ -312,12 +322,12 @@ Response:+13490
         },
         "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
         "type": "page",
-        "version": 28
+        "version": 29
       }
     }
   ]
 }
-76774 noahttpcache
+77228 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -330,7 +340,7 @@ Body:+152
   },
   "verticalColumns": false
 }
-Response:+76534
+Response:+76988
 {
   "cursor": {
     "stack": [
@@ -946,6 +956,13 @@ Response:+76534
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1552534973330,
+          "format": {
+            "collection_pointer": {
+              "id": "edccebee-4411-4024-9d2e-f56c61c812cb",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "47fe8378-9c03-4543-afba-a2ddde529163",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -955,7 +972,7 @@ Response:+76534
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 2,
+          "version": 3,
           "view_ids": ["97a46de2-0760-4680-abeb-8415d42efba7"]
         }
       },
@@ -1777,6 +1794,11 @@ Response:+76534
           "created_by_table": "notion_user",
           "created_time": 1552534973329,
           "format": {
+            "copied_from_pointer": {
+              "id": "74811ded-8a4e-4801-82bb-bfe6ac6fdf0e",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "block"
+            },
             "page_full_width": true,
             "page_small_text": true
           },
@@ -1792,7 +1814,7 @@ Response:+76534
           },
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 28
+          "version": 29
         }
       },
       "d7fa7f23-eb8b-44aa-bbe0-8b76caf435cc": {
@@ -2198,7 +2220,7 @@ Response:+76534
     "space": {}
   }
 }
-52344 noahttpcache
+52552 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+583
@@ -2233,7 +2255,7 @@ Body:+583
   },
   "verticalColumns": false
 }
-Response:+51673
+Response:+51881
 {
   "cursor": {
     "stack": [
@@ -3179,6 +3201,11 @@ Response:+51673
           "created_by_table": "notion_user",
           "created_time": 1552534973329,
           "format": {
+            "copied_from_pointer": {
+              "id": "74811ded-8a4e-4801-82bb-bfe6ac6fdf0e",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "block"
+            },
             "page_full_width": true,
             "page_small_text": true
           },
@@ -3194,7 +3221,7 @@ Response:+51673
           },
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 28
+          "version": 29
         }
       },
       "d0765168-19bf-40a4-b409-aea4d884f389": {
@@ -3458,7 +3485,7 @@ Response:+51673
     "space": {}
   }
 }
-44074 noahttpcache
+44282 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+441
@@ -3486,7 +3513,7 @@ Body:+441
   },
   "verticalColumns": false
 }
-Response:+43545
+Response:+43753
 {
   "cursor": {
     "stack": [
@@ -4290,6 +4317,11 @@ Response:+43545
           "created_by_table": "notion_user",
           "created_time": 1552534973329,
           "format": {
+            "copied_from_pointer": {
+              "id": "74811ded-8a4e-4801-82bb-bfe6ac6fdf0e",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "block"
+            },
             "page_full_width": true,
             "page_small_text": true
           },
@@ -4305,7 +4337,7 @@ Response:+43545
           },
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 28
+          "version": 29
         }
       },
       "d7767df2-52c4-4b0c-9cd4-3ad6f6af9e29": {
@@ -4540,7 +4572,7 @@ Response:+43545
     "space": {}
   }
 }
-19967 noahttpcache
+20175 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+583
@@ -4575,7 +4607,7 @@ Body:+583
   },
   "verticalColumns": false
 }
-Response:+19296
+Response:+19504
 {
   "cursor": {
     "stack": []
@@ -4918,6 +4950,11 @@ Response:+19296
           "created_by_table": "notion_user",
           "created_time": 1552534973329,
           "format": {
+            "copied_from_pointer": {
+              "id": "74811ded-8a4e-4801-82bb-bfe6ac6fdf0e",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "block"
+            },
             "page_full_width": true,
             "page_small_text": true
           },
@@ -4933,7 +4970,7 @@ Response:+19296
           },
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 28
+          "version": 29
         }
       },
       "ea84bde7-ed4e-4353-bdc6-ae44125abc08": {
@@ -5036,7 +5073,7 @@ Response:+19296
     "space": {}
   }
 }
-19553 noahttpcache
+20007 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+269
@@ -5051,7 +5088,7 @@ Body:+269
     "loadContentCover": true
   }
 }
-Response:+19194
+Response:+19648
 {
   "recordMap": {
     "block": {
@@ -5195,6 +5232,13 @@ Response:+19194
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1552534973330,
+          "format": {
+            "collection_pointer": {
+              "id": "edccebee-4411-4024-9d2e-f56c61c812cb",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "47fe8378-9c03-4543-afba-a2ddde529163",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -5204,7 +5248,7 @@ Response:+19194
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 2,
+          "version": 3,
           "view_ids": ["97a46de2-0760-4680-abeb-8415d42efba7"]
         }
       },
@@ -5363,6 +5407,11 @@ Response:+19194
           "created_by_table": "notion_user",
           "created_time": 1552534973329,
           "format": {
+            "copied_from_pointer": {
+              "id": "74811ded-8a4e-4801-82bb-bfe6ac6fdf0e",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "block"
+            },
             "page_full_width": true,
             "page_small_text": true
           },
@@ -5378,7 +5427,7 @@ Response:+19194
           },
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "page",
-          "version": 28
+          "version": 29
         }
       },
       "e0f8a911-ba87-4e9f-bd32-470003febad4": {

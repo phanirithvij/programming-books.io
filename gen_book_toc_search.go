@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"strings"
 
 	"github.com/kjk/notionapi"
@@ -57,7 +58,7 @@ func genHeadings(page *Page, idx int) [][]any {
 }
 
 // TODO: make it recursive and with arbitrary nesting
-func genBookTOCSearchMust(book *Book) {
+func genBookTOCSearchInner(book *Book) {
 	var toc [][]any
 	for _, chapter := range book.Chapters() {
 		tocItem := genTocItem(chapter, -1)
@@ -105,5 +106,17 @@ func genBookTOCSearchMust(book *Book) {
 	s := "gTocItems = " + string(d) + ";"
 	book.tocData = []byte(s)
 
+}
+
+func genBookTOCSearchMust(book *Book) {
+	genBookTOCSearchInner(book)
 	updateBookAppJS(book)
+}
+
+func genBookTOCSearchHandlerMust(book *Book) Handler {
+	genBookTOCSearchInner(book)
+	name := fmt.Sprintf("app-%s.js", book.DirShort)
+	book.AppJSURL = "/s/" + name
+	logf(ctx(), "Created %s for book '%s'\n", book.AppJSURL, book.DirShort)
+	return NewContentHandler(book.AppJSURL, book.tocData)
 }

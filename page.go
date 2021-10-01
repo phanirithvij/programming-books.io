@@ -2,6 +2,7 @@ package main
 
 import (
 	"html/template"
+	"path"
 	"path/filepath"
 	"strings"
 
@@ -173,6 +174,10 @@ func (p *Page) destFilePath() string {
 	return filepath.Join(p.Book.DirOnDisk, fileName)
 }
 
+func (p *Page) ImageURL(name string) string {
+	return path.Join(p.Book.URL(), name)
+}
+
 func (p *Page) destImagePath(name string) string {
 	return filepath.Join(p.Book.DirOnDisk, name)
 }
@@ -338,7 +343,7 @@ func bookPageFromNotionPage(book *Book, page *notionapi.Page) *Page {
 	return p
 }
 
-func bookFromPages(book *Book) {
+func buildBookPages(book *Book) {
 	startPageID := book.NotionStartPageID
 	page := book.idToPage[startPageID].NotionPage
 	panicIf(page.Root().Type != notionapi.BlockPage, "start block is of type '%s' and not '%s'", page.Root().Type, notionapi.BlockPage)
