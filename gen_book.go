@@ -63,6 +63,7 @@ func execTemplateToFileSilentMaybeMust(name string, data interface{}, path strin
 	err := tmpl.ExecuteTemplate(&buf, name, data)
 	maybePanicIfErr(err)
 
+	must(createDirForFile(path))
 	d := buf.Bytes()
 	err = ioutil.WriteFile(path, d, 0644)
 	maybePanicIfErr(err)
