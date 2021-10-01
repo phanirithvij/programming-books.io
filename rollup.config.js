@@ -39,6 +39,7 @@ export default {
   output: {
     file: "www/gen/bundle.js",
     format: "iife",
+    name: "app",
   },
   plugins: [
     sveltePlugin,
