@@ -354,10 +354,5 @@ func genBookHandler(book *Book) Handler {
 }
 
 /*
-
-	for _, chapter := range book.Chapters() {
-		_ = genPage(book, chapter, nil)
-	}
-
 	writeSitemap(book)
 */
