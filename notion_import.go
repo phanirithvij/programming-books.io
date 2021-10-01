@@ -2,6 +2,7 @@ package main
 
 import (
 	"path/filepath"
+	"sync/atomic"
 
 	"github.com/kjk/notionapi"
 )
@@ -78,12 +79,12 @@ func downloadBook(book *Book) {
 	afterPageDownload := func(di *notionapi.DownloadInfo) error {
 		nTotalPages++
 		if di.FromCache {
-			nTotalDownloaded++
+			atomic.AddInt32(&nTotalDownloaded, 1)
 			if nTotalPages == 1 || nTotalPages%64 == 0 {
 				logf(ctx(), "CACHE '%s' %d\n", di.Page.NotionID.NoDashID, nTotalPages)
 			}
 		} else {
-			nTotalFromCache++
+			atomic.AddInt32(&nTotalFromCache, 1)
 			nDownloaded++
 			logf(ctx(), "DL    '%s', %d\n", di.Page.NotionID.NoDashID, nTotalPages)
 		}

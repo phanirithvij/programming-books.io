@@ -24,8 +24,8 @@ var (
 
 	// when downloading pages from the server, count total number of
 	// downloaded and those from cache
-	nTotalDownloaded int
-	nTotalFromCache  int
+	nTotalDownloaded int32
+	nTotalFromCache  int32
 )
 
 func shouldCopyImage(path string) bool {

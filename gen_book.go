@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
+	"sync"
 	"time"
 
 	"github.com/kjk/u"
@@ -30,9 +31,17 @@ func funcInc(i int) int {
 	return i + 1
 }
 
+var (
+	flgReloadTemplates = false
+	muTemplates        sync.Mutex
+)
+
 func loadTemplatesMust() *template.Template {
+	muTemplates.Lock()
+	defer muTemplates.Unlock()
+
 	// we reload templates in preview mode
-	if templates != nil {
+	if !flgReloadTemplates && templates != nil {
 		return templates
 	}
 	pattern := filepath.Join("fe", "tmpl", "*.tmpl.html")
