@@ -88,7 +88,7 @@ func staticFileHandlers(dir string, files []string) []Handler {
 	for _, f := range files {
 		uri := "/s/" + f
 		path := filepath.Join(dir, f)
-		panicIf(!fileExists(path))
+		panicIf(!fileExists(path), "file '%s' doesn't exist", path)
 		h := NewFileHandler(path, uri)
 		res = append(res, h)
 	}
@@ -181,12 +181,7 @@ func buildServer(booksToProcess []*Book) *ServerConfig {
 	}
 	initBookHandlers()
 
-	booksWg.Add(1)
-	go func() {
-		buildFrontend()
-		booksWg.Done()
-	}()
-
+	buildFrontend()
 	h := staticFileHandlers(filepath.Join("www", "gen"), []string{"bundle.css", "bundle.js"})
 	handlers := h
 	h = staticFileHandlers(filepath.Join("fe", "tmpl"), []string{"favicon.ico", "index.css", "main.css"})
