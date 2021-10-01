@@ -75,6 +75,7 @@ var (
 func main() {
 	var (
 		flgGen          bool
+		flgGenRender    bool
 		flgBook         string
 		flgAllBooks     bool
 		flgDownloadGist string
@@ -96,6 +97,7 @@ func main() {
 		flag.BoolVar(&flgPreview, "preview", false, "preview the book locally")
 		flag.BoolVar(&flgClean, "clean", false, "re-create 'www' directory")
 		flag.BoolVar(&flgGen, "gen", false, "generate a book and deploy preview")
+		flag.BoolVar(&flgGenRender, "gen-render", false, "generate to a www_generated directory for deploying on render.com")
 		flag.StringVar(&flgBook, "book", "", "name of the book")
 		flag.BoolVar(&flgAllBooks, "all-books", false, "if true, apply to all books")
 		flag.BoolVar(&flgDownloadOnly, "download-only", false, "only download the books from notion (no eval, no html generation")
@@ -195,6 +197,15 @@ func main() {
 
 	if flgGen {
 		genToDir(allBooks, indexDestDir)
+		return
+	}
+
+	if flgGenRender {
+		//dir := filepath.Join("..", "progbooks_generated")
+		dir := "www_generated"
+		dir, _ = filepath.Abs(dir)
+		os.RemoveAll(dir)
+		genToDir(allBooks, dir)
 		return
 	}
 

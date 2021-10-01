@@ -7,6 +7,7 @@ import (
 	"path"
 	"path/filepath"
 	"runtime"
+	"strings"
 	"sync"
 	"time"
 )
@@ -268,8 +269,8 @@ func genToDir(booksToProcess []*Book, dir string) {
 	}
 	logf(ctx(), "genToDir: finished %d urls in %s\n", nPages, time.Since(timeStart))
 	//must(os.RemoveAll(dir))
-	nFiles := WriteServerFilesToDir(dir, server.Handlers)
-	logf(ctx(), "genToDir: wrote %d files\n", nFiles)
+	nFiles, totalSize := WriteServerFilesToDir(dir, server.Handlers)
+	logf(ctx(), "genToDir: wrote %d files of size %s\n", nFiles, formatSize(totalSize))
 }
 
 var booksSem chan bool
@@ -284,20 +285,38 @@ func initBookHandlers() {
 
 // returns immediately but builds the handler in the background
 func genBookHandler(book *Book) Handler {
-	var urls []string
 	var handlers []Handler
+	var filesHandler *FilesHandler
 	var mu sync.Mutex
-	pages := map[string]*Page{}
-	getURLs := func() []string {
-		mu.Lock()
-		defer mu.Unlock()
+	pages := map[string]*Page{} // maps url to Page
 
-		return urls
+	addHandler := func(h Handler) {
+		mu.Lock()
+		handlers = append(handlers, h)
+		mu.Unlock()
 	}
+	filesHandler = NewFilesHandler()
+	addHandler(filesHandler)
+
 	baseURL := book.URL()
 	indexURL := path.Join(baseURL, "index.html")
 	book404URL := path.Join(baseURL, "404.html")
 	overviewURL := path.Join(baseURL, "overview.html")
+
+	getURLs := func() []string {
+		mu.Lock()
+		defer mu.Unlock()
+		urls := []string{
+			indexURL, book404URL, overviewURL,
+		}
+		for uri := range pages {
+			urls = append(urls, uri)
+		}
+		for _, h := range handlers {
+			urls = append(urls, h.URLS()...)
+		}
+		return urls
+	}
 
 	get := func(uri string) func(w http.ResponseWriter, r *http.Request) {
 		mu.Lock()
@@ -352,6 +371,7 @@ func genBookHandler(book *Book) Handler {
 		logf(ctx(), "starting to build book '%s'\n", book.DirShort)
 		timeStart := time.Now()
 		defer func() {
+			urls := getURLs()
 			logf(ctx(), "finished building book '%s', %d urls, took %s\n", book.DirShort, len(urls), time.Since(timeStart))
 		}()
 
@@ -360,12 +380,7 @@ func genBookHandler(book *Book) Handler {
 		buildBookPages(book)
 
 		addSitemapURL(book, book.CanonnicalURL())
-		addHandler := func(h Handler) {
-			mu.Lock()
-			handlers = append(handlers, h)
-			urls = append(urls, h.URLS()...)
-			mu.Unlock()
-		}
+
 		{
 			// copyImages
 			dir := filepath.Join(book.NotionCacheDir, "img")
@@ -379,46 +394,45 @@ func genBookHandler(book *Book) Handler {
 			{
 				fpath := filepath.Join("covers", book.CoverImageName)
 				uri := path.Join(baseURL, "covers", book.CoverImageName)
-				h := NewFileHandler(fpath, uri)
-				addHandler(h)
+				filesHandler.AddFile(uri, fpath)
 			}
 			{
 				fpath := filepath.Join("covers", "twitter", book.CoverImageName)
 				uri := path.Join(baseURL, "covers", "twitter", book.CoverImageName)
-				h := NewFileHandler(fpath, uri)
-				addHandler(h)
+				filesHandler.AddFile(uri, fpath)
 			}
+		}
+
+		ensureHTMLSuffix := func(s string) string {
+			if !strings.HasSuffix(s, ".html") {
+				return s + ".html"
+			}
+			return s
 		}
 
 		{
 			// genPage
-			addPageImages := func(page *Page) {
+			addPage := func(page *Page) {
+				addSitemapURL(book, page.CanonnicalURL())
+				uri := ensureHTMLSuffix(page.URL())
+				pages[uri] = page
 				for _, imagePath := range page.images {
 					imageName := filepath.Base(imagePath)
 					uri := page.ImageURL(imageName)
 					dst := page.destImagePath(imageName)
-					h := NewFileHandler(dst, uri)
-					addHandler(h)
+					filesHandler.AddFile(uri, dst)
 				}
 			}
 
 			mu.Lock()
 			for _, chapter := range book.Chapters() {
-				pages[chapter.URL()] = chapter
-				addSitemapURL(book, chapter.CanonnicalURL())
-				addPageImages(chapter)
+				addPage(chapter)
 				for _, article := range chapter.Pages {
-					pages[article.URL()] = article
-					addSitemapURL(book, article.CanonnicalURL())
-					addPageImages(article)
+					addPage(article)
 				}
 			}
 			mu.Unlock()
 		}
-
-		mu.Lock()
-		defer mu.Unlock()
-		urls = append(urls, indexURL, book404URL)
 	}()
 	return NewDynamicHandler(get, getURLs)
 }
