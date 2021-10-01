@@ -83,18 +83,6 @@ func previewWebsite() {
 	waitForCtrlC()
 }
 
-func staticFileHandlers(dir string, files []string) []Handler {
-	var res []Handler
-	for _, f := range files {
-		uri := "/s/" + f
-		path := filepath.Join(dir, f)
-		panicIf(!fileExists(path), "file '%s' doesn't exist", path)
-		h := NewFileHandler(path, uri)
-		res = append(res, h)
-	}
-	return res
-}
-
 func serveStart(w http.ResponseWriter, r *http.Request, uri string) {
 	if r == nil {
 		return
@@ -182,11 +170,12 @@ func buildServer(booksToProcess []*Book) *ServerConfig {
 	initBookHandlers()
 
 	buildFrontend()
-	h := staticFileHandlers(filepath.Join("www", "gen"), []string{"bundle.css", "bundle.js"})
-	handlers := h
-	h = staticFileHandlers(filepath.Join("fe", "tmpl"), []string{"favicon.ico", "index.css", "main.css"})
-	handlers = append(handlers, h...)
-	h = genBooksIndex2(allBooks)
+	filesHandler := NewFilesHandler()
+
+	filesHandler.AddFilesInDir(filepath.Join("www", "gen"), []string{"bundle.css", "bundle.js"})
+	filesHandler.AddFilesInDir(filepath.Join("fe", "tmpl"), []string{"favicon.ico", "index.css", "main.css"})
+	handlers := []Handler{filesHandler}
+	h := genBooksIndex2(allBooks)
 	handlers = append(handlers, h...)
 	for _, book := range booksToProcess {
 		h := genBookHandler(book)

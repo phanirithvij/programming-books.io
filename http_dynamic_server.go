@@ -126,6 +126,15 @@ func (h *FilesHandler) AddFile(uri, path string) {
 	h.files[uri] = path
 }
 
+func (h *FilesHandler) AddFilesInDir(dir string, files []string) {
+	for _, f := range files {
+		uri := "/s/" + f
+		path := filepath.Join(dir, f)
+		panicIf(!fileExists(path), "file '%s' doesn't exist", path)
+		h.AddFile(uri, path)
+	}
+}
+
 func (h *FilesHandler) Get(url string) func(w http.ResponseWriter, r *http.Request) {
 	for uri, path := range h.files {
 		// urls are case-insensitive
