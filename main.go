@@ -213,11 +213,11 @@ func main() {
 			wg.Add(1)
 			// no throttling because we assume book downloading takes at least as much time
 			// as generation
-			go func(b *Book) {
+			go func(b *Book, i int) {
 				genBook(b)
 				logf(ctx(), "generated book %d out of %d, name: %s, dir: %s\n", i+1, n, b.Title, b.DirShort)
 				wg.Done()
-			}(book)
+			}(book, i)
 		}
 		wg.Wait()
 		if !flgDownloadOnly {

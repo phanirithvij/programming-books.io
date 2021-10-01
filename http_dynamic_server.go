@@ -243,7 +243,6 @@ func NewInMemoryFilesHandler(files map[string][]byte) *InMemoryFilesHandler {
 		if !strings.HasPrefix(newp, "/") {
 			newp = "/" + newp
 		}
-		newp = "/" + path
 		if path == newp {
 			continue
 		}
