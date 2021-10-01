@@ -84,6 +84,8 @@ const app = {
   bookToc: BookToc,
 };
 
+window.app = app;
+
 function updateLinkHome() {
   var view = viewGet();
   if (!view) {

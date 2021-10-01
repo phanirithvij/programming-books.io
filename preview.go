@@ -3,7 +3,6 @@ package main
 import (
 	"html/template"
 	"net/http"
-	"net/url"
 	"path"
 	"path/filepath"
 	"runtime"
@@ -11,77 +10,6 @@ import (
 	"sync"
 	"time"
 )
-
-// return "" if didn't find a file
-// uriPath is
-func findFileForURL(uri *url.URL) string {
-	dir := indexDestDir
-	uriPath := uri.Path
-	fileName := uriPath
-	if uriPath == "/" {
-		fileName = "index.html"
-	}
-	path := filepath.Join(dir, fileName)
-	if fileExists(path) {
-		return path
-	}
-	if fileExists(path + ".html") {
-		return path + ".html"
-	}
-	if fileExists(path + "/index.html") {
-		return path + "/"
-	}
-	logf(ctx(), "didn't find file or url '%s'\n", uriPath)
-	return ""
-}
-
-func handleIndex(w http.ResponseWriter, r *http.Request) {
-	//logf(ctx(), "uri: %s\n", r.URL.Path)
-	path := findFileForURL(r.URL)
-	if path != "" {
-		http.ServeFile(w, r, path)
-		return
-	}
-	path = filepath.Join(indexDestDir, "404.html")
-	d := readFileMust(path)
-	w.Header().Add("Content-Type", "text/html; charset=utf-8")
-	w.WriteHeader(http.StatusNotFound)
-	w.Write(d)
-}
-
-// https://blog.gopheracademy.com/advent-2016/exposing-go-on-the-internet/
-func makeHTTPServerOnDemand() *http.Server {
-	mux := &http.ServeMux{}
-
-	mux.HandleFunc("/", handleIndex)
-
-	srv := &http.Server{
-		ReadTimeout:  5 * time.Second,
-		WriteTimeout: 5 * time.Second,
-		IdleTimeout:  120 * time.Second, // introduced in Go 1.8
-		Handler:      mux,
-	}
-	return srv
-}
-
-func previewWebsite() {
-	httpSrv := makeHTTPServerOnDemand()
-	httpSrv.Addr = "127.0.0.1:8183"
-
-	go func() {
-		err := httpSrv.ListenAndServe()
-		// mute error caused by Shutdown()
-		if err == http.ErrServerClosed {
-			err = nil
-		}
-		must(err)
-		logf(ctx(), "HTTP server shutdown gracefully\n")
-	}()
-	logf(ctx(), "Started listening on %s\n", httpSrv.Addr)
-	openBrowser("http://" + httpSrv.Addr)
-
-	waitForCtrlC()
-}
 
 func serveStart(w http.ResponseWriter, r *http.Request, uri string) {
 	if r == nil {
@@ -162,14 +90,18 @@ func genBooksIndex2(books []*Book) []Handler {
 	return res
 }
 
-func buildServer(booksToProcess []*Book) *ServerConfig {
+func buildServer(booksToProcess []*Book, forDev bool) *ServerConfig {
 	logf(ctx(), "buildServer: %d books\n", len(booksToProcess))
 	for _, book := range booksToProcess {
 		initBook(book)
 	}
 	initBookHandlers()
 
-	buildFrontend()
+	if forDev {
+		buildFrontendDev()
+	} else {
+		buildFrontendProd()
+	}
 	filesHandler := NewFilesHandler()
 
 	filesHandler.AddFilesInDir(filepath.Join("www", "gen"), []string{"bundle.css", "bundle.js"})
@@ -190,12 +122,12 @@ func buildServer(booksToProcess []*Book) *ServerConfig {
 	return server
 }
 
-func previewWebsite2(booksToProcess []*Book) {
-	logf(ctx(), "previewWebsite2\n")
+func previewWebsite(booksToProcess []*Book) {
+	logf(ctx(), "previewWebsite\n")
 	timeStart := time.Now()
 	flgReloadTemplates = true
 	flgNoDownload = true
-	server := buildServer(booksToProcess)
+	server := buildServer(booksToProcess, true)
 	go func() {
 		booksWg.Wait()
 		// TODO: mutex protection
@@ -203,7 +135,7 @@ func previewWebsite2(booksToProcess []*Book) {
 		for _, h := range server.Handlers {
 			nPages += len(h.URLS())
 		}
-		logf(ctx(), "previewWebsite2: finished %d urls in %s\n", nPages, time.Since(timeStart))
+		logf(ctx(), "previewWebsite: finished %d urls in %s\n", nPages, time.Since(timeStart))
 	}()
 
 	waitSignal := StartServer(server)
@@ -226,7 +158,7 @@ func previewToInsantPreview(booksToProcess []*Book) {
 	timeStart := time.Now()
 	flgReloadTemplates = false
 	flgNoDownload = true
-	server := buildServer(booksToProcess)
+	server := buildServer(booksToProcess, false)
 	booksWg.Wait()
 	nPages := 0
 	for _, h := range server.Handlers {
@@ -245,7 +177,7 @@ func genToDir(booksToProcess []*Book, dir string) {
 	timeStart := time.Now()
 	flgReloadTemplates = false
 	flgNoDownload = true
-	server := buildServer(booksToProcess)
+	server := buildServer(booksToProcess, false)
 	booksWg.Wait()
 	nPages := 0
 	for _, h := range server.Handlers {

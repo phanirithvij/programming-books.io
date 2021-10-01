@@ -176,7 +176,7 @@ func main() {
 	}
 
 	if flgPreview {
-		previewWebsite2(allBooks)
+		previewWebsite(allBooks)
 		return
 	}
 
@@ -231,7 +231,7 @@ func main() {
 				if flgClean && flgAllBooks {
 					os.RemoveAll(indexDestDir)
 				}
-				buildFrontend()
+				buildFrontendDev()
 				copyGlobalAssets()
 			}
 			wg.Add(1)
@@ -250,7 +250,7 @@ func main() {
 
 		genBooksIndex(allBooks)
 		if flgPreview {
-			previewWebsite()
+			previewWebsite(allBooks)
 		}
 		return
 	}
@@ -258,11 +258,6 @@ func main() {
 	if flgCheckinHTML {
 		showUsage = false
 		commitAndPushGeneratedHTMLToRepo()
-	}
-
-	if flgPreview {
-		previewWebsite()
-		return
 	}
 
 	if showUsage {

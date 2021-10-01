@@ -274,7 +274,7 @@ var (
 	didBuildFrontEnd = false
 )
 
-func buildFrontend() {
+func buildFrontendYarn() {
 	// only needs to do it once
 	if didBuildFrontEnd {
 		return
@@ -292,6 +292,35 @@ func buildFrontend() {
 		runCmdMust(cmd)
 	}
 	didBuildFrontEnd = true
+}
+
+func buildFrontend(forDev bool) {
+	// only needs to do it once
+	if didBuildFrontEnd {
+		return
+	}
+	{
+		os.Remove("package-lock.json")
+		os.RemoveAll("node_modules")
+		cmd := exec.Command("npm", "install")
+		runCmdMust(cmd)
+	}
+	if forDev {
+		cmd := exec.Command("npm", "run", "build-dev")
+		runCmdMust(cmd)
+	} else {
+		cmd := exec.Command("npm", "run", "build")
+		runCmdMust(cmd)
+	}
+	didBuildFrontEnd = true
+}
+
+func buildFrontendDev() {
+	buildFrontend(true)
+}
+
+func buildFrontendProd() {
+	buildFrontend(false)
 }
 
 func fileExists(path string) bool {
@@ -315,7 +344,7 @@ func fmtCmdShort(cmd exec.Cmd) string {
 }
 
 func runCmdMust(cmd *exec.Cmd) string {
-	fmt.Printf("> %s\n", fmtCmdShort(*cmd))
+	logf(ctx(), "> %s\n", fmtCmdShort(*cmd))
 	canCapture := (cmd.Stdout == nil) && (cmd.Stderr == nil)
 	if canCapture {
 		out, err := cmd.CombinedOutput()
