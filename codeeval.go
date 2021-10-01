@@ -51,10 +51,12 @@ func evalCode(e *Eval) (*EvalResponse, error) {
 	d, err = ioutil.ReadAll(rsp.Body)
 	must(err)
 	if rsp.StatusCode != 200 {
-		err = fmt.Errorf("request failed with '%s'", rsp.Status)
+		err = fmt.Errorf("evalCode: request failed with '%s'", rsp.Status)
 		if len(d) > 0 {
 			logf(ctx(), "\nServer error:\n%s\n", string(d))
 		}
+		req, _ := json.MarshalIndent(e, "", "  ")
+		logf(ctx(), "evalCode: request:\n%s\n", string(req))
 		return nil, err
 	}
 	var res EvalResponse

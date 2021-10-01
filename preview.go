@@ -176,7 +176,7 @@ func genBooksIndex2(books []*Book) []Handler {
 func previewWebsite2(booksToProcess []*Book) {
 	logf(ctx(), "previewWebsite2\n")
 	flgReloadTemplates = true
-	flgNoDownload = false
+	flgNoDownload = true
 	for _, book := range booksToProcess {
 		initBook(book)
 	}

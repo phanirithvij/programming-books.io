@@ -79,6 +79,7 @@ func downloadBook(book *Book) {
 	afterPageDownload := func(di *notionapi.DownloadInfo) error {
 		nTotalPages++
 		if di.FromCache {
+			di.Page.NotionID = notionapi.NewNotionID(di.Page.ID)
 			atomic.AddInt32(&nTotalDownloaded, 1)
 			if nTotalPages == 1 || nTotalPages%64 == 0 {
 				logf(ctx(), "CACHE '%s' %d\n", di.Page.NotionID.NoDashID, nTotalPages)
