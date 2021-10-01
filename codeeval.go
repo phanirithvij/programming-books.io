@@ -57,6 +57,7 @@ func evalCode(e *Eval) (*EvalResponse, error) {
 		}
 		req, _ := json.MarshalIndent(e, "", "  ")
 		logf(ctx(), "evalCode: request:\n%s\n", string(req))
+		dbgEval(e)
 		return nil, err
 	}
 	var res EvalResponse

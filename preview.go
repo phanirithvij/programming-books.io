@@ -175,6 +175,7 @@ func genBooksIndex2(books []*Book) []Handler {
 
 func previewWebsite2(booksToProcess []*Book) {
 	logf(ctx(), "previewWebsite2\n")
+	timeStart := time.Now()
 	flgReloadTemplates = true
 	flgNoDownload = true
 	for _, book := range booksToProcess {
@@ -192,6 +193,16 @@ func previewWebsite2(booksToProcess []*Book) {
 		h := genBookHandler(book)
 		handlers = append(handlers, h)
 	}
+
+	go func() {
+		booksWg.Wait()
+		// TODO: mutex protection
+		nPages := 0
+		for _, h := range handlers {
+			nPages += len(h.URLS())
+		}
+		logf(ctx(), "previewWebsite2: finished %d urls in %s\n", nPages, time.Since(timeStart))
+	}()
 
 	server := &ServerConfig{
 		Handlers:  handlers,
