@@ -255,7 +255,8 @@ func NewInMemoryFilesHandler(files map[string][]byte) *InMemoryFilesHandler {
 	}
 }
 
-func WriteServerFilesToDir(dir string, handlers []Handler) {
+func WriteServerFilesToDir(dir string, handlers []Handler) int {
+	nFiles := 0
 	for _, h := range handlers {
 		urls := h.URLS()
 		for _, uri := range urls {
@@ -272,9 +273,13 @@ func WriteServerFilesToDir(dir string, handlers []Handler) {
 			err = f.Close()
 			must(err)
 			sizeStr := formatSize(getFileSize(path))
-			logf(ctx(), "WriteServerFilesToDir: '%s' of size %s\n", path, sizeStr)
+			if nFiles%36 == 0 {
+				logf(ctx(), "WriteServerFilesToDir: '%s' of size %s\n", path, sizeStr)
+			}
+			nFiles++
 		}
 	}
+	return nFiles
 }
 
 func zipWriteContent(zw *zip.Writer, files map[string][]byte) error {
@@ -305,6 +310,7 @@ func zipCreateFromContent(files map[string][]byte) ([]byte, error) {
 }
 
 func WriteServerFilesToZip(handlers []Handler) ([]byte, error) {
+	nFiles := 0
 	files := map[string][]byte{}
 	for _, h := range handlers {
 		urls := h.URLS()
@@ -320,7 +326,10 @@ func WriteServerFilesToZip(handlers []Handler) ([]byte, error) {
 			d := buf.Bytes()
 			files[path] = d
 			sizeStr := formatSize(int64(len(d)))
-			logf(ctx(), "WriteServerFilesZip: '%s' of size %s\n", path, sizeStr)
+			if nFiles%128 == 0 {
+				logf(ctx(), "WriteServerFilesZip: %d file '%s' of size %s\n", nFiles+1, path, sizeStr)
+			}
+			nFiles++
 		}
 	}
 	return zipCreateFromContent(files)

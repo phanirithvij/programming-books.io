@@ -173,44 +173,103 @@ func genBooksIndex2(books []*Book) []Handler {
 	return res
 }
 
-func previewWebsite2(booksToProcess []*Book) {
-	logf(ctx(), "previewWebsite2\n")
-	timeStart := time.Now()
-	flgReloadTemplates = true
-	flgNoDownload = true
+func buildServer(booksToProcess []*Book) *ServerConfig {
+	logf(ctx(), "buildServer: %d books\n", len(booksToProcess))
 	for _, book := range booksToProcess {
 		initBook(book)
 	}
-	buildFrontend()
+	initBookHandlers()
+
+	booksWg.Add(1)
+	go func() {
+		buildFrontend()
+		booksWg.Done()
+	}()
+
 	h := staticFileHandlers(filepath.Join("www", "gen"), []string{"bundle.css", "bundle.js"})
 	handlers := h
 	h = staticFileHandlers(filepath.Join("fe", "tmpl"), []string{"favicon.ico", "index.css", "main.css"})
 	handlers = append(handlers, h...)
 	h = genBooksIndex2(allBooks)
 	handlers = append(handlers, h...)
-	initBookHandlers()
 	for _, book := range booksToProcess {
 		h := genBookHandler(book)
 		handlers = append(handlers, h)
 	}
-
-	go func() {
-		booksWg.Wait()
-		// TODO: mutex protection
-		nPages := 0
-		for _, h := range handlers {
-			nPages += len(h.URLS())
-		}
-		logf(ctx(), "previewWebsite2: finished %d urls in %s\n", nPages, time.Since(timeStart))
-	}()
 
 	server := &ServerConfig{
 		Handlers:  handlers,
 		Port:      9003,
 		CleanURLS: true,
 	}
+	return server
+}
+
+func previewWebsite2(booksToProcess []*Book) {
+	logf(ctx(), "previewWebsite2\n")
+	timeStart := time.Now()
+	flgReloadTemplates = true
+	flgNoDownload = true
+	server := buildServer(booksToProcess)
+	go func() {
+		booksWg.Wait()
+		// TODO: mutex protection
+		nPages := 0
+		for _, h := range server.Handlers {
+			nPages += len(h.URLS())
+		}
+		logf(ctx(), "previewWebsite2: finished %d urls in %s\n", nPages, time.Since(timeStart))
+	}()
+
 	waitSignal := StartServer(server)
 	waitSignal()
+}
+
+func uploadZipToInstantPreviewMust(zipData []byte) string {
+	timeStart := time.Now()
+	uri := "https://www.instantpreview.dev/upload"
+	res, err := httpPost(uri, zipData)
+	must(err)
+	uri = string(res)
+	sizeStr := formatSize(int64(len(zipData)))
+	logf(ctx(), "uploaded under: %s, zip file size: %s in: %s\n", uri, sizeStr, time.Since(timeStart))
+	return uri
+}
+
+func previewToInsantPreview(booksToProcess []*Book) {
+	logf(ctx(), "previewToInsantPreview: %d books\n", len(booksToProcess))
+	timeStart := time.Now()
+	flgReloadTemplates = false
+	flgNoDownload = true
+	server := buildServer(booksToProcess)
+	booksWg.Wait()
+	nPages := 0
+	for _, h := range server.Handlers {
+		nPages += len(h.URLS())
+	}
+	logf(ctx(), "previewToInsantPreview: finished %d urls in %s\n", nPages, time.Since(timeStart))
+	zipData, err := WriteServerFilesToZip(server.Handlers)
+	must(err)
+	timeStart = time.Now()
+	uri := uploadZipToInstantPreviewMust(zipData)
+	logf(ctx(), "previewToInsantPreview: uploaded zip of size %s in %s\n%s\n", formatSize(int64(len(zipData))), time.Since(timeStart), uri)
+}
+
+func genToDir(booksToProcess []*Book, dir string) {
+	logf(ctx(), "genToDir: '%s'\n", dir)
+	timeStart := time.Now()
+	flgReloadTemplates = false
+	flgNoDownload = true
+	server := buildServer(booksToProcess)
+	booksWg.Wait()
+	nPages := 0
+	for _, h := range server.Handlers {
+		nPages += len(h.URLS())
+	}
+	logf(ctx(), "genToDir: finished %d urls in %s\n", nPages, time.Since(timeStart))
+	//must(os.RemoveAll(dir))
+	nFiles := WriteServerFilesToDir(dir, server.Handlers)
+	logf(ctx(), "genToDir: wrote %d files\n", nFiles)
 }
 
 var booksSem chan bool

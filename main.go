@@ -80,6 +80,7 @@ func main() {
 		flgDownloadGist string
 		flgCheckinHTML  bool
 		flgRebuildAll   bool
+		flgPreviewInsta bool
 	)
 
 	{
@@ -102,6 +103,7 @@ func main() {
 		flag.BoolVar(&flgCheckinHTML, "checkin-html", false, "checkin generated html")
 		flag.BoolVar(&flgDisableNotionCache, "no-cache", false, "if true, disables cache for notion")
 		flag.BoolVar(&flgRebuildAll, "rebuild-all", false, "same as -books-all -clean -gen")
+		flag.BoolVar(&flgPreviewInsta, "preview-insta", false, "preview to instantpreview.dev")
 		flag.Parse()
 
 		// change to true for easier ad-hoc debugging in visual studio code
@@ -176,6 +178,11 @@ func main() {
 		return
 	}
 
+	if flgPreviewInsta {
+		previewToInsantPreview(allBooks)
+		return
+	}
+
 	var booksToProcess []*Book
 	if flgBook != "" {
 		book := findBook(flgBook)
@@ -185,6 +192,12 @@ func main() {
 	if flgAllBooks {
 		booksToProcess = allBooks
 	}
+
+	if flgGen {
+		genToDir(allBooks, indexDestDir)
+		return
+	}
+
 	for _, book := range booksToProcess {
 		initBook(book)
 	}
