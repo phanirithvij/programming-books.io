@@ -13,6 +13,8 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/kjk/notionapi"
 )
 
 func genIndexGrid(books []*Book, w io.Writer) error {
@@ -275,6 +277,37 @@ func initBookHandlers() {
 	booksSem = make(chan bool, nThreads)
 }
 
+func maybeRedownloadPage(book *Book, pageID string) *Page {
+	logf(ctx(), "maybeRedownloadPage %s\n", pageID)
+
+	c := &notionapi.Client{
+		AuthToken: notionAuthToken,
+	}
+	c.Logger = logFile
+	//c.Logger = os.Stdout
+	//c.DebugLog = true
+	cacheDir := book.NotionCacheDir
+	cc, err := notionapi.NewCachingClient(cacheDir, c)
+	must(err)
+	cc.CacheDirFiles = filepath.Join(cacheDir, "img")
+	cc.Policy = notionapi.PolicyDownloadAlways
+	book.client = cc
+	page, err := cc.DownloadPage(pageID)
+	if err != nil {
+		return nil
+	}
+	id := page.GetNotionID().NoDashID
+	p := &Page{
+		NotionPage: page,
+		NotionID:   id,
+		Book:       book,
+	}
+	evalCodeSnippetsForPage(p)
+	downloadImages(cc, book, p)
+	calcPageHeadings(p)
+	return p
+}
+
 // returns immediately but builds the handler in the background
 func genBookHandler(book *Book) Handler {
 	panicIf(book == nil)
@@ -330,6 +363,10 @@ func genBookHandler(book *Book) Handler {
 		}
 		if page := pages[uri]; page != nil {
 			return func(w http.ResponseWriter, r *http.Request) {
+				if newPage := maybeRedownloadPage(book, page.NotionID); newPage != nil {
+					page = newPage
+					pages[uri] = page
+				}
 				html := notionToHTML(page, book)
 				page.BodyHTML = template.HTML(string(html))
 				d := PageData{
