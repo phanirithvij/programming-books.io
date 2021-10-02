@@ -278,11 +278,12 @@ func initBookHandlers() {
 }
 
 func maybeRedownloadPage(book *Book, pageID string) *Page {
+	if !isPreview() {
+		return nil
+	}
 	logf(ctx(), "maybeRedownloadPage %s\n", pageID)
 
-	c := &notionapi.Client{
-		AuthToken: notionAuthToken,
-	}
+	c := &notionapi.Client{}
 	c.Logger = logFile
 	//c.Logger = os.Stdout
 	//c.DebugLog = true

@@ -54,9 +54,7 @@ func downloadBook(book *Book) {
 	createDirMust(book.NotionCacheDir)
 	logf(ctx(), "Downloading %s, created cache dir: '%s'\n", book.Title, book.NotionCacheDir)
 
-	c := &notionapi.Client{
-		AuthToken: notionAuthToken,
-	}
+	c := &notionapi.Client{}
 	c.Logger = logFile
 	//c.Logger = os.Stdout
 	//c.DebugLog = true

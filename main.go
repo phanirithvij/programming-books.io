@@ -15,8 +15,6 @@ type any = interface{}
 var (
 	doMinify bool
 
-	notionAuthToken string
-
 	// when downloading pages from the server, count total number of
 	// downloaded and those from cache
 	nTotalDownloaded int32
@@ -86,18 +84,6 @@ func main() {
 	if false {
 		optimizeAllImages()
 		return
-	}
-
-	{
-		//notionAuthToken = os.Getenv("NOTION_TOKEN")
-		// we don't need authentication and the result change
-		// in authenticated vs. non-authenticated state
-		notionAuthToken = ""
-		if notionAuthToken != "" {
-			logf(ctx(), "NOTION_TOKEN provided, can write back\n")
-		} else {
-			logf(ctx(), "NOTION_TOKEN not provided, read only\n")
-		}
 	}
 
 	notionapi.LogFunc = logsf
