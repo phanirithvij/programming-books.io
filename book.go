@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"html/template"
-	"io/ioutil"
 	"path/filepath"
 	"sync"
 
@@ -90,16 +89,14 @@ func (b *Book) CoverSmallURL() string {
 	return fmt.Sprintf("/covers_small/%s", b.CoverImageName)
 }
 
-// CoverFullURL returns a URL for the cover including host
-func (b *Book) CoverFullURL() string {
-	return urlJoin(siteBaseURL, b.CoverURL())
+func (b *Book) CoverTwitterURL() string {
+	panicIf(b.CoverImageName == "")
+	return fmt.Sprintf("/covers/twitter/%s", b.CoverImageName)
 }
 
 // CoverTwitterFullURL returns a URL for the cover including host
 func (b *Book) CoverTwitterFullURL() string {
-	panicIf(b.CoverImageName == "")
-	coverURL := fmt.Sprintf("/covers/twitter/%s", b.CoverImageName)
-	return urlJoin(siteBaseURL, coverURL)
+	return urlJoin(siteBaseURL, b.CoverTwitterURL())
 }
 
 // Chapters returns pages that are top-level chapters
@@ -142,19 +139,6 @@ func (b *Book) PagesCount() int {
 // ChaptersCount returns number of chapters
 func (b *Book) ChaptersCount() int {
 	return len(b.RootPage.Pages)
-}
-
-func updateBookAppJS(book *Book) {
-	name := fmt.Sprintf("app-%s.js", book.DirShort)
-	d := book.tocData
-	dst := filepath.Join(indexDestDir, "s", name)
-	err := ioutil.WriteFile(dst, d, 0644)
-	maybePanicIfErr(err)
-	if err != nil {
-		return
-	}
-	book.AppJSURL = "/s/" + name
-	logf(ctx(), "Created %s\n", dst)
 }
 
 func calcPageHeadings(page *Page) {

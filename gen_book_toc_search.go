@@ -108,11 +108,6 @@ func genBookTOCSearchInner(book *Book) {
 
 }
 
-func genBookTOCSearchMust(book *Book) {
-	genBookTOCSearchInner(book)
-	updateBookAppJS(book)
-}
-
 func genBookTOCSearchHandlerMust(book *Book) Handler {
 	genBookTOCSearchInner(book)
 	name := fmt.Sprintf("app-%s.js", book.DirShort)

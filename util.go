@@ -11,15 +11,11 @@ import (
 	"net/http"
 	"os"
 	"os/exec"
-	"os/signal"
 	"path/filepath"
 	"runtime"
 	"strconv"
 	"strings"
-	"syscall"
 	"time"
-
-	"github.com/kjk/u"
 )
 
 func ctx() context.Context {
@@ -257,19 +253,6 @@ func maybePanicIfErr(err error) {
 	delayedErrors = append(delayedErrors, err.Error())
 }
 
-func createDirForFileMaybeMust(path string) {
-	dir := filepath.Dir(path)
-	err := os.MkdirAll(dir, 0755)
-	maybePanicIfErr(err)
-}
-
-func copyFileMaybeMust(dst, src string) error {
-	createDirForFileMaybeMust(dst)
-	err := u.CopyFile(dst, src)
-	maybePanicIfErr(err)
-	return err
-}
-
 var (
 	didBuildFrontEnd = false
 )
@@ -328,16 +311,6 @@ func fileExists(path string) bool {
 	return err == nil && st.Mode().IsRegular()
 }
 
-func pathExists(path string) bool {
-	_, err := os.Lstat(path)
-	return err == nil
-}
-
-func dirExists(path string) bool {
-	st, err := os.Lstat(path)
-	return err == nil && st.IsDir()
-}
-
 func fmtCmdShort(cmd exec.Cmd) string {
 	cmd.Path = filepath.Base(cmd.Path)
 	return cmd.String()
@@ -371,11 +344,6 @@ func readFileMust(path string) []byte {
 	d, err := ioutil.ReadFile(path)
 	must(err)
 	return d
-}
-
-func writeFileMust(path string, data []byte) {
-	err := ioutil.WriteFile(path, data, 0644)
-	must(err)
 }
 
 func createDirForFile(path string) error {
@@ -423,12 +391,6 @@ func openBrowser(url string) {
 	if err != nil {
 		log.Fatal(err)
 	}
-}
-
-func waitForCtrlC() {
-	c := make(chan os.Signal, 2)
-	signal.Notify(c, os.Interrupt /* SIGINT */, syscall.SIGTERM)
-	<-c
 }
 
 func sha1HexOfBytes(data []byte) string {

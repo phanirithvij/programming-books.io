@@ -5,12 +5,8 @@ import (
 	"html/template"
 	"io"
 	"io/ioutil"
-	"os"
 	"path/filepath"
 	"sync"
-	"time"
-
-	"github.com/kjk/u"
 )
 
 const (
@@ -154,45 +150,6 @@ func buildCreadcumb(book *Book, page *Page, d *PageData) {
 	d.Breadcrumbs = a
 }
 
-func genPage(book *Book, page *Page, w io.Writer) error {
-	if w == nil {
-		addSitemapURL(book, page.CanonnicalURL())
-		for _, article := range page.Pages {
-			_ = genPage(book, article, nil)
-		}
-	}
-
-	d := PageData{
-		PageCommon:  getPageCommon(),
-		Page:        page,
-		Description: page.Title,
-	}
-	buildCreadcumb(book, page, &d)
-
-	path := page.destFilePath()
-	err := execTemplate("page.tmpl.html", d, path, w)
-	if err != nil {
-		logf(ctx(), "Failed to minify page %s in book %s\n", page.NotionID, book.Title)
-	}
-	for _, imagePath := range page.images {
-		imageName := filepath.Base(imagePath)
-		dst := page.destImagePath(imageName)
-		_ = copyFileMaybeMust(dst, imagePath)
-	}
-	return err
-}
-
-func bookPagesToHTML(book *Book) {
-	nProcessed := 0
-	pages := book.GetAllPages()
-	for _, page := range pages {
-		html := notionToHTML(page, book)
-		page.BodyHTML = template.HTML(string(html))
-		nProcessed++
-	}
-	logf(ctx(), "bookPagesToHTML: processed %d pages for book %s\n", nProcessed, book.TitleLong)
-}
-
 func genBookIndexHTML(book *Book, w io.Writer) error {
 	data := struct {
 		PageCommon
@@ -217,63 +174,4 @@ func genBook404(book *Book, w io.Writer) error {
 
 	path := filepath.Join(book.destDir(), "404.html")
 	return execTemplate("404.tmpl.html", data, path, nil)
-}
-
-func copyCover(book *Book) {
-	{
-		src := filepath.Join("covers", book.CoverImageName)
-		dst := filepath.Join(book.DirOnDisk, "covers", book.CoverImageName)
-		must(createDirForFile(dst))
-		u.CopyFileMust(dst, src)
-		logf(ctx(), "Copied '%s' => '%s'\n", src, dst)
-	}
-
-	{
-		src := filepath.Join("covers", "twitter", book.CoverImageName)
-		dst := filepath.Join(book.DirOnDisk, "covers", "twitter", book.CoverImageName)
-		must(createDirForFile(dst))
-		u.CopyFileMust(dst, src)
-		logf(ctx(), "Copied '%s' => '%s'\n", src, dst)
-	}
-}
-
-func genBook(book *Book) {
-	logf(ctx(), "Started genering book %s\n", book.Title)
-	timeStart := time.Now()
-
-	// TODO: atomic generation i.e. generate to a temp directory and at the end remove
-	// existing and replace with temp. Won't need flgClean anymore
-	if flgClean {
-		os.RemoveAll(book.DirOnDisk)
-	}
-
-	buildBookPages(book)
-
-	copyImages(book)
-	bookPagesToHTML(book)
-
-	genBookTOCSearchMust(book)
-
-	// generate index.html for the book
-	err := os.MkdirAll(book.destDir(), 0755)
-	maybePanicIfErr(err)
-	if err != nil {
-		return
-	}
-
-	_ = genBookIndexHTML(book, nil)
-
-	_ = genBook404(book, nil)
-
-	addSitemapURL(book, book.CanonnicalURL())
-
-	for _, chapter := range book.Chapters() {
-		_ = genPage(book, chapter, nil)
-	}
-
-	writeSitemap(book)
-	genOverview(book)
-	copyCover(book)
-
-	logf(ctx(), "Generated book '%s' in %s\n", book.Title, time.Since(timeStart))
 }

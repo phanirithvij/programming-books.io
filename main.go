@@ -2,17 +2,11 @@ package main
 
 import (
 	"flag"
-	"fmt"
 	"os"
-	"os/exec"
 	"path/filepath"
-	"runtime"
-	"strings"
-	"sync"
 	"time"
 
 	"github.com/kjk/notionapi"
-	"github.com/kjk/u"
 )
 
 type any = interface{}
@@ -28,28 +22,6 @@ var (
 	nTotalFromCache  int32
 )
 
-func shouldCopyImage(path string) bool {
-	return !strings.Contains(path, "@2x")
-}
-
-func copyCoversMust(dir string) {
-	srcDir := "covers"
-	dstDir := filepath.Join(dir, "covers")
-	u.DirCopyRecurMust(dstDir, srcDir, shouldCopyImage)
-	dstDir = filepath.Join(dir, "covers_small")
-	srcDir = filepath.Join("covers_small")
-	u.DirCopyRecurMust(dstDir, srcDir, shouldCopyImage)
-}
-
-func copyImages(book *Book) {
-	src := filepath.Join(book.NotionCacheDir, "img")
-	if !dirExists(src) {
-		return
-	}
-	dst := filepath.Join(book.destDir(), "img")
-	u.DirCopyRecurMust(dst, src, nil)
-}
-
 func isPreview() bool {
 	return flgPreview
 }
@@ -62,8 +34,6 @@ var (
 	// will only download (no eval, no generation)
 	flgDownloadOnly bool
 
-	// re-create "www" directory
-	flgClean bool
 	// disables notion cache, forcing re-download of notion page
 	// even if cached verison on disk exits
 	flgDisableNotionCache bool
@@ -95,7 +65,6 @@ func main() {
 	{
 		flag.BoolVar(&flgNoCleanCheck, "no-clean-check", false, "don't check if destination directory is not clean")
 		flag.BoolVar(&flgPreview, "preview", false, "preview the book locally")
-		flag.BoolVar(&flgClean, "clean", false, "re-create 'www' directory")
 		flag.BoolVar(&flgGen, "gen", false, "generate a book and deploy preview")
 		flag.BoolVar(&flgGenRender, "gen-render", false, "generate to a www_generated directory for deploying on render.com")
 		flag.StringVar(&flgBook, "book", "", "name of the book")
@@ -117,7 +86,6 @@ func main() {
 
 		if flgRebuildAll {
 			flgAllBooks = true
-			flgClean = true
 			flgGen = true
 		}
 	}
@@ -169,12 +137,6 @@ func main() {
 		return
 	}
 
-	if flgGen && !flgDownloadOnly {
-		// if we'll be generating a book, ensure the essentialbooks/generated
-		// repo is locally present, not modified and update it to latest version
-		updateGeneratedRepo()
-	}
-
 	if flgPreview {
 		previewWebsite(allBooks)
 		return
@@ -213,71 +175,17 @@ func main() {
 		initBook(book)
 	}
 
-	showUsage := true
-	if flgGen || flgDownloadOnly {
-		nThreads := runtime.NumCPU() + 1
-		logf(ctx(), "Generating %d books using %d threads\n", len(booksToProcess), nThreads)
-
-		showUsage = false
+	if flgDownloadOnly {
+		logf(ctx(), "Downloading %d books\n", len(booksToProcess))
 		n := len(booksToProcess)
-		var wg sync.WaitGroup
 		for i, book := range booksToProcess {
 			downloadBook(book)
 			logvf("downloaded book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
-			if flgDownloadOnly {
-				continue
-			}
-			if i == 0 {
-				if flgClean && flgAllBooks {
-					os.RemoveAll(indexDestDir)
-				}
-				buildFrontendDev()
-				copyGlobalAssets()
-			}
-			wg.Add(1)
-			// no throttling because we assume book downloading takes at least as much time
-			// as generation
-			go func(b *Book, i int) {
-				genBook(b)
-				logf(ctx(), "generated book %d out of %d, name: %s, dir: %s\n", i+1, n, b.Title, b.DirShort)
-				wg.Done()
-			}(book, i)
-		}
-		wg.Wait()
-		if !flgDownloadOnly {
-			return
-		}
-
-		genBooksIndex(allBooks)
-		if flgPreview {
-			previewWebsite(allBooks)
 		}
 		return
 	}
 
-	if flgCheckinHTML {
-		showUsage = false
-		commitAndPushGeneratedHTMLToRepo()
-	}
-
-	if showUsage {
-		flag.Usage()
-	}
-}
-
-func copyFilesMust(dstDir string, srcDir string, files []string) {
-	for _, file := range files {
-		srcPath := filepath.Join(srcDir, file)
-		dstPath := filepath.Join(dstDir, file)
-		u.CopyFileMust(dstPath, srcPath)
-	}
-}
-
-func copyGlobalAssets() {
-	dstDir := filepath.Join(indexDestDir, "s")
-	must(os.MkdirAll(dstDir, 0755))
-	copyFilesMust(dstDir, filepath.Join("www", "gen"), []string{"bundle.css", "bundle.js"})
-	copyFilesMust(dstDir, filepath.Join("fe", "tmpl"), []string{"favicon.ico", "index.css", "main.css"})
+	flag.Usage()
 }
 
 // download a single gist and store in the cache for a given book
@@ -292,36 +200,4 @@ func downloadSingleGist(book *Book, gistID string) {
 		return
 	}
 	logf(ctx(), "Gist didn't change!\n")
-}
-
-func updateGeneratedRepo() {
-	dir := gDestDir
-	if !pathExists(dir) {
-		fmt.Printf("updateGeneratedRepo: directory %s doesn't exist. Must git clone https://github.com/essentialbooks/generated there\n", dir)
-		os.Exit(1)
-	}
-	if flgNoCleanCheck {
-		return
-	}
-	u.EnsureGitClean(dir)
-	u.GitPullMust(dir)
-}
-
-func commitAndPushGeneratedHTMLToRepo() {
-	dir := gDestDir
-	{
-		cmd := exec.Command("git", "add", "www")
-		cmd.Dir = dir
-		runCmdMust(cmd)
-	}
-	{
-		cmd := exec.Command("git", "commit", "-am", "update generated html")
-		cmd.Dir = dir
-		runCmdMust(cmd)
-	}
-	{
-		cmd := exec.Command("git", "push")
-		cmd.Dir = dir
-		runCmdMust(cmd)
-	}
 }

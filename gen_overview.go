@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"path/filepath"
 	"strings"
 
 	"github.com/kjk/notionapi"
@@ -131,10 +130,4 @@ func genOverviewContent(book *Book) []byte {
 	str := strings.Join(lines, "\n")
 	str = fmt.Sprintf(htmlOverview, str)
 	return []byte(str)
-}
-
-func genOverview(book *Book) {
-	d := genOverviewContent(book)
-	path := filepath.Join(book.DirOnDisk, "overview.html")
-	writeFileMust(path, d)
 }
