@@ -76,6 +76,20 @@ func main() {
 		logf(ctx(), "Downloaded %d pages, %d from cache. Total time: %s\n", nTotalDownloaded, nTotalFromCache, time.Since(timeStart))
 	}()
 
+	// ad-hoc, rarely done tasks
+	if false {
+		genTwitterImagesAndExit()
+		return
+	}
+	if false {
+		genSmallCoversAndExit()
+		return
+	}
+	if false {
+		optimizeAllImages()
+		return
+	}
+
 	{
 		//notionAuthToken = os.Getenv("NOTION_TOKEN")
 		// we don't need authentication and the result change
@@ -90,20 +104,6 @@ func main() {
 
 	notionapi.LogFunc = logsf
 	notionapi.PanicOnFailures = true
-
-	// ad-hoc, rarely done tasks
-	if false {
-		genTwitterImagesAndExit()
-		return
-	}
-	if false {
-		genSmallCoversAndExit()
-		return
-	}
-	if false {
-		optimizeAllImages()
-		return
-	}
 
 	if flgDownloadGist != "" {
 		book := findBook(flgBook)

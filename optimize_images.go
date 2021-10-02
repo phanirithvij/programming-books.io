@@ -5,7 +5,15 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"runtime"
 	"strings"
+	"sync"
+	"time"
+)
+
+var (
+	imgoptSem chan bool
+	imgoptWg  sync.WaitGroup
 )
 
 // run optipng in parallel
@@ -28,17 +36,30 @@ func maybeOptimizeImage(path string) {
 	switch ext {
 	// TODO: for .gif requires -snip
 	case ".png", ".tiff", ".tif", "bmp":
-		optimizeWithOptipng(path)
+		imgoptWg.Add(1)
+		go func() {
+			imgoptSem <- true
+			optimizeWithOptipng(path)
+			<-imgoptSem
+			imgoptWg.Done()
+		}()
 	}
 }
 
 func optimizeAllImages() {
+	imgoptSem = make(chan bool, runtime.NumCPU()+1)
+
+	timeStart := time.Now()
+	defer func() {
+		logf(ctx(), "optimizeAllImages: took %s\n", time.Since(timeStart))
+	}()
+
 	// verify we have optipng installed
 	cmd := exec.Command("optipng", "-h")
 	err := cmd.Run()
 	panicIf(err != nil, "optipng is not installed")
 
-	dirsToVisit := []string{"."}
+	dirsToVisit := []string{"books"}
 	for len(dirsToVisit) > 0 {
 		dir := dirsToVisit[0]
 		dirsToVisit = dirsToVisit[1:]
@@ -58,4 +79,5 @@ func optimizeAllImages() {
 			maybeOptimizeImage(path)
 		}
 	}
+	imgoptWg.Wait()
 }
