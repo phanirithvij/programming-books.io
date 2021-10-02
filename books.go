@@ -300,11 +300,11 @@ var (
 		bookRubyOnRails,
 		bookSql,
 	}
-	allBooks = append(booksMain, booksUnpublished...)
 )
 
 func findBook(id string) *Book {
-	for _, book := range allBooks {
+	books := append(booksMain, booksUnpublished...)
+	for _, book := range books {
 		// fuzzy match - whatever hits
 		parts := []string{book.Title, book.DirShort, book.NotionStartPageID}
 		for _, s := range parts {

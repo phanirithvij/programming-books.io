@@ -50,6 +50,7 @@ func downloadImages(d *notionapi.CachingClient, book *Book, page *Page) {
 }
 
 func downloadBook(book *Book) {
+	book.cache = loadCache(book)
 	createDirMust(book.NotionCacheDir)
 	logf(ctx(), "Downloading %s, created cache dir: '%s'\n", book.Title, book.NotionCacheDir)
 

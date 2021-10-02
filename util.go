@@ -238,77 +238,14 @@ func shiftLines(lines []string) {
 	}
 }
 
-var (
-	softErrorMode bool
-	delayedErrors []string
-)
-
-func maybePanicIfErr(err error) {
-	if err == nil {
-		return
-	}
-	if !softErrorMode {
-		must(err)
-	}
-	delayedErrors = append(delayedErrors, err.Error())
-}
-
-var (
-	didBuildFrontEnd = false
-)
-
-func buildFrontendYarn() {
-	// only needs to do it once
-	if didBuildFrontEnd {
-		return
-	}
-	{
-		os.Remove("package-lock.json")
-		os.RemoveAll("node_modules")
-		cmd := exec.Command("yarn", "install")
-		runCmdMust(cmd)
-	}
-	// could also be
-	// .\node_modules\.bin\rollup -c
-	{
-		cmd := exec.Command("yarn", "build-dev")
-		runCmdMust(cmd)
-	}
-	didBuildFrontEnd = true
-}
-
-func buildFrontend(forDev bool) {
-	// only needs to do it once
-	if didBuildFrontEnd {
-		return
-	}
-	{
-		os.Remove("package-lock.json")
-		os.RemoveAll("node_modules")
-		cmd := exec.Command("npm", "install")
-		runCmdMust(cmd)
-	}
-	if forDev {
-		cmd := exec.Command("npm", "run", "build-dev")
-		runCmdMust(cmd)
-	} else {
-		cmd := exec.Command("npm", "run", "build")
-		runCmdMust(cmd)
-	}
-	didBuildFrontEnd = true
-}
-
-func buildFrontendDev() {
-	buildFrontend(true)
-}
-
-func buildFrontendProd() {
-	buildFrontend(false)
-}
-
 func fileExists(path string) bool {
 	st, err := os.Lstat(path)
 	return err == nil && st.Mode().IsRegular()
+}
+
+func dirExists(path string) bool {
+	st, err := os.Lstat(path)
+	return err == nil && st.IsDir()
 }
 
 func fmtCmdShort(cmd exec.Cmd) string {

@@ -37,7 +37,7 @@ let cssPlugin = css({ output: 'bundle.css' });
 export default {
   input: "fe/main.js",
   output: {
-    file: "www/gen/bundle.js",
+    file: "www_generated/svelte/bundle.js",
     format: "iife",
     name: "app",
   },

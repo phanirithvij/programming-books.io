@@ -1,10 +1,8 @@
 package main
 
 import (
-	"bytes"
 	"html/template"
 	"io"
-	"io/ioutil"
 	"path/filepath"
 	"sync"
 )
@@ -16,8 +14,11 @@ const (
 )
 
 var (
-	templates *template.Template
+	flgReloadTemplates = false
+	muTemplates        sync.Mutex
+	templates          *template.Template
 
+	// only a dummpy function to show how to add more
 	funcMap = template.FuncMap{
 		"inc": funcInc,
 	}
@@ -27,52 +28,21 @@ func funcInc(i int) int {
 	return i + 1
 }
 
-var (
-	flgReloadTemplates = false
-	muTemplates        sync.Mutex
-)
-
-func loadTemplatesMust() *template.Template {
+func execTemplateToWriter(name string, data interface{}, w io.Writer) error {
 	muTemplates.Lock()
 	defer muTemplates.Unlock()
 
 	// we reload templates in preview mode
-	if !flgReloadTemplates && templates != nil {
-		return templates
+	if flgReloadTemplates || templates == nil {
+		pattern := filepath.Join("fe", "tmpl", "*.tmpl.html")
+		var err error
+		templates, err = template.New("").Funcs(funcMap).ParseGlob(pattern)
+		//templates, err = template.ParseGlob(pattern)
+		must(err)
 	}
-	pattern := filepath.Join("fe", "tmpl", "*.tmpl.html")
-	var err error
-	templates, err = template.New("").Funcs(funcMap).ParseGlob(pattern)
-	//templates, err = template.ParseGlob(pattern)
-	must(err)
-	templates.Funcs(funcMap)
-	return templates
-}
-
-func execTemplateToFileSilentMaybeMust(name string, data interface{}, path string) error {
-	var errToReturn error
-	tmpl := loadTemplatesMust()
-	if tmpl == nil {
-		return nil
-	}
-	var buf bytes.Buffer
-	err := tmpl.ExecuteTemplate(&buf, name, data)
-	maybePanicIfErr(err)
-
-	must(createDirForFile(path))
-	d := buf.Bytes()
-	err = ioutil.WriteFile(path, d, 0644)
-	maybePanicIfErr(err)
-	return errToReturn
-}
-
-func execTemplateToFileMaybeMust(name string, data interface{}, path string) error {
-	return execTemplateToFileSilentMaybeMust(name, data, path)
-}
-
-func execTemplateToWriter(name string, data interface{}, w io.Writer) error {
-	tmpl := loadTemplatesMust()
-	return tmpl.ExecuteTemplate(w, name, data)
+	tmpl := templates.Lookup(name)
+	panicIf(tmpl == nil, "no template named '%s'", name)
+	return tmpl.Execute(w, data)
 }
 
 // PageCommon is a common information for most pages
@@ -97,17 +67,6 @@ func splitBooks(books []*Book) ([]*Book, []*Book) {
 		}
 	}
 	return left, right
-}
-
-func execTemplate(tmplName string, d interface{}, path string, w io.Writer) error {
-	// this code path is for the preview on demand server
-	if w != nil {
-		return execTemplateToWriter(tmplName, d, w)
-	}
-
-	// this code path is for generating static files
-	_ = execTemplateToFileMaybeMust(tmplName, d, path)
-	return nil
 }
 
 type Breadcrumb struct {
@@ -158,9 +117,7 @@ func genBookIndexHTML(book *Book, w io.Writer) error {
 		PageCommon: getPageCommon(),
 		Book:       book,
 	}
-
-	path := filepath.Join(book.destDir(), "index.html")
-	return execTemplate("book_index.tmpl.html", data, path, w)
+	return execTemplateToWriter("book_index.tmpl.html", data, w)
 }
 
 func genBook404(book *Book, w io.Writer) error {
@@ -171,7 +128,5 @@ func genBook404(book *Book, w io.Writer) error {
 		PageCommon: getPageCommon(),
 		Book:       book,
 	}
-
-	path := filepath.Join(book.destDir(), "404.html")
-	return execTemplate("404.tmpl.html", data, path, nil)
+	return execTemplateToWriter("404.tmpl.html", data, w)
 }

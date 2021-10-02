@@ -5,6 +5,7 @@ import (
 	"html/template"
 	"io"
 	"net/http"
+	"os/exec"
 	"path"
 	"path/filepath"
 	"runtime"
@@ -14,11 +15,8 @@ import (
 	"time"
 )
 
-var (
-	indexDestDir string
-)
-
 func genIndexGrid(books []*Book, w io.Writer) error {
+	panicIf(w == nil)
 	d := struct {
 		PageCommon
 		Books []*Book
@@ -26,24 +24,21 @@ func genIndexGrid(books []*Book, w io.Writer) error {
 		PageCommon: getPageCommon(),
 		Books:      books,
 	}
-	path := filepath.Join(indexDestDir, "index-grid.html")
-	return execTemplate("index-grid.tmpl.html", d, path, w)
+	return execTemplateToWriter("index-grid.tmpl.html", d, w)
 }
 
-func genFeedback(dir string, w io.Writer) error {
-	path := filepath.Join(dir, "feedback.html")
+func genFeedback(w io.Writer) error {
 	d := struct {
 		PageCommon
 	}{
 		PageCommon: getPageCommon(),
 	}
-	return execTemplate("feedback.tmpl.html", d, path, w)
+	return execTemplateToWriter("feedback.tmpl.html", d, w)
 }
 
-func genAbout(dir string, w io.Writer) error {
+func genAbout(w io.Writer) error {
 	d := getPageCommon()
-	path := filepath.Join(dir, "about.html")
-	return execTemplate("about.tmpl.html", d, path, w)
+	return execTemplateToWriter("about.tmpl.html", d, w)
 }
 
 // generates book for www.programming-books.io
@@ -63,32 +58,21 @@ func genIndex(books []*Book, w io.Writer) error {
 		NotionURL:  gitHubBaseURL,
 	}
 
-	path := filepath.Join(indexDestDir, "index.html")
-	return execTemplate("index2.tmpl.html", d, path, w)
+	return execTemplateToWriter("index2.tmpl.html", d, w)
 }
 
-func gen404Indexl(dir string, w io.Writer) error {
+func gen404Indexl(w io.Writer) error {
 	d := struct {
 		PageCommon
 		Book *Book
 	}{
 		PageCommon: getPageCommon(),
 	}
-	path := filepath.Join(dir, "404.html")
-	return execTemplate("404-index.tmpl.html", d, path, w)
+	return execTemplateToWriter("404-index.tmpl.html", d, w)
 }
 
 func isFullURL(uri string) bool {
 	return strings.HasPrefix(uri, "https://") || strings.HasPrefix(uri, "http://")
-}
-
-func addSitemapURL(b *Book, uri string) {
-	if !isFullURL(uri) {
-		uri = urlJoin(siteBaseURL, uri)
-	}
-	b.muSitemapURLS.Lock()
-	b.sitemapURLS[uri] = struct{}{}
-	b.muSitemapURLS.Unlock()
 }
 
 const (
@@ -99,26 +83,37 @@ Sitemap: %s
 `
 )
 
-func genSitemapHandler(books []*Book) Handler {
+func genSitemapTxt(books []*Book) []byte {
 	// http://www.advancedhtml.co.uk/robots-sitemaps.htm
 
 	var urls []string
-	for _, b := range books {
-		addSitemapURL(b, "/")
-		//addSitemapURL(b, "about")
-		for uri := range b.sitemapURLS {
-			urls = append(urls, uri)
+
+	addSitemapURL := func(b *Book, uri string) {
+		if !isFullURL(uri) {
+			uri = urlJoin(b.CanonnicalURL(), uri)
 		}
+		urls = append(urls, uri)
+	}
+
+	for _, book := range books {
+		addSitemapURL(book, "/")
+		for _, chapter := range book.Chapters() {
+			addSitemapURL(book, chapter.URL())
+			for _, article := range chapter.Pages {
+				addSitemapURL(book, article.URL())
+			}
+		}
+		//addSitemapURL(b, "/about")
 	}
 	sort.Strings(urls)
+	s := strings.Join(urls, "\n")
+	return []byte(s)
+}
 
+func genRobotsTxt() []byte {
 	sitemapURL := urlJoin(siteBaseURL, "sitemap.txt")
 	robotsTxt := fmt.Sprintf(sitemapTmpl, sitemapURL)
-	h := NewContentHandler("/robots.txt", []byte(robotsTxt))
-
-	s := strings.Join(urls, "\n")
-	h.Add("/sitemap.txt", []byte(s))
-	return h
+	return []byte(robotsTxt)
 }
 
 func serveStart(w http.ResponseWriter, r *http.Request, uri string) {
@@ -130,78 +125,77 @@ func serveStart(w http.ResponseWriter, r *http.Request, uri string) {
 	w.WriteHeader(http.StatusOK) // 200
 }
 
-func serverGet(uri string) func(w http.ResponseWriter, r *http.Request) {
-	//logf(ctx(), "serverGet: '%s'\n", uri)
-
-	books := allBooks
-	/*
-		writeData := func(w http.ResponseWriter, d []byte, err error) {
-			must(err)
-			_, err = w.Write(d)
-			must(err)
+func makeServerGet(books []*Book) GetHandlerFunc {
+	return func(uri string) func(w http.ResponseWriter, r *http.Request) {
+		//logf(ctx(), "serverGet: '%s'\n", uri)
+		switch uri {
+		case "/index.html":
+			return func(w http.ResponseWriter, r *http.Request) {
+				//logf(ctx(), "serverGet: will serve '%s' with '%s'\n", uri, "genIndex")
+				serveStart(w, r, uri)
+				genIndex(books, w)
+			}
+		case "/index-grid.html":
+			return func(w http.ResponseWriter, r *http.Request) {
+				//logf(ctx(), "serverGet: will serve '%s' with '%s'\n", uri, "genIndex")
+				serveStart(w, r, uri)
+				genIndexGrid(books, w)
+			}
+		case "/404.html":
+			return func(w http.ResponseWriter, r *http.Request) {
+				//logf(ctx(), "serverGet: will serve '%s' with '%s'\n", uri, "genIndex")
+				serveStart(w, r, uri)
+				gen404Indexl(w)
+			}
+		case "/about.html":
+			return func(w http.ResponseWriter, r *http.Request) {
+				//logf(ctx(), "serverGet: will serve '%s' with '%s'\n", uri, "genIndex")
+				serveStart(w, r, uri)
+				genAbout(w)
+			}
+		case "/feedback.html":
+			return func(w http.ResponseWriter, r *http.Request) {
+				//logf(ctx(), "serverGet: will serve '%s' with '%s'\n", uri, "genIndex")
+				serveStart(w, r, uri)
+				genFeedback(w)
+			}
+		case "/robots.txt":
+			return func(w http.ResponseWriter, r *http.Request) {
+				//logf(ctx(), "serverGet: will serve '%s' with '%s'\n", uri, "genIndex")
+				serveStart(w, r, uri)
+				d := genRobotsTxt()
+				w.Write(d)
+			}
+		case "/sitemap.txt":
+			return func(w http.ResponseWriter, r *http.Request) {
+				//logf(ctx(), "serverGet: will serve '%s' with '%s'\n", uri, "genIndex")
+				serveStart(w, r, uri)
+				d := genSitemapTxt(books)
+				w.Write(d)
+			}
 		}
-	*/
-	switch uri {
-	case "/index.html":
-		return func(w http.ResponseWriter, r *http.Request) {
-			//logf(ctx(), "serverGet: will serve '%s' with '%s'\n", uri, "genIndex")
-			serveStart(w, r, uri)
-			genIndex(books, w)
-		}
-	case "/index-grid.html":
-		return func(w http.ResponseWriter, r *http.Request) {
-			//logf(ctx(), "serverGet: will serve '%s' with '%s'\n", uri, "genIndex")
-			serveStart(w, r, uri)
-			genIndexGrid(books, w)
-		}
-	case "/404.html":
-		return func(w http.ResponseWriter, r *http.Request) {
-			//logf(ctx(), "serverGet: will serve '%s' with '%s'\n", uri, "genIndex")
-			serveStart(w, r, uri)
-			gen404Indexl("", w)
-		}
-	case "/about.html":
-		return func(w http.ResponseWriter, r *http.Request) {
-			//logf(ctx(), "serverGet: will serve '%s' with '%s'\n", uri, "genIndex")
-			serveStart(w, r, uri)
-			genAbout("", w)
-		}
-	case "/feedback.html":
-		return func(w http.ResponseWriter, r *http.Request) {
-			//logf(ctx(), "serverGet: will serve '%s' with '%s'\n", uri, "genIndex")
-			serveStart(w, r, uri)
-			genFeedback("", w)
-		}
+		return nil
 	}
-
-	return nil
-}
-func serverURLS() []string {
-	files := []string{
-		"/index.html",
-		"/index-grid.html",
-		"/404.html",
-		"/about.html",
-		"/feedback.html",
-	}
-	return files
 }
 
-func genBooksIndex(books []*Book) []Handler {
-	var res []Handler
-
-	h := NewDirHandler("covers", "/covers/", nil)
-	res = append(res, h)
-	h = NewDirHandler("covers_small", "/covers_small/", nil)
-	res = append(res, h)
-
-	h2 := NewDynamicHandler(serverGet, serverURLS)
-	res = append(res, h2)
-	return res
+func genBooksIndexHandler(books []*Book) Handler {
+	serverURLS := func() []string {
+		files := []string{
+			"/index.html",
+			"/index-grid.html",
+			"/404.html",
+			"/about.html",
+			"/feedback.html",
+			"/robots.txt",
+			"/sitemap.txt",
+		}
+		return files
+	}
+	return NewDynamicHandler(makeServerGet(books), serverURLS)
 }
 
 func previewWebsite(booksToProcess []*Book) {
-	logf(ctx(), "previewWebsite\n")
+	logf(ctx(), "previewWebsite: start for %d books\n", len(booksToProcess))
 	timeStart := time.Now()
 	flgReloadTemplates = true
 	flgNoDownload = true
@@ -269,13 +263,8 @@ func genToDir(booksToProcess []*Book, dir string) {
 
 var booksSem chan bool
 var booksWg sync.WaitGroup
-var serverWg sync.WaitGroup
 
 func waitBuildServerDone() {
-	serverWg.Wait()
-}
-
-func waitBooksDone() {
 	booksWg.Wait()
 }
 
@@ -288,6 +277,7 @@ func initBookHandlers() {
 
 // returns immediately but builds the handler in the background
 func genBookHandler(book *Book) Handler {
+	panicIf(book == nil)
 	var handlers []Handler
 	var filesHandler *FilesHandler
 	var mu sync.Mutex
@@ -348,8 +338,7 @@ func genBookHandler(book *Book) Handler {
 					Description: page.Title,
 				}
 				buildCreadcumb(book, page, &d)
-				path := page.destFilePath()
-				err := execTemplate("page.tmpl.html", d, path, w)
+				err := execTemplateToWriter("page.tmpl.html", d, w)
 				if err != nil {
 					logf(ctx(), "Failed to generate page %s in book %s\n", page.NotionID, book.Title)
 				}
@@ -382,8 +371,6 @@ func genBookHandler(book *Book) Handler {
 
 		buildBookPages(book)
 
-		addSitemapURL(book, book.CanonnicalURL())
-
 		{
 			dir := filepath.Join(book.NotionCacheDir, "img")
 			urlPrefix := path.Join(baseURL, "img")
@@ -391,7 +378,6 @@ func genBookHandler(book *Book) Handler {
 		}
 		addHandler(genBookTOCSearchHandlerMust(book))
 		{
-			// copyCover
 			{
 				fpath := filepath.Join("covers", book.CoverImageName)
 				uri := book.CoverURL()
@@ -419,7 +405,6 @@ func genBookHandler(book *Book) Handler {
 		{
 			// genPage
 			addPage := func(page *Page) {
-				addSitemapURL(book, page.CanonnicalURL())
 				uri := ensureHTMLSuffix(page.URL())
 				pages[uri] = page
 				for _, imagePath := range page.images {
@@ -443,11 +428,40 @@ func genBookHandler(book *Book) Handler {
 	return NewDynamicHandler(get, getURLs)
 }
 
+var (
+	didBuildFrontEnd = false
+)
+
+func buildFrontend(forDev bool) {
+	// only needs to do it once
+	if didBuildFrontEnd {
+		return
+	}
+	// this is to speed up local dev
+	if !dirExists("node_modules") {
+		cmd := exec.Command("npm", "install")
+		runCmdMust(cmd)
+	}
+	if forDev {
+		cmd := exec.Command("npm", "run", "build-dev")
+		runCmdMust(cmd)
+	} else {
+		cmd := exec.Command("npm", "run", "build")
+		runCmdMust(cmd)
+	}
+	didBuildFrontEnd = true
+}
+
+func buildFrontendDev() {
+	buildFrontend(true)
+}
+
+func buildFrontendProd() {
+	buildFrontend(false)
+}
+
 func buildServer(booksToProcess []*Book, forDev bool) *ServerConfig {
 	logf(ctx(), "buildServer: %d books\n", len(booksToProcess))
-	for _, book := range booksToProcess {
-		initBook(book)
-	}
 	initBookHandlers()
 
 	if forDev {
@@ -457,30 +471,25 @@ func buildServer(booksToProcess []*Book, forDev bool) *ServerConfig {
 	}
 	filesHandler := NewFilesHandler()
 
-	filesHandler.AddFilesInDir(filepath.Join("www", "gen"), "/s/", []string{"bundle.css", "bundle.js"})
-	filesHandler.AddFilesInDir(filepath.Join("fe", "tmpl"), "/s/", []string{"favicon.ico", "index.css", "main.css"})
+	dir := filepath.Join("www_generated", "svelte")
+	filesHandler.AddFilesInDir(dir, "/s/", []string{"bundle.css", "bundle.js"})
+	dir = filepath.Join("fe", "tmpl")
+	filesHandler.AddFilesInDir(dir, "/s/", []string{"favicon.ico", "index.css", "main.css"})
+
 	handlers := []Handler{filesHandler}
-	h := genBooksIndex(allBooks)
-	handlers = append(handlers, h...)
-
-	serverWg.Add(1)
-	go func() {
-		waitBooksDone()
-		logf(ctx(), "buildServer: waitBooksDone() finished\n")
-		h := genSitemapHandler(booksToProcess)
-		handlers = append(handlers, h)
-		serverWg.Done()
-	}()
-
-	for _, book := range booksToProcess {
-		h := genBookHandler(book)
-		handlers = append(handlers, h)
-	}
+	h := genBooksIndexHandler(booksToProcess)
+	handlers = append(handlers, h)
 
 	server := &ServerConfig{
 		Handlers:  handlers,
 		Port:      9003,
 		CleanURLS: true,
 	}
+
+	for _, book := range booksToProcess {
+		h := genBookHandler(book)
+		server.Handlers = append(server.Handlers, h)
+	}
+
 	return server
 }

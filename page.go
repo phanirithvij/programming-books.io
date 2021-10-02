@@ -168,12 +168,6 @@ func (p *Page) NotionURL() string {
 	return notionBaseURL + toNoDashID(p.NotionID)
 }
 
-func (p *Page) destFilePath() string {
-	title := urlify(p.Title)
-	fileName := title + "-" + p.NotionID + ".html"
-	return filepath.Join(p.Book.DirOnDisk, fileName)
-}
-
 func (p *Page) ImageURL(name string) string {
 	return path.Join(p.Book.URL(), name)
 }

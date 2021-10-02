@@ -25,6 +25,7 @@ type ServerConfig struct {
 }
 
 type HandlerFunc = func(w http.ResponseWriter, r *http.Request)
+type GetHandlerFunc = func(string) func(w http.ResponseWriter, r *http.Request)
 
 // Handler represents one or more urls and their content
 type Handler interface {
@@ -230,7 +231,7 @@ func NewContentHandler(uri string, d []byte) *ContentHandler {
 }
 
 type DynamicHandler struct {
-	get  func(string) func(http.ResponseWriter, *http.Request)
+	get  GetHandlerFunc
 	urls func() []string
 }
 
@@ -242,7 +243,7 @@ func (h *DynamicHandler) URLS() []string {
 	return h.urls()
 }
 
-func NewDynamicHandler(get func(string) func(http.ResponseWriter, *http.Request), urls func() []string) *DynamicHandler {
+func NewDynamicHandler(get GetHandlerFunc, urls func() []string) *DynamicHandler {
 	return &DynamicHandler{
 		get:  get,
 		urls: urls,

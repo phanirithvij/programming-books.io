@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"html/template"
 	"path/filepath"
-	"sync"
 
 	"github.com/kjk/notionapi"
 )
@@ -40,18 +39,10 @@ type Book struct {
 	client *notionapi.CachingClient
 	// cache related
 	cache *Cache
-
-	muSitemapURLS sync.Mutex
-	sitemapURLS   map[string]struct{}
 }
 
 func (b *Book) cachePath() string {
 	return filepath.Join(b.DirCache, "cache.txt")
-}
-
-// this is where html etc. files for a book end up
-func (b *Book) destDir() string {
-	return b.DirOnDisk
 }
 
 // URL returns url of the book, used in index.tmpl.html
@@ -162,13 +153,4 @@ func calcPageHeadings(page *Page) {
 	blocks := []*notionapi.Block{page.NotionPage.Root()}
 	notionapi.ForEachBlock(blocks, cb)
 	page.Headings = headings
-}
-
-func initBook(book *Book) {
-	book.DirOnDisk = filepath.Join(gDestDir, "www", "essential", book.DirShort)
-	book.DirCache = filepath.Join("books", book.DirShort, "cache")
-	book.NotionCacheDir = filepath.Join(book.DirCache, "notion")
-	book.idToPage = map[string]*Page{}
-	book.sitemapURLS = map[string]struct{}{}
-	book.cache = loadCache(book)
 }

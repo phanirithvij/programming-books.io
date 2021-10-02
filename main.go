@@ -4,6 +4,7 @@ import (
 	"flag"
 	"os"
 	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/kjk/notionapi"
@@ -26,6 +27,13 @@ func isPreview() bool {
 	return flgPreview
 }
 
+func initBook(book *Book) {
+	book.DirOnDisk = filepath.Join("essential", book.DirShort)
+	book.DirCache = filepath.Join("books", book.DirShort, "cache")
+	book.NotionCacheDir = filepath.Join(book.DirCache, "notion")
+	book.idToPage = map[string]*Page{}
+}
+
 var (
 	flgPreview bool
 	// disables downloading pages
@@ -37,9 +45,6 @@ var (
 	// disables notion cache, forcing re-download of notion page
 	// even if cached verison on disk exits
 	flgDisableNotionCache bool
-	flgNoCleanCheck       bool
-
-	gDestDir string
 )
 
 func main() {
@@ -47,47 +52,20 @@ func main() {
 		flgGen          bool
 		flgGenRender    bool
 		flgBook         string
-		flgAllBooks     bool
 		flgDownloadGist string
-		flgCheckinHTML  bool
-		flgRebuildAll   bool
 		flgPreviewInsta bool
 	)
 
 	{
-		dir := filepath.Join("..", "generated")
-		dir, err := filepath.Abs(dir)
-		must(err)
-		gDestDir = dir
-		indexDestDir = filepath.Join(gDestDir, "www")
-	}
-
-	{
-		flag.BoolVar(&flgNoCleanCheck, "no-clean-check", false, "don't check if destination directory is not clean")
 		flag.BoolVar(&flgPreview, "preview", false, "preview the book locally")
 		flag.BoolVar(&flgGen, "gen", false, "generate a book and deploy preview")
 		flag.BoolVar(&flgGenRender, "gen-render", false, "generate to a www_generated directory for deploying on render.com")
 		flag.StringVar(&flgBook, "book", "", "name of the book")
-		flag.BoolVar(&flgAllBooks, "all-books", false, "if true, apply to all books")
 		flag.BoolVar(&flgDownloadOnly, "download-only", false, "only download the books from notion (no eval, no html generation")
 		flag.StringVar(&flgDownloadGist, "download-gist", "", "id of the gist to (re)download. Must also provide a book")
-		flag.BoolVar(&flgCheckinHTML, "checkin-html", false, "checkin generated html")
 		flag.BoolVar(&flgDisableNotionCache, "no-cache", false, "if true, disables cache for notion")
-		flag.BoolVar(&flgRebuildAll, "rebuild-all", false, "same as -books-all -clean -gen")
 		flag.BoolVar(&flgPreviewInsta, "preview-insta", false, "preview to instantpreview.dev")
 		flag.Parse()
-
-		// change to true for easier ad-hoc debugging in visual studio code
-		if false {
-			//flgBook = "go"
-			flgAllBooks = true
-			flgGen = true
-		}
-
-		if flgRebuildAll {
-			flgAllBooks = true
-			flgGen = true
-		}
 	}
 
 	closeLog := openLog()
@@ -132,47 +110,39 @@ func main() {
 		if book == nil {
 			logf(ctx(), "-download-gist also requires valid -book, given: '%s'\n", flgBook)
 		}
-		initBook(book)
 		downloadSingleGist(book, flgDownloadGist)
 		return
 	}
 
+	booksToProcess := booksMain
+	if flgBook != "" {
+		bookNames := strings.Split(flgBook, ",")
+		booksToProcess = nil
+		for _, bookName := range bookNames {
+			book := findBook(bookName)
+			panicIf(book == nil, "'%s' is not a valid book name", flgBook)
+			booksToProcess = append(booksToProcess, book)
+		}
+	}
+	for _, book := range booksToProcess {
+		initBook(book)
+	}
+
 	if flgPreview {
-		previewWebsite(allBooks)
+		previewWebsite(booksToProcess)
 		return
 	}
 
 	if flgPreviewInsta {
-		previewToInsantPreview(allBooks)
+		previewToInsantPreview(booksToProcess)
 		return
 	}
 
-	var booksToProcess []*Book
-	if flgBook != "" {
-		book := findBook(flgBook)
-		panicIf(book == nil, "'%s' is not a valid book name", flgBook)
-		booksToProcess = []*Book{book}
-	}
-	if flgAllBooks {
-		booksToProcess = allBooks
-	}
-
-	if flgGen {
-		genToDir(allBooks, indexDestDir)
-		return
-	}
-
-	if flgGenRender {
-		//dir := filepath.Join("..", "progbooks_generated")
-		dir := "www_generated"
-		dir, _ = filepath.Abs(dir)
+	if flgGen || flgGenRender {
+		dir, _ := filepath.Abs("www_generated")
 		os.RemoveAll(dir)
-		genToDir(allBooks, dir)
+		genToDir(booksToProcess, dir)
 		return
-	}
-
-	for _, book := range booksToProcess {
-		initBook(book)
 	}
 
 	if flgDownloadOnly {
