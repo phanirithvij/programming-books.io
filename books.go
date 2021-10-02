@@ -263,47 +263,50 @@ var (
 	}
 )
 
-var (
-	booksMain = []*Book{
-		bookGo,
-		bookCpp,
-		bookJavaScript,
-		bookCSS,
-		bookHTML,
-		bookHTMLCanvas,
-		bookJava,
-		bookKotlin,
-		bookCsharp,
-		bookPython,
-		bookPostgresql,
-		bookMysql,
-		bookIOS,
-		bookAndroid,
-		bookBash,
-		bookPowershell,
-		bookBatch,
-		bookGit,
-		bookPHP,
-		bookRuby,
-		bookNETFramework,
-		bookNode,
-		bookDart,
-		bookTypeScript,
-		bookSwift,
-	}
-	booksUnpublished = []*Book{
-		bookAlgorithm,
-		bookC,
-		bookObjectiveC,
-		bookReact,
-		bookReactNative,
-		bookRubyOnRails,
-		bookSql,
-	}
-)
+func getAllBooks() []*Book {
+	var (
+		booksMain = []*Book{
+			bookGo,
+			bookCpp,
+			bookJavaScript,
+			bookCSS,
+			bookHTML,
+			bookHTMLCanvas,
+			bookJava,
+			bookKotlin,
+			bookCsharp,
+			bookPython,
+			bookPostgresql,
+			bookMysql,
+			bookIOS,
+			bookAndroid,
+			bookBash,
+			bookPowershell,
+			bookBatch,
+			bookGit,
+			bookPHP,
+			bookRuby,
+			bookNETFramework,
+			bookNode,
+			bookDart,
+			bookTypeScript,
+			bookSwift,
+		}
+		booksUnpublished = []*Book{
+			bookAlgorithm,
+			bookC,
+			bookObjectiveC,
+			bookReact,
+			bookReactNative,
+			bookRubyOnRails,
+			bookSql,
+		}
+	)
+	return append(booksMain, booksUnpublished...)
+}
 
 func findBook(id string) *Book {
-	books := append(booksMain, booksUnpublished...)
+	books := getAllBooks()
 	for _, book := range books {
 		// fuzzy match - whatever hits
 		parts := []string{book.Title, book.DirShort, book.NotionStartPageID}
