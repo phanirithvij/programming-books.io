@@ -136,4 +136,23 @@ if (isIndexPage) {
   updateLinkHome();
 }
 
+// https://essential-go.programming-books.io/${path}
+// =>
+// https://www.programming-books.io/essential/go/${path}
+function maybeRedirect() {
+  var loc = window.location;
+  var host = loc.hostname;
+  var parts = host.split(".");
+  var book = parts[0];
+  if (!book.startsWith("essential-")) {
+    return;
+  }
+  book = book.substr("essential-".length);
+  var pathname = loc.pathname;
+  var newURL = "https://www.programming-books.io/essential/" + book + pathname;
+  console.log("redirecting to: ", newURL);
+  window.location = newURL;
+}
+maybeRedirect();
+
 export default app;

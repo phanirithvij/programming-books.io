@@ -58,7 +58,7 @@ func genIndex(books []*Book, w io.Writer) error {
 		NotionURL:  gitHubBaseURL,
 	}
 
-	return execTemplateToWriter("index2.tmpl.html", d, w)
+	return execTemplateToWriter("index.tmpl.html", d, w)
 }
 
 func gen404Indexl(w io.Writer) error {
