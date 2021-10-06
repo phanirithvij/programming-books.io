@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/kjk/cheatsheets/pkg/server"
 	"github.com/kjk/notionapi"
 )
 
@@ -108,10 +109,10 @@ func genBookTOCSearchInner(book *Book) {
 
 }
 
-func genBookTOCSearchHandlerMust(book *Book) Handler {
+func genBookTOCSearchHandlerMust(book *Book) server.Handler {
 	genBookTOCSearchInner(book)
 	name := fmt.Sprintf("app-%s.js", book.DirShort)
 	book.AppJSURL = "/s/" + name
 	logf(ctx(), "Created %s for book '%s'\n", book.AppJSURL, book.DirShort)
-	return NewContentHandler(book.AppJSURL, book.tocData)
+	return server.NewInMemoryFilesHandler(book.AppJSURL, book.tocData)
 }

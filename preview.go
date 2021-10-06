@@ -14,6 +14,7 @@ import (
 	"sync"
 	"time"
 
+	"github.com/kjk/cheatsheets/pkg/server"
 	"github.com/kjk/notionapi"
 )
 
@@ -127,7 +128,7 @@ func serveStart(w http.ResponseWriter, r *http.Request, uri string) {
 	w.WriteHeader(http.StatusOK) // 200
 }
 
-func makeServerGet(books []*Book) GetHandlerFunc {
+func makeServerGet(books []*Book) server.GetHandlerFunc {
 	return func(uri string) func(w http.ResponseWriter, r *http.Request) {
 		//logf(ctx(), "serverGet: '%s'\n", uri)
 		switch uri {
@@ -180,7 +181,7 @@ func makeServerGet(books []*Book) GetHandlerFunc {
 	}
 }
 
-func genBooksIndexHandler(books []*Book) Handler {
+func genBooksIndexHandler(books []*Book) server.Handler {
 	serverURLS := func() []string {
 		files := []string{
 			"/index.html",
@@ -193,7 +194,7 @@ func genBooksIndexHandler(books []*Book) Handler {
 		}
 		return files
 	}
-	return NewDynamicHandler(makeServerGet(books), serverURLS)
+	return server.NewDynamicHandler(makeServerGet(books), serverURLS)
 }
 
 func previewWebsite(booksToProcess []*Book) {
@@ -310,19 +311,19 @@ func maybeRedownloadPage(book *Book, pageID string) *Page {
 }
 
 // returns immediately but builds the handler in the background
-func genBookHandler(book *Book) Handler {
+func genBookHandler(book *Book) server.Handler {
 	panicIf(book == nil)
-	var handlers []Handler
-	var filesHandler *FilesHandler
+	var handlers []server.Handler
+	var filesHandler *server.FilesHandler
 	var mu sync.Mutex
 	pages := map[string]*Page{} // maps url to Page
 
-	addHandler := func(h Handler) {
+	addHandler := func(h server.Handler) {
 		mu.Lock()
 		handlers = append(handlers, h)
 		mu.Unlock()
 	}
-	filesHandler = NewFilesHandler()
+	filesHandler = server.NewFilesHandler()
 	addHandler(filesHandler)
 
 	baseURL := book.URL()
@@ -360,7 +361,7 @@ func genBookHandler(book *Book) Handler {
 			}
 		case overviewURL:
 			d := genOverviewContent(book)
-			return makeServeContent(overviewURL, d)
+			return server.MakeServeContent(overviewURL, d)
 		}
 		if page := pages[uri]; page != nil {
 			return func(w http.ResponseWriter, r *http.Request) {
@@ -412,7 +413,7 @@ func genBookHandler(book *Book) Handler {
 		{
 			dir := filepath.Join(book.NotionCacheDir, "img")
 			urlPrefix := path.Join(baseURL, "img")
-			addHandler(NewDirHandler(dir, urlPrefix, nil))
+			addHandler(server.NewDirHandler(dir, urlPrefix, nil))
 		}
 		addHandler(genBookTOCSearchHandlerMust(book))
 		{
@@ -463,7 +464,7 @@ func genBookHandler(book *Book) Handler {
 			mu.Unlock()
 		}
 	}()
-	return NewDynamicHandler(get, getURLs)
+	return server.NewDynamicHandler(get, getURLs)
 }
 
 var (
@@ -498,7 +499,7 @@ func buildFrontendProd() {
 	buildFrontend(false)
 }
 
-func buildServer(booksToProcess []*Book, forDev bool) *ServerConfig {
+func buildServer(booksToProcess []*Book, forDev bool) *server.Server {
 	logf(ctx(), "buildServer: %d books\n", len(booksToProcess))
 	initBookHandlers()
 
@@ -507,18 +508,18 @@ func buildServer(booksToProcess []*Book, forDev bool) *ServerConfig {
 	} else {
 		buildFrontendProd()
 	}
-	filesHandler := NewFilesHandler()
+	filesHandler := server.NewFilesHandler()
 
 	dir := filepath.Join("www_generated", "svelte")
 	filesHandler.AddFilesInDir(dir, "/s/", []string{"bundle.css", "bundle.js"})
 	dir = filepath.Join("fe", "tmpl")
 	filesHandler.AddFilesInDir(dir, "/s/", []string{"favicon.ico", "index.css", "main.css"})
 
-	handlers := []Handler{filesHandler}
+	handlers := []server.Handler{filesHandler}
 	h := genBooksIndexHandler(booksToProcess)
 	handlers = append(handlers, h)
 
-	server := &ServerConfig{
+	server := &server.Server{
 		Handlers:  handlers,
 		Port:      9003,
 		CleanURLS: true,
