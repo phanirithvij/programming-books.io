@@ -197,7 +197,11 @@ func genBooksIndexHandler(books []*Book) server.Handler {
 	return server.NewDynamicHandler(makeServerGet(books), serverURLS)
 }
 
-func previewWebsite(booksToProcess []*Book) {
+func runServerStatic(booksToProcess []*Book) {
+	// TODO: implement me
+}
+
+func runServerDynamic(booksToProcess []*Book) {
 	logf(ctx(), "previewWebsite: start for %d books\n", len(booksToProcess))
 	timeStart := time.Now()
 	flgReloadTemplates = true
@@ -215,36 +219,6 @@ func previewWebsite(booksToProcess []*Book) {
 
 	waitSignal := StartServer(server)
 	waitSignal()
-}
-
-func uploadZipToInstantPreviewMust(zipData []byte) string {
-	timeStart := time.Now()
-	uri := "https://www.instantpreview.dev/upload"
-	res, err := httpPost(uri, zipData)
-	must(err)
-	uri = string(res)
-	sizeStr := formatSize(int64(len(zipData)))
-	logf(ctx(), "uploaded under: %s, zip file size: %s in: %s\n", uri, sizeStr, time.Since(timeStart))
-	return uri
-}
-
-func previewToInsantPreview(booksToProcess []*Book) {
-	logf(ctx(), "previewToInsantPreview: %d books\n", len(booksToProcess))
-	timeStart := time.Now()
-	flgReloadTemplates = false
-	flgNoDownload = true
-	server := buildServer(booksToProcess, false)
-	waitBuildServerDone()
-	nPages := 0
-	for _, h := range server.Handlers {
-		nPages += len(h.URLS())
-	}
-	logf(ctx(), "previewToInsantPreview: finished %d urls in %s\n", nPages, time.Since(timeStart))
-	zipData, err := WriteServerFilesToZip(server.Handlers)
-	must(err)
-	timeStart = time.Now()
-	uri := uploadZipToInstantPreviewMust(zipData)
-	logf(ctx(), "previewToInsantPreview: uploaded zip of size %s in %s\n%s\n", formatSize(int64(len(zipData))), time.Since(timeStart), uri)
 }
 
 func genToDir(booksToProcess []*Book, dir string) {
@@ -510,7 +484,7 @@ func buildServer(booksToProcess []*Book, forDev bool) *server.Server {
 	}
 	filesHandler := server.NewFilesHandler()
 
-	dir := filepath.Join("www_generated", "svelte")
+	dir := filepath.Join(dirWwwGenerated, "svelte")
 	filesHandler.AddFilesInDir(dir, "/s/", []string{"bundle.css", "bundle.js"})
 	dir = filepath.Join("fe", "tmpl")
 	filesHandler.AddFilesInDir(dir, "/s/", []string{"favicon.ico", "index.css", "main.css"})
@@ -521,7 +495,7 @@ func buildServer(booksToProcess []*Book, forDev bool) *server.Server {
 
 	server := &server.Server{
 		Handlers:  handlers,
-		Port:      9003,
+		Port:      httpPort,
 		CleanURLS: true,
 	}
 

@@ -61,7 +61,7 @@ func remotePathFromFilePath(path string) string {
 	month := parts[2]
 	day := parts[3]
 	name = fmt.Sprintf("%s/%s-%s/%s-%s-%s_%s.txt.br", year, month, day, year, month, day, hr)
-	return "apps/cheatsheet/httplog/" + name
+	return "apps/progbooks/httplog/" + name
 }
 
 // upload httplog-2021-10-06_01.txt as

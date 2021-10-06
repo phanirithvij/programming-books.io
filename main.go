@@ -12,6 +12,11 @@ import (
 
 type any = interface{}
 
+const (
+	dirWwwGenerated = "www_generated"
+	httpPort        = 9044
+)
+
 var (
 	doMinify bool
 
@@ -22,7 +27,7 @@ var (
 )
 
 func isPreview() bool {
-	return flgPreview
+	return flgRunServer
 }
 
 func initBook(book *Book) {
@@ -33,7 +38,7 @@ func initBook(book *Book) {
 }
 
 var (
-	flgPreview bool
+	flgRunServer bool
 	// disables downloading pages
 	flgNoDownload     bool
 	flgGistRedownload bool
@@ -47,20 +52,20 @@ var (
 
 func main() {
 	var (
-		flgGen          bool
-		flgBook         string
-		flgDownloadGist string
-		flgPreviewInsta bool
+		flgGen             bool
+		flgBook            string
+		flgDownloadGist    string
+		flgRunServerStatic bool
 	)
 
 	{
-		flag.BoolVar(&flgPreview, "preview", false, "preview the book locally")
+		flag.BoolVar(&flgRunServer, "run", false, "run dev server")
+		flag.BoolVar(&flgRunServerStatic, "run-static", false, "run prod server serving www_generated")
 		flag.BoolVar(&flgGen, "gen", false, "generate a book and deploy preview")
 		flag.StringVar(&flgBook, "book", "", "name of the book")
 		flag.BoolVar(&flgDownloadOnly, "download-only", false, "only download the books from notion (no eval, no html generation")
 		flag.StringVar(&flgDownloadGist, "download-gist", "", "id of the gist to (re)download. Must also provide a book")
 		flag.BoolVar(&flgDisableNotionCache, "no-cache", false, "if true, disables cache for notion")
-		flag.BoolVar(&flgPreviewInsta, "preview-insta", false, "preview to instantpreview.dev")
 		flag.Parse()
 	}
 
@@ -112,18 +117,18 @@ func main() {
 		initBook(book)
 	}
 
-	if flgPreview {
-		previewWebsite(booksToProcess)
+	if flgRunServer {
+		runServerDynamic(booksToProcess)
 		return
 	}
 
-	if flgPreviewInsta {
-		previewToInsantPreview(booksToProcess)
+	if flgRunServerStatic {
+		runServerStatic(booksToProcess)
 		return
 	}
 
 	if flgGen {
-		dir, _ := filepath.Abs("www_generated")
+		dir, _ := filepath.Abs(dirWwwGenerated)
 		os.RemoveAll(dir)
 		genToDir(booksToProcess, dir)
 		return
