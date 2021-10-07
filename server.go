@@ -473,6 +473,11 @@ func genBookHandler(book *Book) server.Handler {
 		return nil
 	}
 
+	policy := notionapi.PolicyCacheOnly
+	if flgDisableNotionCache {
+		policy = notionapi.PolicyDownloadAlways
+	}
+
 	// start generating urls in background
 	booksWg.Add(1)
 	go func() {
@@ -488,7 +493,7 @@ func genBookHandler(book *Book) server.Handler {
 			logf(ctx(), "finished building book '%s', %d urls, took %s\n", book.DirShort, len(urls), time.Since(timeStart))
 		}()
 
-		downloadBook(book)
+		downloadBook(book, policy)
 
 		buildBookPages(book)
 

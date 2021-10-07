@@ -42,7 +42,7 @@ var (
 	flgNoDownload     bool
 	flgGistRedownload bool
 	// will only download (no eval, no generation)
-	flgDownloadOnly bool
+	flgImportNotion bool
 
 	// disables notion cache, forcing re-download of notion page
 	// even if cached verison on disk exits
@@ -61,10 +61,10 @@ func main() {
 		flag.BoolVar(&flgRunServer, "run", false, "run dev server")
 		flag.BoolVar(&flgRunServerProd, "run-prod", false, "run prod server serving www_generated")
 		flag.BoolVar(&flgGen, "gen", false, "generate a book and deploy preview")
-		flag.StringVar(&flgBook, "book", "", "name of the book")
-		flag.BoolVar(&flgDownloadOnly, "download-only", false, "only download the books from notion (no eval, no html generation")
+		flag.StringVar(&flgBook, "book", "", "name of the books e.g. go,python. if not given, all books are used")
+		flag.BoolVar(&flgImportNotion, "import-notion", false, "incremental download from notion (no eval, no html generation")
 		flag.StringVar(&flgDownloadGist, "download-gist", "", "id of the gist to (re)download. Must also provide a book")
-		flag.BoolVar(&flgDisableNotionCache, "no-cache", false, "if true, disables cache for notion")
+		flag.BoolVar(&flgDisableNotionCache, "no-cache", false, "if true, disables cache for notion (forces re-download of everything)")
 		flag.Parse()
 	}
 
@@ -128,11 +128,15 @@ func main() {
 		return
 	}
 
-	if flgDownloadOnly {
+	if flgImportNotion {
+		policy := notionapi.PolicyCacheOnly
+		if flgDisableNotionCache {
+			policy = notionapi.PolicyDownloadAlways
+		}
 		logf(ctx(), "Downloading %d books\n", len(booksToProcess))
 		n := len(booksToProcess)
 		for i, book := range booksToProcess {
-			downloadBook(book)
+			downloadBook(book, policy)
 			logvf("downloaded book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
 		}
 		return

@@ -49,7 +49,7 @@ func downloadImages(d *notionapi.CachingClient, book *Book, page *Page) {
 	page.NotionPage.ForEachBlock(fn)
 }
 
-func downloadBook(book *Book) {
+func downloadBook(book *Book, cachingPolicy notionapi.CachingPolicy) {
 	book.cache = loadCache(book)
 	createDirMust(book.NotionCacheDir)
 	logf(ctx(), "Downloading %s, created cache dir: '%s'\n", book.Title, book.NotionCacheDir)
@@ -63,11 +63,6 @@ func downloadBook(book *Book) {
 	d, err := notionapi.NewCachingClient(cacheDir, c)
 	must(err)
 	d.CacheDirFiles = filepath.Join(cacheDir, "img")
-	if flgDisableNotionCache {
-		d.Policy = notionapi.PolicyDownloadAlways
-	} else if flgNoDownload {
-		d.Policy = notionapi.PolicyCacheOnly
-	}
 	book.client = d
 
 	d.PreLoadCache()
@@ -96,7 +91,7 @@ func downloadBook(book *Book) {
 			Book:       book,
 		}
 		book.idToPage[id] = p
-		if !flgDownloadOnly {
+		if !flgImportNotion {
 			evalCodeSnippetsForPage(p)
 		}
 		downloadImages(d, book, p)
