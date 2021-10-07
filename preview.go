@@ -197,7 +197,7 @@ func genBooksIndexHandler(books []*Book) server.Handler {
 	return server.NewDynamicHandler(makeServerGet(books), serverURLS)
 }
 
-func runServerStatic() {
+func runServerProd() {
 	panicIf(!dirExists(dirWwwGenerated))
 	h := server.NewDirHandler(dirWwwGenerated, "/", nil)
 	logf(ctx(), "runServerStatic starting, hasSpacesCreds: %v, %d urls\n", hasSpacesCreds(), len(h.URLS()))
@@ -497,7 +497,7 @@ func buildServer(booksToProcess []*Book, forDev bool) *server.Server {
 	dir := filepath.Join(dirWwwGenerated, "svelte")
 	filesHandler.AddFilesInDir(dir, "/s/", []string{"bundle.css", "bundle.js"})
 	dir = filepath.Join("fe", "tmpl")
-	filesHandler.AddFilesInDir(dir, "/s/", []string{"favicon.ico", "index.css", "main.css"})
+	filesHandler.AddFilesInDir(dir, "/s/", []string{"favicon.ico", "index.css", "main.css", "ping.txt"})
 
 	handlers := []server.Handler{filesHandler}
 	h := genBooksIndexHandler(booksToProcess)

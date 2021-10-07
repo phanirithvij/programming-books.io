@@ -52,15 +52,15 @@ var (
 
 func main() {
 	var (
-		flgGen             bool
-		flgBook            string
-		flgDownloadGist    string
-		flgRunServerStatic bool
+		flgGen           bool
+		flgBook          string
+		flgDownloadGist  string
+		flgRunServerProd bool
 	)
 
 	{
 		flag.BoolVar(&flgRunServer, "run", false, "run dev server")
-		flag.BoolVar(&flgRunServerStatic, "run-static", false, "run prod server serving www_generated")
+		flag.BoolVar(&flgRunServerProd, "run-prod", false, "run prod server serving www_generated")
 		flag.BoolVar(&flgGen, "gen", false, "generate a book and deploy preview")
 		flag.StringVar(&flgBook, "book", "", "name of the book")
 		flag.BoolVar(&flgDownloadOnly, "download-only", false, "only download the books from notion (no eval, no html generation")
@@ -122,8 +122,8 @@ func main() {
 		return
 	}
 
-	if flgRunServerStatic {
-		runServerStatic()
+	if flgRunServerProd {
+		runServerProd()
 		return
 	}
 
