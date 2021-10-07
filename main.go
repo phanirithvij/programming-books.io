@@ -145,7 +145,14 @@ func main() {
 	}
 
 	if flgCiUpdateFromNotion {
+		var cmd *exec.Cmd
 		logf(ctx(), "Ci: incrementally update from notion, %d books\n", len(booksToProcess))
+		{
+			// not sure if needed
+			cmd = exec.Command("git", "checkout", "master")
+			runCmdMust(cmd)
+		}
+
 		n := len(booksToProcess)
 		// we don't honor -no-cache flag here
 		for i, book := range booksToProcess {
@@ -158,27 +165,37 @@ func main() {
 		}
 
 		{
-			cmd := exec.Command("git", "config", "--global", "user.email", "kkowalczyk@gmail.com")
+			cmd = exec.Command("git", "status")
+			s := runCmdMust(cmd)
+			if strings.Contains(s, "nothing to commit, working tree clean") {
+				// nothing changed so nothing else to do
+				logf(ctx(), "Nothing changed, skipping deploy")
+				return
+			}
+		}
+
+		{
+			cmd = exec.Command("git", "config", "--global", "user.email", "kkowalczyk@gmail.com")
 			runCmdMust(cmd)
 
 		}
 		{
-			cmd := exec.Command("git", "config", "--global", "user.name", "Krzysztof Kowalczyk")
+			cmd = exec.Command("git", "config", "--global", "user.name", "Krzysztof Kowalczyk")
 			runCmdMust(cmd)
 		}
 
 		{
-			cmd := exec.Command("git", "add", "books")
+			cmd = exec.Command("git", "add", "books")
 			runCmdMust(cmd)
 		}
 		{
 			nowStr := time.Now().Format("2006-01-02")
 			commitMsg := "ci: update from notion on " + nowStr
-			cmd := exec.Command("git", "commit", "-am", commitMsg)
+			cmd = exec.Command("git", "commit", "-am", commitMsg)
 			runCmdMust(cmd)
 		}
 		{
-			cmd := exec.Command("git", "push")
+			cmd = exec.Command("git", "push")
 			runCmdMust(cmd)
 		}
 		return
