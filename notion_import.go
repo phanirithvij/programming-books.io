@@ -1,6 +1,7 @@
 package main
 
 import (
+	"os"
 	"path/filepath"
 	"sync/atomic"
 
@@ -55,8 +56,8 @@ func downloadBook(book *Book) {
 	logf(ctx(), "Downloading %s, created cache dir: '%s'\n", book.Title, book.NotionCacheDir)
 
 	c := &notionapi.Client{}
-	c.Logger = logFile
-	//c.Logger = os.Stdout
+	//c.Logger = logFile
+	c.Logger = os.Stdout
 	//c.DebugLog = true
 	cacheDir := book.NotionCacheDir
 	createDirMust(cacheDir)

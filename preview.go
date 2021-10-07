@@ -5,6 +5,7 @@ import (
 	"html/template"
 	"io"
 	"net/http"
+	"os"
 	"os/exec"
 	"path"
 	"path/filepath"
@@ -275,8 +276,8 @@ func maybeRedownloadPage(book *Book, pageID string) *Page {
 	logf(ctx(), "maybeRedownloadPage %s\n", pageID)
 
 	c := &notionapi.Client{}
-	c.Logger = logFile
-	//c.Logger = os.Stdout
+	//c.Logger = logFile
+	c.Logger = os.Stdout
 	//c.DebugLog = true
 	cacheDir := book.NotionCacheDir
 	cc, err := notionapi.NewCachingClient(cacheDir, c)

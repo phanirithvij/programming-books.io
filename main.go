@@ -69,9 +69,6 @@ func main() {
 		flag.Parse()
 	}
 
-	closeLog := openLog()
-	defer closeLog()
-
 	timeStart := time.Now()
 	defer func() {
 		logf(ctx(), "Downloaded %d pages, %d from cache. Total time: %s\n", nTotalDownloaded, nTotalFromCache, time.Since(timeStart))
