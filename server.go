@@ -217,13 +217,18 @@ func makeHTTPServer(srv *server.Server) *http.Server {
 	mainHandler := func(w http.ResponseWriter, r *http.Request) {
 		//logf(ctx(), "mainHandler: '%s'\n", r.RequestURI)
 		timeStart := time.Now()
+		cw := server.CapturingResponseWriter{ResponseWriter: w}
+
 		defer func() {
 			if p := recover(); p != nil {
 				logf(ctx(), "mainHandler: panicked with with %v\n", p)
 				http.Error(w, fmt.Sprintf("Error: %v", r), http.StatusInternalServerError)
 				logHTTPReq(r, http.StatusInternalServerError, 0, time.Since(timeStart))
+			} else {
+				logHTTPReq(r, cw.StatusCode, cw.Size, time.Since(timeStart))
 			}
 		}()
+
 		uri := r.URL.Path
 		serve, is404 := srv.FindHandler(uri)
 		if is404 {
@@ -245,21 +250,17 @@ func makeHTTPServer(srv *server.Server) *http.Server {
 			}
 			redirectURL := findPageIDMatch()
 			if redirectURL != "" {
-				http.Redirect(w, r, redirectURL, http.StatusTemporaryRedirect) // 307
-				logHTTPReq(r, http.StatusTemporaryRedirect, 0, time.Since(timeStart))
+				http.Redirect(&cw, r, redirectURL, http.StatusTemporaryRedirect) // 307
 				return
 			}
 		}
 
 		if serve != nil {
-			cw := server.CapturingResponseWriter{ResponseWriter: w}
 			serve(&cw, r)
-			logHTTPReq(r, cw.StatusCode, cw.Size, time.Since(timeStart))
 			return
 		}
 
-		http.NotFound(w, r)
-		logHTTPReq(r, http.StatusNotFound, 0, time.Since(timeStart))
+		http.NotFound(&cw, r)
 	}
 
 	httpSrv := &http.Server{
