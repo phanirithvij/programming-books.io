@@ -590,6 +590,16 @@ func StartServer(srv *server.Server) func() {
 	return StartHTTPServer(httpSrv)
 }
 
+func RunServerProd(srv *server.Server) {
+	httpSrv := MakeHTTPServer(srv)
+	logf(ctx(), "Starting server on http://%s'\n", httpSrv.Addr)
+	if isWindows() {
+		openBrowser(fmt.Sprintf("http://%s", httpSrv.Addr))
+	}
+	err := httpSrv.ListenAndServe()
+	logf(ctx(), "RunServerProd: httpSrv.ListenAndServe() returned '%s'\n", err)
+}
+
 func perc(total, sub int64) float64 {
 	return float64(sub) * 100 / float64(total)
 }

@@ -197,8 +197,18 @@ func genBooksIndexHandler(books []*Book) server.Handler {
 	return server.NewDynamicHandler(makeServerGet(books), serverURLS)
 }
 
-func runServerStatic(booksToProcess []*Book) {
-	// TODO: implement me
+func runServerStatic() {
+	panicIf(!dirExists(dirWwwGenerated))
+	h := server.NewDirHandler(dirWwwGenerated, "/", nil)
+	logf(ctx(), "runServerStatic starting, hasSpacesCreds: %v, %d urls\n", hasSpacesCreds(), len(h.URLS()))
+	srv := &server.Server{
+		Handlers:  []server.Handler{h},
+		CleanURLS: true,
+		Port:      httpPort,
+	}
+	closeHTTPLog := openHTTPLog()
+	defer closeHTTPLog() // TODO: this actually doesn't take in prod
+	RunServerProd(srv)
 }
 
 func runServerDynamic(booksToProcess []*Book) {

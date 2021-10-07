@@ -123,7 +123,7 @@ func main() {
 	}
 
 	if flgRunServerStatic {
-		runServerStatic(booksToProcess)
+		runServerStatic()
 		return
 	}
 
