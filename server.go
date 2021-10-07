@@ -9,6 +9,7 @@ import (
 	"os/exec"
 	"path"
 	"path/filepath"
+	"regexp"
 	"runtime"
 	"sort"
 	"strings"
@@ -198,6 +199,79 @@ func genBooksIndexHandler(books []*Book) server.Handler {
 	return server.NewDynamicHandler(makeServerGet(books), serverURLS)
 }
 
+var (
+	rxExtractPageID = regexp.MustCompile(`(?m)[0-9a-f]{32}`)
+)
+
+func makeHTTPServer(srv *server.Server) *http.Server {
+	panicIf(srv == nil, "must provide srv")
+	httpPort := 8080
+	if srv.Port != 0 {
+		httpPort = srv.Port
+	}
+	httpAddr := fmt.Sprintf(":%d", httpPort)
+	if isWindows() {
+		httpAddr = "localhost" + httpAddr
+	}
+
+	mainHandler := func(w http.ResponseWriter, r *http.Request) {
+		//logf(ctx(), "mainHandler: '%s'\n", r.RequestURI)
+		timeStart := time.Now()
+		defer func() {
+			if p := recover(); p != nil {
+				logf(ctx(), "mainHandler: panicked with with %v\n", p)
+				http.Error(w, fmt.Sprintf("Error: %v", r), http.StatusInternalServerError)
+				logHTTPReq(r, http.StatusInternalServerError, 0, time.Since(timeStart))
+			}
+		}()
+		uri := r.URL.Path
+		serve, is404 := srv.FindHandler(uri)
+		if is404 {
+			// try to handle /essential/go/4c4df97de2e241dabade237cefe4c6d4-variables-of-function-type
+			// by redirecting to the actual URL
+			findPageIDMatch := func() string {
+				matches := rxExtractPageID.FindAllString(uri, 1)
+				if len(matches) == 1 {
+					pageID := matches[0]
+					for _, h := range srv.Handlers {
+						for _, uri := range h.URLS() {
+							if strings.Contains(uri, pageID) {
+								return uri
+							}
+						}
+					}
+				}
+				return ""
+			}
+			redirectURL := findPageIDMatch()
+			if redirectURL != "" {
+				http.Redirect(w, r, redirectURL, http.StatusTemporaryRedirect) // 307
+				logHTTPReq(r, http.StatusTemporaryRedirect, 0, time.Since(timeStart))
+				return
+			}
+		}
+
+		if serve != nil {
+			cw := server.CapturingResponseWriter{ResponseWriter: w}
+			serve(&cw, r)
+			logHTTPReq(r, cw.StatusCode, cw.Size, time.Since(timeStart))
+			return
+		}
+
+		http.NotFound(w, r)
+		logHTTPReq(r, http.StatusNotFound, 0, time.Since(timeStart))
+	}
+
+	httpSrv := &http.Server{
+		ReadTimeout:  120 * time.Second,
+		WriteTimeout: 120 * time.Second,
+		IdleTimeout:  120 * time.Second, // introduced in Go 1.8
+		Handler:      http.HandlerFunc(mainHandler),
+	}
+	httpSrv.Addr = httpAddr
+	return httpSrv
+}
+
 func runServerProd() {
 	panicIf(!dirExists(dirWwwGenerated))
 	h := server.NewDirHandler(dirWwwGenerated, "/", nil)
@@ -209,7 +283,7 @@ func runServerProd() {
 	}
 	closeHTTPLog := openHTTPLog()
 	defer closeHTTPLog() // TODO: this actually doesn't take in prod
-	httpSrv := MakeHTTPServer(srv)
+	httpSrv := makeHTTPServer(srv)
 	logf(ctx(), "Starting server on http://%s'\n", httpSrv.Addr)
 	if isWindows() {
 		openBrowser(fmt.Sprintf("http://%s", httpSrv.Addr))
@@ -219,23 +293,28 @@ func runServerProd() {
 }
 
 func runServerDynamic(booksToProcess []*Book) {
-	logf(ctx(), "previewWebsite: start for %d books\n", len(booksToProcess))
+	logf(ctx(), "runServerDynamic: start for %d books\n", len(booksToProcess))
 	timeStart := time.Now()
 	flgReloadTemplates = true
 	flgNoDownload = true
-	server := buildServer(booksToProcess, true)
+	srv := buildServer(booksToProcess, true)
 	go func() {
 		waitBuildServerDone()
 		// TODO: mutex protection
 		nPages := 0
-		for _, h := range server.Handlers {
+		for _, h := range srv.Handlers {
 			nPages += len(h.URLS())
 		}
-		logf(ctx(), "previewWebsite: finished %d urls in %s\n", nPages, time.Since(timeStart))
+		logf(ctx(), "runServerDynamic: finished %d urls in %s\n", nPages, time.Since(timeStart))
 	}()
 
-	waitSignal := StartServer(server)
-	waitSignal()
+	httpSrv := makeHTTPServer(srv)
+	logf(ctx(), "Starting server on http://%s'\n", httpSrv.Addr)
+	if isWindows() {
+		openBrowser(fmt.Sprintf("http://%s", httpSrv.Addr))
+	}
+	err := httpSrv.ListenAndServe()
+	logf(ctx(), "runServerDynamic: httpSrv.ListenAndServe() returned '%s'\n", err)
 }
 
 func genToDir(booksToProcess []*Book, dir string) {
