@@ -296,7 +296,6 @@ func runServerDynamic(booksToProcess []*Book) {
 	logf(ctx(), "runServerDynamic: start for %d books\n", len(booksToProcess))
 	timeStart := time.Now()
 	flgReloadTemplates = true
-	flgNoDownload = true
 	srv := buildServer(booksToProcess, true)
 	go func() {
 		waitBuildServerDone()
@@ -323,7 +322,6 @@ func genToDir(booksToProcess []*Book, dir string) {
 
 	timeStart := time.Now()
 	flgReloadTemplates = false
-	flgNoDownload = true
 	srv := buildServer(booksToProcess, false)
 	waitBuildServerDone()
 	nPages := 0
@@ -474,9 +472,6 @@ func genBookHandler(book *Book) server.Handler {
 	}
 
 	policy := notionapi.PolicyCacheOnly
-	if flgDisableNotionCache {
-		policy = notionapi.PolicyDownloadAlways
-	}
 
 	// start generating urls in background
 	booksWg.Add(1)

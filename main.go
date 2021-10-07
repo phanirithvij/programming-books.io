@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"os/exec"
 	"path/filepath"
 	"strings"
 	"time"
@@ -37,24 +38,23 @@ func initBook(book *Book) {
 }
 
 var (
-	flgRunServer bool
-	// disables downloading pages
-	flgNoDownload     bool
+	flgRunServer      bool
 	flgGistRedownload bool
 	// will only download (no eval, no generation)
 	flgImportNotion bool
-
-	// disables notion cache, forcing re-download of notion page
-	// even if cached verison on disk exits
-	flgDisableNotionCache bool
 )
 
 func main() {
 	var (
-		flgGen           bool
-		flgBook          string
-		flgDownloadGist  string
-		flgRunServerProd bool
+		flgGen                bool
+		flgBook               string
+		flgDownloadGist       string
+		flgRunServerProd      bool
+		flgCiUpdateFromNotion bool
+		// disables notion cache, forcing re-download of notion page
+		// even if cached verison on disk exits. Only applies with
+		// -import-notion
+		flgDisableNotionCache bool
 	)
 
 	{
@@ -65,6 +65,7 @@ func main() {
 		flag.BoolVar(&flgImportNotion, "import-notion", false, "incremental download from notion (no eval, no html generation")
 		flag.StringVar(&flgDownloadGist, "download-gist", "", "id of the gist to (re)download. Must also provide a book")
 		flag.BoolVar(&flgDisableNotionCache, "no-cache", false, "if true, disables cache for notion (forces re-download of everything)")
+		flag.BoolVar(&flgCiUpdateFromNotion, "ci-update-from-notion", false, "incremental download from notion and checkin if there are changes")
 		flag.Parse()
 	}
 
@@ -129,7 +130,7 @@ func main() {
 	}
 
 	if flgImportNotion {
-		policy := notionapi.PolicyCacheOnly
+		policy := notionapi.PolicyDownloadNewer
 		if flgDisableNotionCache {
 			policy = notionapi.PolicyDownloadAlways
 		}
@@ -138,6 +139,32 @@ func main() {
 		for i, book := range booksToProcess {
 			downloadBook(book, policy)
 			logvf("downloaded book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
+		}
+		return
+	}
+
+	if flgCiUpdateFromNotion {
+		logf(ctx(), "Ci: incrementally update from notion, %d books\n", len(booksToProcess))
+		n := len(booksToProcess)
+		// we don't honor -no-cache flag here
+		for i, book := range booksToProcess {
+			downloadBook(book, notionapi.PolicyDownloadNewer)
+			logvf("downloaded book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
+		}
+
+		{
+			cmd := exec.Command("git", "add", "books")
+			runCmdMust(cmd)
+		}
+		{
+			nowStr := time.Now().Format("2006-01-02")
+			commitMsg := "ci: update from notion on " + nowStr
+			cmd := exec.Command("git", "commit", "-am", commitMsg)
+			runCmdMust(cmd)
+		}
+		{
+			cmd := exec.Command("git", "push")
+			runCmdMust(cmd)
 		}
 		return
 	}
