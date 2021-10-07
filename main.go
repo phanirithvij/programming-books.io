@@ -4,6 +4,7 @@ import (
 	"flag"
 	"os/exec"
 	"path/filepath"
+	"runtime"
 	"strings"
 	"time"
 
@@ -148,8 +149,11 @@ func main() {
 		n := len(booksToProcess)
 		// we don't honor -no-cache flag here
 		for i, book := range booksToProcess {
-			downloadBook(book, notionapi.PolicyDownloadNewer)
+			// conserve memory by not keeping downloaded things in memory and forcing GC() frequently
+			bookCopy := *book
+			downloadBook(&bookCopy, notionapi.PolicyDownloadNewer)
 			logvf("downloaded book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
+			runtime.GC()
 		}
 
 		{
