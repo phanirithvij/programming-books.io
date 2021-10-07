@@ -208,7 +208,13 @@ func runServerProd() {
 	}
 	closeHTTPLog := openHTTPLog()
 	defer closeHTTPLog() // TODO: this actually doesn't take in prod
-	RunServerProd(srv)
+	httpSrv := MakeHTTPServer(srv)
+	logf(ctx(), "Starting server on http://%s'\n", httpSrv.Addr)
+	if isWindows() {
+		openBrowser(fmt.Sprintf("http://%s", httpSrv.Addr))
+	}
+	err := httpSrv.ListenAndServe()
+	logf(ctx(), "runServerProd: httpSrv.ListenAndServe() returned '%s'\n", err)
 }
 
 func runServerDynamic(booksToProcess []*Book) {
