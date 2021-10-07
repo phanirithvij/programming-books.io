@@ -6,7 +6,7 @@ require (
 	github.com/alecthomas/chroma v0.9.2
 	github.com/andybalholm/brotli v1.0.3
 	github.com/json-iterator/go v1.1.12 // indirect
-	github.com/kjk/cheatsheets v0.0.0-20211007031159-81bf8baa6d70
+	github.com/kjk/cheatsheets v0.0.0-20211007070722-0b7c992c56fb
 	github.com/kjk/notionapi v0.0.0-20210902233546-6e6cd02e3310
 	github.com/kjk/siser v0.0.0-20210621233355-17e67ed4384f
 	github.com/klauspost/cpuid/v2 v2.0.9 // indirect

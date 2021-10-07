@@ -243,16 +243,27 @@ func genToDir(booksToProcess []*Book, dir string) {
 	timeStart := time.Now()
 	flgReloadTemplates = false
 	flgNoDownload = true
-	server := buildServer(booksToProcess, false)
+	srv := buildServer(booksToProcess, false)
 	waitBuildServerDone()
 	nPages := 0
-	for _, h := range server.Handlers {
+	for _, h := range srv.Handlers {
 		nPages += len(h.URLS())
 	}
 	logf(ctx(), "genToDir: finished %d urls in %s\n", nPages, time.Since(timeStart))
-	//must(os.RemoveAll(dir))
-	nFiles, totalSize := WriteServerFilesToDir(dir, server.Handlers)
-	logf(ctx(), "genToDir: wrote %d files of size %s to '%s'\n", nFiles, formatSize(totalSize), dir)
+
+	must(os.RemoveAll(dir))
+	nFiles := 0
+	totalSize := int64(0)
+	onWritten := func(path string, d []byte) {
+		fsize := int64(len(d))
+		totalSize += fsize
+		sizeStr := formatSize(fsize)
+		if nFiles%256 == 0 {
+			logf(ctx(), "genToDir: file %d '%s' of size %s\n", nFiles+1, path, sizeStr)
+		}
+		nFiles++
+	}
+	server.WriteServerFilesToDir(dir, srv.Handlers, onWritten)
 }
 
 var booksSem chan bool
