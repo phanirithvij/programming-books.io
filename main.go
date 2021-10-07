@@ -150,10 +150,21 @@ func main() {
 		// we don't honor -no-cache flag here
 		for i, book := range booksToProcess {
 			// conserve memory by not keeping downloaded things in memory and forcing GC() frequently
+			// not sure if it matters
 			bookCopy := *book
 			downloadBook(&bookCopy, notionapi.PolicyDownloadNewer)
 			logvf("downloaded book %d out of %d, name: %s, dir: %s\n", i+1, n, book.Title, book.DirShort)
 			runtime.GC()
+		}
+
+		{
+			cmd := exec.Command("git", "config", "--global", "user.email", "kkowalczyk@gmail.com")
+			runCmdMust(cmd)
+
+		}
+		{
+			cmd := exec.Command("git", "config", "--global", "user.name", "Krzysztof Kowalczyk")
+			runCmdMust(cmd)
 		}
 
 		{
