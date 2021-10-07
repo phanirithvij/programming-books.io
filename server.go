@@ -240,6 +240,8 @@ func runServerDynamic(booksToProcess []*Book) {
 
 func genToDir(booksToProcess []*Book, dir string) {
 	logf(ctx(), "genToDir: '%s'\n", dir)
+	must(os.RemoveAll(dir))
+
 	timeStart := time.Now()
 	flgReloadTemplates = false
 	flgNoDownload = true
@@ -251,7 +253,6 @@ func genToDir(booksToProcess []*Book, dir string) {
 	}
 	logf(ctx(), "genToDir: finished %d urls in %s\n", nPages, time.Since(timeStart))
 
-	must(os.RemoveAll(dir))
 	nFiles := 0
 	totalSize := int64(0)
 	onWritten := func(path string, d []byte) {

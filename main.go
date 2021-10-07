@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"os"
 	"path/filepath"
 	"strings"
 	"time"
@@ -125,9 +124,7 @@ func main() {
 	}
 
 	if flgGen {
-		dir, _ := filepath.Abs(dirWwwGenerated)
-		os.RemoveAll(dir)
-		genToDir(booksToProcess, dir)
+		genToDir(booksToProcess, dirWwwGenerated)
 		return
 	}
 
