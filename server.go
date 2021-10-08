@@ -203,6 +203,22 @@ var (
 	rxExtractPageID = regexp.MustCompile(`(?m)[0-9a-f]{32}`)
 )
 
+func logHTTPReqShort(r *http.Request, code int, size int64, dur time.Duration) {
+	if strings.HasPrefix(r.URL.Path, "/ping") {
+		return
+	}
+	if code >= 400 {
+		// make 400 stand out more in logs
+		logf(ctx(), "%s %d %s %s in %s\n", "   ", code, r.RequestURI, formatSize(size), dur)
+	} else {
+		logf(ctx(), "%s %d %s %s in %s\n", r.Method, code, r.RequestURI, formatSize(size), dur)
+	}
+	ref := r.Header.Get("Referer")
+	if ref != "" && !strings.Contains(ref, r.Host) {
+		logf(ctx(), "ref: %s \n", ref)
+	}
+}
+
 func makeHTTPServer(srv *server.Server) *http.Server {
 	panicIf(srv == nil, "must provide srv")
 	httpPort := 8080
@@ -223,9 +239,11 @@ func makeHTTPServer(srv *server.Server) *http.Server {
 			if p := recover(); p != nil {
 				logf(ctx(), "mainHandler: panicked with with %v\n", p)
 				http.Error(w, fmt.Sprintf("Error: %v", r), http.StatusInternalServerError)
-				logHTTPReq(r, http.StatusInternalServerError, 0, time.Since(timeStart))
+				logHTTPReqShort(r, http.StatusInternalServerError, 0, time.Since(timeStart))
+				LogHTTPReq(r, http.StatusInternalServerError, 0, time.Since(timeStart))
 			} else {
-				logHTTPReq(r, cw.StatusCode, cw.Size, time.Since(timeStart))
+				logHTTPReqShort(r, cw.StatusCode, cw.Size, time.Since(timeStart))
+				LogHTTPReq(r, cw.StatusCode, cw.Size, time.Since(timeStart))
 			}
 		}()
 
@@ -282,8 +300,8 @@ func runServerProd() {
 		CleanURLS: true,
 		Port:      httpPort,
 	}
-	closeHTTPLog := openHTTPLog()
-	defer closeHTTPLog() // TODO: this actually doesn't take in prod
+	closeHTTPLog := OpenHTTPLog("progbooks")
+	defer closeHTTPLog()
 	httpSrv := makeHTTPServer(srv)
 	logf(ctx(), "Starting server on http://%s'\n", httpSrv.Addr)
 	if isWindows() {
