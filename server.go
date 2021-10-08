@@ -16,7 +16,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kjk/cheatsheets/pkg/server"
+	"github.com/kjk/common/server"
 	"github.com/kjk/notionapi"
 )
 
