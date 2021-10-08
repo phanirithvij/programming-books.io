@@ -12,13 +12,19 @@ import (
 )
 
 var (
-	imgoptSem chan bool
-	imgoptWg  sync.WaitGroup
+	imgoptSem        chan bool
+	imgoptWg         sync.WaitGroup
+	imgoptProcessed  int
+	imgoptOptimized  int
+	imgoptSizeBefore int64
+	imgoptSizeAFter  int64
+	imgoptMu         sync.Mutex
 )
 
 // run optipng in parallel
 func optimizeWithOptipng(path string) {
 	logf(ctx(), "Optimizing '%s'\n", path)
+	sizeBefore := getFileSize(path)
 	cmd := exec.Command("optipng", "-o5", path)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
@@ -27,7 +33,19 @@ func optimizeWithOptipng(path string) {
 		// it's ok if fails. some jpeg images are saved as .png
 		// which trips it
 		logf(ctx(), "optipng failed with '%s'\n", err)
+		return
 	}
+	sizeAfter := getFileSize(path)
+	panicIf(sizeBefore == -1 || sizeAfter == -1)
+
+	imgoptMu.Lock()
+	defer imgoptMu.Unlock()
+	imgoptProcessed++
+	if sizeBefore != sizeAfter {
+		imgoptOptimized++
+	}
+	imgoptSizeAFter += sizeAfter
+	imgoptSizeBefore += sizeBefore
 }
 
 func maybeOptimizeImage(path string) {
@@ -79,4 +97,5 @@ func optimizeAllImages(dirsToVisit []string) {
 		}
 	}
 	imgoptWg.Wait()
+	logf(ctx(), "optimizeAllImages: processed %d, optimized %d, %s => %s\n", imgoptProcessed, imgoptOptimized, formatSize(imgoptSizeBefore), formatSize(imgoptSizeAFter))
 }
