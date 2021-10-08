@@ -46,7 +46,7 @@ func maybeOptimizeImage(path string) {
 	}
 }
 
-func optimizeAllImages() {
+func optimizeAllImages(dirsToVisit []string) {
 	imgoptSem = make(chan bool, runtime.NumCPU()+1)
 
 	timeStart := time.Now()
@@ -59,7 +59,6 @@ func optimizeAllImages() {
 	err := cmd.Run()
 	panicIf(err != nil, "optipng is not installed")
 
-	dirsToVisit := []string{"books"}
 	for len(dirsToVisit) > 0 {
 		dir := dirsToVisit[0]
 		dirsToVisit = dirsToVisit[1:]

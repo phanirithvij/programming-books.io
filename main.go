@@ -85,7 +85,7 @@ func main() {
 		return
 	}
 	if false {
-		optimizeAllImages()
+		optimizeAllImages([]string{"books"})
 		return
 	}
 
