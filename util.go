@@ -5,51 +5,30 @@ import (
 	"crypto/sha1"
 	"fmt"
 	"io/ioutil"
-	"log"
 	"os"
 	"os/exec"
 	"path/filepath"
-	"runtime"
 	"strconv"
 	"strings"
+
+	"github.com/kjk/common/u"
+)
+
+var (
+	must       = u.Must
+	panicIf    = u.PanicIf
+	panicIfErr = u.PanicIfErr
+	//fileExists  = u.FileExists
+	dirExists   = u.DirExists
+	getFileSize = u.FileSize
+	isWindows   = u.IsWindows
+	openBrowser = u.OpenBrowser
+	perc        = u.Percent
+	formatSize  = u.FormatSize
 )
 
 func ctx() context.Context {
 	return context.Background()
-}
-
-func panicIf(cond bool, args ...interface{}) {
-	if !cond {
-		return
-	}
-	s := "condition failed"
-	if len(args) > 0 {
-		s = fmt.Sprintf("%s", args[0])
-		if len(args) > 1 {
-			s = fmt.Sprintf(s, args[1:]...)
-		}
-	}
-	panic(s)
-}
-
-func panicIfErr(err error, args ...interface{}) {
-	if err == nil {
-		return
-	}
-	s := err.Error()
-	if len(args) > 0 {
-		s = fmt.Sprintf("%s", args[0])
-		if len(args) > 1 {
-			s = fmt.Sprintf(s, args[1:]...)
-		}
-	}
-	panic(s)
-}
-
-func must(err error) {
-	if err != nil {
-		panic(err)
-	}
 }
 
 // whitelisted characters valid in url
@@ -234,16 +213,6 @@ func shiftLines(lines []string) {
 	}
 }
 
-func fileExists(path string) bool {
-	st, err := os.Lstat(path)
-	return err == nil && st.Mode().IsRegular()
-}
-
-func dirExists(path string) bool {
-	st, err := os.Lstat(path)
-	return err == nil && st.IsDir()
-}
-
 func fmtCmdShort(cmd exec.Cmd) string {
 	cmd.Path = filepath.Base(cmd.Path)
 	return cmd.String()
@@ -283,49 +252,6 @@ func createDirForFile(path string) error {
 	return os.MkdirAll(filepath.Dir(path), 0755)
 }
 
-func formatSize(n int64) string {
-	sizes := []int64{1024 * 1024 * 1024, 1024 * 1024, 1024}
-	suffixes := []string{"GB", "MB", "kB"}
-	for i, size := range sizes {
-		if n >= size {
-			s := fmt.Sprintf("%.2f", float64(n)/float64(size))
-			return strings.TrimSuffix(s, ".00") + " " + suffixes[i]
-		}
-	}
-	return fmt.Sprintf("%d bytes", n)
-}
-
-func getFileSize(path string) int64 {
-	st, err := os.Lstat(path)
-	if err == nil {
-		return st.Size()
-	}
-	return -1
-}
-
-func isWindows() bool {
-	return strings.Contains(runtime.GOOS, "windows")
-}
-
-// from https://gist.github.com/hyg/9c4afcd91fe24316cbf0
-func openBrowser(url string) {
-	var err error
-
-	switch runtime.GOOS {
-	case "linux":
-		err = exec.Command("xdg-open", url).Start()
-	case "windows":
-		err = exec.Command("rundll32", "url.dll,FileProtocolHandler", url).Start()
-	case "darwin":
-		err = exec.Command("open", url).Start()
-	default:
-		err = fmt.Errorf("unsupported platform")
-	}
-	if err != nil {
-		log.Fatal(err)
-	}
-}
-
 func sha1HexOfBytes(data []byte) string {
 	return fmt.Sprintf("%x", sha1OfBytes(data))
 }
@@ -340,8 +266,4 @@ func createDirMust(dir string) string {
 	err := os.MkdirAll(dir, 0755)
 	must(err)
 	return dir
-}
-
-func perc(total, sub int64) float64 {
-	return float64(sub) * 100 / float64(total)
 }

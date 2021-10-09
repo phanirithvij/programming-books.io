@@ -14,7 +14,7 @@ import (
 
 	"github.com/andybalholm/brotli"
 	"github.com/kjk/common/filerotate"
-	"github.com/kjk/siser"
+	"github.com/kjk/common/siser"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 )

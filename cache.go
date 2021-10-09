@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/kjk/siser"
+	"github.com/kjk/common/siser"
 )
 
 const (
