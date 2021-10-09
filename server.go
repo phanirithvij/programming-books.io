@@ -203,22 +203,6 @@ var (
 	rxExtractPageID = regexp.MustCompile(`(?m)[0-9a-f]{32}`)
 )
 
-func logHTTPReqShort(r *http.Request, code int, size int64, dur time.Duration) {
-	if strings.HasPrefix(r.URL.Path, "/ping") {
-		return
-	}
-	if code >= 400 {
-		// make 400 stand out more in logs
-		logf(ctx(), "%s %d %s %s in %s\n", "   ", code, r.RequestURI, formatSize(size), dur)
-	} else {
-		logf(ctx(), "%s %d %s %s in %s\n", r.Method, code, r.RequestURI, formatSize(size), dur)
-	}
-	ref := r.Header.Get("Referer")
-	if ref != "" && !strings.Contains(ref, r.Host) {
-		logf(ctx(), "ref: %s \n", ref)
-	}
-}
-
 func makeHTTPServer(srv *server.Server) *http.Server {
 	panicIf(srv == nil, "must provide srv")
 	httpPort := 8080
@@ -300,8 +284,10 @@ func runServerProd() {
 		CleanURLS: true,
 		Port:      httpPort,
 	}
+
 	closeHTTPLog := OpenHTTPLog("progbooks")
 	defer closeHTTPLog()
+
 	httpSrv := makeHTTPServer(srv)
 	logf(ctx(), "Starting server on http://%s'\n", httpSrv.Addr)
 	if isWindows() {
@@ -325,6 +311,9 @@ func runServerDynamic(booksToProcess []*Book) {
 		}
 		logf(ctx(), "runServerDynamic: finished %d urls in %s\n", nPages, time.Since(timeStart))
 	}()
+
+	closeHTTPLog := OpenHTTPLog("progbooks")
+	defer closeHTTPLog()
 
 	httpSrv := makeHTTPServer(srv)
 	logf(ctx(), "Starting server on http://%s'\n", httpSrv.Addr)
