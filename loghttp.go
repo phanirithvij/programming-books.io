@@ -36,12 +36,12 @@ func logHTTPReqShort(r *http.Request, code int, size int64, dur time.Duration) {
 func uploadCompressedHTTPLog(app, path string) {
 	timeStart := time.Now()
 	mc := newMinioSpacesClient()
-	remotePath := httplogger.RemotePathFromFilePath(app, path) + ".br"
+	remotePath := httplogger.RemotePathFromFilePath(app, path)
 	if remotePath == "" {
 		logf(ctx(), "uploadCompressedHTTPLog: remotePathFromFilePath() failed for '%s'\n", path)
 		return
 	}
-	_, err := mc.UploadFileBrotliCompressedPublic(remotePath, path)
+	_, err := mc.UploadFileBrotliCompressedPublic(remotePath+".br", path)
 	if err != nil {
 		logerrf(ctx(), "uploadCompressedHTTPLog: minioUploadFilePublic() failed with '%s'\n", err)
 		return
