@@ -15,7 +15,7 @@ var (
 	httpLogger *httplogger.Logger
 )
 
-func logHTTPReqShort(r *http.Request, code int, size int64, dur time.Duration) {
+func logHTTPReq(r *http.Request, code int, size int64, dur time.Duration) {
 	if strings.HasPrefix(r.URL.Path, "/ping") {
 		return
 	}
@@ -29,6 +29,11 @@ func logHTTPReqShort(r *http.Request, code int, size int64, dur time.Duration) {
 	if ref != "" && !strings.Contains(ref, r.Host) {
 		logf(ctx(), "ref: %s \n", ref)
 	}
+
+	err := httpLogger.LogReq(r, code, size, dur)
+	if err != nil {
+		logerrf(ctx(), "httpLogger.LogReq() failed with '%s'\n", err)
+	}
 }
 
 // upload httplog-2021-10-06_01.txt as
@@ -41,7 +46,8 @@ func uploadCompressedHTTPLog(app, path string) {
 		logf(ctx(), "uploadCompressedHTTPLog: remotePathFromFilePath() failed for '%s'\n", path)
 		return
 	}
-	_, err := mc.UploadFileBrotliCompressedPublic(remotePath+".br", path)
+	remotePath += ".br"
+	_, err := mc.UploadFileBrotliCompressedPublic(remotePath, path)
 	if err != nil {
 		logerrf(ctx(), "uploadCompressedHTTPLog: minioUploadFilePublic() failed with '%s'\n", err)
 		return
@@ -55,7 +61,7 @@ func OpenHTTPLog(app string) func() {
 	must(os.MkdirAll(dir, 0755))
 
 	didRotate := func(path string) {
-		canUpload := hasSpacesCreds()
+		canUpload := hasSpacesCreds() && !isWindows()
 		logf(ctx(), "didRotateHTTPLog: '%s', hasSpacesCreds: %v\n", path, canUpload)
 		if !canUpload {
 			return
@@ -69,17 +75,6 @@ func OpenHTTPLog(app string) func() {
 	logf(context.Background(), "opened http log file\n")
 	return func() {
 		httpLogger.Close()
-	}
-}
-
-func LogHTTPReq(r *http.Request, code int, size int64, dur time.Duration) {
-	if strings.HasPrefix(r.URL.Path, "/ping") {
-		// our internal health monitoring endpoint is called frequently, don't log
-		return
-	}
-	err := httpLogger.LogReq(r, code, size, dur)
-	if err != nil {
-		logerrf(ctx(), "logHTTPReq: httpLogSiser.WriteRecord() failed with '%s'\n", err)
 	}
 }
 

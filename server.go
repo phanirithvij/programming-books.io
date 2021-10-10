@@ -224,8 +224,7 @@ func makeHTTPServer(srv *server.Server) *http.Server {
 				logf(ctx(), "mainHandler: panicked with with %v\n", p)
 				http.Error(&cw, fmt.Sprintf("Error: %v", r), http.StatusInternalServerError)
 			}
-			logHTTPReqShort(r, cw.StatusCode, cw.Size, time.Since(timeStart))
-			LogHTTPReq(r, cw.StatusCode, cw.Size, time.Since(timeStart))
+			logHTTPReq(r, cw.StatusCode, cw.Size, time.Since(timeStart))
 		}()
 
 		uri := r.URL.Path
