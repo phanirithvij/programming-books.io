@@ -1186,22 +1186,34 @@ Response:+37252
     "space": {}
   }
 }
-24939 noahttpcache
+25306 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
-Body:+269
+Body:+503
 {
-  "collectionId": "2dd318db-11a8-4463-a4a8-ce8e626b6108",
-  "collectionViewId": "19ba2821-40c3-44de-8e64-107880ef84fb",
-  "query": null,
+  "collection": {
+    "id": "2dd318db-11a8-4463-a4a8-ce8e626b6108",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
+  "collectionView": {
+    "id": "19ba2821-40c3-44de-8e64-107880ef84fb",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
   "loader": {
-    "type": "table",
-    "limit": 256,
-    "userTimeZone": "America/Los_Angeles",
-    "loadContentCover": true
+    "type": "reducer",
+    "reducers": {
+      "collection_group_results": {
+  "type": "results",
+  "limit": 50
+}
+    },
+    "sort": null,
+    "filter": null,
+    "searchQuery": "",
+    "userTimeZone": "America/Los_Angeles"
   }
 }
-Response:+24580
+Response:+24713
 {
   "recordMap": {
     "block": {
@@ -1787,22 +1799,26 @@ Response:+24580
     }
   },
   "result": {
-    "aggregationResults": [],
-    "blockIds": [
-      "323db6f6-d697-4b96-8340-f65cc87e25d2",
-      "1f86346b-9baf-4535-bdf1-b26ca201fb96",
-      "a8e5dab4-a743-4a3c-ad90-f5d5de21f14b",
-      "773c85ee-7e3a-446a-9b49-8666b1163e8b",
-      "3a9b8963-2a4d-4609-a8a5-8682a75e7686",
-      "174bcf33-1d7c-4f40-9116-7f8a50c54652",
-      "59bd33fb-f34f-474c-8ff8-78d73672568c",
-      "4d660caa-a5f6-45d1-9e92-aac8811d56fd",
-      "d18e7b49-1d4d-42e7-9bef-aad3a1e8081a",
-      "de6bd307-b1ce-4519-9e32-a3f49e0aaf0d",
-      "ce23c913-1b4a-4103-b579-83c6d26d803f",
-      "8f0742ca-114d-401a-b909-b9e4a15d5b05"
-    ],
-    "total": 12,
-    "type": "table"
+    "reducerResults": {
+      "collection_group_results": {
+        "blockIds": [
+          "323db6f6-d697-4b96-8340-f65cc87e25d2",
+          "1f86346b-9baf-4535-bdf1-b26ca201fb96",
+          "a8e5dab4-a743-4a3c-ad90-f5d5de21f14b",
+          "773c85ee-7e3a-446a-9b49-8666b1163e8b",
+          "3a9b8963-2a4d-4609-a8a5-8682a75e7686",
+          "174bcf33-1d7c-4f40-9116-7f8a50c54652",
+          "59bd33fb-f34f-474c-8ff8-78d73672568c",
+          "4d660caa-a5f6-45d1-9e92-aac8811d56fd",
+          "d18e7b49-1d4d-42e7-9bef-aad3a1e8081a",
+          "de6bd307-b1ce-4519-9e32-a3f49e0aaf0d",
+          "ce23c913-1b4a-4103-b579-83c6d26d803f",
+          "8f0742ca-114d-401a-b909-b9e4a15d5b05"
+        ],
+        "total": 12,
+        "type": "results"
+      }
+    },
+    "type": "reducer"
   }
 }

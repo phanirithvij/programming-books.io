@@ -723,22 +723,34 @@ Response:+16561
     "space": {}
   }
 }
-56221 noahttpcache
+56692 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
-Body:+269
+Body:+503
 {
-  "collectionId": "ffa83127-f02d-4792-8847-94fc06c1578c",
-  "collectionViewId": "d0f12886-2e5a-4c5e-a21d-ebb97bbac905",
-  "query": null,
+  "collection": {
+    "id": "ffa83127-f02d-4792-8847-94fc06c1578c",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
+  "collectionView": {
+    "id": "d0f12886-2e5a-4c5e-a21d-ebb97bbac905",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
   "loader": {
-    "type": "table",
-    "limit": 256,
-    "userTimeZone": "America/Los_Angeles",
-    "loadContentCover": true
+    "type": "reducer",
+    "reducers": {
+      "collection_group_results": {
+  "type": "results",
+  "limit": 50
+}
+    },
+    "sort": null,
+    "filter": null,
+    "searchQuery": "",
+    "userTimeZone": "America/Los_Angeles"
   }
 }
-Response:+55862
+Response:+56099
 {
   "recordMap": {
     "block": {
@@ -2025,48 +2037,52 @@ Response:+55862
     }
   },
   "result": {
-    "aggregationResults": [],
-    "blockIds": [
-      "26774c39-95da-45cd-8d2e-b371a81a09e5",
-      "f6cec33f-06ed-4452-8823-34e8de7fceef",
-      "3afe3644-6f92-4107-b193-6be2f3c002f3",
-      "98a91220-1793-444e-be1e-4c45d5219ea2",
-      "11ca7458-0f64-4491-839d-1d1cda609202",
-      "00e5e225-5c57-4334-ae98-7b0210b9c7e2",
-      "3a5dab53-8ffd-43e3-ae41-9ada0ac3833d",
-      "c16b5768-bd29-4bf2-9fff-bceb0116fc1f",
-      "afdcdc1e-bb99-4240-9d9b-8c5c5fca0a23",
-      "70695fc1-ff19-4a17-a7f4-f9f35db5eaab",
-      "7da12cee-e061-47fc-a2d3-b59aa484f003",
-      "fcd81d3c-70de-4240-9b60-3ff9a8afdfd3",
-      "5c11b897-0bbb-47a3-a596-4c82d8065706",
-      "37fd2450-cf4d-439d-b5da-08f5709e3122",
-      "e49b4ba2-6bf3-4f2b-b40b-8ed03177f62c",
-      "656a0cc9-a851-46eb-983a-611caaf5262b",
-      "7e82ec0b-8241-4b6c-ba48-712c94f0e958",
-      "ae6b4636-29b0-4452-9479-9ae3bedf77b8",
-      "4e26c589-248c-4230-a618-4e4031ee9372",
-      "0fe0caa3-6306-4239-8771-a90d3ffce4c5",
-      "df84e7d0-776e-4e31-a4c2-bc295f59b947",
-      "8c44aac6-24b4-48cf-8b5f-49ba2d49a469",
-      "e363d221-38a0-42fd-b59a-1b7ed3d253ba",
-      "582c885a-e7cd-494b-b4d1-fdd9677eb493",
-      "7655d723-7dc3-4695-a433-aa44d053bc8a",
-      "e9738134-72d3-441f-8b49-3c70fb9baeb7",
-      "23adcd4b-71f0-4f0a-9856-09f570690cf7",
-      "aae07af2-b080-4631-abff-7b75c62f1f09",
-      "e75dafb3-861c-45bf-8f38-1f1732b2f0ed",
-      "c1842d35-1c51-43a1-97e9-3e3b7a6268e1",
-      "7ab7f074-dcaf-4c37-b615-7379f37e6e61",
-      "b8832ccd-5182-4f49-931b-2c87886d4234",
-      "b62707c7-bc5f-426d-959b-8f6861b5a488",
-      "f4b7f49f-6870-488f-b268-3adc76ca0e7f",
-      "75900142-42ff-416d-bfc2-cea786c11136",
-      "a3606d50-65a6-43d7-b9ec-0c5f22474b0c",
-      "4aadb201-ce50-40e3-a18d-89481438a387",
-      "e5c3188d-ab37-4d60-8af6-d77eb7f7c16c"
-    ],
-    "total": 38,
-    "type": "table"
+    "reducerResults": {
+      "collection_group_results": {
+        "blockIds": [
+          "26774c39-95da-45cd-8d2e-b371a81a09e5",
+          "f6cec33f-06ed-4452-8823-34e8de7fceef",
+          "3afe3644-6f92-4107-b193-6be2f3c002f3",
+          "98a91220-1793-444e-be1e-4c45d5219ea2",
+          "11ca7458-0f64-4491-839d-1d1cda609202",
+          "00e5e225-5c57-4334-ae98-7b0210b9c7e2",
+          "3a5dab53-8ffd-43e3-ae41-9ada0ac3833d",
+          "c16b5768-bd29-4bf2-9fff-bceb0116fc1f",
+          "afdcdc1e-bb99-4240-9d9b-8c5c5fca0a23",
+          "70695fc1-ff19-4a17-a7f4-f9f35db5eaab",
+          "7da12cee-e061-47fc-a2d3-b59aa484f003",
+          "fcd81d3c-70de-4240-9b60-3ff9a8afdfd3",
+          "5c11b897-0bbb-47a3-a596-4c82d8065706",
+          "37fd2450-cf4d-439d-b5da-08f5709e3122",
+          "e49b4ba2-6bf3-4f2b-b40b-8ed03177f62c",
+          "656a0cc9-a851-46eb-983a-611caaf5262b",
+          "7e82ec0b-8241-4b6c-ba48-712c94f0e958",
+          "ae6b4636-29b0-4452-9479-9ae3bedf77b8",
+          "4e26c589-248c-4230-a618-4e4031ee9372",
+          "0fe0caa3-6306-4239-8771-a90d3ffce4c5",
+          "df84e7d0-776e-4e31-a4c2-bc295f59b947",
+          "8c44aac6-24b4-48cf-8b5f-49ba2d49a469",
+          "e363d221-38a0-42fd-b59a-1b7ed3d253ba",
+          "582c885a-e7cd-494b-b4d1-fdd9677eb493",
+          "7655d723-7dc3-4695-a433-aa44d053bc8a",
+          "e9738134-72d3-441f-8b49-3c70fb9baeb7",
+          "23adcd4b-71f0-4f0a-9856-09f570690cf7",
+          "aae07af2-b080-4631-abff-7b75c62f1f09",
+          "e75dafb3-861c-45bf-8f38-1f1732b2f0ed",
+          "c1842d35-1c51-43a1-97e9-3e3b7a6268e1",
+          "7ab7f074-dcaf-4c37-b615-7379f37e6e61",
+          "b8832ccd-5182-4f49-931b-2c87886d4234",
+          "b62707c7-bc5f-426d-959b-8f6861b5a488",
+          "f4b7f49f-6870-488f-b268-3adc76ca0e7f",
+          "75900142-42ff-416d-bfc2-cea786c11136",
+          "a3606d50-65a6-43d7-b9ec-0c5f22474b0c",
+          "4aadb201-ce50-40e3-a18d-89481438a387",
+          "e5c3188d-ab37-4d60-8af6-d77eb7f7c16c"
+        ],
+        "total": 38,
+        "type": "results"
+      }
+    },
+    "type": "reducer"
   }
 }

@@ -458,7 +458,7 @@ Response:+20309
     }
   ]
 }
-27833 noahttpcache
+28079 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -471,7 +471,7 @@ Body:+152
   },
   "verticalColumns": false
 }
-Response:+27593
+Response:+27839
 {
   "cursor": {
     "stack": []
@@ -686,6 +686,13 @@ Response:+27593
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1550443499913,
+          "format": {
+            "collection_pointer": {
+              "id": "5837ac09-43e8-483e-a060-3c7244ce7132",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "eb3eed33-4df6-44ac-9268-f4df6ac3277e",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -695,7 +702,7 @@ Response:+27593
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 1,
+          "version": 2,
           "view_ids": ["e4a836bc-c44b-40eb-a3c1-80c41c764372"]
         }
       },
@@ -1105,22 +1112,34 @@ Response:+27593
     "space": {}
   }
 }
-60421 noahttpcache
+61090 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
-Body:+269
+Body:+503
 {
-  "collectionId": "5837ac09-43e8-483e-a060-3c7244ce7132",
-  "collectionViewId": "e4a836bc-c44b-40eb-a3c1-80c41c764372",
-  "query": null,
+  "collection": {
+    "id": "5837ac09-43e8-483e-a060-3c7244ce7132",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
+  "collectionView": {
+    "id": "e4a836bc-c44b-40eb-a3c1-80c41c764372",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
   "loader": {
-    "type": "table",
-    "limit": 256,
-    "userTimeZone": "America/Los_Angeles",
-    "loadContentCover": true
+    "type": "reducer",
+    "reducers": {
+      "collection_group_results": {
+  "type": "results",
+  "limit": 50
+}
+    },
+    "sort": null,
+    "filter": null,
+    "searchQuery": "",
+    "userTimeZone": "America/Los_Angeles"
   }
 }
-Response:+60062
+Response:+60497
 {
   "recordMap": {
     "block": {
@@ -2186,6 +2205,13 @@ Response:+60062
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1550443499913,
+          "format": {
+            "collection_pointer": {
+              "id": "5837ac09-43e8-483e-a060-3c7244ce7132",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "eb3eed33-4df6-44ac-9268-f4df6ac3277e",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -2195,7 +2221,7 @@ Response:+60062
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 1,
+          "version": 2,
           "view_ids": ["e4a836bc-c44b-40eb-a3c1-80c41c764372"]
         }
       },
@@ -2689,36 +2715,40 @@ Response:+60062
     }
   },
   "result": {
-    "aggregationResults": [],
-    "blockIds": [
-      "bfb14a85-3b62-4c96-922c-15778d02941d",
-      "d726ea1c-fc0d-4bac-8095-0c38bde0654e",
-      "33077c33-0433-4d87-a15b-545019de09a5",
-      "e232d812-af91-4717-b294-f918ff2da2bf",
-      "085c52e3-8241-40ae-acbb-ff8c0c67cf9e",
-      "f511afca-109c-49c2-9b58-930a4e4e58f3",
-      "99699f03-b0fd-440e-b8f7-9f042b077abb",
-      "492d8c43-a74a-4c36-908a-b36437c96f3c",
-      "d0fe6b39-1cfd-4892-8762-051249c20488",
-      "7478b394-291f-4c36-96a4-a17affb70325",
-      "1eaafe73-48aa-461e-a80c-562a8880d655",
-      "ef785b67-54a7-4c58-9717-ca2c6bff6f1e",
-      "ca484895-2ffc-4662-bcc2-a112e54b36d8",
-      "c0241076-be7b-4b16-81a3-980b46f99b4d",
-      "0ccb83ea-eb42-4c9f-82a4-462a36e5eb72",
-      "54f3cffb-f1ce-46c1-b9ca-b2ef36be852e",
-      "747c9917-7366-4c9a-b84d-4187069ff213",
-      "a1114713-9143-497a-925e-4a617eee250d",
-      "bf80f23f-ad6f-4848-9c58-a0322564fcb4",
-      "63d64fe9-3d0f-46ce-8d63-6188a59304e6",
-      "be3335a1-7939-42d4-80eb-65b950fe2dc5",
-      "daafaa9d-5004-43cd-a898-26bb44efb624",
-      "c7e40f1d-109a-4da2-8a96-3d3722d1bbcd",
-      "20648ae7-385e-4107-a2e7-763b129983c0",
-      "32917d4d-ec28-40b7-b1f5-271e7861064f",
-      "0929fdba-8dfd-4553-9e3f-729ce3403eda"
-    ],
-    "total": 26,
-    "type": "table"
+    "reducerResults": {
+      "collection_group_results": {
+        "blockIds": [
+          "bfb14a85-3b62-4c96-922c-15778d02941d",
+          "d726ea1c-fc0d-4bac-8095-0c38bde0654e",
+          "33077c33-0433-4d87-a15b-545019de09a5",
+          "e232d812-af91-4717-b294-f918ff2da2bf",
+          "085c52e3-8241-40ae-acbb-ff8c0c67cf9e",
+          "f511afca-109c-49c2-9b58-930a4e4e58f3",
+          "99699f03-b0fd-440e-b8f7-9f042b077abb",
+          "492d8c43-a74a-4c36-908a-b36437c96f3c",
+          "d0fe6b39-1cfd-4892-8762-051249c20488",
+          "7478b394-291f-4c36-96a4-a17affb70325",
+          "1eaafe73-48aa-461e-a80c-562a8880d655",
+          "ef785b67-54a7-4c58-9717-ca2c6bff6f1e",
+          "ca484895-2ffc-4662-bcc2-a112e54b36d8",
+          "c0241076-be7b-4b16-81a3-980b46f99b4d",
+          "0ccb83ea-eb42-4c9f-82a4-462a36e5eb72",
+          "54f3cffb-f1ce-46c1-b9ca-b2ef36be852e",
+          "747c9917-7366-4c9a-b84d-4187069ff213",
+          "a1114713-9143-497a-925e-4a617eee250d",
+          "bf80f23f-ad6f-4848-9c58-a0322564fcb4",
+          "63d64fe9-3d0f-46ce-8d63-6188a59304e6",
+          "be3335a1-7939-42d4-80eb-65b950fe2dc5",
+          "daafaa9d-5004-43cd-a898-26bb44efb624",
+          "c7e40f1d-109a-4da2-8a96-3d3722d1bbcd",
+          "20648ae7-385e-4107-a2e7-763b129983c0",
+          "32917d4d-ec28-40b7-b1f5-271e7861064f",
+          "0929fdba-8dfd-4553-9e3f-729ce3403eda"
+        ],
+        "total": 26,
+        "type": "results"
+      }
+    },
+    "type": "reducer"
   }
 }

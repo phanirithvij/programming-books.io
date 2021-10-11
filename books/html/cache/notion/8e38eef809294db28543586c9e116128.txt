@@ -229,7 +229,7 @@ Response:+8354
     }
   ]
 }
-15234 noahttpcache
+15480 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -242,7 +242,7 @@ Body:+152
   },
   "verticalColumns": false
 }
-Response:+14994
+Response:+15240
 {
   "cursor": {
     "stack": []
@@ -542,6 +542,13 @@ Response:+14994
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1551948347525,
+          "format": {
+            "collection_pointer": {
+              "id": "69431048-7e67-4f9c-9eab-ba843ca6a77c",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "9cca27be-2096-4a1a-87e3-60f193642326",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -551,7 +558,7 @@ Response:+14994
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 1,
+          "version": 2,
           "view_ids": ["6b407813-d0b2-4b62-9fd4-dfdece7060f6"]
         }
       },
@@ -622,22 +629,34 @@ Response:+14994
     "space": {}
   }
 }
-9482 noahttpcache
+10043 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
-Body:+269
+Body:+503
 {
-  "collectionId": "69431048-7e67-4f9c-9eab-ba843ca6a77c",
-  "collectionViewId": "6b407813-d0b2-4b62-9fd4-dfdece7060f6",
-  "query": null,
+  "collection": {
+    "id": "69431048-7e67-4f9c-9eab-ba843ca6a77c",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
+  "collectionView": {
+    "id": "6b407813-d0b2-4b62-9fd4-dfdece7060f6",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
   "loader": {
-    "type": "table",
-    "limit": 256,
-    "userTimeZone": "America/Los_Angeles",
-    "loadContentCover": true
+    "type": "reducer",
+    "reducers": {
+      "collection_group_results": {
+  "type": "results",
+  "limit": 50
+}
+    },
+    "sort": null,
+    "filter": null,
+    "searchQuery": "",
+    "userTimeZone": "America/Los_Angeles"
   }
 }
-Response:+9124
+Response:+9451
 {
   "recordMap": {
     "block": {
@@ -810,6 +829,13 @@ Response:+9124
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1551948347525,
+          "format": {
+            "collection_pointer": {
+              "id": "69431048-7e67-4f9c-9eab-ba843ca6a77c",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "9cca27be-2096-4a1a-87e3-60f193642326",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -819,7 +845,7 @@ Response:+9124
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 1,
+          "version": 2,
           "view_ids": ["6b407813-d0b2-4b62-9fd4-dfdece7060f6"]
         }
       },
@@ -874,9 +900,13 @@ Response:+9124
     }
   },
   "result": {
-    "aggregationResults": [],
-    "blockIds": [],
-    "total": 0,
-    "type": "table"
+    "reducerResults": {
+      "collection_group_results": {
+        "blockIds": [],
+        "total": 0,
+        "type": "results"
+      }
+    },
+    "type": "reducer"
   }
 }

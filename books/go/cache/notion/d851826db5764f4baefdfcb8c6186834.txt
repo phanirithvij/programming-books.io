@@ -269,7 +269,7 @@ Response:+10457
     }
   ]
 }
-27131 noahttpcache
+27377 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -282,7 +282,7 @@ Body:+152
   },
   "verticalColumns": false
 }
-Response:+26891
+Response:+27137
 {
   "cursor": {
     "stack": []
@@ -574,6 +574,13 @@ Response:+26891
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1570212881792,
+          "format": {
+            "collection_pointer": {
+              "id": "d199e8ff-e7ec-426b-aa00-9c90693b4eca",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "98b895cf-8dcf-43aa-937e-3e701699c959",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -583,7 +590,7 @@ Response:+26891
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 11,
+          "version": 12,
           "view_ids": ["6f263acd-3a7b-4548-92ce-a044cb809498"]
         }
       },
@@ -964,22 +971,34 @@ Response:+26891
     "space": {}
   }
 }
-15927 noahttpcache
+16272 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
-Body:+435
+Body:+503
 {
-  "collectionId": "d199e8ff-e7ec-426b-aa00-9c90693b4eca",
-  "collectionViewId": "6f263acd-3a7b-4548-92ce-a044cb809498",
-  "query": {"aggregate":[{"id":"count","type":"title","property":"title","view_type":"table","aggregation_type":"count"}],"aggregations":[{"property":"title","aggregator":"count"}]},
+  "collection": {
+    "id": "d199e8ff-e7ec-426b-aa00-9c90693b4eca",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
+  "collectionView": {
+    "id": "6f263acd-3a7b-4548-92ce-a044cb809498",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
   "loader": {
-    "type": "table",
-    "limit": 256,
-    "userTimeZone": "America/Los_Angeles",
-    "loadContentCover": true
+    "type": "reducer",
+    "reducers": {
+      "collection_group_results": {
+  "type": "results",
+  "limit": 50
+}
+    },
+    "sort": null,
+    "filter": null,
+    "searchQuery": "",
+    "userTimeZone": "America/Los_Angeles"
   }
 }
-Response:+15402
+Response:+15679
 {
   "recordMap": {
     "block": {
@@ -1213,6 +1232,13 @@ Response:+15402
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1570212881792,
+          "format": {
+            "collection_pointer": {
+              "id": "d199e8ff-e7ec-426b-aa00-9c90693b4eca",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "98b895cf-8dcf-43aa-937e-3e701699c959",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -1222,7 +1248,7 @@ Response:+15402
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 11,
+          "version": 12,
           "view_ids": ["6f263acd-3a7b-4548-92ce-a044cb809498"]
         }
       },
@@ -1373,18 +1399,17 @@ Response:+15402
     }
   },
   "result": {
-    "aggregationResults": [
-      {
-        "type": "number",
-        "value": 3
+    "reducerResults": {
+      "collection_group_results": {
+        "blockIds": [
+          "34855f0d-a9db-4c51-95f1-df0243887c2a",
+          "5afc8e11-ed4d-4690-9f84-c165b6f89c30",
+          "2e70865a-0d7c-4096-932e-4aa704010301"
+        ],
+        "total": 3,
+        "type": "results"
       }
-    ],
-    "blockIds": [
-      "34855f0d-a9db-4c51-95f1-df0243887c2a",
-      "5afc8e11-ed4d-4690-9f84-c165b6f89c30",
-      "2e70865a-0d7c-4096-932e-4aa704010301"
-    ],
-    "total": 3,
-    "type": "table"
+    },
+    "type": "reducer"
   }
 }

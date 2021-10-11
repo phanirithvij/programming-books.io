@@ -426,7 +426,7 @@ Response:+18568
     }
   ]
 }
-53857 noahttpcache
+54103 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -439,7 +439,7 @@ Body:+152
   },
   "verticalColumns": false
 }
-Response:+53617
+Response:+53863
 {
   "cursor": {
     "stack": []
@@ -568,6 +568,13 @@ Response:+53617
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1550460250163,
+          "format": {
+            "collection_pointer": {
+              "id": "77ff7603-4ed1-4b72-aff0-91b607f29ab9",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "1769c74d-c232-4607-8f6c-000df0ad3a45",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -577,7 +584,7 @@ Response:+53617
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 1,
+          "version": 2,
           "view_ids": ["c69f53b0-258f-4cb3-8b0b-f41f678fa23a"]
         }
       },
@@ -1694,22 +1701,34 @@ Response:+53617
     "space": {}
   }
 }
-25515 noahttpcache
+26100 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
-Body:+269
+Body:+503
 {
-  "collectionId": "77ff7603-4ed1-4b72-aff0-91b607f29ab9",
-  "collectionViewId": "c69f53b0-258f-4cb3-8b0b-f41f678fa23a",
-  "query": null,
+  "collection": {
+    "id": "77ff7603-4ed1-4b72-aff0-91b607f29ab9",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
+  "collectionView": {
+    "id": "c69f53b0-258f-4cb3-8b0b-f41f678fa23a",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
   "loader": {
-    "type": "table",
-    "limit": 256,
-    "userTimeZone": "America/Los_Angeles",
-    "loadContentCover": true
+    "type": "reducer",
+    "reducers": {
+      "collection_group_results": {
+  "type": "results",
+  "limit": 50
+}
+    },
+    "sort": null,
+    "filter": null,
+    "searchQuery": "",
+    "userTimeZone": "America/Los_Angeles"
   }
 }
-Response:+25156
+Response:+25507
 {
   "recordMap": {
     "block": {
@@ -1749,6 +1768,13 @@ Response:+25156
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1550460250163,
+          "format": {
+            "collection_pointer": {
+              "id": "77ff7603-4ed1-4b72-aff0-91b607f29ab9",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "1769c74d-c232-4607-8f6c-000df0ad3a45",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -1758,7 +1784,7 @@ Response:+25156
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 1,
+          "version": 2,
           "view_ids": ["c69f53b0-258f-4cb3-8b0b-f41f678fa23a"]
         }
       },
@@ -2292,15 +2318,19 @@ Response:+25156
     }
   },
   "result": {
-    "aggregationResults": [],
-    "blockIds": [
-      "edddf085-e31c-4d10-b84e-3af96cfc2e7f",
-      "a3f558e6-e716-4e48-87cb-241682c54cf9",
-      "0efdc0e2-672d-456c-a4b1-ec62c740a78d",
-      "a4a0f8f7-b30a-4771-a287-81ba144961c6",
-      "284c07ef-2fdd-4fbe-9e99-cc7fcf12da71"
-    ],
-    "total": 5,
-    "type": "table"
+    "reducerResults": {
+      "collection_group_results": {
+        "blockIds": [
+          "edddf085-e31c-4d10-b84e-3af96cfc2e7f",
+          "a3f558e6-e716-4e48-87cb-241682c54cf9",
+          "0efdc0e2-672d-456c-a4b1-ec62c740a78d",
+          "a4a0f8f7-b30a-4771-a287-81ba144961c6",
+          "284c07ef-2fdd-4fbe-9e99-cc7fcf12da71"
+        ],
+        "total": 5,
+        "type": "results"
+      }
+    },
+    "type": "reducer"
   }
 }

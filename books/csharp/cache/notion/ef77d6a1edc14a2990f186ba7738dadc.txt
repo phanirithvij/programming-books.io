@@ -395,7 +395,7 @@ Response:+16972
     }
   ]
 }
-44569 noahttpcache
+44815 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -408,7 +408,7 @@ Body:+152
   },
   "verticalColumns": false
 }
-Response:+44329
+Response:+44575
 {
   "cursor": {
     "stack": []
@@ -1134,6 +1134,13 @@ Response:+44329
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1550046416776,
+          "format": {
+            "collection_pointer": {
+              "id": "f81f4136-28bd-45ed-b57c-11d051c08133",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "b85a9f29-7288-4ab4-8742-7ba724d0aa77",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -1143,7 +1150,7 @@ Response:+44329
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 12,
+          "version": 13,
           "view_ids": ["d1f2ca8d-7d0e-4cda-b5ba-b73035e42d25"]
         }
       },
@@ -1441,22 +1448,34 @@ Response:+44329
     "space": {}
   }
 }
-25270 noahttpcache
+25859 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
-Body:+269
+Body:+503
 {
-  "collectionId": "f81f4136-28bd-45ed-b57c-11d051c08133",
-  "collectionViewId": "d1f2ca8d-7d0e-4cda-b5ba-b73035e42d25",
-  "query": null,
+  "collection": {
+    "id": "f81f4136-28bd-45ed-b57c-11d051c08133",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
+  "collectionView": {
+    "id": "d1f2ca8d-7d0e-4cda-b5ba-b73035e42d25",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
   "loader": {
-    "type": "table",
-    "limit": 256,
-    "userTimeZone": "America/Los_Angeles",
-    "loadContentCover": true
+    "type": "reducer",
+    "reducers": {
+      "collection_group_results": {
+  "type": "results",
+  "limit": 50
+}
+    },
+    "sort": null,
+    "filter": null,
+    "searchQuery": "",
+    "userTimeZone": "America/Los_Angeles"
   }
 }
-Response:+24911
+Response:+25266
 {
   "recordMap": {
     "block": {
@@ -1889,6 +1908,13 @@ Response:+24911
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1550046416776,
+          "format": {
+            "collection_pointer": {
+              "id": "f81f4136-28bd-45ed-b57c-11d051c08133",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "b85a9f29-7288-4ab4-8742-7ba724d0aa77",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -1898,7 +1924,7 @@ Response:+24911
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 12,
+          "version": 13,
           "view_ids": ["d1f2ca8d-7d0e-4cda-b5ba-b73035e42d25"]
         }
       },
@@ -2043,16 +2069,20 @@ Response:+24911
     }
   },
   "result": {
-    "aggregationResults": [],
-    "blockIds": [
-      "b639e2ba-e100-406f-893a-18d9adb020b7",
-      "0e617484-27e4-40b3-a33a-7f852a63c40f",
-      "3f91c724-0936-41bb-a070-4d3234de6851",
-      "47252c8d-b800-4f92-b9d1-fe639da59315",
-      "78a0e3a3-bcb3-4cf5-b8cb-e84c0c80f52b",
-      "aff26ea7-e092-40c7-83c8-f2b789dbc6d6"
-    ],
-    "total": 6,
-    "type": "table"
+    "reducerResults": {
+      "collection_group_results": {
+        "blockIds": [
+          "b639e2ba-e100-406f-893a-18d9adb020b7",
+          "0e617484-27e4-40b3-a33a-7f852a63c40f",
+          "3f91c724-0936-41bb-a070-4d3234de6851",
+          "47252c8d-b800-4f92-b9d1-fe639da59315",
+          "78a0e3a3-bcb3-4cf5-b8cb-e84c0c80f52b",
+          "aff26ea7-e092-40c7-83c8-f2b789dbc6d6"
+        ],
+        "total": 6,
+        "type": "results"
+      }
+    },
+    "type": "reducer"
   }
 }

@@ -447,7 +447,7 @@ Response:+19676
     }
   ]
 }
-72680 noahttpcache
+72926 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -460,7 +460,7 @@ Body:+152
   },
   "verticalColumns": false
 }
-Response:+72440
+Response:+72686
 {
   "cursor": {
     "stack": []
@@ -633,6 +633,13 @@ Response:+72440
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1550460075050,
+          "format": {
+            "collection_pointer": {
+              "id": "2c716511-9ebf-4086-8e7a-63fe31c2dfaa",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "2e1072f0-4cd8-44ae-8d66-a326464ad0cd",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -642,7 +649,7 @@ Response:+72440
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 1,
+          "version": 2,
           "view_ids": ["680d92c6-d005-44d9-80ae-3938f504ddaa"]
         }
       },
@@ -2252,22 +2259,34 @@ Response:+72440
     "space": {}
   }
 }
-34459 noahttpcache
+35064 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
-Body:+269
+Body:+503
 {
-  "collectionId": "2c716511-9ebf-4086-8e7a-63fe31c2dfaa",
-  "collectionViewId": "680d92c6-d005-44d9-80ae-3938f504ddaa",
-  "query": null,
+  "collection": {
+    "id": "2c716511-9ebf-4086-8e7a-63fe31c2dfaa",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
+  "collectionView": {
+    "id": "680d92c6-d005-44d9-80ae-3938f504ddaa",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
   "loader": {
-    "type": "table",
-    "limit": 256,
-    "userTimeZone": "America/Los_Angeles",
-    "loadContentCover": true
+    "type": "reducer",
+    "reducers": {
+      "collection_group_results": {
+  "type": "results",
+  "limit": 50
+}
+    },
+    "sort": null,
+    "filter": null,
+    "searchQuery": "",
+    "userTimeZone": "America/Los_Angeles"
   }
 }
-Response:+34100
+Response:+34471
 {
   "recordMap": {
     "block": {
@@ -2359,6 +2378,13 @@ Response:+34100
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1550460075050,
+          "format": {
+            "collection_pointer": {
+              "id": "2c716511-9ebf-4086-8e7a-63fe31c2dfaa",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "2e1072f0-4cd8-44ae-8d66-a326464ad0cd",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -2368,7 +2394,7 @@ Response:+34100
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 1,
+          "version": 2,
           "view_ids": ["680d92c6-d005-44d9-80ae-3938f504ddaa"]
         }
       },
@@ -3127,20 +3153,24 @@ Response:+34100
     }
   },
   "result": {
-    "aggregationResults": [],
-    "blockIds": [
-      "4e73ae95-05b2-4888-94f0-e2cc55d005f3",
-      "e847cd07-237b-4213-8844-64e141af9759",
-      "6421a46f-4671-433f-8b35-ffe2624daa5e",
-      "4f65662a-c698-4966-ae7b-210d516e0dba",
-      "99fc1679-3aca-4cec-8178-28ce4952a2f4",
-      "0eecaf3e-652d-49eb-8396-78ec00dce0d4",
-      "bb6a44ee-2c82-4d14-ad68-0d6990ce6a7f",
-      "95e07add-c0f7-420d-8568-234296f77ce6",
-      "2f5c120b-b6d7-4beb-94e4-b24ffdf419a7",
-      "3cdd4bbf-3ee3-4115-bfd2-5fd4534f6919"
-    ],
-    "total": 10,
-    "type": "table"
+    "reducerResults": {
+      "collection_group_results": {
+        "blockIds": [
+          "4e73ae95-05b2-4888-94f0-e2cc55d005f3",
+          "e847cd07-237b-4213-8844-64e141af9759",
+          "6421a46f-4671-433f-8b35-ffe2624daa5e",
+          "4f65662a-c698-4966-ae7b-210d516e0dba",
+          "99fc1679-3aca-4cec-8178-28ce4952a2f4",
+          "0eecaf3e-652d-49eb-8396-78ec00dce0d4",
+          "bb6a44ee-2c82-4d14-ad68-0d6990ce6a7f",
+          "95e07add-c0f7-420d-8568-234296f77ce6",
+          "2f5c120b-b6d7-4beb-94e4-b24ffdf419a7",
+          "3cdd4bbf-3ee3-4115-bfd2-5fd4534f6919"
+        ],
+        "total": 10,
+        "type": "results"
+      }
+    },
+    "type": "reducer"
   }
 }

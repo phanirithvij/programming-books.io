@@ -983,22 +983,34 @@ Response:+27803
     "space": {}
   }
 }
-23011 noahttpcache
+23366 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
-Body:+269
+Body:+503
 {
-  "collectionId": "d0453abc-8908-439a-a2dc-59e97568a31c",
-  "collectionViewId": "5d42169a-a931-483f-80e4-cea1a9512ab5",
-  "query": null,
+  "collection": {
+    "id": "d0453abc-8908-439a-a2dc-59e97568a31c",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
+  "collectionView": {
+    "id": "5d42169a-a931-483f-80e4-cea1a9512ab5",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
   "loader": {
-    "type": "table",
-    "limit": 256,
-    "userTimeZone": "America/Los_Angeles",
-    "loadContentCover": true
+    "type": "reducer",
+    "reducers": {
+      "collection_group_results": {
+  "type": "results",
+  "limit": 50
+}
+    },
+    "sort": null,
+    "filter": null,
+    "searchQuery": "",
+    "userTimeZone": "America/Los_Angeles"
   }
 }
-Response:+22652
+Response:+22773
 {
   "recordMap": {
     "block": {
@@ -1550,19 +1562,23 @@ Response:+22652
     }
   },
   "result": {
-    "aggregationResults": [],
-    "blockIds": [
-      "f3e0c1d3-d886-41f9-ab9a-31d47b7d8905",
-      "0c6b42b4-e771-406a-b7b9-2e5feb10bab0",
-      "ebc1a191-6d01-4bb1-b3f7-df0479e0fcf3",
-      "21f6a4c0-fedd-477c-9673-781a9de0c998",
-      "b599b3cc-efb0-41c6-8d89-8b8355fe0f37",
-      "9f3a1c97-8297-4881-8d8a-4a7cbffd7913",
-      "e667a46e-2c4f-4e9b-a746-68901d1fd2f9",
-      "613ec515-f027-4e76-abd4-0a2312a7ba81",
-      "d210b70a-e92e-44e2-bf3d-55ebf88153b5"
-    ],
-    "total": 9,
-    "type": "table"
+    "reducerResults": {
+      "collection_group_results": {
+        "blockIds": [
+          "f3e0c1d3-d886-41f9-ab9a-31d47b7d8905",
+          "0c6b42b4-e771-406a-b7b9-2e5feb10bab0",
+          "ebc1a191-6d01-4bb1-b3f7-df0479e0fcf3",
+          "21f6a4c0-fedd-477c-9673-781a9de0c998",
+          "b599b3cc-efb0-41c6-8d89-8b8355fe0f37",
+          "9f3a1c97-8297-4881-8d8a-4a7cbffd7913",
+          "e667a46e-2c4f-4e9b-a746-68901d1fd2f9",
+          "613ec515-f027-4e76-abd4-0a2312a7ba81",
+          "d210b70a-e92e-44e2-bf3d-55ebf88153b5"
+        ],
+        "total": 9,
+        "type": "results"
+      }
+    },
+    "type": "reducer"
   }
 }

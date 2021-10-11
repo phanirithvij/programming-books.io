@@ -258,7 +258,7 @@ Response:+9888
     }
   ]
 }
-17188 noahttpcache
+17434 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -271,7 +271,7 @@ Body:+152
   },
   "verticalColumns": false
 }
-Response:+16948
+Response:+17194
 {
   "cursor": {
     "stack": []
@@ -605,6 +605,13 @@ Response:+16948
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1550383466468,
+          "format": {
+            "collection_pointer": {
+              "id": "2ce9df54-d6f5-4245-879f-5e4c9302f188",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "b3a79c64-6cac-49e2-9125-52b64fad0437",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -614,7 +621,7 @@ Response:+16948
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 1,
+          "version": 2,
           "view_ids": ["d241770d-7d5d-4a40-a39e-a1a80b7aa45c"]
         }
       }
@@ -695,22 +702,34 @@ Response:+16948
     "space": {}
   }
 }
-27148 noahttpcache
+27769 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
-Body:+269
+Body:+503
 {
-  "collectionId": "2ce9df54-d6f5-4245-879f-5e4c9302f188",
-  "collectionViewId": "d241770d-7d5d-4a40-a39e-a1a80b7aa45c",
-  "query": null,
+  "collection": {
+    "id": "2ce9df54-d6f5-4245-879f-5e4c9302f188",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
+  "collectionView": {
+    "id": "d241770d-7d5d-4a40-a39e-a1a80b7aa45c",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
   "loader": {
-    "type": "table",
-    "limit": 256,
-    "userTimeZone": "America/Los_Angeles",
-    "loadContentCover": true
+    "type": "reducer",
+    "reducers": {
+      "collection_group_results": {
+  "type": "results",
+  "limit": 50
+}
+    },
+    "sort": null,
+    "filter": null,
+    "searchQuery": "",
+    "userTimeZone": "America/Los_Angeles"
   }
 }
-Response:+26789
+Response:+27176
 {
   "recordMap": {
     "block": {
@@ -1043,6 +1062,13 @@ Response:+26789
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1550383466468,
+          "format": {
+            "collection_pointer": {
+              "id": "2ce9df54-d6f5-4245-879f-5e4c9302f188",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            }
+          },
           "id": "b3a79c64-6cac-49e2-9125-52b64fad0437",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -1052,7 +1078,7 @@ Response:+26789
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 1,
+          "version": 2,
           "view_ids": ["d241770d-7d5d-4a40-a39e-a1a80b7aa45c"]
         }
       },
@@ -1365,24 +1391,28 @@ Response:+26789
     }
   },
   "result": {
-    "aggregationResults": [],
-    "blockIds": [
-      "d626cdec-de79-4c1d-88f3-9378b728b6e4",
-      "757996dc-37d7-4451-9859-704f55eb553b",
-      "ce0b979c-0e4e-48a1-9732-944e974f9ab4",
-      "1b695cb7-cf5b-4130-ba17-ca813ace1452",
-      "e1dcc4b1-6d00-4ac0-b157-04e4a56cfe96",
-      "d4b00fb3-15a1-4acb-b242-1bc09e803fae",
-      "f592adf8-97a7-4a5e-b890-ad843cd8c46c",
-      "c6f3342a-b6b3-48a5-ac62-04ded063e1ee",
-      "26f6ee59-1af4-4cb1-81ab-f4b811c326a0",
-      "cfe4a730-a1ff-4aec-90b7-8e9a11723415",
-      "5762fab3-7c46-4f59-a153-9a4bc703e37f",
-      "f1d5d46d-9a45-4de3-96c8-5f8ba24468a8",
-      "0e09dee0-c4c7-4df7-b8ec-6e21d5c29288",
-      "e3be7334-68a8-4060-96c7-eb4dd018f24c"
-    ],
-    "total": 14,
-    "type": "table"
+    "reducerResults": {
+      "collection_group_results": {
+        "blockIds": [
+          "d626cdec-de79-4c1d-88f3-9378b728b6e4",
+          "757996dc-37d7-4451-9859-704f55eb553b",
+          "ce0b979c-0e4e-48a1-9732-944e974f9ab4",
+          "1b695cb7-cf5b-4130-ba17-ca813ace1452",
+          "e1dcc4b1-6d00-4ac0-b157-04e4a56cfe96",
+          "d4b00fb3-15a1-4acb-b242-1bc09e803fae",
+          "f592adf8-97a7-4a5e-b890-ad843cd8c46c",
+          "c6f3342a-b6b3-48a5-ac62-04ded063e1ee",
+          "26f6ee59-1af4-4cb1-81ab-f4b811c326a0",
+          "cfe4a730-a1ff-4aec-90b7-8e9a11723415",
+          "5762fab3-7c46-4f59-a153-9a4bc703e37f",
+          "f1d5d46d-9a45-4de3-96c8-5f8ba24468a8",
+          "0e09dee0-c4c7-4df7-b8ec-6e21d5c29288",
+          "e3be7334-68a8-4060-96c7-eb4dd018f24c"
+        ],
+        "total": 14,
+        "type": "results"
+      }
+    },
+    "type": "reducer"
   }
 }

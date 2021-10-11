@@ -278,7 +278,7 @@ Response:+11316
     }
   ]
 }
-57781 noahttpcache
+58236 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -291,7 +291,7 @@ Body:+152
   },
   "verticalColumns": false
 }
-Response:+57541
+Response:+57996
 {
   "cursor": {
     "stack": []
@@ -1537,6 +1537,18 @@ Response:+57541
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1552284548481,
+          "format": {
+            "collection_pointer": {
+              "id": "83f74128-1ca7-444a-b974-7cbbc925e77a",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            },
+            "copied_from_pointer": {
+              "id": "3957f560-f61e-4f81-8f81-aef546a871d2",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "block"
+            }
+          },
           "id": "da849050-c981-468f-98b1-13c9a172831f",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -1546,7 +1558,7 @@ Response:+57541
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 9,
+          "version": 10,
           "view_ids": ["f1f71948-0fe1-4b44-b8b6-3bf544d996a9"]
         }
       },
@@ -1723,22 +1735,34 @@ Response:+57541
     "space": {}
   }
 }
-18336 noahttpcache
+19134 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
-Body:+269
+Body:+503
 {
-  "collectionId": "83f74128-1ca7-444a-b974-7cbbc925e77a",
-  "collectionViewId": "f1f71948-0fe1-4b44-b8b6-3bf544d996a9",
-  "query": null,
+  "collection": {
+    "id": "83f74128-1ca7-444a-b974-7cbbc925e77a",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
+  "collectionView": {
+    "id": "f1f71948-0fe1-4b44-b8b6-3bf544d996a9",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
   "loader": {
-    "type": "table",
-    "limit": 256,
-    "userTimeZone": "America/Los_Angeles",
-    "loadContentCover": true
+    "type": "reducer",
+    "reducers": {
+      "collection_group_results": {
+  "type": "results",
+  "limit": 50
+}
+    },
+    "sort": null,
+    "filter": null,
+    "searchQuery": "",
+    "userTimeZone": "America/Los_Angeles"
   }
 }
-Response:+17977
+Response:+18541
 {
   "recordMap": {
     "block": {
@@ -2081,6 +2105,18 @@ Response:+17977
           "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "created_by_table": "notion_user",
           "created_time": 1552284548481,
+          "format": {
+            "collection_pointer": {
+              "id": "83f74128-1ca7-444a-b974-7cbbc925e77a",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "collection"
+            },
+            "copied_from_pointer": {
+              "id": "3957f560-f61e-4f81-8f81-aef546a871d2",
+              "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
+              "table": "block"
+            }
+          },
           "id": "da849050-c981-468f-98b1-13c9a172831f",
           "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
           "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
@@ -2090,7 +2126,7 @@ Response:+17977
           "parent_table": "block",
           "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
           "type": "collection_view",
-          "version": 9,
+          "version": 10,
           "view_ids": ["f1f71948-0fe1-4b44-b8b6-3bf544d996a9"]
         }
       },
@@ -2179,16 +2215,20 @@ Response:+17977
     }
   },
   "result": {
-    "aggregationResults": [],
-    "blockIds": [
-      "47396a42-3db5-4938-ba86-24761e972c5c",
-      "a2a8e1b3-ff73-452f-9495-58f8f3a5592b",
-      "06c944ef-837a-4ade-ab38-b66e8319d2d4",
-      "d2f548d8-e821-4ca2-bb85-065ad1abe133",
-      "c3a1fc18-217c-4a92-9f03-0b019987f4b5",
-      "84092782-5e3a-4c0a-ada7-3067339fe75c"
-    ],
-    "total": 6,
-    "type": "table"
+    "reducerResults": {
+      "collection_group_results": {
+        "blockIds": [
+          "47396a42-3db5-4938-ba86-24761e972c5c",
+          "a2a8e1b3-ff73-452f-9495-58f8f3a5592b",
+          "06c944ef-837a-4ade-ab38-b66e8319d2d4",
+          "d2f548d8-e821-4ca2-bb85-065ad1abe133",
+          "c3a1fc18-217c-4a92-9f03-0b019987f4b5",
+          "84092782-5e3a-4c0a-ada7-3067339fe75c"
+        ],
+        "total": 6,
+        "type": "results"
+      }
+    },
+    "type": "reducer"
   }
 }

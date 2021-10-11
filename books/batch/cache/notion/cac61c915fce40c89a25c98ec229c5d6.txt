@@ -5073,22 +5073,34 @@ Response:+19504
     "space": {}
   }
 }
-20007 noahttpcache
+20354 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
-Body:+269
+Body:+503
 {
-  "collectionId": "edccebee-4411-4024-9d2e-f56c61c812cb",
-  "collectionViewId": "97a46de2-0760-4680-abeb-8415d42efba7",
-  "query": null,
+  "collection": {
+    "id": "edccebee-4411-4024-9d2e-f56c61c812cb",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
+  "collectionView": {
+    "id": "97a46de2-0760-4680-abeb-8415d42efba7",
+    "spaceId": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0"
+  },
   "loader": {
-    "type": "table",
-    "limit": 256,
-    "userTimeZone": "America/Los_Angeles",
-    "loadContentCover": true
+    "type": "reducer",
+    "reducers": {
+      "collection_group_results": {
+  "type": "results",
+  "limit": 50
+}
+    },
+    "sort": null,
+    "filter": null,
+    "searchQuery": "",
+    "userTimeZone": "America/Los_Angeles"
   }
 }
-Response:+19648
+Response:+19761
 {
   "recordMap": {
     "block": {
@@ -5562,17 +5574,21 @@ Response:+19648
     }
   },
   "result": {
-    "aggregationResults": [],
-    "blockIds": [
-      "678778a1-f7a2-4d5c-af86-f81c50239281",
-      "24f25496-a4eb-43a2-ab8a-dbdc349e67c4",
-      "46a6e1c8-5151-4377-889a-0e9f1d8cb6e3",
-      "3d17d469-eb5f-433e-b683-b0e1b1cfded2",
-      "0739053d-8fe7-45b9-b11b-18a4706bb289",
-      "42d826a3-8643-4e33-b96b-0f1f3d45026c",
-      "988332b2-d738-4d28-b2ab-7372e1544083"
-    ],
-    "total": 7,
-    "type": "table"
+    "reducerResults": {
+      "collection_group_results": {
+        "blockIds": [
+          "678778a1-f7a2-4d5c-af86-f81c50239281",
+          "24f25496-a4eb-43a2-ab8a-dbdc349e67c4",
+          "46a6e1c8-5151-4377-889a-0e9f1d8cb6e3",
+          "3d17d469-eb5f-433e-b683-b0e1b1cfded2",
+          "0739053d-8fe7-45b9-b11b-18a4706bb289",
+          "42d826a3-8643-4e33-b96b-0f1f3d45026c",
+          "988332b2-d738-4d28-b2ab-7372e1544083"
+        ],
+        "total": 7,
+        "type": "results"
+      }
+    },
+    "type": "reducer"
   }
 }
