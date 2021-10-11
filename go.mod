@@ -4,10 +4,9 @@ go 1.16
 
 require (
 	github.com/alecthomas/chroma v0.9.2
-	github.com/json-iterator/go v1.1.12 // indirect
-	github.com/kjk/common v0.0.0-20211010082736-d33cbaeed6af
-	github.com/kjk/minio v0.0.0-20211009054212-7bcee50d3b76
-	github.com/kjk/notionapi v0.0.0-20211010053511-fd912b6c5bbc
+	github.com/kjk/common v0.0.0-20211011030640-9a49165185b8
+	github.com/kjk/minio v0.0.0-20211010094250-8a269ea577a2
+	github.com/kjk/notionapi v0.0.0-20211011024205-bee79a04d105
 	github.com/klauspost/cpuid/v2 v2.0.9 // indirect
 	github.com/minio/md5-simd v1.1.2 // indirect
 	github.com/minio/sha256-simd v1.0.0 // indirect
