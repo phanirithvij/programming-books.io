@@ -6,7 +6,7 @@ require (
 	github.com/alecthomas/chroma v0.9.2
 	github.com/kjk/common v0.0.0-20211011030640-9a49165185b8
 	github.com/kjk/minio v0.0.0-20211010094250-8a269ea577a2
-	github.com/kjk/notionapi v0.0.0-20211011024205-bee79a04d105
+	github.com/kjk/notionapi v0.0.0-20211011041705-67e75173f199
 	github.com/klauspost/cpuid/v2 v2.0.9 // indirect
 	github.com/minio/md5-simd v1.1.2 // indirect
 	github.com/minio/sha256-simd v1.0.0 // indirect
