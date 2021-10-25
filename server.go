@@ -16,6 +16,7 @@ import (
 	"sync"
 	"time"
 
+	"github.com/kjk/common/httputil"
 	"github.com/kjk/common/server"
 	"github.com/kjk/notionapi"
 )
@@ -217,7 +218,7 @@ func makeHTTPServer(srv *server.Server) *http.Server {
 	mainHandler := func(w http.ResponseWriter, r *http.Request) {
 		//logf(ctx(), "mainHandler: '%s'\n", r.RequestURI)
 		timeStart := time.Now()
-		cw := server.CapturingResponseWriter{ResponseWriter: w}
+		cw := httputil.CapturingResponseWriter{ResponseWriter: w}
 
 		defer func() {
 			if p := recover(); p != nil {
