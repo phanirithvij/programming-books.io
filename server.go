@@ -16,7 +16,6 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kjk/common/httputil"
 	"github.com/kjk/common/server"
 	"github.com/kjk/notionapi"
 )
@@ -217,17 +216,6 @@ func makeHTTPServer(srv *server.Server) *http.Server {
 
 	mainHandler := func(w http.ResponseWriter, r *http.Request) {
 		//logf(ctx(), "mainHandler: '%s'\n", r.RequestURI)
-		timeStart := time.Now()
-		cw := httputil.CapturingResponseWriter{ResponseWriter: w}
-
-		defer func() {
-			if p := recover(); p != nil {
-				logf(ctx(), "mainHandler: panicked with with %v\n", p)
-				http.Error(&cw, fmt.Sprintf("Error: %v", p), http.StatusInternalServerError)
-			}
-			logHTTPReq(r, cw.StatusCode, cw.Size, time.Since(timeStart))
-		}()
-
 		uri := r.URL.Path
 		serve, is404 := srv.FindHandler(uri)
 		if is404 {
@@ -249,17 +237,17 @@ func makeHTTPServer(srv *server.Server) *http.Server {
 			}
 			redirectURL := findPageIDMatch()
 			if redirectURL != "" {
-				http.Redirect(&cw, r, redirectURL, http.StatusTemporaryRedirect) // 307
+				http.Redirect(w, r, redirectURL, http.StatusTemporaryRedirect) // 307
 				return
 			}
 		}
 
 		if serve != nil {
-			serve(&cw, r)
+			serve(w, r)
 			return
 		}
 
-		http.NotFound(&cw, r)
+		http.NotFound(w, r)
 	}
 
 	httpSrv := &http.Server{

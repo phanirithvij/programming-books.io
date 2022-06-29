@@ -1,76 +1,22 @@
-9694 noahttpcache
+2988 noahttpcache
 Method: POST
-URL: https://www.notion.so/api/v3/getRecordValues
-Body:+110
+URL: https://www.notion.so/api/v3/syncRecordValues
+Body:+162
 {
   "requests": [
     {
-      "table": "block",
-      "id": "43505685-8c6b-44e4-b2a1-ab4639076555"
+      "pointer": {
+        "table": "block",
+        "id": "43505685-8c6b-44e4-b2a1-ab4639076555"
+      },
+      "version": -1
     }
   ]
 }
-Response:+9495
+Response:+2736
 {
-  "recordMapWithRoles": {
+  "recordMap": {
     "block": {
-      "0e2d248b-f94b-4aeb-aefb-cf51ae435df0": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "content": [
-            "ae9c97e0-65fb-42c4-9855-98d4d57f9b0b",
-            "1510aabf-3d91-444b-9b1c-9e2851cc9c49",
-            "b8a612c3-2d87-4011-853b-decb7d53a80d",
-            "af7235ee-b6b8-4fa7-8905-000ea6f9b67c",
-            "cf423405-128e-4dff-94b6-d1f4246424fb",
-            "9096d055-1c3b-4187-afd7-31e24a6a7c13",
-            "1e0bef1b-c4e4-4b5a-ae84-9515100421e9",
-            "724361bf-9ff8-430e-b183-793b7cc29a1d",
-            "896cf8b2-c159-42db-a73d-039b26baacec",
-            "7dd5b978-5e84-48ff-baeb-df48e66aed92",
-            "0a7e3f26-8b3b-412d-9432-984541779d68",
-            "be9f2c50-981f-4df4-906b-99482d47ca51",
-            "acf35ee0-3195-45da-b8e4-1cc03ef0c7f2",
-            "0b1dc602-0e8e-40c8-b87e-ddc8acb83ec7",
-            "0a73a79d-8beb-49de-b74c-68adc622b57c",
-            "f4e4bacb-0773-4a68-9e47-ffca7af85646",
-            "96d32b82-6946-401f-ad6c-351b942d7747",
-            "2922e6eb-0914-46fb-bce3-789b4f9f1c33"
-          ],
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1550457188289,
-          "format": {
-            "page_full_width": true,
-            "page_small_text": true
-          },
-          "id": "0e2d248b-f94b-4aeb-aefb-cf51ae435df0",
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1570605780000,
-          "parent_id": "10a9e5b1-6376-4a7a-a1f6-9d7fdcc18404",
-          "parent_table": "block",
-          "permissions": [
-            {
-              "allow_search_engine_indexing": false,
-              "role": "comment_only",
-              "type": "public_permission"
-            }
-          ],
-          "properties": {
-            "title": [["Essential Dart"]]
-          },
-          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-          "type": "page",
-          "version": 59
-        }
-      },
-      "10a9e5b1-6376-4a7a-a1f6-9d7fdcc18404": {
-        "role": "none"
-      },
       "43505685-8c6b-44e4-b2a1-ab4639076555": {
         "role": "comment_only",
         "value": {
@@ -130,133 +76,18 @@ Response:+9495
           "type": "page",
           "version": 7
         }
-      },
-      "5f982f10-57d4-4e67-8b00-a9920cc2ad7e": {
-        "role": "none"
-      },
-      "9d463535-c38f-45c5-9275-6211e56977cf": {
-        "role": "none"
-      },
-      "ae9c97e0-65fb-42c4-9855-98d4d57f9b0b": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "content": [
-            "43505685-8c6b-44e4-b2a1-ab4639076555",
-            "dc1ae93b-eb74-429c-9143-7945d1c59192",
-            "d4d505ae-cbe5-4ba3-8383-da31f300ae61",
-            "c261b99e-2932-41c2-910f-f71c1feaaaf8",
-            "300f0769-89f2-49dd-9ad0-55c48e1a25df"
-          ],
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1550457180000,
-          "format": {
-            "page_full_width": true,
-            "page_small_text": true
-          },
-          "id": "ae9c97e0-65fb-42c4-9855-98d4d57f9b0b",
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1550457600000,
-          "parent_id": "0e2d248b-f94b-4aeb-aefb-cf51ae435df0",
-          "parent_table": "block",
-          "permissions": [
-            {
-              "role": "editor",
-              "type": "user_permission",
-              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
-            }
-          ],
-          "properties": {
-            "title": [["Getting started with Dart"]]
-          },
-          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-          "type": "page",
-          "version": 44
-        }
-      },
-      "decd1c8b-5dbe-443e-881b-66fa955c4126": {
-        "role": "none"
-      }
-    },
-    "space": {
-      "cf9fa7dd-b245-42a0-b929-d5a276b3afe0": {
-        "role": "none"
       }
     }
-  },
-  "results": [
-    {
-      "role": "comment_only",
-      "value": {
-        "alive": true,
-        "content": [
-          "12e9051d-319d-4db3-9b06-097b87232eb9",
-          "cae4ada9-609a-4dfb-8c16-d66667dcb157",
-          "95ebce2e-47a6-4d6b-8381-ce72f62d4b39",
-          "78021114-d3be-43fe-9221-357f837ad7f2",
-          "6c1c0e70-b7a7-4534-b11e-c14a900a8c7a",
-          "fdb169aa-c5de-48f2-9f15-f03bb0492ab1",
-          "1cfda08e-2b52-4f98-8740-27833c8a4f8e",
-          "5720fe0e-f7ce-4e72-bb88-20d0cdcafd81",
-          "0739d269-ede7-4930-87e7-8485acee1a01",
-          "e16fc604-fe8b-42c1-b9a9-23127db6fe84",
-          "3c2f181d-83ae-4dc8-b9f5-cf3a845e2134",
-          "84533a6a-d8b3-46cf-bfd4-8a533a8aff13",
-          "b7beb0e8-4c82-4952-9944-cca2c68d914b",
-          "ec002ef2-0ec3-486b-9b90-1d5e7c94273f",
-          "a5693fa8-a240-44cc-afe7-cd9bd1a3860d",
-          "bc1ca653-aeaf-47ad-bfd6-c9d1b55e3727",
-          "80c66d40-5799-45df-8e3b-7f2129ceeb6c",
-          "52fda027-83db-4944-8325-99704edc08f5",
-          "3162972d-d971-42e0-8b8b-76131733c643",
-          "b87bf6ca-d36b-4c26-80bd-82375747effb",
-          "ca57c9b4-260e-4cd1-b4dd-461831f3f501",
-          "f977c94a-047d-48f2-ba52-e8c6dec61f63",
-          "8f8f7982-ddf5-46cb-81a1-95c332cc5393",
-          "e6e1928a-9577-4cbb-b7b0-d5af32d2a471",
-          "a9b78c5b-dc5e-4a04-982b-1da012382901",
-          "a2bd7385-64f4-4539-b5cf-03e3e2ffe2bc",
-          "799cd2e0-6409-49dd-9954-a203a4a02803",
-          "76820f8c-3c33-4b55-91a2-32b12f55344c",
-          "ad97e16d-fe22-4568-af01-7b4ae31bc518",
-          "1e025683-7308-44eb-9818-46cae11f3036"
-        ],
-        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_table": "notion_user",
-        "created_time": 1550457217454,
-        "format": {
-          "page_full_width": true,
-          "page_small_text": true
-        },
-        "id": "43505685-8c6b-44e4-b2a1-ab4639076555",
-        "ignore_block_count": true,
-        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_table": "notion_user",
-        "last_edited_time": 1550481240000,
-        "parent_id": "ae9c97e0-65fb-42c4-9855-98d4d57f9b0b",
-        "parent_table": "block",
-        "properties": {
-          "title": [["Getting started with dart"]]
-        },
-        "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-        "type": "page",
-        "version": 7
-      }
-    }
-  ]
+  }
 }
-44942 noahttpcache
+44962 noahttpcache
 Method: POST
-URL: https://www.notion.so/api/v3/loadPageChunk
-Body:+152
+URL: https://www.notion.so/api/v3/loadCachedPageChunk
+Body:+166
 {
-  "pageId": "43505685-8c6b-44e4-b2a1-ab4639076555",
+  "page": {
+    "id": "43505685-8c6b-44e4-b2a1-ab4639076555"
+  },
   "chunkNumber": 0,
   "limit": 50,
   "cursor": {
@@ -1392,7 +1223,7 @@ Response:+44702
     "space": {}
   }
 }
-80579 noahttpcache
+77004 noahttpcache
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+503
@@ -1419,7 +1250,7 @@ Body:+503
     "userTimeZone": "America/Los_Angeles"
   }
 }
-Response:+79986
+Response:+76411
 {
   "recordMap": {
     "block": {
@@ -3548,89 +3379,6 @@ Response:+79986
         }
       }
     },
-    "collection_view": {
-      "87acba37-a491-4e52-9f8f-96947a255eff": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "format": {
-            "table_properties": [
-              {
-                "property": "@t:!",
-                "visible": true
-              },
-              {
-                "property": "zDM@",
-                "visible": true
-              }
-            ]
-          },
-          "id": "87acba37-a491-4e52-9f8f-96947a255eff",
-          "name": "Show All",
-          "page_sort": [
-            "fa3efc65-31cb-4eb8-927f-a86f934c6d72",
-            "e3c3dd64-20b1-4248-bb7f-b5ad5012aded",
-            "5ddcb213-984b-4e6a-8393-bdbe495f450a",
-            "15e7c9f4-89b9-4523-9d06-4b5aa68e0362",
-            "d0f75c22-7b53-4d43-8eb6-f217dc2fbf0e",
-            "f33b1fef-e73c-4401-89e9-bc01240a17f4",
-            "bd08a574-9d5b-47da-9d8b-9b625dba5390",
-            "4274fea4-0fc0-40d2-89e9-67780c47ae1a",
-            "43fc7d9c-9fab-4def-8310-a2d17c68eac1",
-            "1fa34a40-bc84-452a-8f45-4c220e721c42",
-            "3b99fdfd-7c1a-45f2-ae4a-4007da873bd4",
-            "59e024cf-4532-4634-83b5-8ab2232738a7",
-            "cd56a66a-aa4a-46de-9bce-1f5e8372e5c4",
-            "eaa55a44-4761-41af-88d4-22cb66113197",
-            "544d89f9-0646-443e-a4ad-85b4f94b397d",
-            "cf3ba6ab-8755-4cfb-8e69-3d70dadb8cbf",
-            "a94c1f93-9faf-44fc-9ca4-ba040596c355",
-            "84f56d0e-a7f5-42eb-9ad5-fd9d4e34a0cc",
-            "3230c622-5db9-4a70-ac49-a9eb3ab462d7",
-            "6d11ce71-e686-427e-bbea-ee47d3af9a7b",
-            "001f0b26-8deb-4847-aa0c-cc8f319440ac",
-            "85f56432-7286-4a11-80dd-07abed10ee92",
-            "2cd53f81-c173-4f92-9bc1-1b599b1c7615",
-            "d2cd2dd1-6e90-476b-a6ab-50edeb221ea5",
-            "ae8fbd9c-4cf3-4212-be63-caf8e86f782d",
-            "5f933e9a-4515-4807-be41-75ecd992509a",
-            "e3828da8-35c6-4aee-886d-440d458b075a",
-            "a5830aca-2294-4f54-876e-4563f1a1ac76",
-            "0f577cef-9b94-42fe-82e4-996b72c6ccac",
-            "5aa9d99e-69d3-4468-8bd7-1faae8c253b2",
-            "519ae63d-8e6f-47e9-8241-c113bdbe74e8",
-            "aaca60e5-be37-4b6f-94cf-cf62efca5b8c",
-            "ee6364c3-d380-4132-b8b5-3a20911682ea",
-            "a95df9a5-aa70-4876-b2e4-5721066b65ad",
-            "471be042-1c1f-48a1-99d2-12f0b8495e65",
-            "f887dacf-cc7d-483c-91df-c341d934f42b",
-            "ac444018-ee97-4ab1-9533-29e25d9965c2",
-            "5991d81b-a5f8-4d19-bdf9-45cb2d9e65bf",
-            "b09e48a3-cc9b-4b37-865d-1d534829900e",
-            "126dded2-6944-4166-8e3e-e0a4c99b6467",
-            "c0786538-aae2-448c-aef7-9d2eb3746e60",
-            "ea450e9d-c96c-43e0-9633-1acb9adbdd70",
-            "840cb4d0-0b20-4860-bbb7-51eb69a0c631",
-            "a0ddbd36-fa8a-483b-b03c-d7d27565cbaa",
-            "9a63e616-a120-4a08-8543-4cb6b2ba9691",
-            "2ebe5572-4bf6-44e9-a1fd-f0bf564c815c",
-            "fd7503a4-0d22-46b8-89f1-baf9c9215135",
-            "80697332-7d80-4275-9197-265275a13d4c",
-            "bc93a9fe-8dcb-4c83-8a42-f7bfec3b0a85",
-            "9760fa09-4487-4961-b659-4ff69e430e80",
-            "a06294b0-9f92-4528-bab5-cfd06c3a5080",
-            "fe9e8d84-6583-4f99-88f5-d1a6691de7f0",
-            "0c053532-f15c-41b2-9349-23ce73df437e",
-            "06b63de1-4360-4646-8df9-b23919662e54"
-          ],
-          "parent_id": "cae4ada9-609a-4dfb-8c16-d66667dcb157",
-          "parent_table": "block",
-          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-          "type": "table",
-          "version": 3
-        }
-      }
-    },
     "space": {
       "cf9fa7dd-b245-42a0-b929-d5a276b3afe0": {
         "role": "none"
@@ -3692,10 +3440,11 @@ Response:+79986
           "bc93a9fe-8dcb-4c83-8a42-f7bfec3b0a85",
           "9760fa09-4487-4961-b659-4ff69e430e80"
         ],
-        "total": 54,
+        "hasMore": true,
         "type": "results"
       }
     },
+    "sizeHint": 54,
     "type": "reducer"
   }
 }

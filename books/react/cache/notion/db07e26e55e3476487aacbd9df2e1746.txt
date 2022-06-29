@@ -1,139 +1,22 @@
-9591 noahttpcache
+2511 noahttpcache
 Method: POST
-URL: https://www.notion.so/api/v3/getRecordValues
-Body:+110
+URL: https://www.notion.so/api/v3/syncRecordValues
+Body:+162
 {
   "requests": [
     {
-      "table": "block",
-      "id": "db07e26e-55e3-4764-87aa-cbd9df2e1746"
+      "pointer": {
+        "table": "block",
+        "id": "db07e26e-55e3-4764-87aa-cbd9df2e1746"
+      },
+      "version": -1
     }
   ]
 }
-Response:+9392
+Response:+2259
 {
-  "recordMapWithRoles": {
+  "recordMap": {
     "block": {
-      "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "content": [
-            "22644f42-5b62-4106-ab6f-407fcf2e0146",
-            "54e1310d-4692-4318-b404-5f886461565a",
-            "da8fafc6-5f35-4220-90b1-92f7b2069ee8",
-            "a4124947-09ed-4600-a460-a5f24acfbd6a",
-            "6cafc1d7-8633-42d6-b702-833db7d26eed",
-            "45761919-6bc5-4ffa-b9b6-ef83a7c7ae4e",
-            "3be1a9d3-83e8-46d7-add6-1ee03c2e1899",
-            "3731d999-c1bc-4c1b-a0aa-d1d9fc9593cd",
-            "d91668ae-eb75-4c83-8946-7b1d4f7a037b",
-            "7a9b795a-6e6a-47be-8428-3835a236c536",
-            "d7004271-2e4c-4340-bb8b-d5647d3f0de2",
-            "fe58dcb8-c978-4ad9-bc8b-66067b6739ab",
-            "9c40f65e-1bdc-4f72-a972-d646271de386",
-            "de02e09a-b95b-41ac-9225-187428487c3b",
-            "a8bc3cbf-7d9a-4b54-9632-4ea3f34b4215",
-            "d6b4365e-b5e2-455e-b923-24ce2c042efa",
-            "5163a4c0-2123-4f18-b52c-444de537938e",
-            "d6dde1b5-2eeb-4b63-8741-8b4354c7eb3d",
-            "fed83124-31e9-4e36-941f-0b835aeea1e3",
-            "5ad4bd79-730c-404f-a84b-e8f9eb692c36",
-            "ea8b8930-6415-45dc-adb0-6d60dc3f3886",
-            "066cca80-f253-4328-bdc0-50ac81ba02b8",
-            "866a5fd0-5a0b-4ef5-b0af-0bf0ef5a0f69",
-            "34c251a5-b7b8-4671-8f75-11f5330f0a43",
-            "019d61bd-45f1-4ded-ba13-2dc288859c44",
-            "ce608663-33cc-4b42-bb6b-adecebad2004",
-            "edae1dcd-128b-4d41-ab94-4aead7cf1ee1",
-            "c5841c99-b288-48b9-9d6b-1734bb17732c",
-            "9f918454-eff2-4d55-aa16-396edf968bd3",
-            "2b18d28b-6419-48ef-aaca-668f0278d521",
-            "7107118c-af64-488f-8118-718eda6e81ca",
-            "24659cb7-c4c6-4dea-a32a-a5fdc61ede53",
-            "9530c916-7089-4e5a-859d-6b4424d423b7"
-          ],
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1552099880945,
-          "format": {
-            "page_full_width": true,
-            "page_small_text": true
-          },
-          "id": "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d",
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571296680000,
-          "parent_id": "37044441-eaa2-4b12-9a54-75276f37e75a",
-          "parent_table": "block",
-          "permissions": [
-            {
-              "allow_search_engine_indexing": false,
-              "role": "comment_only",
-              "type": "public_permission"
-            }
-          ],
-          "properties": {
-            "title": [["Essential React"]]
-          },
-          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-          "type": "page",
-          "version": 67
-        }
-      },
-      "37044441-eaa2-4b12-9a54-75276f37e75a": {
-        "role": "none"
-      },
-      "3be1a9d3-83e8-46d7-add6-1ee03c2e1899": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "content": [
-            "cd5cfdf3-f379-4212-b99e-43a44769de25",
-            "90e740b7-e2cf-48cc-a75f-e7634c00e255",
-            "25a92c72-9271-49ab-8129-83bbc22b10f7",
-            "db07e26e-55e3-4764-87aa-cbd9df2e1746",
-            "5f7ddd40-b90e-4c0c-b233-af7a6c4afc9f",
-            "9c8982a0-3044-490e-b582-87b664f493a0"
-          ],
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1552099920000,
-          "format": {
-            "page_full_width": true,
-            "page_small_text": true
-          },
-          "id": "3be1a9d3-83e8-46d7-add6-1ee03c2e1899",
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1552100220000,
-          "parent_id": "2a68b0d0-4734-4fdb-97c5-10b64a7a3e2d",
-          "parent_table": "block",
-          "permissions": [
-            {
-              "role": "editor",
-              "type": "user_permission",
-              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
-            }
-          ],
-          "properties": {
-            "title": [["React component lifecycle"]]
-          },
-          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-          "type": "page",
-          "version": 41
-        }
-      },
-      "9d463535-c38f-45c5-9275-6211e56977cf": {
-        "role": "none"
-      },
-      "a4137b6c-ff58-427c-b046-a604eff5b8e3": {
-        "role": "none"
-      },
       "db07e26e-55e3-4764-87aa-cbd9df2e1746": {
         "role": "comment_only",
         "value": {
@@ -184,77 +67,18 @@ Response:+9392
           "type": "page",
           "version": 3
         }
-      },
-      "e2672b89-0eb5-45f2-8129-51f1daca829e": {
-        "role": "none"
-      }
-    },
-    "space": {
-      "cf9fa7dd-b245-42a0-b929-d5a276b3afe0": {
-        "role": "none"
       }
     }
-  },
-  "results": [
-    {
-      "role": "comment_only",
-      "value": {
-        "alive": true,
-        "content": [
-          "f6476aca-7895-4ac0-97cd-c3a61ec387fd",
-          "eecf7b36-695f-4516-b8d0-69a4c2df5839",
-          "232a545b-dd6d-4518-990a-61e5eabb6cf5",
-          "f86bbe07-f342-4054-9077-7fdd6fd2753d",
-          "a4c38d33-331b-49ae-9ac8-f0e0d715c724",
-          "de928607-77e3-4cf8-baf0-40a6cc1ab97f",
-          "ea66e513-d6b0-47e9-b088-7f2840718e43",
-          "8a51d8a9-617f-469f-a9a5-9b150b5be38f",
-          "34570ca3-11bf-4ad3-adb9-cffa23756643",
-          "f269e940-9665-4502-8f28-75904084bc7b",
-          "26a33800-967b-435c-a198-25b4fd724899",
-          "5d94237b-36f3-4f03-9b14-2b621500d677",
-          "0fae0732-ec36-4d94-a818-4a364560a1ad",
-          "a5f9c1a8-a5c6-41f1-8ec3-e7d94a2b76d8",
-          "0fabaefb-6a92-43b5-a3ed-eab2e460e5fa",
-          "ba14d01e-422e-4f50-a58b-f923a993443b",
-          "9d45288c-9c6d-4788-b2fd-12f9ed014021",
-          "2a725fa6-2e26-4bfa-b650-b6a45d4f87a4",
-          "f6448d8c-895b-48f4-9dd6-b20a200a9b1d",
-          "91023a66-b6a6-45d0-bd79-c18f19891551",
-          "8b194efe-c434-4fb9-b24e-993822ba3f3e"
-        ],
-        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_table": "notion_user",
-        "created_time": 1552099937856,
-        "format": {
-          "page_full_width": true,
-          "page_small_text": true
-        },
-        "id": "db07e26e-55e3-4764-87aa-cbd9df2e1746",
-        "ignore_block_count": true,
-        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_table": "notion_user",
-        "last_edited_time": 1552099937856,
-        "parent_id": "3be1a9d3-83e8-46d7-add6-1ee03c2e1899",
-        "parent_table": "block",
-        "properties": {
-          "title": [["Component Update"]]
-        },
-        "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-        "type": "page",
-        "version": 3
-      }
-    }
-  ]
+  }
 }
-30841 noahttpcache
+30861 noahttpcache
 Method: POST
-URL: https://www.notion.so/api/v3/loadPageChunk
-Body:+152
+URL: https://www.notion.so/api/v3/loadCachedPageChunk
+Body:+166
 {
-  "pageId": "db07e26e-55e3-4764-87aa-cbd9df2e1746",
+  "page": {
+    "id": "db07e26e-55e3-4764-87aa-cbd9df2e1746"
+  },
   "chunkNumber": 0,
   "limit": 50,
   "cursor": {
