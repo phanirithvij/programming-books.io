@@ -1,91 +1,22 @@
-10231 noahttpcache
+2996 noahttpcache
 Method: POST
-URL: https://www.notion.so/api/v3/getRecordValues
-Body:+110
+URL: https://www.notion.so/api/v3/syncRecordValues
+Body:+162
 {
   "requests": [
     {
-      "table": "block",
-      "id": "a7de2809-e179-4a54-b554-c4fbeaeb5bd0"
+      "pointer": {
+        "table": "block",
+        "id": "a7de2809-e179-4a54-b554-c4fbeaeb5bd0"
+      },
+      "version": -1
     }
   ]
 }
-Response:+10031
+Response:+2744
 {
-  "recordMapWithRoles": {
+  "recordMap": {
     "block": {
-      "5f982f10-57d4-4e67-8b00-a9920cc2ad7e": {
-        "role": "none"
-      },
-      "79930434-0f2c-4081-b6c4-b7eb28df368e": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "content": [
-            "b656c2d9-b7f0-41f9-9104-f7870c3bd3c9",
-            "49e8bfad-1223-41c0-a6af-5fec9d248b3b",
-            "5d490783-2722-485a-a0f8-5c47511443f9",
-            "681a2c9e-fae7-4f18-9f80-461c4c09c58a",
-            "f25f5b01-03a7-4c7d-8e93-9426f864b292",
-            "6feaa1fc-e2a7-4554-bc6c-fd6fa87755f4",
-            "75f90815-1ace-4073-8144-2933da6164c1",
-            "1b89e574-5d0d-4bdf-ab44-b5312db9e0c9",
-            "0af4c7d7-8383-485d-b40c-d8742d4614ed",
-            "c7bb4b02-c189-4ac9-874a-3063a6e701e9",
-            "0ceb6cef-14f0-4b09-9f87-9e98af207550",
-            "0c02c8f2-6e29-480e-9bb2-cdeb1f224d96",
-            "c0eaf930-378b-47c0-895c-8a7b1ce51777",
-            "5d2d39b0-a2fc-4e76-9b20-70d4267b34cc",
-            "584f9f2e-7a4f-4f37-8080-eb3de3eaf6d2",
-            "1a613c38-11be-4622-879f-261a3852b802",
-            "66100120-d0d2-4226-ab23-554ee203d7db",
-            "ba264bb2-630a-4be6-beb7-7d92d929a0ce",
-            "5b31d6d9-d8d3-44d7-85da-edb02d8e7383",
-            "58746f67-7c46-43f0-9125-b5f23fcaace0",
-            "a31bb49f-d2df-4eec-90a6-864c51111958",
-            "ae4c9720-8297-442f-be50-b7c9b974351b",
-            "b6b11111-255f-4c38-8f25-a412bc108e55",
-            "468130e5-ec36-4d5f-995c-0763643830c0",
-            "502c5a79-1bd9-4657-86c0-27fcaa48a9e0",
-            "5ec4fe93-2066-4e62-b48b-247fa2451cf9",
-            "ed4d52f8-abc3-4fae-bd5e-08974843aa30",
-            "b2abeec8-4aaa-4769-99b6-e9ab17e6ddda",
-            "2a19f9ba-e684-4155-becb-0d4da3888f1c",
-            "17c10449-0ab5-4f59-b03c-3db31a4b0d10"
-          ],
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1550384742823,
-          "format": {
-            "page_full_width": true,
-            "page_small_text": true
-          },
-          "id": "79930434-0f2c-4081-b6c4-b7eb28df368e",
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1570605360000,
-          "parent_id": "af3eae4f-751d-4bc1-8e1c-7aac2b10eed9",
-          "parent_table": "block",
-          "permissions": [
-            {
-              "allow_search_engine_indexing": false,
-              "role": "comment_only",
-              "type": "public_permission"
-            }
-          ],
-          "properties": {
-            "title": [["Essential PostgreSQL"]]
-          },
-          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-          "type": "page",
-          "version": 128
-        }
-      },
-      "9d463535-c38f-45c5-9275-6211e56977cf": {
-        "role": "none"
-      },
       "a7de2809-e179-4a54-b554-c4fbeaeb5bd0": {
         "role": "comment_only",
         "value": {
@@ -145,125 +76,18 @@ Response:+10031
           "type": "page",
           "version": 10
         }
-      },
-      "af3eae4f-751d-4bc1-8e1c-7aac2b10eed9": {
-        "role": "none"
-      },
-      "b656c2d9-b7f0-41f9-9104-f7870c3bd3c9": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "content": [
-            "82df42a1-b8b2-47d5-bdad-aa7646989d48",
-            "a7de2809-e179-4a54-b554-c4fbeaeb5bd0",
-            "393b84f8-39a3-485f-a622-3a5ffdaade5a",
-            "3a5152ec-47ac-4e1b-9b09-bec9efef8691",
-            "533b4496-72a8-41cd-b8a6-c4dac7901b9a",
-            "b80ba32f-4d96-426b-8862-3a541c8f40ec",
-            "69de808d-3409-4d76-964d-bc42db92424c"
-          ],
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1550384870395,
-          "format": {
-            "page_full_width": true,
-            "page_small_text": true
-          },
-          "id": "b656c2d9-b7f0-41f9-9104-f7870c3bd3c9",
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1550480160000,
-          "parent_id": "79930434-0f2c-4081-b6c4-b7eb28df368e",
-          "parent_table": "block",
-          "properties": {
-            "title": [["Getting Started"]]
-          },
-          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-          "type": "page",
-          "version": 31
-        }
-      },
-      "decd1c8b-5dbe-443e-881b-66fa955c4126": {
-        "role": "none"
-      }
-    },
-    "space": {
-      "cf9fa7dd-b245-42a0-b929-d5a276b3afe0": {
-        "role": "none"
       }
     }
-  },
-  "results": [
-    {
-      "role": "comment_only",
-      "value": {
-        "alive": true,
-        "content": [
-          "6ac2f1e3-96ad-4dbd-9c88-7460015d57ba",
-          "bdd9a6a0-3d61-4e47-a51d-584a715cdc49",
-          "be45a2ef-aebc-40fc-a233-0350123942db",
-          "db294980-bd0c-43f1-85a9-caf0bf168d42",
-          "e33263af-4a75-4246-9500-135519f071b7",
-          "40dd4bed-2c41-4063-935a-7aaebb2cb3c8",
-          "877bea24-1b29-4a41-984f-a072c3b20614",
-          "1ce00760-887a-49ce-84f9-b5282caad619",
-          "28d2dc10-6556-4f0f-a295-54ba111f4f36",
-          "372a1b8b-0c46-4842-8a1d-d8f8016a643c",
-          "12f71f0a-fe76-4e18-9ecb-8bd4a5de6e49",
-          "f9ce194e-1c0b-45bb-9f1d-818bf8ebe746",
-          "b3ecfa88-80af-4f89-8107-422964acf761",
-          "dbaaff07-d0cb-428c-8a9b-a40ba26f50d9",
-          "87d933f8-35a0-4251-803b-54651a46f275",
-          "421b51f1-10bd-4450-ad10-845274faccf2",
-          "56af1933-4283-4b4f-9295-18ea8a75e159",
-          "110d0f85-411a-4299-8ccb-04bfccf94d47",
-          "7e44a0c9-c1cb-406d-8e85-81a7822ecf44",
-          "6032f6f5-c546-42d4-b72d-bf1599230775",
-          "61eb5142-00ac-4416-83cd-98881f09fceb",
-          "fa951a21-8a4b-4e74-a90d-4b07b1cb5cda",
-          "fcbd9fd6-625b-4c0f-9490-123d6b481bb5",
-          "9ac127d8-9863-46b4-a416-95225d249d1b",
-          "08c5a600-21f7-4dd8-a8e7-893d44a8c0d6",
-          "74645ca0-23d1-4e12-83e9-1bb8e5adf7d8",
-          "65449c12-dcf1-4e8d-b1a7-8a11df8bf9eb",
-          "573a91b3-69ea-4fa8-b022-5396f366eaef",
-          "7df6700c-358a-4f28-b342-2450a44f36a4",
-          "e7621d80-460b-4a7c-8eef-88d3c1f23d53"
-        ],
-        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_table": "notion_user",
-        "created_time": 1550384836281,
-        "format": {
-          "page_full_width": true,
-          "page_small_text": true
-        },
-        "id": "a7de2809-e179-4a54-b554-c4fbeaeb5bd0",
-        "ignore_block_count": true,
-        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_table": "notion_user",
-        "last_edited_time": 1550480220000,
-        "parent_id": "b656c2d9-b7f0-41f9-9104-f7870c3bd3c9",
-        "parent_table": "block",
-        "properties": {
-          "title": [["Installing PostgreSQL on Windows"]]
-        },
-        "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-        "type": "page",
-        "version": 10
-      }
-    }
-  ]
+  }
 }
-43556 noahttpcache
+43576 noahttpcache
 Method: POST
-URL: https://www.notion.so/api/v3/loadPageChunk
-Body:+152
+URL: https://www.notion.so/api/v3/loadCachedPageChunk
+Body:+166
 {
-  "pageId": "a7de2809-e179-4a54-b554-c4fbeaeb5bd0",
+  "page": {
+    "id": "a7de2809-e179-4a54-b554-c4fbeaeb5bd0"
+  },
   "chunkNumber": 0,
   "limit": 50,
   "cursor": {

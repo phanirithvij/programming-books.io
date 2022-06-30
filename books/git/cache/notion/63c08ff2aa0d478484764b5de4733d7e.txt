@@ -1,121 +1,22 @@
-11727 noahttpcache
+1663 noahttpcache
 Method: POST
-URL: https://www.notion.so/api/v3/getRecordValues
-Body:+110
+URL: https://www.notion.so/api/v3/syncRecordValues
+Body:+162
 {
   "requests": [
     {
-      "table": "block",
-      "id": "63c08ff2-aa0d-4784-8476-4b5de4733d7e"
+      "pointer": {
+        "table": "block",
+        "id": "63c08ff2-aa0d-4784-8476-4b5de4733d7e"
+      },
+      "version": -1
     }
   ]
 }
-Response:+11527
+Response:+1411
 {
-  "recordMapWithRoles": {
+  "recordMap": {
     "block": {
-      "37913107-a419-4981-b1fc-745928c0df66": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "content": [
-            "6a125e34-a2b3-4705-af0a-c5e164ccfa24",
-            "b3581026-b0bb-4248-be87-b5784c64f255",
-            "76b17b23-95a9-4e89-8f82-ec8a3ec62a50",
-            "04ee78eb-a4e2-451f-a18f-4b6132c7cd1d",
-            "e3c469c1-1d8e-447a-97fa-8f4b2670ad27",
-            "2c45ad9e-e679-465d-83a9-561229837a80",
-            "df323286-a540-4216-aaf6-c85842881694",
-            "dd79ffd3-abcb-4e0d-8df1-80d202647136",
-            "fa96b97d-1a96-4c33-8c2b-fcdeb06002f5",
-            "399affdf-5c77-4f40-a203-8b6a5de16654",
-            "9889cb01-9b9d-43d8-a056-66c9bcb42680",
-            "313c84eb-dd9a-43c8-b395-78d72c422514",
-            "8481aef2-15de-40b9-aa1d-6e9cc919952f",
-            "853f7b3c-f5b9-463a-ad6d-71114a0e45b9",
-            "6a384b97-0361-4f43-81c2-8537ed4702c0",
-            "98ad87b1-5a88-4d5c-8a26-b2e4ce89100b",
-            "0c23d962-7cec-403c-8e26-7e0c3d99f3cd",
-            "fcc2ce7a-7897-4ae1-9be5-6d71e9091623",
-            "89763338-4654-4a93-82aa-c14ea0da0a23",
-            "1becb842-107e-4d22-98e3-83948d2a46ba",
-            "81dfe434-dd0d-4928-aa79-60cef0ee9e5d",
-            "d22ee6fd-6d95-424c-bcc3-8ccee2d58c07",
-            "2bd8ba82-17f0-4cb9-a3e5-3cffacb1c96a",
-            "711b10b7-68c2-4da4-8501-b8412d112f4e",
-            "55ea0a0e-7756-475f-9073-4b7614f212f0",
-            "843837bd-3d09-465c-ab10-17bd4b856e07",
-            "19ee9c1f-db62-4f5d-8a58-791f695c4fbe",
-            "8473b8bd-2cb6-40de-bfe0-357c55d8e3ef",
-            "02737ac1-5e31-4f62-ae04-5faa549ff9dd",
-            "e3e963bd-42f2-41c8-a10a-15304cf07d5a",
-            "a5e863d8-6a03-49fb-947f-6790e50412eb",
-            "1d5abacd-e9e5-4754-94b2-5f01773829dd",
-            "4119551d-a28c-4c5a-81b7-0c6960db1d9f",
-            "be77aee7-333a-48fe-a261-d614ce3010a8",
-            "2ba4525f-df9c-49d8-b6b0-5f0fb0cf39b9",
-            "3b812637-4556-4f6d-b255-bee991395792",
-            "9448471c-a81b-44ac-a3f6-47fdaf38e1c4",
-            "8a3306f4-4d2d-4548-bcb3-4b7baf2979ff",
-            "b6fd813b-163f-447c-861e-0daae8e1d522",
-            "008196e2-a875-4d47-9461-5a8cfa36d190",
-            "5671aa61-8485-459d-8825-3c0b83dda989",
-            "f7de7d04-06a0-40bf-8ac1-03fda0d4efa3",
-            "72b49046-4c58-45b2-891f-d04b342f5222",
-            "ed5f332e-f2c7-4e6e-a816-4934948332c8",
-            "164391a5-bae5-4865-a5d5-8275f23cce37",
-            "1a2cc6a4-3b0e-4781-83fe-655db778b697",
-            "c7501101-27d8-4177-bec2-99b76fff0b7f",
-            "ad133dbf-ea4a-4d4f-8f98-0120a30ce624",
-            "77f16c7f-e9e6-4678-a25f-074954c0edb0",
-            "1b824b7d-8b0d-41e1-958e-a4fb45cb0000",
-            "2a595f06-43c1-4c60-929a-db83b0926241",
-            "d86b019e-ba87-4d0b-98b7-5c661b59a7f3",
-            "65c822a3-79b7-4e8d-8d82-20d4e1935be2",
-            "b5fdbb9a-13a6-46b1-8455-19157dec5b74",
-            "57fec9be-9f67-4bc3-9b8d-934aad839637",
-            "08b340f2-d643-4ca2-ab30-da708aad3b1e",
-            "f1df31fb-1b36-43ae-8828-1d647461169a",
-            "94ebeaf3-c732-4f82-8de0-b88362a1e049",
-            "df5f15ed-8885-4ec1-bd45-d8dcea529bda",
-            "5b770b23-9cb7-4edb-81da-5a5f3542755a",
-            "2164816c-a43b-44b4-b528-dab69ce86743",
-            "8db67d22-889d-4aef-96a1-2e1d18ab323a",
-            "99d2b2ec-9371-4337-9a89-4a25a15433d4"
-          ],
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1551946413454,
-          "format": {
-            "page_full_width": true,
-            "page_small_text": true
-          },
-          "id": "37913107-a419-4981-b1fc-745928c0df66",
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1570605600000,
-          "parent_id": "69680b54-4c46-427b-8da8-9fc356b079a5",
-          "parent_table": "block",
-          "permissions": [
-            {
-              "allow_search_engine_indexing": false,
-              "role": "comment_only",
-              "type": "public_permission"
-            }
-          ],
-          "properties": {
-            "title": [["Essential Git"]]
-          },
-          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-          "type": "page",
-          "version": 179
-        }
-      },
-      "5f982f10-57d4-4e67-8b00-a9920cc2ad7e": {
-        "role": "none"
-      },
       "63c08ff2-aa0d-4784-8476-4b5de4733d7e": {
         "role": "comment_only",
         "value": {
@@ -149,151 +50,18 @@ Response:+11527
           "type": "page",
           "version": 3
         }
-      },
-      "69680b54-4c46-427b-8da8-9fc356b079a5": {
-        "role": "none"
-      },
-      "9d463535-c38f-45c5-9275-6211e56977cf": {
-        "role": "none"
-      },
-      "dd79ffd3-abcb-4e0d-8df1-80d202647136": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "content": [
-            "48e87e41-7fb1-430a-9c32-ce3a47ca2f4d",
-            "6a3877f3-2b59-4e0f-858a-6f7b38c3eb3d",
-            "7f05f8dd-b99c-4691-a750-a89326592437",
-            "c7bf9d11-0f1b-4f6a-8d58-637678fcd4a6",
-            "b74762b1-4582-460a-928e-1b7a65a713b7",
-            "c11b26a8-4e38-4070-bd77-4e9b999c4549",
-            "b80d7848-e7d3-4be8-990d-58be11016786",
-            "46d2fc20-7ec3-40a3-8fe8-ecf752497136",
-            "2be2c7fd-f68d-4dfc-8102-45e3efb94e96",
-            "eb93e3a6-5574-4d76-a716-302f5ee3eb66",
-            "0d3d5209-59b2-4095-8ce7-9214d30e79a1",
-            "0132dbe2-4d8d-4714-b483-07ef3bb8865f",
-            "3d49646c-21fe-494b-b9b5-5f009c118b48",
-            "7eb2d945-4b75-41d2-a055-aad5f349546b",
-            "f1c8a19d-d8e7-4ca8-b40c-42975e1cab56",
-            "0c4b27eb-bc92-4f91-bde8-5076e3db8ca4",
-            "6e3ec9ca-84d0-4632-8aad-ee4912d713e0",
-            "92b38bed-c03c-49bc-9a61-e7ddc600df4b",
-            "82670d1e-9b1c-4db4-8233-82e19805fba0",
-            "fdd192b2-384f-4bee-bc15-4e2d85f11ec0",
-            "8ed137d9-e892-42da-93da-cccfa0cdfee5",
-            "328bcb2c-161f-4f2d-8794-a4f96b48a24a",
-            "9d2cdc8e-a356-4bb6-9001-fe8143650cd4",
-            "1b476f3e-f155-4ed2-a9d1-e0b5d7a58358",
-            "085a3c67-6b2f-4451-a465-8e0afebaf790",
-            "475dd693-73be-4105-afa5-57085cb6b979",
-            "dfe88bcd-da8c-440f-9798-e088c65febda",
-            "e0640089-f1c6-4b72-8df4-6f0431ef949d",
-            "5b8bc8bc-6712-4b0b-a146-55118965c431",
-            "94baf469-6eb4-495e-8384-81e3693ed8d5",
-            "dadbcf4a-ff3a-4618-b8c8-e1cc3535911c",
-            "49cfbb22-16d0-48f9-a949-2a159d586323",
-            "451f9603-7d1a-4391-8858-e44448c95723",
-            "dc7d0a53-092c-4763-b81f-78a7022138d0",
-            "b0035574-1478-4fa2-97a0-959dd05c390a",
-            "6294da18-40a0-44a9-8d55-43b61bd9e87c",
-            "464906a4-5e06-4c8a-90d6-dd4a5db6d6ff",
-            "5ff26761-6ae2-4ccc-bded-75c656862218",
-            "8fa98e9d-6ddb-4ae9-97f7-0a0c23239dc6",
-            "63c08ff2-aa0d-4784-8476-4b5de4733d7e",
-            "f0bf6200-bcab-44cc-89ef-b4a123730bda",
-            "38888f56-c475-4c93-8017-ade7860eff18",
-            "c9ae491b-a253-40c7-aae9-c052726b96ca",
-            "f10d100d-383b-454b-9ef8-ba22f7c9f83c",
-            "65959b91-b0ca-4716-a3b7-c2b0e16f2dce",
-            "3a1da42c-0763-488b-9efe-5ae6c836623c",
-            "49e0b81e-f82c-4d26-a51a-6d0c099cfcea",
-            "260eb4eb-4580-4ea0-b899-be63ad2253c2",
-            "e9ef4c15-bee1-49df-9d3d-02372b831d4d"
-          ],
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1551946500000,
-          "format": {
-            "page_full_width": true,
-            "page_small_text": true
-          },
-          "id": "dd79ffd3-abcb-4e0d-8df1-80d202647136",
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1552454880000,
-          "parent_id": "37913107-a419-4981-b1fc-745928c0df66",
-          "parent_table": "block",
-          "permissions": [
-            {
-              "role": "editor",
-              "type": "user_permission",
-              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
-            }
-          ],
-          "properties": {
-            "title": [["Ignoring files and folders"]]
-          },
-          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-          "type": "page",
-          "version": 100
-        }
-      },
-      "decd1c8b-5dbe-443e-881b-66fa955c4126": {
-        "role": "none"
-      }
-    },
-    "space": {
-      "cf9fa7dd-b245-42a0-b929-d5a276b3afe0": {
-        "role": "none"
       }
     }
-  },
-  "results": [
-    {
-      "role": "comment_only",
-      "value": {
-        "alive": true,
-        "content": [
-          "3d341484-65b3-4705-bb7b-805d17a6feb9",
-          "0eecda59-e0ca-41ba-91b8-e17a52d3f794",
-          "3fd09aa4-eecd-4829-b51f-e44ece89ef4e",
-          "e41d7e3b-c8dd-4ff6-9ca4-aad098a1efe5"
-        ],
-        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_table": "notion_user",
-        "created_time": 1551946533600,
-        "format": {
-          "page_full_width": true,
-          "page_small_text": true
-        },
-        "id": "63c08ff2-aa0d-4784-8476-4b5de4733d7e",
-        "ignore_block_count": true,
-        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_table": "notion_user",
-        "last_edited_time": 1551946533600,
-        "parent_id": "dd79ffd3-abcb-4e0d-8df1-80d202647136",
-        "parent_table": "block",
-        "properties": {
-          "title": [["Ignore files locally without committing ignore rules"]]
-        },
-        "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-        "type": "page",
-        "version": 3
-      }
-    }
-  ]
+  }
 }
-14923 noahttpcache
+14943 noahttpcache
 Method: POST
-URL: https://www.notion.so/api/v3/loadPageChunk
-Body:+152
+URL: https://www.notion.so/api/v3/loadCachedPageChunk
+Body:+166
 {
-  "pageId": "63c08ff2-aa0d-4784-8476-4b5de4733d7e",
+  "page": {
+    "id": "63c08ff2-aa0d-4784-8476-4b5de4733d7e"
+  },
   "chunkNumber": 0,
   "limit": 50,
   "cursor": {
