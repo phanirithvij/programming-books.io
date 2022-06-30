@@ -1,18 +1,21 @@
-10984 noahttpcache
+2576 noahttpcache
 Method: POST
-URL: https://www.notion.so/api/v3/getRecordValues
-Body:+110
+URL: https://www.notion.so/api/v3/syncRecordValues
+Body:+162
 {
   "requests": [
     {
-      "table": "block",
-      "id": "2ad84ca4-045a-45b8-8d56-c75f16a580a7"
+      "pointer": {
+        "table": "block",
+        "id": "2ad84ca4-045a-45b8-8d56-c75f16a580a7"
+      },
+      "version": -1
     }
   ]
 }
-Response:+10784
+Response:+2324
 {
-  "recordMapWithRoles": {
+  "recordMap": {
     "block": {
       "2ad84ca4-045a-45b8-8d56-c75f16a580a7": {
         "role": "comment_only",
@@ -66,222 +69,18 @@ Response:+10784
           "type": "page",
           "version": 3
         }
-      },
-      "35e9a1fb-1c65-4c4d-b44b-becc6cd9f6bd": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "content": [
-            "e65f9022-77c4-49a7-86a3-a186e254a81a",
-            "2ad84ca4-045a-45b8-8d56-c75f16a580a7",
-            "90d0e6c7-3e0e-4549-b27d-819a8ce48753",
-            "5a86278c-93d0-46fe-8ae1-cbe9916f24db"
-          ],
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1552105800000,
-          "format": {
-            "page_full_width": true,
-            "page_small_text": true
-          },
-          "id": "35e9a1fb-1c65-4c4d-b44b-becc6cd9f6bd",
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1552106160000,
-          "parent_id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
-          "parent_table": "block",
-          "permissions": [
-            {
-              "role": "editor",
-              "type": "user_permission",
-              "user_id": "bb760e2d-d679-4b64-b2a9-03005b21870a"
-            }
-          ],
-          "properties": {
-            "title": [["AES encryption"]]
-          },
-          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-          "type": "page",
-          "version": 28
-        }
-      },
-      "4a02310c-f1a7-4b8f-8aff-7088c1decd8b": {
-        "role": "none"
-      },
-      "5f982f10-57d4-4e67-8b00-a9920cc2ad7e": {
-        "role": "none"
-      },
-      "9d463535-c38f-45c5-9275-6211e56977cf": {
-        "role": "none"
-      },
-      "e0f8a911-ba87-4e9f-bd32-470003febad4": {
-        "role": "none"
-      },
-      "e76d4290-6b0e-4932-91a6-0bbd351f3b6b": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "content": [
-            "4743a9b3-3ba1-4406-8fd8-92f831177a73",
-            "40e2faa7-5ff3-4654-a114-f19b837c574b",
-            "743fc1c3-bc9c-4386-8bb8-37bb9430112f",
-            "85fc985e-d4f6-470c-a50e-d230fb7f7029",
-            "b3a03a81-83e5-4085-b462-4a9e0b487f4a",
-            "5b89258e-bcc1-4c2b-b7ec-53d72cea9e9e",
-            "752e5fcf-89e9-482f-8ab5-40b382d1513b",
-            "0bbae402-0f8d-4c53-9284-2bfa4e450424",
-            "9f9ac142-3746-4907-b806-661ae15321d3",
-            "4007debc-6666-4d3f-8faa-5ba1ed7a30fb",
-            "2ebad693-9dff-4aeb-bb97-2b78d049b25e",
-            "08b06e18-c5f3-4e40-a0be-39eaaab9fdc5",
-            "c7a9a16f-d660-4db7-8d5b-012a3f06c296",
-            "aec11d9f-8e77-49ff-9784-b941666239e5",
-            "8e0cbefa-bb13-46a7-ae47-5d4863fae390",
-            "9926a540-7aa3-4e8b-a880-0d25223917b7",
-            "cfa2de35-cd00-48e5-aa49-c7bc809cd199",
-            "75f61437-dd57-4152-ba5d-e1d11169b6f5",
-            "ab64a7f2-ccc3-4ffd-98ca-cb7cc7d65a64",
-            "346889aa-bbe6-4248-9382-9d44810882db",
-            "6eadf518-5b93-4d64-9bc2-0e88e97a1ad5",
-            "45e8edb6-720b-4879-a3f9-bdeeebc97a9f",
-            "5367e1b7-d8c9-42c1-a35c-1508743d5105",
-            "ab0095d7-f330-4c2a-9564-40c927e04cdd",
-            "995be302-8fbf-4acc-9c9b-db5cfdd0521f",
-            "e9e7dd97-8907-4c61-94c8-873542c4221d",
-            "9f971757-8f39-4d94-9d24-c0b8b7100e34",
-            "b51b495d-f653-4e2b-b92d-5af0d351982e",
-            "9da019f7-f538-42a4-bf9f-a95e812e2233",
-            "b5d22e19-0056-4916-bf50-cc1dc2f38c0e",
-            "f3aea850-966d-47e0-bbd2-8564c5d35715",
-            "e80e058c-cecb-4b11-af4a-b91c85302b9d",
-            "2f2b8c00-b4d8-4005-9764-71297a1f77f4",
-            "a95c626d-6b55-449a-91a2-173c29e1c6a7",
-            "41f7ad78-47df-4ba7-9750-0c3f2e60ce1b",
-            "e1154a97-185d-4fcd-81a8-6d4e1e7d3a99",
-            "9455a2c2-402a-4a70-8aeb-9762505167c3",
-            "77ad070c-dd39-4425-a996-cc8967f74b4e",
-            "9667daa4-8e9a-40c6-8498-5fd2b4e46a1e",
-            "67e4333d-b244-489f-94a9-5033eda1d62f",
-            "00935eb8-d316-43d4-9d14-f133a4cf1c91",
-            "41bf5b92-7d0a-4e59-af5d-5b1468ffec68",
-            "18f00844-2ce5-4c04-9bd7-9a256ae07a77",
-            "2f6abffd-8151-4ec2-9a32-2f5da3b5a767",
-            "35e9a1fb-1c65-4c4d-b44b-becc6cd9f6bd",
-            "2e9691dd-0811-4161-964f-0af0c454280b",
-            "cb46a744-6c26-43e6-ba4b-4058eb63b196",
-            "1beb1f79-8f57-4bf1-8bcb-e6737d583cda",
-            "9ae8b978-28e6-44f1-af9c-629e5306665c",
-            "10e2f070-4018-4205-8a93-00bc8fa64375",
-            "bec5b2af-554c-4a6c-87b2-a65a4523f654",
-            "41dd6dc2-8607-4978-9306-8747c2240710",
-            "36fdcbe2-b28e-4eae-96d0-f3255977fddc",
-            "1a7a68fa-5ed7-4026-bd09-6c438ee3c996",
-            "298a6998-40b4-4079-ae0e-f0fc31d96e18",
-            "d04ea4c2-1d96-49c5-b911-1de41c18c770",
-            "d9d0d23b-6862-4787-ba04-328a8305821b",
-            "2a406142-9c5f-402d-939e-888df54da249",
-            "3b5feb34-031d-402a-804d-16d2d230a001",
-            "66275fb3-9144-4a6b-a878-f81e4a354aa6"
-          ],
-          "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "created_by_table": "notion_user",
-          "created_time": 1552104898140,
-          "format": {
-            "page_full_width": true,
-            "page_small_text": true
-          },
-          "id": "e76d4290-6b0e-4932-91a6-0bbd351f3b6b",
-          "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1570605960000,
-          "parent_id": "4a02310c-f1a7-4b8f-8aff-7088c1decd8b",
-          "parent_table": "block",
-          "permissions": [
-            {
-              "allow_search_engine_indexing": false,
-              "role": "comment_only",
-              "type": "public_permission"
-            }
-          ],
-          "properties": {
-            "title": [["Essential Swift"]]
-          },
-          "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-          "type": "page",
-          "version": 148
-        }
-      }
-    },
-    "space": {
-      "cf9fa7dd-b245-42a0-b929-d5a276b3afe0": {
-        "role": "none"
       }
     }
-  },
-  "results": [
-    {
-      "role": "comment_only",
-      "value": {
-        "alive": true,
-        "content": [
-          "73a42e64-5502-43da-9334-3af35d42d1f2",
-          "0447eca7-7a44-4c73-b0be-f6349ab15418",
-          "be090424-cf11-4e00-b495-e0a6d847abb5",
-          "89533a4b-cd97-4929-a57e-79386ed01fef",
-          "622c7d76-7f79-4101-a260-fe4e5833c12d",
-          "658be526-3a08-424d-9ed9-9ccad7276dbb",
-          "37567e6c-8b5b-4e01-9206-1303c79327b0",
-          "20252533-eda2-46db-9700-3ec1343c81f6",
-          "ba0f2a6a-b631-464f-932f-ed4dbb31b725",
-          "a28de2f8-f603-4b1a-9555-891213c31a3f",
-          "fb0f5df7-a737-4b98-93b2-3eb400302fe1",
-          "2bf5c4f0-e560-41b5-88dc-173fa8bbf9ed",
-          "b35ebbba-e85c-43ad-ba07-701f5a38cb5b",
-          "f20a0cc2-7c10-4a77-a7d9-abadfbf6f6de",
-          "c7af8a13-6e96-43a5-a0ef-a98a76036a99",
-          "d8cffdb9-ff72-43e2-96e9-3c7183102d72",
-          "5b8888dd-85fb-4e12-bc61-e0125424fcdc",
-          "725b2c98-0ebb-45fe-bdc9-9c4697b5feff",
-          "18e955c9-5009-4e48-bbc4-f4fff6a567f5",
-          "48a8f861-ec93-4afe-a291-214f8abbe918",
-          "b15214f1-77e3-4f0f-a6da-f5d7f827b23e"
-        ],
-        "created_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "created_by_table": "notion_user",
-        "created_time": 1552105856381,
-        "format": {
-          "page_full_width": true,
-          "page_small_text": true
-        },
-        "id": "2ad84ca4-045a-45b8-8d56-c75f16a580a7",
-        "ignore_block_count": true,
-        "last_edited_by": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_id": "bb760e2d-d679-4b64-b2a9-03005b21870a",
-        "last_edited_by_table": "notion_user",
-        "last_edited_time": 1552105856381,
-        "parent_id": "35e9a1fb-1c65-4c4d-b44b-becc6cd9f6bd",
-        "parent_table": "block",
-        "properties": {
-          "title": [["AES encryption in CBC mode with a random IV Swift 3.0"]]
-        },
-        "space_id": "cf9fa7dd-b245-42a0-b929-d5a276b3afe0",
-        "type": "page",
-        "version": 3
-      }
-    }
-  ]
+  }
 }
-36185 noahttpcache
+36205 noahttpcache
 Method: POST
-URL: https://www.notion.so/api/v3/loadPageChunk
-Body:+152
+URL: https://www.notion.so/api/v3/loadCachedPageChunk
+Body:+166
 {
-  "pageId": "2ad84ca4-045a-45b8-8d56-c75f16a580a7",
+  "page": {
+    "id": "2ad84ca4-045a-45b8-8d56-c75f16a580a7"
+  },
   "chunkNumber": 0,
   "limit": 50,
   "cursor": {
